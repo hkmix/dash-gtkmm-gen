@@ -1,0 +1,3174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::OptionContext Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1OptionContext.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1OptionContext.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1OptionContext.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::OptionContext Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       An
+       <a class="el" href="classGlib_1_1OptionContext.html" title="An OptionContext defines and parses commandline options, using OptionGroups and option entries ...">
+        OptionContext
+       </a>
+       defines and parses commandline options, using
+       <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+        OptionGroup
+       </a>
+       s and
+       <a class="el" href="classGlib_1_1OptionEntry.html">
+        option entries
+       </a>
+       .
+       <a href="classGlib_1_1OptionContext.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/optioncontext.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:afe53674752fc26dd9d4dd5388f988006">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt;
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          , const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#afe53674752fc26dd9d4dd5388f988006">
+           SlotTranslate
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:afe53674752fc26dd9d4dd5388f988006">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This function is used to translate user-visible strings, for –help output.
+          <a href="classGlib_1_1OptionContext.html#afe53674752fc26dd9d4dd5388f988006">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:afe53674752fc26dd9d4dd5388f988006">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ad313150579fe7f769f1c5863f8867eab">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#ad313150579fe7f769f1c5863f8867eab">
+           OptionContext
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; parameter_string=
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          ())
+         </td>
+        </tr>
+        <tr class="memdesc:ad313150579fe7f769f1c5863f8867eab">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Creates a new option context.
+          <a href="classGlib_1_1OptionContext.html#ad313150579fe7f769f1c5863f8867eab">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad313150579fe7f769f1c5863f8867eab">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae84b2223d374cf0756af7a08e6df811f">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#ae84b2223d374cf0756af7a08e6df811f">
+           OptionContext
+          </a>
+          (GOptionContext* castitem, bool take_ownership=false)
+         </td>
+        </tr>
+        <tr class="separator:ae84b2223d374cf0756af7a08e6df811f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a617dba4224289c92cfb6e69005b65501">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a617dba4224289c92cfb6e69005b65501">
+           OptionContext
+          </a>
+          (
+          <a class="el" href="classGlib_1_1OptionContext.html">
+           OptionContext
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a617dba4224289c92cfb6e69005b65501">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a845b821df8934ff459a454233042aa69">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1OptionContext.html">
+           OptionContext
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a845b821df8934ff459a454233042aa69">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGlib_1_1OptionContext.html">
+           OptionContext
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a845b821df8934ff459a454233042aa69">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5871acd083020c408dcd2d399f981fd1">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a5871acd083020c408dcd2d399f981fd1">
+           ~OptionContext
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a5871acd083020c408dcd2d399f981fd1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae31d88f6e0c9a3211af390e0d3f976c6">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#ae31d88f6e0c9a3211af390e0d3f976c6">
+           set_help_enabled
+          </a>
+          (bool help_enabled=true)
+         </td>
+        </tr>
+        <tr class="memdesc:ae31d88f6e0c9a3211af390e0d3f976c6">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Enables or disables automatic generation of
+          <code>
+           --help
+          </code>
+          output.
+          <a href="classGlib_1_1OptionContext.html#ae31d88f6e0c9a3211af390e0d3f976c6">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae31d88f6e0c9a3211af390e0d3f976c6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4f33399c5395db9dd055f02a08712ec0">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a4f33399c5395db9dd055f02a08712ec0">
+           get_help_enabled
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a4f33399c5395db9dd055f02a08712ec0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns whether automatic
+          <code>
+           --help
+          </code>
+          generation is turned on for
+          <em>
+           context
+          </em>
+          .
+          <a href="classGlib_1_1OptionContext.html#a4f33399c5395db9dd055f02a08712ec0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4f33399c5395db9dd055f02a08712ec0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a022f6c50d608b2fabdf7287caf588d73">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a022f6c50d608b2fabdf7287caf588d73">
+           set_ignore_unknown_options
+          </a>
+          (bool ignore_unknown=true)
+         </td>
+        </tr>
+        <tr class="memdesc:a022f6c50d608b2fabdf7287caf588d73">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets whether to ignore unknown options or not.
+          <a href="classGlib_1_1OptionContext.html#a022f6c50d608b2fabdf7287caf588d73">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a022f6c50d608b2fabdf7287caf588d73">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa15e010efafa83d8d953c026e036dd01">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#aa15e010efafa83d8d953c026e036dd01">
+           get_ignore_unknown_options
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aa15e010efafa83d8d953c026e036dd01">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns whether unknown options are ignored or not.
+          <a href="classGlib_1_1OptionContext.html#aa15e010efafa83d8d953c026e036dd01">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa15e010efafa83d8d953c026e036dd01">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a348f5861f7ec2bdf7e9f707469bf58a0">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a348f5861f7ec2bdf7e9f707469bf58a0">
+           set_strict_posix
+          </a>
+          (bool strict_posix=true)
+         </td>
+        </tr>
+        <tr class="memdesc:a348f5861f7ec2bdf7e9f707469bf58a0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets strict POSIX mode.
+          <a href="classGlib_1_1OptionContext.html#a348f5861f7ec2bdf7e9f707469bf58a0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a348f5861f7ec2bdf7e9f707469bf58a0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9686629a8a3b6909efaa6805737374f3">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a9686629a8a3b6909efaa6805737374f3">
+           get_strict_posix
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a9686629a8a3b6909efaa6805737374f3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns whether strict POSIX code is enabled.
+          <a href="classGlib_1_1OptionContext.html#a9686629a8a3b6909efaa6805737374f3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9686629a8a3b6909efaa6805737374f3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a08ab225e3a4be10364f32948a6532726">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a08ab225e3a4be10364f32948a6532726">
+           parse
+          </a>
+          (int&amp; argc, char**&amp; argv)
+         </td>
+        </tr>
+        <tr class="memdesc:a08ab225e3a4be10364f32948a6532726">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Parses the command line arguments, recognizing options which have been added to
+          <em>
+           context
+          </em>
+          .
+          <a href="classGlib_1_1OptionContext.html#a08ab225e3a4be10364f32948a6532726">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a08ab225e3a4be10364f32948a6532726">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2c81f14e99f9c84406f200286673b14e">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a2c81f14e99f9c84406f200286673b14e">
+           add_group
+          </a>
+          (
+          <a class="el" href="classGlib_1_1OptionGroup.html">
+           OptionGroup
+          </a>
+          &amp; group)
+         </td>
+        </tr>
+        <tr class="memdesc:a2c81f14e99f9c84406f200286673b14e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Adds an
+          <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+           OptionGroup
+          </a>
+          to the context, so that parsing with context will recognize the options in the group.
+          <a href="classGlib_1_1OptionContext.html#a2c81f14e99f9c84406f200286673b14e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2c81f14e99f9c84406f200286673b14e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae6d57268ad6a1f05c5d6175ab8e11181">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#ae6d57268ad6a1f05c5d6175ab8e11181">
+           set_main_group
+          </a>
+          (
+          <a class="el" href="classGlib_1_1OptionGroup.html">
+           OptionGroup
+          </a>
+          &amp; group)
+         </td>
+        </tr>
+        <tr class="memdesc:ae6d57268ad6a1f05c5d6175ab8e11181">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets an
+          <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+           OptionGroup
+          </a>
+          as the main group of the context.
+          <a href="classGlib_1_1OptionContext.html#ae6d57268ad6a1f05c5d6175ab8e11181">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae6d57268ad6a1f05c5d6175ab8e11181">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab1728254b364468d687c985974068e3c">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#ab1728254b364468d687c985974068e3c">
+           get_help
+          </a>
+          (bool main_help, const
+          <a class="el" href="classGlib_1_1OptionGroup.html">
+           OptionGroup
+          </a>
+          &amp; group) const
+         </td>
+        </tr>
+        <tr class="memdesc:ab1728254b364468d687c985974068e3c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns a formatted, translated help text for the given context.
+          <a href="classGlib_1_1OptionContext.html#ab1728254b364468d687c985974068e3c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab1728254b364468d687c985974068e3c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a28927fd06f3bfe78009bcb6da4804aea">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a28927fd06f3bfe78009bcb6da4804aea">
+           get_help
+          </a>
+          (bool main_help=true) const
+         </td>
+        </tr>
+        <tr class="memdesc:a28927fd06f3bfe78009bcb6da4804aea">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns a formatted, translated help text for the given context.
+          <a href="classGlib_1_1OptionContext.html#a28927fd06f3bfe78009bcb6da4804aea">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a28927fd06f3bfe78009bcb6da4804aea">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af87e77207d4a437598f485fe0e7294e0">
+         <td align="right" class="memItemLeft" valign="top">
+          GOptionContext*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#af87e77207d4a437598f485fe0e7294e0">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:af87e77207d4a437598f485fe0e7294e0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a11b48b2190d2d45f43bcc8d8e26f1eb1">
+         <td align="right" class="memItemLeft" valign="top">
+          const GOptionContext*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a11b48b2190d2d45f43bcc8d8e26f1eb1">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a11b48b2190d2d45f43bcc8d8e26f1eb1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abb126e75fdbd6ad904918313117fbeee">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#abb126e75fdbd6ad904918313117fbeee">
+           set_summary
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; summary)
+         </td>
+        </tr>
+        <tr class="memdesc:abb126e75fdbd6ad904918313117fbeee">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Adds a string to be displayed in
+          <code>
+           --help
+          </code>
+          output before the list of options.
+          <a href="classGlib_1_1OptionContext.html#abb126e75fdbd6ad904918313117fbeee">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abb126e75fdbd6ad904918313117fbeee">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac5ba7c5225e8122b1ee2aac0ed52dbac">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#ac5ba7c5225e8122b1ee2aac0ed52dbac">
+           get_summary
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac5ba7c5225e8122b1ee2aac0ed52dbac">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the summary.
+          <a href="classGlib_1_1OptionContext.html#ac5ba7c5225e8122b1ee2aac0ed52dbac">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac5ba7c5225e8122b1ee2aac0ed52dbac">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3d89734e8546a0e6051320a79ccf0816">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a3d89734e8546a0e6051320a79ccf0816">
+           set_description
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; description)
+         </td>
+        </tr>
+        <tr class="memdesc:a3d89734e8546a0e6051320a79ccf0816">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Adds a string to be displayed in
+          <code>
+           --help
+          </code>
+          output after the list of options.
+          <a href="classGlib_1_1OptionContext.html#a3d89734e8546a0e6051320a79ccf0816">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3d89734e8546a0e6051320a79ccf0816">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad69d2b96ea1b5c95a5237659bf93b6ad">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#ad69d2b96ea1b5c95a5237659bf93b6ad">
+           get_description
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ad69d2b96ea1b5c95a5237659bf93b6ad">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the description.
+          <a href="classGlib_1_1OptionContext.html#ad69d2b96ea1b5c95a5237659bf93b6ad">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad69d2b96ea1b5c95a5237659bf93b6ad">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a579ef7926ca89106eea5b3832eb5db15">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#a579ef7926ca89106eea5b3832eb5db15">
+           set_translation_domain
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; domain)
+         </td>
+        </tr>
+        <tr class="memdesc:a579ef7926ca89106eea5b3832eb5db15">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A convenience function to use gettext() for translating user-visible strings.
+          <a href="classGlib_1_1OptionContext.html#a579ef7926ca89106eea5b3832eb5db15">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a579ef7926ca89106eea5b3832eb5db15">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acbb334944cbe596a7c1e51baa05b9adf">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#acbb334944cbe596a7c1e51baa05b9adf">
+           set_translate_func
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1OptionContext.html#afe53674752fc26dd9d4dd5388f988006">
+           SlotTranslate
+          </a>
+          &amp; slot)
+         </td>
+        </tr>
+        <tr class="memdesc:acbb334944cbe596a7c1e51baa05b9adf">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the function which is used to translate user-visible strings, for –help output.
+          <a href="classGlib_1_1OptionContext.html#acbb334944cbe596a7c1e51baa05b9adf">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acbb334944cbe596a7c1e51baa05b9adf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ae5f0ab1971db754356144f720fa47ded">
+         <td align="right" class="memItemLeft" valign="top">
+          GOptionContext*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#ae5f0ab1971db754356144f720fa47ded">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:ae5f0ab1971db754356144f720fa47ded">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aaf708c17aa94584e258cffd53b6344c6">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionContext.html#aaf708c17aa94584e258cffd53b6344c6">
+           has_ownership_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:aaf708c17aa94584e258cffd53b6344c6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        An
+        <a class="el" href="classGlib_1_1OptionContext.html" title="An OptionContext defines and parses commandline options, using OptionGroups and option entries ...">
+         OptionContext
+        </a>
+        defines and parses commandline options, using
+        <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+         OptionGroup
+        </a>
+        s and
+        <a class="el" href="classGlib_1_1OptionEntry.html">
+         option entries
+        </a>
+        .
+       </p>
+       <p>
+        It supports short and long commandline options, as shown in the following example:
+       </p>
+       <p>
+        <code>
+         testtreemodel -r 1 –max-size 20 –rand –display=:1.0 -vb – file1 file2
+        </code>
+       </p>
+       <p>
+        The example demonstrates a number of features of the GOption commandline parser
+       </p>
+       <ul>
+        <li>
+         Options can be single letters, prefixed by a single dash. Multiple short options can be grouped behind a single dash.
+        </li>
+        <li>
+         Long options are prefixed by two consecutive dashes.
+        </li>
+        <li>
+         Options can have an extra argument, which can be a number, a string or a filename. For long options, the extra argument can be appended with an equals sign after the option name, which is useful if the extra argument starts with a dash, which would otherwise cause it to be interpreted as another option.
+        </li>
+        <li>
+         Non-option arguments are returned to the application as rest arguments.
+        </li>
+        <li>
+         An argument consisting solely of two dashes turns off further parsing, any remaining arguments (even those starting with a dash) are returned to the application as rest arguments.
+        </li>
+       </ul>
+       <p>
+        The
+        <a class="el" href="classGlib_1_1OptionContext.html" title="An OptionContext defines and parses commandline options, using OptionGroups and option entries ...">
+         OptionContext
+        </a>
+        groups options in OptionGroups, which makes it easy to incorporate options from multiple sources. The intended use for this is to let applications collect option groups from the libraries it uses, add them to their
+        <a class="el" href="classGlib_1_1OptionContext.html" title="An OptionContext defines and parses commandline options, using OptionGroups and option entries ...">
+         OptionContext
+        </a>
+        , and parse all options by a single call to
+        <a class="el" href="classGlib_1_1OptionContext.html#a08ab225e3a4be10364f32948a6532726" title="Parses the command line arguments, recognizing options which have been added to context. ">
+         parse()
+        </a>
+        . See Gtk::Main::add_gtk_option_group(), for an example.
+       </p>
+       <p>
+        Add options by creating
+        <a class="el" href="classGlib_1_1OptionEntry.html" title="An OptionEntry defines a single option. ">
+         OptionEntry
+        </a>
+        instances and appropriately-typed variables, and adding them to an
+        <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+         OptionGroup
+        </a>
+        with
+        <a class="el" href="classGlib_1_1OptionGroup.html#abe772a54bbad294d847b77349e86c8e9">
+         OptionGroup::add_entry()
+        </a>
+        or
+        <a class="el" href="classGlib_1_1OptionGroup.html#a533fdd3d3360a9d3766dcaa60f184aee" title="Add a filename string option entry. ">
+         OptionGroup::add_entry_filename()
+        </a>
+        . The option group should then be added to the
+        <a class="el" href="classGlib_1_1OptionContext.html" title="An OptionContext defines and parses commandline options, using OptionGroups and option entries ...">
+         OptionContext
+        </a>
+        with
+        <a class="el" href="classGlib_1_1OptionContext.html#ae6d57268ad6a1f05c5d6175ab8e11181" title="Sets an OptionGroup as the main group of the context. ">
+         set_main_group()
+        </a>
+        or
+        <a class="el" href="classGlib_1_1OptionContext.html#a2c81f14e99f9c84406f200286673b14e" title="Adds an OptionGroup to the context, so that parsing with context will recognize the options in the gr...">
+         add_group()
+        </a>
+        .
+       </p>
+       <p>
+        You might find it convenient to derive your own class from
+        <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+         OptionGroup
+        </a>
+        to contain these
+        <a class="el" href="classGlib_1_1OptionEntry.html" title="An OptionEntry defines a single option. ">
+         OptionEntry
+        </a>
+        instances and member variables.
+       </p>
+       <p>
+        If an option is of type string (see
+        <a class="el" href="classGlib_1_1OptionGroup.html#abe772a54bbad294d847b77349e86c8e9">
+         OptionGroup::add_entry()
+        </a>
+        ) or filename (see
+        <a class="el" href="classGlib_1_1OptionGroup.html#a533fdd3d3360a9d3766dcaa60f184aee" title="Add a filename string option entry. ">
+         OptionGroup::add_entry_filename()
+        </a>
+        ),
+        <a class="el" href="classGlib_1_1OptionContext.html" title="An OptionContext defines and parses commandline options, using OptionGroups and option entries ...">
+         OptionContext
+        </a>
+        takes care of converting it to the right encoding. strings are returned in UTF-8 encoding and filenames are returned in the GLib filename encoding. Note that this only works if setlocale() has been called before
+        <a class="el" href="classGlib_1_1OptionContext.html#a08ab225e3a4be10364f32948a6532726" title="Parses the command line arguments, recognizing options which have been added to context. ">
+         OptionContext::parse()
+        </a>
+        .
+       </p>
+       <p>
+        <a class="el" href="classGlib_1_1OptionContext.html" title="An OptionContext defines and parses commandline options, using OptionGroups and option entries ...">
+         OptionContext
+        </a>
+        can automatically generate nicely formatted help output. Unless it is explicitly turned off with
+        <a class="el" href="classGlib_1_1OptionContext.html#ae31d88f6e0c9a3211af390e0d3f976c6" title="Enables or disables automatic generation of --help output. ">
+         set_help_enabled()
+        </a>
+        , this will recognize the –help, -?, –help-all and –help-groupname options (where groupname is the name of an
+        <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+         OptionGroup
+        </a>
+        ) and write suitable text to stdout.
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Member Typedef Documentation
+      </h2>
+      <a class="anchor" id="afe53674752fc26dd9d4dd5388f988006">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt;
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            , const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;&gt;
+            <a class="el" href="classGlib_1_1OptionContext.html#afe53674752fc26dd9d4dd5388f988006">
+             Glib::OptionContext::SlotTranslate
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This function is used to translate user-visible strings, for –help output.
+        </p>
+        <p>
+         The function takes an untranslated string and returns a translated string
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="ad313150579fe7f769f1c5863f8867eab">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::OptionContext::OptionContext
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html">
+                 Glib::ustring
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 parameter_string
+                </em>
+                =
+                <code>
+                 <a class="el" href="classGlib_1_1ustring.html">
+                  Glib::ustring
+                 </a>
+                 ()
+                </code>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Creates a new option context.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              parameter_string
+             </td>
+             <td>
+              A string which is displayed in the first line of –help output, after programname [OPTION...]
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae84b2223d374cf0756af7a08e6df811f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::OptionContext::OptionContext
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GOptionContext *
+               </td>
+               <td class="paramname">
+                <em>
+                 castitem
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_ownership
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a617dba4224289c92cfb6e69005b65501">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::OptionContext::OptionContext
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1OptionContext.html">
+                 OptionContext
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a5871acd083020c408dcd2d399f981fd1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                virtual Glib::OptionContext::~OptionContext
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              virtual
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a2c81f14e99f9c84406f200286673b14e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionContext::add_group
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1OptionGroup.html">
+             OptionGroup
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             group
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Adds an
+         <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+          OptionGroup
+         </a>
+         to the context, so that parsing with context will recognize the options in the group.
+        </p>
+        <p>
+         Note that the group will not be copied, so it should exist for as long as the context exists.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              group
+             </td>
+             <td>
+              The group to add.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad69d2b96ea1b5c95a5237659bf93b6ad">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::OptionContext::get_description
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the description.
+        </p>
+        <p>
+         See g_option_context_set_description().
+        </p>
+        <dl class="since_2_12">
+         <dt>
+          <b>
+           <a class="el" href="since_2_12.html#_since_2_12000006">
+            Since glibmm 2.12:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The description.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ab1728254b364468d687c985974068e3c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::OptionContext::get_help
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             main_help
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1OptionGroup.html">
+             OptionGroup
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             group
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns a formatted, translated help text for the given context.
+        </p>
+        <p>
+         To obtain the text produced by
+         <code>
+          --help
+         </code>
+         , call
+         <code>
+          g_option_context_get_help (context, &lt;tt&gt;true&lt;/tt&gt;, &lt;tt&gt;nullptr&lt;/tt&gt;)
+         </code>
+         . To obtain the text produced by
+         <code>
+          --help-all
+         </code>
+         , call
+         <code>
+          g_option_context_get_help (context, &lt;tt&gt;false&lt;/tt&gt;, &lt;tt&gt;nullptr&lt;/tt&gt;)
+         </code>
+         . To obtain the help text for an option group, call
+         <code>
+          g_option_context_get_help (context, &lt;tt&gt;false&lt;/tt&gt;, group)
+         </code>
+         .
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000012">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              main_help
+             </td>
+             <td>
+              If
+              <code>
+               true
+              </code>
+              , only include the main group.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              group
+             </td>
+             <td>
+              The
+              <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+               OptionGroup
+              </a>
+              to create help for, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A newly allocated string containing the help text.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a28927fd06f3bfe78009bcb6da4804aea">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::OptionContext::get_help
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             main_help
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns a formatted, translated help text for the given context.
+        </p>
+        <p>
+         To obtain the text produced by –help, call get_help (true). To obtain the text produced by –help-all, call get_help(false). To obtain the help text for an option group, call get_help(false, group).
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              main_help
+             </td>
+             <td>
+              If true, only include the main group.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          string containing the help text.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a4f33399c5395db9dd055f02a08712ec0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::OptionContext::get_help_enabled
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns whether automatic
+         <code>
+          --help
+         </code>
+         generation is turned on for
+         <em>
+          context
+         </em>
+         .
+        </p>
+        <p>
+         See g_option_context_set_help_enabled().
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000020">
+            Since glibmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if automatic help generation is turned on.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa15e010efafa83d8d953c026e036dd01">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::OptionContext::get_ignore_unknown_options
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns whether unknown options are ignored or not.
+        </p>
+        <p>
+         See g_option_context_set_ignore_unknown_options().
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000022">
+            Since glibmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if unknown options are ignored.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9686629a8a3b6909efaa6805737374f3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::OptionContext::get_strict_posix
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns whether strict POSIX code is enabled.
+        </p>
+        <p>
+         See g_option_context_set_strict_posix() for more information.
+        </p>
+        <dl class="since_2_44">
+         <dt>
+          <b>
+           <a class="el" href="since_2_44.html#_since_2_44000024">
+            Since glibmm 2.44:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if strict POSIX is enabled,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac5ba7c5225e8122b1ee2aac0ed52dbac">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::OptionContext::get_summary
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the summary.
+        </p>
+        <p>
+         See g_option_context_set_summary().
+        </p>
+        <dl class="since_2_12">
+         <dt>
+          <b>
+           <a class="el" href="since_2_12.html#_since_2_12000004">
+            Since glibmm 2.12:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The summary.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af87e77207d4a437598f485fe0e7294e0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GOptionContext* Glib::OptionContext::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a11b48b2190d2d45f43bcc8d8e26f1eb1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GOptionContext* Glib::OptionContext::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a845b821df8934ff459a454233042aa69">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1OptionContext.html">
+                 OptionContext
+                </a>
+                &amp; Glib::OptionContext::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1OptionContext.html">
+                 OptionContext
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a08ab225e3a4be10364f32948a6532726">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::OptionContext::parse
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             argc
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            char **&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             argv
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Parses the command line arguments, recognizing options which have been added to
+         <em>
+          context
+         </em>
+         .
+        </p>
+        <p>
+         A side-effect of calling this function is that g_set_prgname() will be called.
+        </p>
+        <p>
+         If the parsing is successful, any parsed arguments are removed from the array and
+         <em>
+          argc
+         </em>
+         and
+         <em>
+          argv
+         </em>
+         are updated accordingly. A '–' option is stripped from
+         <em>
+          argv
+         </em>
+         unless there are unparsed options before and after it, or some of the options after it start with '-'. In case of an error,
+         <em>
+          argc
+         </em>
+         and
+         <em>
+          argv
+         </em>
+         are left unmodified.
+        </p>
+        <p>
+         If automatic
+         <code>
+          --help
+         </code>
+         support is enabled (see g_option_context_set_help_enabled()), and the
+         <em>
+          argv
+         </em>
+         array contains one of the recognized help options, this function will produce help output to stdout and call
+         <code>
+          exit (0)
+         </code>
+         .
+        </p>
+        <p>
+         Note that function depends on the [current locale][setlocale] for automatic character set conversion of string and filename arguments.
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000023">
+            Since glibmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              argc
+             </td>
+             <td>
+              A pointer to the number of command line arguments.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              argv
+             </td>
+             <td>
+              A pointer to the array of command line arguments.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the parsing was successful,
+          <code>
+           false
+          </code>
+          if an error occurred.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a3d89734e8546a0e6051320a79ccf0816">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionContext::set_description
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             description
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Adds a string to be displayed in
+         <code>
+          --help
+         </code>
+         output after the list of options.
+        </p>
+        <p>
+         This text often includes a bug reporting address.
+        </p>
+        <p>
+         Note that the summary is translated (see g_option_context_set_translate_func()).
+        </p>
+        <dl class="since_2_12">
+         <dt>
+          <b>
+           <a class="el" href="since_2_12.html#_since_2_12000005">
+            Since glibmm 2.12:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              description
+             </td>
+             <td>
+              A string to be shown in –help output after the list of options.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae31d88f6e0c9a3211af390e0d3f976c6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionContext::set_help_enabled
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             help_enabled
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Enables or disables automatic generation of
+         <code>
+          --help
+         </code>
+         output.
+        </p>
+        <p>
+         By default, g_option_context_parse() recognizes
+         <code>
+          --help
+         </code>
+         ,
+         <code>
+          -h
+         </code>
+         ,
+         <code>
+          -?
+         </code>
+         ,
+         <code>
+          --help-all
+         </code>
+         and
+         <code>
+          --help-groupname
+         </code>
+         and creates suitable output to stdout.
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000019">
+            Since glibmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              help_enabled
+             </td>
+             <td>
+              <code>
+               true
+              </code>
+              to enable
+              <code>
+               --help
+              </code>
+              ,
+              <code>
+               false
+              </code>
+              to disable it.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a022f6c50d608b2fabdf7287caf588d73">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionContext::set_ignore_unknown_options
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             ignore_unknown
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets whether to ignore unknown options or not.
+        </p>
+        <p>
+         If an argument is ignored, it is left in the
+         <em>
+          argv
+         </em>
+         array after parsing. By default, g_option_context_parse() treats unknown options as error.
+        </p>
+        <p>
+         This setting does not affect non-option arguments (i.e. arguments which don't start with a dash). But note that GOption cannot reliably determine whether a non-option belongs to a preceding unknown option.
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000021">
+            Since glibmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              ignore_unknown
+             </td>
+             <td>
+              <code>
+               true
+              </code>
+              to ignore unknown options,
+              <code>
+               false
+              </code>
+              to produce an error when unknown options are met.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae6d57268ad6a1f05c5d6175ab8e11181">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionContext::set_main_group
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1OptionGroup.html">
+             OptionGroup
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             group
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets an
+         <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+          OptionGroup
+         </a>
+         as the main group of the context.
+        </p>
+        <p>
+         This has the same effect as calling
+         <a class="el" href="classGlib_1_1OptionContext.html#a2c81f14e99f9c84406f200286673b14e" title="Adds an OptionGroup to the context, so that parsing with context will recognize the options in the gr...">
+          add_group()
+         </a>
+         , the only difference is that the options in the main group are treated differently when generating –help output. Note that the group will not be copied, so it should exist for as long as the context exists.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              group
+             </td>
+             <td>
+              The group to add.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a348f5861f7ec2bdf7e9f707469bf58a0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionContext::set_strict_posix
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             strict_posix
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets strict POSIX mode.
+        </p>
+        <p>
+         By default, this mode is disabled.
+        </p>
+        <p>
+         In strict POSIX mode, the first non-argument parameter encountered (eg: filename) terminates argument processing. Remaining arguments are treated as non-options and are not attempted to be parsed.
+        </p>
+        <p>
+         If strict POSIX mode is disabled then parsing is done in the GNU way where option arguments can be freely mixed with non-options.
+        </p>
+        <p>
+         As an example, consider "ls foo -l". With GNU style parsing, this will list "foo" in long mode. In strict POSIX style, this will list the files named "foo" and "-l".
+        </p>
+        <p>
+         It may be useful to force strict POSIX mode when creating "verb
+style" command line tools. For example, the "gsettings" command line tool supports the global option "--schemadir" as well as many subcommands ("get", "set", etc.) which each have their own set of arguments. Using strict POSIX mode will allow parsing the global options up to the verb name while leaving the remaining options to be parsed by the relevant subcommand (which can be determined by examining the verb name, which should be present in argv[1] after parsing).
+        </p>
+        <dl class="since_2_44">
+         <dt>
+          <b>
+           <a class="el" href="since_2_44.html#_since_2_44000023">
+            Since glibmm 2.44:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              strict_posix
+             </td>
+             <td>
+              The new value.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="abb126e75fdbd6ad904918313117fbeee">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionContext::set_summary
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             summary
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Adds a string to be displayed in
+         <code>
+          --help
+         </code>
+         output before the list of options.
+        </p>
+        <p>
+         This is typically a summary of the program functionality.
+        </p>
+        <p>
+         Note that the summary is translated (see g_option_context_set_translate_func() and g_option_context_set_translation_domain()).
+        </p>
+        <dl class="since_2_12">
+         <dt>
+          <b>
+           <a class="el" href="since_2_12.html#_since_2_12000003">
+            Since glibmm 2.12:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              summary
+             </td>
+             <td>
+              A string to be shown in –help output before the list of options.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="acbb334944cbe596a7c1e51baa05b9adf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionContext::set_translate_func
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1OptionContext.html#afe53674752fc26dd9d4dd5388f988006">
+             SlotTranslate
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the function which is used to translate user-visible strings, for –help output.
+        </p>
+        <p>
+         Different groups can use different functions.
+        </p>
+        <p>
+         If you are using gettext(), you only need to set the translation domain, see
+         <a class="el" href="classGlib_1_1OptionContext.html#a579ef7926ca89106eea5b3832eb5db15" title="A convenience function to use gettext() for translating user-visible strings. ">
+          set_translation_domain()
+         </a>
+         .
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000013">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a579ef7926ca89106eea5b3832eb5db15">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionContext::set_translation_domain
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             domain
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A convenience function to use gettext() for translating user-visible strings.
+        </p>
+        <dl class="since_2_12">
+         <dt>
+          <b>
+           <a class="el" href="since_2_12.html#_since_2_12000007">
+            Since glibmm 2.12:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              domain
+             </td>
+             <td>
+              The domain to use.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="ae5f0ab1971db754356144f720fa47ded">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GOptionContext* Glib::OptionContext::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aaf708c17aa94584e258cffd53b6344c6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool Glib::OptionContext::has_ownership_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1OptionContext.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

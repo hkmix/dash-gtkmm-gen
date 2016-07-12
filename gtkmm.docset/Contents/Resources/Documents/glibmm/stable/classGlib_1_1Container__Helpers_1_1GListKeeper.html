@@ -1,0 +1,1002 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::Container_Helpers::GListKeeper&lt; Tr &gt; Class Template Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::Container_Helpers::GListKeeper&lt; Tr &gt; Class Template Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       A keeper class for GList.
+       <a href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/vectorutils.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:aa3aba7aa2f9a688181ee02e31d291e40">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#aa3aba7aa2f9a688181ee02e31d291e40">
+           CppType
+          </a>
+          = typename Tr::CppType
+         </td>
+        </tr>
+        <tr class="separator:aa3aba7aa2f9a688181ee02e31d291e40">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a53b03e22c1995a71e360080fd3d053be">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#a53b03e22c1995a71e360080fd3d053be">
+           CType
+          </a>
+          = typename Tr::CType
+         </td>
+        </tr>
+        <tr class="separator:a53b03e22c1995a71e360080fd3d053be">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a4207dc51d04222c557591b1c95efa0fc">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#a4207dc51d04222c557591b1c95efa0fc">
+           GListKeeper
+          </a>
+          (const GList* glist,
+          <a class="el" href="group__ContHandles.html#ga64c27560b41710ccf64a3679a3ba3f20">
+           Glib::OwnershipType
+          </a>
+          ownership)
+         </td>
+        </tr>
+        <tr class="memdesc:a4207dc51d04222c557591b1c95efa0fc">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Constructs an
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html" title="A keeper class for GList. ">
+           GListKeeper
+          </a>
+          holding
+          <em>
+           glist
+          </em>
+          .
+          <a href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#a4207dc51d04222c557591b1c95efa0fc">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4207dc51d04222c557591b1c95efa0fc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abddfd000ad4ba2a9e2b7cf0db8254690">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#abddfd000ad4ba2a9e2b7cf0db8254690">
+           GListKeeper
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+           GListKeeper
+          </a>
+          &amp; keeper)
+         </td>
+        </tr>
+        <tr class="separator:abddfd000ad4ba2a9e2b7cf0db8254690">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2bd777b20e7aeb4a202f15e4b8a2ed37">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#a2bd777b20e7aeb4a202f15e4b8a2ed37">
+           ~GListKeeper
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2bd777b20e7aeb4a202f15e4b8a2ed37">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4091150e8dbfbdf5c55addf13293972c">
+         <td align="right" class="memItemLeft" valign="top">
+          GList*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#a4091150e8dbfbdf5c55addf13293972c">
+           data
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a4091150e8dbfbdf5c55addf13293972c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets data the keeper holds.
+          <a href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#a4091150e8dbfbdf5c55addf13293972c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4091150e8dbfbdf5c55addf13293972c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <h3>
+        template&lt;typename Tr&gt;
+        <br/>
+        <br/>
+        class Glib::Container_Helpers::GListKeeper&lt; Tr &gt;
+       </h3>
+       <p>
+        A keeper class for GList.
+       </p>
+       <p>
+        Primarily used by C++ wrappers like gtkmm.
+       </p>
+       <p>
+        Its main purpose is to free its data when they are not needed. What will be destroyed depends on passed ownership upon construction.
+       </p>
+       <p>
+        The most common usage of Glib::GListKeeper is getting its data when converting
+        <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+         std::vector
+        </a>
+        to a GList*:
+       </p>
+       <div class="fragment">
+        <div class="line">
+         <span class="keywordtype">
+          void
+         </span>
+         G::Temp::do_something(
+         <span class="keyword">
+          const
+         </span>
+         <a class="codeRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+          std::vector&lt;int&gt;
+         </a>
+         &amp; v)
+        </div>
+        <div class="line">
+         {
+        </div>
+        <div class="line">
+         g_temp_do_something(gobj(),
+         <a class="code" href="classGlib_1_1ListHandler.html">
+          Glib::ListHandler&lt;int&gt;::vector_to_list
+         </a>
+         (v).
+         <a class="code" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#a4091150e8dbfbdf5c55addf13293972c">
+          data
+         </a>
+         ());
+        </div>
+        <div class="line">
+         }
+        </div>
+       </div>
+       <!-- fragment -->
+       <p>
+        Variables of this class are seldom defined directly - it is mostly used as a temporary variable returned by
+        <a class="el" href="classGlib_1_1ListHandler.html#aa3f1c38cb301fa89706d517744b813a1">
+         Glib::ListHandler::vector_to_list()
+        </a>
+        .
+       </p>
+       <p>
+        Note that the usage above is correct with regards to C++ standard point 12.2.3. That means that data returned by
+        <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#a4091150e8dbfbdf5c55addf13293972c" title="Gets data the keeper holds. ">
+         data()
+        </a>
+        method is valid through whole g_temp_do_something function and is destroyed, when this function returns.
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Member Typedef Documentation
+      </h2>
+      <a class="anchor" id="aa3aba7aa2f9a688181ee02e31d291e40">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename Tr &gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+             Glib::Container_Helpers::GListKeeper
+            </a>
+            &lt; Tr &gt;::
+            <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#aa3aba7aa2f9a688181ee02e31d291e40">
+             CppType
+            </a>
+            =  typename Tr::CppType
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a53b03e22c1995a71e360080fd3d053be">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename Tr &gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+             Glib::Container_Helpers::GListKeeper
+            </a>
+            &lt; Tr &gt;::
+            <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#a53b03e22c1995a71e360080fd3d053be">
+             CType
+            </a>
+            =  typename Tr::CType
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a4207dc51d04222c557591b1c95efa0fc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename Tr &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+                 Glib::Container_Helpers::GListKeeper
+                </a>
+                &lt; Tr &gt;::
+                <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+                 GListKeeper
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const GList *
+               </td>
+               <td class="paramname">
+                <em>
+                 glist
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                <a class="el" href="group__ContHandles.html#ga64c27560b41710ccf64a3679a3ba3f20">
+                 Glib::OwnershipType
+                </a>
+               </td>
+               <td class="paramname">
+                <em>
+                 ownership
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Constructs an
+         <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html" title="A keeper class for GList. ">
+          GListKeeper
+         </a>
+         holding
+         <em>
+          glist
+         </em>
+         .
+        </p>
+        <p>
+         <em>
+          ownership
+         </em>
+         tells what should be destroyed with keeper destruction:
+        </p>
+        <ul>
+         <li>
+          <a class="el" href="group__ContHandles.html#gga64c27560b41710ccf64a3679a3ba3f20a7d594cffcc2d2d6c4313ddb4d6613c79">
+           Glib::OWNERSHIP_NONE
+          </a>
+          - keeper won't destroy data it holds.
+         </li>
+         <li>
+          <a class="el" href="group__ContHandles.html#gga64c27560b41710ccf64a3679a3ba3f20a448c598cdc37e2de8a162e1020001715">
+           Glib::OWNERSHIP_SHALLOW
+          </a>
+          - keeper will destroy only container it holds.
+         </li>
+         <li>
+          <a class="el" href="group__ContHandles.html#gga64c27560b41710ccf64a3679a3ba3f20a2a6d6bfadc36f9eda31af79d32928c6a">
+           Glib::OWNERSHIP_DEEP
+          </a>
+          - keeper will destroy data and container it holds.
+         </li>
+        </ul>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              glist
+             </td>
+             <td>
+              - GList* to hold.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              ownership
+             </td>
+             <td>
+              - ownership definition.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="abddfd000ad4ba2a9e2b7cf0db8254690">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename Tr &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+                 Glib::Container_Helpers::GListKeeper
+                </a>
+                &lt; Tr &gt;::
+                <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+                 GListKeeper
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+                 GListKeeper
+                </a>
+                &lt; Tr &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 keeper
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a2bd777b20e7aeb4a202f15e4b8a2ed37">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename Tr &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+                 Glib::Container_Helpers::GListKeeper
+                </a>
+                &lt; Tr &gt;::~
+                <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+                 GListKeeper
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a4091150e8dbfbdf5c55addf13293972c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename Tr &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GList*
+                <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html">
+                 Glib::Container_Helpers::GListKeeper
+                </a>
+                &lt; Tr &gt;::data
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets data the keeper holds.
+        </p>
+        <p>
+         Note that this data is owned by the keeper, so there is no need to free it.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          GList* owned by
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1GListKeeper.html" title="A keeper class for GList. ">
+           GListKeeper
+          </a>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1Container__Helpers_1_1GListKeeper.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

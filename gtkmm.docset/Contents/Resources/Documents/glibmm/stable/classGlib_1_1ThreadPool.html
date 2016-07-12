@@ -1,0 +1,1827 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::ThreadPool Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1ThreadPool.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1ThreadPool.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1ThreadPool.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::ThreadPool Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       A pool of threads to execute work concurrently.
+       <a href="classGlib_1_1ThreadPool.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/threadpool.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:afd549a2867eafe34663d8935c17efbe2">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#afd549a2867eafe34663d8935c17efbe2">
+           ThreadPool
+          </a>
+          (int max_threads=-1, bool exclusive=false)
+         </td>
+        </tr>
+        <tr class="memdesc:afd549a2867eafe34663d8935c17efbe2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Constructs a new thread pool.
+          <a href="classGlib_1_1ThreadPool.html#afd549a2867eafe34663d8935c17efbe2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:afd549a2867eafe34663d8935c17efbe2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a68dc576f1a75ec573d206fa8fdf9c5ea">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#a68dc576f1a75ec573d206fa8fdf9c5ea">
+           ~ThreadPool
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:a68dc576f1a75ec573d206fa8fdf9c5ea">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7b37fdac9f7a6e4a8791b4668e23e264">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#a7b37fdac9f7a6e4a8791b4668e23e264">
+           push
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt;&amp; slot)
+         </td>
+        </tr>
+        <tr class="memdesc:a7b37fdac9f7a6e4a8791b4668e23e264">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Inserts
+          <em>
+           slot
+          </em>
+          into the list of tasks to be executed by the pool.
+          <a href="classGlib_1_1ThreadPool.html#a7b37fdac9f7a6e4a8791b4668e23e264">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7b37fdac9f7a6e4a8791b4668e23e264">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae19ed9a523788e40509ee4f39d2b10a9">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#ae19ed9a523788e40509ee4f39d2b10a9">
+           set_max_threads
+          </a>
+          (int max_threads)
+         </td>
+        </tr>
+        <tr class="memdesc:ae19ed9a523788e40509ee4f39d2b10a9">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the maximal allowed number of threads for the pool.
+          <a href="classGlib_1_1ThreadPool.html#ae19ed9a523788e40509ee4f39d2b10a9">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae19ed9a523788e40509ee4f39d2b10a9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6dbe83ceeb65fd0f157e1b1895ed3db5">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#a6dbe83ceeb65fd0f157e1b1895ed3db5">
+           get_max_threads
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a6dbe83ceeb65fd0f157e1b1895ed3db5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the maximal number of threads for the pool.
+          <a href="classGlib_1_1ThreadPool.html#a6dbe83ceeb65fd0f157e1b1895ed3db5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a6dbe83ceeb65fd0f157e1b1895ed3db5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2a6bc66c4eb03e346429e6f7fe3a5fe3">
+         <td align="right" class="memItemLeft" valign="top">
+          unsigned int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#a2a6bc66c4eb03e346429e6f7fe3a5fe3">
+           get_num_threads
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a2a6bc66c4eb03e346429e6f7fe3a5fe3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the number of threads currently running in the pool.
+          <a href="classGlib_1_1ThreadPool.html#a2a6bc66c4eb03e346429e6f7fe3a5fe3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2a6bc66c4eb03e346429e6f7fe3a5fe3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8eb62f226a5f5e2f93b66b25c49cc401">
+         <td align="right" class="memItemLeft" valign="top">
+          unsigned int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#a8eb62f226a5f5e2f93b66b25c49cc401">
+           unprocessed
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a8eb62f226a5f5e2f93b66b25c49cc401">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the number of tasks still unprocessed in the pool.
+          <a href="classGlib_1_1ThreadPool.html#a8eb62f226a5f5e2f93b66b25c49cc401">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8eb62f226a5f5e2f93b66b25c49cc401">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab59582875f80b94bf4707c1c77f234ba">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#ab59582875f80b94bf4707c1c77f234ba">
+           get_exclusive
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ab59582875f80b94bf4707c1c77f234ba">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns whether all threads are exclusive to this pool.
+          <a href="classGlib_1_1ThreadPool.html#ab59582875f80b94bf4707c1c77f234ba">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab59582875f80b94bf4707c1c77f234ba">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a14a3e00a1fec5fec2bded78ea6a2b796">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#a14a3e00a1fec5fec2bded78ea6a2b796">
+           shutdown
+          </a>
+          (bool immediately=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a14a3e00a1fec5fec2bded78ea6a2b796">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Frees all resources allocated for the pool.
+          <a href="classGlib_1_1ThreadPool.html#a14a3e00a1fec5fec2bded78ea6a2b796">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a14a3e00a1fec5fec2bded78ea6a2b796">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac7f444f305942afb54c45204f509bc39">
+         <td align="right" class="memItemLeft" valign="top">
+          GThreadPool*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#ac7f444f305942afb54c45204f509bc39">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ac7f444f305942afb54c45204f509bc39">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aba0bd84d5851f3a64269685dc102cd4b">
+         <td align="right" class="memItemLeft" valign="top">
+          const GThreadPool*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#aba0bd84d5851f3a64269685dc102cd4b">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:aba0bd84d5851f3a64269685dc102cd4b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:af057a2e30dc3e32137944f71658467db">
+         <td align="right" class="memItemLeft" valign="top">
+          static void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#af057a2e30dc3e32137944f71658467db">
+           set_max_unused_threads
+          </a>
+          (int max_threads)
+         </td>
+        </tr>
+        <tr class="memdesc:af057a2e30dc3e32137944f71658467db">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the maximal number of unused threads to
+          <em>
+           max_threads
+          </em>
+          .
+          <a href="classGlib_1_1ThreadPool.html#af057a2e30dc3e32137944f71658467db">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af057a2e30dc3e32137944f71658467db">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa0bb8c1914b2e36fa0222bbaeb44b94e">
+         <td align="right" class="memItemLeft" valign="top">
+          static int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#aa0bb8c1914b2e36fa0222bbaeb44b94e">
+           get_max_unused_threads
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aa0bb8c1914b2e36fa0222bbaeb44b94e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the maximal allowed number of unused threads.
+          <a href="classGlib_1_1ThreadPool.html#aa0bb8c1914b2e36fa0222bbaeb44b94e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa0bb8c1914b2e36fa0222bbaeb44b94e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9904f39dc346cd44296f361415147ae1">
+         <td align="right" class="memItemLeft" valign="top">
+          static unsigned int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#a9904f39dc346cd44296f361415147ae1">
+           get_num_unused_threads
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a9904f39dc346cd44296f361415147ae1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the number of currently unused threads.
+          <a href="classGlib_1_1ThreadPool.html#a9904f39dc346cd44296f361415147ae1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9904f39dc346cd44296f361415147ae1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a132a7f8416d29f9499ed87ba102c37a3">
+         <td align="right" class="memItemLeft" valign="top">
+          static void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ThreadPool.html#a132a7f8416d29f9499ed87ba102c37a3">
+           stop_unused_threads
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a132a7f8416d29f9499ed87ba102c37a3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Stops all currently unused threads.
+          <a href="classGlib_1_1ThreadPool.html#a132a7f8416d29f9499ed87ba102c37a3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a132a7f8416d29f9499ed87ba102c37a3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        A pool of threads to execute work concurrently.
+       </p>
+       <dl class="deprecated">
+        <dt>
+         <b>
+          <a class="el" href="deprecated.html#_deprecated000069">
+           Deprecated:
+          </a>
+         </b>
+        </dt>
+        <dd>
+         This is deprecated in favor of the standard C++ concurrency API in C++11 and C++14.
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="afd549a2867eafe34663d8935c17efbe2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::ThreadPool::ThreadPool
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                int
+               </td>
+               <td class="paramname">
+                <em>
+                 max_threads
+                </em>
+                =
+                <code>
+                 -1
+                </code>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 exclusive
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Constructs a new thread pool.
+        </p>
+        <p>
+         Whenever you call
+         <a class="el" href="classGlib_1_1ThreadPool.html#a7b37fdac9f7a6e4a8791b4668e23e264" title="Inserts slot into the list of tasks to be executed by the pool. ">
+          ThreadPool::push()
+         </a>
+         , either a new thread is created or an unused one is reused. At most
+         <em>
+          max_threads
+         </em>
+         threads are running concurrently for this thread pool.
+         <em>
+          max_threads = -1
+         </em>
+         allows unlimited threads to be created for this thread pool.
+        </p>
+        <p>
+         The parameter
+         <em>
+          exclusive
+         </em>
+         determines, whether the thread pool owns all threads exclusive or whether the threads are shared globally. If
+         <em>
+          exclusive
+         </em>
+         is
+         <code>
+          true
+         </code>
+         ,
+         <em>
+          max_threads
+         </em>
+         threads are started immediately and they will run exclusively for this thread pool until it is destroyed by
+         <a class="el" href="classGlib_1_1ThreadPool.html#a68dc576f1a75ec573d206fa8fdf9c5ea">
+          ~ThreadPool()
+         </a>
+         . If
+         <em>
+          exclusive
+         </em>
+         is
+         <code>
+          false
+         </code>
+         , threads are created when needed and shared between all non-exclusive thread pools. This implies that
+         <em>
+          max_threads
+         </em>
+         may not be -1 for exclusive thread pools.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              max_threads
+             </td>
+             <td>
+              The maximal number of threads to execute concurrently in the new thread pool, -1 means no limit.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              exclusive
+             </td>
+             <td>
+              Should this thread pool be exclusive?
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              <a class="el" href="classGlib_1_1ThreadError.html" title="Exception class for thread-related errors. ">
+               Glib::ThreadError
+              </a>
+             </td>
+             <td>
+              An error can only occur when
+              <em>
+               exclusive
+              </em>
+              is set to
+              <code>
+               true
+              </code>
+              and not all
+              <em>
+               max_threads
+              </em>
+              threads could be created.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a68dc576f1a75ec573d206fa8fdf9c5ea">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                virtual Glib::ThreadPool::~ThreadPool
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              virtual
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="ab59582875f80b94bf4707c1c77f234ba">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::ThreadPool::get_exclusive
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns whether all threads are exclusive to this pool.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Whether all threads are exclusive to this pool.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6dbe83ceeb65fd0f157e1b1895ed3db5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Glib::ThreadPool::get_max_threads
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the maximal number of threads for the pool.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The maximal number of threads.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa0bb8c1914b2e36fa0222bbaeb44b94e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static int Glib::ThreadPool::get_max_unused_threads
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the maximal allowed number of unused threads.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The maximal number of unused threads.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a2a6bc66c4eb03e346429e6f7fe3a5fe3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            unsigned int Glib::ThreadPool::get_num_threads
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the number of threads currently running in the pool.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of threads currently running.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9904f39dc346cd44296f361415147ae1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static unsigned int Glib::ThreadPool::get_num_unused_threads
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the number of currently unused threads.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of currently unused threads.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac7f444f305942afb54c45204f509bc39">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GThreadPool* Glib::ThreadPool::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aba0bd84d5851f3a64269685dc102cd4b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GThreadPool* Glib::ThreadPool::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a7b37fdac9f7a6e4a8791b4668e23e264">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::ThreadPool::push
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt; void &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Inserts
+         <em>
+          slot
+         </em>
+         into the list of tasks to be executed by the pool.
+        </p>
+        <p>
+         When the number of currently running threads is lower than the maximal allowed number of threads, a new thread is started (or reused). Otherwise
+         <em>
+          slot
+         </em>
+         stays in the queue until a thread in this pool finishes its previous task and processes
+         <em>
+          slot
+         </em>
+         .
+        </p>
+        <p>
+         Because
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+          sigc::trackable
+         </a>
+         is not thread-safe, if the slot represents a non-static class method and is created by
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__mem__fun.html#gadf6b6d22c503b439019f0a2e77352419">
+          sigc::mem_fun()
+         </a>
+         , the class concerned should not derive from
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+          sigc::trackable
+         </a>
+         . You can use, say, boost::bind() or, in C++11,
+         <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01682.html#ga4c3052b337dde285bace96cbb996055c">
+          std::bind()
+         </a>
+         or a C++11 lambda expression instead of
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__mem__fun.html#gadf6b6d22c503b439019f0a2e77352419">
+          sigc::mem_fun()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A new task for the thread pool.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              <a class="el" href="classGlib_1_1ThreadError.html" title="Exception class for thread-related errors. ">
+               Glib::ThreadError
+              </a>
+             </td>
+             <td>
+              An error can only occur when a new thread couldn't be created. In that case
+              <em>
+               slot
+              </em>
+              is simply appended to the queue of work to do.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae19ed9a523788e40509ee4f39d2b10a9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::ThreadPool::set_max_threads
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             max_threads
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the maximal allowed number of threads for the pool.
+        </p>
+        <p>
+         A value of -1 means that the maximal number of threads is unlimited. Setting
+         <em>
+          max_threads
+         </em>
+         to 0 means stopping all work for pool. It is effectively frozen until
+         <em>
+          max_threads
+         </em>
+         is set to a non-zero value again.
+        </p>
+        <p>
+         A thread is never terminated while it is still running. Instead the maximal number of threads only has effect for the allocation of new threads in
+         <a class="el" href="classGlib_1_1ThreadPool.html#a7b37fdac9f7a6e4a8791b4668e23e264" title="Inserts slot into the list of tasks to be executed by the pool. ">
+          ThreadPool::push()
+         </a>
+         . A new thread is allocated whenever the number of currently running threads in the pool is smaller than the maximal number.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              max_threads
+             </td>
+             <td>
+              A new maximal number of threads for the pool.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              <a class="el" href="classGlib_1_1ThreadError.html" title="Exception class for thread-related errors. ">
+               Glib::ThreadError
+              </a>
+             </td>
+             <td>
+              An error can only occur when a new thread couldn't be created.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af057a2e30dc3e32137944f71658467db">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static void Glib::ThreadPool::set_max_unused_threads
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                int
+               </td>
+               <td class="paramname">
+                <em>
+                 max_threads
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the maximal number of unused threads to
+         <em>
+          max_threads
+         </em>
+         .
+        </p>
+        <p>
+         If
+         <em>
+          max_threads
+         </em>
+         is -1, no limit is imposed on the number of unused threads.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              max_threads
+             </td>
+             <td>
+              Maximal number of unused threads.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a14a3e00a1fec5fec2bded78ea6a2b796">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::ThreadPool::shutdown
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             immediately
+            </em>
+            =
+            <code>
+             false
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Frees all resources allocated for the pool.
+        </p>
+        <p>
+         If
+         <em>
+          immediately
+         </em>
+         is
+         <code>
+          true
+         </code>
+         , no new task is processed. Otherwise the pool is not freed before the last task is processed. Note however, that no thread of this pool is interrupted while processing a task. Instead at least all still running threads can finish their tasks before the pool is freed.
+        </p>
+        <p>
+         This method does not return before all tasks to be processed (dependent on
+         <em>
+          immediately
+         </em>
+         , whether all or only the currently running) are ready. After calling
+         <a class="el" href="classGlib_1_1ThreadPool.html#a14a3e00a1fec5fec2bded78ea6a2b796" title="Frees all resources allocated for the pool. ">
+          shutdown()
+         </a>
+         the pool must not be used anymore.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              immediately
+             </td>
+             <td>
+              Should the pool shut down immediately?
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a132a7f8416d29f9499ed87ba102c37a3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static void Glib::ThreadPool::stop_unused_threads
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Stops all currently unused threads.
+        </p>
+        <p>
+         This does not change the maximal number of unused threads. This function can be used to regularly stop all unused threads e.g. from
+         <a class="el" href="group__MainLoop.html#gaadb206fcc112f086f9d47c016b1f2175" title="Convenience timeout signal. ">
+          Glib::signal_timeout()
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a8eb62f226a5f5e2f93b66b25c49cc401">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            unsigned int Glib::ThreadPool::unprocessed
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the number of tasks still unprocessed in the pool.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of unprocessed tasks.
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1ThreadPool.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

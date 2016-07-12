@@ -1,0 +1,1810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::SListHandle&lt; T, Tr &gt; Class Template Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1SListHandle.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1SListHandle.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1SListHandle.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::SListHandle&lt; T, Tr &gt; Class Template Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       This is an intermediate type.
+       <a href="classGlib_1_1SListHandle.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/slisthandle.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:af4230f94789efcb7a2aaa5fb794e790f">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#af4230f94789efcb7a2aaa5fb794e790f">
+           CppType
+          </a>
+          = typename Tr::CppType
+         </td>
+        </tr>
+        <tr class="separator:af4230f94789efcb7a2aaa5fb794e790f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a37a57e3305825f5c0d51e58efd32e7b3">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a37a57e3305825f5c0d51e58efd32e7b3">
+           CType
+          </a>
+          = typename Tr::CType
+         </td>
+        </tr>
+        <tr class="separator:a37a57e3305825f5c0d51e58efd32e7b3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aaed4d1deca2b7af0ea6bf91e4764770e">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#aaed4d1deca2b7af0ea6bf91e4764770e">
+           value_type
+          </a>
+          =
+          <a class="el" href="classGlib_1_1SListHandle.html#af4230f94789efcb7a2aaa5fb794e790f">
+           CppType
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:aaed4d1deca2b7af0ea6bf91e4764770e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4efccb4035086b60df1ae0df1008d730">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a4efccb4035086b60df1ae0df1008d730">
+           size_type
+          </a>
+          = std::size_t
+         </td>
+        </tr>
+        <tr class="separator:a4efccb4035086b60df1ae0df1008d730">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a94b6e6143584f237ebfdbfd8b912fb57">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a94b6e6143584f237ebfdbfd8b912fb57">
+           difference_type
+          </a>
+          = std::ptrdiff_t
+         </td>
+        </tr>
+        <tr class="separator:a94b6e6143584f237ebfdbfd8b912fb57">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6e1281a9987af69d9dafa07288da16e2">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a6e1281a9987af69d9dafa07288da16e2">
+           const_iterator
+          </a>
+          =
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1SListHandleIterator.html">
+           Glib::Container_Helpers::SListHandleIterator
+          </a>
+          &lt; Tr &gt;
+         </td>
+        </tr>
+        <tr class="separator:a6e1281a9987af69d9dafa07288da16e2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a06ec94378a4790f8273a20734a661870">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a06ec94378a4790f8273a20734a661870">
+           iterator
+          </a>
+          =
+          <a class="el" href="classGlib_1_1Container__Helpers_1_1SListHandleIterator.html">
+           Glib::Container_Helpers::SListHandleIterator
+          </a>
+          &lt; Tr &gt;
+         </td>
+        </tr>
+        <tr class="separator:a06ec94378a4790f8273a20734a661870">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ac0b356f88cdc1ae822f3db5600ad8568">
+         <td class="memTemplParams" colspan="2">
+          template&lt;class Cont &gt;
+         </td>
+        </tr>
+        <tr class="memitem:ac0b356f88cdc1ae822f3db5600ad8568">
+         <td align="right" class="memTemplItemLeft" valign="top">
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#ac0b356f88cdc1ae822f3db5600ad8568">
+           SListHandle
+          </a>
+          (const Cont&amp; container)
+         </td>
+        </tr>
+        <tr class="separator:ac0b356f88cdc1ae822f3db5600ad8568">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a14f6477eed92aeda49ade71915a6a172">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a14f6477eed92aeda49ade71915a6a172">
+           SListHandle
+          </a>
+          (GSList* glist,
+          <a class="el" href="group__ContHandles.html#ga64c27560b41710ccf64a3679a3ba3f20">
+           Glib::OwnershipType
+          </a>
+          ownership)
+         </td>
+        </tr>
+        <tr class="separator:a14f6477eed92aeda49ade71915a6a172">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0c35999d203ce8723ed2b7fd0579887e">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a0c35999d203ce8723ed2b7fd0579887e">
+           SListHandle
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1SListHandle.html">
+           SListHandle
+          </a>
+          &lt; T, Tr &gt;&amp; other)
+         </td>
+        </tr>
+        <tr class="separator:a0c35999d203ce8723ed2b7fd0579887e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9fb1a1110213b7d5b4ac218c29bf62d5">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a9fb1a1110213b7d5b4ac218c29bf62d5">
+           ~SListHandle
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:a9fb1a1110213b7d5b4ac218c29bf62d5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4e5ceedb31cd4551f928db6b3bcbb414">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1SListHandle.html#a6e1281a9987af69d9dafa07288da16e2">
+           const_iterator
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a4e5ceedb31cd4551f928db6b3bcbb414">
+           begin
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a4e5ceedb31cd4551f928db6b3bcbb414">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6cab595825c6ddf437ca9c35e1222835">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1SListHandle.html#a6e1281a9987af69d9dafa07288da16e2">
+           const_iterator
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a6cab595825c6ddf437ca9c35e1222835">
+           end
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a6cab595825c6ddf437ca9c35e1222835">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5950390b42720f575398f66eda061216">
+         <td class="memTemplParams" colspan="2">
+          template&lt;class U &gt;
+         </td>
+        </tr>
+        <tr class="memitem:a5950390b42720f575398f66eda061216">
+         <td align="right" class="memTemplItemLeft" valign="top">
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a5950390b42720f575398f66eda061216">
+           operator std::vector&lt; U &gt;
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a5950390b42720f575398f66eda061216">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae224005563b6de5d31f712c20e2884c5">
+         <td class="memTemplParams" colspan="2">
+          template&lt;class U &gt;
+         </td>
+        </tr>
+        <tr class="memitem:ae224005563b6de5d31f712c20e2884c5">
+         <td align="right" class="memTemplItemLeft" valign="top">
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#ae224005563b6de5d31f712c20e2884c5">
+           operator std::deque&lt; U &gt;
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:ae224005563b6de5d31f712c20e2884c5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aebc0b4cfb98b55a7b2ee2664aa968e97">
+         <td class="memTemplParams" colspan="2">
+          template&lt;class U &gt;
+         </td>
+        </tr>
+        <tr class="memitem:aebc0b4cfb98b55a7b2ee2664aa968e97">
+         <td align="right" class="memTemplItemLeft" valign="top">
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#aebc0b4cfb98b55a7b2ee2664aa968e97">
+           operator std::list&lt; U &gt;
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:aebc0b4cfb98b55a7b2ee2664aa968e97">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a36e2b69424cf20535308a4370636d644">
+         <td class="memTemplParams" colspan="2">
+          template&lt;class Cont &gt;
+         </td>
+        </tr>
+        <tr class="memitem:a36e2b69424cf20535308a4370636d644">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          void
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a36e2b69424cf20535308a4370636d644">
+           assign_to
+          </a>
+          (Cont&amp; container) const
+         </td>
+        </tr>
+        <tr class="separator:a36e2b69424cf20535308a4370636d644">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3fc65fa85beb4c461cd44719aa71bdac">
+         <td class="memTemplParams" colspan="2">
+          template&lt;class Out &gt;
+         </td>
+        </tr>
+        <tr class="memitem:a3fc65fa85beb4c461cd44719aa71bdac">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          void
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a3fc65fa85beb4c461cd44719aa71bdac">
+           copy
+          </a>
+          (Out pdest) const
+         </td>
+        </tr>
+        <tr class="separator:a3fc65fa85beb4c461cd44719aa71bdac">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6eecd613408202c9fa0ee68c6acf51cd">
+         <td align="right" class="memItemLeft" valign="top">
+          GSList*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a6eecd613408202c9fa0ee68c6acf51cd">
+           data
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a6eecd613408202c9fa0ee68c6acf51cd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aeb8d0ae540028ed6307f2e2a55298cff">
+         <td align="right" class="memItemLeft" valign="top">
+          std::size_t
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#aeb8d0ae540028ed6307f2e2a55298cff">
+           size
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:aeb8d0ae540028ed6307f2e2a55298cff">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a60e282c29d1e15cc25d161afb0de0f9f">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SListHandle.html#a60e282c29d1e15cc25d161afb0de0f9f">
+           empty
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a60e282c29d1e15cc25d161afb0de0f9f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <h3>
+        template&lt;class T, class Tr = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        <br/>
+        <br/>
+        class Glib::SListHandle&lt; T, Tr &gt;
+       </h3>
+       <p>
+        This is an intermediate type.
+       </p>
+       <p>
+        When a method takes this, or returns this, you should use a standard C++ container of your choice, such as
+        <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00464.html">
+         std::list
+        </a>
+        or
+        <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+         std::vector
+        </a>
+        .
+       </p>
+       <p>
+        However, this is not used in new API. We now prefer to just use
+        <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+         std::vector
+        </a>
+        , which is less flexibile, but makes the API clearer.
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Member Typedef Documentation
+      </h2>
+      <a class="anchor" id="a6e1281a9987af69d9dafa07288da16e2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1SListHandle.html">
+             Glib::SListHandle
+            </a>
+            &lt; T, Tr &gt;::
+            <a class="el" href="classGlib_1_1SListHandle.html#a6e1281a9987af69d9dafa07288da16e2">
+             const_iterator
+            </a>
+            =
+            <a class="el" href="classGlib_1_1Container__Helpers_1_1SListHandleIterator.html">
+             Glib::Container_Helpers::SListHandleIterator
+            </a>
+            &lt;Tr&gt;
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="af4230f94789efcb7a2aaa5fb794e790f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1SListHandle.html">
+             Glib::SListHandle
+            </a>
+            &lt; T, Tr &gt;::
+            <a class="el" href="classGlib_1_1SListHandle.html#af4230f94789efcb7a2aaa5fb794e790f">
+             CppType
+            </a>
+            =  typename Tr::CppType
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a37a57e3305825f5c0d51e58efd32e7b3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1SListHandle.html">
+             Glib::SListHandle
+            </a>
+            &lt; T, Tr &gt;::
+            <a class="el" href="classGlib_1_1SListHandle.html#a37a57e3305825f5c0d51e58efd32e7b3">
+             CType
+            </a>
+            =  typename Tr::CType
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a94b6e6143584f237ebfdbfd8b912fb57">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1SListHandle.html">
+             Glib::SListHandle
+            </a>
+            &lt; T, Tr &gt;::
+            <a class="el" href="classGlib_1_1SListHandle.html#a94b6e6143584f237ebfdbfd8b912fb57">
+             difference_type
+            </a>
+            =  std::ptrdiff_t
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a06ec94378a4790f8273a20734a661870">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1SListHandle.html">
+             Glib::SListHandle
+            </a>
+            &lt; T, Tr &gt;::
+            <a class="el" href="classGlib_1_1SListHandle.html#a06ec94378a4790f8273a20734a661870">
+             iterator
+            </a>
+            =
+            <a class="el" href="classGlib_1_1Container__Helpers_1_1SListHandleIterator.html">
+             Glib::Container_Helpers::SListHandleIterator
+            </a>
+            &lt;Tr&gt;
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a4efccb4035086b60df1ae0df1008d730">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1SListHandle.html">
+             Glib::SListHandle
+            </a>
+            &lt; T, Tr &gt;::
+            <a class="el" href="classGlib_1_1SListHandle.html#a4efccb4035086b60df1ae0df1008d730">
+             size_type
+            </a>
+            =  std::size_t
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aaed4d1deca2b7af0ea6bf91e4764770e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1SListHandle.html">
+             Glib::SListHandle
+            </a>
+            &lt; T, Tr &gt;::
+            <a class="el" href="classGlib_1_1SListHandle.html#aaed4d1deca2b7af0ea6bf91e4764770e">
+             value_type
+            </a>
+            =
+            <a class="el" href="classGlib_1_1SListHandle.html#af4230f94789efcb7a2aaa5fb794e790f">
+             CppType
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="ac0b356f88cdc1ae822f3db5600ad8568">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;class Cont &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 SListHandle
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const Cont &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 container
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a14f6477eed92aeda49ade71915a6a172">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 SListHandle
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GSList *
+               </td>
+               <td class="paramname">
+                <em>
+                 glist
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                <a class="el" href="group__ContHandles.html#ga64c27560b41710ccf64a3679a3ba3f20">
+                 Glib::OwnershipType
+                </a>
+               </td>
+               <td class="paramname">
+                <em>
+                 ownership
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a0c35999d203ce8723ed2b7fd0579887e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 SListHandle
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 SListHandle
+                </a>
+                &lt; T, Tr &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a9fb1a1110213b7d5b4ac218c29bf62d5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::~
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 SListHandle
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a36e2b69424cf20535308a4370636d644">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;class Cont &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::assign_to
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                Cont &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 container
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a4e5ceedb31cd4551f928db6b3bcbb414">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1SListHandle.html#a6e1281a9987af69d9dafa07288da16e2">
+                 const_iterator
+                </a>
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::begin
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a3fc65fa85beb4c461cd44719aa71bdac">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;class Out &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::copy
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                Out
+               </td>
+               <td class="paramname">
+                <em>
+                 pdest
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a6eecd613408202c9fa0ee68c6acf51cd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GSList*
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::data
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a60e282c29d1e15cc25d161afb0de0f9f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::empty
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a6cab595825c6ddf437ca9c35e1222835">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1SListHandle.html#a6e1281a9987af69d9dafa07288da16e2">
+                 const_iterator
+                </a>
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::end
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ae224005563b6de5d31f712c20e2884c5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;class U &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::operator
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00458.html">
+                 std::deque
+                </a>
+                &lt; U &gt;
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aebc0b4cfb98b55a7b2ee2664aa968e97">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;class U &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::operator
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00464.html">
+                 std::list
+                </a>
+                &lt; U &gt;
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a5950390b42720f575398f66eda061216">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;class U &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::operator
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+                 std::vector
+                </a>
+                &lt; U &gt;
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aeb8d0ae540028ed6307f2e2a55298cff">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T , class Tr  = Glib::Container_Helpers::TypeTraits&lt;T&gt;&gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                std::size_t
+                <a class="el" href="classGlib_1_1SListHandle.html">
+                 Glib::SListHandle
+                </a>
+                &lt; T, Tr &gt;::size
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1SListHandle.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

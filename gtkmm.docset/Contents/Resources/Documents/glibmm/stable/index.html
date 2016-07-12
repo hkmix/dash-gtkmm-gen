@@ -1,0 +1,589 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   glibmm Reference Manual
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="index.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="index.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="index.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: glibmm Reference Manual
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li class="current">
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <div class="textblock">
+       <h1>
+        <a class="anchor" id="description">
+        </a>
+        Description
+       </h1>
+       <p>
+        glibmm is the official C++ interface for the popular cross-platform library Glib. It provides non-UI API that is not available in standard C++ and makes it possible for gtkmm to wrap GObject-based APIs. See also the
+        <a href="http://library.gnome.org/devel/gtkmm-tutorial/stable/">
+         Programming with gtkmm
+        </a>
+        book for a tutorial on programming with gtkmm and glibmm.
+       </p>
+       <h1>
+        <a class="anchor" id="features">
+        </a>
+        Features
+       </h1>
+       <ul>
+        <li>
+         <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+          Glib::ustring
+         </a>
+         : A UTF-8 string class that can be used interchangably with
+         <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+          std::string
+         </a>
+         . Plus
+         <a class="el" href="group__StringUtils.html">
+          String Utility Functions
+         </a>
+        </li>
+        <li>
+         <a class="el" href="classGlib_1_1RefPtr.html" title="RefPtr&lt;&gt; is a reference-counting shared smartpointer. ">
+          Glib::RefPtr
+         </a>
+         : A reference-counting smartpointer, for use with
+         <a class="el" href="classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces. ">
+          Glib::ObjectBase
+         </a>
+         or similar
+        </li>
+        <li>
+         <a class="el" href="group__CharsetConv.html">
+          Character Set Conversion
+         </a>
+        </li>
+        <li>
+         <a class="el" href="classGlib_1_1Regex.html" title="Perl-compatible regular expressions - matches strings against regular expressions. ">
+          Glib::Regex
+         </a>
+         : Regular expression string matching.
+        </li>
+        <li>
+         <a class="el" href="classGlib_1_1KeyFile.html" title="This class lets you parse, edit or create files containing groups of key-value pairs, which we call key files for lack of a better name. ">
+          Glib::KeyFile
+         </a>
+         : Parsing and writing of key files (similar to .ini files)
+        </li>
+        <li>
+         <a class="el" href="classGlib_1_1Checksum.html" title="Computes the checksum for data. ">
+          Glib::Checksum
+         </a>
+        </li>
+        <li>
+         <a class="el" href="classGlib_1_1Date.html" title="Julian calendar date. ">
+          Glib::Date
+         </a>
+         ,
+         <a class="el" href="classGlib_1_1Timer.html" title="Portable stop watch interface. ">
+          Glib::Timer
+         </a>
+         ,
+         <a class="el" href="structGlib_1_1TimeVal.html" title="Glib::TimeVal is a wrapper around the glib structure GTimeVal. ">
+          Glib::TimeVal
+         </a>
+        </li>
+        <li>
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Glib::Dispatcher
+         </a>
+         : Inter-thread communication
+        </li>
+        <li>
+         <a class="el" href="group__FileUtils.html">
+          File Utilities
+         </a>
+         and
+         <a class="el" href="group__UriUtils.html">
+          URI Utilities
+         </a>
+        </li>
+        <li>
+         <a class="el" href="group__MainLoop.html">
+          The Main Event Loop
+         </a>
+        </li>
+        <li>
+         <a class="el" href="group__Spawn.html">
+          Spawning Processes
+         </a>
+        </li>
+        <li>
+         <a class="el" href="group__Threads.html">
+          Threads
+         </a>
+        </li>
+        <li>
+         <a class="el" href="group__MiscUtils.html">
+          Miscellaneous Utility Functions
+         </a>
+        </li>
+       </ul>
+       <p>
+        giomm (part of the glibmm project) also contains:
+       </p>
+       <ul>
+        <li>
+         Asynchronous IO. See
+         <a class="el" href="classGio_1_1File.html" title="File and directory handling. ">
+          Gio::File
+         </a>
+         and the
+         <a class="el" href="group__Streams.html">
+          Stream Classes
+         </a>
+         .
+        </li>
+        <li>
+         <a class="el" href="group__NetworkIO.html">
+          Portable Network I/O Functionality
+         </a>
+        </li>
+        <li>
+         <a class="el" href="group__DBus.html">
+          D-Bus API
+         </a>
+        </li>
+        <li>
+         <a class="el" href="classGio_1_1Settings.html" title="A high-level API for application settings. ">
+          Gio::Settings
+         </a>
+         for application settings.
+        </li>
+       </ul>
+       <h1>
+        <a class="anchor" id="basics">
+        </a>
+        Basic Usage
+       </h1>
+       <p>
+        Include the glibmm header, plus giomm if necessary:
+       </p>
+       <div class="fragment">
+        <div class="line">
+         <span class="preprocessor">
+          #include &lt;glibmm.h&gt;
+         </span>
+        </div>
+        <div class="line">
+         <span class="preprocessor">
+          #include &lt;giomm.h&gt;
+         </span>
+        </div>
+       </div>
+       <!-- fragment -->
+       <p>
+        (You may include individual headers, such as
+        <code>
+         glibmm/ustring.h
+        </code>
+        instead.)
+       </p>
+       <p>
+        If your source file is
+        <code>
+         program.cc
+        </code>
+        , you can compile it with:
+       </p>
+       <div class="fragment">
+        <div class="line">
+         g++ program.cc -o program  `pkg-config --cflags --libs glibmm-2.4 giomm-2.4`
+        </div>
+       </div>
+       <!-- fragment -->
+       <p>
+        Alternatively, if using autoconf, use the following in
+        <code>
+         configure.ac:
+        </code>
+       </p>
+       <div class="fragment">
+        <div class="line">
+         PKG_CHECK_MODULES([GLIBMM], [glibmm-2.4 giomm-2.4])
+        </div>
+       </div>
+       <!-- fragment -->
+       <p>
+        Then use the generated
+        <code>
+         GLIBMM_CFLAGS
+        </code>
+        and
+        <code>
+         GLIBMM_LIBS
+        </code>
+        variables in the project Makefile.am files. For example:
+       </p>
+       <div class="fragment">
+        <div class="line">
+         program_CPPFLAGS = $(GLIBMM_CFLAGS)
+        </div>
+        <div class="line">
+         program_LDADD = $(GLIBMM_LIBS)
+        </div>
+       </div>
+       <!-- fragment -->
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="index.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

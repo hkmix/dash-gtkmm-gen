@@ -1,0 +1,1921 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::Module Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1Module.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1Module.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1Module.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::Module Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       Dynamic Loading of Modules These functions provide a portable way to dynamically load object files (commonly known as 'plug-ins').
+       <a href="classGlib_1_1Module.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/module.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a43a926bb46ae0ccc4d63217fcc0f31cd">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#a43a926bb46ae0ccc4d63217fcc0f31cd">
+           Module
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; file_name,
+          <a class="el" href="group__glibmmEnums.html#ga502283ffbe523adf38c69905ec8640f3">
+           ModuleFlags
+          </a>
+          flags=
+          <a class="el" href="group__glibmmEnums.html#ga502283ffbe523adf38c69905ec8640f3">
+           ModuleFlags
+          </a>
+          (0))
+         </td>
+        </tr>
+        <tr class="memdesc:a43a926bb46ae0ccc4d63217fcc0f31cd">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Opens a module.
+          <a href="classGlib_1_1Module.html#a43a926bb46ae0ccc4d63217fcc0f31cd">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a43a926bb46ae0ccc4d63217fcc0f31cd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6a5f5c2bbabd94fca2d99bd0ab684959">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#a6a5f5c2bbabd94fca2d99bd0ab684959">
+           Module
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1Module.html">
+           Module
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a6a5f5c2bbabd94fca2d99bd0ab684959">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab3997ab22d9cfc3391025ab120677447">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1Module.html">
+           Module
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#ab3997ab22d9cfc3391025ab120677447">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1Module.html">
+           Module
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:ab3997ab22d9cfc3391025ab120677447">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aabf47e1a8d38c9aaddb8bbf13b5a998f">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#aabf47e1a8d38c9aaddb8bbf13b5a998f">
+           Module
+          </a>
+          (
+          <a class="el" href="classGlib_1_1Module.html">
+           Module
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:aabf47e1a8d38c9aaddb8bbf13b5a998f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac61a126d9bdfd77cc91eaf66fc42b4aa">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1Module.html">
+           Module
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#ac61a126d9bdfd77cc91eaf66fc42b4aa">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGlib_1_1Module.html">
+           Module
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ac61a126d9bdfd77cc91eaf66fc42b4aa">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2b0353fc01a57653c0c60774efde274a">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#a2b0353fc01a57653c0c60774efde274a">
+           ~Module
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a2b0353fc01a57653c0c60774efde274a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Close a module.
+          <a href="classGlib_1_1Module.html#a2b0353fc01a57653c0c60774efde274a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2b0353fc01a57653c0c60774efde274a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8426c52d92aa6be0f3077ee4ee71c5a5">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#a8426c52d92aa6be0f3077ee4ee71c5a5">
+           operator bool
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a8426c52d92aa6be0f3077ee4ee71c5a5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Check whether the module was found.
+          <a href="classGlib_1_1Module.html#a8426c52d92aa6be0f3077ee4ee71c5a5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8426c52d92aa6be0f3077ee4ee71c5a5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af10c2ab1a24763db0702782d4928c06f">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#af10c2ab1a24763db0702782d4928c06f">
+           make_resident
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:af10c2ab1a24763db0702782d4928c06f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Ensures that a module will never be unloaded.
+          <a href="classGlib_1_1Module.html#af10c2ab1a24763db0702782d4928c06f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af10c2ab1a24763db0702782d4928c06f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9e424387004421e29f65491dd1643a09">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#a9e424387004421e29f65491dd1643a09">
+           get_symbol
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; symbol_name, void*&amp; symbol) const
+         </td>
+        </tr>
+        <tr class="memdesc:a9e424387004421e29f65491dd1643a09">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets a symbol pointer from the module.
+          <a href="classGlib_1_1Module.html#a9e424387004421e29f65491dd1643a09">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9e424387004421e29f65491dd1643a09">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a19636376bf76a118b572015220b4623a">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#a19636376bf76a118b572015220b4623a">
+           get_name
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a19636376bf76a118b572015220b4623a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the name of the module.
+          <a href="classGlib_1_1Module.html#a19636376bf76a118b572015220b4623a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a19636376bf76a118b572015220b4623a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac3b1db2a5e4dcb2771ce7376ab207951">
+         <td align="right" class="memItemLeft" valign="top">
+          GModule*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#ac3b1db2a5e4dcb2771ce7376ab207951">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ac3b1db2a5e4dcb2771ce7376ab207951">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad3791a114fc85afd1a07644cd839243f">
+         <td align="right" class="memItemLeft" valign="top">
+          const GModule*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#ad3791a114fc85afd1a07644cd839243f">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:ad3791a114fc85afd1a07644cd839243f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ad135ce3f9e6b8b7441bd4ca8da2099fb">
+         <td align="right" class="memItemLeft" valign="top">
+          static bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#ad135ce3f9e6b8b7441bd4ca8da2099fb">
+           get_supported
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ad135ce3f9e6b8b7441bd4ca8da2099fb">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if modules are supported on the current platform.
+          <a href="classGlib_1_1Module.html#ad135ce3f9e6b8b7441bd4ca8da2099fb">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad135ce3f9e6b8b7441bd4ca8da2099fb">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a40669f490a2e90d7c39ede58a7ef5c2b">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#a40669f490a2e90d7c39ede58a7ef5c2b">
+           get_last_error
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a40669f490a2e90d7c39ede58a7ef5c2b">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets a string describing the last module error.
+          <a href="classGlib_1_1Module.html#a40669f490a2e90d7c39ede58a7ef5c2b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a40669f490a2e90d7c39ede58a7ef5c2b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5ea64e82147d3ba9edb75f71dfffc87c">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#a5ea64e82147d3ba9edb75f71dfffc87c">
+           build_path
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; directory, const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; module_name)
+         </td>
+        </tr>
+        <tr class="memdesc:a5ea64e82147d3ba9edb75f71dfffc87c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A portable way to build the filename of a module.
+          <a href="classGlib_1_1Module.html#a5ea64e82147d3ba9edb75f71dfffc87c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5ea64e82147d3ba9edb75f71dfffc87c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a12a777846a059ffc8277ba2f196cb68e">
+         <td align="right" class="memItemLeft" valign="top">
+          GModule*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Module.html#a12a777846a059ffc8277ba2f196cb68e">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a12a777846a059ffc8277ba2f196cb68e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        Dynamic Loading of Modules These functions provide a portable way to dynamically load object files (commonly known as 'plug-ins').
+       </p>
+       <p>
+        The current implementation supports all systems that provide an implementation of dlopen() (e.g. Linux/Sun), as well as HP-UX via its shl_load() mechanism, and Windows platforms via DLLs.
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a43a926bb46ae0ccc4d63217fcc0f31cd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::Module::Module
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+                 std::string
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 file_name
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                <a class="el" href="group__glibmmEnums.html#ga502283ffbe523adf38c69905ec8640f3">
+                 ModuleFlags
+                </a>
+               </td>
+               <td class="paramname">
+                <em>
+                 flags
+                </em>
+                =
+                <code>
+                 <a class="el" href="group__glibmmEnums.html#ga502283ffbe523adf38c69905ec8640f3">
+                  ModuleFlags
+                 </a>
+                 (0)
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Opens a module.
+        </p>
+        <p>
+         First of all it tries to open file_name as a module. If that fails and file_name has the ".la"-suffix (and is a libtool archive) it tries to open the corresponding module. If that fails and it doesn't have the proper module suffix for the platform (G_MODULE_SUFFIX), this suffix will be appended and the corresponding module will be opended. If that fails and file_name doesn't have the ".la"-suffix, this suffix is appended and it tries to open the corresponding module.
+        </p>
+        <p>
+         Use operator bool() to see whether the operation succeeded. For instance,
+        </p>
+        <div class="fragment">
+         <div class="line">
+          <a class="code" href="classGlib_1_1Module.html">
+           Glib::Module
+          </a>
+          module(
+          <span class="stringliteral">
+           "plugins/helloworld"
+          </span>
+          );
+         </div>
+         <div class="line">
+          <span class="keywordflow">
+           if
+          </span>
+          (module)
+         </div>
+         <div class="line">
+          {
+         </div>
+         <div class="line">
+          <span class="keywordtype">
+           void
+          </span>
+          * func =
+          <span class="keyword">
+           nullptr
+          </span>
+          ;
+         </div>
+         <div class="line">
+          <span class="keywordtype">
+           bool
+          </span>
+          found =
+          <a class="code" href="classGlib_1_1Module.html#a9e424387004421e29f65491dd1643a09">
+           get_symbol
+          </a>
+          (
+          <span class="stringliteral">
+           "some_function"
+          </span>
+          , func);
+         </div>
+         <div class="line">
+          }
+         </div>
+        </div>
+        <!-- fragment -->
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              file_name
+             </td>
+             <td>
+              The library filename to open
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              flags
+             </td>
+             <td>
+              Flags to configure the load process
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6a5f5c2bbabd94fca2d99bd0ab684959">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::Module::Module
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1Module.html">
+                 Module
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aabf47e1a8d38c9aaddb8bbf13b5a998f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::Module::Module
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1Module.html">
+                 Module
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a2b0353fc01a57653c0c60774efde274a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                virtual Glib::Module::~Module
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              virtual
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Close a module.
+        </p>
+        <p>
+         The module will be removed from memory, unless
+         <code>
+          make_resident
+         </code>
+         has been called.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a5ea64e82147d3ba9edb75f71dfffc87c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+                 std::string
+                </a>
+                Glib::Module::build_path
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+                 std::string
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 directory
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+                 std::string
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 module_name
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A portable way to build the filename of a module.
+        </p>
+        <p>
+         The platform-specific prefix and suffix are added to the filename, if needed, and the result is added to the directory, using the correct separator character.
+        </p>
+        <p>
+         The directory should specify the directory where the module can be found. It can be an empty string to indicate that the module is in a standard platform-specific directory, though this is not recommended since the wrong module may be found.
+        </p>
+        <p>
+         For example, calling
+         <code>
+          <a class="el" href="classGlib_1_1Module.html#a5ea64e82147d3ba9edb75f71dfffc87c" title="A portable way to build the filename of a module. ">
+           build_path()
+          </a>
+         </code>
+         on a Linux system with a directory of
+         <code>
+          /lib
+         </code>
+         and a module_name of "mylibrary" will return
+         <code>
+          /lib/libmylibrary.so
+         </code>
+         . On a Windows system, using
+         <code>
+          \Windows
+         </code>
+         as the directory it will return
+         <code>
+          \Windows\mylibrary.dll
+         </code>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              directory
+             </td>
+             <td>
+              The directory the module is in
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              module_name
+             </td>
+             <td>
+              The name of the module
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The system-specific filename of the module A portable way to build the filename of a module. The platform-specific prefix and suffix are added to the filename, if needed, and the result is added to the directory, using the correct separator character.
+         </dd>
+        </dl>
+        <p>
+         The directory should specify the directory where the module can be found. It can be
+         <code>
+          nullptr
+         </code>
+         or an empty string to indicate that the module is in a standard platform-specific directory, though this is not recommended since the wrong module may be found.
+        </p>
+        <p>
+         For example, calling g_module_build_path() on a Linux system with a
+         <em>
+          directory
+         </em>
+         of
+         <code>
+          /lib
+         </code>
+         and a
+         <em>
+          module_name
+         </em>
+         of "mylibrary" will return
+         <code>
+          /lib/libmylibrary.so
+         </code>
+         . On a Windows system, using
+         <code>
+          \\Windows
+         </code>
+         as the directory it will return
+         <code>
+          \\Windows\\mylibrary.dll
+         </code>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              directory
+             </td>
+             <td>
+              The directory where the module is. This can be
+              <code>
+               nullptr
+              </code>
+              or the empty string to indicate that the standard platform-specific directories will be used, though that is not recommended.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              module_name
+             </td>
+             <td>
+              The name of the module.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The complete path of the module, including the standard library prefix and suffix. This should be freed when no longer needed.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a40669f490a2e90d7c39ede58a7ef5c2b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+                 std::string
+                </a>
+                Glib::Module::get_last_error
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets a string describing the last module error.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The error string
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a19636376bf76a118b572015220b4623a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            Glib::Module::get_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the name of the module.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The name of the module
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad135ce3f9e6b8b7441bd4ca8da2099fb">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static bool Glib::Module::get_supported
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks if modules are supported on the current platform.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true if available, false otherwise
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9e424387004421e29f65491dd1643a09">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::Module::get_symbol
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             symbol_name
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            void *&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             symbol
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets a symbol pointer from the module.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              symbol_name
+             </td>
+             <td>
+              The name of the symbol to lookup
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              symbol
+             </td>
+             <td>
+              A pointer to set to the symbol
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          True if the symbol was found, false otherwise.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac3b1db2a5e4dcb2771ce7376ab207951">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GModule* Glib::Module::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ad3791a114fc85afd1a07644cd839243f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GModule* Glib::Module::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="af10c2ab1a24763db0702782d4928c06f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::Module::make_resident
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Ensures that a module will never be unloaded.
+        </p>
+        <p>
+         Any calls to the
+         <a class="el" href="classGlib_1_1Module.html" title="Dynamic Loading of Modules These functions provide a portable way to dynamically load object files (c...">
+          Glib::Module
+         </a>
+         destructor will not unload the module.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a8426c52d92aa6be0f3077ee4ee71c5a5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Glib::Module::operator bool
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Check whether the module was found.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ab3997ab22d9cfc3391025ab120677447">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1Module.html">
+                 Module
+                </a>
+                &amp; Glib::Module::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1Module.html">
+                 Module
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac61a126d9bdfd77cc91eaf66fc42b4aa">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1Module.html">
+                 Module
+                </a>
+                &amp; Glib::Module::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1Module.html">
+                 Module
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="a12a777846a059ffc8277ba2f196cb68e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GModule* Glib::Module::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1Module.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

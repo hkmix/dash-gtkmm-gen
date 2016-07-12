@@ -1,0 +1,1138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::Dispatcher Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1Dispatcher.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1Dispatcher.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1Dispatcher.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::Dispatcher Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       Signal class for inter-thread communication.
+       <a href="classGlib_1_1Dispatcher.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/dispatcher.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a1883255c63f36e1d218ccf3f1abfa992">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Dispatcher.html#a1883255c63f36e1d218ccf3f1abfa992">
+           Dispatcher
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a1883255c63f36e1d218ccf3f1abfa992">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Create new
+          <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+           Dispatcher
+          </a>
+          instance using the default main context.
+          <a href="classGlib_1_1Dispatcher.html#a1883255c63f36e1d218ccf3f1abfa992">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1883255c63f36e1d218ccf3f1abfa992">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3595a55dc1ded7ab29bc12fc43eb9f52">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Dispatcher.html#a3595a55dc1ded7ab29bc12fc43eb9f52">
+           Dispatcher
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1Dispatcher.html">
+           Dispatcher
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a3595a55dc1ded7ab29bc12fc43eb9f52">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3622fc7da1b70860b0cb3ac4abb55070">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1Dispatcher.html">
+           Dispatcher
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Dispatcher.html#a3622fc7da1b70860b0cb3ac4abb55070">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1Dispatcher.html">
+           Dispatcher
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a3622fc7da1b70860b0cb3ac4abb55070">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a14692fe3e39140fc164cbd03149a7ce1">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Dispatcher.html#a14692fe3e39140fc164cbd03149a7ce1">
+           Dispatcher
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGlib_1_1MainContext.html">
+           MainContext
+          </a>
+          &gt;&amp; context)
+         </td>
+        </tr>
+        <tr class="memdesc:a14692fe3e39140fc164cbd03149a7ce1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Create new
+          <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+           Dispatcher
+          </a>
+          instance using an arbitrary main context.
+          <a href="classGlib_1_1Dispatcher.html#a14692fe3e39140fc164cbd03149a7ce1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a14692fe3e39140fc164cbd03149a7ce1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af9484ae270bc15667fff210165d5f1bd">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Dispatcher.html#af9484ae270bc15667fff210165d5f1bd">
+           ~Dispatcher
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:af9484ae270bc15667fff210165d5f1bd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a07b89c90f931db118c8c184d0615ce92">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Dispatcher.html#a07b89c90f931db118c8c184d0615ce92">
+           emit
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a07b89c90f931db118c8c184d0615ce92">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4610275deedf1324bf71afde1c8c71ea">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Dispatcher.html#a4610275deedf1324bf71afde1c8c71ea">
+           operator()
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a4610275deedf1324bf71afde1c8c71ea">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a63645395ac79c03b5ec9e81d8099dea7">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Dispatcher.html#a63645395ac79c03b5ec9e81d8099dea7">
+           connect
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt;&amp; slot)
+         </td>
+        </tr>
+        <tr class="separator:a63645395ac79c03b5ec9e81d8099dea7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2e486005033e1928bb1afc63fa2ec053">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Dispatcher.html#a2e486005033e1928bb1afc63fa2ec053">
+           connect
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt;&amp;&amp; slot)
+         </td>
+        </tr>
+        <tr class="separator:a2e486005033e1928bb1afc63fa2ec053">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        Signal class for inter-thread communication.
+       </p>
+       <p>
+        <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+         Glib::Dispatcher
+        </a>
+        works similar to sigc::signal&lt;void&gt;. But unlike normal signals, the notification happens asynchronously through a pipe. This is a simple and efficient way of communicating between threads, and especially useful in a thread model with a single GUI thread.
+       </p>
+       <p>
+        No mutex locking is involved, apart from the operating system's internal I/O locking. That implies some usage rules:
+       </p>
+       <ul>
+        <li>
+         Only one thread may connect to the signal and receive notification, but multiple senders are allowed even without locking.
+        </li>
+        <li>
+         The GLib main loop must run in the receiving thread (this will be the GUI thread usually).
+        </li>
+        <li>
+         The
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Dispatcher
+         </a>
+         object must be instantiated by the receiver thread.
+        </li>
+        <li>
+         The
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Dispatcher
+         </a>
+         object should be instantiated before creating any of the sender threads, if you want to avoid extra locking.
+        </li>
+        <li>
+         The
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Dispatcher
+         </a>
+         object must be deleted by the receiver thread.
+        </li>
+        <li>
+         All
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Dispatcher
+         </a>
+         objects instantiated by the same receiver thread must use the same main context.
+        </li>
+       </ul>
+       <p>
+        Notes about performance:
+       </p>
+       <ul>
+        <li>
+         After instantiation,
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Glib::Dispatcher
+         </a>
+         will never lock any mutexes on its own. The interaction with the GLib main loop might involve locking on the
+         <em>
+          receiver
+         </em>
+         side. The
+         <em>
+          sender
+         </em>
+         side, however, is guaranteed not to lock, except for internal locking in the
+         <code>
+          write()
+         </code>
+         system call.
+        </li>
+        <li>
+         All
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Dispatcher
+         </a>
+         instances of a receiver thread share the same pipe. That is, if you use
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Glib::Dispatcher
+         </a>
+         only to notify the GUI thread, only one pipe is created no matter how many
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Dispatcher
+         </a>
+         objects you have.
+        </li>
+       </ul>
+       <p>
+        Using
+        <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+         Glib::Dispatcher
+        </a>
+        on Windows:
+       </p>
+       <p>
+        <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+         Glib::Dispatcher
+        </a>
+        also works on win32-based systems. Unfortunately though, the implementation cannot use a pipe on win32 and therefore does have to lock a mutex on emission, too. However, the impact on performance is likely minor and the notification still happens asynchronously. Apart from the additional lock the behavior matches the Unix implementation.
+       </p>
+       <dl>
+        <dt>
+         <b>
+          Examples:
+         </b>
+        </dt>
+        <dd>
+         <a class="el" href="thread_2dispatcher_8cc-example.html#_a3">
+          thread/dispatcher.cc
+         </a>
+         .
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a1883255c63f36e1d218ccf3f1abfa992">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Glib::Dispatcher::Dispatcher
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Create new
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Dispatcher
+         </a>
+         instance using the default main context.
+        </p>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              <a class="el" href="classGlib_1_1FileError.html" title="Exception class for file-related errors. ">
+               Glib::FileError
+              </a>
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a3595a55dc1ded7ab29bc12fc43eb9f52">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::Dispatcher::Dispatcher
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1Dispatcher.html">
+                 Dispatcher
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a14692fe3e39140fc164cbd03149a7ce1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::Dispatcher::Dispatcher
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGlib_1_1MainContext.html">
+                 MainContext
+                </a>
+                &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 context
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Create new
+         <a class="el" href="classGlib_1_1Dispatcher.html" title="Signal class for inter-thread communication. ">
+          Dispatcher
+         </a>
+         instance using an arbitrary main context.
+        </p>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              <a class="el" href="classGlib_1_1FileError.html" title="Exception class for file-related errors. ">
+               Glib::FileError
+              </a>
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af9484ae270bc15667fff210165d5f1bd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::Dispatcher::~Dispatcher
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a63645395ac79c03b5ec9e81d8099dea7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+             sigc::connection
+            </a>
+            Glib::Dispatcher::connect
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt; void &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a2e486005033e1928bb1afc63fa2ec053">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+             sigc::connection
+            </a>
+            Glib::Dispatcher::connect
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt; void &gt; &amp;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="since_2_48">
+         <dt>
+          <b>
+           <a class="el" href="since_2_48.html#_since_2_48000001">
+            Since glibmm 2.48:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a07b89c90f931db118c8c184d0615ce92">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::Dispatcher::emit
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a4610275deedf1324bf71afde1c8c71ea">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::Dispatcher::operator()
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a3622fc7da1b70860b0cb3ac4abb55070">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1Dispatcher.html">
+                 Dispatcher
+                </a>
+                &amp; Glib::Dispatcher::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1Dispatcher.html">
+                 Dispatcher
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1Dispatcher.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

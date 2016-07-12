@@ -1,0 +1,702 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Modules
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="modules.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="modules.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="modules.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Modules
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <div class="textblock">
+       Here is a list of all modules:
+      </div>
+      <div class="directory">
+       <div class="levels">
+        [detail level
+        <span onclick="javascript:toggleLevel(1);">
+         1
+        </span>
+        <span onclick="javascript:toggleLevel(2);">
+         2
+        </span>
+        ]
+       </div>
+       <table class="directory">
+        <tbody>
+         <tr class="even" id="row_0_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__Base64.html" target="_self">
+            Base64 routines
+           </a>
+          </td>
+          <td class="desc">
+           <a class="el" href="namespaceGlib_1_1Base64.html">
+            Base64
+           </a>
+           encoding/decoding routines
+          </td>
+         </tr>
+         <tr id="row_1_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__CharsetConv.html" target="_self">
+            Character Set Conversion
+           </a>
+          </td>
+          <td class="desc">
+           Utility functions for converting strings between different character sets
+          </td>
+         </tr>
+         <tr class="even" id="row_2_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__DBus.html" target="_self">
+            D-Bus API
+           </a>
+          </td>
+          <td class="desc">
+           API to use D-Bus services as a client or to implement a D-Bus service
+          </td>
+         </tr>
+         <tr id="row_3_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__FileUtils.html" target="_self">
+            File Utilities
+           </a>
+          </td>
+          <td class="desc">
+           Various file-related classes and functions
+          </td>
+         </tr>
+         <tr class="even" id="row_4_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__glibmmValue.html" target="_self">
+            Generic Values
+           </a>
+          </td>
+          <td class="desc">
+           Glib::Value&lt;&gt; is specialized for almost any type used within the glibmm and gtkmm libraries
+          </td>
+         </tr>
+         <tr id="row_5_">
+          <td class="entry">
+           <span style="width:0px;display:inline-block;">
+           </span>
+           <span class="arrow" id="arr_5_" onclick="toggleFolder('5_')">
+            ▼
+           </span>
+           <a class="el" href="group__ContHandles.html" target="_self">
+            Generic container converters
+           </a>
+          </td>
+          <td class="desc">
+          </td>
+         </tr>
+         <tr class="even" id="row_5_0_">
+          <td class="entry">
+           <span style="width:32px;display:inline-block;">
+           </span>
+           <a class="el" href="group__ContHelpers.html" target="_self">
+            Helper classes
+           </a>
+          </td>
+          <td class="desc">
+          </td>
+         </tr>
+         <tr id="row_6_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__PatternMatching.html" target="_self">
+            Glob-style Pattern Matching
+           </a>
+          </td>
+          <td class="desc">
+           Match strings against patterns containing '*' (wildcard) and '?' (joker)
+          </td>
+         </tr>
+         <tr class="even" id="row_7_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__MiscUtils.html" target="_self">
+            Miscellaneous Utility Functions
+           </a>
+          </td>
+          <td class="desc">
+           Miscellaneous Utility Functions – a selection of portable utility functions
+          </td>
+         </tr>
+         <tr id="row_8_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__giommContentType.html" target="_self">
+            Platform-specific content typing
+           </a>
+          </td>
+          <td class="desc">
+           A content type is a platform specific string that defines the type of a file
+          </td>
+         </tr>
+         <tr class="even" id="row_9_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__NetworkIO.html" target="_self">
+            Portable Network I/O Functionality
+           </a>
+          </td>
+          <td class="desc">
+          </td>
+         </tr>
+         <tr id="row_10_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__Random.html" target="_self">
+            Random Numbers
+           </a>
+          </td>
+          <td class="desc">
+           Pseudo random number generator
+          </td>
+         </tr>
+         <tr class="even" id="row_11_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__ShellUtils.html" target="_self">
+            Shell-related Utilities
+           </a>
+          </td>
+          <td class="desc">
+           Shell-like command line handling
+          </td>
+         </tr>
+         <tr id="row_12_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__Markup.html" target="_self">
+            Simple XML Subset Parser
+           </a>
+          </td>
+          <td class="desc">
+           The
+           <a class="el" href="namespaceGlib_1_1Markup.html">
+            Glib::Markup
+           </a>
+           parser is intended to parse a simple markup format that's a subset of XML
+          </td>
+         </tr>
+         <tr class="even" id="row_13_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__Spawn.html" target="_self">
+            Spawning Processes
+           </a>
+          </td>
+          <td class="desc">
+           Process launching with fork()/exec()
+          </td>
+         </tr>
+         <tr id="row_14_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__Streams.html" target="_self">
+            Stream Classes
+           </a>
+          </td>
+          <td class="desc">
+          </td>
+         </tr>
+         <tr class="even" id="row_15_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__StringUtils.html" target="_self">
+            String Utility Functions
+           </a>
+          </td>
+          <td class="desc">
+           This section describes a number of utility functions for creating and manipulating strings, as well as other string-related stuff
+          </td>
+         </tr>
+         <tr id="row_16_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__MainLoop.html" target="_self">
+            The Main Event Loop
+           </a>
+          </td>
+          <td class="desc">
+           Manages all available sources of events
+          </td>
+         </tr>
+         <tr class="even" id="row_17_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__ThreadPools.html" target="_self">
+            Thread Pools
+           </a>
+          </td>
+          <td class="desc">
+           Pools of threads to execute work concurrently
+          </td>
+         </tr>
+         <tr id="row_18_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__Threads.html" target="_self">
+            Threads
+           </a>
+          </td>
+          <td class="desc">
+           Thread abstraction; including threads, different mutexes, conditions and thread private data
+          </td>
+         </tr>
+         <tr class="even" id="row_19_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__UriUtils.html" target="_self">
+            URI Utilities
+           </a>
+          </td>
+          <td class="desc">
+           Various uri-related functions
+          </td>
+         </tr>
+         <tr id="row_20_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__Unicode.html" target="_self">
+            Unicode Manipulation
+           </a>
+          </td>
+          <td class="desc">
+           Functions operating on
+           <a class="el" href="namespaceGlib_1_1Unicode.html">
+            Unicode
+           </a>
+           characters and UTF-8 strings
+          </td>
+         </tr>
+         <tr class="even" id="row_21_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__Variant.html" target="_self">
+            Variant Data Types
+           </a>
+          </td>
+          <td class="desc">
+           The
+           <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+            Variant
+           </a>
+           classes deal with strongly typed variant data
+          </td>
+         </tr>
+         <tr id="row_22_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__giommEnums.html" target="_self">
+            giomm Enums and Flags
+           </a>
+          </td>
+          <td class="desc">
+          </td>
+         </tr>
+         <tr class="even" id="row_23_">
+          <td class="entry">
+           <span style="width:16px;display:inline-block;">
+           </span>
+           <a class="el" href="group__glibmmEnums.html" target="_self">
+            glibmm Enums and Flags
+           </a>
+          </td>
+          <td class="desc">
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+      <!-- directory -->
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="modules.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

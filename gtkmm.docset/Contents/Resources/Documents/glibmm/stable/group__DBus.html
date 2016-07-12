@@ -1,0 +1,5140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   D-Bus API
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="group__DBus.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="group__DBus.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="group__DBus.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: D-Bus API
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       API to use D-Bus services as a client or to implement a D-Bus service.
+       <a href="group__DBus.html#details">
+        More...
+       </a>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="nested-classes">
+           </a>
+           Classes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1AuthObserver.html">
+           Gio::DBus::AuthObserver
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          <a class="el" href="classGio_1_1DBus_1_1AuthObserver.html" title="AuthObserver - An object used for authenticating connections. ">
+           AuthObserver
+          </a>
+          - An object used for authenticating connections.
+          <a href="classGio_1_1DBus_1_1AuthObserver.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+           Gio::DBus::Connection
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A D-Bus
+          <a class="el" href="classGio_1_1DBus_1_1Connection.html" title="A D-Bus Connection. ">
+           Connection
+          </a>
+          .
+          <a href="classGio_1_1DBus_1_1Connection.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceVTable.html">
+           Gio::DBus::InterfaceVTable
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This represents a virtual table for handling properties and method calls for a D-Bus interface.
+          <a href="classGio_1_1DBus_1_1InterfaceVTable.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1AnnotationInfo.html">
+           Gio::DBus::AnnotationInfo
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Stores information about an annotation.
+          <a href="classGio_1_1DBus_1_1AnnotationInfo.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1ArgInfo.html">
+           Gio::DBus::ArgInfo
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          <a class="el" href="classGio_1_1DBus_1_1ArgInfo.html" title="ArgInfo - Stores information about an argument for a method or a signal. ">
+           ArgInfo
+          </a>
+          - Stores information about an argument for a method or a signal.
+          <a href="classGio_1_1DBus_1_1ArgInfo.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1MethodInfo.html">
+           Gio::DBus::MethodInfo
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Stores information about a method on an D-Bus interface.
+          <a href="classGio_1_1DBus_1_1MethodInfo.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1SignalInfo.html">
+           Gio::DBus::SignalInfo
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Stores information about a signal on a D-Bus interface.
+          <a href="classGio_1_1DBus_1_1SignalInfo.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1PropertyInfo.html">
+           Gio::DBus::PropertyInfo
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Stores information about a property on a D-Bus interface.
+          <a href="classGio_1_1DBus_1_1PropertyInfo.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html">
+           Gio::DBus::InterfaceInfo
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Stores information about a D-Bus interface.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1NodeInfo.html">
+           Gio::DBus::NodeInfo
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          <a class="el" href="classGio_1_1DBus_1_1NodeInfo.html" title="NodeInfo - Stores information about nodes in a remote object hierarchy. ">
+           NodeInfo
+          </a>
+          - Stores information about nodes in a remote object hierarchy.
+          <a href="classGio_1_1DBus_1_1NodeInfo.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1Message.html">
+           Gio::DBus::Message
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A type for representing D-Bus messages that can be sent or received on a
+          <a class="el" href="classGio_1_1DBus_1_1Connection.html" title="A D-Bus Connection. ">
+           Connection
+          </a>
+          .
+          <a href="classGio_1_1DBus_1_1Message.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1MethodInvocation.html">
+           Gio::DBus::MethodInvocation
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          An
+          <a class="el" href="classGio_1_1DBus_1_1Object.html" title="Object - Base type for D-Bus objects. ">
+           Object
+          </a>
+          for handling remote calls.
+          <a href="classGio_1_1DBus_1_1MethodInvocation.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1Proxy.html">
+           Gio::DBus::Proxy
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A client-side proxy.
+          <a href="classGio_1_1DBus_1_1Proxy.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1Server.html">
+           Gio::DBus::Server
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This is a helper for listening to and accepting D-Bus connections.
+          <a href="classGio_1_1DBus_1_1Server.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1SubtreeVTable.html">
+           Gio::DBus::SubtreeVTable
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This represents a virtual table for subtrees registered with
+          <a class="el" href="classGio_1_1DBus_1_1Connection.html#ade98c63ff3e2ce7906ca4a2f63849e07" title="Registers a whole subtree of “dynamic” objects. ">
+           Gio::DBus::Connection::register_subtree()
+          </a>
+          .
+          <a href="classGio_1_1DBus_1_1SubtreeVTable.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="typedef-members">
+           </a>
+           Typedefs
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:gab7640ad4f168b22492f5783148ad0d69">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#gab7640ad4f168b22492f5783148ad0d69">
+           Gio::DBus::SlotBusAcquired
+          </a>
+          =
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void, const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+           Gio::DBus::Connection
+          </a>
+          &gt;&amp;,
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+        </tr>
+        <tr class="memdesc:gab7640ad4f168b22492f5783148ad0d69">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          For example, void on_bus_acquired(const Glib::RefPtr&lt;Gio::DBus::Connection&gt;&amp; connection, const
+          <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+           Glib::ustring
+          </a>
+          &amp; name);.
+          <a href="group__DBus.html#gab7640ad4f168b22492f5783148ad0d69">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:gab7640ad4f168b22492f5783148ad0d69">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga41021af407491538d8bfd65ab63f456a">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga41021af407491538d8bfd65ab63f456a">
+           Gio::DBus::SlotNameAcquired
+          </a>
+          =
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void, const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+           Gio::DBus::Connection
+          </a>
+          &gt;&amp;,
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+        </tr>
+        <tr class="memdesc:ga41021af407491538d8bfd65ab63f456a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          For example, void on_name_acquired(const Glib::RefPtr&lt;Gio::DBus::Connection&gt;&amp; connection, const
+          <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+           Glib::ustring
+          </a>
+          &amp; name);.
+          <a href="group__DBus.html#ga41021af407491538d8bfd65ab63f456a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga41021af407491538d8bfd65ab63f456a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga69b58dba209c6b3a5f5f20fcd492c973">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga69b58dba209c6b3a5f5f20fcd492c973">
+           Gio::DBus::SlotNameLost
+          </a>
+          =
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void, const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+           Gio::DBus::Connection
+          </a>
+          &gt;&amp;,
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+        </tr>
+        <tr class="memdesc:ga69b58dba209c6b3a5f5f20fcd492c973">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          For example, void on_name_lost(const Glib::RefPtr&lt;Gio::DBus::Connection&gt;&amp; connection, const
+          <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+           Glib::ustring
+          </a>
+          &amp; name);.
+          <a href="group__DBus.html#ga69b58dba209c6b3a5f5f20fcd492c973">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga69b58dba209c6b3a5f5f20fcd492c973">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga200acb252ecaa113828e23b9001a7a8e">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga200acb252ecaa113828e23b9001a7a8e">
+           Gio::DBus::SlotNameAppeared
+          </a>
+          =
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void, const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+           Gio::DBus::Connection
+          </a>
+          &gt;&amp;,
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          , const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; &gt;
+         </td>
+        </tr>
+        <tr class="memdesc:ga200acb252ecaa113828e23b9001a7a8e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          For example, void on_name_appeared(const Glib::RefPtr&lt;Gio::DBus::Connection&gt;&amp; connection, const
+          <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+           Glib::ustring
+          </a>
+          &amp; name, const
+          <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+           Glib::ustring
+          </a>
+          &amp; name_owner);.
+          <a href="group__DBus.html#ga200acb252ecaa113828e23b9001a7a8e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga200acb252ecaa113828e23b9001a7a8e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga01da22e2e222d03382d93e6741be6935">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga01da22e2e222d03382d93e6741be6935">
+           Gio::DBus::SlotNameVanished
+          </a>
+          =
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void, const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+           Gio::DBus::Connection
+          </a>
+          &gt;&amp;,
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+        </tr>
+        <tr class="memdesc:ga01da22e2e222d03382d93e6741be6935">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          For example, void on_name_vanished(const Glib::RefPtr&lt;Gio::DBus::Connection&gt;&amp; connection, const
+          <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+           Glib::ustring
+          </a>
+          &amp; name);.
+          <a href="group__DBus.html#ga01da22e2e222d03382d93e6741be6935">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga01da22e2e222d03382d93e6741be6935">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="enum-members">
+           </a>
+           Enumerations
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:gac8c292dccde34caf51d094d2b794d78d">
+         <td align="right" class="memItemLeft" valign="top">
+          enum
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#gac8c292dccde34caf51d094d2b794d78d">
+           Gio::DBus::Message::ByteOrder
+          </a>
+          {
+          <br/>
+          <br/>
+          <a class="el" href="group__DBus.html#ggac8c292dccde34caf51d094d2b794d78da584cce05a0bf010785e9f0f91e545e02">
+           Gio::DBus::Message::BYTE_ORDER_BIG_ENDIAN
+          </a>
+          = 'B',
+          <br/>
+          <br/>
+          <a class="el" href="group__DBus.html#ggac8c292dccde34caf51d094d2b794d78dadb9033fe7d977ea0b78d2132a618e61d">
+           Gio::DBus::Message::BYTE_ORDER_LITTLE_ENDIAN
+          </a>
+          = 'l'
+          <br/>
+          <br/>
+          }
+         </td>
+        </tr>
+        <tr class="separator:gac8c292dccde34caf51d094d2b794d78d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="func-members">
+           </a>
+           Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:gab2c056ac3cce34b4a58df19166d48fae">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#gab2c056ac3cce34b4a58df19166d48fae">
+           Gio::DBus::Address::is_address
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           string
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:gab2c056ac3cce34b4a58df19166d48fae">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if
+          <em>
+           string
+          </em>
+          is a D-Bus address.
+          <a href="group__DBus.html#gab2c056ac3cce34b4a58df19166d48fae">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:gab2c056ac3cce34b4a58df19166d48fae">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga2f8d4a3d5bda1d3fcc4f4f3c8cc0c214">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga2f8d4a3d5bda1d3fcc4f4f3c8cc0c214">
+           Gio::DBus::Address::is_supported
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; address)
+         </td>
+        </tr>
+        <tr class="memdesc:ga2f8d4a3d5bda1d3fcc4f4f3c8cc0c214">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Like
+          <a class="el" href="group__DBus.html#gab2c056ac3cce34b4a58df19166d48fae" title="Checks if string is a D-Bus address. ">
+           is_address()
+          </a>
+          but also checks if the library supports the transports in
+          <em>
+           address
+          </em>
+          and that key/value pairs for each transport are valid.
+          <a href="group__DBus.html#ga2f8d4a3d5bda1d3fcc4f4f3c8cc0c214">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga2f8d4a3d5bda1d3fcc4f4f3c8cc0c214">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga2d53e540686789c834cef9a3ac447bf4">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga2d53e540686789c834cef9a3ac447bf4">
+           Gio::DBus::Address::get_stream
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; address, const SlotAsyncReady slot, const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; Cancellable &gt;&amp; cancellable)
+         </td>
+        </tr>
+        <tr class="memdesc:ga2d53e540686789c834cef9a3ac447bf4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Asynchronously connects to an endpoint specified by
+          <em>
+           address
+          </em>
+          and sets up the connection so it is in a state to run the client-side of the D-Bus authentication conversation.
+          <a href="group__DBus.html#ga2d53e540686789c834cef9a3ac447bf4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga2d53e540686789c834cef9a3ac447bf4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga8fa5586dec918dfa553dab97f0f8e342">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; IOStream &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga8fa5586dec918dfa553dab97f0f8e342">
+           Gio::DBus::Address::get_stream_finish
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; AsyncResult &gt;&amp; res,
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; out_guid)
+         </td>
+        </tr>
+        <tr class="memdesc:ga8fa5586dec918dfa553dab97f0f8e342">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Finishes an operation started with
+          <a class="el" href="group__DBus.html#ga2d53e540686789c834cef9a3ac447bf4" title="Asynchronously connects to an endpoint specified by address and sets up the connection so it is in a ...">
+           get_stream()
+          </a>
+          .
+          <a href="group__DBus.html#ga8fa5586dec918dfa553dab97f0f8e342">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga8fa5586dec918dfa553dab97f0f8e342">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga7da9ac3910fa800a6a42b2667b1a0135">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; IOStream &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga7da9ac3910fa800a6a42b2667b1a0135">
+           Gio::DBus::Address::get_stream_finish
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; AsyncResult &gt;&amp; res)
+         </td>
+        </tr>
+        <tr class="memdesc:ga7da9ac3910fa800a6a42b2667b1a0135">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Finishes an operation started with
+          <a class="el" href="group__DBus.html#ga2d53e540686789c834cef9a3ac447bf4" title="Asynchronously connects to an endpoint specified by address and sets up the connection so it is in a ...">
+           get_stream()
+          </a>
+          .
+          <a href="group__DBus.html#ga7da9ac3910fa800a6a42b2667b1a0135">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga7da9ac3910fa800a6a42b2667b1a0135">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga95b08ddb9dedf51b585fa7a5da4f4233">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; IOStream &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga95b08ddb9dedf51b585fa7a5da4f4233">
+           Gio::DBus::Address::get_stream_sync
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; address, const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; Cancellable &gt;&amp; cancellable,
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; out_guid)
+         </td>
+        </tr>
+        <tr class="memdesc:ga95b08ddb9dedf51b585fa7a5da4f4233">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Synchronously connects to an endpoint specified by
+          <em>
+           address
+          </em>
+          and sets up the connection so it is in a state to run the client-side of the D-Bus authentication conversation.
+          <a href="group__DBus.html#ga95b08ddb9dedf51b585fa7a5da4f4233">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga95b08ddb9dedf51b585fa7a5da4f4233">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:gaec661c3dff45b4a5626b9dc1bc586b3d">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; IOStream &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#gaec661c3dff45b4a5626b9dc1bc586b3d">
+           Gio::DBus::Address::get_stream_sync
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; address, const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; Cancellable &gt;&amp; cancellable)
+         </td>
+        </tr>
+        <tr class="memdesc:gaec661c3dff45b4a5626b9dc1bc586b3d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Synchronously connects to an endpoint specified by
+          <em>
+           address
+          </em>
+          and sets up the connection so it is in a state to run the client-side of the D-Bus authentication conversation.
+          <a href="group__DBus.html#gaec661c3dff45b4a5626b9dc1bc586b3d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:gaec661c3dff45b4a5626b9dc1bc586b3d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga3acef7d113b30124fe11e88c2d2a60a4">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga3acef7d113b30124fe11e88c2d2a60a4">
+           Gio::DBus::Address::get_for_bus_sync
+          </a>
+          (BusType bus_type, const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; Cancellable &gt;&amp; cancellable)
+         </td>
+        </tr>
+        <tr class="memdesc:ga3acef7d113b30124fe11e88c2d2a60a4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Synchronously looks up the D-Bus address for the well-known message bus instance specified by
+          <em>
+           bus_type
+          </em>
+          .
+          <a href="group__DBus.html#ga3acef7d113b30124fe11e88c2d2a60a4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga3acef7d113b30124fe11e88c2d2a60a4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga2b6d40f35340690128b06b289388d120">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga2b6d40f35340690128b06b289388d120">
+           Gio::DBus::ErrorUtils::is_remote_error
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1Error.html">
+           Glib::Error
+          </a>
+          &amp; error)
+         </td>
+        </tr>
+        <tr class="memdesc:ga2b6d40f35340690128b06b289388d120">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if
+          <em>
+           error
+          </em>
+          represents an error received via D-Bus from a remote peer.
+          <a href="group__DBus.html#ga2b6d40f35340690128b06b289388d120">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga2b6d40f35340690128b06b289388d120">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga94461b5c18260b017f3404d82ad5321a">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga94461b5c18260b017f3404d82ad5321a">
+           Gio::DBus::ErrorUtils::get_remote_error
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1Error.html">
+           Glib::Error
+          </a>
+          &amp; error)
+         </td>
+        </tr>
+        <tr class="memdesc:ga94461b5c18260b017f3404d82ad5321a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the D-Bus error name used for
+          <em>
+           error
+          </em>
+          , if any.
+          <a href="group__DBus.html#ga94461b5c18260b017f3404d82ad5321a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga94461b5c18260b017f3404d82ad5321a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga2f38119e0765fd1654363fcdee6e4c76">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga2f38119e0765fd1654363fcdee6e4c76">
+           Gio::DBus::ErrorUtils::strip_remote_error
+          </a>
+          (
+          <a class="el" href="classGlib_1_1Error.html">
+           Glib::Error
+          </a>
+          &amp; error)
+         </td>
+        </tr>
+        <tr class="memdesc:ga2f38119e0765fd1654363fcdee6e4c76">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Looks for extra information in the error message used to recover the D-Bus error name and strips it if found.
+          <a href="group__DBus.html#ga2f38119e0765fd1654363fcdee6e4c76">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga2f38119e0765fd1654363fcdee6e4c76">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga6e63011eb298f04364d38d44ae51d1e5">
+         <td align="right" class="memItemLeft" valign="top">
+          guint
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga6e63011eb298f04364d38d44ae51d1e5">
+           Gio::DBus::own_name
+          </a>
+          (BusType bus_type, const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name, const SlotBusAcquired&amp; bus_acquired_slot=SlotBusAcquired(), const SlotNameAcquired&amp; name_acquired_slot=SlotNameAcquired(), const SlotNameLost&amp; name_lost_slot=SlotNameLost(), BusNameOwnerFlags flags=
+          <a class="el" href="namespaceGio_1_1DBus.html#ga90e13b67fdf97528695baa4a6a18b051a900fa7dcd6f4b5263dc9b42969439140">
+           Gio::DBus::BUS_NAME_OWNER_FLAGS_NONE
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:ga6e63011eb298f04364d38d44ae51d1e5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Starts acquiring
+          <em>
+           name
+          </em>
+          on the bus specified by
+          <em>
+           bus_type
+          </em>
+          and calls
+          <em>
+           name_acquired_slot
+          </em>
+          and name_
+          <em>
+           lost_slot
+          </em>
+          when the name is acquired respectively lost.
+          <a href="group__DBus.html#ga6e63011eb298f04364d38d44ae51d1e5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga6e63011eb298f04364d38d44ae51d1e5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga1f11b499bbff8835c429c0fd534df4b0">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga1f11b499bbff8835c429c0fd534df4b0">
+           Gio::DBus::generate_guid
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ga1f11b499bbff8835c429c0fd534df4b0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Generate a D-Bus GUID that can be used with e.g.
+          <a href="group__DBus.html#ga1f11b499bbff8835c429c0fd534df4b0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga1f11b499bbff8835c429c0fd534df4b0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:gaf95791c56c136194a67f3855a4416966">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#gaf95791c56c136194a67f3855a4416966">
+           Gio::DBus::is_guid
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           string
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:gaf95791c56c136194a67f3855a4416966">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if
+          <em>
+           string
+          </em>
+          is a D-Bus GUID.
+          <a href="group__DBus.html#gaf95791c56c136194a67f3855a4416966">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:gaf95791c56c136194a67f3855a4416966">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga05c67dee67b2ccccdcb0c19714abd5e1">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga05c67dee67b2ccccdcb0c19714abd5e1">
+           Gio::DBus::is_name
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           string
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:ga05c67dee67b2ccccdcb0c19714abd5e1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if
+          <em>
+           string
+          </em>
+          is a valid D-Bus bus name (either unique or well-known).
+          <a href="group__DBus.html#ga05c67dee67b2ccccdcb0c19714abd5e1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga05c67dee67b2ccccdcb0c19714abd5e1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga04c3f3efa55c252ce9299a934f3bc9ed">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga04c3f3efa55c252ce9299a934f3bc9ed">
+           Gio::DBus::is_unique_name
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           string
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:ga04c3f3efa55c252ce9299a934f3bc9ed">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if
+          <em>
+           string
+          </em>
+          is a valid D-Bus unique bus name.
+          <a href="group__DBus.html#ga04c3f3efa55c252ce9299a934f3bc9ed">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga04c3f3efa55c252ce9299a934f3bc9ed">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga2383c7d151a59adc91e4fbfbd1e4652a">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#ga2383c7d151a59adc91e4fbfbd1e4652a">
+           Gio::DBus::is_member_name
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           string
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:ga2383c7d151a59adc91e4fbfbd1e4652a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if
+          <em>
+           string
+          </em>
+          is a valid D-Bus member (e.g.
+          <a href="group__DBus.html#ga2383c7d151a59adc91e4fbfbd1e4652a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga2383c7d151a59adc91e4fbfbd1e4652a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:gaf8f12ce74f2521c357d814a0105359ea">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#gaf8f12ce74f2521c357d814a0105359ea">
+           Gio::DBus::is_interface_name
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           string
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:gaf8f12ce74f2521c357d814a0105359ea">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if
+          <em>
+           string
+          </em>
+          is a valid D-Bus interface name.
+          <a href="group__DBus.html#gaf8f12ce74f2521c357d814a0105359ea">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:gaf8f12ce74f2521c357d814a0105359ea">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:gaa202af27755f2ea8d0736f8ab3a75dba">
+         <td align="right" class="memItemLeft" valign="top">
+          guint
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#gaa202af27755f2ea8d0736f8ab3a75dba">
+           Gio::DBus::watch_name
+          </a>
+          (BusType bus_type, const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name, const SlotNameAppeared&amp; name_appeared_slot=SlotNameAppeared(), const SlotNameVanished&amp; name_vanished_slot=SlotNameVanished(), BusNameWatcherFlags flags=
+          <a class="el" href="namespaceGio_1_1DBus.html#ga724a510e53ed4df47411bcdbaf680c85a23e333ede42826b165a4d40b0f55ad22">
+           Gio::DBus::BUS_NAME_WATCHER_FLAGS_NONE
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:gaa202af27755f2ea8d0736f8ab3a75dba">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Starts watching
+          <em>
+           name
+          </em>
+          on the bus specified by
+          <em>
+           bus_type
+          </em>
+          and calls
+          <em>
+           name_appeared_slot
+          </em>
+          and
+          <em>
+           name_vanished_slot
+          </em>
+          when the name is known to have a owner respectively known to lose its owner.
+          <a href="group__DBus.html#gaa202af27755f2ea8d0736f8ab3a75dba">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:gaa202af27755f2ea8d0736f8ab3a75dba">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:gaf07c31497172ba813b9322dad4570927">
+         <td align="right" class="memItemLeft" valign="top">
+          guint
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#gaf07c31497172ba813b9322dad4570927">
+           Gio::DBus::watch_name
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; Connection &gt;&amp; connection, const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name, const SlotNameAppeared&amp; name_appeared_slot=SlotNameAppeared(), const SlotNameVanished&amp; name_vanished_slot=SlotNameVanished(), BusNameWatcherFlags flags=
+          <a class="el" href="namespaceGio_1_1DBus.html#ga724a510e53ed4df47411bcdbaf680c85a23e333ede42826b165a4d40b0f55ad22">
+           Gio::DBus::BUS_NAME_WATCHER_FLAGS_NONE
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:gaf07c31497172ba813b9322dad4570927">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="el" href="group__DBus.html#gaa202af27755f2ea8d0736f8ab3a75dba" title="Starts watching name on the bus specified by bus_type and calls name_appeared_slot and name_vanished_...">
+           watch_name()
+          </a>
+          function that takes a
+          <a class="el" href="classGio_1_1DBus_1_1Connection.html" title="A D-Bus Connection. ">
+           Connection
+          </a>
+          instead of a BusType.
+          <a href="group__DBus.html#gaf07c31497172ba813b9322dad4570927">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:gaf07c31497172ba813b9322dad4570927">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:gaa5106315b09d6fc5ad019ecfcc8d5342">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__DBus.html#gaa5106315b09d6fc5ad019ecfcc8d5342">
+           Gio::DBus::unwatch_name
+          </a>
+          (guint watcher_id)
+         </td>
+        </tr>
+        <tr class="memdesc:gaa5106315b09d6fc5ad019ecfcc8d5342">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Stops watching a name.
+          <a href="group__DBus.html#gaa5106315b09d6fc5ad019ecfcc8d5342">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:gaa5106315b09d6fc5ad019ecfcc8d5342">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <p>
+       API to use D-Bus services as a client or to implement a D-Bus service.
+      </p>
+      <p>
+       To write client code, see
+       <a class="el" href="classGio_1_1DBus_1_1Proxy.html" title="A client-side proxy. ">
+        Gio::DBus::Proxy
+       </a>
+       . To export objects on the bus for other clients, see
+       <a class="el" href="group__DBus.html#ga6e63011eb298f04364d38d44ae51d1e5" title="Starts acquiring name on the bus specified by bus_type and calls name_acquired_slot and name_lost_slo...">
+        Gio::DBus::own_name()
+       </a>
+       , for instance.
+      </p>
+      <h2 class="groupheader">
+       Typedef Documentation
+      </h2>
+      <a class="anchor" id="gab7640ad4f168b22492f5783148ad0d69">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="group__DBus.html#gab7640ad4f168b22492f5783148ad0d69">
+             Gio::DBus::SlotBusAcquired
+            </a>
+            = typedef
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt;void, const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+             Gio::DBus::Connection
+            </a>
+            &gt;&amp;,
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt;
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         For example, void on_bus_acquired(const Glib::RefPtr&lt;Gio::DBus::Connection&gt;&amp; connection, const
+         <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+          Glib::ustring
+         </a>
+         &amp; name);.
+        </p>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000157">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga41021af407491538d8bfd65ab63f456a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="group__DBus.html#ga41021af407491538d8bfd65ab63f456a">
+             Gio::DBus::SlotNameAcquired
+            </a>
+            = typedef
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt;void, const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+             Gio::DBus::Connection
+            </a>
+            &gt;&amp;,
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt;
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         For example, void on_name_acquired(const Glib::RefPtr&lt;Gio::DBus::Connection&gt;&amp; connection, const
+         <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+          Glib::ustring
+         </a>
+         &amp; name);.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ga200acb252ecaa113828e23b9001a7a8e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="group__DBus.html#ga200acb252ecaa113828e23b9001a7a8e">
+             Gio::DBus::SlotNameAppeared
+            </a>
+            = typedef
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt;void, const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+             Gio::DBus::Connection
+            </a>
+            &gt;&amp;,
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            , const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;&gt;
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         For example, void on_name_appeared(const Glib::RefPtr&lt;Gio::DBus::Connection&gt;&amp; connection, const
+         <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+          Glib::ustring
+         </a>
+         &amp; name, const
+         <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+          Glib::ustring
+         </a>
+         &amp; name_owner);.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ga69b58dba209c6b3a5f5f20fcd492c973">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="group__DBus.html#ga69b58dba209c6b3a5f5f20fcd492c973">
+             Gio::DBus::SlotNameLost
+            </a>
+            = typedef
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt;void, const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+             Gio::DBus::Connection
+            </a>
+            &gt;&amp;,
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt;
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         For example, void on_name_lost(const Glib::RefPtr&lt;Gio::DBus::Connection&gt;&amp; connection, const
+         <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+          Glib::ustring
+         </a>
+         &amp; name);.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ga01da22e2e222d03382d93e6741be6935">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="group__DBus.html#ga01da22e2e222d03382d93e6741be6935">
+             Gio::DBus::SlotNameVanished
+            </a>
+            = typedef
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt;void, const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+             Gio::DBus::Connection
+            </a>
+            &gt;&amp;,
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt;
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         For example, void on_name_vanished(const Glib::RefPtr&lt;Gio::DBus::Connection&gt;&amp; connection, const
+         <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+          Glib::ustring
+         </a>
+         &amp; name);.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Enumeration Type Documentation
+      </h2>
+      <a class="anchor" id="gac8c292dccde34caf51d094d2b794d78d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            enum
+            <a class="el" href="group__DBus.html#gac8c292dccde34caf51d094d2b794d78d">
+             Gio::DBus::Message::ByteOrder
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <table class="fieldtable">
+         <tbody>
+          <tr>
+           <th colspan="2">
+            Enumerator
+           </th>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="ggac8c292dccde34caf51d094d2b794d78da584cce05a0bf010785e9f0f91e545e02">
+            </a>
+            BYTE_ORDER_BIG_ENDIAN
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="ggac8c292dccde34caf51d094d2b794d78dadb9033fe7d977ea0b78d2132a618e61d">
+            </a>
+            BYTE_ORDER_LITTLE_ENDIAN
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Function Documentation
+      </h2>
+      <a class="anchor" id="ga1f11b499bbff8835c429c0fd534df4b0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            Gio::DBus::generate_guid
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Generate a D-Bus GUID that can be used with e.g.
+        </p>
+        <p>
+         <a class="el" href="classGio_1_1DBus_1_1Connection.html#ab8be27670e0620aad315dfc0c1622ab6" title="Asynchronously sets up a D-Bus connection for exchanging D-Bus messages with the end represented by s...">
+          Gio::DBus::Connection::create()
+         </a>
+         .
+        </p>
+        <p>
+         See the D-Bus specification regarding what strings are valid D-Bus GUID (for example, D-Bus GUIDs are not RFC-4122 compliant).
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A valid D-Bus GUID.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000163">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga3acef7d113b30124fe11e88c2d2a60a4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            Gio::DBus::Address::get_for_bus_sync
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__giommEnums.html#gaa00806111608557f425bf09bdf4b0087">
+             BusType
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             bus_type
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1Cancellable.html">
+             Cancellable
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             cancellable
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Synchronously looks up the D-Bus address for the well-known message bus instance specified by
+         <em>
+          bus_type
+         </em>
+         .
+        </p>
+        <p>
+         This may involve using various platform specific mechanisms.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              bus_type
+             </td>
+             <td>
+              A BusType.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              cancellable
+             </td>
+             <td>
+              A
+              <a class="el" href="classGio_1_1Cancellable.html" title="Allows actions to be cancelled. ">
+               Cancellable
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A valid D-Bus address string for
+          <em>
+           bus_type
+          </em>
+          .
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              Glib::Error.
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000123">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga94461b5c18260b017f3404d82ad5321a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gio::DBus::ErrorUtils::get_remote_error
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1Error.html">
+             Glib::Error
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             error
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the D-Bus error name used for
+         <em>
+          error
+         </em>
+         , if any.
+        </p>
+        <p>
+         This function is guaranteed to return a D-Bus error name for all
+         <a class="el" href="classGlib_1_1Error.html">
+          Glib::Error
+         </a>
+         instances returned from functions handling remote method calls (e.g.
+         <a class="el" href="classGio_1_1DBus_1_1Connection.html#a230fbe18c49f2fe73857db0919b14edb" title="Finishes an operation started with call(). ">
+          Gio::DBus::Connection::call_finish()
+         </a>
+         ) unless
+         <a class="el" href="group__DBus.html#ga2f38119e0765fd1654363fcdee6e4c76" title="Looks for extra information in the error message used to recover the D-Bus error name and strips it i...">
+          strip_remote_error()
+         </a>
+         has been used on
+         <em>
+          error
+         </em>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              error
+             </td>
+             <td>
+              A
+              <a class="el" href="classGlib_1_1Error.html">
+               Glib::Error
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          An allocated string or
+          <code>
+           0
+          </code>
+          if the D-Bus error name could not be found.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000145">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga2d53e540686789c834cef9a3ac447bf4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gio::DBus::Address::get_stream
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             address
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="namespaceGio.html#aecaa02709f9ab83fa2b36d2571665cbe">
+             SlotAsyncReady
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1Cancellable.html">
+             Cancellable
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             cancellable
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Asynchronously connects to an endpoint specified by
+         <em>
+          address
+         </em>
+         and sets up the connection so it is in a state to run the client-side of the D-Bus authentication conversation.
+        </p>
+        <p>
+         When the operation is finished,
+         <em>
+          slot
+         </em>
+         will be invoked. You can then call
+         <a class="el" href="group__DBus.html#ga8fa5586dec918dfa553dab97f0f8e342" title="Finishes an operation started with get_stream(). ">
+          get_stream_finish()
+         </a>
+         to get the result of the operation.
+        </p>
+        <p>
+         This is an asynchronous failable function. See
+         <a class="el" href="group__DBus.html#ga95b08ddb9dedf51b585fa7a5da4f4233" title="Synchronously connects to an endpoint specified by address and sets up the connection so it is in a s...">
+          get_stream_sync()
+         </a>
+         for the synchronous version.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              address
+             </td>
+             <td>
+              A valid D-Bus address.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              cancellable
+             </td>
+             <td>
+              A
+              <a class="el" href="classGio_1_1Cancellable.html" title="Allows actions to be cancelled. ">
+               Cancellable
+              </a>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A SlotAsyncReady to call when the request is satisfied.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000118">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga8fa5586dec918dfa553dab97f0f8e342">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;IOStream&gt; Gio::DBus::Address::get_stream_finish
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1AsyncResult.html">
+             AsyncResult
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             res
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             out_guid
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Finishes an operation started with
+         <a class="el" href="group__DBus.html#ga2d53e540686789c834cef9a3ac447bf4" title="Asynchronously connects to an endpoint specified by address and sets up the connection so it is in a ...">
+          get_stream()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              res
+             </td>
+             <td>
+              A
+              <a class="el" href="classGio_1_1AsyncResult.html" title="Provides a base class for implementing asynchronous function results. ">
+               AsyncResult
+              </a>
+              obtained from the SlotAsyncReady passed to
+              <a class="el" href="group__DBus.html#ga2d53e540686789c834cef9a3ac447bf4" title="Asynchronously connects to an endpoint specified by address and sets up the connection so it is in a ...">
+               get_stream()
+              </a>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              out_guid
+             </td>
+             <td>
+              Return location to store the GUID extracted from address, if any.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGio_1_1IOStream.html" title="IOStream - Base class for implementing read/write streams. ">
+           IOStream
+          </a>
+          .
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              Glib::Error.
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000119">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga7da9ac3910fa800a6a42b2667b1a0135">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;IOStream&gt; Gio::DBus::Address::get_stream_finish
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1AsyncResult.html">
+             AsyncResult
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             res
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Finishes an operation started with
+         <a class="el" href="group__DBus.html#ga2d53e540686789c834cef9a3ac447bf4" title="Asynchronously connects to an endpoint specified by address and sets up the connection so it is in a ...">
+          get_stream()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              res
+             </td>
+             <td>
+              A
+              <a class="el" href="classGio_1_1AsyncResult.html" title="Provides a base class for implementing asynchronous function results. ">
+               AsyncResult
+              </a>
+              obtained from the SlotAsyncReady passed to
+              <a class="el" href="group__DBus.html#ga2d53e540686789c834cef9a3ac447bf4" title="Asynchronously connects to an endpoint specified by address and sets up the connection so it is in a ...">
+               get_stream()
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGio_1_1IOStream.html" title="IOStream - Base class for implementing read/write streams. ">
+           IOStream
+          </a>
+          .
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              Glib::Error.
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000120">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga95b08ddb9dedf51b585fa7a5da4f4233">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;IOStream&gt; Gio::DBus::Address::get_stream_sync
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             address
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1Cancellable.html">
+             Cancellable
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             cancellable
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             out_guid
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Synchronously connects to an endpoint specified by
+         <em>
+          address
+         </em>
+         and sets up the connection so it is in a state to run the client-side of the D-Bus authentication conversation.
+        </p>
+        <p>
+         This is a synchronous failable function. See
+         <a class="el" href="group__DBus.html#ga2d53e540686789c834cef9a3ac447bf4" title="Asynchronously connects to an endpoint specified by address and sets up the connection so it is in a ...">
+          get_stream()
+         </a>
+         for the asynchronous version.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              address
+             </td>
+             <td>
+              A valid D-Bus address.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              cancellable
+             </td>
+             <td>
+              A
+              <a class="el" href="classGio_1_1Cancellable.html" title="Allows actions to be cancelled. ">
+               Cancellable
+              </a>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              out_guid
+             </td>
+             <td>
+              A return location to store the GUID extracted from address, if any.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGio_1_1IOStream.html" title="IOStream - Base class for implementing read/write streams. ">
+           IOStream
+          </a>
+          .
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              Glib::Error.
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000121">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="gaec661c3dff45b4a5626b9dc1bc586b3d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;IOStream&gt; Gio::DBus::Address::get_stream_sync
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             address
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1Cancellable.html">
+             Cancellable
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             cancellable
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Synchronously connects to an endpoint specified by
+         <em>
+          address
+         </em>
+         and sets up the connection so it is in a state to run the client-side of the D-Bus authentication conversation.
+        </p>
+        <p>
+         This is a synchronous failable function. See
+         <a class="el" href="group__DBus.html#ga2d53e540686789c834cef9a3ac447bf4" title="Asynchronously connects to an endpoint specified by address and sets up the connection so it is in a ...">
+          get_stream()
+         </a>
+         for the asynchronous version.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              address
+             </td>
+             <td>
+              A valid D-Bus address.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              cancellable
+             </td>
+             <td>
+              A
+              <a class="el" href="classGio_1_1Cancellable.html" title="Allows actions to be cancelled. ">
+               Cancellable
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGio_1_1IOStream.html" title="IOStream - Base class for implementing read/write streams. ">
+           IOStream
+          </a>
+          .
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              Glib::Error.
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000122">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="gab2c056ac3cce34b4a58df19166d48fae">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gio::DBus::Address::is_address
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             string
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks if
+         <em>
+          string
+         </em>
+         is a D-Bus address.
+        </p>
+        <p>
+         This doesn't check if
+         <em>
+          string
+         </em>
+         is actually supported by BusServer or BusConnection - use is_supported_address() to do more checks.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              string
+             </td>
+             <td>
+              A string.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if
+          <em>
+           string
+          </em>
+          is a valid D-Bus address,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000116">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="gaf95791c56c136194a67f3855a4416966">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gio::DBus::is_guid
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             string
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks if
+         <em>
+          string
+         </em>
+         is a D-Bus GUID.
+        </p>
+        <p>
+         See the D-Bus specification regarding what strings are valid D-Bus GUID (for example, D-Bus GUIDs are not RFC-4122 compliant).
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              string
+             </td>
+             <td>
+              The string to check.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if string is a guid,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000164">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="gaf8f12ce74f2521c357d814a0105359ea">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gio::DBus::is_interface_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             string
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks if
+         <em>
+          string
+         </em>
+         is a valid D-Bus interface name.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              string
+             </td>
+             <td>
+              The string to check.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if valid,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000168">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga2383c7d151a59adc91e4fbfbd1e4652a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gio::DBus::is_member_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             string
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks if
+         <em>
+          string
+         </em>
+         is a valid D-Bus member (e.g.
+        </p>
+        <p>
+         signal or method) name.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              string
+             </td>
+             <td>
+              The string to check.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if valid,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000167">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga05c67dee67b2ccccdcb0c19714abd5e1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gio::DBus::is_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             string
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks if
+         <em>
+          string
+         </em>
+         is a valid D-Bus bus name (either unique or well-known).
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              string
+             </td>
+             <td>
+              The string to check.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if valid,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000165">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga2b6d40f35340690128b06b289388d120">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gio::DBus::ErrorUtils::is_remote_error
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1Error.html">
+             Glib::Error
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             error
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks if
+         <em>
+          error
+         </em>
+         represents an error received via D-Bus from a remote peer.
+        </p>
+        <p>
+         If so, use
+         <a class="el" href="group__DBus.html#ga94461b5c18260b017f3404d82ad5321a" title="Gets the D-Bus error name used for error, if any. ">
+          get_remote_error()
+         </a>
+         to get the name of the error.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              error
+             </td>
+             <td>
+              A
+              <a class="el" href="classGlib_1_1Error.html">
+               Glib::Error
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if error represents an error from a remote peer,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000144">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga2f8d4a3d5bda1d3fcc4f4f3c8cc0c214">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gio::DBus::Address::is_supported
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             address
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Like
+         <a class="el" href="group__DBus.html#gab2c056ac3cce34b4a58df19166d48fae" title="Checks if string is a D-Bus address. ">
+          is_address()
+         </a>
+         but also checks if the library supports the transports in
+         <em>
+          address
+         </em>
+         and that key/value pairs for each transport are valid.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              address
+             </td>
+             <td>
+              A supposed address.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if
+          <em>
+           address
+          </em>
+          is a valid D-Bus address that is supported by this library,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              Glib::Error.
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000117">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga04c3f3efa55c252ce9299a934f3bc9ed">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gio::DBus::is_unique_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             string
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks if
+         <em>
+          string
+         </em>
+         is a valid D-Bus unique bus name.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              string
+             </td>
+             <td>
+              The string to check.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if valid,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000166">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga6e63011eb298f04364d38d44ae51d1e5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            guint Gio::DBus::own_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__giommEnums.html#gaa00806111608557f425bf09bdf4b0087">
+             BusType
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             bus_type
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="group__DBus.html#gab7640ad4f168b22492f5783148ad0d69">
+             SlotBusAcquired
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             bus_acquired_slot
+            </em>
+            =
+            <code>
+             <a class="el" href="group__DBus.html#gab7640ad4f168b22492f5783148ad0d69">
+              SlotBusAcquired
+             </a>
+             ()
+            </code>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="group__DBus.html#ga41021af407491538d8bfd65ab63f456a">
+             SlotNameAcquired
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name_acquired_slot
+            </em>
+            =
+            <code>
+             <a class="el" href="group__DBus.html#ga41021af407491538d8bfd65ab63f456a">
+              SlotNameAcquired
+             </a>
+             ()
+            </code>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="group__DBus.html#ga69b58dba209c6b3a5f5f20fcd492c973">
+             SlotNameLost
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name_lost_slot
+            </em>
+            =
+            <code>
+             <a class="el" href="group__DBus.html#ga69b58dba209c6b3a5f5f20fcd492c973">
+              SlotNameLost
+             </a>
+             ()
+            </code>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__giommEnums.html#ga90e13b67fdf97528695baa4a6a18b051">
+             BusNameOwnerFlags
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             flags
+            </em>
+            =
+            <code>
+             <a class="el" href="namespaceGio_1_1DBus.html#ga90e13b67fdf97528695baa4a6a18b051a900fa7dcd6f4b5263dc9b42969439140">
+              Gio::DBus::BUS_NAME_OWNER_FLAGS_NONE
+             </a>
+            </code>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Starts acquiring
+         <em>
+          name
+         </em>
+         on the bus specified by
+         <em>
+          bus_type
+         </em>
+         and calls
+         <em>
+          name_acquired_slot
+         </em>
+         and name_
+         <em>
+          lost_slot
+         </em>
+         when the name is acquired respectively lost.
+        </p>
+        <p>
+         Slots will be invoked in the thread-default main loop of the thread you are calling this function from.
+        </p>
+        <p>
+         You are guaranteed that one of the
+         <em>
+          name_acquired_slot
+         </em>
+         and
+         <em>
+          name_lost_slot
+         </em>
+         slots will be invoked after calling this function - there are three possible cases:
+        </p>
+        <ul>
+         <li>
+          <em>
+           name_lost_slot
+          </em>
+          with a nullptr connection (if a connection to the bus can't be made).
+         </li>
+         <li>
+          <em>
+           bus_acquired_slot
+          </em>
+          then
+          <em>
+           name_lost_slot
+          </em>
+          (if the name can't be obtained)
+         </li>
+         <li>
+          <em>
+           bus_acquired_slot
+          </em>
+          then
+          <em>
+           name_acquired_slot
+          </em>
+          (if the name was obtained).
+         </li>
+        </ul>
+        <p>
+         When you are done owning the name, just call
+         <a class="el" href="namespaceGio_1_1DBus.html#a56eb716650330a147b033d7aec56e0ed" title="Stops owning a name. ">
+          unown_name()
+         </a>
+         with the owner id this function returns.
+        </p>
+        <p>
+         If the name is acquired or lost (for example another application could acquire the name if you allow replacement or the application currently owning the name exits), the slots are also invoked. If the
+         <a class="el" href="classGio_1_1DBus_1_1Connection.html" title="A D-Bus Connection. ">
+          Connection
+         </a>
+         that is used for attempting to own the name closes, then
+         <em>
+          name_lost_slot
+         </em>
+         is invoked since it is no longer possible for other processes to access the process.
+        </p>
+        <p>
+         You cannot use
+         <a class="el" href="group__DBus.html#ga6e63011eb298f04364d38d44ae51d1e5" title="Starts acquiring name on the bus specified by bus_type and calls name_acquired_slot and name_lost_slo...">
+          own_name()
+         </a>
+         several times for the same name (unless interleaved with calls to
+         <a class="el" href="namespaceGio_1_1DBus.html#a56eb716650330a147b033d7aec56e0ed" title="Stops owning a name. ">
+          unown_name()
+         </a>
+         ) - only the first call will work.
+        </p>
+        <p>
+         Another guarantee is that invocations of name_
+         <em>
+          acquired_slot
+         </em>
+         and
+         <em>
+          name_lost_slot
+         </em>
+         are guaranteed to alternate; that is, if
+         <em>
+          name_acquired_slot
+         </em>
+         is invoked then you are guaranteed that the next time one of the slots is invoked, it will be
+         <em>
+          name_lost_slot
+         </em>
+         . The reverse is also true.
+        </p>
+        <p>
+         If you plan on exporting objects (using e.g. Gio::DbusConnection::register_object()), note that it is generally too late to export the objects in
+         <em>
+          name_acquired_slot
+         </em>
+         . Instead, you can do this in
+         <em>
+          bus_acquired_slot
+         </em>
+         since you are guaranteed that this will run before name is requested from the bus.
+        </p>
+        <p>
+         This behavior makes it very simple to write applications that wants to own names and export objects.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              bus_type
+             </td>
+             <td>
+              The type of bus to own a name on.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              The well-known name to own.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              bus_acquired_slot
+             </td>
+             <td>
+              Slot to invoke when connected to the bus of type bus_type.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name_acquired_slot
+             </td>
+             <td>
+              Slot to invoke when name is acquired.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name_lost_slot
+             </td>
+             <td>
+              Slot to invoke when name is lost.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              flags
+             </td>
+             <td>
+              A set of flags from the BusNameOwnerFlags enumeration.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          An identifier (never 0) that an be used with
+          <a class="el" href="namespaceGio_1_1DBus.html#a56eb716650330a147b033d7aec56e0ed" title="Stops owning a name. ">
+           unown_name()
+          </a>
+          to stop owning the name.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000158">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga2f38119e0765fd1654363fcdee6e4c76">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gio::DBus::ErrorUtils::strip_remote_error
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1Error.html">
+             Glib::Error
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             error
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Looks for extra information in the error message used to recover the D-Bus error name and strips it if found.
+        </p>
+        <p>
+         If stripped, the message field in
+         <em>
+          error
+         </em>
+         will correspond exactly to what was received on the wire.
+        </p>
+        <p>
+         This is typically used when presenting errors to the end user.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              error
+             </td>
+             <td>
+              A
+              <a class="el" href="classGlib_1_1Error.html">
+               Glib::Error
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if information was stripped,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000146">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="gaa5106315b09d6fc5ad019ecfcc8d5342">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gio::DBus::unwatch_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            guint
+           </td>
+           <td class="paramname">
+            <em>
+             watcher_id
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Stops watching a name.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              watcher_id
+             </td>
+             <td>
+              An identifier obtained from
+              <a class="el" href="group__DBus.html#gaa202af27755f2ea8d0736f8ab3a75dba" title="Starts watching name on the bus specified by bus_type and calls name_appeared_slot and name_vanished_...">
+               watch_name()
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="gaa202af27755f2ea8d0736f8ab3a75dba">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            guint Gio::DBus::watch_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__giommEnums.html#gaa00806111608557f425bf09bdf4b0087">
+             BusType
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             bus_type
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="group__DBus.html#ga200acb252ecaa113828e23b9001a7a8e">
+             SlotNameAppeared
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name_appeared_slot
+            </em>
+            =
+            <code>
+             <a class="el" href="group__DBus.html#ga200acb252ecaa113828e23b9001a7a8e">
+              SlotNameAppeared
+             </a>
+             ()
+            </code>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="group__DBus.html#ga01da22e2e222d03382d93e6741be6935">
+             SlotNameVanished
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name_vanished_slot
+            </em>
+            =
+            <code>
+             <a class="el" href="group__DBus.html#ga01da22e2e222d03382d93e6741be6935">
+              SlotNameVanished
+             </a>
+             ()
+            </code>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__giommEnums.html#ga724a510e53ed4df47411bcdbaf680c85">
+             BusNameWatcherFlags
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             flags
+            </em>
+            =
+            <code>
+             <a class="el" href="namespaceGio_1_1DBus.html#ga724a510e53ed4df47411bcdbaf680c85a23e333ede42826b165a4d40b0f55ad22">
+              Gio::DBus::BUS_NAME_WATCHER_FLAGS_NONE
+             </a>
+            </code>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Starts watching
+         <em>
+          name
+         </em>
+         on the bus specified by
+         <em>
+          bus_type
+         </em>
+         and calls
+         <em>
+          name_appeared_slot
+         </em>
+         and
+         <em>
+          name_vanished_slot
+         </em>
+         when the name is known to have a owner respectively known to lose its owner.
+        </p>
+        <p>
+         Callbacks will be invoked in the thread-default main loop of the thread you are calling this function from.
+        </p>
+        <p>
+         You are guaranteed that one of the slot will be invoked after calling this function. When you are done watching the name, just call
+         <a class="el" href="group__DBus.html#gaa5106315b09d6fc5ad019ecfcc8d5342" title="Stops watching a name. ">
+          unwatch_name()
+         </a>
+         with the watcher id this function returns.
+        </p>
+        <p>
+         If the name vanishes or appears (for example the application owning the name could restart), the slot are also invoked. If the
+         <a class="el" href="classGio_1_1DBus_1_1Connection.html" title="A D-Bus Connection. ">
+          Connection
+         </a>
+         that is used for watching the name disconnects, then
+         <em>
+          name_vanished_slot
+         </em>
+         is invoked since it is no longer possible to access the name.
+        </p>
+        <p>
+         Another guarantee is that invocations of
+         <em>
+          name_appeared_slot
+         </em>
+         and
+         <em>
+          name_vanished_slot
+         </em>
+         are guaranteed to alternate; that is, if
+         <em>
+          name_appeared_slot
+         </em>
+         is invoked then you are guaranteed that the next time one of the slot is invoked, it will be
+         <em>
+          name_vanished_slot
+         </em>
+         . The reverse is also true.
+        </p>
+        <p>
+         This behavior makes it very simple to write applications that wants to take action when a certain name exists, see the C API's Example 9, “Simple application watching a name” for more information. Basically, the application should create object proxies in
+         <em>
+          name_appeared_slot
+         </em>
+         and destroy them again (if any) in
+         <em>
+          name_vanished_slot
+         </em>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              bus_type
+             </td>
+             <td>
+              The type of bus to watch a name on.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              The name (well-known or unique) to watch.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name_appeared_slot
+             </td>
+             <td>
+              Slot to invoke when name is known to exist.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name_vanished_slot
+             </td>
+             <td>
+              Slot to invoke when name is known to not exist.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              flags
+             </td>
+             <td>
+              Flags from the BusNameWatcherFlags enumeration.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          An identifier (never 0) that can be used with
+          <a class="el" href="group__DBus.html#gaa5106315b09d6fc5ad019ecfcc8d5342" title="Stops watching a name. ">
+           unwatch_name()
+          </a>
+          to stop watching the name.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000169">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="gaf07c31497172ba813b9322dad4570927">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            guint Gio::DBus::watch_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1DBus_1_1Connection.html">
+             Connection
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             connection
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="group__DBus.html#ga200acb252ecaa113828e23b9001a7a8e">
+             SlotNameAppeared
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name_appeared_slot
+            </em>
+            =
+            <code>
+             <a class="el" href="group__DBus.html#ga200acb252ecaa113828e23b9001a7a8e">
+              SlotNameAppeared
+             </a>
+             ()
+            </code>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="group__DBus.html#ga01da22e2e222d03382d93e6741be6935">
+             SlotNameVanished
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name_vanished_slot
+            </em>
+            =
+            <code>
+             <a class="el" href="group__DBus.html#ga01da22e2e222d03382d93e6741be6935">
+              SlotNameVanished
+             </a>
+             ()
+            </code>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__giommEnums.html#ga724a510e53ed4df47411bcdbaf680c85">
+             BusNameWatcherFlags
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             flags
+            </em>
+            =
+            <code>
+             <a class="el" href="namespaceGio_1_1DBus.html#ga724a510e53ed4df47411bcdbaf680c85a23e333ede42826b165a4d40b0f55ad22">
+              Gio::DBus::BUS_NAME_WATCHER_FLAGS_NONE
+             </a>
+            </code>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="el" href="group__DBus.html#gaa202af27755f2ea8d0736f8ab3a75dba" title="Starts watching name on the bus specified by bus_type and calls name_appeared_slot and name_vanished_...">
+          watch_name()
+         </a>
+         function that takes a
+         <a class="el" href="classGio_1_1DBus_1_1Connection.html" title="A D-Bus Connection. ">
+          Connection
+         </a>
+         instead of a BusType.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              connection
+             </td>
+             <td>
+              A
+              <a class="el" href="classGio_1_1DBus_1_1Connection.html" title="A D-Bus Connection. ">
+               Connection
+              </a>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              The name (well-known or unique) to watch.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name_appeared_slot
+             </td>
+             <td>
+              Slot to invoke when name is known to exist.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name_vanished_slot
+             </td>
+             <td>
+              Slot to invoke when name is known to not exist.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              flags
+             </td>
+             <td>
+              Flags from the BusNameWatcherFlags enumeration.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          An identifier (never 0) that can be used with
+          <a class="el" href="group__DBus.html#gaa5106315b09d6fc5ad019ecfcc8d5342" title="Stops watching a name. ">
+           unwatch_name()
+          </a>
+          to stop watching the name.
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000170">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="group__DBus.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

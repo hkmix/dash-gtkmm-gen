@@ -1,0 +1,2873 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::VariantContainerBase Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1VariantContainerBase.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1VariantContainerBase.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1VariantContainerBase.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::VariantContainerBase Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       The base class from which multiple-item Variants derive, such as Variants containing tuples or arrays.
+       <a href="classGlib_1_1VariantContainerBase.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/variant.h&gt;
+       </code>
+      </p>
+      <div class="dynheader">
+       Inheritance diagram for Glib::VariantContainerBase:
+      </div>
+      <div class="dyncontent">
+       <div class="center">
+        <img alt="Inheritance graph" border="0" src="classGlib_1_1VariantContainerBase__inherit__graph.png" usemap="#Glib_1_1VariantContainerBase_inherit__map"/>
+       </div>
+       <map id="Glib_1_1VariantContainerBase_inherit__map" name="Glib_1_1VariantContainerBase_inherit__map">
+        <area alt="" coords="461,5,596,47" href="classGlib_1_1Variant_3_01std_1_1map_3_01K_00_01V_01_4_01_4.html" id="node3" shape="rect" title="Specialization of Variant containing a dictionary (a map of (key, value) elements). ">
+        </area>
+        <area alt="" coords="433,71,624,112" href="classGlib_1_1Variant_3_01std_1_1vector_3_01Glib_1_1ustring_01_4_01_4.html" id="node4" shape="rect" title="Specialization of Variant containing an array of UTF-8 capable strings. ">
+        </area>
+        <area alt="" coords="439,136,618,177" href="classGlib_1_1Variant_3_01std_1_1vector_3_01std_1_1string_01_4_01_4.html" id="node5" shape="rect" title="Specialization of Variant containing an array of non-UTF-8 strings (byte string arrays). ">
+        </area>
+        <area alt="" coords="461,201,596,243" href="classGlib_1_1Variant_3_01std_1_1vector_3_01T_01_4_01_4.html" id="node6" shape="rect" title="Specialization of Variant containing an array of items. ">
+        </area>
+        <area alt="" coords="449,267,608,308" href="classGlib_1_1Variant_3_01Variant_3_01T_01_4_01_4.html" id="node7" shape="rect" title="Specialization of Variant containing a Variant&lt;T&gt;. ">
+        </area>
+        <area alt="" coords="425,333,632,359" href="classGlib_1_1Variant_3_01VariantBase_01_4.html" id="node8" shape="rect" title="Specialization of Variant containing a VariantBase. ">
+        </area>
+        <area alt="" coords="5,177,136,203" href="classGlib_1_1VariantBase.html" id="node2" shape="rect" title="This is the base class for all Variant types. ">
+        </area>
+       </map>
+       <center>
+        <span class="legend">
+         [
+         <a href="graph_legend.html">
+          legend
+         </a>
+         ]
+        </span>
+       </center>
+      </div>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:af25ca06a5994ba5f39c92fd120187244">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#af25ca06a5994ba5f39c92fd120187244">
+           CType
+          </a>
+          = GVariant*
+         </td>
+        </tr>
+        <tr class="separator:af25ca06a5994ba5f39c92fd120187244">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac221ee3ce265cc70aaf5d4e077048f97">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#ac221ee3ce265cc70aaf5d4e077048f97">
+           CppType
+          </a>
+          =
+          <a class="el" href="classGlib_1_1VariantContainerBase.html">
+           VariantContainerBase
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:ac221ee3ce265cc70aaf5d4e077048f97">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_classGlib_1_1VariantBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_classGlib_1_1VariantBase')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           Glib::VariantBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:ae46eeafcd6f827fabb1a61e53a0d401b inherit pub_types_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#ae46eeafcd6f827fabb1a61e53a0d401b">
+           BoolExpr
+          </a>
+          = const void*
+         </td>
+        </tr>
+        <tr class="memdesc:ae46eeafcd6f827fabb1a61e53a0d401b inherit pub_types_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This typedef is just to make it more obvious that our operator const void* should be used like operator bool().
+          <a href="classGlib_1_1VariantContainerBase.html#ae46eeafcd6f827fabb1a61e53a0d401b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae46eeafcd6f827fabb1a61e53a0d401b inherit pub_types_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a47701d34a101027946e14fcc2d00d863">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#a47701d34a101027946e14fcc2d00d863">
+           VariantContainerBase
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a47701d34a101027946e14fcc2d00d863">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Default constructor.
+          <a href="classGlib_1_1VariantContainerBase.html#a47701d34a101027946e14fcc2d00d863">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a47701d34a101027946e14fcc2d00d863">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a87220270495aa11312652234a7bb7803">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#a87220270495aa11312652234a7bb7803">
+           VariantContainerBase
+          </a>
+          (GVariant* castitem, bool take_a_reference=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a87220270495aa11312652234a7bb7803">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          GVariant constructor.
+          <a href="classGlib_1_1VariantContainerBase.html#a87220270495aa11312652234a7bb7803">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a87220270495aa11312652234a7bb7803">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9c42953fb12be0c0bf536a34ecee511f">
+         <td align="right" class="memItemLeft" valign="top">
+          gsize
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#a9c42953fb12be0c0bf536a34ecee511f">
+           get_n_children
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a9c42953fb12be0c0bf536a34ecee511f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Determines the number of children in a container
+          <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+           Variant
+          </a>
+          instance.
+          <a href="classGlib_1_1VariantContainerBase.html#a9c42953fb12be0c0bf536a34ecee511f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9c42953fb12be0c0bf536a34ecee511f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a48fcf1f3f8d567293c0d1cacf6526897">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#a48fcf1f3f8d567293c0d1cacf6526897">
+           get_child
+          </a>
+          (
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; child, gsize index=0) const
+         </td>
+        </tr>
+        <tr class="memdesc:a48fcf1f3f8d567293c0d1cacf6526897">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Reads a child item out of this instance.
+          <a href="classGlib_1_1VariantContainerBase.html#a48fcf1f3f8d567293c0d1cacf6526897">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a48fcf1f3f8d567293c0d1cacf6526897">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad0a475e0b0b07ea03242c945a5db67e0">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#ad0a475e0b0b07ea03242c945a5db67e0">
+           get_child
+          </a>
+          (gsize index=0)
+         </td>
+        </tr>
+        <tr class="memdesc:ad0a475e0b0b07ea03242c945a5db67e0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Reads a child item out of a container
+          <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+           Variant
+          </a>
+          instance.
+          <a href="classGlib_1_1VariantContainerBase.html#ad0a475e0b0b07ea03242c945a5db67e0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad0a475e0b0b07ea03242c945a5db67e0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aaefa38a66854da27c1df42ba7d7a2bb2">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#aaefa38a66854da27c1df42ba7d7a2bb2">
+           get_maybe
+          </a>
+          (
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; maybe) const
+         </td>
+        </tr>
+        <tr class="memdesc:aaefa38a66854da27c1df42ba7d7a2bb2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          If this is a maybe-typed instance, extract its value.
+          <a href="classGlib_1_1VariantContainerBase.html#aaefa38a66854da27c1df42ba7d7a2bb2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aaefa38a66854da27c1df42ba7d7a2bb2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1VariantBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1VariantBase')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           Glib::VariantBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a74bb8db40a8cd10d2fed3d02c4cb413e inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a74bb8db40a8cd10d2fed3d02c4cb413e">
+           VariantBase
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a74bb8db40a8cd10d2fed3d02c4cb413e inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Constructs an invalid object.
+          <a href="classGlib_1_1VariantContainerBase.html#a74bb8db40a8cd10d2fed3d02c4cb413e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a74bb8db40a8cd10d2fed3d02c4cb413e inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afac0ab2bacb3ff7c1b8eea15ac75df9c inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#afac0ab2bacb3ff7c1b8eea15ac75df9c">
+           VariantBase
+          </a>
+          (GVariant* castitem, bool make_a_copy=false)
+         </td>
+        </tr>
+        <tr class="separator:afac0ab2bacb3ff7c1b8eea15ac75df9c inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6eb13ac35e3de8d16a866aa8822aea25 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a6eb13ac35e3de8d16a866aa8822aea25">
+           VariantBase
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; src)
+         </td>
+        </tr>
+        <tr class="separator:a6eb13ac35e3de8d16a866aa8822aea25 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2f30d304c0343fa3e86d1f9df2726d7c inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a2f30d304c0343fa3e86d1f9df2726d7c">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; src)
+         </td>
+        </tr>
+        <tr class="separator:a2f30d304c0343fa3e86d1f9df2726d7c inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afdd23a76dad128ee5e8c290a8a250ca4 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#afdd23a76dad128ee5e8c290a8a250ca4">
+           VariantBase
+          </a>
+          (
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:afdd23a76dad128ee5e8c290a8a250ca4 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0325c35f55ea53e64146ad20661f6d8d inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a0325c35f55ea53e64146ad20661f6d8d">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a0325c35f55ea53e64146ad20661f6d8d inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1853f1bd452866789479f9d5d48cadd9 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a1853f1bd452866789479f9d5d48cadd9">
+           ~VariantBase
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:a1853f1bd452866789479f9d5d48cadd9 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a336846c1fd9175e222e58d74aa5c9156 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a336846c1fd9175e222e58d74aa5c9156">
+           swap
+          </a>
+          (
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a336846c1fd9175e222e58d74aa5c9156 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3b980321e6b0d16401343129dfc439e8 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GVariant*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a3b980321e6b0d16401343129dfc439e8">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a3b980321e6b0d16401343129dfc439e8 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a45f0a920cd09d1b01a09888a38ef962d inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          const GVariant*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a45f0a920cd09d1b01a09888a38ef962d">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a45f0a920cd09d1b01a09888a38ef962d inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a08796c6b0ca3eacfe2c1b9d4f6100c05 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GVariant*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a08796c6b0ca3eacfe2c1b9d4f6100c05">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a08796c6b0ca3eacfe2c1b9d4f6100c05 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+          <a href="classGlib_1_1VariantContainerBase.html#a08796c6b0ca3eacfe2c1b9d4f6100c05">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a08796c6b0ca3eacfe2c1b9d4f6100c05 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5b02a861503f991df8af088aa63ee22b inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a5b02a861503f991df8af088aa63ee22b">
+           operator BoolExpr
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a5b02a861503f991df8af088aa63ee22b inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Test whether the
+          <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+           Variant
+          </a>
+          has an underlying instance.
+          <a href="classGlib_1_1VariantContainerBase.html#a5b02a861503f991df8af088aa63ee22b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5b02a861503f991df8af088aa63ee22b inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a980a39e735ac4e68dfc37fe004161018 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a980a39e735ac4e68dfc37fe004161018">
+           init
+          </a>
+          (const GVariant* cobject, bool take_a_reference=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a980a39e735ac4e68dfc37fe004161018 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Replace the underlying GVariant.
+          <a href="classGlib_1_1VariantContainerBase.html#a980a39e735ac4e68dfc37fe004161018">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a980a39e735ac4e68dfc37fe004161018 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3c80e6f06c6e521313becc282abc8c3c inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1VariantType.html">
+           VariantType
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a3c80e6f06c6e521313becc282abc8c3c">
+           get_type
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a3c80e6f06c6e521313becc282abc8c3c inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Determines the type of
+          <em>
+           value
+          </em>
+          .
+          <a href="classGlib_1_1VariantContainerBase.html#a3c80e6f06c6e521313becc282abc8c3c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3c80e6f06c6e521313becc282abc8c3c inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af33ac1d71e48fdf3461b701b4d081d67 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#af33ac1d71e48fdf3461b701b4d081d67">
+           get_type_string
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:af33ac1d71e48fdf3461b701b4d081d67 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the type string of
+          <em>
+           value
+          </em>
+          .
+          <a href="classGlib_1_1VariantContainerBase.html#af33ac1d71e48fdf3461b701b4d081d67">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af33ac1d71e48fdf3461b701b4d081d67 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abf3b9e20b90e788017520aeeef6b572e inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#abf3b9e20b90e788017520aeeef6b572e">
+           is_floating
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:abf3b9e20b90e788017520aeeef6b572e inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks whether
+          <em>
+           value
+          </em>
+          has a floating reference count.
+          <a href="classGlib_1_1VariantContainerBase.html#abf3b9e20b90e788017520aeeef6b572e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abf3b9e20b90e788017520aeeef6b572e inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:add8f349a4b28bcaa2f371ff0a1e2e156 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#add8f349a4b28bcaa2f371ff0a1e2e156">
+           is_of_type
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1VariantType.html">
+           VariantType
+          </a>
+          &amp; type) const
+         </td>
+        </tr>
+        <tr class="memdesc:add8f349a4b28bcaa2f371ff0a1e2e156 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if a value has a type matching the provided type.
+          <a href="classGlib_1_1VariantContainerBase.html#add8f349a4b28bcaa2f371ff0a1e2e156">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:add8f349a4b28bcaa2f371ff0a1e2e156 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a820465e7ed6003933fcb2cc26ebb0b6a inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a820465e7ed6003933fcb2cc26ebb0b6a">
+           is_container
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a820465e7ed6003933fcb2cc26ebb0b6a inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if
+          <em>
+           value
+          </em>
+          is a container.
+          <a href="classGlib_1_1VariantContainerBase.html#a820465e7ed6003933fcb2cc26ebb0b6a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a820465e7ed6003933fcb2cc26ebb0b6a inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a70d83a47f0e2d3c42df0d8059c36528d inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GVariantClass
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a70d83a47f0e2d3c42df0d8059c36528d">
+           classify
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a70d83a47f0e2d3c42df0d8059c36528d inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Classifies
+          <em>
+           value
+          </em>
+          according to its top-level type.
+          <a href="classGlib_1_1VariantContainerBase.html#a70d83a47f0e2d3c42df0d8059c36528d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a70d83a47f0e2d3c42df0d8059c36528d inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a44e000834c16fae60ea26d95e5a4c58e inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          gsize
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a44e000834c16fae60ea26d95e5a4c58e">
+           get_size
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a44e000834c16fae60ea26d95e5a4c58e inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Determines the number of bytes that would be required to store
+          <em>
+           value
+          </em>
+          with g_variant_store().
+          <a href="classGlib_1_1VariantContainerBase.html#a44e000834c16fae60ea26d95e5a4c58e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a44e000834c16fae60ea26d95e5a4c58e inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a687306a73541b9b5e11e91d6d8f97831 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          gconstpointer
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a687306a73541b9b5e11e91d6d8f97831">
+           get_data
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a687306a73541b9b5e11e91d6d8f97831 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns a pointer to the serialised form of a
+          <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+           Variant
+          </a>
+          instance.
+          <a href="classGlib_1_1VariantContainerBase.html#a687306a73541b9b5e11e91d6d8f97831">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a687306a73541b9b5e11e91d6d8f97831 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7c148a173e04f7b337194b033262e01c inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          gconstpointer
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a7c148a173e04f7b337194b033262e01c">
+           get_data
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a7c148a173e04f7b337194b033262e01c inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns a pointer to the serialised form of a
+          <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+           Variant
+          </a>
+          instance.
+          <a href="classGlib_1_1VariantContainerBase.html#a7c148a173e04f7b337194b033262e01c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7c148a173e04f7b337194b033262e01c inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2bbd1db41c752aa8c0c0bfe60a27a0b0 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGlib_1_1Bytes.html">
+           Glib::Bytes
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a2bbd1db41c752aa8c0c0bfe60a27a0b0">
+           get_data_as_bytes
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a2bbd1db41c752aa8c0c0bfe60a27a0b0 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns a pointer to the serialised form of a
+          <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+           Variant
+          </a>
+          instance.
+          <a href="classGlib_1_1VariantContainerBase.html#a2bbd1db41c752aa8c0c0bfe60a27a0b0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2bbd1db41c752aa8c0c0bfe60a27a0b0 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acf846816697993b48edc7918524f8d59 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#acf846816697993b48edc7918524f8d59">
+           store
+          </a>
+          (gpointer data) const
+         </td>
+        </tr>
+        <tr class="memdesc:acf846816697993b48edc7918524f8d59 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Stores the serialised form of
+          <em>
+           value
+          </em>
+          at
+          <em>
+           data
+          </em>
+          .
+          <a href="classGlib_1_1VariantContainerBase.html#acf846816697993b48edc7918524f8d59">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acf846816697993b48edc7918524f8d59 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7710b7b3452bd70c8e07679eba195fdc inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a7710b7b3452bd70c8e07679eba195fdc">
+           print
+          </a>
+          (bool type_annotate=false) const
+         </td>
+        </tr>
+        <tr class="memdesc:a7710b7b3452bd70c8e07679eba195fdc inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Pretty-prints
+          <em>
+           value
+          </em>
+          in the format understood by g_variant_parse().
+          <a href="classGlib_1_1VariantContainerBase.html#a7710b7b3452bd70c8e07679eba195fdc">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7710b7b3452bd70c8e07679eba195fdc inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac3961de1c9f10ab5afc3ca47b953b806 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          guint
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#ac3961de1c9f10ab5afc3ca47b953b806">
+           hash
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac3961de1c9f10ab5afc3ca47b953b806 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Generates a hash value for a
+          <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+           Variant
+          </a>
+          instance.
+          <a href="classGlib_1_1VariantContainerBase.html#ac3961de1c9f10ab5afc3ca47b953b806">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac3961de1c9f10ab5afc3ca47b953b806 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a34a6a44b9002dcc43478a30207d2e6c7 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a34a6a44b9002dcc43478a30207d2e6c7">
+           equal
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; other) const
+         </td>
+        </tr>
+        <tr class="memdesc:a34a6a44b9002dcc43478a30207d2e6c7 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if
+          <em>
+           *this
+          </em>
+          and
+          <em>
+           other
+          </em>
+          have the same type and value.
+          <a href="classGlib_1_1VariantContainerBase.html#a34a6a44b9002dcc43478a30207d2e6c7">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a34a6a44b9002dcc43478a30207d2e6c7 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa132cf27e283a93954ed088444267d1b inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#aa132cf27e283a93954ed088444267d1b">
+           get_normal_form
+          </a>
+          (
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; result) const
+         </td>
+        </tr>
+        <tr class="memdesc:aa132cf27e283a93954ed088444267d1b inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets a
+          <a class="el" href="classGlib_1_1VariantBase.html" title="This is the base class for all Variant types. ">
+           VariantBase
+          </a>
+          instance that has the same value as this variant and is trusted to be in normal form.
+          <a href="classGlib_1_1VariantContainerBase.html#aa132cf27e283a93954ed088444267d1b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa132cf27e283a93954ed088444267d1b inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aeba3e2dafc50fe64df6408dcb44f5870 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#aeba3e2dafc50fe64df6408dcb44f5870">
+           is_normal_form
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aeba3e2dafc50fe64df6408dcb44f5870 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if
+          <em>
+           value
+          </em>
+          is in normal form.
+          <a href="classGlib_1_1VariantContainerBase.html#aeba3e2dafc50fe64df6408dcb44f5870">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aeba3e2dafc50fe64df6408dcb44f5870 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adb202d5375b8f5e9ce7fc721aeff9c45 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#adb202d5375b8f5e9ce7fc721aeff9c45">
+           byteswap
+          </a>
+          (
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; result) const
+         </td>
+        </tr>
+        <tr class="memdesc:adb202d5375b8f5e9ce7fc721aeff9c45 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Performs a byteswapping operation on the contents of this variant.
+          <a href="classGlib_1_1VariantContainerBase.html#adb202d5375b8f5e9ce7fc721aeff9c45">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:adb202d5375b8f5e9ce7fc721aeff9c45 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adc2cb96b12e7a3ccf068e5d8d4605972 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#adc2cb96b12e7a3ccf068e5d8d4605972">
+           check_format_string
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; format_string, bool copy_only=false) const
+         </td>
+        </tr>
+        <tr class="memdesc:adc2cb96b12e7a3ccf068e5d8d4605972 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if calling g_variant_get() with
+          <em>
+           format_string
+          </em>
+          on
+          <em>
+           value
+          </em>
+          would be valid from a type-compatibility standpoint.
+          <a href="classGlib_1_1VariantContainerBase.html#adc2cb96b12e7a3ccf068e5d8d4605972">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:adc2cb96b12e7a3ccf068e5d8d4605972 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9564ae1398eb9015369b3842d50b67e8 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memTemplParams" colspan="2">
+          template&lt;&gt;
+         </td>
+        </tr>
+        <tr class="memitem:a9564ae1398eb9015369b3842d50b67e8 inherit pub_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html">
+           VariantContainerBase
+          </a>
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a9564ae1398eb9015369b3842d50b67e8">
+           cast_dynamic
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; v)  throw (std::bad_cast)
+         </td>
+        </tr>
+        <tr class="separator:a9564ae1398eb9015369b3842d50b67e8 inherit pub_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a9153ad406feee6ad2de943cd1ed71601">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="el" href="classGlib_1_1VariantContainerBase.html">
+           VariantContainerBase
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#a9153ad406feee6ad2de943cd1ed71601">
+           create_tuple
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &gt;&amp; children)
+         </td>
+        </tr>
+        <tr class="memdesc:a9153ad406feee6ad2de943cd1ed71601">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Create a tuple variant from a vector of its variant children.
+          <a href="classGlib_1_1VariantContainerBase.html#a9153ad406feee6ad2de943cd1ed71601">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9153ad406feee6ad2de943cd1ed71601">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2338b26250ab256da44ca656191ae187">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="el" href="classGlib_1_1VariantContainerBase.html">
+           VariantContainerBase
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#a2338b26250ab256da44ca656191ae187">
+           create_tuple
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; child)
+         </td>
+        </tr>
+        <tr class="memdesc:a2338b26250ab256da44ca656191ae187">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Create a tuple variant with a single variant child.
+          <a href="classGlib_1_1VariantContainerBase.html#a2338b26250ab256da44ca656191ae187">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2338b26250ab256da44ca656191ae187">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4e2ff2c8d2db762fa398901e8863cb8f">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="el" href="classGlib_1_1VariantContainerBase.html">
+           VariantContainerBase
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantContainerBase.html#a4e2ff2c8d2db762fa398901e8863cb8f">
+           create_maybe
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1VariantType.html">
+           VariantType
+          </a>
+          &amp; child_type, const
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; child=
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          ())
+         </td>
+        </tr>
+        <tr class="memdesc:a4e2ff2c8d2db762fa398901e8863cb8f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Depending on if
+          <em>
+           child
+          </em>
+          is
+          <code>
+           nullptr
+          </code>
+          , either wraps
+          <em>
+           child
+          </em>
+          inside of a maybe container or creates a Nothing instance for the given
+          <em>
+           type
+          </em>
+          .
+          <a href="classGlib_1_1VariantContainerBase.html#a4e2ff2c8d2db762fa398901e8863cb8f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4e2ff2c8d2db762fa398901e8863cb8f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_static_methods_classGlib_1_1VariantBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classGlib_1_1VariantBase')">
+          <img alt="-" src="closed.png"/>
+          Static Public Member Functions inherited from
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           Glib::VariantBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a1f65fc45c20886cd9a5351ed5fa81463 inherit pub_static_methods_classGlib_1_1VariantBase">
+         <td class="memTemplParams" colspan="2">
+          template&lt;class V_CastTo &gt;
+         </td>
+        </tr>
+        <tr class="memitem:a1f65fc45c20886cd9a5351ed5fa81463 inherit pub_static_methods_classGlib_1_1VariantBase">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          static V_CastTo
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#a1f65fc45c20886cd9a5351ed5fa81463">
+           cast_dynamic
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; v)  throw (std::bad_cast)
+         </td>
+        </tr>
+        <tr class="memdesc:a1f65fc45c20886cd9a5351ed5fa81463 inherit pub_static_methods_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Cast to a specific variant type.
+          <a href="classGlib_1_1VariantContainerBase.html#a1f65fc45c20886cd9a5351ed5fa81463">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1f65fc45c20886cd9a5351ed5fa81463 inherit pub_static_methods_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="inherited">
+           </a>
+           Additional Inherited Members
+          </h2>
+         </td>
+        </tr>
+        <tr class="inherit_header pro_attribs_classGlib_1_1VariantBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classGlib_1_1VariantBase')">
+          <img alt="-" src="closed.png"/>
+          Protected Attributes inherited from
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           Glib::VariantBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:afb327758aeb118b06e9c9e6b0a796892 inherit pro_attribs_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GVariant*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#afb327758aeb118b06e9c9e6b0a796892">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:afb327758aeb118b06e9c9e6b0a796892 inherit pro_attribs_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header related_classGlib_1_1VariantBase">
+         <td colspan="2" onclick="javascript:toggleInherit('related_classGlib_1_1VariantBase')">
+          <img alt="-" src="closed.png"/>
+          Related Functions inherited from
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           Glib::VariantBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:ad70df57e9ee2e532a0c836923e7d0b2a inherit related_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#ad70df57e9ee2e532a0c836923e7d0b2a">
+           swap
+          </a>
+          (
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; lhs,
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           VariantBase
+          </a>
+          &amp; rhs) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ad70df57e9ee2e532a0c836923e7d0b2a inherit related_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aea2fee9e9505dfd38d7f086a335655b0 inherit related_classGlib_1_1VariantBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1VariantBase.html">
+           Glib::VariantBase
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1VariantBase.html#aea2fee9e9505dfd38d7f086a335655b0">
+           wrap
+          </a>
+          (GVariant* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:aea2fee9e9505dfd38d7f086a335655b0 inherit related_classGlib_1_1VariantBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="el" href="namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGlib_1_1VariantContainerBase.html#aea2fee9e9505dfd38d7f086a335655b0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aea2fee9e9505dfd38d7f086a335655b0 inherit related_classGlib_1_1VariantBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        The base class from which multiple-item Variants derive, such as Variants containing tuples or arrays.
+       </p>
+       <dl class="since_2_28">
+        <dt>
+         <b>
+          <a class="el" href="since_2_28.html#_since_2_28000014">
+           Since glibmm 2.28:
+          </a>
+         </b>
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Member Typedef Documentation
+      </h2>
+      <a class="anchor" id="ac221ee3ce265cc70aaf5d4e077048f97">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1VariantContainerBase.html#ac221ee3ce265cc70aaf5d4e077048f97">
+             Glib::VariantContainerBase::CppType
+            </a>
+            =
+            <a class="el" href="classGlib_1_1VariantContainerBase.html">
+             VariantContainerBase
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="af25ca06a5994ba5f39c92fd120187244">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1VariantContainerBase.html#af25ca06a5994ba5f39c92fd120187244">
+             Glib::VariantContainerBase::CType
+            </a>
+            =  GVariant*
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a47701d34a101027946e14fcc2d00d863">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Glib::VariantContainerBase::VariantContainerBase
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Default constructor.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a87220270495aa11312652234a7bb7803">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::VariantContainerBase::VariantContainerBase
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GVariant *
+               </td>
+               <td class="paramname">
+                <em>
+                 castitem
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_a_reference
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         GVariant constructor.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              castitem
+             </td>
+             <td>
+              The GVariant to wrap.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_a_reference
+             </td>
+             <td>
+              Whether to take an extra reference of the GVariant or not (not taking one could destroy the GVariant with the wrapper).
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a4e2ff2c8d2db762fa398901e8863cb8f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="el" href="classGlib_1_1VariantContainerBase.html">
+                 VariantContainerBase
+                </a>
+                Glib::VariantContainerBase::create_maybe
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1VariantType.html">
+                 VariantType
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 child_type
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1VariantBase.html">
+                 VariantBase
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 child
+                </em>
+                =
+                <code>
+                 <a class="el" href="classGlib_1_1VariantBase.html">
+                  VariantBase
+                 </a>
+                 ()
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Depending on if
+         <em>
+          child
+         </em>
+         is
+         <code>
+          nullptr
+         </code>
+         , either wraps
+         <em>
+          child
+         </em>
+         inside of a maybe container or creates a Nothing instance for the given
+         <em>
+          type
+         </em>
+         .
+        </p>
+        <p>
+         At least one of
+         <em>
+          child_type
+         </em>
+         and
+         <em>
+          child
+         </em>
+         must be non-
+         <code>
+          nullptr
+         </code>
+         . If
+         <em>
+          child_type
+         </em>
+         is non-
+         <code>
+          nullptr
+         </code>
+         then it must be a definite type. If they are both non-
+         <code>
+          nullptr
+         </code>
+         then
+         <em>
+          child_type
+         </em>
+         must be the type of
+         <em>
+          child
+         </em>
+         .
+        </p>
+        <p>
+         If
+         <em>
+          child
+         </em>
+         is a floating reference (see g_variant_ref_sink()), the new instance takes ownership of
+         <em>
+          child
+         </em>
+         .
+        </p>
+        <dl class="since_2_24">
+         <dt>
+          <b>
+           <a class="el" href="since_2_24.html#_since_2_24000018">
+            Since glibmm 2.24:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              child_type
+             </td>
+             <td>
+              The
+              <a class="el" href="classGlib_1_1VariantType.html" title="VariantType - The VariantBase type system. ">
+               VariantType
+              </a>
+              of the child, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              child
+             </td>
+             <td>
+              The child value, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A floating reference to a new
+          <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+           Variant
+          </a>
+          maybe instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9153ad406feee6ad2de943cd1ed71601">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="el" href="classGlib_1_1VariantContainerBase.html">
+                 VariantContainerBase
+                </a>
+                Glib::VariantContainerBase::create_tuple
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+                 std::vector
+                </a>
+                &lt;
+                <a class="el" href="classGlib_1_1VariantBase.html">
+                 VariantBase
+                </a>
+                &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 children
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Create a tuple variant from a vector of its variant children.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              children
+             </td>
+             <td>
+              The vector containing the children of the container.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The newly created tuple variant (as a
+          <a class="el" href="classGlib_1_1VariantContainerBase.html" title="The base class from which multiple-item Variants derive, such as Variants containing tuples or arrays...">
+           VariantContainerBase
+          </a>
+          ).
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a2338b26250ab256da44ca656191ae187">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="el" href="classGlib_1_1VariantContainerBase.html">
+                 VariantContainerBase
+                </a>
+                Glib::VariantContainerBase::create_tuple
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1VariantBase.html">
+                 VariantBase
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 child
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Create a tuple variant with a single variant child.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              child
+             </td>
+             <td>
+              The child variant.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The newly created tuple variant (as a
+          <a class="el" href="classGlib_1_1VariantContainerBase.html" title="The base class from which multiple-item Variants derive, such as Variants containing tuples or arrays...">
+           VariantContainerBase
+          </a>
+          ).
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a48fcf1f3f8d567293c0d1cacf6526897">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::VariantContainerBase::get_child
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1VariantBase.html">
+             VariantBase
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             child
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            gsize
+           </td>
+           <td class="paramname">
+            <em>
+             index
+            </em>
+            =
+            <code>
+             0
+            </code>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Reads a child item out of this instance.
+        </p>
+        <p>
+         This method is valid for variants, maybes, arrays, tuples and dictionary entries.
+        </p>
+        <p>
+         It is an error if
+         <em>
+          index
+         </em>
+         is greater than the number of child items in the container. See
+         <a class="el" href="classGlib_1_1VariantContainerBase.html#a9c42953fb12be0c0bf536a34ecee511f" title="Determines the number of children in a container Variant instance. ">
+          get_n_children()
+         </a>
+         .
+        </p>
+        <p>
+         This function is O(1).
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              index
+             </td>
+             <td>
+              The index of the child to fetch.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              child
+             </td>
+             <td>
+              A location in which to store the child at the specified index.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00878.html">
+               std::out_of_range
+              </a>
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000026">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad0a475e0b0b07ea03242c945a5db67e0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1VariantBase.html">
+             VariantBase
+            </a>
+            Glib::VariantContainerBase::get_child
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            gsize
+           </td>
+           <td class="paramname">
+            <em>
+             index
+            </em>
+            =
+            <code>
+             0
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Reads a child item out of a container
+         <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+          Variant
+         </a>
+         instance.
+        </p>
+        <p>
+         This includes variants, maybes, arrays, tuples and dictionary entries. It is an error to call this function on any other type of
+         <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+          Variant
+         </a>
+         .
+        </p>
+        <p>
+         It is an error if
+         <em>
+          index
+         </em>
+         is greater than the number of child items in the container. See g_variant_n_children().
+        </p>
+        <p>
+         The returned value is never floating. You should free it with g_variant_unref() when you're done with it.
+        </p>
+        <p>
+         This function is O(1).
+        </p>
+        <dl class="since_2_24">
+         <dt>
+          <b>
+           <a class="el" href="since_2_24.html#_since_2_24000020">
+            Since glibmm 2.24:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              index
+             </td>
+             <td>
+              The index of the child to fetch.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The child at the specified index.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aaefa38a66854da27c1df42ba7d7a2bb2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::VariantContainerBase::get_maybe
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1VariantBase.html">
+             VariantBase
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             maybe
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         If this is a maybe-typed instance, extract its value.
+        </p>
+        <p>
+         If the value is Nothing, then this function returns
+         <code>
+          false
+         </code>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              maybe
+             </td>
+             <td>
+              A place in which to return the value (the value may be
+              <code>
+               0
+              </code>
+              ).
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_28">
+         <dt>
+          <b>
+           <a class="el" href="since_2_28.html#_since_2_28000027">
+            Since glibmm 2.28:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9c42953fb12be0c0bf536a34ecee511f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            gsize Glib::VariantContainerBase::get_n_children
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Determines the number of children in a container
+         <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+          Variant
+         </a>
+         instance.
+        </p>
+        <p>
+         This includes variants, maybes, arrays, tuples and dictionary entries. It is an error to call this function on any other type of
+         <a class="el" href="classGlib_1_1Variant.html" title="Template class used for the specialization of the Variant&lt;&gt; classes. ">
+          Variant
+         </a>
+         .
+        </p>
+        <p>
+         For variants, the return value is always 1. For values with maybe types, it is always zero or one. For arrays, it is the length of the array. For tuples it is the number of tuple items (which depends only on the type). For dictionary entries, it is always 2
+        </p>
+        <p>
+         This function is O(1).
+        </p>
+        <dl class="since_2_24">
+         <dt>
+          <b>
+           <a class="el" href="since_2_24.html#_since_2_24000019">
+            Since glibmm 2.24:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of children in the container.
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1VariantContainerBase.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

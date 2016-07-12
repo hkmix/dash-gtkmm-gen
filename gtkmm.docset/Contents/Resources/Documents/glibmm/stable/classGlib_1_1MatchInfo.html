@@ -1,0 +1,3024 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::MatchInfo Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1MatchInfo.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1MatchInfo.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1MatchInfo.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::MatchInfo Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       <a class="el" href="classGlib_1_1MatchInfo.html" title="MatchInfo - MatchInfo is used to retrieve information about the regular expression match which create...">
+        MatchInfo
+       </a>
+       -
+       <a class="el" href="classGlib_1_1MatchInfo.html" title="MatchInfo - MatchInfo is used to retrieve information about the regular expression match which create...">
+        MatchInfo
+       </a>
+       is used to retrieve information about the regular expression match which created it.
+       <a href="classGlib_1_1MatchInfo.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/regex.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a605c6230ebe86112dbe175c41dc24439">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a605c6230ebe86112dbe175c41dc24439">
+           MatchInfo
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a605c6230ebe86112dbe175c41dc24439">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Default constructor.
+          <a href="classGlib_1_1MatchInfo.html#a605c6230ebe86112dbe175c41dc24439">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a605c6230ebe86112dbe175c41dc24439">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aabd63716145ab9997faf5fc074c35c51">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#aabd63716145ab9997faf5fc074c35c51">
+           MatchInfo
+          </a>
+          (GMatchInfo* castitem, bool take_the_ownership=true)
+         </td>
+        </tr>
+        <tr class="memdesc:aabd63716145ab9997faf5fc074c35c51">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          C object constructor.
+          <a href="classGlib_1_1MatchInfo.html#aabd63716145ab9997faf5fc074c35c51">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aabd63716145ab9997faf5fc074c35c51">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9b57b2df92f6cc4787c1e8c37a80d076">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a9b57b2df92f6cc4787c1e8c37a80d076">
+           MatchInfo
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1MatchInfo.html">
+           MatchInfo
+          </a>
+          &amp; other)=delete
+         </td>
+        </tr>
+        <tr class="separator:a9b57b2df92f6cc4787c1e8c37a80d076">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5620225fb1d3a70cb952502a5c5e32da">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1MatchInfo.html">
+           MatchInfo
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a5620225fb1d3a70cb952502a5c5e32da">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1MatchInfo.html">
+           MatchInfo
+          </a>
+          &amp; other)=delete
+         </td>
+        </tr>
+        <tr class="separator:a5620225fb1d3a70cb952502a5c5e32da">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac014eedc2e3d93c45aaedb85d58d2d25">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#ac014eedc2e3d93c45aaedb85d58d2d25">
+           MatchInfo
+          </a>
+          (
+          <a class="el" href="classGlib_1_1MatchInfo.html">
+           MatchInfo
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ac014eedc2e3d93c45aaedb85d58d2d25">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a973a3f9edda6a82d2e5aa0e7710d648c">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1MatchInfo.html">
+           MatchInfo
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a973a3f9edda6a82d2e5aa0e7710d648c">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGlib_1_1MatchInfo.html">
+           MatchInfo
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a973a3f9edda6a82d2e5aa0e7710d648c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a804a1eee88368392e859e29ed3240016">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a804a1eee88368392e859e29ed3240016">
+           ~MatchInfo
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a804a1eee88368392e859e29ed3240016">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Destructor.
+          <a href="classGlib_1_1MatchInfo.html#a804a1eee88368392e859e29ed3240016">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a804a1eee88368392e859e29ed3240016">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adea5b17c9746bef9e0cdb90a17a87cad">
+         <td align="right" class="memItemLeft" valign="top">
+          GMatchInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#adea5b17c9746bef9e0cdb90a17a87cad">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:adea5b17c9746bef9e0cdb90a17a87cad">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C object.
+          <a href="classGlib_1_1MatchInfo.html#adea5b17c9746bef9e0cdb90a17a87cad">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:adea5b17c9746bef9e0cdb90a17a87cad">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aeadcd55d3530900ba472f931310e9a79">
+         <td align="right" class="memItemLeft" valign="top">
+          const GMatchInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#aeadcd55d3530900ba472f931310e9a79">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aeadcd55d3530900ba472f931310e9a79">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C object.
+          <a href="classGlib_1_1MatchInfo.html#aeadcd55d3530900ba472f931310e9a79">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aeadcd55d3530900ba472f931310e9a79">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a039847559f658ce78697cfcebed5a10b">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGlib_1_1Regex.html">
+           Regex
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a039847559f658ce78697cfcebed5a10b">
+           get_regex
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a039847559f658ce78697cfcebed5a10b">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns
+          <a class="el" href="classGlib_1_1Regex.html" title="Perl-compatible regular expressions - matches strings against regular expressions. ">
+           Regex
+          </a>
+          object used in
+          <em>
+           match_info
+          </em>
+          .
+          <a href="classGlib_1_1MatchInfo.html#a039847559f658ce78697cfcebed5a10b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a039847559f658ce78697cfcebed5a10b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a98293ed4313061d3c1f141ab45618117">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGlib_1_1Regex.html">
+           Regex
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a98293ed4313061d3c1f141ab45618117">
+           get_regex
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a98293ed4313061d3c1f141ab45618117">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns
+          <a class="el" href="classGlib_1_1Regex.html" title="Perl-compatible regular expressions - matches strings against regular expressions. ">
+           Regex
+          </a>
+          object used in
+          <em>
+           match_info
+          </em>
+          .
+          <a href="classGlib_1_1MatchInfo.html#a98293ed4313061d3c1f141ab45618117">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a98293ed4313061d3c1f141ab45618117">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a60d5033eab3e60dbcec52ee1fa843149">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a60d5033eab3e60dbcec52ee1fa843149">
+           get_string
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a60d5033eab3e60dbcec52ee1fa843149">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the string searched with
+          <em>
+           match_info
+          </em>
+          .
+          <a href="classGlib_1_1MatchInfo.html#a60d5033eab3e60dbcec52ee1fa843149">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a60d5033eab3e60dbcec52ee1fa843149">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac68b9aadafa1b51d9fe50d08e5972da1">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#ac68b9aadafa1b51d9fe50d08e5972da1">
+           matches
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac68b9aadafa1b51d9fe50d08e5972da1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns whether the previous match operation succeeded.
+          <a href="classGlib_1_1MatchInfo.html#ac68b9aadafa1b51d9fe50d08e5972da1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac68b9aadafa1b51d9fe50d08e5972da1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a28d78ac3e2e82907534ca2dadb28108f">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a28d78ac3e2e82907534ca2dadb28108f">
+           next
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a28d78ac3e2e82907534ca2dadb28108f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Scans for the next match using the same parameters of the previous call to g_regex_match_full() or g_regex_match() that returned
+          <em>
+           match_info
+          </em>
+          .
+          <a href="classGlib_1_1MatchInfo.html#a28d78ac3e2e82907534ca2dadb28108f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a28d78ac3e2e82907534ca2dadb28108f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad0f3a5717883ea1949694616a0d06766">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#ad0f3a5717883ea1949694616a0d06766">
+           get_match_count
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ad0f3a5717883ea1949694616a0d06766">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the number of matched substrings (including substring 0, that is the whole matched text), so 1 is returned if the pattern has no substrings in it and 0 is returned if the match failed.
+          <a href="classGlib_1_1MatchInfo.html#ad0f3a5717883ea1949694616a0d06766">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad0f3a5717883ea1949694616a0d06766">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a83c53bd96815f6e77f89061bff8f4e63">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a83c53bd96815f6e77f89061bff8f4e63">
+           is_partial_match
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a83c53bd96815f6e77f89061bff8f4e63">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Usually if the string passed to g_regex_match*() matches as far as it goes, but is too short to match the entire pattern,
+          <code>
+           false
+          </code>
+          is returned.
+          <a href="classGlib_1_1MatchInfo.html#a83c53bd96815f6e77f89061bff8f4e63">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a83c53bd96815f6e77f89061bff8f4e63">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad851eed313f1a78753447920a053124c">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#ad851eed313f1a78753447920a053124c">
+           expand_references
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; string_to_expand)
+         </td>
+        </tr>
+        <tr class="memdesc:ad851eed313f1a78753447920a053124c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns a new string containing the text in
+          <em>
+           string_to_expand
+          </em>
+          with references and escape sequences expanded.
+          <a href="classGlib_1_1MatchInfo.html#ad851eed313f1a78753447920a053124c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad851eed313f1a78753447920a053124c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aea45397443944b5c4beac2bc19fe5a99">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#aea45397443944b5c4beac2bc19fe5a99">
+           fetch
+          </a>
+          (int match_num)
+         </td>
+        </tr>
+        <tr class="memdesc:aea45397443944b5c4beac2bc19fe5a99">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the text matching the
+          <em>
+           match_num'th
+          </em>
+          capturing parentheses.
+          <a href="classGlib_1_1MatchInfo.html#aea45397443944b5c4beac2bc19fe5a99">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aea45397443944b5c4beac2bc19fe5a99">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a59b2852b02e4c8a6300790793611ee44">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a59b2852b02e4c8a6300790793611ee44">
+           fetch_pos
+          </a>
+          (int match_num, int&amp; start_pos, int&amp; end_pos)
+         </td>
+        </tr>
+        <tr class="memdesc:a59b2852b02e4c8a6300790793611ee44">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the position in bytes of the
+          <em>
+           match_num'th
+          </em>
+          capturing parentheses.
+          <a href="classGlib_1_1MatchInfo.html#a59b2852b02e4c8a6300790793611ee44">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a59b2852b02e4c8a6300790793611ee44">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad599df8b8c141c3216db92a3c2e817d7">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#ad599df8b8c141c3216db92a3c2e817d7">
+           fetch_named
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name)
+         </td>
+        </tr>
+        <tr class="memdesc:ad599df8b8c141c3216db92a3c2e817d7">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the text matching the capturing parentheses named
+          <em>
+           name
+          </em>
+          .
+          <a href="classGlib_1_1MatchInfo.html#ad599df8b8c141c3216db92a3c2e817d7">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad599df8b8c141c3216db92a3c2e817d7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a225c431a626d47343c63680534329be1">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a225c431a626d47343c63680534329be1">
+           fetch_named_pos
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name, int&amp; start_pos, int&amp; end_pos)
+         </td>
+        </tr>
+        <tr class="memdesc:a225c431a626d47343c63680534329be1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the position in bytes of the capturing parentheses named
+          <em>
+           name
+          </em>
+          .
+          <a href="classGlib_1_1MatchInfo.html#a225c431a626d47343c63680534329be1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a225c431a626d47343c63680534329be1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0a67cb709a290fa830e25a7d5bb8c491">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="group__ContHandles.html#ga66b4a4b57f64be3fdc1972d8bf93723a">
+           Glib::StringArrayHandle
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a0a67cb709a290fa830e25a7d5bb8c491">
+           fetch_all
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a0a67cb709a290fa830e25a7d5bb8c491">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Bundles up pointers to each of the matching substrings from a match and stores them in an array of gchar pointers.
+          <a href="classGlib_1_1MatchInfo.html#a0a67cb709a290fa830e25a7d5bb8c491">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0a67cb709a290fa830e25a7d5bb8c491">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-methods">
+           </a>
+           Protected Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:aa689c9b63c4f58316e65f9b7a688ab1f">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#aa689c9b63c4f58316e65f9b7a688ab1f">
+           set_gobject
+          </a>
+          (GMatchInfo* castitem, bool
+          <a class="el" href="classGlib_1_1MatchInfo.html#a76ffcd817000f97214a1a83d5f39a092">
+           take_ownership
+          </a>
+          =true)
+         </td>
+        </tr>
+        <tr class="separator:aa689c9b63c4f58316e65f9b7a688ab1f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a97b0386692c38045ce3a3ad3349abf8d">
+         <td align="right" class="memItemLeft" valign="top">
+          GMatchInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a97b0386692c38045ce3a3ad3349abf8d">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a97b0386692c38045ce3a3ad3349abf8d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a76ffcd817000f97214a1a83d5f39a092">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MatchInfo.html#a76ffcd817000f97214a1a83d5f39a092">
+           take_ownership
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a76ffcd817000f97214a1a83d5f39a092">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        <a class="el" href="classGlib_1_1MatchInfo.html" title="MatchInfo - MatchInfo is used to retrieve information about the regular expression match which create...">
+         MatchInfo
+        </a>
+        -
+        <a class="el" href="classGlib_1_1MatchInfo.html" title="MatchInfo - MatchInfo is used to retrieve information about the regular expression match which create...">
+         MatchInfo
+        </a>
+        is used to retrieve information about the regular expression match which created it.
+       </p>
+       <dl class="since_2_28">
+        <dt>
+         <b>
+          <a class="el" href="since_2_28.html#_since_2_28000010">
+           Since glibmm 2.28:
+          </a>
+         </b>
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a605c6230ebe86112dbe175c41dc24439">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Glib::MatchInfo::MatchInfo
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Default constructor.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aabd63716145ab9997faf5fc074c35c51">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::MatchInfo::MatchInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GMatchInfo *
+               </td>
+               <td class="paramname">
+                <em>
+                 castitem
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_the_ownership
+                </em>
+                =
+                <code>
+                 true
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         C object constructor.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              castitem
+             </td>
+             <td>
+              The C object.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_the_ownership
+             </td>
+             <td>
+              Whether to destroy the C object with the wrapper or not.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9b57b2df92f6cc4787c1e8c37a80d076">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::MatchInfo::MatchInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1MatchInfo.html">
+                 MatchInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac014eedc2e3d93c45aaedb85d58d2d25">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::MatchInfo::MatchInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1MatchInfo.html">
+                 MatchInfo
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a804a1eee88368392e859e29ed3240016">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                virtual Glib::MatchInfo::~MatchInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              virtual
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Destructor.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="ad851eed313f1a78753447920a053124c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::MatchInfo::expand_references
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             string_to_expand
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns a new string containing the text in
+         <em>
+          string_to_expand
+         </em>
+         with references and escape sequences expanded.
+        </p>
+        <p>
+         References refer to the last match done with
+         <em>
+          string
+         </em>
+         against
+         <em>
+          regex
+         </em>
+         and have the same syntax used by g_regex_replace().
+        </p>
+        <p>
+         The
+         <em>
+          string_to_expand
+         </em>
+         must be UTF-8 encoded even if REGEX_RAW was passed to g_regex_new().
+        </p>
+        <p>
+         The backreferences are extracted from the string passed to the match function, so you cannot call this function after freeing the string.
+        </p>
+        <p>
+         <em>
+          match_info
+         </em>
+         may be
+         <code>
+          nullptr
+         </code>
+         in which case
+         <em>
+          string_to_expand
+         </em>
+         must not contain references. For instance "foo\\n" does not refer to an actual pattern and '\n' merely will be replaced with \n character, while to expand "\\0" (whole match) one needs the result of a match. Use g_regex_check_replacement() to find out whether
+         <em>
+          string_to_expand
+         </em>
+         contains references.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000041">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              string_to_expand
+             </td>
+             <td>
+              The string to expand.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The expanded string, or
+          <code>
+           nullptr
+          </code>
+          if an error occurred.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aea45397443944b5c4beac2bc19fe5a99">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::MatchInfo::fetch
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             match_num
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the text matching the
+         <em>
+          match_num'th
+         </em>
+         capturing parentheses.
+        </p>
+        <p>
+         0 is the full text of the match, 1 is the first paren set, 2 the second, and so on.
+        </p>
+        <p>
+         If
+         <em>
+          match_num
+         </em>
+         is a valid sub pattern but it didn't match anything (e.g. sub pattern 1, matching "b" against "(a)?b") then an empty string is returned.
+        </p>
+        <p>
+         If the match was obtained using the DFA algorithm, that is using g_regex_match_all() or g_regex_match_all_full(), the retrieved string is not that of a set of parentheses but that of a matched substring. Substrings are matched in reverse order of length, so 0 is the longest match.
+        </p>
+        <p>
+         The string is fetched from the string passed to the match function, so you cannot call this function after freeing the string.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000042">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              match_num
+             </td>
+             <td>
+              Number of the sub expression.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The matched substring, or
+          <code>
+           nullptr
+          </code>
+          if an error occurred. You have to free the string yourself.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0a67cb709a290fa830e25a7d5bb8c491">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="group__ContHandles.html#ga66b4a4b57f64be3fdc1972d8bf93723a">
+             Glib::StringArrayHandle
+            </a>
+            Glib::MatchInfo::fetch_all
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Bundles up pointers to each of the matching substrings from a match and stores them in an array of gchar pointers.
+        </p>
+        <p>
+         The first element in the returned array is the match number 0, i.e. the entire matched text.
+        </p>
+        <p>
+         If a sub pattern didn't match anything (e.g. sub pattern 1, matching "b" against "(a)?b") then an empty string is inserted.
+        </p>
+        <p>
+         If the last match was obtained using the DFA algorithm, that is using g_regex_match_all() or g_regex_match_all_full(), the retrieved strings are not that matched by sets of parentheses but that of the matched substring. Substrings are matched in reverse order of length, so the first one is the longest match.
+        </p>
+        <p>
+         The strings are fetched from the string passed to the match function, so you cannot call this function after freeing the string.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000046">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <code>
+           nullptr
+          </code>
+          -terminated array of gchar * pointers. It must be freed using g_strfreev(). If the previous match failed
+          <code>
+           nullptr
+          </code>
+          is returned.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad599df8b8c141c3216db92a3c2e817d7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::MatchInfo::fetch_named
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the text matching the capturing parentheses named
+         <em>
+          name
+         </em>
+         .
+        </p>
+        <p>
+         If
+         <em>
+          name
+         </em>
+         is a valid sub pattern name but it didn't match anything (e.g. sub pattern "X", matching "b" against "(?P&lt;X&gt;a)?b") then an empty string is returned.
+        </p>
+        <p>
+         The string is fetched from the string passed to the match function, so you cannot call this function after freeing the string.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000044">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              Name of the subexpression.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The matched substring, or
+          <code>
+           nullptr
+          </code>
+          if an error occurred. You have to free the string yourself.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a225c431a626d47343c63680534329be1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MatchInfo::fetch_named_pos
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             start_pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             end_pos
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the position in bytes of the capturing parentheses named
+         <em>
+          name
+         </em>
+         .
+        </p>
+        <p>
+         If
+         <em>
+          name
+         </em>
+         is a valid sub pattern name but it didn't match anything (e.g. sub pattern "X", matching "b" against "(?P&lt;X&gt;a)?b") then
+         <em>
+          start_pos
+         </em>
+         and
+         <em>
+          end_pos
+         </em>
+         are set to -1 and
+         <code>
+          true
+         </code>
+         is returned.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000045">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              Name of the subexpression.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              start_pos
+             </td>
+             <td>
+              Pointer to location where to store the start position, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              end_pos
+             </td>
+             <td>
+              Pointer to location where to store the end position, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the position was fetched,
+          <code>
+           false
+          </code>
+          otherwise. If the position cannot be fetched,
+          <em>
+           start_pos
+          </em>
+          and
+          <em>
+           end_pos
+          </em>
+          are left unchanged.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a59b2852b02e4c8a6300790793611ee44">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MatchInfo::fetch_pos
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             match_num
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             start_pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             end_pos
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the position in bytes of the
+         <em>
+          match_num'th
+         </em>
+         capturing parentheses.
+        </p>
+        <p>
+         0 is the full text of the match, 1 is the first paren set, 2 the second, and so on.
+        </p>
+        <p>
+         If
+         <em>
+          match_num
+         </em>
+         is a valid sub pattern but it didn't match anything (e.g. sub pattern 1, matching "b" against "(a)?b") then
+         <em>
+          start_pos
+         </em>
+         and
+         <em>
+          end_pos
+         </em>
+         are set to -1 and
+         <code>
+          true
+         </code>
+         is returned.
+        </p>
+        <p>
+         If the match was obtained using the DFA algorithm, that is using g_regex_match_all() or g_regex_match_all_full(), the retrieved position is not that of a set of parentheses but that of a matched substring. Substrings are matched in reverse order of length, so 0 is the longest match.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000043">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              match_num
+             </td>
+             <td>
+              Number of the sub expression.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              start_pos
+             </td>
+             <td>
+              Pointer to location where to store the start position, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              end_pos
+             </td>
+             <td>
+              Pointer to location where to store the end position, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the position was fetched,
+          <code>
+           false
+          </code>
+          otherwise. If the position cannot be fetched,
+          <em>
+           start_pos
+          </em>
+          and
+          <em>
+           end_pos
+          </em>
+          are left unchanged.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad0f3a5717883ea1949694616a0d06766">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Glib::MatchInfo::get_match_count
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the number of matched substrings (including substring 0, that is the whole matched text), so 1 is returned if the pattern has no substrings in it and 0 is returned if the match failed.
+        </p>
+        <p>
+         If the last match was obtained using the DFA algorithm, that is using g_regex_match_all() or g_regex_match_all_full(), the retrieved count is not that of the number of capturing parentheses but that of the number of matched substrings.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000039">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Number of matched substrings, or -1 if an error occurred.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a039847559f658ce78697cfcebed5a10b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGlib_1_1Regex.html">
+             Regex
+            </a>
+            &gt; Glib::MatchInfo::get_regex
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns
+         <a class="el" href="classGlib_1_1Regex.html" title="Perl-compatible regular expressions - matches strings against regular expressions. ">
+          Regex
+         </a>
+         object used in
+         <em>
+          match_info
+         </em>
+         .
+        </p>
+        <p>
+         It belongs to
+         <a class="el" href="namespaceGlib.html">
+          Glib
+         </a>
+         and must not be freed. Use g_regex_ref() if you need to keep it after you free
+         <em>
+          match_info
+         </em>
+         object.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000034">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <a class="el" href="classGlib_1_1Regex.html" title="Perl-compatible regular expressions - matches strings against regular expressions. ">
+           Regex
+          </a>
+          object used in
+          <em>
+           match_info
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a98293ed4313061d3c1f141ab45618117">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGlib_1_1Regex.html">
+             Regex
+            </a>
+            &gt; Glib::MatchInfo::get_regex
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns
+         <a class="el" href="classGlib_1_1Regex.html" title="Perl-compatible regular expressions - matches strings against regular expressions. ">
+          Regex
+         </a>
+         object used in
+         <em>
+          match_info
+         </em>
+         .
+        </p>
+        <p>
+         It belongs to
+         <a class="el" href="namespaceGlib.html">
+          Glib
+         </a>
+         and must not be freed. Use g_regex_ref() if you need to keep it after you free
+         <em>
+          match_info
+         </em>
+         object.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000035">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <a class="el" href="classGlib_1_1Regex.html" title="Perl-compatible regular expressions - matches strings against regular expressions. ">
+           Regex
+          </a>
+          object used in
+          <em>
+           match_info
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a60d5033eab3e60dbcec52ee1fa843149">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::MatchInfo::get_string
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the string searched with
+         <em>
+          match_info
+         </em>
+         .
+        </p>
+        <p>
+         This is the string passed to g_regex_match() or g_regex_replace() so you may not free it before calling this function.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000036">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The string searched with
+          <em>
+           match_info
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="adea5b17c9746bef9e0cdb90a17a87cad">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GMatchInfo* Glib::MatchInfo::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C object.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aeadcd55d3530900ba472f931310e9a79">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GMatchInfo* Glib::MatchInfo::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C object.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a83c53bd96815f6e77f89061bff8f4e63">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MatchInfo::is_partial_match
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Usually if the string passed to g_regex_match*() matches as far as it goes, but is too short to match the entire pattern,
+         <code>
+          false
+         </code>
+         is returned.
+        </p>
+        <p>
+         There are circumstances where it might be helpful to distinguish this case from other cases in which there is no match.
+        </p>
+        <p>
+         Consider, for example, an application where a human is required to type in data for a field with specific formatting requirements. An example might be a date in the form ddmmmyy, defined by the pattern "^\\d?\\d(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\\d\\d$". If the application sees the user’s keystrokes one by one, and can check that what has been typed so far is potentially valid, it is able to raise an error as soon as a mistake is made.
+        </p>
+        <p>
+         GRegex supports the concept of partial matching by means of the REGEX_MATCH_PARTIAL_SOFT and REGEX_MATCH_PARTIAL_HARD flags. When they are used, the return code for g_regex_match() or g_regex_match_full() is, as usual,
+         <code>
+          true
+         </code>
+         for a complete match,
+         <code>
+          false
+         </code>
+         otherwise. But, when these functions return
+         <code>
+          false
+         </code>
+         , you can check if the match was partial calling g_match_info_is_partial_match().
+        </p>
+        <p>
+         The difference between REGEX_MATCH_PARTIAL_SOFT and REGEX_MATCH_PARTIAL_HARD is that when a partial match is encountered with REGEX_MATCH_PARTIAL_SOFT, matching continues to search for a possible complete match, while with REGEX_MATCH_PARTIAL_HARD matching stops at the partial match. When both REGEX_MATCH_PARTIAL_SOFT and REGEX_MATCH_PARTIAL_HARD are set, the latter takes precedence.
+        </p>
+        <p>
+         There were formerly some restrictions on the pattern for partial matching. The restrictions no longer apply.
+        </p>
+        <p>
+         See pcrepartial(3) for more information on partial matching.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000040">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the match was partial,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac68b9aadafa1b51d9fe50d08e5972da1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MatchInfo::matches
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns whether the previous match operation succeeded.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000037">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the previous match operation succeeded,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a28d78ac3e2e82907534ca2dadb28108f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MatchInfo::next
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Scans for the next match using the same parameters of the previous call to g_regex_match_full() or g_regex_match() that returned
+         <em>
+          match_info
+         </em>
+         .
+        </p>
+        <p>
+         The match is done on the string passed to the match function, so you cannot free it before calling this function.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000038">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          is the string matched,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5620225fb1d3a70cb952502a5c5e32da">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1MatchInfo.html">
+                 MatchInfo
+                </a>
+                &amp; Glib::MatchInfo::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1MatchInfo.html">
+                 MatchInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a973a3f9edda6a82d2e5aa0e7710d648c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1MatchInfo.html">
+                 MatchInfo
+                </a>
+                &amp; Glib::MatchInfo::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1MatchInfo.html">
+                 MatchInfo
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aa689c9b63c4f58316e65f9b7a688ab1f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void Glib::MatchInfo::set_gobject
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GMatchInfo *
+               </td>
+               <td class="paramname">
+                <em>
+                 castitem
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_ownership
+                </em>
+                =
+                <code>
+                 true
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="a97b0386692c38045ce3a3ad3349abf8d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GMatchInfo* Glib::MatchInfo::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a76ffcd817000f97214a1a83d5f39a092">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool Glib::MatchInfo::take_ownership
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1MatchInfo.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

@@ -1,0 +1,1163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::ValueBase Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1ValueBase.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1ValueBase.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1ValueBase.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::ValueBase Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       <code>
+        #include &lt;glibmm/value.h&gt;
+       </code>
+      </p>
+      <div class="dynheader">
+       Inheritance diagram for Glib::ValueBase:
+      </div>
+      <div class="dyncontent">
+       <div class="center">
+        <img alt="Inheritance graph" border="0" src="classGlib_1_1ValueBase__inherit__graph.png" usemap="#Glib_1_1ValueBase_inherit__map"/>
+       </div>
+       <map id="Glib_1_1ValueBase_inherit__map" name="Glib_1_1ValueBase_inherit__map">
+        <area alt="" coords="190,5,337,32" href="classGlib_1_1Value_3_01bool_01_4.html" id="node2" shape="rect" title="Glib::Value\&lt; bool \&gt;">
+        </area>
+        <area alt="" coords="190,56,337,83" href="classGlib_1_1Value_3_01char_01_4.html" id="node3" shape="rect" title="Glib::Value\&lt; char \&gt;">
+        </area>
+        <area alt="" coords="182,107,345,133" href="classGlib_1_1Value_3_01double_01_4.html" id="node4" shape="rect" title="Glib::Value\&lt; double \&gt;">
+        </area>
+        <area alt="" coords="190,157,337,184" href="classGlib_1_1Value_3_01float_01_4.html" id="node5" shape="rect" title="Glib::Value\&lt; float \&gt;">
+        </area>
+        <area alt="" coords="196,208,331,235" href="classGlib_1_1Value_3_01int_01_4.html" id="node6" shape="rect" title="Glib::Value\&lt; int \&gt;">
+        </area>
+        <area alt="" coords="190,259,337,285" href="classGlib_1_1Value_3_01long_01_4.html" id="node7" shape="rect" title="Glib::Value\&lt; long \&gt;">
+        </area>
+        <area alt="" coords="175,309,352,336" href="classGlib_1_1Value_3_01long_01long_01_4.html" id="node8" shape="rect" title="Glib::Value\&lt; long long \&gt;">
+        </area>
+        <area alt="" coords="190,361,337,402" href="classGlib_1_1Value_3_01signed_01char_01_4.html" id="node9" shape="rect" title="Glib::Value\&lt; signed\l char \&gt;">
+        </area>
+        <area alt="" coords="182,426,345,467" href="classGlib_1_1Value_3_01unsigned_01char_01_4.html" id="node10" shape="rect" title="Glib::Value\&lt; unsigned\l char \&gt;">
+        </area>
+        <area alt="" coords="182,491,345,533" href="classGlib_1_1Value_3_01unsigned_01int_01_4.html" id="node11" shape="rect" title="Glib::Value\&lt; unsigned\l int \&gt;">
+        </area>
+        <area alt="" coords="182,557,345,598" href="classGlib_1_1Value_3_01unsigned_01long_01_4.html" id="node12" shape="rect" title="Glib::Value\&lt; unsigned\l long \&gt;">
+        </area>
+        <area alt="" coords="182,622,345,663" href="classGlib_1_1Value_3_01unsigned_01long_01long_01_4.html" id="node13" shape="rect" title="Glib::Value\&lt; unsigned\l long long \&gt;">
+        </area>
+        <area alt="" coords="185,688,341,715" href="classGlib_1_1Value_3_01void_01_5_01_4.html" id="node14" shape="rect" title="Glib::Value\&lt; void * \&gt;">
+        </area>
+        <area alt="" coords="179,739,347,765" href="classGlib_1_1ValueBase__Boxed.html" id="node15" shape="rect" title="Glib::ValueBase_Boxed">
+        </area>
+        <area alt="" coords="181,789,346,816" href="classGlib_1_1ValueBase__Enum.html" id="node18" shape="rect" title="Glib::ValueBase_Enum">
+        </area>
+        <area alt="" coords="183,840,344,867" href="classGlib_1_1ValueBase__Flags.html" id="node20" shape="rect" title="Glib::ValueBase_Flags">
+        </area>
+        <area alt="" coords="179,997,348,1024" href="classGlib_1_1ValueBase__Object.html" id="node22" shape="rect" title="Glib::ValueBase_Object">
+        </area>
+        <area alt="" coords="180,1225,347,1252" href="classGlib_1_1ValueBase__String.html" id="node30" shape="rect" title="Glib::ValueBase_String">
+        </area>
+        <area alt="" coords="428,688,555,715" href="classGlib_1_1Value.html" id="node16" shape="rect" title="Generic value implementation for custom types. ">
+        </area>
+        <area alt="" coords="405,739,578,765" href="classGlib_1_1Value__Boxed.html" id="node17" shape="rect" title="Glib::Value_Boxed\&lt; T \&gt;">
+        </area>
+        <area alt="" coords="406,789,577,816" href="classGlib_1_1Value__Enum.html" id="node19" shape="rect" title="Base class of Glib::Value&lt;T&gt; specializations for enum types. ">
+        </area>
+        <area alt="" coords="408,840,575,867" href="classGlib_1_1Value__Flags.html" id="node21" shape="rect" title="Base class of Glib::Value&lt;T&gt; specializations for flags types. ">
+        </area>
+        <area alt="" coords="416,891,567,933" href="classGlib_1_1Value_3_01Glib_1_1RefPtr_3_01const_01T_01_4_01_4.html" id="node23" shape="rect" title="Partial specialization for RefPtr&lt;&gt; to const Glib::Object. ">
+        </area>
+        <area alt="" coords="423,957,559,998" href="classGlib_1_1Value_3_01Glib_1_1RefPtr_3_01T_01_4_01_4.html" id="node24" shape="rect" title="Partial specialization for RefPtr&lt;&gt; to Glib::Object. ">
+        </area>
+        <area alt="" coords="421,1022,562,1063" href="classGlib_1_1Value__Pointer.html" id="node25" shape="rect" title="Glib::Value_Pointer\l\&lt; T, PtrT \&gt;">
+        </area>
+        <area alt="" coords="421,1087,562,1129" href="classGlib_1_1Value__Pointer.html" id="node26" shape="rect" title="Glib::Value_Pointer\l\&lt; T, const T * \&gt;">
+        </area>
+        <area alt="" coords="421,1153,562,1194" href="classGlib_1_1Value__Pointer.html" id="node28" shape="rect" title="Glib::Value_Pointer\l\&lt; T, T * \&gt;">
+        </area>
+        <area alt="" coords="631,1087,769,1129" href="classGlib_1_1Value_3_01const_01T_01_5_01_4.html" id="node27" shape="rect" title="Specialization for pointers to const instances of any type. ">
+        </area>
+        <area alt="" coords="631,1160,769,1187" href="classGlib_1_1Value_3_01T_01_5_01_4.html" id="node29" shape="rect" title="Specialization for pointers to instances of any type. ">
+        </area>
+        <area alt="" coords="423,1218,559,1259" href="classGlib_1_1Value_3_01Glib_1_1ustring_01_4.html" id="node31" shape="rect" title="Specialization for UTF-8 strings. ">
+        </area>
+        <area alt="" coords="400,1284,583,1311" href="classGlib_1_1Value_3_01std_1_1string_01_4.html" id="node32" shape="rect" title="Specialization for strings. ">
+        </area>
+       </map>
+       <center>
+        <span class="legend">
+         [
+         <a href="graph_legend.html">
+          legend
+         </a>
+         ]
+        </span>
+       </center>
+      </div>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a066cc345d62be564ff53b25bd11e62e5">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ValueBase.html#a066cc345d62be564ff53b25bd11e62e5">
+           ValueBase
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a066cc345d62be564ff53b25bd11e62e5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Initializes the GValue, but without a type.
+          <a href="classGlib_1_1ValueBase.html#a066cc345d62be564ff53b25bd11e62e5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a066cc345d62be564ff53b25bd11e62e5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1af751f0ac927df5ccba7d584cb9e63f">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ValueBase.html#a1af751f0ac927df5ccba7d584cb9e63f">
+           ValueBase
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ValueBase.html">
+           ValueBase
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:a1af751f0ac927df5ccba7d584cb9e63f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a73ceadee7e4d2298b31d1dbe4bcd35e5">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ValueBase.html">
+           ValueBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ValueBase.html#a73ceadee7e4d2298b31d1dbe4bcd35e5">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ValueBase.html">
+           ValueBase
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:a73ceadee7e4d2298b31d1dbe4bcd35e5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aed5fa89efb4f89f37bc51d08cfd01f6b">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ValueBase.html#aed5fa89efb4f89f37bc51d08cfd01f6b">
+           ~ValueBase
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:aed5fa89efb4f89f37bc51d08cfd01f6b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1659121f15f5e840cc1eba2b0aaefbb1">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ValueBase.html#a1659121f15f5e840cc1eba2b0aaefbb1">
+           init
+          </a>
+          (GType type)
+         </td>
+        </tr>
+        <tr class="memdesc:a1659121f15f5e840cc1eba2b0aaefbb1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Setup the GValue for storing the specified
+          <em>
+           type
+          </em>
+          .
+          <a href="classGlib_1_1ValueBase.html#a1659121f15f5e840cc1eba2b0aaefbb1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1659121f15f5e840cc1eba2b0aaefbb1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1d31168845e6bb144a66904e813240e2">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ValueBase.html#a1d31168845e6bb144a66904e813240e2">
+           init
+          </a>
+          (const GValue* value)
+         </td>
+        </tr>
+        <tr class="memdesc:a1d31168845e6bb144a66904e813240e2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Setup the GValue storing the type and value of the specified
+          <em>
+           value
+          </em>
+          .
+          <a href="classGlib_1_1ValueBase.html#a1d31168845e6bb144a66904e813240e2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1d31168845e6bb144a66904e813240e2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a30c7bde0d772b87dc890da7a197c4494">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ValueBase.html#a30c7bde0d772b87dc890da7a197c4494">
+           reset
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a30c7bde0d772b87dc890da7a197c4494">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Reset contents to the default value of its type.
+          <a href="classGlib_1_1ValueBase.html#a30c7bde0d772b87dc890da7a197c4494">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a30c7bde0d772b87dc890da7a197c4494">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a33253264f47c41526ede3f78afdbe1e4">
+         <td align="right" class="memItemLeft" valign="top">
+          GValue*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ValueBase.html#a33253264f47c41526ede3f78afdbe1e4">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a33253264f47c41526ede3f78afdbe1e4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab8050dbb94b1708d7786d797a4657d2f">
+         <td align="right" class="memItemLeft" valign="top">
+          const GValue*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ValueBase.html#ab8050dbb94b1708d7786d797a4657d2f">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:ab8050dbb94b1708d7786d797a4657d2f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a3472d8f4c0bd6513c939ee3a4633be0f">
+         <td align="right" class="memItemLeft" valign="top">
+          GValue
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ValueBase.html#a3472d8f4c0bd6513c939ee3a4633be0f">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a3472d8f4c0bd6513c939ee3a4633be0f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a066cc345d62be564ff53b25bd11e62e5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Glib::ValueBase::ValueBase
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Initializes the GValue, but without a type.
+        </p>
+        <p>
+         You have to call
+         <a class="el" href="classGlib_1_1ValueBase.html#a1659121f15f5e840cc1eba2b0aaefbb1" title="Setup the GValue for storing the specified type. ">
+          init()
+         </a>
+         before using the
+         <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01616.html#a9dc2432a50c69a8c7a2b46b99baec08f">
+          set()
+         </a>
+         , get(), or
+         <a class="el" href="classGlib_1_1ValueBase.html#a30c7bde0d772b87dc890da7a197c4494" title="Reset contents to the default value of its type. ">
+          reset()
+         </a>
+         methods.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a1af751f0ac927df5ccba7d584cb9e63f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Glib::ValueBase::ValueBase
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ValueBase.html">
+             ValueBase
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aed5fa89efb4f89f37bc51d08cfd01f6b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::ValueBase::~ValueBase
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a33253264f47c41526ede3f78afdbe1e4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GValue* Glib::ValueBase::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab8050dbb94b1708d7786d797a4657d2f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GValue* Glib::ValueBase::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a1659121f15f5e840cc1eba2b0aaefbb1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::ValueBase::init
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            GType
+           </td>
+           <td class="paramname">
+            <em>
+             type
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Setup the GValue for storing the specified
+         <em>
+          type
+         </em>
+         .
+        </p>
+        <p>
+         The contents will be initialized to the default value for this type. Note that
+         <a class="el" href="classGlib_1_1ValueBase.html#a1659121f15f5e840cc1eba2b0aaefbb1" title="Setup the GValue for storing the specified type. ">
+          init()
+         </a>
+         should never be called twice.
+        </p>
+        <p>
+         <a class="el" href="classGlib_1_1ValueBase.html#a1659121f15f5e840cc1eba2b0aaefbb1" title="Setup the GValue for storing the specified type. ">
+          init()
+         </a>
+         is not implemented as constructor, to avoid the necessity to implement a forward constructor in each derived class.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              type
+             </td>
+             <td>
+              The type that the
+              <a class="el" href="classGlib_1_1Value.html" title="Generic value implementation for custom types. ">
+               Value
+              </a>
+              should hold.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1d31168845e6bb144a66904e813240e2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::ValueBase::init
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const GValue *
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Setup the GValue storing the type and value of the specified
+         <em>
+          value
+         </em>
+         .
+        </p>
+        <p>
+         Note that
+         <a class="el" href="classGlib_1_1ValueBase.html#a1659121f15f5e840cc1eba2b0aaefbb1" title="Setup the GValue for storing the specified type. ">
+          init()
+         </a>
+         should never be called twice.
+        </p>
+        <p>
+         <a class="el" href="classGlib_1_1ValueBase.html#a1659121f15f5e840cc1eba2b0aaefbb1" title="Setup the GValue for storing the specified type. ">
+          init()
+         </a>
+         is not implemented as constructor, to avoid the necessity to implement a forward constructor in each derived class.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              value
+             </td>
+             <td>
+              The existing GValue.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a73ceadee7e4d2298b31d1dbe4bcd35e5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ValueBase.html">
+             ValueBase
+            </a>
+            &amp; Glib::ValueBase::operator=
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ValueBase.html">
+             ValueBase
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a30c7bde0d772b87dc890da7a197c4494">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::ValueBase::reset
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Reset contents to the default value of its type.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="a3472d8f4c0bd6513c939ee3a4633be0f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GValue Glib::ValueBase::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1ValueBase.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

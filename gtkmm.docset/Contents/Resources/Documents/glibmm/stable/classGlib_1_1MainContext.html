@@ -1,0 +1,3305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::MainContext Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1MainContext.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1MainContext.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1MainContext.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::MainContext Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       Main context.
+       <a href="classGlib_1_1MainContext.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/main.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a9d00f1f72f13112f5f3f92131440ecc9">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a9d00f1f72f13112f5f3f92131440ecc9">
+           CppObjectType
+          </a>
+          =
+          <a class="el" href="classGlib_1_1MainContext.html">
+           Glib::MainContext
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a9d00f1f72f13112f5f3f92131440ecc9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abe4bb57732aa1301e45a0a676cbfc079">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#abe4bb57732aa1301e45a0a676cbfc079">
+           BaseObjectType
+          </a>
+          = GMainContext
+         </td>
+        </tr>
+        <tr class="separator:abe4bb57732aa1301e45a0a676cbfc079">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a8eaedd89e2b7404ea364b2f8b4dfa0af">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a8eaedd89e2b7404ea364b2f8b4dfa0af">
+           MainContext
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1MainContext.html">
+           MainContext
+          </a>
+          &amp; other)=delete
+         </td>
+        </tr>
+        <tr class="separator:a8eaedd89e2b7404ea364b2f8b4dfa0af">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a112cc935c448383449b568056d806db6">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1MainContext.html">
+           MainContext
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a112cc935c448383449b568056d806db6">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1MainContext.html">
+           MainContext
+          </a>
+          &amp; other)=delete
+         </td>
+        </tr>
+        <tr class="separator:a112cc935c448383449b568056d806db6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afde2e29315da1239af998f1826ad5e88">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#afde2e29315da1239af998f1826ad5e88">
+           iteration
+          </a>
+          (bool may_block)
+         </td>
+        </tr>
+        <tr class="memdesc:afde2e29315da1239af998f1826ad5e88">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Runs a single iteration for the given main loop.
+          <a href="classGlib_1_1MainContext.html#afde2e29315da1239af998f1826ad5e88">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:afde2e29315da1239af998f1826ad5e88">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acf4631ab57318f39f3e15d98ac1aaa5c">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#acf4631ab57318f39f3e15d98ac1aaa5c">
+           pending
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:acf4631ab57318f39f3e15d98ac1aaa5c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if any sources have pending events for the given context.
+          <a href="classGlib_1_1MainContext.html#acf4631ab57318f39f3e15d98ac1aaa5c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acf4631ab57318f39f3e15d98ac1aaa5c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5a5e60018f7549f064e71b34b1668020">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a5a5e60018f7549f064e71b34b1668020">
+           wakeup
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a5a5e60018f7549f064e71b34b1668020">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          If context is currently waiting in a poll(), interrupt the poll(), and continue the iteration process.
+          <a href="classGlib_1_1MainContext.html#a5a5e60018f7549f064e71b34b1668020">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5a5e60018f7549f064e71b34b1668020">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa92ee9cfb192aa5eb6c2aa0841068bbc">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#aa92ee9cfb192aa5eb6c2aa0841068bbc">
+           acquire
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aa92ee9cfb192aa5eb6c2aa0841068bbc">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Tries to become the owner of the specified context.
+          <a href="classGlib_1_1MainContext.html#aa92ee9cfb192aa5eb6c2aa0841068bbc">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa92ee9cfb192aa5eb6c2aa0841068bbc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a68c3d19af76d4b32aeae9d2e4f5c230f">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a68c3d19af76d4b32aeae9d2e4f5c230f">
+           wait
+          </a>
+          (
+          <a class="el" href="classGlib_1_1Cond.html">
+           Glib::Cond
+          </a>
+          &amp; cond,
+          <a class="el" href="classGlib_1_1Mutex.html">
+           Glib::Mutex
+          </a>
+          &amp; mutex)
+         </td>
+        </tr>
+        <tr class="memdesc:a68c3d19af76d4b32aeae9d2e4f5c230f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Tries to become the owner of the specified context, as with
+          <a class="el" href="classGlib_1_1MainContext.html#aa92ee9cfb192aa5eb6c2aa0841068bbc" title="Tries to become the owner of the specified context. ">
+           acquire()
+          </a>
+          .
+          <a href="classGlib_1_1MainContext.html#a68c3d19af76d4b32aeae9d2e4f5c230f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a68c3d19af76d4b32aeae9d2e4f5c230f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abbb4cc661f4f5773138a733f4a2ed156">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#abbb4cc661f4f5773138a733f4a2ed156">
+           wait
+          </a>
+          (
+          <a class="el" href="classGlib_1_1Threads_1_1Cond.html">
+           Glib::Threads::Cond
+          </a>
+          &amp; cond,
+          <a class="el" href="classGlib_1_1Threads_1_1Mutex.html">
+           Glib::Threads::Mutex
+          </a>
+          &amp; mutex)
+         </td>
+        </tr>
+        <tr class="memdesc:abbb4cc661f4f5773138a733f4a2ed156">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Tries to become the owner of the specified context, as with
+          <a class="el" href="classGlib_1_1MainContext.html#aa92ee9cfb192aa5eb6c2aa0841068bbc" title="Tries to become the owner of the specified context. ">
+           acquire()
+          </a>
+          .
+          <a href="classGlib_1_1MainContext.html#abbb4cc661f4f5773138a733f4a2ed156">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abbb4cc661f4f5773138a733f4a2ed156">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ace2d9cdfa27cbe30026932de0526f730">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#ace2d9cdfa27cbe30026932de0526f730">
+           release
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ace2d9cdfa27cbe30026932de0526f730">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Releases ownership of a context previously acquired by this thread with
+          <a class="el" href="classGlib_1_1MainContext.html#aa92ee9cfb192aa5eb6c2aa0841068bbc" title="Tries to become the owner of the specified context. ">
+           acquire()
+          </a>
+          .
+          <a href="classGlib_1_1MainContext.html#ace2d9cdfa27cbe30026932de0526f730">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ace2d9cdfa27cbe30026932de0526f730">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af6d1fccb3c1f5aab758d5eb1b3c15d6a">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#af6d1fccb3c1f5aab758d5eb1b3c15d6a">
+           prepare
+          </a>
+          (int&amp; priority)
+         </td>
+        </tr>
+        <tr class="memdesc:af6d1fccb3c1f5aab758d5eb1b3c15d6a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Prepares to poll sources within a main loop.
+          <a href="classGlib_1_1MainContext.html#af6d1fccb3c1f5aab758d5eb1b3c15d6a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af6d1fccb3c1f5aab758d5eb1b3c15d6a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abd1bdf8fcb0130152237e87942c89ee1">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#abd1bdf8fcb0130152237e87942c89ee1">
+           prepare
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:abd1bdf8fcb0130152237e87942c89ee1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Prepares to poll sources within a main loop.
+          <a href="classGlib_1_1MainContext.html#abd1bdf8fcb0130152237e87942c89ee1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abd1bdf8fcb0130152237e87942c89ee1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a49e8976cec1ae4f5b5c30feea6094927">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a49e8976cec1ae4f5b5c30feea6094927">
+           query
+          </a>
+          (int max_priority, int&amp; timeout,
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="el" href="classGlib_1_1PollFD.html">
+           PollFD
+          </a>
+          &gt;&amp; fds)
+         </td>
+        </tr>
+        <tr class="memdesc:a49e8976cec1ae4f5b5c30feea6094927">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Determines information necessary to poll this main loop.
+          <a href="classGlib_1_1MainContext.html#a49e8976cec1ae4f5b5c30feea6094927">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a49e8976cec1ae4f5b5c30feea6094927">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8061ef816d51cc27372f016c683cc513">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a8061ef816d51cc27372f016c683cc513">
+           check
+          </a>
+          (int max_priority,
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="el" href="classGlib_1_1PollFD.html">
+           PollFD
+          </a>
+          &gt;&amp; fds)
+         </td>
+        </tr>
+        <tr class="memdesc:a8061ef816d51cc27372f016c683cc513">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Passes the results of polling back to the main loop.
+          <a href="classGlib_1_1MainContext.html#a8061ef816d51cc27372f016c683cc513">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8061ef816d51cc27372f016c683cc513">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5c1f06dbac3bbf771c25ce76af0d4880">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a5c1f06dbac3bbf771c25ce76af0d4880">
+           dispatch
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a5c1f06dbac3bbf771c25ce76af0d4880">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Dispatches all pending sources.
+          <a href="classGlib_1_1MainContext.html#a5c1f06dbac3bbf771c25ce76af0d4880">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5c1f06dbac3bbf771c25ce76af0d4880">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad8383c8f1a1a03b904f9be608ad8eaaf">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#ad8383c8f1a1a03b904f9be608ad8eaaf">
+           set_poll_func
+          </a>
+          (GPollFunc poll_func)
+         </td>
+        </tr>
+        <tr class="memdesc:ad8383c8f1a1a03b904f9be608ad8eaaf">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the function to use to handle polling of file descriptors.
+          <a href="classGlib_1_1MainContext.html#ad8383c8f1a1a03b904f9be608ad8eaaf">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad8383c8f1a1a03b904f9be608ad8eaaf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a34a0b1e31173e163f11053dbcf21b84c">
+         <td align="right" class="memItemLeft" valign="top">
+          GPollFunc
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a34a0b1e31173e163f11053dbcf21b84c">
+           get_poll_func
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a34a0b1e31173e163f11053dbcf21b84c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the poll function set by g_main_context_set_poll_func().
+          <a href="classGlib_1_1MainContext.html#a34a0b1e31173e163f11053dbcf21b84c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a34a0b1e31173e163f11053dbcf21b84c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7cdbe7d102a781b6aded3cdda45fef34">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a7cdbe7d102a781b6aded3cdda45fef34">
+           add_poll
+          </a>
+          (
+          <a class="el" href="classGlib_1_1PollFD.html">
+           PollFD
+          </a>
+          &amp; fd, int priority)
+         </td>
+        </tr>
+        <tr class="memdesc:a7cdbe7d102a781b6aded3cdda45fef34">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Adds a file descriptor to the set of file descriptors polled for this context.
+          <a href="classGlib_1_1MainContext.html#a7cdbe7d102a781b6aded3cdda45fef34">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7cdbe7d102a781b6aded3cdda45fef34">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a33ea2db49dd93739599d19756c251627">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a33ea2db49dd93739599d19756c251627">
+           remove_poll
+          </a>
+          (
+          <a class="el" href="classGlib_1_1PollFD.html">
+           PollFD
+          </a>
+          &amp; fd)
+         </td>
+        </tr>
+        <tr class="memdesc:a33ea2db49dd93739599d19756c251627">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Removes file descriptor from the set of file descriptors to be polled for a particular context.
+          <a href="classGlib_1_1MainContext.html#a33ea2db49dd93739599d19756c251627">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a33ea2db49dd93739599d19756c251627">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab51154582ff342993ff27fa0024ab38f">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#ab51154582ff342993ff27fa0024ab38f">
+           invoke
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; bool &gt;&amp; slot, int priority=
+          <a class="el" href="namespaceGlib.html#a0c450f82b9e34689e2dda2038ba7834fa597ed3aa6067516c9c752896f3816b5e">
+           PRIORITY_DEFAULT
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:ab51154582ff342993ff27fa0024ab38f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Invokes a function in such a way that this
+          <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+           MainContext
+          </a>
+          is owned during the invocation of
+          <em>
+           slot
+          </em>
+          .
+          <a href="classGlib_1_1MainContext.html#ab51154582ff342993ff27fa0024ab38f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab51154582ff342993ff27fa0024ab38f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adf307c9028858449e932f5fff100d432">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1SignalTimeout.html">
+           SignalTimeout
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#adf307c9028858449e932f5fff100d432">
+           signal_timeout
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:adf307c9028858449e932f5fff100d432">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Timeout signal, attached to this
+          <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+           MainContext
+          </a>
+          .
+          <a href="classGlib_1_1MainContext.html#adf307c9028858449e932f5fff100d432">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:adf307c9028858449e932f5fff100d432">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2a12990fb67f7b5c1ed61e36952dd827">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1SignalIdle.html">
+           SignalIdle
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a2a12990fb67f7b5c1ed61e36952dd827">
+           signal_idle
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a2a12990fb67f7b5c1ed61e36952dd827">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Idle signal, attached to this
+          <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+           MainContext
+          </a>
+          .
+          <a href="classGlib_1_1MainContext.html#a2a12990fb67f7b5c1ed61e36952dd827">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2a12990fb67f7b5c1ed61e36952dd827">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8c8a4283456eb9036cc09dc3aaf203dc">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1SignalIO.html">
+           SignalIO
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a8c8a4283456eb9036cc09dc3aaf203dc">
+           signal_io
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a8c8a4283456eb9036cc09dc3aaf203dc">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          I/O signal, attached to this
+          <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+           MainContext
+          </a>
+          .
+          <a href="classGlib_1_1MainContext.html#a8c8a4283456eb9036cc09dc3aaf203dc">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8c8a4283456eb9036cc09dc3aaf203dc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab646f19ce79faa35d97e8af93e6ca6d6">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1SignalChildWatch.html">
+           SignalChildWatch
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#ab646f19ce79faa35d97e8af93e6ca6d6">
+           signal_child_watch
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ab646f19ce79faa35d97e8af93e6ca6d6">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          child watch signal, attached to this
+          <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+           MainContext
+          </a>
+          .
+          <a href="classGlib_1_1MainContext.html#ab646f19ce79faa35d97e8af93e6ca6d6">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab646f19ce79faa35d97e8af93e6ca6d6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a71499a662e6ac07590a0972b1b0eac64">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a71499a662e6ac07590a0972b1b0eac64">
+           reference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a71499a662e6ac07590a0972b1b0eac64">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8eaf5d38c393770f150db7bad9a67f9e">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a8eaf5d38c393770f150db7bad9a67f9e">
+           unreference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a8eaf5d38c393770f150db7bad9a67f9e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0fbf5178aca208161051097f034d3694">
+         <td align="right" class="memItemLeft" valign="top">
+          GMainContext*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a0fbf5178aca208161051097f034d3694">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a0fbf5178aca208161051097f034d3694">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1814534a832aecafba4a790e7b5ca25d">
+         <td align="right" class="memItemLeft" valign="top">
+          const GMainContext*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a1814534a832aecafba4a790e7b5ca25d">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a1814534a832aecafba4a790e7b5ca25d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3a841522a3db9ceb73742f9f235c3d2b">
+         <td align="right" class="memItemLeft" valign="top">
+          GMainContext*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a3a841522a3db9ceb73742f9f235c3d2b">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a3a841522a3db9ceb73742f9f235c3d2b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a31bd96bf707a21c8a3003337dd3af9c4">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGlib_1_1MainContext.html">
+           MainContext
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a31bd96bf707a21c8a3003337dd3af9c4">
+           create
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a31bd96bf707a21c8a3003337dd3af9c4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Creates a new
+          <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+           MainContext
+          </a>
+          .
+          <a href="classGlib_1_1MainContext.html#a31bd96bf707a21c8a3003337dd3af9c4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a31bd96bf707a21c8a3003337dd3af9c4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1502cbed045a9fb27d18c6975e1d255d">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGlib_1_1MainContext.html">
+           MainContext
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1MainContext.html#a1502cbed045a9fb27d18c6975e1d255d">
+           get_default
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a1502cbed045a9fb27d18c6975e1d255d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the default main context.
+          <a href="classGlib_1_1MainContext.html#a1502cbed045a9fb27d18c6975e1d255d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1502cbed045a9fb27d18c6975e1d255d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:ga043c5714afbad2745b27301dd58470a4">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGlib_1_1MainContext.html">
+           MainContext
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__MainLoop.html#ga043c5714afbad2745b27301dd58470a4">
+           wrap
+          </a>
+          (GMainContext* gobject, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="separator:ga043c5714afbad2745b27301dd58470a4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        Main context.
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Member Typedef Documentation
+      </h2>
+      <a class="anchor" id="abe4bb57732aa1301e45a0a676cbfc079">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1MainContext.html#abe4bb57732aa1301e45a0a676cbfc079">
+             Glib::MainContext::BaseObjectType
+            </a>
+            =  GMainContext
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a9d00f1f72f13112f5f3f92131440ecc9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1MainContext.html#a9d00f1f72f13112f5f3f92131440ecc9">
+             Glib::MainContext::CppObjectType
+            </a>
+            =
+            <a class="el" href="classGlib_1_1MainContext.html">
+             Glib::MainContext
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a8eaedd89e2b7404ea364b2f8b4dfa0af">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::MainContext::MainContext
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1MainContext.html">
+                 MainContext
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="aa92ee9cfb192aa5eb6c2aa0841068bbc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MainContext::acquire
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Tries to become the owner of the specified context.
+        </p>
+        <p>
+         If some other thread is the owner of the context, returns
+         <code>
+          false
+         </code>
+         immediately. Ownership is properly recursive: the owner can require ownership again and will release ownership when
+         <a class="el" href="classGlib_1_1MainContext.html#ace2d9cdfa27cbe30026932de0526f730" title="Releases ownership of a context previously acquired by this thread with acquire(). ">
+          release()
+         </a>
+         is called as many times as
+         <a class="el" href="classGlib_1_1MainContext.html#aa92ee9cfb192aa5eb6c2aa0841068bbc" title="Tries to become the owner of the specified context. ">
+          acquire()
+         </a>
+         . You must be the owner of a context before you can call
+         <a class="el" href="classGlib_1_1MainContext.html#abd1bdf8fcb0130152237e87942c89ee1" title="Prepares to poll sources within a main loop. ">
+          prepare()
+         </a>
+         ,
+         <a class="el" href="classGlib_1_1MainContext.html#a49e8976cec1ae4f5b5c30feea6094927" title="Determines information necessary to poll this main loop. ">
+          query()
+         </a>
+         ,
+         <a class="el" href="classGlib_1_1MainContext.html#a8061ef816d51cc27372f016c683cc513" title="Passes the results of polling back to the main loop. ">
+          check()
+         </a>
+         ,
+         <a class="el" href="classGlib_1_1MainContext.html#a5c1f06dbac3bbf771c25ce76af0d4880" title="Dispatches all pending sources. ">
+          dispatch()
+         </a>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true if the operation succeeded, and this thread is now the owner of context.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a7cdbe7d102a781b6aded3cdda45fef34">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::MainContext::add_poll
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1PollFD.html">
+             PollFD
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             fd
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             priority
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Adds a file descriptor to the set of file descriptors polled for this context.
+        </p>
+        <p>
+         This will very seldomly be used directly. Instead a typical event source will use
+         <a class="el" href="classGlib_1_1Source.html#a3a0843a960cad7a25919a682c37c9d03" title="Adds a file descriptor to the set of file descriptors polled for this source. ">
+          Glib::Source::add_poll()
+         </a>
+         instead.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              fd
+             </td>
+             <td>
+              A
+              <a class="el" href="classGlib_1_1PollFD.html">
+               PollFD
+              </a>
+              structure holding information about a file descriptor to watch.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              priority
+             </td>
+             <td>
+              The priority for this file descriptor which should be the same as the priority used for
+              <a class="el" href="classGlib_1_1Source.html#a77c4b83960b2fd8d65b10ade1fc2e2fb" title="Adds a Source to a context so that it will be executed within that context. ">
+               Glib::Source::attach()
+              </a>
+              to ensure that the file descriptor is polled whenever the results may be needed.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a8061ef816d51cc27372f016c683cc513">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MainContext::check
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             max_priority
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="el" href="classGlib_1_1PollFD.html">
+             PollFD
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             fds
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Passes the results of polling back to the main loop.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              max_priority
+             </td>
+             <td>
+              Maximum numerical priority of sources to check.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              fds
+             </td>
+             <td>
+              Vector of
+              <a class="el" href="classGlib_1_1PollFD.html">
+               Glib::PollFD
+              </a>
+              's that was passed to the last call to
+              <a class="el" href="classGlib_1_1MainContext.html#a49e8976cec1ae4f5b5c30feea6094927" title="Determines information necessary to poll this main loop. ">
+               query()
+              </a>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true if some sources are ready to be dispatched.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a31bd96bf707a21c8a3003337dd3af9c4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="el" href="classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGlib_1_1MainContext.html">
+                 MainContext
+                </a>
+                &gt; Glib::MainContext::create
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Creates a new
+         <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+          MainContext
+         </a>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The new
+          <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+           MainContext
+          </a>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5c1f06dbac3bbf771c25ce76af0d4880">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::MainContext::dispatch
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Dispatches all pending sources.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a1502cbed045a9fb27d18c6975e1d255d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="el" href="classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGlib_1_1MainContext.html">
+                 MainContext
+                </a>
+                &gt; Glib::MainContext::get_default
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the default main context.
+        </p>
+        <p>
+         This is the main context used for main loop functions when a main loop is not explicitly specified.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The new
+          <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+           MainContext
+          </a>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a34a0b1e31173e163f11053dbcf21b84c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GPollFunc Glib::MainContext::get_poll_func
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the poll function set by g_main_context_set_poll_func().
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The poll function
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0fbf5178aca208161051097f034d3694">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GMainContext* Glib::MainContext::gobj
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a1814534a832aecafba4a790e7b5ca25d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            const GMainContext* Glib::MainContext::gobj
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a3a841522a3db9ceb73742f9f235c3d2b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GMainContext* Glib::MainContext::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab51154582ff342993ff27fa0024ab38f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::MainContext::invoke
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt; bool &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             priority
+            </em>
+            =
+            <code>
+             <a class="el" href="namespaceGlib.html#a0c450f82b9e34689e2dda2038ba7834fa597ed3aa6067516c9c752896f3816b5e">
+              PRIORITY_DEFAULT
+             </a>
+            </code>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Invokes a function in such a way that this
+         <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+          MainContext
+         </a>
+         is owned during the invocation of
+         <em>
+          slot
+         </em>
+         .
+        </p>
+        <p>
+         If the context is owned by the current thread,
+         <em>
+          slot
+         </em>
+         is called directly. Otherwise, if the context is the thread-default main context of the current thread and
+         <a class="el" href="classGlib_1_1MainContext.html#aa92ee9cfb192aa5eb6c2aa0841068bbc" title="Tries to become the owner of the specified context. ">
+          acquire()
+         </a>
+         succeeds, then
+         <em>
+          slot
+         </em>
+         is called and
+         <a class="el" href="classGlib_1_1MainContext.html#ace2d9cdfa27cbe30026932de0526f730" title="Releases ownership of a context previously acquired by this thread with acquire(). ">
+          release()
+         </a>
+         is called afterwards.
+        </p>
+        <p>
+         In any other case, an idle source is created to call
+         <em>
+          slot
+         </em>
+         and that source is attached to the context (presumably to be run in another thread).
+        </p>
+        <p>
+         Note that, as with normal idle functions,
+         <em>
+          slot
+         </em>
+         should probably return
+         <code>
+          false
+         </code>
+         . If it returns
+         <code>
+          true
+         </code>
+         , it will be continuously run in a loop (and may prevent this call from returning).
+        </p>
+        <p>
+         If an idle source is created to call
+         <em>
+          slot
+         </em>
+         ,
+         <a class="el" href="classGlib_1_1MainContext.html#ab51154582ff342993ff27fa0024ab38f" title="Invokes a function in such a way that this MainContext is owned during the invocation of slot...">
+          invoke()
+         </a>
+         may return before
+         <em>
+          slot
+         </em>
+         is called.
+        </p>
+        <p>
+         Because
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+          sigc::trackable
+         </a>
+         is not thread-safe, if the slot represents a non-static method of a class deriving from
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+          sigc::trackable
+         </a>
+         , and the slot is created by
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__mem__fun.html#gadf6b6d22c503b439019f0a2e77352419">
+          sigc::mem_fun()
+         </a>
+         ,
+         <a class="el" href="classGlib_1_1MainContext.html#ab51154582ff342993ff27fa0024ab38f" title="Invokes a function in such a way that this MainContext is owned during the invocation of slot...">
+          invoke()
+         </a>
+         should only be called from the thread where the context runs. You can use, say, boost::bind() or, in C++11,
+         <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01682.html#ga4c3052b337dde285bace96cbb996055c">
+          std::bind()
+         </a>
+         or a C++11 lambda expression instead of
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__mem__fun.html#gadf6b6d22c503b439019f0a2e77352419">
+          sigc::mem_fun()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A slot to call.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              priority
+             </td>
+             <td>
+              The priority of the idle source, if one is created.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_38">
+         <dt>
+          <b>
+           <a class="el" href="since_2_38.html#_since_2_38000002">
+            Since glibmm 2.38:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="afde2e29315da1239af998f1826ad5e88">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MainContext::iteration
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             may_block
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Runs a single iteration for the given main loop.
+        </p>
+        <p>
+         This involves checking to see if any event sources are ready to be processed, then if no events sources are ready and may_block is true, waiting for a source to become ready, then dispatching the highest priority events sources that are ready. Note that even when may_block is true, it is still possible for
+         <a class="el" href="classGlib_1_1MainContext.html#afde2e29315da1239af998f1826ad5e88" title="Runs a single iteration for the given main loop. ">
+          iteration()
+         </a>
+         to return false, since the the wait may be interrupted for other reasons than an event source becoming ready.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              may_block
+             </td>
+             <td>
+              Whether the call may block.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true if events were dispatched.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a112cc935c448383449b568056d806db6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1MainContext.html">
+                 MainContext
+                </a>
+                &amp; Glib::MainContext::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1MainContext.html">
+                 MainContext
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="acf4631ab57318f39f3e15d98ac1aaa5c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MainContext::pending
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks if any sources have pending events for the given context.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true if events are pending.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af6d1fccb3c1f5aab758d5eb1b3c15d6a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MainContext::prepare
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             priority
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Prepares to poll sources within a main loop.
+        </p>
+        <p>
+         The resulting information for polling is determined by calling
+         <a class="el" href="classGlib_1_1MainContext.html#a49e8976cec1ae4f5b5c30feea6094927" title="Determines information necessary to poll this main loop. ">
+          query()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              priority
+             </td>
+             <td>
+              Location to store priority of highest priority source already ready.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true if some source is ready to be dispatched prior to polling.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="abd1bdf8fcb0130152237e87942c89ee1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MainContext::prepare
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Prepares to poll sources within a main loop.
+        </p>
+        <p>
+         The resulting information for polling is determined by calling
+         <a class="el" href="classGlib_1_1MainContext.html#a49e8976cec1ae4f5b5c30feea6094927" title="Determines information necessary to poll this main loop. ">
+          query()
+         </a>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true if some source is ready to be dispatched prior to polling.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a49e8976cec1ae4f5b5c30feea6094927">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::MainContext::query
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             max_priority
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             timeout
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="el" href="classGlib_1_1PollFD.html">
+             PollFD
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             fds
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Determines information necessary to poll this main loop.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              max_priority
+             </td>
+             <td>
+              Maximum priority source to check.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              timeout
+             </td>
+             <td>
+              Location to store timeout to be used in polling.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              fds
+             </td>
+             <td>
+              Location to store
+              <a class="el" href="classGlib_1_1PollFD.html">
+               Glib::PollFD
+              </a>
+              records that need to be polled.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          the number of records actually stored in fds, or, if more than n_fds records need to be stored, the number of records that need to be stored.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a71499a662e6ac07590a0972b1b0eac64">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::MainContext::reference
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ace2d9cdfa27cbe30026932de0526f730">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::MainContext::release
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Releases ownership of a context previously acquired by this thread with
+         <a class="el" href="classGlib_1_1MainContext.html#aa92ee9cfb192aa5eb6c2aa0841068bbc" title="Tries to become the owner of the specified context. ">
+          acquire()
+         </a>
+         .
+        </p>
+        <p>
+         If the context was acquired multiple times, the only release ownership when
+         <a class="el" href="classGlib_1_1MainContext.html#ace2d9cdfa27cbe30026932de0526f730" title="Releases ownership of a context previously acquired by this thread with acquire(). ">
+          release()
+         </a>
+         is called as many times as it was acquired.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a33ea2db49dd93739599d19756c251627">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::MainContext::remove_poll
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1PollFD.html">
+             PollFD
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             fd
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Removes file descriptor from the set of file descriptors to be polled for a particular context.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              fd
+             </td>
+             <td>
+              A
+              <a class="el" href="classGlib_1_1PollFD.html">
+               PollFD
+              </a>
+              structure holding information about a file descriptor.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad8383c8f1a1a03b904f9be608ad8eaaf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::MainContext::set_poll_func
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            GPollFunc
+           </td>
+           <td class="paramname">
+            <em>
+             poll_func
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the function to use to handle polling of file descriptors.
+        </p>
+        <p>
+         It will be used instead of the poll() system call (or GLib's replacement function, which is used where poll() isn't available). This function could possibly be used to integrate the GLib event loop with an external event loop.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              poll_func
+             </td>
+             <td>
+              The function to call to poll all file descriptors.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ab646f19ce79faa35d97e8af93e6ca6d6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1SignalChildWatch.html">
+             SignalChildWatch
+            </a>
+            Glib::MainContext::signal_child_watch
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         child watch signal, attached to this
+         <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+          MainContext
+         </a>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A signal proxy; you want to use
+          <a class="el" href="classGlib_1_1SignalChildWatch.html#a4c2f5be316b9600133129cc974b6b5bb" title="Connects a child watch handler. ">
+           SignalChildWatch::connect()
+          </a>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a2a12990fb67f7b5c1ed61e36952dd827">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1SignalIdle.html">
+             SignalIdle
+            </a>
+            Glib::MainContext::signal_idle
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Idle signal, attached to this
+         <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+          MainContext
+         </a>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A signal proxy; you want to use
+          <a class="el" href="classGlib_1_1SignalIdle.html#ac8befbaf1d10a17d1f3f75143e967a3f" title="Connects an idle handler. ">
+           SignalIdle::connect()
+          </a>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a8c8a4283456eb9036cc09dc3aaf203dc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1SignalIO.html">
+             SignalIO
+            </a>
+            Glib::MainContext::signal_io
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         I/O signal, attached to this
+         <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+          MainContext
+         </a>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A signal proxy; you want to use
+          <a class="el" href="classGlib_1_1SignalIO.html#ac205b21234d26094e75e0931c968c5d2" title="Connects an I/O handler that watches a file descriptor. ">
+           SignalIO::connect()
+          </a>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="adf307c9028858449e932f5fff100d432">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1SignalTimeout.html">
+             SignalTimeout
+            </a>
+            Glib::MainContext::signal_timeout
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Timeout signal, attached to this
+         <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+          MainContext
+         </a>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A signal proxy; you want to use
+          <a class="el" href="classGlib_1_1SignalTimeout.html#a75b555ed13d91e6903e927f9e0d7afd2" title="Connects a timeout handler. ">
+           SignalTimeout::connect()
+          </a>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a8eaf5d38c393770f150db7bad9a67f9e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::MainContext::unreference
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a68c3d19af76d4b32aeae9d2e4f5c230f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MainContext::wait
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1Cond.html">
+             Glib::Cond
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             cond
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1Mutex.html">
+             Glib::Mutex
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             mutex
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Tries to become the owner of the specified context, as with
+         <a class="el" href="classGlib_1_1MainContext.html#aa92ee9cfb192aa5eb6c2aa0841068bbc" title="Tries to become the owner of the specified context. ">
+          acquire()
+         </a>
+         .
+        </p>
+        <p>
+         But if another thread is the owner, atomically drop mutex and wait on cond until that owner releases ownership or until cond is signaled, then try again (once) to become the owner.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              cond
+             </td>
+             <td>
+              A condition variable.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              mutex
+             </td>
+             <td>
+              A mutex, currently held.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true if the operation succeeded, and this thread is now the owner of context.
+         </dd>
+        </dl>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000062">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Use
+          <a class="el" href="classGlib_1_1MainContext.html#abbb4cc661f4f5773138a733f4a2ed156" title="Tries to become the owner of the specified context, as with acquire(). ">
+           wait(Glib::Threads::Cond&amp; cond, Glib::Threads::Mutex&amp; mutex)
+          </a>
+          instead.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="abbb4cc661f4f5773138a733f4a2ed156">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::MainContext::wait
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1Threads_1_1Cond.html">
+             Glib::Threads::Cond
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             cond
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGlib_1_1Threads_1_1Mutex.html">
+             Glib::Threads::Mutex
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             mutex
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Tries to become the owner of the specified context, as with
+         <a class="el" href="classGlib_1_1MainContext.html#aa92ee9cfb192aa5eb6c2aa0841068bbc" title="Tries to become the owner of the specified context. ">
+          acquire()
+         </a>
+         .
+        </p>
+        <p>
+         But if another thread is the owner, atomically drop mutex and wait on cond until that owner releases ownership or until cond is signaled, then try again (once) to become the owner.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              cond
+             </td>
+             <td>
+              A condition variable.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              mutex
+             </td>
+             <td>
+              A mutex, currently held.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true if the operation succeeded, and this thread is now the owner of context.
+         </dd>
+        </dl>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000063">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Please use the underlying g_main_context_wait() function if you really need this functionality.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5a5e60018f7549f064e71b34b1668020">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::MainContext::wakeup
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         If context is currently waiting in a poll(), interrupt the poll(), and continue the iteration process.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1MainContext.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

@@ -1,0 +1,1360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Threads
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="group__Threads.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="group__Threads.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="group__Threads.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Threads
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       Thread abstraction; including threads, different mutexes, conditions and thread private data.
+       <a href="group__Threads.html#details">
+        More...
+       </a>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="nested-classes">
+           </a>
+           Classes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1ThreadError.html">
+           Glib::Threads::ThreadError
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Exception class for thread-related errors.
+          <a href="classGlib_1_1Threads_1_1ThreadError.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1Thread_1_1Exit.html">
+           Glib::Threads::Thread::Exit
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Exception class used to exit from a thread.
+          <a href="classGlib_1_1Threads_1_1Thread_1_1Exit.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1Thread.html">
+           Glib::Threads::Thread
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Represents a running thread.
+          <a href="classGlib_1_1Threads_1_1Thread.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1Mutex_1_1Lock.html">
+           Glib::Threads::Mutex::Lock
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Utility class for exception-safe mutex locking.
+          <a href="classGlib_1_1Threads_1_1Mutex_1_1Lock.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1Mutex.html">
+           Glib::Threads::Mutex
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Represents a mutex (mutual exclusion).
+          <a href="classGlib_1_1Threads_1_1Mutex.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1RecMutex_1_1Lock.html">
+           Glib::Threads::RecMutex::Lock
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Utility class for exception-safe locking of recursive mutexes.
+          <a href="classGlib_1_1Threads_1_1RecMutex_1_1Lock.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1RecMutex.html">
+           Glib::Threads::RecMutex
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This represents a recursive mutex.
+          <a href="classGlib_1_1Threads_1_1RecMutex.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1RWLock_1_1ReaderLock.html">
+           Glib::Threads::RWLock::ReaderLock
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Utility class for exception-safe locking of read/write locks.
+          <a href="classGlib_1_1Threads_1_1RWLock_1_1ReaderLock.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1RWLock_1_1WriterLock.html">
+           Glib::Threads::RWLock::WriterLock
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Utility class for exception-safe locking of read/write locks.
+          <a href="classGlib_1_1Threads_1_1RWLock_1_1WriterLock.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1RWLock.html">
+           Glib::Threads::RWLock
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This represents a reader-writer lock.
+          <a href="classGlib_1_1Threads_1_1RWLock.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1Cond.html">
+           Glib::Threads::Cond
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          An opaque data structure to represent a condition.
+          <a href="classGlib_1_1Threads_1_1Cond.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Threads_1_1Private.html">
+           Glib::Threads::Private&lt; T &gt;
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Thread-local data pointer.
+          <a href="classGlib_1_1Threads_1_1Private.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1Dispatcher.html">
+           Glib::Dispatcher
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Signal class for inter-thread communication.
+          <a href="classGlib_1_1Dispatcher.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="enum-members">
+           </a>
+           Enumerations
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ga298a91d4f9bcfd13d3f9c342bcc8161a">
+         <td align="right" class="memItemLeft" valign="top">
+          enum
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__Threads.html#ga298a91d4f9bcfd13d3f9c342bcc8161a">
+           Glib::Threads::NotLock
+          </a>
+          {
+          <a class="el" href="group__Threads.html#gga298a91d4f9bcfd13d3f9c342bcc8161aa67a1c7fd98ae71afc32ad7c22bfb0a87">
+           Glib::Threads::NOT_LOCK
+          </a>
+          }
+         </td>
+        </tr>
+        <tr class="separator:ga298a91d4f9bcfd13d3f9c342bcc8161a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga58eba5840db7a5440b7c37bf17a5bb74">
+         <td align="right" class="memItemLeft" valign="top">
+          enum
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__Threads.html#ga58eba5840db7a5440b7c37bf17a5bb74">
+           Glib::Threads::TryLock
+          </a>
+          {
+          <a class="el" href="group__Threads.html#gga58eba5840db7a5440b7c37bf17a5bb74aca992b53c9825f414b1b5b308228beeb">
+           Glib::Threads::TRY_LOCK
+          </a>
+          }
+         </td>
+        </tr>
+        <tr class="separator:ga58eba5840db7a5440b7c37bf17a5bb74">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga4f9ffae8fe56d267e8b7d0bcd75cff37">
+         <td align="right" class="memItemLeft" valign="top">
+          enum
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__Threads.html#ga4f9ffae8fe56d267e8b7d0bcd75cff37">
+           Glib::Threads::ThreadError::Code
+          </a>
+          {
+          <a class="el" href="group__Threads.html#gga4f9ffae8fe56d267e8b7d0bcd75cff37aee61eae399baab740abababe811824ae">
+           Glib::Threads::ThreadError::AGAIN
+          </a>
+          }
+         </td>
+        </tr>
+        <tr class="memdesc:ga4f9ffae8fe56d267e8b7d0bcd75cff37">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Possible errors of thread related functions.
+          <a href="group__Threads.html#ga4f9ffae8fe56d267e8b7d0bcd75cff37">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga4f9ffae8fe56d267e8b7d0bcd75cff37">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="func-members">
+           </a>
+           Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ga6bfbb3119eaac9fa8cb725aa1e82f61e">
+         <td align="right" class="memItemLeft" valign="top">
+          Thread*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__Threads.html#ga6bfbb3119eaac9fa8cb725aa1e82f61e">
+           wrap
+          </a>
+          (GThread* gobject)
+         </td>
+        </tr>
+        <tr class="memdesc:ga6bfbb3119eaac9fa8cb725aa1e82f61e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A C++ wrapper for the C object.
+          <a href="group__Threads.html#ga6bfbb3119eaac9fa8cb725aa1e82f61e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga6bfbb3119eaac9fa8cb725aa1e82f61e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ga474cb9d17afdc606a6afd0068ac061d3">
+         <td align="right" class="memItemLeft" valign="top">
+          Mutex*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__Threads.html#ga474cb9d17afdc606a6afd0068ac061d3">
+           wrap
+          </a>
+          (GMutex* gobject)
+         </td>
+        </tr>
+        <tr class="memdesc:ga474cb9d17afdc606a6afd0068ac061d3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A C++ wrapper for the C object.
+          <a href="group__Threads.html#ga474cb9d17afdc606a6afd0068ac061d3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ga474cb9d17afdc606a6afd0068ac061d3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:gad710cc5f6feaccfe6fe2c886b6cd1636">
+         <td align="right" class="memItemLeft" valign="top">
+          RecMutex*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="group__Threads.html#gad710cc5f6feaccfe6fe2c886b6cd1636">
+           wrap
+          </a>
+          (GRecMutex* gobject)
+         </td>
+        </tr>
+        <tr class="memdesc:gad710cc5f6feaccfe6fe2c886b6cd1636">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A C++ wrapper for the C object.
+          <a href="group__Threads.html#gad710cc5f6feaccfe6fe2c886b6cd1636">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:gad710cc5f6feaccfe6fe2c886b6cd1636">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <p>
+       Thread abstraction; including threads, different mutexes, conditions and thread private data.
+      </p>
+      <dl class="deprecated">
+       <dt>
+        <b>
+         <a class="el" href="deprecated.html#_deprecated000042">
+          Deprecated:
+         </a>
+        </b>
+       </dt>
+       <dd>
+        The entire
+        <a class="el" href="namespaceGlib_1_1Threads.html">
+         Glib::Threads
+        </a>
+        API is deprecated in favor of the standard C++ concurrency API in C++11 and C++14.
+       </dd>
+      </dl>
+      <h2 class="groupheader">
+       Enumeration Type Documentation
+      </h2>
+      <a class="anchor" id="ga4f9ffae8fe56d267e8b7d0bcd75cff37">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            enum
+            <a class="el" href="group__Threads.html#ga4f9ffae8fe56d267e8b7d0bcd75cff37">
+             Glib::Threads::ThreadError::Code
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Possible errors of thread related functions.
+        </p>
+        <table class="fieldtable">
+         <tbody>
+          <tr>
+           <th colspan="2">
+            Enumerator
+           </th>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="gga4f9ffae8fe56d267e8b7d0bcd75cff37aee61eae399baab740abababe811824ae">
+            </a>
+            AGAIN
+           </td>
+           <td class="fielddoc">
+            <p>
+             A thread couldn't be created due to resource shortage.
+            </p>
+            <p>
+             Try again later.
+            </p>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <a class="anchor" id="ga298a91d4f9bcfd13d3f9c342bcc8161a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            enum
+            <a class="el" href="group__Threads.html#ga298a91d4f9bcfd13d3f9c342bcc8161a">
+             Glib::Threads::NotLock
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000043">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Please use
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00818.html">
+           std::lock_guard
+          </a>
+          or
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00955.html">
+           std::unique_lock
+          </a>
+          instead.
+         </dd>
+        </dl>
+        <table class="fieldtable">
+         <tbody>
+          <tr>
+           <th colspan="2">
+            Enumerator
+           </th>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="gga298a91d4f9bcfd13d3f9c342bcc8161aa67a1c7fd98ae71afc32ad7c22bfb0a87">
+            </a>
+            NOT_LOCK
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <a class="anchor" id="ga58eba5840db7a5440b7c37bf17a5bb74">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            enum
+            <a class="el" href="group__Threads.html#ga58eba5840db7a5440b7c37bf17a5bb74">
+             Glib::Threads::TryLock
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000044">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Please use
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00818.html">
+           std::lock_guard
+          </a>
+          or
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00955.html">
+           std::unique_lock
+          </a>
+          instead.
+         </dd>
+        </dl>
+        <table class="fieldtable">
+         <tbody>
+          <tr>
+           <th colspan="2">
+            Enumerator
+           </th>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="gga58eba5840db7a5440b7c37bf17a5bb74aca992b53c9825f414b1b5b308228beeb">
+            </a>
+            TRY_LOCK
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Function Documentation
+      </h2>
+      <a class="anchor" id="ga6bfbb3119eaac9fa8cb725aa1e82f61e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Thread * wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GThread *
+               </td>
+               <td class="paramname">
+                <em>
+                 gobject
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A C++ wrapper for the C object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              gobject
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The C++ wrapper.
+         </dd>
+        </dl>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000048">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Please use
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00922.html">
+           std::thread
+          </a>
+          instead.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ga474cb9d17afdc606a6afd0068ac061d3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Mutex * wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GMutex *
+               </td>
+               <td class="paramname">
+                <em>
+                 gobject
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A C++ wrapper for the C object.
+        </p>
+        <p>
+         Do not use operator delete on the returned pointer. If the caller owns the GMutex object, the caller must destroy it in the same way as if this function had not been called.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              gobject
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The GMutex* cast to a
+          <a class="el" href="classGlib_1_1Threads_1_1Mutex.html" title="Represents a mutex (mutual exclusion). ">
+           Glib::Threads::Mutex
+          </a>
+          *.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="gad710cc5f6feaccfe6fe2c886b6cd1636">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                RecMutex * wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GRecMutex *
+               </td>
+               <td class="paramname">
+                <em>
+                 gobject
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A C++ wrapper for the C object.
+        </p>
+        <p>
+         Do not use operator delete on the returned pointer. If the caller owns the GRecMutex object, the caller must destroy it in the same way as if this function had not been called.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              gobject
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The GRecMutex* cast to a
+          <a class="el" href="classGlib_1_1Threads_1_1RecMutex.html" title="This represents a recursive mutex. ">
+           Glib::Threads::RecMutex
+          </a>
+          *.
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="group__Threads.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

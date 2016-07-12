@@ -1,0 +1,1274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::PropertyProxy&lt; T &gt; Class Template Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1PropertyProxy.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1PropertyProxy.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1PropertyProxy.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::PropertyProxy&lt; T &gt; Class Template Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       A
+       <a class="el" href="classGlib_1_1PropertyProxy.html" title="A PropertyProxy can be used to get and set the value of an object's property. ">
+        PropertyProxy
+       </a>
+       can be used to get and set the value of an object's property.
+       <a href="classGlib_1_1PropertyProxy.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/propertyproxy.h&gt;
+       </code>
+      </p>
+      <div class="dynheader">
+       Inheritance diagram for Glib::PropertyProxy&lt; T &gt;:
+      </div>
+      <div class="dyncontent">
+       <div class="center">
+        <img alt="Inheritance graph" border="0" src="classGlib_1_1PropertyProxy__inherit__graph.png" usemap="#Glib_1_1PropertyProxy_3_01T_01_4_inherit__map"/>
+       </div>
+       <map id="Glib_1_1PropertyProxy_3_01T_01_4_inherit__map" name="Glib_1_1PropertyProxy_3_01T_01_4_inherit__map">
+        <area alt="" coords="5,5,188,32" href="classGlib_1_1PropertyProxy__Base.html" id="node2" shape="rect" title="Glib::PropertyProxy_Base">
+        </area>
+       </map>
+       <center>
+        <span class="legend">
+         [
+         <a href="graph_legend.html">
+          legend
+         </a>
+         ]
+        </span>
+       </center>
+      </div>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:aabcd5af96ce123bcb38a4674a997403e">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy.html#aabcd5af96ce123bcb38a4674a997403e">
+           PropertyType
+          </a>
+          = T
+         </td>
+        </tr>
+        <tr class="separator:aabcd5af96ce123bcb38a4674a997403e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:af8353d01e3ae6134eaceaf900ffb84b9">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy.html#af8353d01e3ae6134eaceaf900ffb84b9">
+           PropertyProxy
+          </a>
+          (
+          <a class="el" href="classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          * obj, const char* name)
+         </td>
+        </tr>
+        <tr class="separator:af8353d01e3ae6134eaceaf900ffb84b9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aff4eb140b4f4da0488c4387c1047ad82">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy.html#aff4eb140b4f4da0488c4387c1047ad82">
+           set_value
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1PropertyProxy.html#aabcd5af96ce123bcb38a4674a997403e">
+           PropertyType
+          </a>
+          &amp; data)
+         </td>
+        </tr>
+        <tr class="memdesc:aff4eb140b4f4da0488c4387c1047ad82">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set the value of this property.
+          <a href="classGlib_1_1PropertyProxy.html#aff4eb140b4f4da0488c4387c1047ad82">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aff4eb140b4f4da0488c4387c1047ad82">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4bbf4c99c138e7e33ce6393147b4e121">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1PropertyProxy.html#aabcd5af96ce123bcb38a4674a997403e">
+           PropertyType
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy.html#a4bbf4c99c138e7e33ce6393147b4e121">
+           get_value
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a4bbf4c99c138e7e33ce6393147b4e121">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the value of this property.
+          <a href="classGlib_1_1PropertyProxy.html#a4bbf4c99c138e7e33ce6393147b4e121">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4bbf4c99c138e7e33ce6393147b4e121">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4ea1719ff572be400fdce1f3257fdf59">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy.html#a4ea1719ff572be400fdce1f3257fdf59">
+           reset_value
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a4ea1719ff572be400fdce1f3257fdf59">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set the value of this property back to its default value.
+          <a href="classGlib_1_1PropertyProxy.html#a4ea1719ff572be400fdce1f3257fdf59">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4ea1719ff572be400fdce1f3257fdf59">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:add4490830382a8173acf097dffffd92e">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1PropertyProxy.html">
+           PropertyProxy
+          </a>
+          &lt; T &gt;&amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy.html#add4490830382a8173acf097dffffd92e">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1PropertyProxy.html#aabcd5af96ce123bcb38a4674a997403e">
+           PropertyType
+          </a>
+          &amp; data)
+         </td>
+        </tr>
+        <tr class="separator:add4490830382a8173acf097dffffd92e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a127addf739d2d3f40c4a066a543ef967">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy.html#a127addf739d2d3f40c4a066a543ef967">
+           operator PropertyType
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a127addf739d2d3f40c4a066a543ef967">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1PropertyProxy__Base')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html">
+           Glib::PropertyProxy_Base
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a249bf7fbed57d8feca6280747e85cd35 inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html#a249bf7fbed57d8feca6280747e85cd35">
+           PropertyProxy_Base
+          </a>
+          (
+          <a class="el" href="classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          * obj, const char* property_name)
+         </td>
+        </tr>
+        <tr class="separator:a249bf7fbed57d8feca6280747e85cd35 inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad21a12ef0a572caec3b160561f60e8ee inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html#ad21a12ef0a572caec3b160561f60e8ee">
+           PropertyProxy_Base
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html">
+           PropertyProxy_Base
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:ad21a12ef0a572caec3b160561f60e8ee inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a19357ed2e9492700e37215edb81fd071 inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1SignalProxyProperty.html">
+           SignalProxyProperty
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html#a19357ed2e9492700e37215edb81fd071">
+           signal_changed
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a19357ed2e9492700e37215edb81fd071 inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This signal will be emitted when the property changes.
+          <a href="classGlib_1_1PropertyProxy.html#a19357ed2e9492700e37215edb81fd071">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a19357ed2e9492700e37215edb81fd071 inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0a0360fc03da108b2748285c834c81f5 inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html#a0a0360fc03da108b2748285c834c81f5">
+           get_object
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a0a0360fc03da108b2748285c834c81f5 inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a99f16695928aa09959de3046eaa6c266 inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td align="right" class="memItemLeft" valign="top">
+          const char*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html#a99f16695928aa09959de3046eaa6c266">
+           get_name
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a99f16695928aa09959de3046eaa6c266 inherit pub_methods_classGlib_1_1PropertyProxy__Base">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="inherited">
+           </a>
+           Additional Inherited Members
+          </h2>
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1PropertyProxy__Base">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1PropertyProxy__Base')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html">
+           Glib::PropertyProxy_Base
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a062bab7773ae2e9666a26fb6426003d2 inherit pro_methods_classGlib_1_1PropertyProxy__Base">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html#a062bab7773ae2e9666a26fb6426003d2">
+           set_property_
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp; value)
+         </td>
+        </tr>
+        <tr class="separator:a062bab7773ae2e9666a26fb6426003d2 inherit pro_methods_classGlib_1_1PropertyProxy__Base">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad8d3fea5cc9fe955bd1cb29d8d37da99 inherit pro_methods_classGlib_1_1PropertyProxy__Base">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html#ad8d3fea5cc9fe955bd1cb29d8d37da99">
+           get_property_
+          </a>
+          (
+          <a class="el" href="classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp; value) const
+         </td>
+        </tr>
+        <tr class="separator:ad8d3fea5cc9fe955bd1cb29d8d37da99 inherit pro_methods_classGlib_1_1PropertyProxy__Base">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2551363499a510336507194725de6c43 inherit pro_methods_classGlib_1_1PropertyProxy__Base">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html#a2551363499a510336507194725de6c43">
+           reset_property_
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a2551363499a510336507194725de6c43 inherit pro_methods_classGlib_1_1PropertyProxy__Base">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_attribs_classGlib_1_1PropertyProxy__Base">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classGlib_1_1PropertyProxy__Base')">
+          <img alt="-" src="closed.png"/>
+          Protected Attributes inherited from
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html">
+           Glib::PropertyProxy_Base
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:ae027890146dbc4acfa49634e7c44cce9 inherit pro_attribs_classGlib_1_1PropertyProxy__Base">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html#ae027890146dbc4acfa49634e7c44cce9">
+           obj_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:ae027890146dbc4acfa49634e7c44cce9 inherit pro_attribs_classGlib_1_1PropertyProxy__Base">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af76cdd8c35935963d0f9d5975e81a726 inherit pro_attribs_classGlib_1_1PropertyProxy__Base">
+         <td align="right" class="memItemLeft" valign="top">
+          const char*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1PropertyProxy__Base.html#af76cdd8c35935963d0f9d5975e81a726">
+           property_name_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:af76cdd8c35935963d0f9d5975e81a726 inherit pro_attribs_classGlib_1_1PropertyProxy__Base">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <h3>
+        template&lt;class T&gt;
+        <br/>
+        <br/>
+        class Glib::PropertyProxy&lt; T &gt;
+       </h3>
+       <p>
+        A
+        <a class="el" href="classGlib_1_1PropertyProxy.html" title="A PropertyProxy can be used to get and set the value of an object's property. ">
+         PropertyProxy
+        </a>
+        can be used to get and set the value of an object's property.
+       </p>
+       <p>
+        There are usually also get and set methods on the class itself, which you might find more convenient. With the
+        <a class="el" href="classGlib_1_1PropertyProxy.html" title="A PropertyProxy can be used to get and set the value of an object's property. ">
+         PropertyProxy
+        </a>
+        , you may use either
+        <a class="el" href="classGlib_1_1PropertyProxy.html#a4bbf4c99c138e7e33ce6393147b4e121" title="Get the value of this property. ">
+         get_value()
+        </a>
+        and
+        <a class="el" href="classGlib_1_1PropertyProxy.html#aff4eb140b4f4da0488c4387c1047ad82" title="Set the value of this property. ">
+         set_value()
+        </a>
+        , or
+        <a class="el" href="classGlib_1_1PropertyProxy.html#add4490830382a8173acf097dffffd92e">
+         operator=()
+        </a>
+        and operator
+        <a class="el" href="classGlib_1_1PropertyProxy.html#aabcd5af96ce123bcb38a4674a997403e">
+         PropertyType()
+        </a>
+        , like so:
+       </p>
+       <div class="fragment">
+        <div class="line">
+         <span class="keywordtype">
+          int
+         </span>
+         height = cellrenderer.property_height();
+        </div>
+        <div class="line">
+         cellrenderer.property_editable() =
+         <span class="keyword">
+          true
+         </span>
+         ;
+        </div>
+       </div>
+       <!-- fragment -->
+       <p>
+        You may also receive notification when a property's value changes, by connecting to
+        <a class="el" href="classGlib_1_1PropertyProxy__Base.html#a19357ed2e9492700e37215edb81fd071" title="This signal will be emitted when the property changes. ">
+         signal_changed()
+        </a>
+        .
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Member Typedef Documentation
+      </h2>
+      <a class="anchor" id="aabcd5af96ce123bcb38a4674a997403e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1PropertyProxy.html">
+             Glib::PropertyProxy
+            </a>
+            &lt; T &gt;::
+            <a class="el" href="classGlib_1_1PropertyProxy.html#aabcd5af96ce123bcb38a4674a997403e">
+             PropertyType
+            </a>
+            =  T
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="af8353d01e3ae6134eaceaf900ffb84b9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1PropertyProxy.html">
+                 Glib::PropertyProxy
+                </a>
+                &lt; T &gt;::
+                <a class="el" href="classGlib_1_1PropertyProxy.html">
+                 PropertyProxy
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1ObjectBase.html">
+                 ObjectBase
+                </a>
+                *
+               </td>
+               <td class="paramname">
+                <em>
+                 obj
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const char *
+               </td>
+               <td class="paramname">
+                <em>
+                 name
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a4bbf4c99c138e7e33ce6393147b4e121">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1PropertyProxy.html#aabcd5af96ce123bcb38a4674a997403e">
+             PropertyType
+            </a>
+            <a class="el" href="classGlib_1_1PropertyProxy.html">
+             Glib::PropertyProxy
+            </a>
+            &lt; T &gt;::get_value
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the value of this property.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The current value of the property.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a127addf739d2d3f40c4a066a543ef967">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1PropertyProxy.html">
+                 Glib::PropertyProxy
+                </a>
+                &lt; T &gt;::operator
+                <a class="el" href="classGlib_1_1PropertyProxy.html#aabcd5af96ce123bcb38a4674a997403e">
+                 PropertyType
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="add4490830382a8173acf097dffffd92e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1PropertyProxy.html">
+                 PropertyProxy
+                </a>
+                &lt;T&gt;&amp;
+                <a class="el" href="classGlib_1_1PropertyProxy.html">
+                 Glib::PropertyProxy
+                </a>
+                &lt; T &gt;::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1PropertyProxy.html#aabcd5af96ce123bcb38a4674a997403e">
+                 PropertyType
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 data
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a4ea1719ff572be400fdce1f3257fdf59">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void
+                <a class="el" href="classGlib_1_1PropertyProxy.html">
+                 Glib::PropertyProxy
+                </a>
+                &lt; T &gt;::reset_value
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set the value of this property back to its default value.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aff4eb140b4f4da0488c4387c1047ad82">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void
+            <a class="el" href="classGlib_1_1PropertyProxy.html">
+             Glib::PropertyProxy
+            </a>
+            &lt; T &gt;::set_value
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1PropertyProxy.html#aabcd5af96ce123bcb38a4674a997403e">
+             PropertyType
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             data
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set the value of this property.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              data
+             </td>
+             <td>
+              The new value for the property.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1PropertyProxy.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

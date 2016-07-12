@@ -1,0 +1,1360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::SignalTimeout Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1SignalTimeout.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1SignalTimeout.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1SignalTimeout.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::SignalTimeout Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       <code>
+        #include &lt;glibmm/main.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a75b555ed13d91e6903e927f9e0d7afd2">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SignalTimeout.html#a75b555ed13d91e6903e927f9e0d7afd2">
+           connect
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; bool &gt;&amp; slot, unsigned int interval, int priority=
+          <a class="el" href="namespaceGlib.html#a0c450f82b9e34689e2dda2038ba7834fa597ed3aa6067516c9c752896f3816b5e">
+           PRIORITY_DEFAULT
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:a75b555ed13d91e6903e927f9e0d7afd2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Connects a timeout handler.
+          <a href="classGlib_1_1SignalTimeout.html#a75b555ed13d91e6903e927f9e0d7afd2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a75b555ed13d91e6903e927f9e0d7afd2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4ea8fdd120102d7963709916f28b2bcc">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SignalTimeout.html#a4ea8fdd120102d7963709916f28b2bcc">
+           connect_once
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt;&amp; slot, unsigned int interval, int priority=
+          <a class="el" href="namespaceGlib.html#a0c450f82b9e34689e2dda2038ba7834fa597ed3aa6067516c9c752896f3816b5e">
+           PRIORITY_DEFAULT
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:a4ea8fdd120102d7963709916f28b2bcc">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Connects a timeout handler that runs only once.
+          <a href="classGlib_1_1SignalTimeout.html#a4ea8fdd120102d7963709916f28b2bcc">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4ea8fdd120102d7963709916f28b2bcc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a02ad93aa55aa48d48263df628b69fa95">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SignalTimeout.html#a02ad93aa55aa48d48263df628b69fa95">
+           connect_seconds
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; bool &gt;&amp; slot, unsigned int interval, int priority=
+          <a class="el" href="namespaceGlib.html#a0c450f82b9e34689e2dda2038ba7834fa597ed3aa6067516c9c752896f3816b5e">
+           PRIORITY_DEFAULT
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:a02ad93aa55aa48d48263df628b69fa95">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Connects a timeout handler with whole second granularity.
+          <a href="classGlib_1_1SignalTimeout.html#a02ad93aa55aa48d48263df628b69fa95">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a02ad93aa55aa48d48263df628b69fa95">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aebbfd6e94c3c04bfac53f89e53fafa93">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1SignalTimeout.html#aebbfd6e94c3c04bfac53f89e53fafa93">
+           connect_seconds_once
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt;&amp; slot, unsigned int interval, int priority=
+          <a class="el" href="namespaceGlib.html#a0c450f82b9e34689e2dda2038ba7834fa597ed3aa6067516c9c752896f3816b5e">
+           PRIORITY_DEFAULT
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:aebbfd6e94c3c04bfac53f89e53fafa93">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Connects a timeout handler that runs only once with whole second granularity.
+          <a href="classGlib_1_1SignalTimeout.html#aebbfd6e94c3c04bfac53f89e53fafa93">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aebbfd6e94c3c04bfac53f89e53fafa93">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a75b555ed13d91e6903e927f9e0d7afd2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+             sigc::connection
+            </a>
+            Glib::SignalTimeout::connect
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt; bool &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            unsigned int
+           </td>
+           <td class="paramname">
+            <em>
+             interval
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             priority
+            </em>
+            =
+            <code>
+             <a class="el" href="namespaceGlib.html#a0c450f82b9e34689e2dda2038ba7834fa597ed3aa6067516c9c752896f3816b5e">
+              PRIORITY_DEFAULT
+             </a>
+            </code>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Connects a timeout handler.
+        </p>
+        <p>
+         Note that timeout functions may be delayed, due to the processing of other event sources. Thus they should not be relied on for precise timing. After each call to the timeout function, the time of the next timeout is recalculated based on the current time and the given interval (it does not try to 'catch up' time lost in delays).
+        </p>
+        <p>
+         If you want to have a timer in the "seconds" range and do not care about the exact time of the first call of the timer, use the
+         <a class="el" href="classGlib_1_1SignalTimeout.html#a02ad93aa55aa48d48263df628b69fa95" title="Connects a timeout handler with whole second granularity. ">
+          connect_seconds()
+         </a>
+         function; this function allows for more optimizations and more efficient system power usage.
+        </p>
+        <div class="fragment">
+         <div class="line">
+          <span class="keywordtype">
+           bool
+          </span>
+          timeout_handler() { ... }
+         </div>
+         <div class="line">
+          <a class="code" href="group__MainLoop.html#gaadb206fcc112f086f9d47c016b1f2175">
+           Glib::signal_timeout
+          </a>
+          ().
+          <a class="code" href="classGlib_1_1SignalTimeout.html#a75b555ed13d91e6903e927f9e0d7afd2">
+           connect
+          </a>
+          (
+          <a class="codeRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__ptr__fun.html#ga9c80de72f656fb05e81fda622dddc863">
+           sigc::ptr_fun
+          </a>
+          (&amp;timeout_handler), 1000);
+         </div>
+        </div>
+        <!-- fragment -->
+        <p>
+         is equivalent to:
+        </p>
+        <div class="fragment">
+         <div class="line">
+          <span class="keywordtype">
+           bool
+          </span>
+          timeout_handler() { ... }
+         </div>
+         <div class="line">
+          <span class="keyword">
+           const
+          </span>
+          <span class="keyword">
+           auto
+          </span>
+          timeout_source =
+          <a class="code" href="classGlib_1_1Source.html#aeaffb039abf99982d7a89403bca71569">
+           Glib::TimeoutSource::create
+          </a>
+          (1000);
+         </div>
+         <div class="line">
+          timeout_source-&gt;connect(
+          <a class="codeRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__ptr__fun.html#ga9c80de72f656fb05e81fda622dddc863">
+           sigc::ptr_fun
+          </a>
+          (&amp;timeout_handler));
+         </div>
+         <div class="line">
+          timeout_source-&gt;attach(
+          <a class="code" href="classGlib_1_1MainContext.html#a1502cbed045a9fb27d18c6975e1d255d">
+           Glib::MainContext::get_default
+          </a>
+          ());
+         </div>
+        </div>
+        <!-- fragment -->
+        <p>
+         This method is not thread-safe. You should call it, or manipulate the returned
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+          sigc::connection
+         </a>
+         object, only from the thread where the
+         <a class="el" href="classGlib_1_1SignalTimeout.html">
+          SignalTimeout
+         </a>
+         object's
+         <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+          MainContext
+         </a>
+         runs.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A slot to call when
+              <em>
+               interval
+              </em>
+              has elapsed. If
+              <code>
+               timeout_handler()
+              </code>
+              returns
+              <code>
+               false
+              </code>
+              the handler is disconnected.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              interval
+             </td>
+             <td>
+              The timeout in milliseconds.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              priority
+             </td>
+             <td>
+              The priority of the new event source.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A connection handle, which can be used to disconnect the handler.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a4ea8fdd120102d7963709916f28b2bcc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::SignalTimeout::connect_once
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt; void &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            unsigned int
+           </td>
+           <td class="paramname">
+            <em>
+             interval
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             priority
+            </em>
+            =
+            <code>
+             <a class="el" href="namespaceGlib.html#a0c450f82b9e34689e2dda2038ba7834fa597ed3aa6067516c9c752896f3816b5e">
+              PRIORITY_DEFAULT
+             </a>
+            </code>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Connects a timeout handler that runs only once.
+        </p>
+        <p>
+         This method takes a function pointer to a function with a void return and no parameters. After running once it is not called again.
+        </p>
+        <p>
+         Because
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+          sigc::trackable
+         </a>
+         is not thread-safe, if the slot represents a non-static method of a class deriving from
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+          sigc::trackable
+         </a>
+         , and the slot is created by
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__mem__fun.html#gadf6b6d22c503b439019f0a2e77352419">
+          sigc::mem_fun()
+         </a>
+         ,
+         <a class="el" href="classGlib_1_1SignalTimeout.html#a4ea8fdd120102d7963709916f28b2bcc" title="Connects a timeout handler that runs only once. ">
+          connect_once()
+         </a>
+         should only be called from the thread where the
+         <a class="el" href="classGlib_1_1SignalTimeout.html">
+          SignalTimeout
+         </a>
+         object's
+         <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+          MainContext
+         </a>
+         runs. You can use, say, boost::bind() or, in C++11,
+         <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01682.html#ga4c3052b337dde285bace96cbb996055c">
+          std::bind()
+         </a>
+         or a C++11 lambda expression instead of
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__mem__fun.html#gadf6b6d22c503b439019f0a2e77352419">
+          sigc::mem_fun()
+         </a>
+         .
+        </p>
+        <dl class="section see">
+         <dt>
+          See also
+         </dt>
+         <dd>
+          <a class="el" href="classGlib_1_1SignalTimeout.html#a75b555ed13d91e6903e927f9e0d7afd2" title="Connects a timeout handler. ">
+           connect()
+          </a>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A slot to call when
+              <em>
+               interval
+              </em>
+              has elapsed. For example:
+              <div class="fragment">
+               <div class="line">
+                <span class="keywordtype">
+                 void
+                </span>
+                on_timeout_once()
+               </div>
+              </div>
+              <!-- fragment -->
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              interval
+             </td>
+             <td>
+              The timeout in milliseconds.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              priority
+             </td>
+             <td>
+              The priority of the new event source.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a02ad93aa55aa48d48263df628b69fa95">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+             sigc::connection
+            </a>
+            Glib::SignalTimeout::connect_seconds
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt; bool &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            unsigned int
+           </td>
+           <td class="paramname">
+            <em>
+             interval
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             priority
+            </em>
+            =
+            <code>
+             <a class="el" href="namespaceGlib.html#a0c450f82b9e34689e2dda2038ba7834fa597ed3aa6067516c9c752896f3816b5e">
+              PRIORITY_DEFAULT
+             </a>
+            </code>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Connects a timeout handler with whole second granularity.
+        </p>
+        <p>
+         Unlike
+         <a class="el" href="classGlib_1_1SignalTimeout.html#a75b555ed13d91e6903e927f9e0d7afd2" title="Connects a timeout handler. ">
+          connect()
+         </a>
+         , this operates at whole second granularity. The initial starting point of the timer is determined by the implementation and the implementation is expected to group multiple timers together so that they fire all at the same time.
+        </p>
+        <p>
+         To allow this grouping, the
+         <em>
+          interval
+         </em>
+         to the first timer is rounded and can deviate up to one second from the specified interval. Subsequent timer iterations will generally run at the specified interval.
+        </p>
+        <div class="fragment">
+         <div class="line">
+          <span class="keywordtype">
+           bool
+          </span>
+          timeout_handler() { ... }
+         </div>
+         <div class="line">
+          <a class="code" href="group__MainLoop.html#gaadb206fcc112f086f9d47c016b1f2175">
+           Glib::signal_timeout
+          </a>
+          ().
+          <a class="code" href="classGlib_1_1SignalTimeout.html#a02ad93aa55aa48d48263df628b69fa95">
+           connect_seconds
+          </a>
+          (
+          <a class="codeRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__ptr__fun.html#ga9c80de72f656fb05e81fda622dddc863">
+           sigc::ptr_fun
+          </a>
+          (&amp;timeout_handler), 5);
+         </div>
+        </div>
+        <!-- fragment -->
+        <p>
+         is equivalent to:
+        </p>
+        <div class="fragment">
+         <div class="line">
+          <span class="keywordtype">
+           bool
+          </span>
+          timeout_handler() { ... }
+         </div>
+         <div class="line">
+          <span class="keyword">
+           const
+          </span>
+          <span class="keyword">
+           auto
+          </span>
+          timeout_source =
+          <a class="code" href="classGlib_1_1Source.html#aeaffb039abf99982d7a89403bca71569">
+           Glib::TimeoutSource::create
+          </a>
+          (5000);
+         </div>
+         <div class="line">
+          timeout_source-&gt;connect(
+          <a class="codeRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__ptr__fun.html#ga9c80de72f656fb05e81fda622dddc863">
+           sigc::ptr_fun
+          </a>
+          (&amp;timeout_handler));
+         </div>
+         <div class="line">
+          timeout_source-&gt;attach(
+          <a class="code" href="classGlib_1_1MainContext.html#a1502cbed045a9fb27d18c6975e1d255d">
+           Glib::MainContext::get_default
+          </a>
+          ());
+         </div>
+        </div>
+        <!-- fragment -->
+        <p>
+         This method is not thread-safe. You should call it, or manipulate the returned
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+          sigc::connection
+         </a>
+         object, only from the thread where the
+         <a class="el" href="classGlib_1_1SignalTimeout.html">
+          SignalTimeout
+         </a>
+         object's
+         <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+          MainContext
+         </a>
+         runs.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A slot to call when
+              <em>
+               interval
+              </em>
+              has elapsed. If
+              <code>
+               timeout_handler()
+              </code>
+              returns
+              <code>
+               false
+              </code>
+              the handler is disconnected.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              interval
+             </td>
+             <td>
+              The timeout in seconds.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              priority
+             </td>
+             <td>
+              The priority of the new event source.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A connection handle, which can be used to disconnect the handler.
+         </dd>
+        </dl>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000047">
+            Since glibmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aebbfd6e94c3c04bfac53f89e53fafa93">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::SignalTimeout::connect_seconds_once
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt; void &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            unsigned int
+           </td>
+           <td class="paramname">
+            <em>
+             interval
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             priority
+            </em>
+            =
+            <code>
+             <a class="el" href="namespaceGlib.html#a0c450f82b9e34689e2dda2038ba7834fa597ed3aa6067516c9c752896f3816b5e">
+              PRIORITY_DEFAULT
+             </a>
+            </code>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Connects a timeout handler that runs only once with whole second granularity.
+        </p>
+        <p>
+         This method takes a function pointer to a function with a void return and no parameters. After running once it is not called again.
+        </p>
+        <p>
+         Because
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+          sigc::trackable
+         </a>
+         is not thread-safe, if the slot represents a non-static method of a class deriving from
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+          sigc::trackable
+         </a>
+         , and the slot is created by
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__mem__fun.html#gadf6b6d22c503b439019f0a2e77352419">
+          sigc::mem_fun()
+         </a>
+         ,
+         <a class="el" href="classGlib_1_1SignalTimeout.html#aebbfd6e94c3c04bfac53f89e53fafa93" title="Connects a timeout handler that runs only once with whole second granularity. ">
+          connect_seconds_once()
+         </a>
+         should only be called from the thread where the
+         <a class="el" href="classGlib_1_1SignalTimeout.html">
+          SignalTimeout
+         </a>
+         object's
+         <a class="el" href="classGlib_1_1MainContext.html" title="Main context. ">
+          MainContext
+         </a>
+         runs. You can use, say, boost::bind() or, in C++11,
+         <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01682.html#ga4c3052b337dde285bace96cbb996055c">
+          std::bind()
+         </a>
+         or a C++11 lambda expression instead of
+         <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/group__mem__fun.html#gadf6b6d22c503b439019f0a2e77352419">
+          sigc::mem_fun()
+         </a>
+         .
+        </p>
+        <dl class="section see">
+         <dt>
+          See also
+         </dt>
+         <dd>
+          <a class="el" href="classGlib_1_1SignalTimeout.html#a02ad93aa55aa48d48263df628b69fa95" title="Connects a timeout handler with whole second granularity. ">
+           connect_seconds()
+          </a>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A slot to call when
+              <em>
+               interval
+              </em>
+              has elapsed. For example:
+              <div class="fragment">
+               <div class="line">
+                <span class="keywordtype">
+                 void
+                </span>
+                on_timeout_once()
+               </div>
+              </div>
+              <!-- fragment -->
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              interval
+             </td>
+             <td>
+              The timeout in seconds.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              priority
+             </td>
+             <td>
+              The priority of the new event source.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1SignalTimeout.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

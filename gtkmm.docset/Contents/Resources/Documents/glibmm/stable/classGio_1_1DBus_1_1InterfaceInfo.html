@@ -1,0 +1,2176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gio::DBus::InterfaceInfo Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGio_1_1DBus_1_1InterfaceInfo.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGio_1_1DBus_1_1InterfaceInfo.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGio_1_1DBus_1_1InterfaceInfo.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Gio::DBus::InterfaceInfo Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       Stores information about a D-Bus interface.
+       <a href="classGio_1_1DBus_1_1InterfaceInfo.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;giomm/dbusintrospection.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:abb898ba379e79d3eb91ac3639e4576b4">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#abb898ba379e79d3eb91ac3639e4576b4">
+           reference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:abb898ba379e79d3eb91ac3639e4576b4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Increment the reference count for this object.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#abb898ba379e79d3eb91ac3639e4576b4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abb898ba379e79d3eb91ac3639e4576b4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3ea0bec4ab58d2519dad00231abb21fc">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#a3ea0bec4ab58d2519dad00231abb21fc">
+           unreference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a3ea0bec4ab58d2519dad00231abb21fc">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Decrement the reference count for this object.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#a3ea0bec4ab58d2519dad00231abb21fc">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3ea0bec4ab58d2519dad00231abb21fc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa678c16176d57220dc4dc979b459ff20">
+         <td align="right" class="memItemLeft" valign="top">
+          GDBusInterfaceInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#aa678c16176d57220dc4dc979b459ff20">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aa678c16176d57220dc4dc979b459ff20">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#aa678c16176d57220dc4dc979b459ff20">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa678c16176d57220dc4dc979b459ff20">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab11f7960f51bfe66edf6c62a5f3058c0">
+         <td align="right" class="memItemLeft" valign="top">
+          const GDBusInterfaceInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#ab11f7960f51bfe66edf6c62a5f3058c0">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ab11f7960f51bfe66edf6c62a5f3058c0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#ab11f7960f51bfe66edf6c62a5f3058c0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab11f7960f51bfe66edf6c62a5f3058c0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a58023408ff44050106cf3f8d93b05d9e">
+         <td align="right" class="memItemLeft" valign="top">
+          GDBusInterfaceInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#a58023408ff44050106cf3f8d93b05d9e">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a58023408ff44050106cf3f8d93b05d9e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#a58023408ff44050106cf3f8d93b05d9e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a58023408ff44050106cf3f8d93b05d9e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a88fb42e90c3216ed054e2c6d55a9d249">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#a88fb42e90c3216ed054e2c6d55a9d249">
+           InterfaceInfo
+          </a>
+          ()=delete
+         </td>
+        </tr>
+        <tr class="separator:a88fb42e90c3216ed054e2c6d55a9d249">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a280c7af6f2230f2eabbb2abda187c62c">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#a280c7af6f2230f2eabbb2abda187c62c">
+           InterfaceInfo
+          </a>
+          (const
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html">
+           InterfaceInfo
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a280c7af6f2230f2eabbb2abda187c62c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4c76011289b22536b12087c0c5950377">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html">
+           InterfaceInfo
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#a4c76011289b22536b12087c0c5950377">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html">
+           InterfaceInfo
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a4c76011289b22536b12087c0c5950377">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab6be5a8035c3dd912dd8d41d2ce90163">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGio_1_1DBus_1_1MethodInfo.html">
+           MethodInfo
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#ab6be5a8035c3dd912dd8d41d2ce90163">
+           lookup_method
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name)
+         </td>
+        </tr>
+        <tr class="memdesc:ab6be5a8035c3dd912dd8d41d2ce90163">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Looks up information about a method.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#ab6be5a8035c3dd912dd8d41d2ce90163">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab6be5a8035c3dd912dd8d41d2ce90163">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a859afc4d148afcf267bb5fcb8f4413df">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGio_1_1DBus_1_1MethodInfo.html">
+           MethodInfo
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#a859afc4d148afcf267bb5fcb8f4413df">
+           lookup_method
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name) const
+         </td>
+        </tr>
+        <tr class="memdesc:a859afc4d148afcf267bb5fcb8f4413df">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Looks up information about a method.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#a859afc4d148afcf267bb5fcb8f4413df">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a859afc4d148afcf267bb5fcb8f4413df">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac962d00be0c6ee06c9d8ba1759896d58">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGio_1_1DBus_1_1SignalInfo.html">
+           SignalInfo
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#ac962d00be0c6ee06c9d8ba1759896d58">
+           lookup_signal
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name)
+         </td>
+        </tr>
+        <tr class="memdesc:ac962d00be0c6ee06c9d8ba1759896d58">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Looks up information about a signal.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#ac962d00be0c6ee06c9d8ba1759896d58">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac962d00be0c6ee06c9d8ba1759896d58">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adcb5aabbc8bdafca93c524e1c210e796">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGio_1_1DBus_1_1SignalInfo.html">
+           SignalInfo
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#adcb5aabbc8bdafca93c524e1c210e796">
+           lookup_signal
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name) const
+         </td>
+        </tr>
+        <tr class="memdesc:adcb5aabbc8bdafca93c524e1c210e796">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Looks up information about a signal.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#adcb5aabbc8bdafca93c524e1c210e796">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:adcb5aabbc8bdafca93c524e1c210e796">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa262d64ac38a5185a0bf7f15ceeb64bb">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGio_1_1DBus_1_1PropertyInfo.html">
+           PropertyInfo
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#aa262d64ac38a5185a0bf7f15ceeb64bb">
+           lookup_property
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name)
+         </td>
+        </tr>
+        <tr class="memdesc:aa262d64ac38a5185a0bf7f15ceeb64bb">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Looks up information about a property.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#aa262d64ac38a5185a0bf7f15ceeb64bb">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa262d64ac38a5185a0bf7f15ceeb64bb">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a51669def5724879306eada186803d843">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGio_1_1DBus_1_1PropertyInfo.html">
+           PropertyInfo
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#a51669def5724879306eada186803d843">
+           lookup_property
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name) const
+         </td>
+        </tr>
+        <tr class="memdesc:a51669def5724879306eada186803d843">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Looks up information about a property.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#a51669def5724879306eada186803d843">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a51669def5724879306eada186803d843">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab4f56f90f2bd34ff4e4262e56b5a371d">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#ab4f56f90f2bd34ff4e4262e56b5a371d">
+           cache_build
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ab4f56f90f2bd34ff4e4262e56b5a371d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Builds a lookup-cache to speed up g_dbus_interface_info_lookup_method(), g_dbus_interface_info_lookup_signal() and g_dbus_interface_info_lookup_property().
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#ab4f56f90f2bd34ff4e4262e56b5a371d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab4f56f90f2bd34ff4e4262e56b5a371d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa5696de0812fd9f15c50609a65cfe4c3">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#aa5696de0812fd9f15c50609a65cfe4c3">
+           cache_release
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aa5696de0812fd9f15c50609a65cfe4c3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Decrements the usage count for the cache for
+          <em>
+           info
+          </em>
+          built by g_dbus_interface_info_cache_build() (if any) and frees the resources used by the cache if the usage count drops to zero.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#aa5696de0812fd9f15c50609a65cfe4c3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa5696de0812fd9f15c50609a65cfe4c3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-methods">
+           </a>
+           Protected Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a9f677a6dcc5da5664fb0e129d1e3472f">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#a9f677a6dcc5da5664fb0e129d1e3472f">
+           operator delete
+          </a>
+          (void*, std::size_t)
+         </td>
+        </tr>
+        <tr class="separator:a9f677a6dcc5da5664fb0e129d1e3472f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a406db3d3ce8c310ad8a24444873e1fdc">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html">
+           Gio::DBus::InterfaceInfo
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html#a406db3d3ce8c310ad8a24444873e1fdc">
+           wrap
+          </a>
+          (GDBusInterfaceInfo* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a406db3d3ce8c310ad8a24444873e1fdc">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="el" href="namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGio_1_1DBus_1_1InterfaceInfo.html#a406db3d3ce8c310ad8a24444873e1fdc">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a406db3d3ce8c310ad8a24444873e1fdc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        Stores information about a D-Bus interface.
+       </p>
+       <dl class="since_2_28">
+        <dt>
+         <b>
+          <a class="el" href="since_2_28.html#_since_2_28000153">
+           Since glibmm 2.28:
+          </a>
+         </b>
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a88fb42e90c3216ed054e2c6d55a9d249">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gio::DBus::InterfaceInfo::InterfaceInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a280c7af6f2230f2eabbb2abda187c62c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gio::DBus::InterfaceInfo::InterfaceInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html">
+                 InterfaceInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="ab4f56f90f2bd34ff4e4262e56b5a371d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gio::DBus::InterfaceInfo::cache_build
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Builds a lookup-cache to speed up g_dbus_interface_info_lookup_method(), g_dbus_interface_info_lookup_signal() and g_dbus_interface_info_lookup_property().
+        </p>
+        <p>
+         If this has already been called with
+         <em>
+          info
+         </em>
+         , the existing cache is used and its use count is increased.
+        </p>
+        <p>
+         Note that
+         <em>
+          info
+         </em>
+         cannot be modified until g_dbus_interface_info_cache_release() is called.
+        </p>
+        <dl class="since_2_44">
+         <dt>
+          <b>
+           <a class="el" href="since_2_44.html#_since_2_44000033">
+            Since glibmm 2.44:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa5696de0812fd9f15c50609a65cfe4c3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gio::DBus::InterfaceInfo::cache_release
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Decrements the usage count for the cache for
+         <em>
+          info
+         </em>
+         built by g_dbus_interface_info_cache_build() (if any) and frees the resources used by the cache if the usage count drops to zero.
+        </p>
+        <dl class="since_2_44">
+         <dt>
+          <b>
+           <a class="el" href="since_2_44.html#_since_2_44000034">
+            Since glibmm 2.44:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa678c16176d57220dc4dc979b459ff20">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GDBusInterfaceInfo* Gio::DBus::InterfaceInfo::gobj
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ab11f7960f51bfe66edf6c62a5f3058c0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            const GDBusInterfaceInfo* Gio::DBus::InterfaceInfo::gobj
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a58023408ff44050106cf3f8d93b05d9e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GDBusInterfaceInfo* Gio::DBus::InterfaceInfo::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ab6be5a8035c3dd912dd8d41d2ce90163">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1DBus_1_1MethodInfo.html">
+             MethodInfo
+            </a>
+            &gt; Gio::DBus::InterfaceInfo::lookup_method
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Looks up information about a method.
+        </p>
+        <p>
+         The cost of this function is O(n) in number of methods unless g_dbus_interface_info_cache_build() has been used on
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <dl class="since_2_26">
+         <dt>
+          <b>
+           <a class="el" href="since_2_26.html#_since_2_26000130">
+            Since glibmm 2.26:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              A D-Bus method name (typically in CamelCase).
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A DBusMethodInfo or
+          <code>
+           nullptr
+          </code>
+          if not found. Do not free, it is owned by
+          <em>
+           info
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a859afc4d148afcf267bb5fcb8f4413df">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGio_1_1DBus_1_1MethodInfo.html">
+             MethodInfo
+            </a>
+            &gt; Gio::DBus::InterfaceInfo::lookup_method
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Looks up information about a method.
+        </p>
+        <p>
+         The cost of this function is O(n) in number of methods unless g_dbus_interface_info_cache_build() has been used on
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <dl class="since_2_26">
+         <dt>
+          <b>
+           <a class="el" href="since_2_26.html#_since_2_26000131">
+            Since glibmm 2.26:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              A D-Bus method name (typically in CamelCase).
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A DBusMethodInfo or
+          <code>
+           nullptr
+          </code>
+          if not found. Do not free, it is owned by
+          <em>
+           info
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa262d64ac38a5185a0bf7f15ceeb64bb">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1DBus_1_1PropertyInfo.html">
+             PropertyInfo
+            </a>
+            &gt; Gio::DBus::InterfaceInfo::lookup_property
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Looks up information about a property.
+        </p>
+        <p>
+         The cost of this function is O(n) in number of properties unless g_dbus_interface_info_cache_build() has been used on
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <dl class="since_2_26">
+         <dt>
+          <b>
+           <a class="el" href="since_2_26.html#_since_2_26000134">
+            Since glibmm 2.26:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              A D-Bus property name (typically in CamelCase).
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A DBusPropertyInfo or
+          <code>
+           nullptr
+          </code>
+          if not found. Do not free, it is owned by
+          <em>
+           info
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a51669def5724879306eada186803d843">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGio_1_1DBus_1_1PropertyInfo.html">
+             PropertyInfo
+            </a>
+            &gt; Gio::DBus::InterfaceInfo::lookup_property
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Looks up information about a property.
+        </p>
+        <p>
+         The cost of this function is O(n) in number of properties unless g_dbus_interface_info_cache_build() has been used on
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <dl class="since_2_26">
+         <dt>
+          <b>
+           <a class="el" href="since_2_26.html#_since_2_26000135">
+            Since glibmm 2.26:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              A D-Bus property name (typically in CamelCase).
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A DBusPropertyInfo or
+          <code>
+           nullptr
+          </code>
+          if not found. Do not free, it is owned by
+          <em>
+           info
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac962d00be0c6ee06c9d8ba1759896d58">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGio_1_1DBus_1_1SignalInfo.html">
+             SignalInfo
+            </a>
+            &gt; Gio::DBus::InterfaceInfo::lookup_signal
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Looks up information about a signal.
+        </p>
+        <p>
+         The cost of this function is O(n) in number of signals unless g_dbus_interface_info_cache_build() has been used on
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <dl class="since_2_26">
+         <dt>
+          <b>
+           <a class="el" href="since_2_26.html#_since_2_26000132">
+            Since glibmm 2.26:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              A D-Bus signal name (typically in CamelCase).
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A DBusSignalInfo or
+          <code>
+           nullptr
+          </code>
+          if not found. Do not free, it is owned by
+          <em>
+           info
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="adcb5aabbc8bdafca93c524e1c210e796">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGio_1_1DBus_1_1SignalInfo.html">
+             SignalInfo
+            </a>
+            &gt; Gio::DBus::InterfaceInfo::lookup_signal
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Looks up information about a signal.
+        </p>
+        <p>
+         The cost of this function is O(n) in number of signals unless g_dbus_interface_info_cache_build() has been used on
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <dl class="since_2_26">
+         <dt>
+          <b>
+           <a class="el" href="since_2_26.html#_since_2_26000133">
+            Since glibmm 2.26:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              A D-Bus signal name (typically in CamelCase).
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A DBusSignalInfo or
+          <code>
+           nullptr
+          </code>
+          if not found. Do not free, it is owned by
+          <em>
+           info
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9f677a6dcc5da5664fb0e129d1e3472f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void Gio::DBus::InterfaceInfo::operator delete
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                void *
+               </td>
+               <td class="paramname">
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                std::size_t
+               </td>
+               <td class="paramname">
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a4c76011289b22536b12087c0c5950377">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html">
+                 InterfaceInfo
+                </a>
+                &amp; Gio::DBus::InterfaceInfo::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html">
+                 InterfaceInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="abb898ba379e79d3eb91ac3639e4576b4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gio::DBus::InterfaceInfo::reference
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Increment the reference count for this object.
+        </p>
+        <p>
+         You should never need to do this manually - use the object via a RefPtr instead.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a3ea0bec4ab58d2519dad00231abb21fc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gio::DBus::InterfaceInfo::unreference
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Decrement the reference count for this object.
+        </p>
+        <p>
+         You should never need to do this manually - use the object via a RefPtr instead.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a406db3d3ce8c310ad8a24444873e1fdc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGio_1_1DBus_1_1InterfaceInfo.html">
+                 Gio::DBus::InterfaceInfo
+                </a>
+                &gt; wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GDBusInterfaceInfo *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="el" href="namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGio_1_1DBus_1_1InterfaceInfo.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

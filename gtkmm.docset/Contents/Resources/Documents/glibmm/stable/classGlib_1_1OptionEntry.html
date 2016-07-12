@@ -1,0 +1,1725 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::OptionEntry Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1OptionEntry.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1OptionEntry.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1OptionEntry.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::OptionEntry Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       An
+       <a class="el" href="classGlib_1_1OptionEntry.html" title="An OptionEntry defines a single option. ">
+        OptionEntry
+       </a>
+       defines a single option.
+       <a href="classGlib_1_1OptionEntry.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/optionentry.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a5b550ab1ac9884bcc614653c9cf98280">
+         <td align="right" class="memItemLeft" valign="top">
+          enum
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280">
+           Flags
+          </a>
+          {
+          <br/>
+          <br/>
+          <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280adfc734d486122379ef2c37d9e8861644">
+           FLAG_HIDDEN
+          </a>
+          = 1 &lt;&lt; 0,
+          <br/>
+          <br/>
+          <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280ab8f1e9721d33857527515dbadd3f822f">
+           FLAG_IN_MAIN
+          </a>
+          = 1 &lt;&lt; 1,
+          <br/>
+          <br/>
+          <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280a24a4642bdefb942e56482f6b7d05561e">
+           FLAG_REVERSE
+          </a>
+          = 1 &lt;&lt; 2,
+          <br/>
+          <br/>
+          <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280a69aead0991d1cd5b29cd394c8174f25d">
+           FLAG_NO_ARG
+          </a>
+          = 1 &lt;&lt; 3,
+          <br/>
+          <br/>
+          <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280abc30a617bee9b427293fdfc13f546955">
+           FLAG_FILENAME
+          </a>
+          = 1 &lt;&lt; 4,
+          <br/>
+          <br/>
+          <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280ae7b4fc1fd7b9f41c6a91c48c8978e4ce">
+           FLAG_OPTIONAL_ARG
+          </a>
+          = 1 &lt;&lt; 5,
+          <br/>
+          <br/>
+          <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280a9672830777db41b709ca74252f3afd27">
+           FLAG_NOALIAS
+          </a>
+          = 1 &lt;&lt; 6
+          <br/>
+          <br/>
+          }
+         </td>
+        </tr>
+        <tr class="separator:a5b550ab1ac9884bcc614653c9cf98280">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:aaeec52f8bd17268b8bba6e4746def3c3">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#aaeec52f8bd17268b8bba6e4746def3c3">
+           OptionEntry
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:aaeec52f8bd17268b8bba6e4746def3c3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afa83c0423e913e528cb073b850bdf06a">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#afa83c0423e913e528cb073b850bdf06a">
+           OptionEntry
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1OptionEntry.html">
+           OptionEntry
+          </a>
+          &amp; src)
+         </td>
+        </tr>
+        <tr class="separator:afa83c0423e913e528cb073b850bdf06a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab45f295b7df27edae6bf7cc9d101c533">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#ab45f295b7df27edae6bf7cc9d101c533">
+           OptionEntry
+          </a>
+          (
+          <a class="el" href="classGlib_1_1OptionEntry.html">
+           OptionEntry
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ab45f295b7df27edae6bf7cc9d101c533">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acc3778ce061bc80e6dd6428b6e470edb">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1OptionEntry.html">
+           OptionEntry
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#acc3778ce061bc80e6dd6428b6e470edb">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGlib_1_1OptionEntry.html">
+           OptionEntry
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:acc3778ce061bc80e6dd6428b6e470edb">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8f84e2bdc3577ed1c1a2cb7e344eca0d">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a8f84e2bdc3577ed1c1a2cb7e344eca0d">
+           ~OptionEntry
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a8f84e2bdc3577ed1c1a2cb7e344eca0d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae3070f22bf99398c42b51b71e44f8a7b">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1OptionEntry.html">
+           OptionEntry
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#ae3070f22bf99398c42b51b71e44f8a7b">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1OptionEntry.html">
+           OptionEntry
+          </a>
+          &amp; src)
+         </td>
+        </tr>
+        <tr class="separator:ae3070f22bf99398c42b51b71e44f8a7b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1c7f2b04d13b8bfa0e36faa0d24d35cf">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a1c7f2b04d13b8bfa0e36faa0d24d35cf">
+           get_long_name
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a1c7f2b04d13b8bfa0e36faa0d24d35cf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a31a2a6dbb9cf995a5583fc5d18724ecd">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a31a2a6dbb9cf995a5583fc5d18724ecd">
+           set_long_name
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; value)
+         </td>
+        </tr>
+        <tr class="separator:a31a2a6dbb9cf995a5583fc5d18724ecd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a81f59eb285439b4c6e863ad4e6435e1f">
+         <td align="right" class="memItemLeft" valign="top">
+          gchar
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a81f59eb285439b4c6e863ad4e6435e1f">
+           get_short_name
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a81f59eb285439b4c6e863ad4e6435e1f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac4e352caaf4a977dbbaf3352eed2e6fb">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#ac4e352caaf4a977dbbaf3352eed2e6fb">
+           set_short_name
+          </a>
+          (const gchar&amp; value)
+         </td>
+        </tr>
+        <tr class="separator:ac4e352caaf4a977dbbaf3352eed2e6fb">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a73ccebf305d55337d9001c614b4b90bb">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a73ccebf305d55337d9001c614b4b90bb">
+           get_flags
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a73ccebf305d55337d9001c614b4b90bb">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a99ab7ba877bae068713085810d908e20">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a99ab7ba877bae068713085810d908e20">
+           set_flags
+          </a>
+          (const int&amp; value)
+         </td>
+        </tr>
+        <tr class="memdesc:a99ab7ba877bae068713085810d908e20">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set one or more
+          <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280">
+           OptionEntry::Flags
+          </a>
+          .
+          <a href="classGlib_1_1OptionEntry.html#a99ab7ba877bae068713085810d908e20">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a99ab7ba877bae068713085810d908e20">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2d21cdbc2fc6b6220bb43a63376f34d4">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a2d21cdbc2fc6b6220bb43a63376f34d4">
+           get_description
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a2d21cdbc2fc6b6220bb43a63376f34d4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a62bc509cca2829535c1e65db5100fc05">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a62bc509cca2829535c1e65db5100fc05">
+           set_description
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; value)
+         </td>
+        </tr>
+        <tr class="separator:a62bc509cca2829535c1e65db5100fc05">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1335b0adf09d6da089e5ef4348c19cd7">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a1335b0adf09d6da089e5ef4348c19cd7">
+           get_arg_description
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a1335b0adf09d6da089e5ef4348c19cd7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab9f1af6b5c5a8425dd357ccc07262eb2">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#ab9f1af6b5c5a8425dd357ccc07262eb2">
+           set_arg_description
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; value)
+         </td>
+        </tr>
+        <tr class="separator:ab9f1af6b5c5a8425dd357ccc07262eb2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2c861668e4a9d4601e5b95ed05d05bc7">
+         <td align="right" class="memItemLeft" valign="top">
+          GOptionEntry*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a2c861668e4a9d4601e5b95ed05d05bc7">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a2c861668e4a9d4601e5b95ed05d05bc7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af18b1584aedc0f26f406334b4840be84">
+         <td align="right" class="memItemLeft" valign="top">
+          const GOptionEntry*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#af18b1584aedc0f26f406334b4840be84">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:af18b1584aedc0f26f406334b4840be84">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-attribs">
+           </a>
+           Public Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a309fc51cdc8e6815b034e8255a4e7852">
+         <td align="right" class="memItemLeft" valign="top">
+          enum
+          <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280">
+           Glib::OptionEntry::Flags
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#a309fc51cdc8e6815b034e8255a4e7852">
+           GOptionFlags
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a309fc51cdc8e6815b034e8255a4e7852">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ae69569ab0df3c4f00261d7b5d3230721">
+         <td align="right" class="memItemLeft" valign="top">
+          GOptionEntry*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1OptionEntry.html#ae69569ab0df3c4f00261d7b5d3230721">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:ae69569ab0df3c4f00261d7b5d3230721">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        An
+        <a class="el" href="classGlib_1_1OptionEntry.html" title="An OptionEntry defines a single option. ">
+         OptionEntry
+        </a>
+        defines a single option.
+       </p>
+       <p>
+        To have an effect, it must be added to an
+        <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+         OptionGroup
+        </a>
+        with
+        <a class="el" href="classGlib_1_1OptionGroup.html#abe772a54bbad294d847b77349e86c8e9">
+         OptionGroup::add_entry()
+        </a>
+        .
+       </p>
+       <p>
+        The long name of an option can be used to specify it in a commandline as –long_name. Every option must have a long name. To resolve conflicts if multiple option groups contain the same long name, it is also possible to specify the option as –groupname-long_name.
+       </p>
+       <p>
+        If an option has a short name, it can be specified as -short_name in a commandline.
+       </p>
+       <p>
+        The description for the option is shown in the –help output.
+       </p>
+       <p>
+        The arg_descripton is the placeholder to use for the extra argument parsed by the option in –help output.
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Member Enumeration Documentation
+      </h2>
+      <a class="anchor" id="a5b550ab1ac9884bcc614653c9cf98280">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            enum
+            <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280">
+             Glib::OptionEntry::Flags
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <table class="fieldtable">
+         <tbody>
+          <tr>
+           <th colspan="2">
+            Enumerator
+           </th>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="a5b550ab1ac9884bcc614653c9cf98280adfc734d486122379ef2c37d9e8861644">
+            </a>
+            FLAG_HIDDEN
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="a5b550ab1ac9884bcc614653c9cf98280ab8f1e9721d33857527515dbadd3f822f">
+            </a>
+            FLAG_IN_MAIN
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="a5b550ab1ac9884bcc614653c9cf98280a24a4642bdefb942e56482f6b7d05561e">
+            </a>
+            FLAG_REVERSE
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="a5b550ab1ac9884bcc614653c9cf98280a69aead0991d1cd5b29cd394c8174f25d">
+            </a>
+            FLAG_NO_ARG
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="a5b550ab1ac9884bcc614653c9cf98280abc30a617bee9b427293fdfc13f546955">
+            </a>
+            FLAG_FILENAME
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="a5b550ab1ac9884bcc614653c9cf98280ae7b4fc1fd7b9f41c6a91c48c8978e4ce">
+            </a>
+            FLAG_OPTIONAL_ARG
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="a5b550ab1ac9884bcc614653c9cf98280a9672830777db41b709ca74252f3afd27">
+            </a>
+            FLAG_NOALIAS
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="aaeec52f8bd17268b8bba6e4746def3c3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Glib::OptionEntry::OptionEntry
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="afa83c0423e913e528cb073b850bdf06a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Glib::OptionEntry::OptionEntry
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1OptionEntry.html">
+             OptionEntry
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             src
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab45f295b7df27edae6bf7cc9d101c533">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::OptionEntry::OptionEntry
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1OptionEntry.html">
+                 OptionEntry
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a8f84e2bdc3577ed1c1a2cb7e344eca0d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                virtual Glib::OptionEntry::~OptionEntry
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              virtual
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a1335b0adf09d6da089e5ef4348c19cd7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::OptionEntry::get_arg_description
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a2d21cdbc2fc6b6220bb43a63376f34d4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::OptionEntry::get_description
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a73ccebf305d55337d9001c614b4b90bb">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Glib::OptionEntry::get_flags
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a1c7f2b04d13b8bfa0e36faa0d24d35cf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::OptionEntry::get_long_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a81f59eb285439b4c6e863ad4e6435e1f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            gchar Glib::OptionEntry::get_short_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a2c861668e4a9d4601e5b95ed05d05bc7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GOptionEntry* Glib::OptionEntry::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="af18b1584aedc0f26f406334b4840be84">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GOptionEntry* Glib::OptionEntry::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="acc3778ce061bc80e6dd6428b6e470edb">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1OptionEntry.html">
+                 OptionEntry
+                </a>
+                &amp; Glib::OptionEntry::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1OptionEntry.html">
+                 OptionEntry
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ae3070f22bf99398c42b51b71e44f8a7b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1OptionEntry.html">
+             OptionEntry
+            </a>
+            &amp; Glib::OptionEntry::operator=
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1OptionEntry.html">
+             OptionEntry
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             src
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab9f1af6b5c5a8425dd357ccc07262eb2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionEntry::set_arg_description
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a62bc509cca2829535c1e65db5100fc05">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionEntry::set_description
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a99ab7ba877bae068713085810d908e20">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionEntry::set_flags
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set one or more
+         <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280">
+          OptionEntry::Flags
+         </a>
+         .
+        </p>
+        <p>
+         Do not set FLAG_FILENAME. Character encoding is chosen when the
+         <a class="el" href="classGlib_1_1OptionEntry.html" title="An OptionEntry defines a single option. ">
+          OptionEntry
+         </a>
+         is added to an
+         <a class="el" href="classGlib_1_1OptionGroup.html" title="An OptionGroup defines the options in a single group. ">
+          OptionGroup
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a31a2a6dbb9cf995a5583fc5d18724ecd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionEntry::set_long_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac4e352caaf4a977dbbaf3352eed2e6fb">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::OptionEntry::set_short_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const gchar &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="ae69569ab0df3c4f00261d7b5d3230721">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GOptionEntry* Glib::OptionEntry::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a309fc51cdc8e6815b034e8255a4e7852">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            enum
+            <a class="el" href="classGlib_1_1OptionEntry.html#a5b550ab1ac9884bcc614653c9cf98280">
+             Glib::OptionEntry::Flags
+            </a>
+            Glib::OptionEntry::GOptionFlags
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1OptionEntry.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

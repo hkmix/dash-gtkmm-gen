@@ -1,0 +1,2629 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::WeakRef&lt; T_CppObject &gt; Class Template Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1WeakRef.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1WeakRef.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1WeakRef.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::WeakRef&lt; T_CppObject &gt; Class Template Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       WeakRef&lt;&gt; is a weak reference smartpointer.
+       <a href="classGlib_1_1WeakRef.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/weakref.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a742af0eea71db225a3eee5094df1b4f2">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a742af0eea71db225a3eee5094df1b4f2">
+           WeakRef
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a742af0eea71db225a3eee5094df1b4f2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Default constructor.
+          <a href="classGlib_1_1WeakRef.html#a742af0eea71db225a3eee5094df1b4f2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a742af0eea71db225a3eee5094df1b4f2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8115592f075bfec8c7685eba953217b0">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a8115592f075bfec8c7685eba953217b0">
+           WeakRef
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a8115592f075bfec8c7685eba953217b0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Copy constructor.
+          <a href="classGlib_1_1WeakRef.html#a8115592f075bfec8c7685eba953217b0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8115592f075bfec8c7685eba953217b0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a09ca7eab4c191538cdf6eccd2732b2a4">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a09ca7eab4c191538cdf6eccd2732b2a4">
+           WeakRef
+          </a>
+          (
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a09ca7eab4c191538cdf6eccd2732b2a4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Move constructor.
+          <a href="classGlib_1_1WeakRef.html#a09ca7eab4c191538cdf6eccd2732b2a4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a09ca7eab4c191538cdf6eccd2732b2a4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab31785505c6aa1e8a961650d817587f6">
+         <td class="memTemplParams" colspan="2">
+          template&lt;typename T_CastFrom &gt;
+         </td>
+        </tr>
+        <tr class="memitem:ab31785505c6aa1e8a961650d817587f6">
+         <td align="right" class="memTemplItemLeft" valign="top">
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#ab31785505c6aa1e8a961650d817587f6">
+           WeakRef
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &lt; T_CastFrom &gt;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:ab31785505c6aa1e8a961650d817587f6">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Copy constructor from different, but castable type.
+          <a href="classGlib_1_1WeakRef.html#ab31785505c6aa1e8a961650d817587f6">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab31785505c6aa1e8a961650d817587f6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adcc3b33861af65d557cb040ba5f6a5ae">
+         <td class="memTemplParams" colspan="2">
+          template&lt;typename T_CastFrom &gt;
+         </td>
+        </tr>
+        <tr class="memitem:adcc3b33861af65d557cb040ba5f6a5ae">
+         <td align="right" class="memTemplItemLeft" valign="top">
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#adcc3b33861af65d557cb040ba5f6a5ae">
+           WeakRef
+          </a>
+          (
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &lt; T_CastFrom &gt;&amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:adcc3b33861af65d557cb040ba5f6a5ae">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Move constructor from different, but castable type.
+          <a href="classGlib_1_1WeakRef.html#adcc3b33861af65d557cb040ba5f6a5ae">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:adcc3b33861af65d557cb040ba5f6a5ae">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7efd424c72b4273c6c397a2efcf084fd">
+         <td class="memTemplParams" colspan="2">
+          template&lt;typename T_CastFrom &gt;
+         </td>
+        </tr>
+        <tr class="memitem:a7efd424c72b4273c6c397a2efcf084fd">
+         <td align="right" class="memTemplItemLeft" valign="top">
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a7efd424c72b4273c6c397a2efcf084fd">
+           WeakRef
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           RefPtr
+          </a>
+          &lt; T_CastFrom &gt;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a7efd424c72b4273c6c397a2efcf084fd">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Constructor from a
+          <a class="el" href="classGlib_1_1RefPtr.html" title="RefPtr&lt;&gt; is a reference-counting shared smartpointer. ">
+           RefPtr
+          </a>
+          of the same or a castable type.
+          <a href="classGlib_1_1WeakRef.html#a7efd424c72b4273c6c397a2efcf084fd">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7efd424c72b4273c6c397a2efcf084fd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a60660d0a2e5de7258a857776d415f4b4">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a60660d0a2e5de7258a857776d415f4b4">
+           ~WeakRef
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a60660d0a2e5de7258a857776d415f4b4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Destructor.
+          <a href="classGlib_1_1WeakRef.html#a60660d0a2e5de7258a857776d415f4b4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a60660d0a2e5de7258a857776d415f4b4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7563560d6413f05e768ce7e15c771bde">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a7563560d6413f05e768ce7e15c771bde">
+           swap
+          </a>
+          (
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a7563560d6413f05e768ce7e15c771bde">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Swap the contents of two WeakRef&lt;&gt;.
+          <a href="classGlib_1_1WeakRef.html#a7563560d6413f05e768ce7e15c771bde">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7563560d6413f05e768ce7e15c771bde">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8eebda64905314f007adcf71a7e4f8fc">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a8eebda64905314f007adcf71a7e4f8fc">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a8eebda64905314f007adcf71a7e4f8fc">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Copy assignment operator.
+          <a href="classGlib_1_1WeakRef.html#a8eebda64905314f007adcf71a7e4f8fc">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8eebda64905314f007adcf71a7e4f8fc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abfe47f2520e9c7ac73f7c735ca740352">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#abfe47f2520e9c7ac73f7c735ca740352">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:abfe47f2520e9c7ac73f7c735ca740352">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Move assignment operator.
+          <a href="classGlib_1_1WeakRef.html#abfe47f2520e9c7ac73f7c735ca740352">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abfe47f2520e9c7ac73f7c735ca740352">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3f42d24f682e3df01fe5c69bde09fdd4">
+         <td class="memTemplParams" colspan="2">
+          template&lt;typename T_CastFrom &gt;
+         </td>
+        </tr>
+        <tr class="memitem:a3f42d24f682e3df01fe5c69bde09fdd4">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &amp;
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a3f42d24f682e3df01fe5c69bde09fdd4">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &lt; T_CastFrom &gt;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a3f42d24f682e3df01fe5c69bde09fdd4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Copy assignment from different, but castable type.
+          <a href="classGlib_1_1WeakRef.html#a3f42d24f682e3df01fe5c69bde09fdd4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3f42d24f682e3df01fe5c69bde09fdd4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7fe160cb3e8eb76f566c9f2ce52c0db9">
+         <td class="memTemplParams" colspan="2">
+          template&lt;typename T_CastFrom &gt;
+         </td>
+        </tr>
+        <tr class="memitem:a7fe160cb3e8eb76f566c9f2ce52c0db9">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &amp;
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a7fe160cb3e8eb76f566c9f2ce52c0db9">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &lt; T_CastFrom &gt;&amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a7fe160cb3e8eb76f566c9f2ce52c0db9">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Move assignment from different, but castable type.
+          <a href="classGlib_1_1WeakRef.html#a7fe160cb3e8eb76f566c9f2ce52c0db9">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7fe160cb3e8eb76f566c9f2ce52c0db9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abcb6017666ea3c77b86e720df2e7a12f">
+         <td class="memTemplParams" colspan="2">
+          template&lt;typename T_CastFrom &gt;
+         </td>
+        </tr>
+        <tr class="memitem:abcb6017666ea3c77b86e720df2e7a12f">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &amp;
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#abcb6017666ea3c77b86e720df2e7a12f">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           RefPtr
+          </a>
+          &lt; T_CastFrom &gt;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:abcb6017666ea3c77b86e720df2e7a12f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Assignment from a
+          <a class="el" href="classGlib_1_1RefPtr.html" title="RefPtr&lt;&gt; is a reference-counting shared smartpointer. ">
+           RefPtr
+          </a>
+          of the same or a castable type.
+          <a href="classGlib_1_1WeakRef.html#abcb6017666ea3c77b86e720df2e7a12f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abcb6017666ea3c77b86e720df2e7a12f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4256072bb223bb690036092ce9117b08">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a4256072bb223bb690036092ce9117b08">
+           operator bool
+          </a>
+          () const noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a4256072bb223bb690036092ce9117b08">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Test whether the WeakRef&lt;&gt; points to any underlying instance.
+          <a href="classGlib_1_1WeakRef.html#a4256072bb223bb690036092ce9117b08">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4256072bb223bb690036092ce9117b08">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a88eb239c3242477334e7e80dcd4d305c">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1RefPtr.html">
+           RefPtr
+          </a>
+          &lt; T_CppObject &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a88eb239c3242477334e7e80dcd4d305c">
+           get
+          </a>
+          () const noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a88eb239c3242477334e7e80dcd4d305c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Create a strong reference to the underlying object.
+          <a href="classGlib_1_1WeakRef.html#a88eb239c3242477334e7e80dcd4d305c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a88eb239c3242477334e7e80dcd4d305c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abae8fbb148f48e74f7923f09ffb0b501">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#abae8fbb148f48e74f7923f09ffb0b501">
+           reset
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:abae8fbb148f48e74f7923f09ffb0b501">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Make this
+          <a class="el" href="classGlib_1_1WeakRef.html" title="WeakRef&lt;&gt; is a weak reference smartpointer. ">
+           WeakRef
+          </a>
+          empty.
+          <a href="classGlib_1_1WeakRef.html#abae8fbb148f48e74f7923f09ffb0b501">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abae8fbb148f48e74f7923f09ffb0b501">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a017ff11f7786e498b10af8e5ffd63427">
+         <td class="memTemplParams" colspan="2">
+          template&lt;typename T_CastFrom &gt;
+         </td>
+        </tr>
+        <tr class="memitem:a017ff11f7786e498b10af8e5ffd63427">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          static
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a017ff11f7786e498b10af8e5ffd63427">
+           cast_dynamic
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &lt; T_CastFrom &gt;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a017ff11f7786e498b10af8e5ffd63427">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Dynamic cast to derived class.
+          <a href="classGlib_1_1WeakRef.html#a017ff11f7786e498b10af8e5ffd63427">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a017ff11f7786e498b10af8e5ffd63427">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab392bcba7f060fc9f3b012fc263e8f43">
+         <td class="memTemplParams" colspan="2">
+          template&lt;typename T_CastFrom &gt;
+         </td>
+        </tr>
+        <tr class="memitem:ab392bcba7f060fc9f3b012fc263e8f43">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          static
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#ab392bcba7f060fc9f3b012fc263e8f43">
+           cast_static
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &lt; T_CastFrom &gt;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:ab392bcba7f060fc9f3b012fc263e8f43">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Static cast to derived class.
+          <a href="classGlib_1_1WeakRef.html#ab392bcba7f060fc9f3b012fc263e8f43">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab392bcba7f060fc9f3b012fc263e8f43">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5f04f8d965ab0415048eb30fefe6403c">
+         <td class="memTemplParams" colspan="2">
+          template&lt;typename T_CastFrom &gt;
+         </td>
+        </tr>
+        <tr class="memitem:a5f04f8d965ab0415048eb30fefe6403c">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          static
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a5f04f8d965ab0415048eb30fefe6403c">
+           cast_const
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &lt; T_CastFrom &gt;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a5f04f8d965ab0415048eb30fefe6403c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Cast to non-const.
+          <a href="classGlib_1_1WeakRef.html#a5f04f8d965ab0415048eb30fefe6403c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5f04f8d965ab0415048eb30fefe6403c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a1f7be128b20c6f474dc95249cd19de01">
+         <td class="memTemplParams" colspan="2">
+          template&lt;class T_CppObject &gt;
+         </td>
+        </tr>
+        <tr class="memitem:a1f7be128b20c6f474dc95249cd19de01">
+         <td align="right" class="memTemplItemLeft" valign="top">
+          void
+         </td>
+         <td class="memTemplItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1WeakRef.html#a1f7be128b20c6f474dc95249cd19de01">
+           swap
+          </a>
+          (
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &lt; T_CppObject &gt;&amp; lhs,
+          <a class="el" href="classGlib_1_1WeakRef.html">
+           WeakRef
+          </a>
+          &lt; T_CppObject &gt;&amp; rhs) noexcept
+         </td>
+        </tr>
+        <tr class="memdesc:a1f7be128b20c6f474dc95249cd19de01">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Swap the contents of two WeakRef&lt;&gt;.
+          <a href="classGlib_1_1WeakRef.html#a1f7be128b20c6f474dc95249cd19de01">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1f7be128b20c6f474dc95249cd19de01">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <h3>
+        template&lt;typename T_CppObject&gt;
+        <br/>
+        <br/>
+        class Glib::WeakRef&lt; T_CppObject &gt;
+       </h3>
+       <p>
+        WeakRef&lt;&gt; is a weak reference smartpointer.
+       </p>
+       <p>
+        <a class="el" href="classGlib_1_1WeakRef.html" title="WeakRef&lt;&gt; is a weak reference smartpointer. ">
+         WeakRef
+        </a>
+        can store a pointer to any class that is derived from
+        <a class="el" href="classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces. ">
+         Glib::ObjectBase
+        </a>
+        , and whose reference() method is noexcept. In glibmm and gtkmm, that is anything derived from
+        <a class="el" href="classGlib_1_1ObjectBase.html" title="Glib::ObjectBase is a common base class for Objects and Interfaces. ">
+         Glib::ObjectBase
+        </a>
+        .
+       </p>
+       <p>
+        Unlike a
+        <a class="el" href="classGlib_1_1RefPtr.html" title="RefPtr&lt;&gt; is a reference-counting shared smartpointer. ">
+         RefPtr
+        </a>
+        , a
+        <a class="el" href="classGlib_1_1WeakRef.html" title="WeakRef&lt;&gt; is a weak reference smartpointer. ">
+         WeakRef
+        </a>
+        does not contribute to the reference counting of the underlying object.
+       </p>
+       <dl class="since_2_46">
+        <dt>
+         <b>
+          <a class="el" href="since_2_46.html#_since_2_46000005">
+           Since glibmm 2.46:
+          </a>
+         </b>
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a742af0eea71db225a3eee5094df1b4f2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Default constructor.
+        </p>
+        <p>
+         Create an empty weak reference.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a8115592f075bfec8c7685eba953217b0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CppObject &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Copy constructor.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a09ca7eab4c191538cdf6eccd2732b2a4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CppObject &gt;&amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Move constructor.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ab31785505c6aa1e8a961650d817587f6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;typename T_CastFrom &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CastFrom &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Copy constructor from different, but castable type.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="adcc3b33861af65d557cb040ba5f6a5ae">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;typename T_CastFrom &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CastFrom &gt;&amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Move constructor from different, but castable type.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a7efd424c72b4273c6c397a2efcf084fd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;typename T_CastFrom &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1RefPtr.html">
+                 RefPtr
+                </a>
+                &lt; T_CastFrom &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Constructor from a
+         <a class="el" href="classGlib_1_1RefPtr.html" title="RefPtr&lt;&gt; is a reference-counting shared smartpointer. ">
+          RefPtr
+         </a>
+         of the same or a castable type.
+        </p>
+        <p>
+         Create a weak reference from a
+         <a class="el" href="classGlib_1_1RefPtr.html" title="RefPtr&lt;&gt; is a reference-counting shared smartpointer. ">
+          RefPtr
+         </a>
+         of the same or a castable type. If the
+         <a class="el" href="classGlib_1_1RefPtr.html" title="RefPtr&lt;&gt; is a reference-counting shared smartpointer. ">
+          RefPtr
+         </a>
+         references nothing, an empty weak reference will be constructed.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a60660d0a2e5de7258a857776d415f4b4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::~
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Destructor.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a5f04f8d965ab0415048eb30fefe6403c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;typename T_CastFrom &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::cast_const
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CastFrom &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              static
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Cast to non-const.
+        </p>
+        <p>
+         The
+         <a class="el" href="classGlib_1_1WeakRef.html" title="WeakRef&lt;&gt; is a weak reference smartpointer. ">
+          WeakRef
+         </a>
+         can't be cast with the usual notation so instead you can use
+        </p>
+        <div class="fragment">
+         <div class="line">
+          ptr_nonconst =
+          <a class="code" href="classGlib_1_1WeakRef.html#a5f04f8d965ab0415048eb30fefe6403c">
+           Glib::WeakRef&lt;NonConstType&gt;::cast_const
+          </a>
+          (ptr_const);
+         </div>
+        </div>
+        <!-- fragment -->
+       </div>
+      </div>
+      <a class="anchor" id="a017ff11f7786e498b10af8e5ffd63427">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;typename T_CastFrom &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::cast_dynamic
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CastFrom &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              static
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Dynamic cast to derived class.
+        </p>
+        <p>
+         The
+         <a class="el" href="classGlib_1_1WeakRef.html" title="WeakRef&lt;&gt; is a weak reference smartpointer. ">
+          WeakRef
+         </a>
+         can't be cast with the usual notation so instead you can use
+        </p>
+        <div class="fragment">
+         <div class="line">
+          ptr_derived =
+          <a class="code" href="classGlib_1_1WeakRef.html#a017ff11f7786e498b10af8e5ffd63427">
+           Glib::WeakRef&lt;Derived&gt;::cast_dynamic
+          </a>
+          (ptr_base);
+         </div>
+        </div>
+        <!-- fragment -->
+       </div>
+      </div>
+      <a class="anchor" id="ab392bcba7f060fc9f3b012fc263e8f43">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;typename T_CastFrom &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::cast_static
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CastFrom &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              static
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Static cast to derived class.
+        </p>
+        <p>
+         The
+         <a class="el" href="classGlib_1_1WeakRef.html" title="WeakRef&lt;&gt; is a weak reference smartpointer. ">
+          WeakRef
+         </a>
+         can't be cast with the usual notation so instead you can use
+        </p>
+        <div class="fragment">
+         <div class="line">
+          ptr_derived =
+          <a class="code" href="classGlib_1_1WeakRef.html#ab392bcba7f060fc9f3b012fc263e8f43">
+           Glib::WeakRef&lt;Derived&gt;::cast_static
+          </a>
+          (ptr_base);
+         </div>
+        </div>
+        <!-- fragment -->
+       </div>
+      </div>
+      <a class="anchor" id="a88eb239c3242477334e7e80dcd4d305c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1RefPtr.html">
+                 RefPtr
+                </a>
+                &lt;T_CppObject&gt;
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::get
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Create a strong reference to the underlying object.
+        </p>
+        <p>
+         This is a thread-safe way to acquire a strong reference to the underlying object. If the
+         <a class="el" href="classGlib_1_1WeakRef.html" title="WeakRef&lt;&gt; is a weak reference smartpointer. ">
+          WeakRef
+         </a>
+         is empty, the returned
+         <a class="el" href="classGlib_1_1RefPtr.html" title="RefPtr&lt;&gt; is a reference-counting shared smartpointer. ">
+          RefPtr
+         </a>
+         will reference nothing.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a4256072bb223bb690036092ce9117b08">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::operator bool
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              explicit
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Test whether the WeakRef&lt;&gt; points to any underlying instance.
+        </p>
+        <p>
+         Mimics usage of ordinary pointers:
+        </p>
+        <div class="fragment">
+         <div class="line">
+          <span class="keywordflow">
+           if
+          </span>
+          (ptr)
+         </div>
+         <div class="line">
+          do_something();
+         </div>
+        </div>
+        <!-- fragment -->
+        <p>
+         In a multi-threaded program a
+         <code>
+          true
+         </code>
+         return value can become obsolete at any time, even before the caller has a chance to test it, because the underlying instance may lose its last reference in another thread. Use
+         <a class="el" href="classGlib_1_1WeakRef.html#a88eb239c3242477334e7e80dcd4d305c" title="Create a strong reference to the underlying object. ">
+          get()
+         </a>
+         if this is not acceptable.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a8eebda64905314f007adcf71a7e4f8fc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &amp;
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CppObject &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Copy assignment operator.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="abfe47f2520e9c7ac73f7c735ca740352">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &amp;
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CppObject &gt;&amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Move assignment operator.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a3f42d24f682e3df01fe5c69bde09fdd4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;typename T_CastFrom &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &amp;
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CastFrom &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Copy assignment from different, but castable type.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a7fe160cb3e8eb76f566c9f2ce52c0db9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;typename T_CastFrom &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &amp;
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CastFrom &gt;&amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Move assignment from different, but castable type.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="abcb6017666ea3c77b86e720df2e7a12f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <div class="memtemplate">
+         template &lt;typename T_CastFrom &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &amp;
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1RefPtr.html">
+                 RefPtr
+                </a>
+                &lt; T_CastFrom &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Assignment from a
+         <a class="el" href="classGlib_1_1RefPtr.html" title="RefPtr&lt;&gt; is a reference-counting shared smartpointer. ">
+          RefPtr
+         </a>
+         of the same or a castable type.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="abae8fbb148f48e74f7923f09ffb0b501">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::reset
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Make this
+         <a class="el" href="classGlib_1_1WeakRef.html" title="WeakRef&lt;&gt; is a weak reference smartpointer. ">
+          WeakRef
+         </a>
+         empty.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a7563560d6413f05e768ce7e15c771bde">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;typename T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 Glib::WeakRef
+                </a>
+                &lt; T_CppObject &gt;::swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CppObject &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Swap the contents of two WeakRef&lt;&gt;.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a1f7be128b20c6f474dc95249cd19de01">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T_CppObject &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CppObject &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGlib_1_1WeakRef.html">
+                 WeakRef
+                </a>
+                &lt; T_CppObject &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Swap the contents of two WeakRef&lt;&gt;.
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1WeakRef.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

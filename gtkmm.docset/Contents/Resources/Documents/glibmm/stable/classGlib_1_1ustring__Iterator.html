@@ -1,0 +1,2076 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::ustring_Iterator&lt; T &gt; Class Template Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGlib_1_1ustring__Iterator.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1ustring__Iterator.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGlib_1_1ustring__Iterator.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::ustring_Iterator&lt; T &gt; Class Template Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       The iterator type of
+       <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+        Glib::ustring
+       </a>
+       .
+       <a href="classGlib_1_1ustring__Iterator.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/ustring.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a4a94d066bf24c72f91ec0baa35fc2935">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a4a94d066bf24c72f91ec0baa35fc2935">
+           iterator_category
+          </a>
+          =
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00636.html">
+           std::bidirectional_iterator_tag
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a4a94d066bf24c72f91ec0baa35fc2935">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a766856207efc45a01f0eec9fc93992d3">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a766856207efc45a01f0eec9fc93992d3">
+           value_type
+          </a>
+          = gunichar
+         </td>
+        </tr>
+        <tr class="separator:a766856207efc45a01f0eec9fc93992d3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2b1c245ff5371ed35511e8299d13ef66">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a2b1c245ff5371ed35511e8299d13ef66">
+           difference_type
+          </a>
+          = std::string::difference_type
+         </td>
+        </tr>
+        <tr class="separator:a2b1c245ff5371ed35511e8299d13ef66">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8dbf552182724ea048faee7cd5757e5f">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a8dbf552182724ea048faee7cd5757e5f">
+           reference
+          </a>
+          =
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a766856207efc45a01f0eec9fc93992d3">
+           value_type
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a8dbf552182724ea048faee7cd5757e5f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a27920a6daf1e6257b16d7326dd254cf1">
+         <td align="right" class="memItemLeft" valign="top">
+          using
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a27920a6daf1e6257b16d7326dd254cf1">
+           pointer
+          </a>
+          = void
+         </td>
+        </tr>
+        <tr class="separator:a27920a6daf1e6257b16d7326dd254cf1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:af20ce404b0ffb807ace293af4ddf7f07">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#af20ce404b0ffb807ace293af4ddf7f07">
+           ustring_Iterator
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:af20ce404b0ffb807ace293af4ddf7f07">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a456579af0eafeabf6014825dc8b3c103">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a456579af0eafeabf6014825dc8b3c103">
+           ustring_Iterator
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring__Iterator.html">
+           ustring_Iterator
+          </a>
+          &lt; std::string::iterator &gt;&amp; other)
+         </td>
+        </tr>
+        <tr class="separator:a456579af0eafeabf6014825dc8b3c103">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad9584840127f854137265bf2d4c054f8">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a766856207efc45a01f0eec9fc93992d3">
+           value_type
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#ad9584840127f854137265bf2d4c054f8">
+           operator*
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:ad9584840127f854137265bf2d4c054f8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ada50c68ef23fd35a3d20d4ad57b02e57">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html">
+           ustring_Iterator
+          </a>
+          &lt; T &gt;&amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#ada50c68ef23fd35a3d20d4ad57b02e57">
+           operator++
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ada50c68ef23fd35a3d20d4ad57b02e57">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1c746bd9a2ab884ba19190fcdeb428b5">
+         <td align="right" class="memItemLeft" valign="top">
+          const
+          <a class="el" href="classGlib_1_1ustring__Iterator.html">
+           ustring_Iterator
+          </a>
+          &lt; T &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a1c746bd9a2ab884ba19190fcdeb428b5">
+           operator++
+          </a>
+          (int)
+         </td>
+        </tr>
+        <tr class="separator:a1c746bd9a2ab884ba19190fcdeb428b5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a70cc9ab14d049e21a0375e97d7b8759a">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html">
+           ustring_Iterator
+          </a>
+          &lt; T &gt;&amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a70cc9ab14d049e21a0375e97d7b8759a">
+           operator--
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a70cc9ab14d049e21a0375e97d7b8759a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aeebb923631e3535e9e96a1f65edec999">
+         <td align="right" class="memItemLeft" valign="top">
+          const
+          <a class="el" href="classGlib_1_1ustring__Iterator.html">
+           ustring_Iterator
+          </a>
+          &lt; T &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#aeebb923631e3535e9e96a1f65edec999">
+           operator--
+          </a>
+          (int)
+         </td>
+        </tr>
+        <tr class="separator:aeebb923631e3535e9e96a1f65edec999">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1f4b5aaeadcc90211e016f08a0be846a">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a1f4b5aaeadcc90211e016f08a0be846a">
+           ustring_Iterator
+          </a>
+          (T pos)
+         </td>
+        </tr>
+        <tr class="separator:a1f4b5aaeadcc90211e016f08a0be846a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1c81fae5230c3f0df726972abba61c5a">
+         <td align="right" class="memItemLeft" valign="top">
+          T
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a1c81fae5230c3f0df726972abba61c5a">
+           base
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a1c81fae5230c3f0df726972abba61c5a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a71d2d580e6e761fd4dd1f9a0bda9e3ab">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a71d2d580e6e761fd4dd1f9a0bda9e3ab">
+           operator==
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a71d2d580e6e761fd4dd1f9a0bda9e3ab">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a913deefabb28e251ed6f29ac4316e031">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a913deefabb28e251ed6f29ac4316e031">
+           operator!=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a913deefabb28e251ed6f29ac4316e031">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab187b9c8fe8307b54f5bfa3e4e6b5ce0">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#ab187b9c8fe8307b54f5bfa3e4e6b5ce0">
+           operator&lt;
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:ab187b9c8fe8307b54f5bfa3e4e6b5ce0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a36a8542e086c203993fcddfc054dda4e">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a36a8542e086c203993fcddfc054dda4e">
+           operator&gt;
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a36a8542e086c203993fcddfc054dda4e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8a95c65ba9914b5d0c2ca56c1e3d6770">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a8a95c65ba9914b5d0c2ca56c1e3d6770">
+           operator&lt;=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a8a95c65ba9914b5d0c2ca56c1e3d6770">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a25acc98a371197b997295485b477e4de">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGlib_1_1ustring__Iterator.html#a25acc98a371197b997295485b477e4de">
+           operator&gt;=
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+           Glib::ustring::const_iterator
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a25acc98a371197b997295485b477e4de">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <h3>
+        template&lt;class T&gt;
+        <br/>
+        <br/>
+        class Glib::ustring_Iterator&lt; T &gt;
+       </h3>
+       <p>
+        The iterator type of
+        <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+         Glib::ustring
+        </a>
+        .
+       </p>
+       <p>
+        Note this is not a random access iterator but a bidirectional one, since all index operations need to iterate over the UTF-8 data. Use
+        <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01616.html#a2d43d8e656c1d71e14e398cdd726af37">
+         std::advance()
+        </a>
+        to move to a certain position. However, all of the relational operators are available:
+        <code>
+         == != &lt; &gt; &lt;= &gt;=
+        </code>
+       </p>
+       <p>
+        A writeable iterator isn't provided because: The number of bytes of the old UTF-8 character and the new one to write could be different. Therefore, any write operation would invalidate all other iterators pointing into the same string.
+       </p>
+       <p>
+        The
+        <a class="el" href="classGlib_1_1ustring.html" title="Glib::ustring has much the same interface as std::string, but contains Unicode characters encoded as ...">
+         Glib::ustring
+        </a>
+        iterated over must contain only valid UTF-8 data. If it does not,
+        <a class="el" href="classGlib_1_1ustring__Iterator.html#ada50c68ef23fd35a3d20d4ad57b02e57">
+         operator++()
+        </a>
+        ,
+        <a class="el" href="classGlib_1_1ustring__Iterator.html#a70cc9ab14d049e21a0375e97d7b8759a">
+         operator--()
+        </a>
+        and
+        <a class="el" href="classGlib_1_1ustring__Iterator.html#ad9584840127f854137265bf2d4c054f8">
+         operator*()
+        </a>
+        may make accesses outside the bounds of the string. A loop such as the following one would not stop at the end of the string.
+       </p>
+       <div class="fragment">
+        <div class="line">
+         <span class="comment">
+          // Bad code! Don't do this!
+         </span>
+        </div>
+        <div class="line">
+         <span class="keyword">
+          const
+         </span>
+         <span class="keywordtype">
+          char
+         </span>
+         not_utf8[] = {
+         <span class="stringliteral">
+          '\x80'
+         </span>
+         ,
+         <span class="stringliteral">
+          '\xef'
+         </span>
+         ,
+         <span class="stringliteral">
+          '\x80'
+         </span>
+         ,
+         <span class="stringliteral">
+          '\x80'
+         </span>
+         ,
+         <span class="stringliteral">
+          '\xef'
+         </span>
+         ,
+         <span class="stringliteral">
+          '\x80'
+         </span>
+         };
+        </div>
+        <div class="line">
+         <span class="keyword">
+          const
+         </span>
+         <a class="code" href="classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         s(not_utf8, not_utf8 +
+         <span class="keyword">
+          sizeof
+         </span>
+         not_utf8);
+        </div>
+        <div class="line">
+         <span class="keywordflow">
+          for
+         </span>
+         (
+         <a class="code" href="classGlib_1_1ustring__Iterator.html">
+          Glib::ustring::const_iterator
+         </a>
+         it = s.begin(); it != s.end(); ++it)
+        </div>
+        <div class="line">
+         std::cout &lt;&lt; *it &lt;&lt;
+         <a class="codeRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01616.html#a8b3758bb8f17c440c7963363f42f69f3">
+          std::endl
+         </a>
+         ;
+        </div>
+       </div>
+       <!-- fragment -->
+       <dl class="tparams">
+        <dt>
+         Template Parameters
+        </dt>
+        <dd>
+         <table class="tparams">
+          <tbody>
+           <tr>
+            <td class="paramname">
+             T
+            </td>
+            <td>
+             std::string::iterator or std::string::const_iterator
+            </td>
+           </tr>
+          </tbody>
+         </table>
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Member Typedef Documentation
+      </h2>
+      <a class="anchor" id="a2b1c245ff5371ed35511e8299d13ef66">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1ustring__Iterator.html">
+             Glib::ustring_Iterator
+            </a>
+            &lt; T &gt;::
+            <a class="el" href="classGlib_1_1ustring__Iterator.html#a2b1c245ff5371ed35511e8299d13ef66">
+             difference_type
+            </a>
+            =  std::string::difference_type
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a4a94d066bf24c72f91ec0baa35fc2935">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1ustring__Iterator.html">
+             Glib::ustring_Iterator
+            </a>
+            &lt; T &gt;::
+            <a class="el" href="classGlib_1_1ustring__Iterator.html#a4a94d066bf24c72f91ec0baa35fc2935">
+             iterator_category
+            </a>
+            =
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00636.html">
+             std::bidirectional_iterator_tag
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a27920a6daf1e6257b16d7326dd254cf1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1ustring__Iterator.html">
+             Glib::ustring_Iterator
+            </a>
+            &lt; T &gt;::
+            <a class="el" href="classGlib_1_1ustring__Iterator.html#a27920a6daf1e6257b16d7326dd254cf1">
+             pointer
+            </a>
+            =  void
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a8dbf552182724ea048faee7cd5757e5f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1ustring__Iterator.html">
+             Glib::ustring_Iterator
+            </a>
+            &lt; T &gt;::
+            <a class="el" href="classGlib_1_1ustring__Iterator.html#a8dbf552182724ea048faee7cd5757e5f">
+             reference
+            </a>
+            =
+            <a class="el" href="classGlib_1_1ustring__Iterator.html#a766856207efc45a01f0eec9fc93992d3">
+             value_type
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a766856207efc45a01f0eec9fc93992d3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            using
+            <a class="el" href="classGlib_1_1ustring__Iterator.html">
+             Glib::ustring_Iterator
+            </a>
+            &lt; T &gt;::
+            <a class="el" href="classGlib_1_1ustring__Iterator.html#a766856207efc45a01f0eec9fc93992d3">
+             value_type
+            </a>
+            =  gunichar
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="af20ce404b0ffb807ace293af4ddf7f07">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 Glib::ustring_Iterator
+                </a>
+                &lt; T &gt;::
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 ustring_Iterator
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a456579af0eafeabf6014825dc8b3c103">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 Glib::ustring_Iterator
+                </a>
+                &lt; T &gt;::
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 ustring_Iterator
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 ustring_Iterator
+                </a>
+                &lt; std::string::iterator &gt;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a1f4b5aaeadcc90211e016f08a0be846a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 Glib::ustring_Iterator
+                </a>
+                &lt; T &gt;::
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 ustring_Iterator
+                </a>
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                T
+               </td>
+               <td class="paramname">
+                <em>
+                 pos
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a1c81fae5230c3f0df726972abba61c5a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                T
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 Glib::ustring_Iterator
+                </a>
+                &lt; T &gt;::base
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ad9584840127f854137265bf2d4c054f8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1ustring__Iterator.html#a766856207efc45a01f0eec9fc93992d3">
+                 value_type
+                </a>
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 Glib::ustring_Iterator
+                </a>
+                &lt; T &gt;::operator*
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ada50c68ef23fd35a3d20d4ad57b02e57">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 ustring_Iterator
+                </a>
+                &lt;T&gt;&amp;
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 Glib::ustring_Iterator
+                </a>
+                &lt; T &gt;::operator++
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a1c746bd9a2ab884ba19190fcdeb428b5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 ustring_Iterator
+                </a>
+                &lt;T&gt;
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 Glib::ustring_Iterator
+                </a>
+                &lt; T &gt;::operator++
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                int
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a70cc9ab14d049e21a0375e97d7b8759a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 ustring_Iterator
+                </a>
+                &lt;T&gt;&amp;
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 Glib::ustring_Iterator
+                </a>
+                &lt; T &gt;::operator--
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aeebb923631e3535e9e96a1f65edec999">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 ustring_Iterator
+                </a>
+                &lt;T&gt;
+                <a class="el" href="classGlib_1_1ustring__Iterator.html">
+                 Glib::ustring_Iterator
+                </a>
+                &lt; T &gt;::operator--
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                int
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a913deefabb28e251ed6f29ac4316e031">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#gac4373547895ec9df9035719b38a2621a">
+                 operator!
+                </a>
+                =
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab187b9c8fe8307b54f5bfa3e4e6b5ce0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator&lt;
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a8a95c65ba9914b5d0c2ca56c1e3d6770">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator&lt;=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a71d2d580e6e761fd4dd1f9a0bda9e3ab">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator==
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a36a8542e086c203993fcddfc054dda4e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator&gt;
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a25acc98a371197b997295485b477e4de">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <div class="memtemplate">
+         template &lt;class T &gt;
+        </div>
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator&gt;=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGlib_1_1ustring.html#a4a35a4f6d1638d781190378218285b65">
+                 Glib::ustring::const_iterator
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGlib_1_1ustring__Iterator.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

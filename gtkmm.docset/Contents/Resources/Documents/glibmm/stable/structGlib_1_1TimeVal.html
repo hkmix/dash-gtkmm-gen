@@ -1,0 +1,2943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Glib::TimeVal Struct Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="structGlib_1_1TimeVal.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="structGlib_1_1TimeVal.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="structGlib_1_1TimeVal.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     glibmm: Glib::TimeVal Struct Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="examples.html">
+         <span>
+          Examples
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       <a class="el" href="structGlib_1_1TimeVal.html" title="Glib::TimeVal is a wrapper around the glib structure GTimeVal. ">
+        Glib::TimeVal
+       </a>
+       is a wrapper around the glib structure GTimeVal.
+       <a href="structGlib_1_1TimeVal.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;glibmm/timeval.h&gt;
+       </code>
+      </p>
+      <p>
+       Inherits GTimeVal.
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ab1861a9cd1f66b581b99ba9bb9456626">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#ab1861a9cd1f66b581b99ba9bb9456626">
+           TimeVal
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ab1861a9cd1f66b581b99ba9bb9456626">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac72a9eada5c330236f7bc7f305b19179">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#ac72a9eada5c330236f7bc7f305b19179">
+           TimeVal
+          </a>
+          (long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#acc2f93e09fbc239b7a4b48d3c577d0ba">
+           seconds
+          </a>
+          , long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#a48e161315b2e3c0c6671ab7ee450fb11">
+           microseconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:ac72a9eada5c330236f7bc7f305b19179">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5f889cb372ca5abb6796cfec44b8cc0d">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a5f889cb372ca5abb6796cfec44b8cc0d">
+           TimeVal
+          </a>
+          (const GTimeVal&amp; gtimeval)
+         </td>
+        </tr>
+        <tr class="separator:a5f889cb372ca5abb6796cfec44b8cc0d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2098aff57cd47005faacb51854ede6a9">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a2098aff57cd47005faacb51854ede6a9">
+           operator=
+          </a>
+          (const GTimeVal&amp; gtimeval)
+         </td>
+        </tr>
+        <tr class="separator:a2098aff57cd47005faacb51854ede6a9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9e28e3310fc1ee5e2dba7a7ed9cbb97e">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a9e28e3310fc1ee5e2dba7a7ed9cbb97e">
+           assign_current_time
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a9e28e3310fc1ee5e2dba7a7ed9cbb97e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Assigns the current time to the
+          <a class="el" href="structGlib_1_1TimeVal.html" title="Glib::TimeVal is a wrapper around the glib structure GTimeVal. ">
+           TimeVal
+          </a>
+          instance.
+          <a href="structGlib_1_1TimeVal.html#a9e28e3310fc1ee5e2dba7a7ed9cbb97e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9e28e3310fc1ee5e2dba7a7ed9cbb97e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0dbe47db920938db0676eb4d7a5b1abe">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a0dbe47db920938db0676eb4d7a5b1abe">
+           assign_from_iso8601
+          </a>
+          (const
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; iso_date)
+         </td>
+        </tr>
+        <tr class="memdesc:a0dbe47db920938db0676eb4d7a5b1abe">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Converts a string containing an ISO 8601 encoded date and time to a
+          <a class="el" href="structGlib_1_1TimeVal.html" title="Glib::TimeVal is a wrapper around the glib structure GTimeVal. ">
+           Glib::TimeVal
+          </a>
+          and puts it in
+          <a class="el" href="structGlib_1_1TimeVal.html" title="Glib::TimeVal is a wrapper around the glib structure GTimeVal. ">
+           TimeVal
+          </a>
+          instance.
+          <a href="structGlib_1_1TimeVal.html#a0dbe47db920938db0676eb4d7a5b1abe">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0dbe47db920938db0676eb4d7a5b1abe">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac94c07dbb768f3d1c68731e735f074ba">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#ac94c07dbb768f3d1c68731e735f074ba">
+           add
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:ac94c07dbb768f3d1c68731e735f074ba">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac47cd4e39665d3a25e3a236b0ced620d">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#ac47cd4e39665d3a25e3a236b0ced620d">
+           subtract
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:ac47cd4e39665d3a25e3a236b0ced620d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae24a9a526b4f66a16a2bc0047ac52ad6">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#ae24a9a526b4f66a16a2bc0047ac52ad6">
+           add_seconds
+          </a>
+          (long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#acc2f93e09fbc239b7a4b48d3c577d0ba">
+           seconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:ae24a9a526b4f66a16a2bc0047ac52ad6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aabd386d64098d531101589ba7f9aad4a">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#aabd386d64098d531101589ba7f9aad4a">
+           subtract_seconds
+          </a>
+          (long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#acc2f93e09fbc239b7a4b48d3c577d0ba">
+           seconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:aabd386d64098d531101589ba7f9aad4a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a116ddecfdc3994b541e05d0fd27ce297">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a116ddecfdc3994b541e05d0fd27ce297">
+           add_milliseconds
+          </a>
+          (long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#a2715f4a4bb9ba1a4c4c85da32cc8fa11">
+           milliseconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a116ddecfdc3994b541e05d0fd27ce297">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a08a82c224a744142db48b9d9f25a236f">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a08a82c224a744142db48b9d9f25a236f">
+           subtract_milliseconds
+          </a>
+          (long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#a2715f4a4bb9ba1a4c4c85da32cc8fa11">
+           milliseconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a08a82c224a744142db48b9d9f25a236f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a55648d2e807fd75d0eafffc3a595eaf0">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a55648d2e807fd75d0eafffc3a595eaf0">
+           add_microseconds
+          </a>
+          (long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#a48e161315b2e3c0c6671ab7ee450fb11">
+           microseconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a55648d2e807fd75d0eafffc3a595eaf0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a495a575cdc38ec785808e58750020957">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a495a575cdc38ec785808e58750020957">
+           subtract_microseconds
+          </a>
+          (long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#a48e161315b2e3c0c6671ab7ee450fb11">
+           microseconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a495a575cdc38ec785808e58750020957">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aab1d96583d1fb003ec887f2cd6fa00b7">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#aab1d96583d1fb003ec887f2cd6fa00b7">
+           operator+=
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; gtimeval)
+         </td>
+        </tr>
+        <tr class="separator:aab1d96583d1fb003ec887f2cd6fa00b7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8f20714471ddf46966a0bbdda19448be">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a8f20714471ddf46966a0bbdda19448be">
+           operator-=
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; gtimeval)
+         </td>
+        </tr>
+        <tr class="separator:a8f20714471ddf46966a0bbdda19448be">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0fab78f2bb33e9f9dbcddbd5ea27cf76">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a0fab78f2bb33e9f9dbcddbd5ea27cf76">
+           operator+=
+          </a>
+          (long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#acc2f93e09fbc239b7a4b48d3c577d0ba">
+           seconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a0fab78f2bb33e9f9dbcddbd5ea27cf76">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8868ad08d7f5e874b05b1045f8b4b230">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a8868ad08d7f5e874b05b1045f8b4b230">
+           operator-=
+          </a>
+          (long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#acc2f93e09fbc239b7a4b48d3c577d0ba">
+           seconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a8868ad08d7f5e874b05b1045f8b4b230">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7ed446e8ac1aade48f0091a628b0e489">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a7ed446e8ac1aade48f0091a628b0e489">
+           as_double
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a7ed446e8ac1aade48f0091a628b0e489">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns a double representation of the time interval.
+          <a href="structGlib_1_1TimeVal.html#a7ed446e8ac1aade48f0091a628b0e489">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7ed446e8ac1aade48f0091a628b0e489">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1f1c57dfc0f335f99f4cd281e237f421">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a1f1c57dfc0f335f99f4cd281e237f421">
+           as_iso8601
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a1f1c57dfc0f335f99f4cd281e237f421">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns an ISO 8601 encoded string, relative to the Coordinated Universal Time (UTC).
+          <a href="structGlib_1_1TimeVal.html#a1f1c57dfc0f335f99f4cd281e237f421">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1f1c57dfc0f335f99f4cd281e237f421">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a293fe201a8511f7a982b36accfa1e75a">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a293fe201a8511f7a982b36accfa1e75a">
+           negative
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a293fe201a8511f7a982b36accfa1e75a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0eafa6dacfbe329fd2a47ada4170ea2a">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a0eafa6dacfbe329fd2a47ada4170ea2a">
+           valid
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a0eafa6dacfbe329fd2a47ada4170ea2a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks whether the stored time interval is positive.
+          <a href="structGlib_1_1TimeVal.html#a0eafa6dacfbe329fd2a47ada4170ea2a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0eafa6dacfbe329fd2a47ada4170ea2a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a73ff3d601bc8fa6c8930bb38bfc4b81a">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a73ff3d601bc8fa6c8930bb38bfc4b81a">
+           operator+
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; lhs, const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a73ff3d601bc8fa6c8930bb38bfc4b81a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aff0c676ec4f733efaa502a143a230c5f">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#aff0c676ec4f733efaa502a143a230c5f">
+           operator+
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; lhs, long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#acc2f93e09fbc239b7a4b48d3c577d0ba">
+           seconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:aff0c676ec4f733efaa502a143a230c5f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a535d26acb52dfff88be818f67fbdf374">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a535d26acb52dfff88be818f67fbdf374">
+           operator-
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; lhs, const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a535d26acb52dfff88be818f67fbdf374">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a53bcd5233d92b3af6a55cb4aff9fb6f6">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a53bcd5233d92b3af6a55cb4aff9fb6f6">
+           operator-
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; lhs, long
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01623.html#acc2f93e09fbc239b7a4b48d3c577d0ba">
+           seconds
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a53bcd5233d92b3af6a55cb4aff9fb6f6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a77e3f591d386260fe9e9c63aafa31173">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a77e3f591d386260fe9e9c63aafa31173">
+           operator==
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; lhs, const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a77e3f591d386260fe9e9c63aafa31173">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3519281c327ded4360495fc2dee669ee">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a3519281c327ded4360495fc2dee669ee">
+           operator!=
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; lhs, const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a3519281c327ded4360495fc2dee669ee">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac68de516b4ddbd26ab553e661108fa83">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#ac68de516b4ddbd26ab553e661108fa83">
+           operator&lt;
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; lhs, const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:ac68de516b4ddbd26ab553e661108fa83">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2bbae56f9818348985dac857054f4d78">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a2bbae56f9818348985dac857054f4d78">
+           operator&gt;
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; lhs, const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a2bbae56f9818348985dac857054f4d78">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a288728d04ff97620e97b8742c337e21d">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#a288728d04ff97620e97b8742c337e21d">
+           operator&lt;=
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; lhs, const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a288728d04ff97620e97b8742c337e21d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adf5ab3ded63a7ff5c134622deaf03640">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="structGlib_1_1TimeVal.html#adf5ab3ded63a7ff5c134622deaf03640">
+           operator&gt;=
+          </a>
+          (const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; lhs, const
+          <a class="el" href="structGlib_1_1TimeVal.html">
+           TimeVal
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:adf5ab3ded63a7ff5c134622deaf03640">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        <a class="el" href="structGlib_1_1TimeVal.html" title="Glib::TimeVal is a wrapper around the glib structure GTimeVal. ">
+         Glib::TimeVal
+        </a>
+        is a wrapper around the glib structure GTimeVal.
+       </p>
+       <p>
+        The glib structure GTimeVal itself is equivalent to struct timeval, which is returned by the gettimeofday() UNIX call. Additionally this wrapper provides an assortment of time manipulation functions.
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="ab1861a9cd1f66b581b99ba9bb9456626">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::TimeVal::TimeVal
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac72a9eada5c330236f7bc7f305b19179">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::TimeVal::TimeVal
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                long
+               </td>
+               <td class="paramname">
+                <em>
+                 seconds
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                long
+               </td>
+               <td class="paramname">
+                <em>
+                 microseconds
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a5f889cb372ca5abb6796cfec44b8cc0d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Glib::TimeVal::TimeVal
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const GTimeVal &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 gtimeval
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="ac94c07dbb768f3d1c68731e735f074ba">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::TimeVal::add
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="structGlib_1_1TimeVal.html">
+             TimeVal
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             rhs
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a55648d2e807fd75d0eafffc3a595eaf0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::TimeVal::add_microseconds
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            long
+           </td>
+           <td class="paramname">
+            <em>
+             microseconds
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a116ddecfdc3994b541e05d0fd27ce297">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::TimeVal::add_milliseconds
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            long
+           </td>
+           <td class="paramname">
+            <em>
+             milliseconds
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ae24a9a526b4f66a16a2bc0047ac52ad6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::TimeVal::add_seconds
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            long
+           </td>
+           <td class="paramname">
+            <em>
+             seconds
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a7ed446e8ac1aade48f0091a628b0e489">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                double Glib::TimeVal::as_double
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns a double representation of the time interval.
+        </p>
+        <p>
+         This member function converts the time interval, that is internally stored as two long values for seconds and microseconds, to a double representation, whose unit is seconds.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a1f1c57dfc0f335f99f4cd281e237f421">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Glib::TimeVal::as_iso8601
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns an ISO 8601 encoded string, relative to the Coordinated Universal Time (UTC).
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000006">
+            Since glibmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9e28e3310fc1ee5e2dba7a7ed9cbb97e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::TimeVal::assign_current_time
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Assigns the current time to the
+         <a class="el" href="structGlib_1_1TimeVal.html" title="Glib::TimeVal is a wrapper around the glib structure GTimeVal. ">
+          TimeVal
+         </a>
+         instance.
+        </p>
+        <p>
+         Equivalent to the UNIX gettimeofday() function, but is portable and works also on Win32.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a0dbe47db920938db0676eb4d7a5b1abe">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Glib::TimeVal::assign_from_iso8601
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             iso_date
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Converts a string containing an ISO 8601 encoded date and time to a
+         <a class="el" href="structGlib_1_1TimeVal.html" title="Glib::TimeVal is a wrapper around the glib structure GTimeVal. ">
+          Glib::TimeVal
+         </a>
+         and puts it in
+         <a class="el" href="structGlib_1_1TimeVal.html" title="Glib::TimeVal is a wrapper around the glib structure GTimeVal. ">
+          TimeVal
+         </a>
+         instance.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              iso_date
+             </td>
+             <td>
+              ISO 8601 encoded string.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if conversion was successful.
+         </dd>
+        </dl>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000005">
+            Since glibmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a293fe201a8511f7a982b36accfa1e75a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool Glib::TimeVal::negative
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aab1d96583d1fb003ec887f2cd6fa00b7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp; Glib::TimeVal::operator+=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 gtimeval
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a0fab78f2bb33e9f9dbcddbd5ea27cf76">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp; Glib::TimeVal::operator+=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                long
+               </td>
+               <td class="paramname">
+                <em>
+                 seconds
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a8f20714471ddf46966a0bbdda19448be">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp; Glib::TimeVal::operator-=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 gtimeval
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a8868ad08d7f5e874b05b1045f8b4b230">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp; Glib::TimeVal::operator-=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                long
+               </td>
+               <td class="paramname">
+                <em>
+                 seconds
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a2098aff57cd47005faacb51854ede6a9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp; Glib::TimeVal::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const GTimeVal &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 gtimeval
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac47cd4e39665d3a25e3a236b0ced620d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::TimeVal::subtract
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="structGlib_1_1TimeVal.html">
+             TimeVal
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             rhs
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a495a575cdc38ec785808e58750020957">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::TimeVal::subtract_microseconds
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            long
+           </td>
+           <td class="paramname">
+            <em>
+             microseconds
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a08a82c224a744142db48b9d9f25a236f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::TimeVal::subtract_milliseconds
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            long
+           </td>
+           <td class="paramname">
+            <em>
+             milliseconds
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aabd386d64098d531101589ba7f9aad4a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Glib::TimeVal::subtract_seconds
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            long
+           </td>
+           <td class="paramname">
+            <em>
+             seconds
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a0eafa6dacfbe329fd2a47ada4170ea2a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool Glib::TimeVal::valid
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks whether the stored time interval is positive.
+        </p>
+        <p>
+         Returns true if the stored time / time interval is positive.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a3519281c327ded4360495fc2dee669ee">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#gac4373547895ec9df9035719b38a2621a">
+                 operator!
+                </a>
+                =
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a73ff3d601bc8fa6c8930bb38bfc4b81a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                operator+
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aff0c676ec4f733efaa502a143a230c5f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                operator+
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                long
+               </td>
+               <td class="paramname">
+                <em>
+                 seconds
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a535d26acb52dfff88be818f67fbdf374">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                operator-
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a53bcd5233d92b3af6a55cb4aff9fb6f6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                operator-
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                long
+               </td>
+               <td class="paramname">
+                <em>
+                 seconds
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac68de516b4ddbd26ab553e661108fa83">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator&lt;
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a288728d04ff97620e97b8742c337e21d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator&lt;=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a77e3f591d386260fe9e9c63aafa31173">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator==
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a2bbae56f9818348985dac857054f4d78">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator&gt;
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="adf5ab3ded63a7ff5c134622deaf03640">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator&gt;=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="structGlib_1_1TimeVal.html">
+                 TimeVal
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="structGlib_1_1TimeVal.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>
