@@ -1,0 +1,5943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gtk::PageSetup Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGtk_1_1PageSetup.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1PageSetup.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1PageSetup.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gtk::PageSetup Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       A
+       <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+        PageSetup
+       </a>
+       object stores the page size, orientation and margins.
+       <a href="classGtk_1_1PageSetup.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;gtkmm/pagesetup.h&gt;
+       </code>
+      </p>
+      <div class="dynheader">
+       Inheritance diagram for Gtk::PageSetup:
+      </div>
+      <div class="dyncontent">
+       <div class="center">
+        <img alt="Inheritance graph" border="0" src="classGtk_1_1PageSetup__inherit__graph.png" usemap="#Gtk_1_1PageSetup_inherit__map"/>
+       </div>
+       <map id="Gtk_1_1PageSetup_inherit__map" name="Gtk_1_1PageSetup_inherit__map">
+        <area alt="" coords="21,155,116,181" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html" id="node2" shape="rect" title="Glib::Object">
+        </area>
+        <area alt="" coords="5,80,132,107" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html" id="node3" shape="rect" title="Glib::ObjectBase">
+        </area>
+        <area alt="" coords="11,5,126,32" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html" id="node4" shape="rect" title="sigc::trackable">
+        </area>
+       </map>
+       <center>
+        <span class="legend">
+         [
+         <a href="graph_legend.html">
+          legend
+         </a>
+         ]
+        </span>
+       </center>
+      </div>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ab781dbe497024c10e6b87c2d442bbad9">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#ab781dbe497024c10e6b87c2d442bbad9">
+           PageSetup
+          </a>
+          (
+          <a class="el" href="classGtk_1_1PageSetup.html">
+           PageSetup
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ab781dbe497024c10e6b87c2d442bbad9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa5cdfc318cd52f9785dc0d4f9f7d6a31">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1PageSetup.html">
+           PageSetup
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#aa5cdfc318cd52f9785dc0d4f9f7d6a31">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGtk_1_1PageSetup.html">
+           PageSetup
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:aa5cdfc318cd52f9785dc0d4f9f7d6a31">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab188a876e75e269ce2a1b2a7fcc55320">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#ab188a876e75e269ce2a1b2a7fcc55320">
+           ~PageSetup
+          </a>
+          () noexceptoverride
+         </td>
+        </tr>
+        <tr class="separator:ab188a876e75e269ce2a1b2a7fcc55320">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a33ab2ab02543d996e0f68df9013c3d96">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkPageSetup*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a33ab2ab02543d996e0f68df9013c3d96">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a33ab2ab02543d996e0f68df9013c3d96">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C GObject.
+          <a href="classGtk_1_1PageSetup.html#a33ab2ab02543d996e0f68df9013c3d96">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a33ab2ab02543d996e0f68df9013c3d96">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adcde257086ea898bdfd9a8375ae4b74a">
+         <td align="right" class="memItemLeft" valign="top">
+          const GtkPageSetup*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#adcde257086ea898bdfd9a8375ae4b74a">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:adcde257086ea898bdfd9a8375ae4b74a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C GObject.
+          <a href="classGtk_1_1PageSetup.html#adcde257086ea898bdfd9a8375ae4b74a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:adcde257086ea898bdfd9a8375ae4b74a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9c0d228e27afbe4fe84495200ed77d94">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkPageSetup*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a9c0d228e27afbe4fe84495200ed77d94">
+           gobj_copy
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a9c0d228e27afbe4fe84495200ed77d94">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+          <a href="classGtk_1_1PageSetup.html#a9c0d228e27afbe4fe84495200ed77d94">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9c0d228e27afbe4fe84495200ed77d94">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a10ce336e902cb084a90d61eef9e42a57">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1PageSetup.html">
+           PageSetup
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a10ce336e902cb084a90d61eef9e42a57">
+           copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a10ce336e902cb084a90d61eef9e42a57">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Copies a
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          .
+          <a href="classGtk_1_1PageSetup.html#a10ce336e902cb084a90d61eef9e42a57">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a10ce336e902cb084a90d61eef9e42a57">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a973544ad4cb6318ca6339d2937158340">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a973544ad4cb6318ca6339d2937158340">
+           load_from_file
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; file_name)
+         </td>
+        </tr>
+        <tr class="memdesc:a973544ad4cb6318ca6339d2937158340">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Reads the page setup from the file
+          <em>
+           file_name
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a973544ad4cb6318ca6339d2937158340">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a973544ad4cb6318ca6339d2937158340">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acb896bc5126081dbd1eabf87b3a0fd85">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#acb896bc5126081dbd1eabf87b3a0fd85">
+           load_from_key_file
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+           Glib::KeyFile
+          </a>
+          &amp; key_file, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; group_name)
+         </td>
+        </tr>
+        <tr class="memdesc:acb896bc5126081dbd1eabf87b3a0fd85">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Reads the page setup from the group
+          <em>
+           group_name
+          </em>
+          in the key file
+          <em>
+           key_file
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#acb896bc5126081dbd1eabf87b3a0fd85">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acb896bc5126081dbd1eabf87b3a0fd85">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a798ed5d9a28778dda3b4ed9184d30272">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a798ed5d9a28778dda3b4ed9184d30272">
+           load_from_key_file
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+           Glib::KeyFile
+          </a>
+          &amp; key_file)
+         </td>
+        </tr>
+        <tr class="memdesc:a798ed5d9a28778dda3b4ed9184d30272">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Reads the page setup from the "Page Setup" group in the key file
+          <em>
+           key_file
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a798ed5d9a28778dda3b4ed9184d30272">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a798ed5d9a28778dda3b4ed9184d30272">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a566083779219e44c0fddedb570fe3599">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="group__gtkmmEnums.html#ga466045b8876a149482ab0034c53302bf">
+           PageOrientation
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a566083779219e44c0fddedb570fe3599">
+           get_orientation
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a566083779219e44c0fddedb570fe3599">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the page orientation of the
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          .
+          <a href="classGtk_1_1PageSetup.html#a566083779219e44c0fddedb570fe3599">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a566083779219e44c0fddedb570fe3599">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab7932c9577ffa4cf479c09fb7a117072">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#ab7932c9577ffa4cf479c09fb7a117072">
+           set_orientation
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#ga466045b8876a149482ab0034c53302bf">
+           PageOrientation
+          </a>
+          orientation)
+         </td>
+        </tr>
+        <tr class="memdesc:ab7932c9577ffa4cf479c09fb7a117072">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the page orientation of the
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          .
+          <a href="classGtk_1_1PageSetup.html#ab7932c9577ffa4cf479c09fb7a117072">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab7932c9577ffa4cf479c09fb7a117072">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac9853f889e8cecfe62c3096f8b698cdf">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1PaperSize.html">
+           PaperSize
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#ac9853f889e8cecfe62c3096f8b698cdf">
+           get_paper_size
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ac9853f889e8cecfe62c3096f8b698cdf">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the paper size of the
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          .
+          <a href="classGtk_1_1PageSetup.html#ac9853f889e8cecfe62c3096f8b698cdf">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac9853f889e8cecfe62c3096f8b698cdf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6df813a9a82801ee417f466d05966394">
+         <td align="right" class="memItemLeft" valign="top">
+          const
+          <a class="el" href="classGtk_1_1PaperSize.html">
+           PaperSize
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a6df813a9a82801ee417f466d05966394">
+           get_paper_size
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a6df813a9a82801ee417f466d05966394">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the paper size of the
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          .
+          <a href="classGtk_1_1PageSetup.html#a6df813a9a82801ee417f466d05966394">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a6df813a9a82801ee417f466d05966394">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad563a5d83e98d493a608993abab4c9ef">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#ad563a5d83e98d493a608993abab4c9ef">
+           set_paper_size
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1PaperSize.html">
+           PaperSize
+          </a>
+          &amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#ga445a43f417432dd1b9aed90ef239c700">
+           size
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:ad563a5d83e98d493a608993abab4c9ef">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the paper size of the
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          without changing the margins.
+          <a href="classGtk_1_1PageSetup.html#ad563a5d83e98d493a608993abab4c9ef">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad563a5d83e98d493a608993abab4c9ef">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad4751e16a645d028660331b5ddf1d480">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#ad4751e16a645d028660331b5ddf1d480">
+           get_top_margin
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit) const
+         </td>
+        </tr>
+        <tr class="memdesc:ad4751e16a645d028660331b5ddf1d480">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the top margin in units of
+          <em>
+           unit
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#ad4751e16a645d028660331b5ddf1d480">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad4751e16a645d028660331b5ddf1d480">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acca55b5eb3a0a91f56b07b8b8b393e86">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#acca55b5eb3a0a91f56b07b8b8b393e86">
+           set_top_margin
+          </a>
+          (double margin,
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit)
+         </td>
+        </tr>
+        <tr class="memdesc:acca55b5eb3a0a91f56b07b8b8b393e86">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the top margin of the
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          .
+          <a href="classGtk_1_1PageSetup.html#acca55b5eb3a0a91f56b07b8b8b393e86">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acca55b5eb3a0a91f56b07b8b8b393e86">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a172bcb7a4aded40a584cd563e5142aa8">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a172bcb7a4aded40a584cd563e5142aa8">
+           get_bottom_margin
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit) const
+         </td>
+        </tr>
+        <tr class="memdesc:a172bcb7a4aded40a584cd563e5142aa8">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the bottom margin in units of
+          <em>
+           unit
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a172bcb7a4aded40a584cd563e5142aa8">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a172bcb7a4aded40a584cd563e5142aa8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a65a74df621c6543b86d06f0d0bfffb9a">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a65a74df621c6543b86d06f0d0bfffb9a">
+           set_bottom_margin
+          </a>
+          (double margin,
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit)
+         </td>
+        </tr>
+        <tr class="memdesc:a65a74df621c6543b86d06f0d0bfffb9a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the bottom margin of the
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          .
+          <a href="classGtk_1_1PageSetup.html#a65a74df621c6543b86d06f0d0bfffb9a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a65a74df621c6543b86d06f0d0bfffb9a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a19a400f660c3237eb1655f690c77e667">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a19a400f660c3237eb1655f690c77e667">
+           get_left_margin
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit) const
+         </td>
+        </tr>
+        <tr class="memdesc:a19a400f660c3237eb1655f690c77e667">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the left margin in units of
+          <em>
+           unit
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a19a400f660c3237eb1655f690c77e667">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a19a400f660c3237eb1655f690c77e667">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a39f3559b024afcac8fd87d012f8193b4">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a39f3559b024afcac8fd87d012f8193b4">
+           set_left_margin
+          </a>
+          (double margin,
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit)
+         </td>
+        </tr>
+        <tr class="memdesc:a39f3559b024afcac8fd87d012f8193b4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the left margin of the
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          .
+          <a href="classGtk_1_1PageSetup.html#a39f3559b024afcac8fd87d012f8193b4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a39f3559b024afcac8fd87d012f8193b4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa387f65e245cbe705a3e03bd97d09522">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#aa387f65e245cbe705a3e03bd97d09522">
+           get_right_margin
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit) const
+         </td>
+        </tr>
+        <tr class="memdesc:aa387f65e245cbe705a3e03bd97d09522">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the right margin in units of
+          <em>
+           unit
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#aa387f65e245cbe705a3e03bd97d09522">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa387f65e245cbe705a3e03bd97d09522">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afc9ed77357080264a306f3397014b4ec">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#afc9ed77357080264a306f3397014b4ec">
+           set_right_margin
+          </a>
+          (double margin,
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit)
+         </td>
+        </tr>
+        <tr class="memdesc:afc9ed77357080264a306f3397014b4ec">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the right margin of the
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          .
+          <a href="classGtk_1_1PageSetup.html#afc9ed77357080264a306f3397014b4ec">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:afc9ed77357080264a306f3397014b4ec">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a56182d0495449be884efcbc4eddd9686">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a56182d0495449be884efcbc4eddd9686">
+           set_paper_size_and_default_margins
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1PaperSize.html">
+           PaperSize
+          </a>
+          &amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#ga445a43f417432dd1b9aed90ef239c700">
+           size
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:a56182d0495449be884efcbc4eddd9686">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the paper size of the
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           Gtk::PageSetup
+          </a>
+          and modifies the margins according to the new paper size.
+          <a href="classGtk_1_1PageSetup.html#a56182d0495449be884efcbc4eddd9686">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a56182d0495449be884efcbc4eddd9686">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a40f44cb40dd1e3f5a2ba0fd91a36e7ee">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a40f44cb40dd1e3f5a2ba0fd91a36e7ee">
+           get_paper_width
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit) const
+         </td>
+        </tr>
+        <tr class="memdesc:a40f44cb40dd1e3f5a2ba0fd91a36e7ee">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the paper width in units of
+          <em>
+           unit
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a40f44cb40dd1e3f5a2ba0fd91a36e7ee">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a40f44cb40dd1e3f5a2ba0fd91a36e7ee">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1f6841746b99c82e5bb7135ec08236c1">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a1f6841746b99c82e5bb7135ec08236c1">
+           get_paper_height
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit) const
+         </td>
+        </tr>
+        <tr class="memdesc:a1f6841746b99c82e5bb7135ec08236c1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the paper height in units of
+          <em>
+           unit
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a1f6841746b99c82e5bb7135ec08236c1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1f6841746b99c82e5bb7135ec08236c1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af5cb8c1fabadb562bc78937fe0817802">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#af5cb8c1fabadb562bc78937fe0817802">
+           get_page_width
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit) const
+         </td>
+        </tr>
+        <tr class="memdesc:af5cb8c1fabadb562bc78937fe0817802">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the page width in units of
+          <em>
+           unit
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#af5cb8c1fabadb562bc78937fe0817802">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af5cb8c1fabadb562bc78937fe0817802">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a14078ba82c3a53a61b6c26df9e782a43">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a14078ba82c3a53a61b6c26df9e782a43">
+           get_page_height
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+           Unit
+          </a>
+          unit) const
+         </td>
+        </tr>
+        <tr class="memdesc:a14078ba82c3a53a61b6c26df9e782a43">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the page height in units of
+          <em>
+           unit
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a14078ba82c3a53a61b6c26df9e782a43">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a14078ba82c3a53a61b6c26df9e782a43">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a93a888c27e60e8f7707d79b2ee3e2ff1">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a93a888c27e60e8f7707d79b2ee3e2ff1">
+           save_to_file
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; file_name) const
+         </td>
+        </tr>
+        <tr class="memdesc:a93a888c27e60e8f7707d79b2ee3e2ff1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This function saves the information from
+          <em>
+           setup
+          </em>
+          to
+          <em>
+           file_name
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a93a888c27e60e8f7707d79b2ee3e2ff1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a93a888c27e60e8f7707d79b2ee3e2ff1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a65a9fd8560f70e46b10d26988d0a73db">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a65a9fd8560f70e46b10d26988d0a73db">
+           save_to_key_file
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+           Glib::KeyFile
+          </a>
+          &amp; key_file, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; group_name) const
+         </td>
+        </tr>
+        <tr class="memdesc:a65a9fd8560f70e46b10d26988d0a73db">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This function adds the page setup from
+          <em>
+           setup
+          </em>
+          to
+          <em>
+           key_file
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a65a9fd8560f70e46b10d26988d0a73db">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a65a9fd8560f70e46b10d26988d0a73db">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9b1fccba4fe46d3dbb2c2883cc72b92e">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a9b1fccba4fe46d3dbb2c2883cc72b92e">
+           save_to_key_file
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+           Glib::KeyFile
+          </a>
+          &amp; key_file) const
+         </td>
+        </tr>
+        <tr class="memdesc:a9b1fccba4fe46d3dbb2c2883cc72b92e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This function adds the page setup from
+          <em>
+           setup
+          </em>
+          to
+          <em>
+           key_file
+          </em>
+          , in the group "Page Setup".
+          <a href="classGtk_1_1PageSetup.html#a9b1fccba4fe46d3dbb2c2883cc72b92e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9b1fccba4fe46d3dbb2c2883cc72b92e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a0127f43140e01d6a6731d42f9419be27 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a0127f43140e01d6a6731d42f9419be27">
+           Object
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a0127f43140e01d6a6731d42f9419be27 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7081561a5684709718fdf8c1875c56c0 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a7081561a5684709718fdf8c1875c56c0">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a7081561a5684709718fdf8c1875c56c0 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a473ee068b40d5c949cee2c721d720c9a inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a473ee068b40d5c949cee2c721d720c9a">
+           Object
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a473ee068b40d5c949cee2c721d720c9a inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2855131d475e54294dc34573f12ca9a0 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a2855131d475e54294dc34573f12ca9a0">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2855131d475e54294dc34573f12ca9a0 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0e6581bcbcc6197cca07df24bb91c492 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a0e6581bcbcc6197cca07df24bb91c492">
+           get_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;key)
+         </td>
+        </tr>
+        <tr class="separator:a0e6581bcbcc6197cca07df24bb91c492 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afff7a375a862f3f899daaa99710122fa inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#afff7a375a862f3f899daaa99710122fa">
+           set_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Quark.html">
+           Quark
+          </a>
+          &amp;key, void *data)
+         </td>
+        </tr>
+        <tr class="separator:afff7a375a862f3f899daaa99710122fa inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1febe3bae2dd71756e98e523cd33c1b4 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a1febe3bae2dd71756e98e523cd33c1b4">
+           set_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Quark.html">
+           Quark
+          </a>
+          &amp;key, void *data,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a969836f7bf4fec78eb50a1d790304d82">
+           DestroyNotify
+          </a>
+          notify)
+         </td>
+        </tr>
+        <tr class="separator:a1febe3bae2dd71756e98e523cd33c1b4 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aada5b50844bda7ee02bed0ae2a715c00 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#aada5b50844bda7ee02bed0ae2a715c00">
+           remove_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;quark)
+         </td>
+        </tr>
+        <tr class="separator:aada5b50844bda7ee02bed0ae2a715c00 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab454f71bd74403b0cc46d3cbbedd6b0e inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ab454f71bd74403b0cc46d3cbbedd6b0e">
+           steal_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;quark)
+         </td>
+        </tr>
+        <tr class="separator:ab454f71bd74403b0cc46d3cbbedd6b0e inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae4dea9a8dc611d6e4400a5b6a3cb4e7f inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ae4dea9a8dc611d6e4400a5b6a3cb4e7f">
+           wrap
+          </a>
+          (GObject *object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="separator:ae4dea9a8dc611d6e4400a5b6a3cb4e7f inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1ObjectBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1ObjectBase')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:aaf0e140e7192dcecddd9f57c46825434 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#aaf0e140e7192dcecddd9f57c46825434">
+           ObjectBase
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:aaf0e140e7192dcecddd9f57c46825434 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a15f8834a320eac98dc1c1b8a9a2fd4c1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a15f8834a320eac98dc1c1b8a9a2fd4c1">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a15f8834a320eac98dc1c1b8a9a2fd4c1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aab599d3eec4b4a9ddc95ccdc6100053d inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#aab599d3eec4b4a9ddc95ccdc6100053d">
+           set_property_value
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp;value)
+         </td>
+        </tr>
+        <tr class="separator:aab599d3eec4b4a9ddc95ccdc6100053d inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5e30750441b92f0246c9d4ece95fc8a0 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a5e30750441b92f0246c9d4ece95fc8a0">
+           get_property_value
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp;value) const
+         </td>
+        </tr>
+        <tr class="separator:a5e30750441b92f0246c9d4ece95fc8a0 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad37844f7ea2c0091a22d011e04c48820 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ad37844f7ea2c0091a22d011e04c48820">
+           set_property
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const PropertyType &amp;value)
+         </td>
+        </tr>
+        <tr class="separator:ad37844f7ea2c0091a22d011e04c48820 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5f894c9c36ad391fdc85552af67a8530 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a5f894c9c36ad391fdc85552af67a8530">
+           get_property
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, PropertyType &amp;value) const
+         </td>
+        </tr>
+        <tr class="separator:a5f894c9c36ad391fdc85552af67a8530 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adc6c1e8f094275114d6e2c3ef3a33f98 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#adc6c1e8f094275114d6e2c3ef3a33f98">
+           connect_property_changed
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:adc6c1e8f094275114d6e2c3ef3a33f98 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9fff4abb6ecc939866a6ff5d32808221 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a9fff4abb6ecc939866a6ff5d32808221">
+           connect_property_changed
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;&amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a9fff4abb6ecc939866a6ff5d32808221 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a896d7773c00bd2dcd310c861282ee8d1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a896d7773c00bd2dcd310c861282ee8d1">
+           connect_property_changed_with_return
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a896d7773c00bd2dcd310c861282ee8d1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a00f0e2119fbb42efe42d66b8188a0daf inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a00f0e2119fbb42efe42d66b8188a0daf">
+           connect_property_changed_with_return
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;&amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a00f0e2119fbb42efe42d66b8188a0daf inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6e9e13b75f116c20212d318204ce8ea3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a6e9e13b75f116c20212d318204ce8ea3">
+           freeze_notify
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a6e9e13b75f116c20212d318204ce8ea3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1bd8ea7bd8c4084ade6b3c27dddf06a4 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a1bd8ea7bd8c4084ade6b3c27dddf06a4">
+           thaw_notify
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a1bd8ea7bd8c4084ade6b3c27dddf06a4 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a896a8a5db20043ea82956e3ef4b9c4ae inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a896a8a5db20043ea82956e3ef4b9c4ae">
+           reference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a896a8a5db20043ea82956e3ef4b9c4ae inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3234b8ffb2a35b927e2978c8f3bfbfe3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3234b8ffb2a35b927e2978c8f3bfbfe3">
+           unreference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a3234b8ffb2a35b927e2978c8f3bfbfe3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4c6efc18be8cb9c56e58fc0bd20fafbe inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a4c6efc18be8cb9c56e58fc0bd20fafbe">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a4c6efc18be8cb9c56e58fc0bd20fafbe inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a778a94181132976bbfb0519793f3b32e inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          const GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a778a94181132976bbfb0519793f3b32e">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a778a94181132976bbfb0519793f3b32e inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9b2a5eb93102f1849e5419016e22a15f inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a9b2a5eb93102f1849e5419016e22a15f">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a9b2a5eb93102f1849e5419016e22a15f inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_structsigc_1_1trackable">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_structsigc_1_1trackable')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           sigc::trackable
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a7e1348841e762fb41b41c6f2ce9fa073 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a7e1348841e762fb41b41c6f2ce9fa073">
+           trackable
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e1348841e762fb41b41c6f2ce9fa073 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac8431d9452c9698a012597e6560c72fa inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ac8431d9452c9698a012597e6560c72fa">
+           trackable
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ac8431d9452c9698a012597e6560c72fa inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aba42ed8afb6598106cf68c18a7387f18 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#aba42ed8afb6598106cf68c18a7387f18">
+           trackable
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;&amp;src)
+         </td>
+        </tr>
+        <tr class="separator:aba42ed8afb6598106cf68c18a7387f18 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a75587da09e30031db7a2519843f1f4fb inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a75587da09e30031db7a2519843f1f4fb">
+           ~trackable
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a75587da09e30031db7a2519843f1f4fb inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab14931670837728e49bb5ca88fb16db5 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ab14931670837728e49bb5ca88fb16db5">
+           add_destroy_notify_callback
+          </a>
+          (void *data,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a3338954d7565534bd945290b798e13ed">
+           func_destroy_notify
+          </a>
+          func) const
+         </td>
+        </tr>
+        <tr class="separator:ab14931670837728e49bb5ca88fb16db5 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af2e23cfe7adc1ca844a3350bbac557cb inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#af2e23cfe7adc1ca844a3350bbac557cb">
+           notify_callbacks
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:af2e23cfe7adc1ca844a3350bbac557cb inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7494fbad23a65932ff1457d00d4edaf5 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a7494fbad23a65932ff1457d00d4edaf5">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;src)
+         </td>
+        </tr>
+        <tr class="separator:a7494fbad23a65932ff1457d00d4edaf5 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac3d61cdb452dc46fcdc8a8d42d9c079d inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ac3d61cdb452dc46fcdc8a8d42d9c079d">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;&amp;src)
+         </td>
+        </tr>
+        <tr class="separator:ac3d61cdb452dc46fcdc8a8d42d9c079d inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8b9dffa8a50ff13ba33e6c7f10468e2b inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a8b9dffa8a50ff13ba33e6c7f10468e2b">
+           remove_destroy_notify_callback
+          </a>
+          (void *data) const
+         </td>
+        </tr>
+        <tr class="separator:a8b9dffa8a50ff13ba33e6c7f10468e2b inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a82c81943c9d10cda00ba851c9304582c">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a82c81943c9d10cda00ba851c9304582c">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a82c81943c9d10cda00ba851c9304582c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGtk_1_1PageSetup.html#a82c81943c9d10cda00ba851c9304582c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a82c81943c9d10cda00ba851c9304582c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3410299453609c9a7267ff4b99d85e76">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1PageSetup.html">
+           PageSetup
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a3410299453609c9a7267ff4b99d85e76">
+           create
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a3410299453609c9a7267ff4b99d85e76">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a01ab81b124f8a340aa0d678216cc6532">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1PageSetup.html">
+           PageSetup
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a01ab81b124f8a340aa0d678216cc6532">
+           create_from_key_file
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+           Glib::KeyFile
+          </a>
+          &amp; key_file)
+         </td>
+        </tr>
+        <tr class="memdesc:a01ab81b124f8a340aa0d678216cc6532">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Reads the page setup from the "Page Setup" group in the key file
+          <em>
+           key_file
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a01ab81b124f8a340aa0d678216cc6532">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a01ab81b124f8a340aa0d678216cc6532">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1407e75fbe7a50662fb5cbb17363625d">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1PageSetup.html">
+           PageSetup
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a1407e75fbe7a50662fb5cbb17363625d">
+           create_from_key_file
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+           Glib::KeyFile
+          </a>
+          &amp; key_file, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; group_name)
+         </td>
+        </tr>
+        <tr class="memdesc:a1407e75fbe7a50662fb5cbb17363625d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Reads the page setup from the group
+          <em>
+           group_name
+          </em>
+          in the key file
+          <em>
+           key_file
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#a1407e75fbe7a50662fb5cbb17363625d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1407e75fbe7a50662fb5cbb17363625d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab2579949eae9ea4c8f595d349fd56e4e">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1PageSetup.html">
+           PageSetup
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#ab2579949eae9ea4c8f595d349fd56e4e">
+           create_from_file
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; file_name)
+         </td>
+        </tr>
+        <tr class="memdesc:ab2579949eae9ea4c8f595d349fd56e4e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Reads the page setup from the file
+          <em>
+           file_name
+          </em>
+          .
+          <a href="classGtk_1_1PageSetup.html#ab2579949eae9ea4c8f595d349fd56e4e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab2579949eae9ea4c8f595d349fd56e4e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-methods">
+           </a>
+           Protected Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:af1265126802384735eeb4d261d51bf8b">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#af1265126802384735eeb4d261d51bf8b">
+           PageSetup
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:af1265126802384735eeb4d261d51bf8b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:ad43f7c5ad0336e1eb3af622392a112eb inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ad43f7c5ad0336e1eb3af622392a112eb">
+           Object
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ad43f7c5ad0336e1eb3af622392a112eb inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6d72588496bd7ac03f72420021fb94a5 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a6d72588496bd7ac03f72420021fb94a5">
+           Object
+          </a>
+          (const Glib::ConstructParams &amp;construct_params)
+         </td>
+        </tr>
+        <tr class="separator:a6d72588496bd7ac03f72420021fb94a5 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6f490eeaeb71db673c36799a0f729be5 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a6f490eeaeb71db673c36799a0f729be5">
+           Object
+          </a>
+          (GObject *castitem)
+         </td>
+        </tr>
+        <tr class="separator:a6f490eeaeb71db673c36799a0f729be5 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1a156a738ca71cff3789fd6bafaf8903 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a1a156a738ca71cff3789fd6bafaf8903">
+           ~Object
+          </a>
+          () noexceptoverride
+         </td>
+        </tr>
+        <tr class="separator:a1a156a738ca71cff3789fd6bafaf8903 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1ObjectBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1ObjectBase')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a27d3451d9ca28d6a2f00838d7c56d545 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a27d3451d9ca28d6a2f00838d7c56d545">
+           ObjectBase
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a27d3451d9ca28d6a2f00838d7c56d545 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad4ef18214894c6874579313ab21d1018 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ad4ef18214894c6874579313ab21d1018">
+           ObjectBase
+          </a>
+          (const char *custom_type_name)
+         </td>
+        </tr>
+        <tr class="separator:ad4ef18214894c6874579313ab21d1018 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3d59b4d85b0ee72a727e6b2e1b31a2ff inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3d59b4d85b0ee72a727e6b2e1b31a2ff">
+           ObjectBase
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00947.html">
+           std::type_info
+          </a>
+          &amp;custom_type_info)
+         </td>
+        </tr>
+        <tr class="separator:a3d59b4d85b0ee72a727e6b2e1b31a2ff inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7e2e177061f6a6e09c4cf3da49c6dfd3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a7e2e177061f6a6e09c4cf3da49c6dfd3">
+           ObjectBase
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e2e177061f6a6e09c4cf3da49c6dfd3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2e968f118314ba4d5debfd2850d18003 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a2e968f118314ba4d5debfd2850d18003">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2e968f118314ba4d5debfd2850d18003 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae56ec45e9ebeaacf24be4fb54ed2eea3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ae56ec45e9ebeaacf24be4fb54ed2eea3">
+           ~ObjectBase
+          </a>
+          () noexcept=0
+         </td>
+        </tr>
+        <tr class="separator:ae56ec45e9ebeaacf24be4fb54ed2eea3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3faafb14c4f0ca60fbf0f5f5c4d549d0 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3faafb14c4f0ca60fbf0f5f5c4d549d0">
+           initialize
+          </a>
+          (GObject *castitem)
+         </td>
+        </tr>
+        <tr class="separator:a3faafb14c4f0ca60fbf0f5f5c4d549d0 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a44ddc123cd98ed0083aa06364365c8d3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a44ddc123cd98ed0083aa06364365c8d3">
+           initialize_move
+          </a>
+          (GObject *castitem,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+          *previous_wrapper)
+         </td>
+        </tr>
+        <tr class="separator:a44ddc123cd98ed0083aa06364365c8d3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a23864bfe5e69d7d87ce9a369a21aa5cd">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1PageSetup.html">
+           Gtk::PageSetup
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PageSetup.html#a23864bfe5e69d7d87ce9a369a21aa5cd">
+           wrap
+          </a>
+          (GtkPageSetup* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a23864bfe5e69d7d87ce9a369a21aa5cd">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGtk_1_1PageSetup.html#a23864bfe5e69d7d87ce9a369a21aa5cd">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a23864bfe5e69d7d87ce9a369a21aa5cd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="inherited">
+           </a>
+           Additional Inherited Members
+          </h2>
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a969836f7bf4fec78eb50a1d790304d82 inherit pub_types_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef void(*)(gpointer data
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a969836f7bf4fec78eb50a1d790304d82">
+           DestroyNotify
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a969836f7bf4fec78eb50a1d790304d82 inherit pub_types_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_structsigc_1_1trackable">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_structsigc_1_1trackable')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           sigc::trackable
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a3338954d7565534bd945290b798e13ed inherit pub_types_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef internal::func_destroy_notify
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a3338954d7565534bd945290b798e13ed">
+           func_destroy_notify
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a3338954d7565534bd945290b798e13ed inherit pub_types_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        A
+        <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+         PageSetup
+        </a>
+        object stores the page size, orientation and margins.
+       </p>
+       <p>
+        You can get one of these from the page setup dialog and then pass it to the
+        <a class="el" href="classGtk_1_1PrintOperation.html" title="PrintOperation is the high-level, portable printing API. ">
+         PrintOperation
+        </a>
+        when printing. The benefit of splitting this out of the
+        <a class="el" href="classGtk_1_1PrintSettings.html" title="A PrintSettings object represents the settings of a print dialog in a system-independent way...">
+         PrintSettings
+        </a>
+        is that these affect the actual layout of the page, and thus need to be set long before the user prints.
+       </p>
+       <p>
+        The margins specified in this object are the "print margins", i.e. the parts of the page that the printer cannot print on. These are different from the layout margins that a word processor uses; they are typically used to determine the minimal size for the layout margins.
+       </p>
+       <p>
+        To obtain a
+        <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+         PageSetup
+        </a>
+        use
+        <a class="el" href="classGtk_1_1PageSetup.html#a3410299453609c9a7267ff4b99d85e76">
+         PageSetup::create()
+        </a>
+        to get the defaults, or use
+        <a class="el" href="namespaceGtk.html#acdc501a0e38df936b78003f61a4e37fd" title="Runs a page setup dialog, letting the user modify the values from page_setup. ">
+         run_page_setup_dialog()
+        </a>
+        to show the page setup dialog and receive the resulting page setup.
+       </p>
+       <dl class="since_2_10">
+        <dt>
+         <b>
+          <a class="el" href="since_2_10.html#_since_2_10000127">
+           Since gtkmm 2.10:
+          </a>
+         </b>
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="ab781dbe497024c10e6b87c2d442bbad9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::PageSetup::PageSetup
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1PageSetup.html">
+                 PageSetup
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab188a876e75e269ce2a1b2a7fcc55320">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::PageSetup::~PageSetup
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              override
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="af1265126802384735eeb4d261d51bf8b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::PageSetup::PageSetup
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a10ce336e902cb084a90d61eef9e42a57">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1PageSetup.html">
+             PageSetup
+            </a>
+            &gt; Gtk::PageSetup::copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Copies a
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000128">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A copy of
+          <em>
+           other
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a3410299453609c9a7267ff4b99d85e76">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGtk_1_1PageSetup.html">
+                 PageSetup
+                </a>
+                &gt; Gtk::PageSetup::create
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab2579949eae9ea4c8f595d349fd56e4e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGtk_1_1PageSetup.html">
+                 PageSetup
+                </a>
+                &gt; Gtk::PageSetup::create_from_file
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+                 std::string
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 file_name
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Reads the page setup from the file
+         <em>
+          file_name
+         </em>
+         .
+        </p>
+        <p>
+         Returns a new
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          PageSetup
+         </a>
+         object with the restored page setup, or an empty RefPtr if an error occurred. See
+         <a class="el" href="classGtk_1_1PageSetup.html#a93a888c27e60e8f7707d79b2ee3e2ff1" title="This function saves the information from setup to file_name. ">
+          save_to_file()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              file_name
+             </td>
+             <td>
+              The filename to read the page setup from.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The restored
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           PageSetup
+          </a>
+         </dd>
+        </dl>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000122">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a01ab81b124f8a340aa0d678216cc6532">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGtk_1_1PageSetup.html">
+                 PageSetup
+                </a>
+                &gt; Gtk::PageSetup::create_from_key_file
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+                 Glib::KeyFile
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 key_file
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Reads the page setup from the "Page Setup" group in the key file
+         <em>
+          key_file
+         </em>
+         .
+        </p>
+        <p>
+         Returns a new
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          PageSetup
+         </a>
+         object with the restored page setup, or an empty RefPtr if an error occurred.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              key_file
+             </td>
+             <td>
+              The KeyFile to retrieve the page setup from.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The restored
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           PageSetup
+          </a>
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              KeyFileError
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000120">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1407e75fbe7a50662fb5cbb17363625d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGtk_1_1PageSetup.html">
+                 PageSetup
+                </a>
+                &gt; Gtk::PageSetup::create_from_key_file
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+                 Glib::KeyFile
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 key_file
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+                 Glib::ustring
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 group_name
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Reads the page setup from the group
+         <em>
+          group_name
+         </em>
+         in the key file
+         <em>
+          key_file
+         </em>
+         .
+        </p>
+        <p>
+         Returns a new
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          PageSetup
+         </a>
+         object with the restored page setup, or an empty RefPtr if an error occurred.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              key_file
+             </td>
+             <td>
+              The KeyFile to retrieve the page setup from.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              group_name
+             </td>
+             <td>
+              The name of the group in the key_file to read.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The restored
+          <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+           PageSetup
+          </a>
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              KeyFileError
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000121">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a172bcb7a4aded40a584cd563e5142aa8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gtk::PageSetup::get_bottom_margin
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the bottom margin in units of
+         <em>
+          unit
+         </em>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000136">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The unit for the return value.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The bottom margin.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a19a400f660c3237eb1655f690c77e667">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gtk::PageSetup::get_left_margin
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the left margin in units of
+         <em>
+          unit
+         </em>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000138">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The unit for the return value.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The left margin.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a566083779219e44c0fddedb570fe3599">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="group__gtkmmEnums.html#ga466045b8876a149482ab0034c53302bf">
+             PageOrientation
+            </a>
+            Gtk::PageSetup::get_orientation
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the page orientation of the
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000129">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The page orientation.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a14078ba82c3a53a61b6c26df9e782a43">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gtk::PageSetup::get_page_height
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the page height in units of
+         <em>
+          unit
+         </em>
+         .
+        </p>
+        <p>
+         Note that this function takes orientation and margins into consideration. See
+         <a class="el" href="classGtk_1_1PageSetup.html#a1f6841746b99c82e5bb7135ec08236c1" title="Returns the paper height in units of unit. ">
+          get_paper_height()
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000146">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The unit for the return value.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The page height.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af5cb8c1fabadb562bc78937fe0817802">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gtk::PageSetup::get_page_width
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the page width in units of
+         <em>
+          unit
+         </em>
+         .
+        </p>
+        <p>
+         Note that this function takes orientation and margins into consideration. See
+         <a class="el" href="classGtk_1_1PageSetup.html#a40f44cb40dd1e3f5a2ba0fd91a36e7ee" title="Returns the paper width in units of unit. ">
+          get_paper_width()
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000145">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The unit for the return value.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The page width.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1f6841746b99c82e5bb7135ec08236c1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gtk::PageSetup::get_paper_height
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the paper height in units of
+         <em>
+          unit
+         </em>
+         .
+        </p>
+        <p>
+         Note that this function takes orientation, but not margins into consideration. See
+         <a class="el" href="classGtk_1_1PageSetup.html#a14078ba82c3a53a61b6c26df9e782a43" title="Returns the page height in units of unit. ">
+          get_page_height()
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000144">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The unit for the return value.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The paper height.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac9853f889e8cecfe62c3096f8b698cdf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1PaperSize.html">
+             PaperSize
+            </a>
+            Gtk::PageSetup::get_paper_size
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the paper size of the
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000131">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The paper size.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6df813a9a82801ee417f466d05966394">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            const
+            <a class="el" href="classGtk_1_1PaperSize.html">
+             PaperSize
+            </a>
+            Gtk::PageSetup::get_paper_size
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the paper size of the
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000132">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The paper size.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a40f44cb40dd1e3f5a2ba0fd91a36e7ee">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gtk::PageSetup::get_paper_width
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the paper width in units of
+         <em>
+          unit
+         </em>
+         .
+        </p>
+        <p>
+         Note that this function takes orientation, but not margins into consideration. See
+         <a class="el" href="classGtk_1_1PageSetup.html#af5cb8c1fabadb562bc78937fe0817802" title="Returns the page width in units of unit. ">
+          get_page_width()
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000143">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The unit for the return value.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The paper width.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa387f65e245cbe705a3e03bd97d09522">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gtk::PageSetup::get_right_margin
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the right margin in units of
+         <em>
+          unit
+         </em>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000140">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The unit for the return value.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The right margin.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad4751e16a645d028660331b5ddf1d480">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gtk::PageSetup::get_top_margin
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the top margin in units of
+         <em>
+          unit
+         </em>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000134">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The unit for the return value.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The top margin.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a82c81943c9d10cda00ba851c9304582c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gtk::PageSetup::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a33ab2ab02543d996e0f68df9013c3d96">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkPageSetup* Gtk::PageSetup::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C GObject.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="adcde257086ea898bdfd9a8375ae4b74a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GtkPageSetup* Gtk::PageSetup::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C GObject.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a9c0d228e27afbe4fe84495200ed77d94">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GtkPageSetup* Gtk::PageSetup::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a973544ad4cb6318ca6339d2937158340">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::PageSetup::load_from_file
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             file_name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Reads the page setup from the file
+         <em>
+          file_name
+         </em>
+         .
+        </p>
+        <p>
+         See to_file().
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000123">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              file_name
+             </td>
+             <td>
+              The filename to read the page setup from.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          on success.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="acb896bc5126081dbd1eabf87b3a0fd85">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::PageSetup::load_from_key_file
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+             Glib::KeyFile
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             key_file
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             group_name
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Reads the page setup from the group
+         <em>
+          group_name
+         </em>
+         in the key file
+         <em>
+          key_file
+         </em>
+         .
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000124">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              key_file
+             </td>
+             <td>
+              The KeyFile to retrieve the page_setup from.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              group_name
+             </td>
+             <td>
+              The name of the group in the key_file to read, or
+              <code>
+               nullptr
+              </code>
+              to use the default name “Page Setup”.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          on success.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a798ed5d9a28778dda3b4ed9184d30272">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::PageSetup::load_from_key_file
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+             Glib::KeyFile
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             key_file
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Reads the page setup from the "Page Setup" group in the key file
+         <em>
+          key_file
+         </em>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              key_file
+             </td>
+             <td>
+              The KeyFile to retrieve the page setup from.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true on success
+         </dd>
+        </dl>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              KeyFileError
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000125">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa5cdfc318cd52f9785dc0d4f9f7d6a31">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1PageSetup.html">
+                 PageSetup
+                </a>
+                &amp; Gtk::PageSetup::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1PageSetup.html">
+                 PageSetup
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a93a888c27e60e8f7707d79b2ee3e2ff1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::PageSetup::save_to_file
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             file_name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This function saves the information from
+         <em>
+          setup
+         </em>
+         to
+         <em>
+          file_name
+         </em>
+         .
+        </p>
+        <dl class="exception">
+         <dt>
+          Exceptions
+         </dt>
+         <dd>
+          <table class="exception">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1FileError.html">
+               Glib::FileError
+              </a>
+             </td>
+             <td>
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_2_12">
+         <dt>
+          <b>
+           <a class="el" href="since_2_12.html#_since_2_12000064">
+            Since gtkmm 2.12:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              file_name
+             </td>
+             <td>
+              The file to save to.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          on success.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a65a9fd8560f70e46b10d26988d0a73db">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::PageSetup::save_to_key_file
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+             Glib::KeyFile
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             key_file
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             group_name
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This function adds the page setup from
+         <em>
+          setup
+         </em>
+         to
+         <em>
+          key_file
+         </em>
+         .
+        </p>
+        <dl class="since_2_12">
+         <dt>
+          <b>
+           <a class="el" href="since_2_12.html#_since_2_12000065">
+            Since gtkmm 2.12:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              key_file
+             </td>
+             <td>
+              The
+              <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+               Glib::KeyFile
+              </a>
+              to save the page setup to.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              group_name
+             </td>
+             <td>
+              The group to add the settings to in
+              <em>
+               key_file
+              </em>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9b1fccba4fe46d3dbb2c2883cc72b92e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::PageSetup::save_to_key_file
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1KeyFile.html">
+             Glib::KeyFile
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             key_file
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This function adds the page setup from
+         <em>
+          setup
+         </em>
+         to
+         <em>
+          key_file
+         </em>
+         , in the group "Page Setup".
+        </p>
+        <dl class="since_2_12">
+         <dt>
+          <b>
+           <a class="el" href="since_2_12.html#_since_2_12000066">
+            Since gtkmm 2.12:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              key_file
+             </td>
+             <td>
+              The G::KeyFile to save the page setup to.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a65a74df621c6543b86d06f0d0bfffb9a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::PageSetup::set_bottom_margin
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             margin
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the bottom margin of the
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000137">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              margin
+             </td>
+             <td>
+              The new bottom margin in units of
+              <em>
+               unit
+              </em>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The units for
+              <em>
+               margin
+              </em>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a39f3559b024afcac8fd87d012f8193b4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::PageSetup::set_left_margin
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             margin
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the left margin of the
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000139">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              margin
+             </td>
+             <td>
+              The new left margin in units of
+              <em>
+               unit
+              </em>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The units for
+              <em>
+               margin
+              </em>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ab7932c9577ffa4cf479c09fb7a117072">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::PageSetup::set_orientation
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga466045b8876a149482ab0034c53302bf">
+             PageOrientation
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             orientation
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the page orientation of the
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000130">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              orientation
+             </td>
+             <td>
+              A
+              <a class="el" href="group__gtkmmEnums.html#ga466045b8876a149482ab0034c53302bf" title="See also Gtk::PrintSettings::set_orientation(). ">
+               Gtk::PageOrientation
+              </a>
+              value.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad563a5d83e98d493a608993abab4c9ef">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::PageSetup::set_paper_size
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1PaperSize.html">
+             PaperSize
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             size
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the paper size of the
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         without changing the margins.
+        </p>
+        <p>
+         See
+         <a class="el" href="classGtk_1_1PageSetup.html#a56182d0495449be884efcbc4eddd9686" title="Sets the paper size of the Gtk::PageSetup and modifies the margins according to the new paper size...">
+          set_paper_size_and_default_margins()
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000133">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              size
+             </td>
+             <td>
+              A
+              <a class="el" href="classGtk_1_1PaperSize.html" title="PaperSize handles paper sizes. ">
+               Gtk::PaperSize
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a56182d0495449be884efcbc4eddd9686">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::PageSetup::set_paper_size_and_default_margins
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1PaperSize.html">
+             PaperSize
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             size
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the paper size of the
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         and modifies the margins according to the new paper size.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000142">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              size
+             </td>
+             <td>
+              A
+              <a class="el" href="classGtk_1_1PaperSize.html" title="PaperSize handles paper sizes. ">
+               Gtk::PaperSize
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="afc9ed77357080264a306f3397014b4ec">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::PageSetup::set_right_margin
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             margin
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the right margin of the
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000141">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              margin
+             </td>
+             <td>
+              The new right margin in units of
+              <em>
+               unit
+              </em>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The units for
+              <em>
+               margin
+              </em>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="acca55b5eb3a0a91f56b07b8b8b393e86">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::PageSetup::set_top_margin
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             margin
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga9cdd3adb4017a5c706e205aa914ba6fb">
+             Unit
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             unit
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the top margin of the
+         <a class="el" href="classGtk_1_1PageSetup.html" title="A PageSetup object stores the page size, orientation and margins. ">
+          Gtk::PageSetup
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000135">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              margin
+             </td>
+             <td>
+              The new top margin in units of
+              <em>
+               unit
+              </em>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              unit
+             </td>
+             <td>
+              The units for
+              <em>
+               margin
+              </em>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a23864bfe5e69d7d87ce9a369a21aa5cd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGtk_1_1PageSetup.html">
+                 Gtk::PageSetup
+                </a>
+                &gt; wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkPageSetup *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGtk_1_1PageSetup.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

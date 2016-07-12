@@ -1,0 +1,4488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gdk::GLContext Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGdk_1_1GLContext.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGdk_1_1GLContext.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGdk_1_1GLContext.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gdk::GLContext Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       A
+       <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+        Gdk::GLContext
+       </a>
+       is an OpenGL context abstraction.
+       <a href="classGdk_1_1GLContext.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;gdkmm/glcontext.h&gt;
+       </code>
+      </p>
+      <div class="dynheader">
+       Inheritance diagram for Gdk::GLContext:
+      </div>
+      <div class="dyncontent">
+       <div class="center">
+        <img alt="Inheritance graph" border="0" src="classGdk_1_1GLContext__inherit__graph.png" usemap="#Gdk_1_1GLContext_inherit__map"/>
+       </div>
+       <map id="Gdk_1_1GLContext_inherit__map" name="Gdk_1_1GLContext_inherit__map">
+        <area alt="" coords="21,155,116,181" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html" id="node2" shape="rect" title="Glib::Object">
+        </area>
+        <area alt="" coords="5,80,132,107" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html" id="node3" shape="rect" title="Glib::ObjectBase">
+        </area>
+        <area alt="" coords="11,5,126,32" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html" id="node4" shape="rect" title="sigc::trackable">
+        </area>
+       </map>
+       <center>
+        <span class="legend">
+         [
+         <a href="graph_legend.html">
+          legend
+         </a>
+         ]
+        </span>
+       </center>
+      </div>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a9e9e358eeae4c655dd1f3941c63a8fa6">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a9e9e358eeae4c655dd1f3941c63a8fa6">
+           GLContext
+          </a>
+          (
+          <a class="el" href="classGdk_1_1GLContext.html">
+           GLContext
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a9e9e358eeae4c655dd1f3941c63a8fa6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6a29deb062ccbb56318335dfe497e337">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1GLContext.html">
+           GLContext
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a6a29deb062ccbb56318335dfe497e337">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGdk_1_1GLContext.html">
+           GLContext
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a6a29deb062ccbb56318335dfe497e337">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad9ae42148a11926525786e53cc64bc3a">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#ad9ae42148a11926525786e53cc64bc3a">
+           ~GLContext
+          </a>
+          () noexceptoverride
+         </td>
+        </tr>
+        <tr class="separator:ad9ae42148a11926525786e53cc64bc3a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1b68f4768b95eead91818aada3002338">
+         <td align="right" class="memItemLeft" valign="top">
+          GdkGLContext*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a1b68f4768b95eead91818aada3002338">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a1b68f4768b95eead91818aada3002338">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C GObject.
+          <a href="classGdk_1_1GLContext.html#a1b68f4768b95eead91818aada3002338">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1b68f4768b95eead91818aada3002338">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa3b63567ed0cc4ce2b4bb3022731dad0">
+         <td align="right" class="memItemLeft" valign="top">
+          const GdkGLContext*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#aa3b63567ed0cc4ce2b4bb3022731dad0">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aa3b63567ed0cc4ce2b4bb3022731dad0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C GObject.
+          <a href="classGdk_1_1GLContext.html#aa3b63567ed0cc4ce2b4bb3022731dad0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa3b63567ed0cc4ce2b4bb3022731dad0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6bc3e23ffe1e17c0c028fa9cde5a2bc5">
+         <td align="right" class="memItemLeft" valign="top">
+          GdkGLContext*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a6bc3e23ffe1e17c0c028fa9cde5a2bc5">
+           gobj_copy
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a6bc3e23ffe1e17c0c028fa9cde5a2bc5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+          <a href="classGdk_1_1GLContext.html#a6bc3e23ffe1e17c0c028fa9cde5a2bc5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a6bc3e23ffe1e17c0c028fa9cde5a2bc5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ace74dbb1713bb91c2cf4cc59956f270a">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Display.html">
+           Display
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#ace74dbb1713bb91c2cf4cc59956f270a">
+           get_display
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ace74dbb1713bb91c2cf4cc59956f270a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the
+          <a class="el" href="classGdk_1_1Display.html" title="Gdk::Display object's purpose is two fold: To grab/ungrab keyboard focus and mouse pointer To manage ...">
+           Gdk::Display
+          </a>
+          the
+          <em>
+           context
+          </em>
+          is created for.
+          <a href="classGdk_1_1GLContext.html#ace74dbb1713bb91c2cf4cc59956f270a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ace74dbb1713bb91c2cf4cc59956f270a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a49ca07dc958062b08377445a22ae97b2">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGdk_1_1Display.html">
+           Display
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a49ca07dc958062b08377445a22ae97b2">
+           get_display
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a49ca07dc958062b08377445a22ae97b2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the
+          <a class="el" href="classGdk_1_1Display.html" title="Gdk::Display object's purpose is two fold: To grab/ungrab keyboard focus and mouse pointer To manage ...">
+           Gdk::Display
+          </a>
+          the
+          <em>
+           context
+          </em>
+          is created for.
+          <a href="classGdk_1_1GLContext.html#a49ca07dc958062b08377445a22ae97b2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a49ca07dc958062b08377445a22ae97b2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab8fb767fb68f712b991d57d79b715adc">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Window.html">
+           Window
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#ab8fb767fb68f712b991d57d79b715adc">
+           get_window
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ab8fb767fb68f712b991d57d79b715adc">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the
+          <a class="el" href="classGdk_1_1Window.html" title="A Gdk::Window is a rectangular region on the screen. ">
+           Gdk::Window
+          </a>
+          used by the
+          <em>
+           context
+          </em>
+          .
+          <a href="classGdk_1_1GLContext.html#ab8fb767fb68f712b991d57d79b715adc">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab8fb767fb68f712b991d57d79b715adc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa246a5295c3f06e391fface96416ed63">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGdk_1_1Window.html">
+           Window
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#aa246a5295c3f06e391fface96416ed63">
+           get_window
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aa246a5295c3f06e391fface96416ed63">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the
+          <a class="el" href="classGdk_1_1Window.html" title="A Gdk::Window is a rectangular region on the screen. ">
+           Gdk::Window
+          </a>
+          used by the
+          <em>
+           context
+          </em>
+          .
+          <a href="classGdk_1_1GLContext.html#aa246a5295c3f06e391fface96416ed63">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa246a5295c3f06e391fface96416ed63">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa27d122e3afca6c31a526c01ce382b78">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1GLContext.html">
+           GLContext
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#aa27d122e3afca6c31a526c01ce382b78">
+           get_shared_context
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aa27d122e3afca6c31a526c01ce382b78">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          that this
+          <em>
+           context
+          </em>
+          share data with.
+          <a href="classGdk_1_1GLContext.html#aa27d122e3afca6c31a526c01ce382b78">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa27d122e3afca6c31a526c01ce382b78">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a089eb835ed96a106383e40e6c735e077">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGdk_1_1GLContext.html">
+           GLContext
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a089eb835ed96a106383e40e6c735e077">
+           get_shared_context
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a089eb835ed96a106383e40e6c735e077">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          that this
+          <em>
+           context
+          </em>
+          share data with.
+          <a href="classGdk_1_1GLContext.html#a089eb835ed96a106383e40e6c735e077">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a089eb835ed96a106383e40e6c735e077">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa9433e641bf02da1d30b77ea44369a61">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#aa9433e641bf02da1d30b77ea44369a61">
+           get_version
+          </a>
+          (int&amp; major, int&amp; minor) const
+         </td>
+        </tr>
+        <tr class="memdesc:aa9433e641bf02da1d30b77ea44369a61">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the OpenGL version of the
+          <em>
+           context
+          </em>
+          .
+          <a href="classGdk_1_1GLContext.html#aa9433e641bf02da1d30b77ea44369a61">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa9433e641bf02da1d30b77ea44369a61">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a83f162e30684eefeeeeb252d80a102de">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a83f162e30684eefeeeeb252d80a102de">
+           is_legacy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a83f162e30684eefeeeeb252d80a102de">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Whether the
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          is in legacy mode or not.
+          <a href="classGdk_1_1GLContext.html#a83f162e30684eefeeeeb252d80a102de">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a83f162e30684eefeeeeb252d80a102de">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac52bd69a165056d356ea1f6c162e78b1">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#ac52bd69a165056d356ea1f6c162e78b1">
+           get_required_version
+          </a>
+          (int&amp; major, int&amp; minor) const
+         </td>
+        </tr>
+        <tr class="memdesc:ac52bd69a165056d356ea1f6c162e78b1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the major and minor version requested by calling gdk_gl_context_set_required_version().
+          <a href="classGdk_1_1GLContext.html#ac52bd69a165056d356ea1f6c162e78b1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac52bd69a165056d356ea1f6c162e78b1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aaff54e69a94c9d3a96205310dfe97301">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#aaff54e69a94c9d3a96205310dfe97301">
+           set_required_version
+          </a>
+          (int major, int minor)
+         </td>
+        </tr>
+        <tr class="memdesc:aaff54e69a94c9d3a96205310dfe97301">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the major and minor version of OpenGL to request.
+          <a href="classGdk_1_1GLContext.html#aaff54e69a94c9d3a96205310dfe97301">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aaff54e69a94c9d3a96205310dfe97301">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac1ecc455722c502690dcb9349157f43f">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#ac1ecc455722c502690dcb9349157f43f">
+           get_debug_enabled
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac1ecc455722c502690dcb9349157f43f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the value set using gdk_gl_context_set_debug_enabled().
+          <a href="classGdk_1_1GLContext.html#ac1ecc455722c502690dcb9349157f43f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac1ecc455722c502690dcb9349157f43f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6d8dbc3f6a28fdae24948a221e558253">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a6d8dbc3f6a28fdae24948a221e558253">
+           set_debug_enabled
+          </a>
+          (bool enabled=true)
+         </td>
+        </tr>
+        <tr class="memdesc:a6d8dbc3f6a28fdae24948a221e558253">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets whether the
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          should perform extra validations and run time checking.
+          <a href="classGdk_1_1GLContext.html#a6d8dbc3f6a28fdae24948a221e558253">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a6d8dbc3f6a28fdae24948a221e558253">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac752e04a6c80c789798c1d72a39c07bd">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#ac752e04a6c80c789798c1d72a39c07bd">
+           get_forward_compatible
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac752e04a6c80c789798c1d72a39c07bd">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the value set using gdk_gl_context_set_forward_compatible().
+          <a href="classGdk_1_1GLContext.html#ac752e04a6c80c789798c1d72a39c07bd">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac752e04a6c80c789798c1d72a39c07bd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abac1723daeb06a2e7877c2e2de475bb1">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#abac1723daeb06a2e7877c2e2de475bb1">
+           set_forward_compatible
+          </a>
+          (bool compatible=true)
+         </td>
+        </tr>
+        <tr class="memdesc:abac1723daeb06a2e7877c2e2de475bb1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets whether the
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          should be forward compatible.
+          <a href="classGdk_1_1GLContext.html#abac1723daeb06a2e7877c2e2de475bb1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abac1723daeb06a2e7877c2e2de475bb1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a436a1f34ae0e1e0f3dd1b5d7b1c3da46">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a436a1f34ae0e1e0f3dd1b5d7b1c3da46">
+           realize
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a436a1f34ae0e1e0f3dd1b5d7b1c3da46">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Realizes the given
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          .
+          <a href="classGdk_1_1GLContext.html#a436a1f34ae0e1e0f3dd1b5d7b1c3da46">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a436a1f34ae0e1e0f3dd1b5d7b1c3da46">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae8d0dfddc44e5b48ece1534b8a1a4e9b">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#ae8d0dfddc44e5b48ece1534b8a1a4e9b">
+           make_current
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ae8d0dfddc44e5b48ece1534b8a1a4e9b">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Makes the
+          <em>
+           context
+          </em>
+          the current one.
+          <a href="classGdk_1_1GLContext.html#ae8d0dfddc44e5b48ece1534b8a1a4e9b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae8d0dfddc44e5b48ece1534b8a1a4e9b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a44b4700fadcb89f40880af3608b63951">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+           Glib::PropertyProxy_ReadOnly
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Display.html">
+           Display
+          </a>
+          &gt; &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a44b4700fadcb89f40880af3608b63951">
+           property_display
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a44b4700fadcb89f40880af3608b63951">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The
+          <a class="el" href="classGdk_1_1Display.html" title="Gdk::Display object's purpose is two fold: To grab/ungrab keyboard focus and mouse pointer To manage ...">
+           Gdk::Display
+          </a>
+          used to create the
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          .
+          <a href="classGdk_1_1GLContext.html#a44b4700fadcb89f40880af3608b63951">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a44b4700fadcb89f40880af3608b63951">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adba63f285363cf81f874eab164417dbf">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+           Glib::PropertyProxy_ReadOnly
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1GLContext.html">
+           GLContext
+          </a>
+          &gt; &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#adba63f285363cf81f874eab164417dbf">
+           property_shared_context
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:adba63f285363cf81f874eab164417dbf">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          that this context is sharing data with, or #
+          <code>
+           nullptr
+          </code>
+          <a href="classGdk_1_1GLContext.html#adba63f285363cf81f874eab164417dbf">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:adba63f285363cf81f874eab164417dbf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5334be019ab335081143bf0ee19e310e">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+           Glib::PropertyProxy_ReadOnly
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Window.html">
+           Window
+          </a>
+          &gt; &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a5334be019ab335081143bf0ee19e310e">
+           property_window
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a5334be019ab335081143bf0ee19e310e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The
+          <a class="el" href="classGdk_1_1Window.html" title="A Gdk::Window is a rectangular region on the screen. ">
+           Gdk::Window
+          </a>
+          the gl context is bound to.
+          <a href="classGdk_1_1GLContext.html#a5334be019ab335081143bf0ee19e310e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5334be019ab335081143bf0ee19e310e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a0127f43140e01d6a6731d42f9419be27 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a0127f43140e01d6a6731d42f9419be27">
+           Object
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a0127f43140e01d6a6731d42f9419be27 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7081561a5684709718fdf8c1875c56c0 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a7081561a5684709718fdf8c1875c56c0">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a7081561a5684709718fdf8c1875c56c0 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a473ee068b40d5c949cee2c721d720c9a inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a473ee068b40d5c949cee2c721d720c9a">
+           Object
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a473ee068b40d5c949cee2c721d720c9a inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2855131d475e54294dc34573f12ca9a0 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a2855131d475e54294dc34573f12ca9a0">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2855131d475e54294dc34573f12ca9a0 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0e6581bcbcc6197cca07df24bb91c492 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a0e6581bcbcc6197cca07df24bb91c492">
+           get_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;key)
+         </td>
+        </tr>
+        <tr class="separator:a0e6581bcbcc6197cca07df24bb91c492 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afff7a375a862f3f899daaa99710122fa inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#afff7a375a862f3f899daaa99710122fa">
+           set_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Quark.html">
+           Quark
+          </a>
+          &amp;key, void *data)
+         </td>
+        </tr>
+        <tr class="separator:afff7a375a862f3f899daaa99710122fa inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1febe3bae2dd71756e98e523cd33c1b4 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a1febe3bae2dd71756e98e523cd33c1b4">
+           set_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Quark.html">
+           Quark
+          </a>
+          &amp;key, void *data,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a969836f7bf4fec78eb50a1d790304d82">
+           DestroyNotify
+          </a>
+          notify)
+         </td>
+        </tr>
+        <tr class="separator:a1febe3bae2dd71756e98e523cd33c1b4 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aada5b50844bda7ee02bed0ae2a715c00 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#aada5b50844bda7ee02bed0ae2a715c00">
+           remove_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;quark)
+         </td>
+        </tr>
+        <tr class="separator:aada5b50844bda7ee02bed0ae2a715c00 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab454f71bd74403b0cc46d3cbbedd6b0e inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ab454f71bd74403b0cc46d3cbbedd6b0e">
+           steal_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;quark)
+         </td>
+        </tr>
+        <tr class="separator:ab454f71bd74403b0cc46d3cbbedd6b0e inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae4dea9a8dc611d6e4400a5b6a3cb4e7f inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ae4dea9a8dc611d6e4400a5b6a3cb4e7f">
+           wrap
+          </a>
+          (GObject *object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="separator:ae4dea9a8dc611d6e4400a5b6a3cb4e7f inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1ObjectBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1ObjectBase')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:aaf0e140e7192dcecddd9f57c46825434 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#aaf0e140e7192dcecddd9f57c46825434">
+           ObjectBase
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:aaf0e140e7192dcecddd9f57c46825434 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a15f8834a320eac98dc1c1b8a9a2fd4c1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a15f8834a320eac98dc1c1b8a9a2fd4c1">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a15f8834a320eac98dc1c1b8a9a2fd4c1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aab599d3eec4b4a9ddc95ccdc6100053d inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#aab599d3eec4b4a9ddc95ccdc6100053d">
+           set_property_value
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp;value)
+         </td>
+        </tr>
+        <tr class="separator:aab599d3eec4b4a9ddc95ccdc6100053d inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5e30750441b92f0246c9d4ece95fc8a0 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a5e30750441b92f0246c9d4ece95fc8a0">
+           get_property_value
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp;value) const
+         </td>
+        </tr>
+        <tr class="separator:a5e30750441b92f0246c9d4ece95fc8a0 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad37844f7ea2c0091a22d011e04c48820 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ad37844f7ea2c0091a22d011e04c48820">
+           set_property
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const PropertyType &amp;value)
+         </td>
+        </tr>
+        <tr class="separator:ad37844f7ea2c0091a22d011e04c48820 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5f894c9c36ad391fdc85552af67a8530 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a5f894c9c36ad391fdc85552af67a8530">
+           get_property
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, PropertyType &amp;value) const
+         </td>
+        </tr>
+        <tr class="separator:a5f894c9c36ad391fdc85552af67a8530 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adc6c1e8f094275114d6e2c3ef3a33f98 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#adc6c1e8f094275114d6e2c3ef3a33f98">
+           connect_property_changed
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:adc6c1e8f094275114d6e2c3ef3a33f98 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9fff4abb6ecc939866a6ff5d32808221 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a9fff4abb6ecc939866a6ff5d32808221">
+           connect_property_changed
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;&amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a9fff4abb6ecc939866a6ff5d32808221 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a896d7773c00bd2dcd310c861282ee8d1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a896d7773c00bd2dcd310c861282ee8d1">
+           connect_property_changed_with_return
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a896d7773c00bd2dcd310c861282ee8d1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a00f0e2119fbb42efe42d66b8188a0daf inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a00f0e2119fbb42efe42d66b8188a0daf">
+           connect_property_changed_with_return
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;&amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a00f0e2119fbb42efe42d66b8188a0daf inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6e9e13b75f116c20212d318204ce8ea3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a6e9e13b75f116c20212d318204ce8ea3">
+           freeze_notify
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a6e9e13b75f116c20212d318204ce8ea3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1bd8ea7bd8c4084ade6b3c27dddf06a4 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a1bd8ea7bd8c4084ade6b3c27dddf06a4">
+           thaw_notify
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a1bd8ea7bd8c4084ade6b3c27dddf06a4 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a896a8a5db20043ea82956e3ef4b9c4ae inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a896a8a5db20043ea82956e3ef4b9c4ae">
+           reference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a896a8a5db20043ea82956e3ef4b9c4ae inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3234b8ffb2a35b927e2978c8f3bfbfe3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3234b8ffb2a35b927e2978c8f3bfbfe3">
+           unreference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a3234b8ffb2a35b927e2978c8f3bfbfe3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4c6efc18be8cb9c56e58fc0bd20fafbe inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a4c6efc18be8cb9c56e58fc0bd20fafbe">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a4c6efc18be8cb9c56e58fc0bd20fafbe inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a778a94181132976bbfb0519793f3b32e inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          const GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a778a94181132976bbfb0519793f3b32e">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a778a94181132976bbfb0519793f3b32e inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9b2a5eb93102f1849e5419016e22a15f inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a9b2a5eb93102f1849e5419016e22a15f">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a9b2a5eb93102f1849e5419016e22a15f inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_structsigc_1_1trackable">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_structsigc_1_1trackable')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           sigc::trackable
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a7e1348841e762fb41b41c6f2ce9fa073 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a7e1348841e762fb41b41c6f2ce9fa073">
+           trackable
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e1348841e762fb41b41c6f2ce9fa073 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac8431d9452c9698a012597e6560c72fa inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ac8431d9452c9698a012597e6560c72fa">
+           trackable
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ac8431d9452c9698a012597e6560c72fa inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aba42ed8afb6598106cf68c18a7387f18 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#aba42ed8afb6598106cf68c18a7387f18">
+           trackable
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;&amp;src)
+         </td>
+        </tr>
+        <tr class="separator:aba42ed8afb6598106cf68c18a7387f18 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a75587da09e30031db7a2519843f1f4fb inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a75587da09e30031db7a2519843f1f4fb">
+           ~trackable
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a75587da09e30031db7a2519843f1f4fb inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab14931670837728e49bb5ca88fb16db5 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ab14931670837728e49bb5ca88fb16db5">
+           add_destroy_notify_callback
+          </a>
+          (void *data,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a3338954d7565534bd945290b798e13ed">
+           func_destroy_notify
+          </a>
+          func) const
+         </td>
+        </tr>
+        <tr class="separator:ab14931670837728e49bb5ca88fb16db5 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af2e23cfe7adc1ca844a3350bbac557cb inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#af2e23cfe7adc1ca844a3350bbac557cb">
+           notify_callbacks
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:af2e23cfe7adc1ca844a3350bbac557cb inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7494fbad23a65932ff1457d00d4edaf5 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a7494fbad23a65932ff1457d00d4edaf5">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;src)
+         </td>
+        </tr>
+        <tr class="separator:a7494fbad23a65932ff1457d00d4edaf5 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac3d61cdb452dc46fcdc8a8d42d9c079d inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ac3d61cdb452dc46fcdc8a8d42d9c079d">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;&amp;src)
+         </td>
+        </tr>
+        <tr class="separator:ac3d61cdb452dc46fcdc8a8d42d9c079d inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8b9dffa8a50ff13ba33e6c7f10468e2b inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a8b9dffa8a50ff13ba33e6c7f10468e2b">
+           remove_destroy_notify_callback
+          </a>
+          (void *data) const
+         </td>
+        </tr>
+        <tr class="separator:a8b9dffa8a50ff13ba33e6c7f10468e2b inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a436f5edab9973f964f81f30dd041ddb5">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a436f5edab9973f964f81f30dd041ddb5">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a436f5edab9973f964f81f30dd041ddb5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGdk_1_1GLContext.html#a436f5edab9973f964f81f30dd041ddb5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a436f5edab9973f964f81f30dd041ddb5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad30b00c25f995de29b2aee4ab1f27380">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1GLContext.html">
+           GLContext
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#ad30b00c25f995de29b2aee4ab1f27380">
+           get_current
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ad30b00c25f995de29b2aee4ab1f27380">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the current
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          .
+          <a href="classGdk_1_1GLContext.html#ad30b00c25f995de29b2aee4ab1f27380">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad30b00c25f995de29b2aee4ab1f27380">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a767e4d190329a0ad78d9e0570e7ce9ac">
+         <td align="right" class="memItemLeft" valign="top">
+          static void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a767e4d190329a0ad78d9e0570e7ce9ac">
+           clear_current
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a767e4d190329a0ad78d9e0570e7ce9ac">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Clears the current
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          .
+          <a href="classGdk_1_1GLContext.html#a767e4d190329a0ad78d9e0570e7ce9ac">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a767e4d190329a0ad78d9e0570e7ce9ac">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-methods">
+           </a>
+           Protected Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a0d55396de934d6da23d7b15c09b6a6d4">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#a0d55396de934d6da23d7b15c09b6a6d4">
+           GLContext
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a0d55396de934d6da23d7b15c09b6a6d4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:ad43f7c5ad0336e1eb3af622392a112eb inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ad43f7c5ad0336e1eb3af622392a112eb">
+           Object
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ad43f7c5ad0336e1eb3af622392a112eb inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6d72588496bd7ac03f72420021fb94a5 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a6d72588496bd7ac03f72420021fb94a5">
+           Object
+          </a>
+          (const Glib::ConstructParams &amp;construct_params)
+         </td>
+        </tr>
+        <tr class="separator:a6d72588496bd7ac03f72420021fb94a5 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6f490eeaeb71db673c36799a0f729be5 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a6f490eeaeb71db673c36799a0f729be5">
+           Object
+          </a>
+          (GObject *castitem)
+         </td>
+        </tr>
+        <tr class="separator:a6f490eeaeb71db673c36799a0f729be5 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1a156a738ca71cff3789fd6bafaf8903 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a1a156a738ca71cff3789fd6bafaf8903">
+           ~Object
+          </a>
+          () noexceptoverride
+         </td>
+        </tr>
+        <tr class="separator:a1a156a738ca71cff3789fd6bafaf8903 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1ObjectBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1ObjectBase')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a27d3451d9ca28d6a2f00838d7c56d545 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a27d3451d9ca28d6a2f00838d7c56d545">
+           ObjectBase
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a27d3451d9ca28d6a2f00838d7c56d545 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad4ef18214894c6874579313ab21d1018 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ad4ef18214894c6874579313ab21d1018">
+           ObjectBase
+          </a>
+          (const char *custom_type_name)
+         </td>
+        </tr>
+        <tr class="separator:ad4ef18214894c6874579313ab21d1018 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3d59b4d85b0ee72a727e6b2e1b31a2ff inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3d59b4d85b0ee72a727e6b2e1b31a2ff">
+           ObjectBase
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00947.html">
+           std::type_info
+          </a>
+          &amp;custom_type_info)
+         </td>
+        </tr>
+        <tr class="separator:a3d59b4d85b0ee72a727e6b2e1b31a2ff inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7e2e177061f6a6e09c4cf3da49c6dfd3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a7e2e177061f6a6e09c4cf3da49c6dfd3">
+           ObjectBase
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e2e177061f6a6e09c4cf3da49c6dfd3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2e968f118314ba4d5debfd2850d18003 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a2e968f118314ba4d5debfd2850d18003">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2e968f118314ba4d5debfd2850d18003 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae56ec45e9ebeaacf24be4fb54ed2eea3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ae56ec45e9ebeaacf24be4fb54ed2eea3">
+           ~ObjectBase
+          </a>
+          () noexcept=0
+         </td>
+        </tr>
+        <tr class="separator:ae56ec45e9ebeaacf24be4fb54ed2eea3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3faafb14c4f0ca60fbf0f5f5c4d549d0 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3faafb14c4f0ca60fbf0f5f5c4d549d0">
+           initialize
+          </a>
+          (GObject *castitem)
+         </td>
+        </tr>
+        <tr class="separator:a3faafb14c4f0ca60fbf0f5f5c4d549d0 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a44ddc123cd98ed0083aa06364365c8d3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a44ddc123cd98ed0083aa06364365c8d3">
+           initialize_move
+          </a>
+          (GObject *castitem,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+          *previous_wrapper)
+         </td>
+        </tr>
+        <tr class="separator:a44ddc123cd98ed0083aa06364365c8d3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:abaa009f166b755ff080fdf5e5d6b2b18">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1GLContext.html">
+           Gdk::GLContext
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1GLContext.html#abaa009f166b755ff080fdf5e5d6b2b18">
+           wrap
+          </a>
+          (GdkGLContext* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:abaa009f166b755ff080fdf5e5d6b2b18">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGdk_1_1GLContext.html#abaa009f166b755ff080fdf5e5d6b2b18">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abaa009f166b755ff080fdf5e5d6b2b18">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="inherited">
+           </a>
+           Additional Inherited Members
+          </h2>
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a969836f7bf4fec78eb50a1d790304d82 inherit pub_types_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef void(*)(gpointer data
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a969836f7bf4fec78eb50a1d790304d82">
+           DestroyNotify
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a969836f7bf4fec78eb50a1d790304d82 inherit pub_types_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_structsigc_1_1trackable">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_structsigc_1_1trackable')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           sigc::trackable
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a3338954d7565534bd945290b798e13ed inherit pub_types_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef internal::func_destroy_notify
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a3338954d7565534bd945290b798e13ed">
+           func_destroy_notify
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a3338954d7565534bd945290b798e13ed inherit pub_types_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        A
+        <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+         Gdk::GLContext
+        </a>
+        is an OpenGL context abstraction.
+       </p>
+       <p>
+        It's a low-level object, used to implement high-level objects such as
+        <a class="el" href="classGtk_1_1GLArea.html" title="A widget used for drawing with OpenGL. ">
+         Gtk::GLArea
+        </a>
+        on the GTK+ level.
+       </p>
+       <dl class="since_3_18">
+        <dt>
+         <b>
+          <a class="el" href="since_3_18.html#_since_3_18000004">
+           Since gtkmm 3.18:
+          </a>
+         </b>
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a9e9e358eeae4c655dd1f3941c63a8fa6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::GLContext::GLContext
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1GLContext.html">
+                 GLContext
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ad9ae42148a11926525786e53cc64bc3a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::GLContext::~GLContext
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              override
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a0d55396de934d6da23d7b15c09b6a6d4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::GLContext::GLContext
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a767e4d190329a0ad78d9e0570e7ce9ac">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static void Gdk::GLContext::clear_current
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Clears the current
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         .
+        </p>
+        <p>
+         Any OpenGL call after this function returns will be ignored until gdk_gl_context_make_current() is called.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000021">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad30b00c25f995de29b2aee4ab1f27380">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGdk_1_1GLContext.html">
+                 GLContext
+                </a>
+                &gt; Gdk::GLContext::get_current
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the current
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         .
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000020">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The current
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          , or
+          <code>
+           nullptr
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac1ecc455722c502690dcb9349157f43f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gdk::GLContext::get_debug_enabled
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the value set using gdk_gl_context_set_debug_enabled().
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000014">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if debugging is enabled.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ace74dbb1713bb91c2cf4cc59956f270a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Display.html">
+             Display
+            </a>
+            &gt; Gdk::GLContext::get_display
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the
+         <a class="el" href="classGdk_1_1Display.html" title="Gdk::Display object's purpose is two fold: To grab/ungrab keyboard focus and mouse pointer To manage ...">
+          Gdk::Display
+         </a>
+         the
+         <em>
+          context
+         </em>
+         is created for.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000005">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGdk_1_1Display.html" title="Gdk::Display object's purpose is two fold: To grab/ungrab keyboard focus and mouse pointer To manage ...">
+           Gdk::Display
+          </a>
+          or
+          <code>
+           nullptr
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a49ca07dc958062b08377445a22ae97b2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGdk_1_1Display.html">
+             Display
+            </a>
+            &gt; Gdk::GLContext::get_display
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the
+         <a class="el" href="classGdk_1_1Display.html" title="Gdk::Display object's purpose is two fold: To grab/ungrab keyboard focus and mouse pointer To manage ...">
+          Gdk::Display
+         </a>
+         the
+         <em>
+          context
+         </em>
+         is created for.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000006">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGdk_1_1Display.html" title="Gdk::Display object's purpose is two fold: To grab/ungrab keyboard focus and mouse pointer To manage ...">
+           Gdk::Display
+          </a>
+          or
+          <code>
+           nullptr
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac752e04a6c80c789798c1d72a39c07bd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gdk::GLContext::get_forward_compatible
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the value set using gdk_gl_context_set_forward_compatible().
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000016">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the context should be forward compatible.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac52bd69a165056d356ea1f6c162e78b1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::GLContext::get_required_version
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             major
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             minor
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the major and minor version requested by calling gdk_gl_context_set_required_version().
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000012">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              major
+             </td>
+             <td>
+              Return location for the major version to request.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              minor
+             </td>
+             <td>
+              Return location for the minor version to request.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa27d122e3afca6c31a526c01ce382b78">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1GLContext.html">
+             GLContext
+            </a>
+            &gt; Gdk::GLContext::get_shared_context
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         that this
+         <em>
+          context
+         </em>
+         share data with.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000009">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          or
+          <code>
+           nullptr
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a089eb835ed96a106383e40e6c735e077">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGdk_1_1GLContext.html">
+             GLContext
+            </a>
+            &gt; Gdk::GLContext::get_shared_context
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         that this
+         <em>
+          context
+         </em>
+         share data with.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000010">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+           Gdk::GLContext
+          </a>
+          or
+          <code>
+           nullptr
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a436f5edab9973f964f81f30dd041ddb5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gdk::GLContext::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aa9433e641bf02da1d30b77ea44369a61">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::GLContext::get_version
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             major
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             minor
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the OpenGL version of the
+         <em>
+          context
+         </em>
+         .
+        </p>
+        <p>
+         The
+         <em>
+          context
+         </em>
+         must be realized prior to calling this function.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000011">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              major
+             </td>
+             <td>
+              Return location for the major version.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              minor
+             </td>
+             <td>
+              Return location for the minor version.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ab8fb767fb68f712b991d57d79b715adc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Window.html">
+             Window
+            </a>
+            &gt; Gdk::GLContext::get_window
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the
+         <a class="el" href="classGdk_1_1Window.html" title="A Gdk::Window is a rectangular region on the screen. ">
+          Gdk::Window
+         </a>
+         used by the
+         <em>
+          context
+         </em>
+         .
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000007">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGdk_1_1Window.html" title="A Gdk::Window is a rectangular region on the screen. ">
+           Gdk::Window
+          </a>
+          or
+          <code>
+           nullptr
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa246a5295c3f06e391fface96416ed63">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGdk_1_1Window.html">
+             Window
+            </a>
+            &gt; Gdk::GLContext::get_window
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the
+         <a class="el" href="classGdk_1_1Window.html" title="A Gdk::Window is a rectangular region on the screen. ">
+          Gdk::Window
+         </a>
+         used by the
+         <em>
+          context
+         </em>
+         .
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000008">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGdk_1_1Window.html" title="A Gdk::Window is a rectangular region on the screen. ">
+           Gdk::Window
+          </a>
+          or
+          <code>
+           nullptr
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1b68f4768b95eead91818aada3002338">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GdkGLContext* Gdk::GLContext::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C GObject.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aa3b63567ed0cc4ce2b4bb3022731dad0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GdkGLContext* Gdk::GLContext::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C GObject.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a6bc3e23ffe1e17c0c028fa9cde5a2bc5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GdkGLContext* Gdk::GLContext::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a83f162e30684eefeeeeb252d80a102de">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gdk::GLContext::is_legacy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Whether the
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         is in legacy mode or not.
+        </p>
+        <p>
+         The
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         must be realized before calling this function.
+        </p>
+        <p>
+         When realizing a GL context, GDK will try to use the OpenGL 3.2 core profile; this profile removes all the OpenGL API that was deprecated prior to the 3.2 version of the specification. If the realization is successful, this function will return
+         <code>
+          false
+         </code>
+         .
+        </p>
+        <p>
+         If the underlying OpenGL implementation does not support core profiles, GDK will fall back to a pre-3.2 compatibility profile, and this function will return
+         <code>
+          true
+         </code>
+         .
+        </p>
+        <p>
+         You can use the value returned by this function to decide which kind of OpenGL API to use, or whether to do extension discovery, or what kind of shader programs to load.
+        </p>
+        <dl class="since_3_20">
+         <dt>
+          <b>
+           <a class="el" href="since_3_20.html#_since_3_20000009">
+            Since gtkmm 3.20:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the GL context is in legacy mode.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae8d0dfddc44e5b48ece1534b8a1a4e9b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::GLContext::make_current
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Makes the
+         <em>
+          context
+         </em>
+         the current one.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000019">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6a29deb062ccbb56318335dfe497e337">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGdk_1_1GLContext.html">
+                 GLContext
+                </a>
+                &amp; Gdk::GLContext::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1GLContext.html">
+                 GLContext
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a44b4700fadcb89f40880af3608b63951">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+             Glib::PropertyProxy_ReadOnly
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Display.html">
+             Display
+            </a>
+            &gt; &gt; Gdk::GLContext::property_display
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         The
+         <a class="el" href="classGdk_1_1Display.html" title="Gdk::Display object's purpose is two fold: To grab/ungrab keyboard focus and mouse pointer To manage ...">
+          Gdk::Display
+         </a>
+         used to create the
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         .
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000022">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A PropertyProxy_ReadOnly that allows you to get the value of the property, or receive notification when the value of the property changes.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="adba63f285363cf81f874eab164417dbf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+             Glib::PropertyProxy_ReadOnly
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1GLContext.html">
+             GLContext
+            </a>
+            &gt; &gt; Gdk::GLContext::property_shared_context
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         The
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         that this context is sharing data with, or #
+         <code>
+          nullptr
+         </code>
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000023">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A PropertyProxy_ReadOnly that allows you to get the value of the property, or receive notification when the value of the property changes.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5334be019ab335081143bf0ee19e310e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+             Glib::PropertyProxy_ReadOnly
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Window.html">
+             Window
+            </a>
+            &gt; &gt; Gdk::GLContext::property_window
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         The
+         <a class="el" href="classGdk_1_1Window.html" title="A Gdk::Window is a rectangular region on the screen. ">
+          Gdk::Window
+         </a>
+         the gl context is bound to.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000024">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A PropertyProxy_ReadOnly that allows you to get the value of the property, or receive notification when the value of the property changes.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a436a1f34ae0e1e0f3dd1b5d7b1c3da46">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gdk::GLContext::realize
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Realizes the given
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         .
+        </p>
+        <p>
+         It is safe to call this function on a realized
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         .
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000018">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the context is realized.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6d8dbc3f6a28fdae24948a221e558253">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::GLContext::set_debug_enabled
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             enabled
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets whether the
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         should perform extra validations and run time checking.
+        </p>
+        <p>
+         This is useful during development, but has additional overhead.
+        </p>
+        <p>
+         The
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         must not be realized or made current prior to calling this function.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000015">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              enabled
+             </td>
+             <td>
+              Whether to enable debugging in the context.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="abac1723daeb06a2e7877c2e2de475bb1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::GLContext::set_forward_compatible
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             compatible
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets whether the
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         should be forward compatible.
+        </p>
+        <p>
+         Forward compatibile contexts must not support OpenGL functionality that has been marked as deprecated in the requested version; non-forward compatible contexts, on the other hand, must support both deprecated and non deprecated functionality.
+        </p>
+        <p>
+         The
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         must not be realized or made current prior to calling this function.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000017">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              compatible
+             </td>
+             <td>
+              Whether the context should be forward compatible.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aaff54e69a94c9d3a96205310dfe97301">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::GLContext::set_required_version
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             major
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             minor
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the major and minor version of OpenGL to request.
+        </p>
+        <p>
+         Setting
+         <em>
+          major
+         </em>
+         and
+         <em>
+          minor
+         </em>
+         to zero will use the default values.
+        </p>
+        <p>
+         The
+         <a class="el" href="classGdk_1_1GLContext.html" title="A Gdk::GLContext is an OpenGL context abstraction. ">
+          Gdk::GLContext
+         </a>
+         must not be realized or made current prior to calling this function.
+        </p>
+        <dl class="since_3_18">
+         <dt>
+          <b>
+           <a class="el" href="since_3_18.html#_since_3_18000013">
+            Since gtkmm 3.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              major
+             </td>
+             <td>
+              The major version to request.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              minor
+             </td>
+             <td>
+              The minor version to request.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="abaa009f166b755ff080fdf5e5d6b2b18">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGdk_1_1GLContext.html">
+                 Gdk::GLContext
+                </a>
+                &gt; wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GdkGLContext *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGdk_1_1GLContext.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

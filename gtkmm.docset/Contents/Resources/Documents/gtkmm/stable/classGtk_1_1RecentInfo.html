@@ -1,0 +1,4017 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gtk::RecentInfo Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGtk_1_1RecentInfo.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1RecentInfo.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1RecentInfo.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gtk::RecentInfo Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       Contains information found when looking up an entry of the recently used files list.
+       <a href="classGtk_1_1RecentInfo.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;gtkmm/recentinfo.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:acf93d2d5bcdf29d3c668b2c8edfd6ab6">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#acf93d2d5bcdf29d3c668b2c8edfd6ab6">
+           reference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:acf93d2d5bcdf29d3c668b2c8edfd6ab6">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Increment the reference count for this object.
+          <a href="classGtk_1_1RecentInfo.html#acf93d2d5bcdf29d3c668b2c8edfd6ab6">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acf93d2d5bcdf29d3c668b2c8edfd6ab6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a62a3c68ccab74057eb4be1c75b2b1eef">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a62a3c68ccab74057eb4be1c75b2b1eef">
+           unreference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a62a3c68ccab74057eb4be1c75b2b1eef">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Decrement the reference count for this object.
+          <a href="classGtk_1_1RecentInfo.html#a62a3c68ccab74057eb4be1c75b2b1eef">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a62a3c68ccab74057eb4be1c75b2b1eef">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad851411db952b2041bcc1dec5c09037a">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkRecentInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#ad851411db952b2041bcc1dec5c09037a">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ad851411db952b2041bcc1dec5c09037a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1RecentInfo.html#ad851411db952b2041bcc1dec5c09037a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad851411db952b2041bcc1dec5c09037a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af42f9236d765e719935910b9dc118bff">
+         <td align="right" class="memItemLeft" valign="top">
+          const GtkRecentInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#af42f9236d765e719935910b9dc118bff">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:af42f9236d765e719935910b9dc118bff">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1RecentInfo.html#af42f9236d765e719935910b9dc118bff">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af42f9236d765e719935910b9dc118bff">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4d0c33979f8e2b016943317c00ba38d8">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkRecentInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a4d0c33979f8e2b016943317c00ba38d8">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a4d0c33979f8e2b016943317c00ba38d8">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+          <a href="classGtk_1_1RecentInfo.html#a4d0c33979f8e2b016943317c00ba38d8">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4d0c33979f8e2b016943317c00ba38d8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2b36a73c78c6ddd4e53a67e71144fe80">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a2b36a73c78c6ddd4e53a67e71144fe80">
+           RecentInfo
+          </a>
+          ()=delete
+         </td>
+        </tr>
+        <tr class="separator:a2b36a73c78c6ddd4e53a67e71144fe80">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0ac6f78d14134269dbbb7129e7786a4f">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a0ac6f78d14134269dbbb7129e7786a4f">
+           RecentInfo
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1RecentInfo.html">
+           RecentInfo
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a0ac6f78d14134269dbbb7129e7786a4f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:add0d37ee509811f87d21ff735196bd70">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1RecentInfo.html">
+           RecentInfo
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#add0d37ee509811f87d21ff735196bd70">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1RecentInfo.html">
+           RecentInfo
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:add0d37ee509811f87d21ff735196bd70">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af9dd0f3d9fbb4a5788b0260c4429ee3a">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#af9dd0f3d9fbb4a5788b0260c4429ee3a">
+           get_uri
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:af9dd0f3d9fbb4a5788b0260c4429ee3a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the URI of the resource.
+          <a href="classGtk_1_1RecentInfo.html#af9dd0f3d9fbb4a5788b0260c4429ee3a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af9dd0f3d9fbb4a5788b0260c4429ee3a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae8f88d8b7fe964f359ec195a7fc9a408">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#ae8f88d8b7fe964f359ec195a7fc9a408">
+           get_display_name
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ae8f88d8b7fe964f359ec195a7fc9a408">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the name of the resource.
+          <a href="classGtk_1_1RecentInfo.html#ae8f88d8b7fe964f359ec195a7fc9a408">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae8f88d8b7fe964f359ec195a7fc9a408">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae7fa1a813557a0ce7ddb6103d4baf094">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#ae7fa1a813557a0ce7ddb6103d4baf094">
+           get_description
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ae7fa1a813557a0ce7ddb6103d4baf094">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the (short) description of the resource.
+          <a href="classGtk_1_1RecentInfo.html#ae7fa1a813557a0ce7ddb6103d4baf094">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae7fa1a813557a0ce7ddb6103d4baf094">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac712350fd1af96290b7c81b61cd7b30f">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#ac712350fd1af96290b7c81b61cd7b30f">
+           get_mime_type
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac712350fd1af96290b7c81b61cd7b30f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the MIME type of the resource.
+          <a href="classGtk_1_1RecentInfo.html#ac712350fd1af96290b7c81b61cd7b30f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac712350fd1af96290b7c81b61cd7b30f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a243b4599f43029e93eb63249cb2f843c">
+         <td align="right" class="memItemLeft" valign="top">
+          std::time_t
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a243b4599f43029e93eb63249cb2f843c">
+           get_added
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a243b4599f43029e93eb63249cb2f843c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the timestamp (seconds from system’s Epoch) when the resource was added to the recently used resources list.
+          <a href="classGtk_1_1RecentInfo.html#a243b4599f43029e93eb63249cb2f843c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a243b4599f43029e93eb63249cb2f843c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3fb8ed2de9c50d1dda1a9391414e8dfb">
+         <td align="right" class="memItemLeft" valign="top">
+          std::time_t
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a3fb8ed2de9c50d1dda1a9391414e8dfb">
+           get_modified
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a3fb8ed2de9c50d1dda1a9391414e8dfb">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the timestamp (seconds from system’s Epoch) when the meta-data for the resource was last modified.
+          <a href="classGtk_1_1RecentInfo.html#a3fb8ed2de9c50d1dda1a9391414e8dfb">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3fb8ed2de9c50d1dda1a9391414e8dfb">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aab91eec167197ae13bb5db4cae03d880">
+         <td align="right" class="memItemLeft" valign="top">
+          std::time_t
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#aab91eec167197ae13bb5db4cae03d880">
+           get_visited
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aab91eec167197ae13bb5db4cae03d880">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the timestamp (seconds from system’s Epoch) when the meta-data for the resource was last visited.
+          <a href="classGtk_1_1RecentInfo.html#aab91eec167197ae13bb5db4cae03d880">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aab91eec167197ae13bb5db4cae03d880">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aeed18c1b521d9eb323c522698c68e85e">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#aeed18c1b521d9eb323c522698c68e85e">
+           get_private_hint
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aeed18c1b521d9eb323c522698c68e85e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the value of the “private” flag.
+          <a href="classGtk_1_1RecentInfo.html#aeed18c1b521d9eb323c522698c68e85e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aeed18c1b521d9eb323c522698c68e85e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8d28e829646ff9a12ab66047c6a2b8f4">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1AppInfo.html">
+           Gio::AppInfo
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a8d28e829646ff9a12ab66047c6a2b8f4">
+           create_app_info
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; app_name)
+         </td>
+        </tr>
+        <tr class="memdesc:a8d28e829646ff9a12ab66047c6a2b8f4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Creates a AppInfo for the specified
+          <a class="el" href="classGtk_1_1RecentInfo.html" title="Contains information found when looking up an entry of the recently used files list. ">
+           Gtk::RecentInfo
+          </a>
+          .
+          <a href="classGtk_1_1RecentInfo.html#a8d28e829646ff9a12ab66047c6a2b8f4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8d28e829646ff9a12ab66047c6a2b8f4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2dea97981dfc201b9f2b2f32e4027261">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a2dea97981dfc201b9f2b2f32e4027261">
+           get_application_info
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; app_name,
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; app_exec, guint&amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01659.html#gad2f89a1340c43c8451e522d045aaa1b6">
+           count
+          </a>
+          , std::time_t&amp; time) const
+         </td>
+        </tr>
+        <tr class="memdesc:a2dea97981dfc201b9f2b2f32e4027261">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the data regarding the application that has registered the resource pointed by
+          <em>
+           info
+          </em>
+          .
+          <a href="classGtk_1_1RecentInfo.html#a2dea97981dfc201b9f2b2f32e4027261">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2dea97981dfc201b9f2b2f32e4027261">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6c6a5435518040aa0aae32a53b93b894">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a6c6a5435518040aa0aae32a53b93b894">
+           get_applications
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a6c6a5435518040aa0aae32a53b93b894">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the list of applications that have registered this resource.
+          <a href="classGtk_1_1RecentInfo.html#a6c6a5435518040aa0aae32a53b93b894">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a6c6a5435518040aa0aae32a53b93b894">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae9d878b4cc91eed65d989ccb16f7a34f">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#ae9d878b4cc91eed65d989ccb16f7a34f">
+           last_application
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ae9d878b4cc91eed65d989ccb16f7a34f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the name of the last application that have registered the recently used resource represented by
+          <em>
+           info
+          </em>
+          .
+          <a href="classGtk_1_1RecentInfo.html#ae9d878b4cc91eed65d989ccb16f7a34f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae9d878b4cc91eed65d989ccb16f7a34f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aedabc0699402a800689727b5736f4523">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#aedabc0699402a800689727b5736f4523">
+           has_application
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; app_name) const
+         </td>
+        </tr>
+        <tr class="memdesc:aedabc0699402a800689727b5736f4523">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks whether an application registered this resource using
+          <em>
+           app_name
+          </em>
+          .
+          <a href="classGtk_1_1RecentInfo.html#aedabc0699402a800689727b5736f4523">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aedabc0699402a800689727b5736f4523">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adbcf48b83829f83cd4a7ff2beb5c0b19">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#adbcf48b83829f83cd4a7ff2beb5c0b19">
+           get_groups
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:adbcf48b83829f83cd4a7ff2beb5c0b19">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns all groups registered for the recently used item
+          <em>
+           info
+          </em>
+          .
+          <a href="classGtk_1_1RecentInfo.html#adbcf48b83829f83cd4a7ff2beb5c0b19">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:adbcf48b83829f83cd4a7ff2beb5c0b19">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a76db74df9bfe6d1674009a2c452a0ab0">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a76db74df9bfe6d1674009a2c452a0ab0">
+           has_group
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; group_name) const
+         </td>
+        </tr>
+        <tr class="memdesc:a76db74df9bfe6d1674009a2c452a0ab0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks whether
+          <em>
+           group_name
+          </em>
+          appears inside the groups registered for the recently used item
+          <em>
+           info
+          </em>
+          .
+          <a href="classGtk_1_1RecentInfo.html#a76db74df9bfe6d1674009a2c452a0ab0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a76db74df9bfe6d1674009a2c452a0ab0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac3efc797a1ad7323f910493022212ec9">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#ac3efc797a1ad7323f910493022212ec9">
+           get_icon
+          </a>
+          (int
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#ga445a43f417432dd1b9aed90ef239c700">
+           size
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:ac3efc797a1ad7323f910493022212ec9">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the icon of size
+          <em>
+           size
+          </em>
+          associated to the resource MIME type.
+          <a href="classGtk_1_1RecentInfo.html#ac3efc797a1ad7323f910493022212ec9">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac3efc797a1ad7323f910493022212ec9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aff943071d7b16c58943bf7c5c827cd1b">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#aff943071d7b16c58943bf7c5c827cd1b">
+           get_icon
+          </a>
+          (int
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#ga445a43f417432dd1b9aed90ef239c700">
+           size
+          </a>
+          ) const
+         </td>
+        </tr>
+        <tr class="memdesc:aff943071d7b16c58943bf7c5c827cd1b">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the icon of size
+          <em>
+           size
+          </em>
+          associated to the resource MIME type.
+          <a href="classGtk_1_1RecentInfo.html#aff943071d7b16c58943bf7c5c827cd1b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aff943071d7b16c58943bf7c5c827cd1b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9ec0523e28deb4e85247067e6316bf7e">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1Icon.html">
+           Gio::Icon
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a9ec0523e28deb4e85247067e6316bf7e">
+           get_gicon
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a9ec0523e28deb4e85247067e6316bf7e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the icon associated to the resource MIME type.
+          <a href="classGtk_1_1RecentInfo.html#a9ec0523e28deb4e85247067e6316bf7e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9ec0523e28deb4e85247067e6316bf7e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6db73e96fe6bf5a739791df86cca179e">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1Icon.html">
+           Gio::Icon
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a6db73e96fe6bf5a739791df86cca179e">
+           get_gicon
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a6db73e96fe6bf5a739791df86cca179e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the icon associated to the resource MIME type.
+          <a href="classGtk_1_1RecentInfo.html#a6db73e96fe6bf5a739791df86cca179e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a6db73e96fe6bf5a739791df86cca179e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab34936aa07da5c7622c7c6774413c5bd">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#ab34936aa07da5c7622c7c6774413c5bd">
+           get_short_name
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ab34936aa07da5c7622c7c6774413c5bd">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Computes a valid UTF-8 string that can be used as the name of the item in a menu or list.
+          <a href="classGtk_1_1RecentInfo.html#ab34936aa07da5c7622c7c6774413c5bd">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab34936aa07da5c7622c7c6774413c5bd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acde7de7444b70c580d7e8e209902954f">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#acde7de7444b70c580d7e8e209902954f">
+           get_uri_display
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:acde7de7444b70c580d7e8e209902954f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets a displayable version of the resource’s URI.
+          <a href="classGtk_1_1RecentInfo.html#acde7de7444b70c580d7e8e209902954f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acde7de7444b70c580d7e8e209902954f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a88a3cd6760ce4abff01cdaca46982f79">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a88a3cd6760ce4abff01cdaca46982f79">
+           get_age
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a88a3cd6760ce4abff01cdaca46982f79">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the number of days elapsed since the last update of the resource pointed by
+          <em>
+           info
+          </em>
+          .
+          <a href="classGtk_1_1RecentInfo.html#a88a3cd6760ce4abff01cdaca46982f79">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a88a3cd6760ce4abff01cdaca46982f79">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7f6eef6546933f061f99043034b7d0cb">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a7f6eef6546933f061f99043034b7d0cb">
+           is_local
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a7f6eef6546933f061f99043034b7d0cb">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks whether the resource is local or not by looking at the scheme of its URI.
+          <a href="classGtk_1_1RecentInfo.html#a7f6eef6546933f061f99043034b7d0cb">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7f6eef6546933f061f99043034b7d0cb">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9a1b7992f631a3b34918a145fff6e1e0">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a9a1b7992f631a3b34918a145fff6e1e0">
+           exists
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a9a1b7992f631a3b34918a145fff6e1e0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks whether the resource pointed by
+          <em>
+           info
+          </em>
+          still exists.
+          <a href="classGtk_1_1RecentInfo.html#a9a1b7992f631a3b34918a145fff6e1e0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9a1b7992f631a3b34918a145fff6e1e0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5f345402bced60bf54111d216ebc5d9a">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a5f345402bced60bf54111d216ebc5d9a">
+           equal
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1RecentInfo.html">
+           RecentInfo
+          </a>
+          &amp; info_b) const
+         </td>
+        </tr>
+        <tr class="memdesc:a5f345402bced60bf54111d216ebc5d9a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks whether two
+          <a class="el" href="classGtk_1_1RecentInfo.html" title="Contains information found when looking up an entry of the recently used files list. ">
+           Gtk::RecentInfo
+          </a>
+          -struct point to the same resource.
+          <a href="classGtk_1_1RecentInfo.html#a5f345402bced60bf54111d216ebc5d9a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5f345402bced60bf54111d216ebc5d9a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-methods">
+           </a>
+           Protected Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a7bcc85b22525ec08f13d63aaf00ceeb7">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#a7bcc85b22525ec08f13d63aaf00ceeb7">
+           operator delete
+          </a>
+          (void*, std::size_t)
+         </td>
+        </tr>
+        <tr class="separator:a7bcc85b22525ec08f13d63aaf00ceeb7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:ae4a4f24a3942a5893ec0a0dece7061d1">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#ae4a4f24a3942a5893ec0a0dece7061d1">
+           operator==
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1RecentInfo.html">
+           RecentInfo
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGtk_1_1RecentInfo.html">
+           RecentInfo
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:ae4a4f24a3942a5893ec0a0dece7061d1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afe6f2916a6106a6469a34ccee072088e">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#afe6f2916a6106a6469a34ccee072088e">
+           operator!=
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1RecentInfo.html">
+           RecentInfo
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGtk_1_1RecentInfo.html">
+           RecentInfo
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:afe6f2916a6106a6469a34ccee072088e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad1f3fa78ef465f24e2f1febd2b19cae6">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1RecentInfo.html">
+           Gtk::RecentInfo
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1RecentInfo.html#ad1f3fa78ef465f24e2f1febd2b19cae6">
+           wrap
+          </a>
+          (GtkRecentInfo* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:ad1f3fa78ef465f24e2f1febd2b19cae6">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGtk_1_1RecentInfo.html#ad1f3fa78ef465f24e2f1febd2b19cae6">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad1f3fa78ef465f24e2f1febd2b19cae6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        Contains information found when looking up an entry of the recently used files list.
+       </p>
+       <dl class="since_2_10">
+        <dt>
+         <b>
+          <a class="el" href="since_2_10.html#_since_2_10000371">
+           Since gtkmm 2.10:
+          </a>
+         </b>
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a2b36a73c78c6ddd4e53a67e71144fe80">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::RecentInfo::RecentInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a0ac6f78d14134269dbbb7129e7786a4f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::RecentInfo::RecentInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGtk_1_1RecentInfo.html">
+                 RecentInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a8d28e829646ff9a12ab66047c6a2b8f4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1AppInfo.html">
+             Gio::AppInfo
+            </a>
+            &gt; Gtk::RecentInfo::create_app_info
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             app_name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Creates a AppInfo for the specified
+         <a class="el" href="classGtk_1_1RecentInfo.html" title="Contains information found when looking up an entry of the recently used files list. ">
+          Gtk::RecentInfo
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              app_name
+             </td>
+             <td>
+              The name of the application that should be mapped to a AppInfo; if
+              <code>
+               nullptr
+              </code>
+              is used then the default application for the MIME type is used.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The newly created AppInfo, or
+          <code>
+           nullptr
+          </code>
+          . In case of error,
+          <em>
+           error
+          </em>
+          will be set either with a Gtk::RECENT_MANAGER_ERROR or a IO_ERROR.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5f345402bced60bf54111d216ebc5d9a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::RecentInfo::equal
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1RecentInfo.html">
+             RecentInfo
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             info_b
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks whether two
+         <a class="el" href="classGtk_1_1RecentInfo.html" title="Contains information found when looking up an entry of the recently used files list. ">
+          Gtk::RecentInfo
+         </a>
+         -struct point to the same resource.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000393">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              info_b
+             </td>
+             <td>
+              A
+              <a class="el" href="classGtk_1_1RecentInfo.html" title="Contains information found when looking up an entry of the recently used files list. ">
+               Gtk::RecentInfo
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if both
+          <a class="el" href="classGtk_1_1RecentInfo.html" title="Contains information found when looking up an entry of the recently used files list. ">
+           Gtk::RecentInfo
+          </a>
+          -struct point to the same resource,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9a1b7992f631a3b34918a145fff6e1e0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::RecentInfo::exists
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks whether the resource pointed by
+         <em>
+          info
+         </em>
+         still exists.
+        </p>
+        <p>
+         At the moment this check is done only on resources pointing to local files.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000392">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the resource exists.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a243b4599f43029e93eb63249cb2f843c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            std::time_t Gtk::RecentInfo::get_added
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the timestamp (seconds from system’s Epoch) when the resource was added to the recently used resources list.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000376">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of seconds elapsed from system’s Epoch when the resource was added to the list, or -1 on failure.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a88a3cd6760ce4abff01cdaca46982f79">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gtk::RecentInfo::get_age
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the number of days elapsed since the last update of the resource pointed by
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000390">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A positive integer containing the number of days elapsed since the time this resource was last modified.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a2dea97981dfc201b9f2b2f32e4027261">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::RecentInfo::get_application_info
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             app_name
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             app_exec
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            guint &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             count
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            std::time_t &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             time
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the data regarding the application that has registered the resource pointed by
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <p>
+         If the command line contains any escape characters defined inside the storage specification, they will be expanded.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000380">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              app_name
+             </td>
+             <td>
+              The name of the application that has registered this item.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              app_exec
+             </td>
+             <td>
+              Return location for the string containing the command line.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              count
+             </td>
+             <td>
+              Return location for the number of times this item was registered.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              time
+             </td>
+             <td>
+              Return location for the timestamp this item was last registered for this application.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if an application with
+          <em>
+           app_name
+          </em>
+          has registered this resource inside the recently used list, or
+          <code>
+           false
+          </code>
+          otherwise. The
+          <em>
+           app_exec
+          </em>
+          string is owned by the
+          <a class="el" href="classGtk_1_1RecentInfo.html" title="Contains information found when looking up an entry of the recently used files list. ">
+           Gtk::RecentInfo
+          </a>
+          and should not be modified or freed.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6c6a5435518040aa0aae32a53b93b894">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt; Gtk::RecentInfo::get_applications
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the list of applications that have registered this resource.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000381">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              length
+             </td>
+             <td>
+              Return location for the length of the returned list.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A newly allocated
+          <code>
+           nullptr
+          </code>
+          -terminated array of strings. Use Glib::strfreev() to free it.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae7fa1a813557a0ce7ddb6103d4baf094">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::RecentInfo::get_description
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the (short) description of the resource.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000374">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The description of the resource. The returned string is owned by the recent manager, and should not be freed.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae8f88d8b7fe964f359ec195a7fc9a408">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::RecentInfo::get_display_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the name of the resource.
+        </p>
+        <p>
+         If none has been defined, the basename of the resource is obtained.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000373">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The display name of the resource. The returned string is owned by the recent manager, and should not be freed.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9ec0523e28deb4e85247067e6316bf7e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1Icon.html">
+             Gio::Icon
+            </a>
+            &gt; Gtk::RecentInfo::get_gicon
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the icon associated to the resource MIME type.
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000047">
+            Since gtkmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A Icon containing the icon, or
+          <code>
+           nullptr
+          </code>
+          . Use Glib::object_unref() when finished using the icon.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6db73e96fe6bf5a739791df86cca179e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1Icon.html">
+             Gio::Icon
+            </a>
+            &gt; Gtk::RecentInfo::get_gicon
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the icon associated to the resource MIME type.
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000048">
+            Since gtkmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A Icon containing the icon, or
+          <code>
+           nullptr
+          </code>
+          . Use Glib::object_unref() when finished using the icon.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="adbcf48b83829f83cd4a7ff2beb5c0b19">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt; Gtk::RecentInfo::get_groups
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns all groups registered for the recently used item
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <p>
+         The array of returned group names will be
+         <code>
+          nullptr
+         </code>
+         terminated, so length might optionally be
+         <code>
+          nullptr
+         </code>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000384">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              length
+             </td>
+             <td>
+              Return location for the number of groups returned.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A newly allocated
+          <code>
+           nullptr
+          </code>
+          terminated array of strings. Use Glib::strfreev() to free it.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac3efc797a1ad7323f910493022212ec9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::RecentInfo::get_icon
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             size
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the icon of size
+         <em>
+          size
+         </em>
+         associated to the resource MIME type.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000386">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              size
+             </td>
+             <td>
+              The size of the icon in pixels.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          containing the icon, or
+          <code>
+           nullptr
+          </code>
+          . Use Glib::object_unref() when finished using the icon.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aff943071d7b16c58943bf7c5c827cd1b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::RecentInfo::get_icon
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             size
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the icon of size
+         <em>
+          size
+         </em>
+         associated to the resource MIME type.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000387">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              size
+             </td>
+             <td>
+              The size of the icon in pixels.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          containing the icon, or
+          <code>
+           nullptr
+          </code>
+          . Use Glib::object_unref() when finished using the icon.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac712350fd1af96290b7c81b61cd7b30f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::RecentInfo::get_mime_type
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the MIME type of the resource.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000375">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The MIME type of the resource. The returned string is owned by the recent manager, and should not be freed.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a3fb8ed2de9c50d1dda1a9391414e8dfb">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            std::time_t Gtk::RecentInfo::get_modified
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the timestamp (seconds from system’s Epoch) when the meta-data for the resource was last modified.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000377">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of seconds elapsed from system’s Epoch when the resource was last modified, or -1 on failure.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aeed18c1b521d9eb323c522698c68e85e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::RecentInfo::get_private_hint
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the value of the “private” flag.
+        </p>
+        <p>
+         Resources in the recently used list that have this flag set to
+         <code>
+          true
+         </code>
+         should only be displayed by the applications that have registered them.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000379">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the private flag was found,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ab34936aa07da5c7622c7c6774413c5bd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::RecentInfo::get_short_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Computes a valid UTF-8 string that can be used as the name of the item in a menu or list.
+        </p>
+        <p>
+         For example, calling this function on an item that refers to “file:///foo/bar.txt” will yield “bar.txt”.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000388">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A newly-allocated string in UTF-8 encoding free it with Glib::free().
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af9dd0f3d9fbb4a5788b0260c4429ee3a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::RecentInfo::get_uri
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the URI of the resource.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000372">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The URI of the resource. The returned string is owned by the recent manager, and should not be freed.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="acde7de7444b70c580d7e8e209902954f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::RecentInfo::get_uri_display
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets a displayable version of the resource’s URI.
+        </p>
+        <p>
+         If the resource is local, it returns a local path; if the resource is not local, it returns the UTF-8 encoded content of
+         <a class="el" href="classGtk_1_1RecentInfo.html#af9dd0f3d9fbb4a5788b0260c4429ee3a" title="Gets the URI of the resource. ">
+          get_uri()
+         </a>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000389">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A newly allocated UTF-8 string containing the resource’s URI or
+          <code>
+           nullptr
+          </code>
+          . Use Glib::free() when done using it.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aab91eec167197ae13bb5db4cae03d880">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            std::time_t Gtk::RecentInfo::get_visited
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the timestamp (seconds from system’s Epoch) when the meta-data for the resource was last visited.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000378">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of seconds elapsed from system’s Epoch when the resource was last visited, or -1 on failure.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad851411db952b2041bcc1dec5c09037a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GtkRecentInfo* Gtk::RecentInfo::gobj
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="af42f9236d765e719935910b9dc118bff">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            const GtkRecentInfo* Gtk::RecentInfo::gobj
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a4d0c33979f8e2b016943317c00ba38d8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GtkRecentInfo* Gtk::RecentInfo::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aedabc0699402a800689727b5736f4523">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::RecentInfo::has_application
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             app_name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks whether an application registered this resource using
+         <em>
+          app_name
+         </em>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000383">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              app_name
+             </td>
+             <td>
+              A string containing an application name.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if an application with name
+          <em>
+           app_name
+          </em>
+          was found,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a76db74df9bfe6d1674009a2c452a0ab0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::RecentInfo::has_group
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             group_name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks whether
+         <em>
+          group_name
+         </em>
+         appears inside the groups registered for the recently used item
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000385">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              group_name
+             </td>
+             <td>
+              Name of a group.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the group was found.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a7f6eef6546933f061f99043034b7d0cb">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::RecentInfo::is_local
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks whether the resource is local or not by looking at the scheme of its URI.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000391">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the resource is local.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae9d878b4cc91eed65d989ccb16f7a34f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::RecentInfo::last_application
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the name of the last application that have registered the recently used resource represented by
+         <em>
+          info
+         </em>
+         .
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000382">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          An application name. Use Glib::free() to free it.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a7bcc85b22525ec08f13d63aaf00ceeb7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void Gtk::RecentInfo::operator delete
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                void *
+               </td>
+               <td class="paramname">
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                std::size_t
+               </td>
+               <td class="paramname">
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="add0d37ee509811f87d21ff735196bd70">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1RecentInfo.html">
+                 RecentInfo
+                </a>
+                &amp; Gtk::RecentInfo::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGtk_1_1RecentInfo.html">
+                 RecentInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              delete
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="acf93d2d5bcdf29d3c668b2c8edfd6ab6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::RecentInfo::reference
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Increment the reference count for this object.
+        </p>
+        <p>
+         You should never need to do this manually - use the object via a RefPtr instead.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a62a3c68ccab74057eb4be1c75b2b1eef">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::RecentInfo::unreference
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Decrement the reference count for this object.
+        </p>
+        <p>
+         You should never need to do this manually - use the object via a RefPtr instead.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="afe6f2916a6106a6469a34ccee072088e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#gac4373547895ec9df9035719b38a2621a">
+                 operator!
+                </a>
+                =
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGtk_1_1RecentInfo.html">
+                 RecentInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGtk_1_1RecentInfo.html">
+                 RecentInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ae4a4f24a3942a5893ec0a0dece7061d1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator==
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGtk_1_1RecentInfo.html">
+                 RecentInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGtk_1_1RecentInfo.html">
+                 RecentInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ad1f3fa78ef465f24e2f1febd2b19cae6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGtk_1_1RecentInfo.html">
+                 Gtk::RecentInfo
+                </a>
+                &gt; wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkRecentInfo *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGtk_1_1RecentInfo.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

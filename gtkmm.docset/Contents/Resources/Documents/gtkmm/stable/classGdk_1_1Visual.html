@@ -1,0 +1,4136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gdk::Visual Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGdk_1_1Visual.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGdk_1_1Visual.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGdk_1_1Visual.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gdk::Visual Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       A
+       <a class="el" href="classGdk_1_1Visual.html" title="A Gdk::Visual describes a particular video hardware display format. ">
+        Gdk::Visual
+       </a>
+       describes a particular video hardware display format.
+       <a href="classGdk_1_1Visual.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;gdkmm/visual.h&gt;
+       </code>
+      </p>
+      <div class="dynheader">
+       Inheritance diagram for Gdk::Visual:
+      </div>
+      <div class="dyncontent">
+       <div class="center">
+        <img alt="Inheritance graph" border="0" src="classGdk_1_1Visual__inherit__graph.png" usemap="#Gdk_1_1Visual_inherit__map"/>
+       </div>
+       <map id="Gdk_1_1Visual_inherit__map" name="Gdk_1_1Visual_inherit__map">
+        <area alt="" coords="21,155,116,181" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html" id="node2" shape="rect" title="Glib::Object">
+        </area>
+        <area alt="" coords="5,80,132,107" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html" id="node3" shape="rect" title="Glib::ObjectBase">
+        </area>
+        <area alt="" coords="11,5,126,32" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html" id="node4" shape="rect" title="sigc::trackable">
+        </area>
+       </map>
+       <center>
+        <span class="legend">
+         [
+         <a href="graph_legend.html">
+          legend
+         </a>
+         ]
+        </span>
+       </center>
+      </div>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a806c2f7c666c1679ead8636d36b78385">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a806c2f7c666c1679ead8636d36b78385">
+           Visual
+          </a>
+          (
+          <a class="el" href="classGdk_1_1Visual.html">
+           Visual
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a806c2f7c666c1679ead8636d36b78385">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5bfeedf96601feba316bcc697b5530e8">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Visual.html">
+           Visual
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a5bfeedf96601feba316bcc697b5530e8">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGdk_1_1Visual.html">
+           Visual
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a5bfeedf96601feba316bcc697b5530e8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0b588cbf031c8a58c3801ce6cf0201f2">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a0b588cbf031c8a58c3801ce6cf0201f2">
+           ~Visual
+          </a>
+          () noexceptoverride
+         </td>
+        </tr>
+        <tr class="separator:a0b588cbf031c8a58c3801ce6cf0201f2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a23e5a76ba206f65d763186a9161b1f00">
+         <td align="right" class="memItemLeft" valign="top">
+          GdkVisual*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a23e5a76ba206f65d763186a9161b1f00">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a23e5a76ba206f65d763186a9161b1f00">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C GObject.
+          <a href="classGdk_1_1Visual.html#a23e5a76ba206f65d763186a9161b1f00">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a23e5a76ba206f65d763186a9161b1f00">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3452bcc88c3ef7b9d9d1489ac84e3629">
+         <td align="right" class="memItemLeft" valign="top">
+          const GdkVisual*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a3452bcc88c3ef7b9d9d1489ac84e3629">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a3452bcc88c3ef7b9d9d1489ac84e3629">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C GObject.
+          <a href="classGdk_1_1Visual.html#a3452bcc88c3ef7b9d9d1489ac84e3629">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3452bcc88c3ef7b9d9d1489ac84e3629">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aac860c63e6f3740145653aef122bdf11">
+         <td align="right" class="memItemLeft" valign="top">
+          GdkVisual*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#aac860c63e6f3740145653aef122bdf11">
+           gobj_copy
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aac860c63e6f3740145653aef122bdf11">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+          <a href="classGdk_1_1Visual.html#aac860c63e6f3740145653aef122bdf11">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aac860c63e6f3740145653aef122bdf11">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7e10f47bbec94749bf683969e52927a5">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Screen.html">
+           Screen
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a7e10f47bbec94749bf683969e52927a5">
+           get_screen
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a7e10f47bbec94749bf683969e52927a5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the screen to which this visual belongs.
+          <a href="classGdk_1_1Visual.html#a7e10f47bbec94749bf683969e52927a5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7e10f47bbec94749bf683969e52927a5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a194d4df865f1a72171bae1de27571ca4">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGdk_1_1Screen.html">
+           Screen
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a194d4df865f1a72171bae1de27571ca4">
+           get_screen
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a194d4df865f1a72171bae1de27571ca4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the screen to which this visual belongs.
+          <a href="classGdk_1_1Visual.html#a194d4df865f1a72171bae1de27571ca4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a194d4df865f1a72171bae1de27571ca4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af615a02cb1a5bf13d748250d3202e552">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="group__gdkmmEnums.html#gaf51d8a92358be17e8bdcbe2a229d1620">
+           VisualType
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#af615a02cb1a5bf13d748250d3202e552">
+           get_visual_type
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:af615a02cb1a5bf13d748250d3202e552">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the type of visual this is (PseudoColor, TrueColor, etc).
+          <a href="classGdk_1_1Visual.html#af615a02cb1a5bf13d748250d3202e552">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af615a02cb1a5bf13d748250d3202e552">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0093c5b3fbc21bed2ca0b7383eb5ef2c">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a0093c5b3fbc21bed2ca0b7383eb5ef2c">
+           get_depth
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a0093c5b3fbc21bed2ca0b7383eb5ef2c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the bit depth of this visual.
+          <a href="classGdk_1_1Visual.html#a0093c5b3fbc21bed2ca0b7383eb5ef2c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0093c5b3fbc21bed2ca0b7383eb5ef2c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3df15d1041143c6f20075e1469034d3a">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="namespaceGdk.html#a23c7243f15304c7a86cf6a20118a7c85">
+           ByteOrder
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a3df15d1041143c6f20075e1469034d3a">
+           get_byte_order
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a3df15d1041143c6f20075e1469034d3a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the byte order of this visual.
+          <a href="classGdk_1_1Visual.html#a3df15d1041143c6f20075e1469034d3a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3df15d1041143c6f20075e1469034d3a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1b3bc9654ddb15048c89e08e8dbc2b2e">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a1b3bc9654ddb15048c89e08e8dbc2b2e">
+           get_colormap_size
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a1b3bc9654ddb15048c89e08e8dbc2b2e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the size of a colormap for this visual.
+          <a href="classGdk_1_1Visual.html#a1b3bc9654ddb15048c89e08e8dbc2b2e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1b3bc9654ddb15048c89e08e8dbc2b2e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a000f87fd3dc00651046fa2c9dbaae05d">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a000f87fd3dc00651046fa2c9dbaae05d">
+           get_bits_per_rgb
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a000f87fd3dc00651046fa2c9dbaae05d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the number of significant bits per red, green and blue value.
+          <a href="classGdk_1_1Visual.html#a000f87fd3dc00651046fa2c9dbaae05d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a000f87fd3dc00651046fa2c9dbaae05d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac9713165720bebfa769b274dfc1ae272">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#ac9713165720bebfa769b274dfc1ae272">
+           get_red_pixel_details
+          </a>
+          (guint32&amp; mask, int&amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#gaea38a751275f9e427a7615cd49f4caf8">
+           shift
+          </a>
+          , int&amp; precision) const
+         </td>
+        </tr>
+        <tr class="memdesc:ac9713165720bebfa769b274dfc1ae272">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Obtains values that are needed to calculate red pixel values in TrueColor and DirectColor.
+          <a href="classGdk_1_1Visual.html#ac9713165720bebfa769b274dfc1ae272">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac9713165720bebfa769b274dfc1ae272">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a00950ae087e9e5cb3f720f9ab033b830">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a00950ae087e9e5cb3f720f9ab033b830">
+           get_green_pixel_details
+          </a>
+          (guint32&amp; mask, int&amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#gaea38a751275f9e427a7615cd49f4caf8">
+           shift
+          </a>
+          , int&amp; precision) const
+         </td>
+        </tr>
+        <tr class="memdesc:a00950ae087e9e5cb3f720f9ab033b830">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Obtains values that are needed to calculate green pixel values in TrueColor and DirectColor.
+          <a href="classGdk_1_1Visual.html#a00950ae087e9e5cb3f720f9ab033b830">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a00950ae087e9e5cb3f720f9ab033b830">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad322b8a271797fd244b43bd25d981f1f">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#ad322b8a271797fd244b43bd25d981f1f">
+           get_blue_pixel_details
+          </a>
+          (guint32&amp; mask, int&amp;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#gaea38a751275f9e427a7615cd49f4caf8">
+           shift
+          </a>
+          , int&amp; precision) const
+         </td>
+        </tr>
+        <tr class="memdesc:ad322b8a271797fd244b43bd25d981f1f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Obtains values that are needed to calculate blue pixel values in TrueColor and DirectColor.
+          <a href="classGdk_1_1Visual.html#ad322b8a271797fd244b43bd25d981f1f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad322b8a271797fd244b43bd25d981f1f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a0127f43140e01d6a6731d42f9419be27 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a0127f43140e01d6a6731d42f9419be27">
+           Object
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a0127f43140e01d6a6731d42f9419be27 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7081561a5684709718fdf8c1875c56c0 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a7081561a5684709718fdf8c1875c56c0">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a7081561a5684709718fdf8c1875c56c0 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a473ee068b40d5c949cee2c721d720c9a inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a473ee068b40d5c949cee2c721d720c9a">
+           Object
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a473ee068b40d5c949cee2c721d720c9a inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2855131d475e54294dc34573f12ca9a0 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a2855131d475e54294dc34573f12ca9a0">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2855131d475e54294dc34573f12ca9a0 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0e6581bcbcc6197cca07df24bb91c492 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a0e6581bcbcc6197cca07df24bb91c492">
+           get_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;key)
+         </td>
+        </tr>
+        <tr class="separator:a0e6581bcbcc6197cca07df24bb91c492 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afff7a375a862f3f899daaa99710122fa inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#afff7a375a862f3f899daaa99710122fa">
+           set_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Quark.html">
+           Quark
+          </a>
+          &amp;key, void *data)
+         </td>
+        </tr>
+        <tr class="separator:afff7a375a862f3f899daaa99710122fa inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1febe3bae2dd71756e98e523cd33c1b4 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a1febe3bae2dd71756e98e523cd33c1b4">
+           set_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Quark.html">
+           Quark
+          </a>
+          &amp;key, void *data,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a969836f7bf4fec78eb50a1d790304d82">
+           DestroyNotify
+          </a>
+          notify)
+         </td>
+        </tr>
+        <tr class="separator:a1febe3bae2dd71756e98e523cd33c1b4 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aada5b50844bda7ee02bed0ae2a715c00 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#aada5b50844bda7ee02bed0ae2a715c00">
+           remove_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;quark)
+         </td>
+        </tr>
+        <tr class="separator:aada5b50844bda7ee02bed0ae2a715c00 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab454f71bd74403b0cc46d3cbbedd6b0e inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ab454f71bd74403b0cc46d3cbbedd6b0e">
+           steal_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;quark)
+         </td>
+        </tr>
+        <tr class="separator:ab454f71bd74403b0cc46d3cbbedd6b0e inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae4dea9a8dc611d6e4400a5b6a3cb4e7f inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ae4dea9a8dc611d6e4400a5b6a3cb4e7f">
+           wrap
+          </a>
+          (GObject *object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="separator:ae4dea9a8dc611d6e4400a5b6a3cb4e7f inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1ObjectBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1ObjectBase')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:aaf0e140e7192dcecddd9f57c46825434 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#aaf0e140e7192dcecddd9f57c46825434">
+           ObjectBase
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:aaf0e140e7192dcecddd9f57c46825434 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a15f8834a320eac98dc1c1b8a9a2fd4c1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a15f8834a320eac98dc1c1b8a9a2fd4c1">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a15f8834a320eac98dc1c1b8a9a2fd4c1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aab599d3eec4b4a9ddc95ccdc6100053d inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#aab599d3eec4b4a9ddc95ccdc6100053d">
+           set_property_value
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp;value)
+         </td>
+        </tr>
+        <tr class="separator:aab599d3eec4b4a9ddc95ccdc6100053d inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5e30750441b92f0246c9d4ece95fc8a0 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a5e30750441b92f0246c9d4ece95fc8a0">
+           get_property_value
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp;value) const
+         </td>
+        </tr>
+        <tr class="separator:a5e30750441b92f0246c9d4ece95fc8a0 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad37844f7ea2c0091a22d011e04c48820 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ad37844f7ea2c0091a22d011e04c48820">
+           set_property
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const PropertyType &amp;value)
+         </td>
+        </tr>
+        <tr class="separator:ad37844f7ea2c0091a22d011e04c48820 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5f894c9c36ad391fdc85552af67a8530 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a5f894c9c36ad391fdc85552af67a8530">
+           get_property
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, PropertyType &amp;value) const
+         </td>
+        </tr>
+        <tr class="separator:a5f894c9c36ad391fdc85552af67a8530 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adc6c1e8f094275114d6e2c3ef3a33f98 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#adc6c1e8f094275114d6e2c3ef3a33f98">
+           connect_property_changed
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:adc6c1e8f094275114d6e2c3ef3a33f98 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9fff4abb6ecc939866a6ff5d32808221 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a9fff4abb6ecc939866a6ff5d32808221">
+           connect_property_changed
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;&amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a9fff4abb6ecc939866a6ff5d32808221 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a896d7773c00bd2dcd310c861282ee8d1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a896d7773c00bd2dcd310c861282ee8d1">
+           connect_property_changed_with_return
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a896d7773c00bd2dcd310c861282ee8d1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a00f0e2119fbb42efe42d66b8188a0daf inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a00f0e2119fbb42efe42d66b8188a0daf">
+           connect_property_changed_with_return
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;&amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a00f0e2119fbb42efe42d66b8188a0daf inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6e9e13b75f116c20212d318204ce8ea3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a6e9e13b75f116c20212d318204ce8ea3">
+           freeze_notify
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a6e9e13b75f116c20212d318204ce8ea3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1bd8ea7bd8c4084ade6b3c27dddf06a4 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a1bd8ea7bd8c4084ade6b3c27dddf06a4">
+           thaw_notify
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a1bd8ea7bd8c4084ade6b3c27dddf06a4 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a896a8a5db20043ea82956e3ef4b9c4ae inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a896a8a5db20043ea82956e3ef4b9c4ae">
+           reference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a896a8a5db20043ea82956e3ef4b9c4ae inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3234b8ffb2a35b927e2978c8f3bfbfe3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3234b8ffb2a35b927e2978c8f3bfbfe3">
+           unreference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a3234b8ffb2a35b927e2978c8f3bfbfe3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4c6efc18be8cb9c56e58fc0bd20fafbe inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a4c6efc18be8cb9c56e58fc0bd20fafbe">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a4c6efc18be8cb9c56e58fc0bd20fafbe inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a778a94181132976bbfb0519793f3b32e inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          const GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a778a94181132976bbfb0519793f3b32e">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a778a94181132976bbfb0519793f3b32e inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9b2a5eb93102f1849e5419016e22a15f inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a9b2a5eb93102f1849e5419016e22a15f">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a9b2a5eb93102f1849e5419016e22a15f inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_structsigc_1_1trackable">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_structsigc_1_1trackable')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           sigc::trackable
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a7e1348841e762fb41b41c6f2ce9fa073 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a7e1348841e762fb41b41c6f2ce9fa073">
+           trackable
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e1348841e762fb41b41c6f2ce9fa073 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac8431d9452c9698a012597e6560c72fa inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ac8431d9452c9698a012597e6560c72fa">
+           trackable
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ac8431d9452c9698a012597e6560c72fa inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aba42ed8afb6598106cf68c18a7387f18 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#aba42ed8afb6598106cf68c18a7387f18">
+           trackable
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;&amp;src)
+         </td>
+        </tr>
+        <tr class="separator:aba42ed8afb6598106cf68c18a7387f18 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a75587da09e30031db7a2519843f1f4fb inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a75587da09e30031db7a2519843f1f4fb">
+           ~trackable
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a75587da09e30031db7a2519843f1f4fb inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab14931670837728e49bb5ca88fb16db5 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ab14931670837728e49bb5ca88fb16db5">
+           add_destroy_notify_callback
+          </a>
+          (void *data,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a3338954d7565534bd945290b798e13ed">
+           func_destroy_notify
+          </a>
+          func) const
+         </td>
+        </tr>
+        <tr class="separator:ab14931670837728e49bb5ca88fb16db5 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af2e23cfe7adc1ca844a3350bbac557cb inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#af2e23cfe7adc1ca844a3350bbac557cb">
+           notify_callbacks
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:af2e23cfe7adc1ca844a3350bbac557cb inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7494fbad23a65932ff1457d00d4edaf5 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a7494fbad23a65932ff1457d00d4edaf5">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;src)
+         </td>
+        </tr>
+        <tr class="separator:a7494fbad23a65932ff1457d00d4edaf5 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac3d61cdb452dc46fcdc8a8d42d9c079d inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ac3d61cdb452dc46fcdc8a8d42d9c079d">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;&amp;src)
+         </td>
+        </tr>
+        <tr class="separator:ac3d61cdb452dc46fcdc8a8d42d9c079d inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8b9dffa8a50ff13ba33e6c7f10468e2b inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a8b9dffa8a50ff13ba33e6c7f10468e2b">
+           remove_destroy_notify_callback
+          </a>
+          (void *data) const
+         </td>
+        </tr>
+        <tr class="separator:a8b9dffa8a50ff13ba33e6c7f10468e2b inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a675c5005f86616e3000d2e0052e7ecc4">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a675c5005f86616e3000d2e0052e7ecc4">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a675c5005f86616e3000d2e0052e7ecc4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGdk_1_1Visual.html#a675c5005f86616e3000d2e0052e7ecc4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a675c5005f86616e3000d2e0052e7ecc4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4724a117dabcb795c406fea0172e3d08">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Visual.html">
+           Visual
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a4724a117dabcb795c406fea0172e3d08">
+           get_system
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a4724a117dabcb795c406fea0172e3d08">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the system’s default visual for the default GDK screen.
+          <a href="classGdk_1_1Visual.html#a4724a117dabcb795c406fea0172e3d08">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4724a117dabcb795c406fea0172e3d08">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8d67541c7ac1cca24b20f1e04a654c9e">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Visual.html">
+           Visual
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a8d67541c7ac1cca24b20f1e04a654c9e">
+           get_best
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a8d67541c7ac1cca24b20f1e04a654c9e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the visual with the most available colors for the default GDK screen.
+          <a href="classGdk_1_1Visual.html#a8d67541c7ac1cca24b20f1e04a654c9e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8d67541c7ac1cca24b20f1e04a654c9e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2f44b4029c4b3091f567903f6991e88a">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Visual.html">
+           Visual
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a2f44b4029c4b3091f567903f6991e88a">
+           get_best
+          </a>
+          (int depth)
+         </td>
+        </tr>
+        <tr class="memdesc:a2f44b4029c4b3091f567903f6991e88a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the best visual with depth
+          <em>
+           depth
+          </em>
+          for the default GDK screen.
+          <a href="classGdk_1_1Visual.html#a2f44b4029c4b3091f567903f6991e88a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2f44b4029c4b3091f567903f6991e88a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a23a87ca05f0ff38962c341fad1698239">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Visual.html">
+           Visual
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a23a87ca05f0ff38962c341fad1698239">
+           get_best
+          </a>
+          (
+          <a class="el" href="group__gdkmmEnums.html#gaf51d8a92358be17e8bdcbe2a229d1620">
+           VisualType
+          </a>
+          visual_type)
+         </td>
+        </tr>
+        <tr class="memdesc:a23a87ca05f0ff38962c341fad1698239">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the best visual of the given
+          <em>
+           visual_type
+          </em>
+          for the default GDK screen.
+          <a href="classGdk_1_1Visual.html#a23a87ca05f0ff38962c341fad1698239">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a23a87ca05f0ff38962c341fad1698239">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa58e64d37a98afc31f4a09412b558863">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Visual.html">
+           Visual
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#aa58e64d37a98afc31f4a09412b558863">
+           get_best
+          </a>
+          (int depth,
+          <a class="el" href="group__gdkmmEnums.html#gaf51d8a92358be17e8bdcbe2a229d1620">
+           VisualType
+          </a>
+          visual_type)
+         </td>
+        </tr>
+        <tr class="memdesc:aa58e64d37a98afc31f4a09412b558863">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Combines get_best_with_depth() and get_best_with_type().
+          <a href="classGdk_1_1Visual.html#aa58e64d37a98afc31f4a09412b558863">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa58e64d37a98afc31f4a09412b558863">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4033654c987ba7208b7f1ab8e53c04a2">
+         <td align="right" class="memItemLeft" valign="top">
+          static int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a4033654c987ba7208b7f1ab8e53c04a2">
+           get_best_depth
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a4033654c987ba7208b7f1ab8e53c04a2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the best available depth for the default GDK screen.
+          <a href="classGdk_1_1Visual.html#a4033654c987ba7208b7f1ab8e53c04a2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4033654c987ba7208b7f1ab8e53c04a2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9653abce581c94fca4dca322ffb4e16d">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="el" href="group__gdkmmEnums.html#gaf51d8a92358be17e8bdcbe2a229d1620">
+           VisualType
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a9653abce581c94fca4dca322ffb4e16d">
+           get_best_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a9653abce581c94fca4dca322ffb4e16d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Return the best available visual type for the default GDK screen.
+          <a href="classGdk_1_1Visual.html#a9653abce581c94fca4dca322ffb4e16d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9653abce581c94fca4dca322ffb4e16d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-methods">
+           </a>
+           Protected Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a04412275c902225a6bd103d0a5f3ad2e">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a04412275c902225a6bd103d0a5f3ad2e">
+           Visual
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a04412275c902225a6bd103d0a5f3ad2e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:ad43f7c5ad0336e1eb3af622392a112eb inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ad43f7c5ad0336e1eb3af622392a112eb">
+           Object
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ad43f7c5ad0336e1eb3af622392a112eb inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6d72588496bd7ac03f72420021fb94a5 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a6d72588496bd7ac03f72420021fb94a5">
+           Object
+          </a>
+          (const Glib::ConstructParams &amp;construct_params)
+         </td>
+        </tr>
+        <tr class="separator:a6d72588496bd7ac03f72420021fb94a5 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6f490eeaeb71db673c36799a0f729be5 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a6f490eeaeb71db673c36799a0f729be5">
+           Object
+          </a>
+          (GObject *castitem)
+         </td>
+        </tr>
+        <tr class="separator:a6f490eeaeb71db673c36799a0f729be5 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1a156a738ca71cff3789fd6bafaf8903 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a1a156a738ca71cff3789fd6bafaf8903">
+           ~Object
+          </a>
+          () noexceptoverride
+         </td>
+        </tr>
+        <tr class="separator:a1a156a738ca71cff3789fd6bafaf8903 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1ObjectBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1ObjectBase')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a27d3451d9ca28d6a2f00838d7c56d545 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a27d3451d9ca28d6a2f00838d7c56d545">
+           ObjectBase
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a27d3451d9ca28d6a2f00838d7c56d545 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad4ef18214894c6874579313ab21d1018 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ad4ef18214894c6874579313ab21d1018">
+           ObjectBase
+          </a>
+          (const char *custom_type_name)
+         </td>
+        </tr>
+        <tr class="separator:ad4ef18214894c6874579313ab21d1018 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3d59b4d85b0ee72a727e6b2e1b31a2ff inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3d59b4d85b0ee72a727e6b2e1b31a2ff">
+           ObjectBase
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00947.html">
+           std::type_info
+          </a>
+          &amp;custom_type_info)
+         </td>
+        </tr>
+        <tr class="separator:a3d59b4d85b0ee72a727e6b2e1b31a2ff inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7e2e177061f6a6e09c4cf3da49c6dfd3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a7e2e177061f6a6e09c4cf3da49c6dfd3">
+           ObjectBase
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e2e177061f6a6e09c4cf3da49c6dfd3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2e968f118314ba4d5debfd2850d18003 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a2e968f118314ba4d5debfd2850d18003">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2e968f118314ba4d5debfd2850d18003 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae56ec45e9ebeaacf24be4fb54ed2eea3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ae56ec45e9ebeaacf24be4fb54ed2eea3">
+           ~ObjectBase
+          </a>
+          () noexcept=0
+         </td>
+        </tr>
+        <tr class="separator:ae56ec45e9ebeaacf24be4fb54ed2eea3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3faafb14c4f0ca60fbf0f5f5c4d549d0 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3faafb14c4f0ca60fbf0f5f5c4d549d0">
+           initialize
+          </a>
+          (GObject *castitem)
+         </td>
+        </tr>
+        <tr class="separator:a3faafb14c4f0ca60fbf0f5f5c4d549d0 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a44ddc123cd98ed0083aa06364365c8d3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a44ddc123cd98ed0083aa06364365c8d3">
+           initialize_move
+          </a>
+          (GObject *castitem,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+          *previous_wrapper)
+         </td>
+        </tr>
+        <tr class="separator:a44ddc123cd98ed0083aa06364365c8d3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a151170bd9f613ba53f811871166a6f55">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Visual.html">
+           Gdk::Visual
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Visual.html#a151170bd9f613ba53f811871166a6f55">
+           wrap
+          </a>
+          (GdkVisual* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a151170bd9f613ba53f811871166a6f55">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGdk_1_1Visual.html#a151170bd9f613ba53f811871166a6f55">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a151170bd9f613ba53f811871166a6f55">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="inherited">
+           </a>
+           Additional Inherited Members
+          </h2>
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a969836f7bf4fec78eb50a1d790304d82 inherit pub_types_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef void(*)(gpointer data
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a969836f7bf4fec78eb50a1d790304d82">
+           DestroyNotify
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a969836f7bf4fec78eb50a1d790304d82 inherit pub_types_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_structsigc_1_1trackable">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_structsigc_1_1trackable')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           sigc::trackable
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a3338954d7565534bd945290b798e13ed inherit pub_types_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef internal::func_destroy_notify
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a3338954d7565534bd945290b798e13ed">
+           func_destroy_notify
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a3338954d7565534bd945290b798e13ed inherit pub_types_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        A
+        <a class="el" href="classGdk_1_1Visual.html" title="A Gdk::Visual describes a particular video hardware display format. ">
+         Gdk::Visual
+        </a>
+        describes a particular video hardware display format.
+       </p>
+       <p>
+        It includes information about the number of bits used for each color, the way the bits are translated into an RGB value for display, and the way the bits are stored in memory. For example, a piece of display hardware might support 24-bit color, 16-bit color, or 8-bit color; meaning 24/16/8-bit pixel sizes. For a given pixel size, pixels can be in different formats; for example the "red" element of an RGB pixel may be in the top 8 bits of the pixel, or may be in the lower 4 bits.
+       </p>
+       <p>
+        There are several standard visuals. The visual returned by
+        <a class="el" href="classGdk_1_1Screen.html#afbc7f0ced954e5d7cc4b3b823f09955e" title="Get the system’s default visual for screen. ">
+         Gdk::Screen::get_system_visual()
+        </a>
+        is the system's default visual.
+       </p>
+       <p>
+        A number of methods are provided for determining the "best" available visual. For the purposes of making this determination, higher bit depths are considered better, and for visuals of the same bit depth, GDK_VISUAL_PSEUDO_COLOR is preferred at 8bpp, otherwise, the visual types are ranked in the order of (highest to lowest) GDK_VISUAL_DIRECT_COLOR, GDK_VISUAL_TRUE_COLOR, GDK_VISUAL_PSEUDO_COLOR, GDK_VISUAL_STATIC_COLOR, GDK_VISUAL_GRAYSCALE, then GDK_VISUAL_STATIC_GRAY.
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a806c2f7c666c1679ead8636d36b78385">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::Visual::Visual
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1Visual.html">
+                 Visual
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a0b588cbf031c8a58c3801ce6cf0201f2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::Visual::~Visual
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              override
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a04412275c902225a6bd103d0a5f3ad2e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::Visual::Visual
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a8d67541c7ac1cca24b20f1e04a654c9e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGdk_1_1Visual.html">
+                 Visual
+                </a>
+                &gt; Gdk::Visual::get_best
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the visual with the most available colors for the default GDK screen.
+        </p>
+        <p>
+         The return value should not be freed.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Best visual.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a2f44b4029c4b3091f567903f6991e88a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGdk_1_1Visual.html">
+                 Visual
+                </a>
+                &gt; Gdk::Visual::get_best
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                int
+               </td>
+               <td class="paramname">
+                <em>
+                 depth
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the best visual with depth
+         <em>
+          depth
+         </em>
+         for the default GDK screen.
+        </p>
+        <p>
+         <a class="el" href="classGdk_1_1Color.html" title="Gdk::Color is used to describe an allocated or unallocated color. ">
+          Color
+         </a>
+         visuals and visuals with mutable colormaps are preferred over grayscale or fixed-colormap visuals. The return value should not be freed.
+         <code>
+          nullptr
+         </code>
+         may be returned if no visual supports
+         <em>
+          depth
+         </em>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              depth
+             </td>
+             <td>
+              A bit depth.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Best visual for the given depth.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a23a87ca05f0ff38962c341fad1698239">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGdk_1_1Visual.html">
+                 Visual
+                </a>
+                &gt; Gdk::Visual::get_best
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="group__gdkmmEnums.html#gaf51d8a92358be17e8bdcbe2a229d1620">
+                 VisualType
+                </a>
+               </td>
+               <td class="paramname">
+                <em>
+                 visual_type
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the best visual of the given
+         <em>
+          visual_type
+         </em>
+         for the default GDK screen.
+        </p>
+        <p>
+         Visuals with higher color depths are considered better. The return value should not be freed.
+         <code>
+          nullptr
+         </code>
+         may be returned if no visual has type
+         <em>
+          visual_type
+         </em>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              visual_type
+             </td>
+             <td>
+              A visual type.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Best visual of the given type.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa58e64d37a98afc31f4a09412b558863">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGdk_1_1Visual.html">
+                 Visual
+                </a>
+                &gt; Gdk::Visual::get_best
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                int
+               </td>
+               <td class="paramname">
+                <em>
+                 depth
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                <a class="el" href="group__gdkmmEnums.html#gaf51d8a92358be17e8bdcbe2a229d1620">
+                 VisualType
+                </a>
+               </td>
+               <td class="paramname">
+                <em>
+                 visual_type
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Combines get_best_with_depth() and get_best_with_type().
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              depth
+             </td>
+             <td>
+              A bit depth.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              visual_type
+             </td>
+             <td>
+              A visual type.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Best visual with both
+          <em>
+           depth
+          </em>
+          and
+          <em>
+           visual_type
+          </em>
+          , or
+          <code>
+           nullptr
+          </code>
+          if none.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a4033654c987ba7208b7f1ab8e53c04a2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static int Gdk::Visual::get_best_depth
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the best available depth for the default GDK screen.
+        </p>
+        <p>
+         “Best” means “largest,” i.e. 32 preferred over 24 preferred over 8 bits per pixel.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Best available depth.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9653abce581c94fca4dca322ffb4e16d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="el" href="group__gdkmmEnums.html#gaf51d8a92358be17e8bdcbe2a229d1620">
+                 VisualType
+                </a>
+                Gdk::Visual::get_best_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Return the best available visual type for the default GDK screen.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Best visual type.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a000f87fd3dc00651046fa2c9dbaae05d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gdk::Visual::get_bits_per_rgb
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the number of significant bits per red, green and blue value.
+        </p>
+        <p>
+         Not all GDK backend provide a meaningful value for this function.
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000012">
+            Since gtkmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.22. Use
+         <a class="el" href="classGdk_1_1Visual.html#ac9713165720bebfa769b274dfc1ae272" title="Obtains values that are needed to calculate red pixel values in TrueColor and DirectColor. ">
+          get_red_pixel_details()
+         </a>
+         and its variants to learn about the pixel layout of TrueColor and DirectColor visuals
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of significant bits per color value for
+          <em>
+           visual
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad322b8a271797fd244b43bd25d981f1f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Visual::get_blue_pixel_details
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            guint32 &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             mask
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             shift
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             precision
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Obtains values that are needed to calculate blue pixel values in TrueColor and DirectColor.
+        </p>
+        <p>
+         The “mask” is the significant bits within the pixel. The “shift” is the number of bits left we must shift a primary for it to be in position (according to the "mask"). Finally, "precision" refers to how much precision the pixel value contains for a particular primary.
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000015">
+            Since gtkmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              mask
+             </td>
+             <td>
+              A pointer to a #guint32 to be filled in, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              shift
+             </td>
+             <td>
+              A pointer to a
+              <code>
+               int
+              </code>
+              to be filled in, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              precision
+             </td>
+             <td>
+              A pointer to a
+              <code>
+               int
+              </code>
+              to be filled in, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a3df15d1041143c6f20075e1469034d3a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="namespaceGdk.html#a23c7243f15304c7a86cf6a20118a7c85">
+             ByteOrder
+            </a>
+            Gdk::Visual::get_byte_order
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the byte order of this visual.
+        </p>
+        <p>
+         The information returned by this function is only relevant when working with XImages, and not all backends return meaningful information for this.
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000010">
+            Since gtkmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.22: This information is not useful
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="namespaceGdk.html#a23c7243f15304c7a86cf6a20118a7c85">
+           Gdk::ByteOrder
+          </a>
+          stating the byte order of
+          <em>
+           visual
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1b3bc9654ddb15048c89e08e8dbc2b2e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gdk::Visual::get_colormap_size
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the size of a colormap for this visual.
+        </p>
+        <p>
+         You have to use platform-specific APIs to manipulate colormaps.
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000011">
+            Since gtkmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.22: This information is not useful, since GDK does not provide APIs to operate on colormaps.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The size of a colormap that is suitable for
+          <em>
+           visual
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0093c5b3fbc21bed2ca0b7383eb5ef2c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gdk::Visual::get_depth
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the bit depth of this visual.
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000009">
+            Since gtkmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The bit depth of this visual.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a00950ae087e9e5cb3f720f9ab033b830">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Visual::get_green_pixel_details
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            guint32 &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             mask
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             shift
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             precision
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Obtains values that are needed to calculate green pixel values in TrueColor and DirectColor.
+        </p>
+        <p>
+         The “mask” is the significant bits within the pixel. The “shift” is the number of bits left we must shift a primary for it to be in position (according to the "mask"). Finally, "precision" refers to how much precision the pixel value contains for a particular primary.
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000014">
+            Since gtkmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              mask
+             </td>
+             <td>
+              A pointer to a #guint32 to be filled in, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              shift
+             </td>
+             <td>
+              A pointer to a
+              <code>
+               int
+              </code>
+              to be filled in, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              precision
+             </td>
+             <td>
+              A pointer to a
+              <code>
+               int
+              </code>
+              to be filled in, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac9713165720bebfa769b274dfc1ae272">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Visual::get_red_pixel_details
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            guint32 &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             mask
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             shift
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             precision
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Obtains values that are needed to calculate red pixel values in TrueColor and DirectColor.
+        </p>
+        <p>
+         The “mask” is the significant bits within the pixel. The “shift” is the number of bits left we must shift a primary for it to be in position (according to the "mask"). Finally, "precision" refers to how much precision the pixel value contains for a particular primary.
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000013">
+            Since gtkmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              mask
+             </td>
+             <td>
+              A pointer to a #guint32 to be filled in, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              shift
+             </td>
+             <td>
+              A pointer to a
+              <code>
+               int
+              </code>
+              to be filled in, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              precision
+             </td>
+             <td>
+              A pointer to a
+              <code>
+               int
+              </code>
+              to be filled in, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a7e10f47bbec94749bf683969e52927a5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Screen.html">
+             Screen
+            </a>
+            &gt; Gdk::Visual::get_screen
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the screen to which this visual belongs.
+        </p>
+        <dl class="since_2_2">
+         <dt>
+          <b>
+           <a class="el" href="since_2_2.html#_since_2_2000061">
+            Since gtkmm 2.2:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The screen to which this visual belongs.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a194d4df865f1a72171bae1de27571ca4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGdk_1_1Screen.html">
+             Screen
+            </a>
+            &gt; Gdk::Visual::get_screen
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the screen to which this visual belongs.
+        </p>
+        <dl class="since_2_2">
+         <dt>
+          <b>
+           <a class="el" href="since_2_2.html#_since_2_2000062">
+            Since gtkmm 2.2:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The screen to which this visual belongs.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a4724a117dabcb795c406fea0172e3d08">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGdk_1_1Visual.html">
+                 Visual
+                </a>
+                &gt; Gdk::Visual::get_system
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the system’s default visual for the default GDK screen.
+        </p>
+        <p>
+         This is the visual for the root window of the display. The return value should not be freed.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          System visual.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a675c5005f86616e3000d2e0052e7ecc4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gdk::Visual::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="af615a02cb1a5bf13d748250d3202e552">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="group__gdkmmEnums.html#gaf51d8a92358be17e8bdcbe2a229d1620">
+             VisualType
+            </a>
+            Gdk::Visual::get_visual_type
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the type of visual this is (PseudoColor, TrueColor, etc).
+        </p>
+        <dl class="since_2_22">
+         <dt>
+          <b>
+           <a class="el" href="since_2_22.html#_since_2_22000008">
+            Since gtkmm 2.22:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="group__gdkmmEnums.html#gaf51d8a92358be17e8bdcbe2a229d1620" title="A set of values that describe the manner in which the pixel values for a visual are converted into RG...">
+           Gdk::VisualType
+          </a>
+          stating the type of
+          <em>
+           visual
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a23e5a76ba206f65d763186a9161b1f00">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GdkVisual* Gdk::Visual::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C GObject.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a3452bcc88c3ef7b9d9d1489ac84e3629">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GdkVisual* Gdk::Visual::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C GObject.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aac860c63e6f3740145653aef122bdf11">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GdkVisual* Gdk::Visual::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a5bfeedf96601feba316bcc697b5530e8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGdk_1_1Visual.html">
+                 Visual
+                </a>
+                &amp; Gdk::Visual::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1Visual.html">
+                 Visual
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a151170bd9f613ba53f811871166a6f55">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGdk_1_1Visual.html">
+                 Gdk::Visual
+                </a>
+                &gt; wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GdkVisual *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGdk_1_1Visual.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

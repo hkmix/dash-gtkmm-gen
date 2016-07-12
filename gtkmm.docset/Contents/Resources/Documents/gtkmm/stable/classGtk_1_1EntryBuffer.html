@@ -1,0 +1,4527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gtk::EntryBuffer Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGtk_1_1EntryBuffer.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1EntryBuffer.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1EntryBuffer.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gtk::EntryBuffer Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       A Text buffer for the
+       <a class="el" href="classGtk_1_1Entry.html" title="A single line text entry field. ">
+        Entry
+       </a>
+       widget.
+       <a href="classGtk_1_1EntryBuffer.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;gtkmm/entrybuffer.h&gt;
+       </code>
+      </p>
+      <div class="dynheader">
+       Inheritance diagram for Gtk::EntryBuffer:
+      </div>
+      <div class="dyncontent">
+       <div class="center">
+        <img alt="Inheritance graph" border="0" src="classGtk_1_1EntryBuffer__inherit__graph.png" usemap="#Gtk_1_1EntryBuffer_inherit__map"/>
+       </div>
+       <map id="Gtk_1_1EntryBuffer_inherit__map" name="Gtk_1_1EntryBuffer_inherit__map">
+        <area alt="" coords="21,155,116,181" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html" id="node2" shape="rect" title="Glib::Object">
+        </area>
+        <area alt="" coords="5,80,132,107" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html" id="node3" shape="rect" title="Glib::ObjectBase">
+        </area>
+        <area alt="" coords="11,5,126,32" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html" id="node4" shape="rect" title="sigc::trackable">
+        </area>
+       </map>
+       <center>
+        <span class="legend">
+         [
+         <a href="graph_legend.html">
+          legend
+         </a>
+         ]
+        </span>
+       </center>
+      </div>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:aa89320ff4e293f9af54973d457e01858">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#aa89320ff4e293f9af54973d457e01858">
+           EntryBuffer
+          </a>
+          (
+          <a class="el" href="classGtk_1_1EntryBuffer.html">
+           EntryBuffer
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:aa89320ff4e293f9af54973d457e01858">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac2e78aee448abd067a19f7e217a5a5c8">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1EntryBuffer.html">
+           EntryBuffer
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#ac2e78aee448abd067a19f7e217a5a5c8">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGtk_1_1EntryBuffer.html">
+           EntryBuffer
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ac2e78aee448abd067a19f7e217a5a5c8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad1a7a8e520597fb93680bdee86c22fc4">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#ad1a7a8e520597fb93680bdee86c22fc4">
+           ~EntryBuffer
+          </a>
+          () noexceptoverride
+         </td>
+        </tr>
+        <tr class="separator:ad1a7a8e520597fb93680bdee86c22fc4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad567657dd7d73c3277dbf87647cfe4ef">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkEntryBuffer*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#ad567657dd7d73c3277dbf87647cfe4ef">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ad567657dd7d73c3277dbf87647cfe4ef">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C GObject.
+          <a href="classGtk_1_1EntryBuffer.html#ad567657dd7d73c3277dbf87647cfe4ef">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad567657dd7d73c3277dbf87647cfe4ef">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3abe82b4d53b3610ee47f825221cae8f">
+         <td align="right" class="memItemLeft" valign="top">
+          const GtkEntryBuffer*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a3abe82b4d53b3610ee47f825221cae8f">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a3abe82b4d53b3610ee47f825221cae8f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C GObject.
+          <a href="classGtk_1_1EntryBuffer.html#a3abe82b4d53b3610ee47f825221cae8f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3abe82b4d53b3610ee47f825221cae8f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acb885a342bd3b42577eab89d5e0d2925">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkEntryBuffer*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#acb885a342bd3b42577eab89d5e0d2925">
+           gobj_copy
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:acb885a342bd3b42577eab89d5e0d2925">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+          <a href="classGtk_1_1EntryBuffer.html#acb885a342bd3b42577eab89d5e0d2925">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acb885a342bd3b42577eab89d5e0d2925">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a53cb0c54a2b13314e64036dae7c0f0db">
+         <td align="right" class="memItemLeft" valign="top">
+          gsize
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a53cb0c54a2b13314e64036dae7c0f0db">
+           get_bytes
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a53cb0c54a2b13314e64036dae7c0f0db">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the length in bytes of the buffer.
+          <a href="classGtk_1_1EntryBuffer.html#a53cb0c54a2b13314e64036dae7c0f0db">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a53cb0c54a2b13314e64036dae7c0f0db">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9cebb86114b9cb03d24b86d058486c55">
+         <td align="right" class="memItemLeft" valign="top">
+          guint
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a9cebb86114b9cb03d24b86d058486c55">
+           get_length
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a9cebb86114b9cb03d24b86d058486c55">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the length in characters of the buffer.
+          <a href="classGtk_1_1EntryBuffer.html#a9cebb86114b9cb03d24b86d058486c55">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9cebb86114b9cb03d24b86d058486c55">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afaff2f92189073b335d8fbb0102cd6c0">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#afaff2f92189073b335d8fbb0102cd6c0">
+           get_text
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:afaff2f92189073b335d8fbb0102cd6c0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the contents of the buffer.
+          <a href="classGtk_1_1EntryBuffer.html#afaff2f92189073b335d8fbb0102cd6c0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:afaff2f92189073b335d8fbb0102cd6c0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a289ee88d181f1b81b9cada53d12628ff">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a289ee88d181f1b81b9cada53d12628ff">
+           set_text
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; text)
+         </td>
+        </tr>
+        <tr class="memdesc:a289ee88d181f1b81b9cada53d12628ff">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the text in the buffer.
+          <a href="classGtk_1_1EntryBuffer.html#a289ee88d181f1b81b9cada53d12628ff">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a289ee88d181f1b81b9cada53d12628ff">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a381e1969e3f387ef19cbf10cfae5ca46">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a381e1969e3f387ef19cbf10cfae5ca46">
+           set_max_length
+          </a>
+          (int max_length)
+         </td>
+        </tr>
+        <tr class="memdesc:a381e1969e3f387ef19cbf10cfae5ca46">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the maximum allowed length of the contents of the buffer.
+          <a href="classGtk_1_1EntryBuffer.html#a381e1969e3f387ef19cbf10cfae5ca46">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a381e1969e3f387ef19cbf10cfae5ca46">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac4299229d3f2dc3c1afc02c8e430641e">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#ac4299229d3f2dc3c1afc02c8e430641e">
+           get_max_length
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac4299229d3f2dc3c1afc02c8e430641e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the maximum allowed length of the text in
+          <em>
+           buffer
+          </em>
+          .
+          <a href="classGtk_1_1EntryBuffer.html#ac4299229d3f2dc3c1afc02c8e430641e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac4299229d3f2dc3c1afc02c8e430641e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a01bf8802e1570532eb7c6afc6bbd4851">
+         <td align="right" class="memItemLeft" valign="top">
+          guint
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a01bf8802e1570532eb7c6afc6bbd4851">
+           insert_text
+          </a>
+          (guint position, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; text)
+         </td>
+        </tr>
+        <tr class="memdesc:a01bf8802e1570532eb7c6afc6bbd4851">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Inserts
+          <em>
+           text
+          </em>
+          into the contents of the buffer, at position
+          <em>
+           position
+          </em>
+          .
+          <a href="classGtk_1_1EntryBuffer.html#a01bf8802e1570532eb7c6afc6bbd4851">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a01bf8802e1570532eb7c6afc6bbd4851">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1e735047dd16f4b1c40aa4c952d50258">
+         <td align="right" class="memItemLeft" valign="top">
+          guint
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a1e735047dd16f4b1c40aa4c952d50258">
+           delete_text
+          </a>
+          (guint position, int n_chars)
+         </td>
+        </tr>
+        <tr class="memdesc:a1e735047dd16f4b1c40aa4c952d50258">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Deletes a sequence of characters from the buffer.
+          <a href="classGtk_1_1EntryBuffer.html#a1e735047dd16f4b1c40aa4c952d50258">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1e735047dd16f4b1c40aa4c952d50258">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0866b9a826b9f96f941eaf84945884fa">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a0866b9a826b9f96f941eaf84945884fa">
+           emit_inserted_text
+          </a>
+          (guint position, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; text)
+         </td>
+        </tr>
+        <tr class="memdesc:a0866b9a826b9f96f941eaf84945884fa">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Used when deriving from
+          <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+           EntryBuffer
+          </a>
+          .
+          <a href="classGtk_1_1EntryBuffer.html#a0866b9a826b9f96f941eaf84945884fa">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0866b9a826b9f96f941eaf84945884fa">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a325918e5e859bba2927daa25113c32d3">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a325918e5e859bba2927daa25113c32d3">
+           emit_deleted_text
+          </a>
+          (guint position, guint n_chars)
+         </td>
+        </tr>
+        <tr class="memdesc:a325918e5e859bba2927daa25113c32d3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Used when subclassing
+          <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+           Gtk::EntryBuffer
+          </a>
+          .
+          <a href="classGtk_1_1EntryBuffer.html#a325918e5e859bba2927daa25113c32d3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a325918e5e859bba2927daa25113c32d3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6479ad4dde133ca5bca03d5f36d75d5a">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1SignalProxy.html">
+           Glib::SignalProxy
+          </a>
+          &lt; void, guint, const gchar*, guint &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a6479ad4dde133ca5bca03d5f36d75d5a">
+           signal_inserted_text
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a6479ad4dde133ca5bca03d5f36d75d5a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9307a44b827366fa3a958d0fab2d9caf">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1SignalProxy.html">
+           Glib::SignalProxy
+          </a>
+          &lt; void, guint, guint &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a9307a44b827366fa3a958d0fab2d9caf">
+           signal_deleted_text
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a9307a44b827366fa3a958d0fab2d9caf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a37321a848e983cd7426ffc9f2722ddc5">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy.html">
+           Glib::PropertyProxy
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a37321a848e983cd7426ffc9f2722ddc5">
+           property_text
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a37321a848e983cd7426ffc9f2722ddc5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The contents of the buffer.
+          <a href="classGtk_1_1EntryBuffer.html#a37321a848e983cd7426ffc9f2722ddc5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a37321a848e983cd7426ffc9f2722ddc5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acfe652094ad9ba39e2f1975159053a63">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+           Glib::PropertyProxy_ReadOnly
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#acfe652094ad9ba39e2f1975159053a63">
+           property_text
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:acfe652094ad9ba39e2f1975159053a63">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The contents of the buffer.
+          <a href="classGtk_1_1EntryBuffer.html#acfe652094ad9ba39e2f1975159053a63">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acfe652094ad9ba39e2f1975159053a63">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1b4e43d118c0828cbe70a02e7aead23f">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+           Glib::PropertyProxy_ReadOnly
+          </a>
+          &lt; guint &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a1b4e43d118c0828cbe70a02e7aead23f">
+           property_length
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a1b4e43d118c0828cbe70a02e7aead23f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The length (in characters) of the text in buffer.
+          <a href="classGtk_1_1EntryBuffer.html#a1b4e43d118c0828cbe70a02e7aead23f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1b4e43d118c0828cbe70a02e7aead23f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1207241632564f941d637baaf3c293a3">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy.html">
+           Glib::PropertyProxy
+          </a>
+          &lt; int &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a1207241632564f941d637baaf3c293a3">
+           property_max_length
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a1207241632564f941d637baaf3c293a3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The maximum length (in characters) of the text in the buffer.
+          <a href="classGtk_1_1EntryBuffer.html#a1207241632564f941d637baaf3c293a3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1207241632564f941d637baaf3c293a3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4e70289b0fb0c9e04e551bea7bbb3f9c">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+           Glib::PropertyProxy_ReadOnly
+          </a>
+          &lt; int &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a4e70289b0fb0c9e04e551bea7bbb3f9c">
+           property_max_length
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a4e70289b0fb0c9e04e551bea7bbb3f9c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The maximum length (in characters) of the text in the buffer.
+          <a href="classGtk_1_1EntryBuffer.html#a4e70289b0fb0c9e04e551bea7bbb3f9c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4e70289b0fb0c9e04e551bea7bbb3f9c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a0127f43140e01d6a6731d42f9419be27 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a0127f43140e01d6a6731d42f9419be27">
+           Object
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a0127f43140e01d6a6731d42f9419be27 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7081561a5684709718fdf8c1875c56c0 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a7081561a5684709718fdf8c1875c56c0">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a7081561a5684709718fdf8c1875c56c0 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a473ee068b40d5c949cee2c721d720c9a inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a473ee068b40d5c949cee2c721d720c9a">
+           Object
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a473ee068b40d5c949cee2c721d720c9a inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2855131d475e54294dc34573f12ca9a0 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a2855131d475e54294dc34573f12ca9a0">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2855131d475e54294dc34573f12ca9a0 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0e6581bcbcc6197cca07df24bb91c492 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a0e6581bcbcc6197cca07df24bb91c492">
+           get_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;key)
+         </td>
+        </tr>
+        <tr class="separator:a0e6581bcbcc6197cca07df24bb91c492 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afff7a375a862f3f899daaa99710122fa inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#afff7a375a862f3f899daaa99710122fa">
+           set_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Quark.html">
+           Quark
+          </a>
+          &amp;key, void *data)
+         </td>
+        </tr>
+        <tr class="separator:afff7a375a862f3f899daaa99710122fa inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1febe3bae2dd71756e98e523cd33c1b4 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a1febe3bae2dd71756e98e523cd33c1b4">
+           set_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Quark.html">
+           Quark
+          </a>
+          &amp;key, void *data,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a969836f7bf4fec78eb50a1d790304d82">
+           DestroyNotify
+          </a>
+          notify)
+         </td>
+        </tr>
+        <tr class="separator:a1febe3bae2dd71756e98e523cd33c1b4 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aada5b50844bda7ee02bed0ae2a715c00 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#aada5b50844bda7ee02bed0ae2a715c00">
+           remove_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;quark)
+         </td>
+        </tr>
+        <tr class="separator:aada5b50844bda7ee02bed0ae2a715c00 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab454f71bd74403b0cc46d3cbbedd6b0e inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ab454f71bd74403b0cc46d3cbbedd6b0e">
+           steal_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;quark)
+         </td>
+        </tr>
+        <tr class="separator:ab454f71bd74403b0cc46d3cbbedd6b0e inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae4dea9a8dc611d6e4400a5b6a3cb4e7f inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ae4dea9a8dc611d6e4400a5b6a3cb4e7f">
+           wrap
+          </a>
+          (GObject *object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="separator:ae4dea9a8dc611d6e4400a5b6a3cb4e7f inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1ObjectBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1ObjectBase')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:aaf0e140e7192dcecddd9f57c46825434 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#aaf0e140e7192dcecddd9f57c46825434">
+           ObjectBase
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:aaf0e140e7192dcecddd9f57c46825434 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a15f8834a320eac98dc1c1b8a9a2fd4c1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a15f8834a320eac98dc1c1b8a9a2fd4c1">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a15f8834a320eac98dc1c1b8a9a2fd4c1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aab599d3eec4b4a9ddc95ccdc6100053d inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#aab599d3eec4b4a9ddc95ccdc6100053d">
+           set_property_value
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp;value)
+         </td>
+        </tr>
+        <tr class="separator:aab599d3eec4b4a9ddc95ccdc6100053d inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5e30750441b92f0246c9d4ece95fc8a0 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a5e30750441b92f0246c9d4ece95fc8a0">
+           get_property_value
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp;value) const
+         </td>
+        </tr>
+        <tr class="separator:a5e30750441b92f0246c9d4ece95fc8a0 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad37844f7ea2c0091a22d011e04c48820 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ad37844f7ea2c0091a22d011e04c48820">
+           set_property
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const PropertyType &amp;value)
+         </td>
+        </tr>
+        <tr class="separator:ad37844f7ea2c0091a22d011e04c48820 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5f894c9c36ad391fdc85552af67a8530 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a5f894c9c36ad391fdc85552af67a8530">
+           get_property
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, PropertyType &amp;value) const
+         </td>
+        </tr>
+        <tr class="separator:a5f894c9c36ad391fdc85552af67a8530 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adc6c1e8f094275114d6e2c3ef3a33f98 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#adc6c1e8f094275114d6e2c3ef3a33f98">
+           connect_property_changed
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:adc6c1e8f094275114d6e2c3ef3a33f98 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9fff4abb6ecc939866a6ff5d32808221 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a9fff4abb6ecc939866a6ff5d32808221">
+           connect_property_changed
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;&amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a9fff4abb6ecc939866a6ff5d32808221 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a896d7773c00bd2dcd310c861282ee8d1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a896d7773c00bd2dcd310c861282ee8d1">
+           connect_property_changed_with_return
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a896d7773c00bd2dcd310c861282ee8d1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a00f0e2119fbb42efe42d66b8188a0daf inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a00f0e2119fbb42efe42d66b8188a0daf">
+           connect_property_changed_with_return
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;&amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a00f0e2119fbb42efe42d66b8188a0daf inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6e9e13b75f116c20212d318204ce8ea3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a6e9e13b75f116c20212d318204ce8ea3">
+           freeze_notify
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a6e9e13b75f116c20212d318204ce8ea3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1bd8ea7bd8c4084ade6b3c27dddf06a4 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a1bd8ea7bd8c4084ade6b3c27dddf06a4">
+           thaw_notify
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a1bd8ea7bd8c4084ade6b3c27dddf06a4 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a896a8a5db20043ea82956e3ef4b9c4ae inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a896a8a5db20043ea82956e3ef4b9c4ae">
+           reference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a896a8a5db20043ea82956e3ef4b9c4ae inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3234b8ffb2a35b927e2978c8f3bfbfe3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3234b8ffb2a35b927e2978c8f3bfbfe3">
+           unreference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a3234b8ffb2a35b927e2978c8f3bfbfe3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4c6efc18be8cb9c56e58fc0bd20fafbe inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a4c6efc18be8cb9c56e58fc0bd20fafbe">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a4c6efc18be8cb9c56e58fc0bd20fafbe inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a778a94181132976bbfb0519793f3b32e inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          const GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a778a94181132976bbfb0519793f3b32e">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a778a94181132976bbfb0519793f3b32e inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9b2a5eb93102f1849e5419016e22a15f inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a9b2a5eb93102f1849e5419016e22a15f">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a9b2a5eb93102f1849e5419016e22a15f inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_structsigc_1_1trackable">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_structsigc_1_1trackable')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           sigc::trackable
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a7e1348841e762fb41b41c6f2ce9fa073 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a7e1348841e762fb41b41c6f2ce9fa073">
+           trackable
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e1348841e762fb41b41c6f2ce9fa073 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac8431d9452c9698a012597e6560c72fa inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ac8431d9452c9698a012597e6560c72fa">
+           trackable
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ac8431d9452c9698a012597e6560c72fa inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aba42ed8afb6598106cf68c18a7387f18 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#aba42ed8afb6598106cf68c18a7387f18">
+           trackable
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;&amp;src)
+         </td>
+        </tr>
+        <tr class="separator:aba42ed8afb6598106cf68c18a7387f18 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a75587da09e30031db7a2519843f1f4fb inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a75587da09e30031db7a2519843f1f4fb">
+           ~trackable
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a75587da09e30031db7a2519843f1f4fb inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab14931670837728e49bb5ca88fb16db5 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ab14931670837728e49bb5ca88fb16db5">
+           add_destroy_notify_callback
+          </a>
+          (void *data,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a3338954d7565534bd945290b798e13ed">
+           func_destroy_notify
+          </a>
+          func) const
+         </td>
+        </tr>
+        <tr class="separator:ab14931670837728e49bb5ca88fb16db5 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af2e23cfe7adc1ca844a3350bbac557cb inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#af2e23cfe7adc1ca844a3350bbac557cb">
+           notify_callbacks
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:af2e23cfe7adc1ca844a3350bbac557cb inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7494fbad23a65932ff1457d00d4edaf5 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a7494fbad23a65932ff1457d00d4edaf5">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;src)
+         </td>
+        </tr>
+        <tr class="separator:a7494fbad23a65932ff1457d00d4edaf5 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac3d61cdb452dc46fcdc8a8d42d9c079d inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ac3d61cdb452dc46fcdc8a8d42d9c079d">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;&amp;src)
+         </td>
+        </tr>
+        <tr class="separator:ac3d61cdb452dc46fcdc8a8d42d9c079d inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8b9dffa8a50ff13ba33e6c7f10468e2b inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a8b9dffa8a50ff13ba33e6c7f10468e2b">
+           remove_destroy_notify_callback
+          </a>
+          (void *data) const
+         </td>
+        </tr>
+        <tr class="separator:a8b9dffa8a50ff13ba33e6c7f10468e2b inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:aa63aadf672f0df997d92c254fe08e461">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#aa63aadf672f0df997d92c254fe08e461">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aa63aadf672f0df997d92c254fe08e461">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGtk_1_1EntryBuffer.html#aa63aadf672f0df997d92c254fe08e461">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa63aadf672f0df997d92c254fe08e461">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa8d182fb0881a3a58e71352f63a37710">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1EntryBuffer.html">
+           EntryBuffer
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#aa8d182fb0881a3a58e71352f63a37710">
+           create
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aa8d182fb0881a3a58e71352f63a37710">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Create a new
+          <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+           EntryBuffer
+          </a>
+          object with no text.
+          <a href="classGtk_1_1EntryBuffer.html#aa8d182fb0881a3a58e71352f63a37710">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa8d182fb0881a3a58e71352f63a37710">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a730e9d1751b9275a2de18da9c16d39c1">
+         <td align="right" class="memItemLeft" valign="top">
+          static
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1EntryBuffer.html">
+           EntryBuffer
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a730e9d1751b9275a2de18da9c16d39c1">
+           create
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; text)
+         </td>
+        </tr>
+        <tr class="memdesc:a730e9d1751b9275a2de18da9c16d39c1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Create a new
+          <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+           EntryBuffer
+          </a>
+          object.
+          <a href="classGtk_1_1EntryBuffer.html#a730e9d1751b9275a2de18da9c16d39c1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a730e9d1751b9275a2de18da9c16d39c1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-methods">
+           </a>
+           Protected Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a560c87ddbf7790dde544535edada9d25">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a560c87ddbf7790dde544535edada9d25">
+           EntryBuffer
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a560c87ddbf7790dde544535edada9d25">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Create a new
+          <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+           EntryBuffer
+          </a>
+          object with no text.
+          <a href="classGtk_1_1EntryBuffer.html#a560c87ddbf7790dde544535edada9d25">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a560c87ddbf7790dde544535edada9d25">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0af68812843e71fa92933ee646226a18">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a0af68812843e71fa92933ee646226a18">
+           EntryBuffer
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; text)
+         </td>
+        </tr>
+        <tr class="memdesc:a0af68812843e71fa92933ee646226a18">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Create a new
+          <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+           EntryBuffer
+          </a>
+          object.
+          <a href="classGtk_1_1EntryBuffer.html#a0af68812843e71fa92933ee646226a18">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0af68812843e71fa92933ee646226a18">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9abba6505cf595b5b09c1a931252e2b3">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a9abba6505cf595b5b09c1a931252e2b3">
+           on_inserted_text
+          </a>
+          (guint position, const gchar* chars, guint n_chars)
+         </td>
+        </tr>
+        <tr class="memdesc:a9abba6505cf595b5b09c1a931252e2b3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This is a default handler for the signal
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a6479ad4dde133ca5bca03d5f36d75d5a">
+           signal_inserted_text()
+          </a>
+          .
+          <a href="classGtk_1_1EntryBuffer.html#a9abba6505cf595b5b09c1a931252e2b3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9abba6505cf595b5b09c1a931252e2b3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a422081a55ff1fd9712fdde947bffd163">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a422081a55ff1fd9712fdde947bffd163">
+           on_deleted_text
+          </a>
+          (guint position, guint n_chars)
+         </td>
+        </tr>
+        <tr class="memdesc:a422081a55ff1fd9712fdde947bffd163">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This is a default handler for the signal
+          <a class="el" href="classGtk_1_1EntryBuffer.html#a9307a44b827366fa3a958d0fab2d9caf">
+           signal_deleted_text()
+          </a>
+          .
+          <a href="classGtk_1_1EntryBuffer.html#a422081a55ff1fd9712fdde947bffd163">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a422081a55ff1fd9712fdde947bffd163">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:ad43f7c5ad0336e1eb3af622392a112eb inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ad43f7c5ad0336e1eb3af622392a112eb">
+           Object
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ad43f7c5ad0336e1eb3af622392a112eb inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6d72588496bd7ac03f72420021fb94a5 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a6d72588496bd7ac03f72420021fb94a5">
+           Object
+          </a>
+          (const Glib::ConstructParams &amp;construct_params)
+         </td>
+        </tr>
+        <tr class="separator:a6d72588496bd7ac03f72420021fb94a5 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6f490eeaeb71db673c36799a0f729be5 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a6f490eeaeb71db673c36799a0f729be5">
+           Object
+          </a>
+          (GObject *castitem)
+         </td>
+        </tr>
+        <tr class="separator:a6f490eeaeb71db673c36799a0f729be5 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1a156a738ca71cff3789fd6bafaf8903 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a1a156a738ca71cff3789fd6bafaf8903">
+           ~Object
+          </a>
+          () noexceptoverride
+         </td>
+        </tr>
+        <tr class="separator:a1a156a738ca71cff3789fd6bafaf8903 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1ObjectBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1ObjectBase')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a27d3451d9ca28d6a2f00838d7c56d545 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a27d3451d9ca28d6a2f00838d7c56d545">
+           ObjectBase
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a27d3451d9ca28d6a2f00838d7c56d545 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad4ef18214894c6874579313ab21d1018 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ad4ef18214894c6874579313ab21d1018">
+           ObjectBase
+          </a>
+          (const char *custom_type_name)
+         </td>
+        </tr>
+        <tr class="separator:ad4ef18214894c6874579313ab21d1018 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3d59b4d85b0ee72a727e6b2e1b31a2ff inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3d59b4d85b0ee72a727e6b2e1b31a2ff">
+           ObjectBase
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00947.html">
+           std::type_info
+          </a>
+          &amp;custom_type_info)
+         </td>
+        </tr>
+        <tr class="separator:a3d59b4d85b0ee72a727e6b2e1b31a2ff inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7e2e177061f6a6e09c4cf3da49c6dfd3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a7e2e177061f6a6e09c4cf3da49c6dfd3">
+           ObjectBase
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e2e177061f6a6e09c4cf3da49c6dfd3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2e968f118314ba4d5debfd2850d18003 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a2e968f118314ba4d5debfd2850d18003">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2e968f118314ba4d5debfd2850d18003 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae56ec45e9ebeaacf24be4fb54ed2eea3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ae56ec45e9ebeaacf24be4fb54ed2eea3">
+           ~ObjectBase
+          </a>
+          () noexcept=0
+         </td>
+        </tr>
+        <tr class="separator:ae56ec45e9ebeaacf24be4fb54ed2eea3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3faafb14c4f0ca60fbf0f5f5c4d549d0 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3faafb14c4f0ca60fbf0f5f5c4d549d0">
+           initialize
+          </a>
+          (GObject *castitem)
+         </td>
+        </tr>
+        <tr class="separator:a3faafb14c4f0ca60fbf0f5f5c4d549d0 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a44ddc123cd98ed0083aa06364365c8d3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a44ddc123cd98ed0083aa06364365c8d3">
+           initialize_move
+          </a>
+          (GObject *castitem,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+          *previous_wrapper)
+         </td>
+        </tr>
+        <tr class="separator:a44ddc123cd98ed0083aa06364365c8d3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:aa7f5eb545b57327fecf0681665f19d7c">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1EntryBuffer.html">
+           Gtk::EntryBuffer
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1EntryBuffer.html#aa7f5eb545b57327fecf0681665f19d7c">
+           wrap
+          </a>
+          (GtkEntryBuffer* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:aa7f5eb545b57327fecf0681665f19d7c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGtk_1_1EntryBuffer.html#aa7f5eb545b57327fecf0681665f19d7c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa7f5eb545b57327fecf0681665f19d7c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="inherited">
+           </a>
+           Additional Inherited Members
+          </h2>
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a969836f7bf4fec78eb50a1d790304d82 inherit pub_types_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef void(*)(gpointer data
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a969836f7bf4fec78eb50a1d790304d82">
+           DestroyNotify
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a969836f7bf4fec78eb50a1d790304d82 inherit pub_types_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_structsigc_1_1trackable">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_structsigc_1_1trackable')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           sigc::trackable
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a3338954d7565534bd945290b798e13ed inherit pub_types_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef internal::func_destroy_notify
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a3338954d7565534bd945290b798e13ed">
+           func_destroy_notify
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a3338954d7565534bd945290b798e13ed inherit pub_types_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        A Text buffer for the
+        <a class="el" href="classGtk_1_1Entry.html" title="A single line text entry field. ">
+         Entry
+        </a>
+        widget.
+       </p>
+       <p>
+        The
+        <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+         EntryBuffer
+        </a>
+        class contains the actual text displayed in an
+        <a class="el" href="classGtk_1_1Entry.html" title="A single line text entry field. ">
+         Entry
+        </a>
+        widget.
+       </p>
+       <p>
+        A single
+        <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+         EntryBuffer
+        </a>
+        object can be shared by multiple
+        <a class="el" href="classGtk_1_1Entry.html" title="A single line text entry field. ">
+         Entry
+        </a>
+        widgets which will then share the same text content, but not the cursor position, visibility attributes, icon etc.
+       </p>
+       <p>
+        <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+         EntryBuffer
+        </a>
+        may be derived from. Such a derived class might allow text to be stored in an alternate location, such as non-pageable memory, useful in the case of important passwords. Or a derived class could integrate with an application's concept of undo/redo.
+       </p>
+       <dl class="since_2_20">
+        <dt>
+         <b>
+          <a class="el" href="since_2_20.html#_since_2_20000020">
+           Since gtkmm 2.20:
+          </a>
+         </b>
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="aa89320ff4e293f9af54973d457e01858">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::EntryBuffer::EntryBuffer
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1EntryBuffer.html">
+                 EntryBuffer
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ad1a7a8e520597fb93680bdee86c22fc4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::EntryBuffer::~EntryBuffer
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              override
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a560c87ddbf7790dde544535edada9d25">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::EntryBuffer::EntryBuffer
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Create a new
+         <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+          EntryBuffer
+         </a>
+         object with no text.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a0af68812843e71fa92933ee646226a18">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::EntryBuffer::EntryBuffer
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+                 Glib::ustring
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 text
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Create a new
+         <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+          EntryBuffer
+         </a>
+         object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              text
+             </td>
+             <td>
+              Initial buffer text.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="aa8d182fb0881a3a58e71352f63a37710">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGtk_1_1EntryBuffer.html">
+                 EntryBuffer
+                </a>
+                &gt; Gtk::EntryBuffer::create
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Create a new
+         <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+          EntryBuffer
+         </a>
+         object with no text.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a730e9d1751b9275a2de18da9c16d39c1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGtk_1_1EntryBuffer.html">
+                 EntryBuffer
+                </a>
+                &gt; Gtk::EntryBuffer::create
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+                 Glib::ustring
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 text
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Create a new
+         <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+          EntryBuffer
+         </a>
+         object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              text
+             </td>
+             <td>
+              Initial buffer text.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1e735047dd16f4b1c40aa4c952d50258">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            guint Gtk::EntryBuffer::delete_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            guint
+           </td>
+           <td class="paramname">
+            <em>
+             position
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             n_chars
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Deletes a sequence of characters from the buffer.
+        </p>
+        <p>
+         <em>
+          n_chars
+         </em>
+         characters are deleted starting at
+         <em>
+          position
+         </em>
+         . If
+         <em>
+          n_chars
+         </em>
+         is negative, then all characters until the end of the text are deleted.
+        </p>
+        <p>
+         If
+         <em>
+          position
+         </em>
+         or
+         <em>
+          n_chars
+         </em>
+         are out of bounds, then they are coerced to sane values.
+        </p>
+        <p>
+         Note that the positions are specified in characters, not bytes.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000035">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              position
+             </td>
+             <td>
+              Position at which to delete text.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              n_chars
+             </td>
+             <td>
+              Number of characters to delete.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of characters deleted.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a325918e5e859bba2927daa25113c32d3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::EntryBuffer::emit_deleted_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            guint
+           </td>
+           <td class="paramname">
+            <em>
+             position
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            guint
+           </td>
+           <td class="paramname">
+            <em>
+             n_chars
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Used when subclassing
+         <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+          Gtk::EntryBuffer
+         </a>
+         .
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000036">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              position
+             </td>
+             <td>
+              Position at which text was deleted.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              n_chars
+             </td>
+             <td>
+              Number of characters deleted.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0866b9a826b9f96f941eaf84945884fa">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::EntryBuffer::emit_inserted_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            guint
+           </td>
+           <td class="paramname">
+            <em>
+             position
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             text
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Used when deriving from
+         <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+          EntryBuffer
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              position
+             </td>
+             <td>
+              Position at which text was inserted.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              text
+             </td>
+             <td>
+              Text that was inserted.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a53cb0c54a2b13314e64036dae7c0f0db">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            gsize Gtk::EntryBuffer::get_bytes
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the length in bytes of the buffer.
+        </p>
+        <p>
+         See
+         <a class="el" href="classGtk_1_1EntryBuffer.html#a9cebb86114b9cb03d24b86d058486c55" title="Retrieves the length in characters of the buffer. ">
+          get_length()
+         </a>
+         .
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000030">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The byte length of the buffer.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9cebb86114b9cb03d24b86d058486c55">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            guint Gtk::EntryBuffer::get_length
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the length in characters of the buffer.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000031">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of characters in the buffer.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac4299229d3f2dc3c1afc02c8e430641e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gtk::EntryBuffer::get_max_length
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the maximum allowed length of the text in
+         <em>
+          buffer
+         </em>
+         .
+        </p>
+        <p>
+         See
+         <a class="el" href="classGtk_1_1EntryBuffer.html#a381e1969e3f387ef19cbf10cfae5ca46" title="Sets the maximum allowed length of the contents of the buffer. ">
+          set_max_length()
+         </a>
+         .
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000034">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The maximum allowed number of characters in
+          <a class="el" href="classGtk_1_1EntryBuffer.html" title="A Text buffer for the Entry widget. ">
+           Gtk::EntryBuffer
+          </a>
+          , or 0 if there is no maximum.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="afaff2f92189073b335d8fbb0102cd6c0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::EntryBuffer::get_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the contents of the buffer.
+        </p>
+        <p>
+         The memory pointer returned by this call will not change unless this object emits a signal, or is finalized.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000032">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A pointer to the contents of the widget as a string. This string points to internally allocated storage in the buffer and must not be freed, modified or stored.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa63aadf672f0df997d92c254fe08e461">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gtk::EntryBuffer::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ad567657dd7d73c3277dbf87647cfe4ef">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkEntryBuffer* Gtk::EntryBuffer::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C GObject.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a3abe82b4d53b3610ee47f825221cae8f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GtkEntryBuffer* Gtk::EntryBuffer::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C GObject.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="acb885a342bd3b42577eab89d5e0d2925">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GtkEntryBuffer* Gtk::EntryBuffer::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a01bf8802e1570532eb7c6afc6bbd4851">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            guint Gtk::EntryBuffer::insert_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            guint
+           </td>
+           <td class="paramname">
+            <em>
+             position
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             text
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Inserts
+         <em>
+          text
+         </em>
+         into the contents of the buffer, at position
+         <em>
+          position
+         </em>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              position
+             </td>
+             <td>
+              The position at which to insert text.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              text
+             </td>
+             <td>
+              The text to insert into the buffer.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of characters actually inserted.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a422081a55ff1fd9712fdde947bffd163">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                virtual void Gtk::EntryBuffer::on_deleted_text
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                guint
+               </td>
+               <td class="paramname">
+                <em>
+                 position
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                guint
+               </td>
+               <td class="paramname">
+                <em>
+                 n_chars
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+             <span class="mlabel">
+              virtual
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This is a default handler for the signal
+         <a class="el" href="classGtk_1_1EntryBuffer.html#a9307a44b827366fa3a958d0fab2d9caf">
+          signal_deleted_text()
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a9abba6505cf595b5b09c1a931252e2b3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                virtual void Gtk::EntryBuffer::on_inserted_text
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                guint
+               </td>
+               <td class="paramname">
+                <em>
+                 position
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const gchar *
+               </td>
+               <td class="paramname">
+                <em>
+                 chars
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                guint
+               </td>
+               <td class="paramname">
+                <em>
+                 n_chars
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+             <span class="mlabel">
+              virtual
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This is a default handler for the signal
+         <a class="el" href="classGtk_1_1EntryBuffer.html#a6479ad4dde133ca5bca03d5f36d75d5a">
+          signal_inserted_text()
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ac2e78aee448abd067a19f7e217a5a5c8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1EntryBuffer.html">
+                 EntryBuffer
+                </a>
+                &amp; Gtk::EntryBuffer::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1EntryBuffer.html">
+                 EntryBuffer
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a1b4e43d118c0828cbe70a02e7aead23f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+             Glib::PropertyProxy_ReadOnly
+            </a>
+            &lt; guint &gt; Gtk::EntryBuffer::property_length
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         The length (in characters) of the text in buffer.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000041">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A PropertyProxy_ReadOnly that allows you to get the value of the property, or receive notification when the value of the property changes.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1207241632564f941d637baaf3c293a3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy.html">
+             Glib::PropertyProxy
+            </a>
+            &lt; int &gt; Gtk::EntryBuffer::property_max_length
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         The maximum length (in characters) of the text in the buffer.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000042">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A PropertyProxy that allows you to get or set the value of the property, or receive notification when the value of the property changes.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a4e70289b0fb0c9e04e551bea7bbb3f9c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+             Glib::PropertyProxy_ReadOnly
+            </a>
+            &lt; int &gt; Gtk::EntryBuffer::property_max_length
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         The maximum length (in characters) of the text in the buffer.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000043">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A PropertyProxy_ReadOnly that allows you to get the value of the property, or receive notification when the value of the property changes.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a37321a848e983cd7426ffc9f2722ddc5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy.html">
+             Glib::PropertyProxy
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt; Gtk::EntryBuffer::property_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         The contents of the buffer.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000039">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A PropertyProxy that allows you to get or set the value of the property, or receive notification when the value of the property changes.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="acfe652094ad9ba39e2f1975159053a63">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+             Glib::PropertyProxy_ReadOnly
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt; Gtk::EntryBuffer::property_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         The contents of the buffer.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000040">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A PropertyProxy_ReadOnly that allows you to get the value of the property, or receive notification when the value of the property changes.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a381e1969e3f387ef19cbf10cfae5ca46">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::EntryBuffer::set_max_length
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             max_length
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the maximum allowed length of the contents of the buffer.
+        </p>
+        <p>
+         If the current contents are longer than the given length, then they will be truncated to fit.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000033">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              max_length
+             </td>
+             <td>
+              The maximum length of the entry buffer, or 0 for no maximum. (other than the maximum length of entries.) The value passed in will be clamped to the range 0-65536.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a289ee88d181f1b81b9cada53d12628ff">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::EntryBuffer::set_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             text
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the text in the buffer.
+        </p>
+        <p>
+         This is roughly equivalent to calling
+         <a class="el" href="classGtk_1_1EntryBuffer.html#a1e735047dd16f4b1c40aa4c952d50258" title="Deletes a sequence of characters from the buffer. ">
+          delete_text()
+         </a>
+         and
+         <a class="el" href="classGtk_1_1EntryBuffer.html#a01bf8802e1570532eb7c6afc6bbd4851" title="Inserts text into the contents of the buffer, at position position. ">
+          insert_text()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              text
+             </td>
+             <td>
+              The text to set in the buffer.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9307a44b827366fa3a958d0fab2d9caf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1SignalProxy.html">
+             Glib::SignalProxy
+            </a>
+            &lt; void,guint,guint &gt; Gtk::EntryBuffer::signal_deleted_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="section user">
+         <dt>
+          Slot Prototype:
+         </dt>
+         <dd>
+          <code>
+           void on_my_deleted_text(guint position, guint n_chars)
+          </code>
+         </dd>
+        </dl>
+        <p>
+         This signal is emitted after text is deleted from the buffer.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000038">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              position
+             </td>
+             <td>
+              The position the text was deleted at.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              n_chars
+             </td>
+             <td>
+              The number of characters that were deleted.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6479ad4dde133ca5bca03d5f36d75d5a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1SignalProxy.html">
+             Glib::SignalProxy
+            </a>
+            &lt; void,guint,const gchar*,guint &gt; Gtk::EntryBuffer::signal_inserted_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="section user">
+         <dt>
+          Slot Prototype:
+         </dt>
+         <dd>
+          <code>
+           void on_my_inserted_text(guint position, const gchar* chars, guint n_chars)
+          </code>
+         </dd>
+        </dl>
+        <p>
+         This signal is emitted after text is inserted into the buffer.
+        </p>
+        <dl class="since_2_18">
+         <dt>
+          <b>
+           <a class="el" href="since_2_18.html#_since_2_18000037">
+            Since gtkmm 2.18:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              position
+             </td>
+             <td>
+              The position the text was inserted at.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              chars
+             </td>
+             <td>
+              The text that was inserted.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              n_chars
+             </td>
+             <td>
+              The number of characters that were inserted.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="aa7f5eb545b57327fecf0681665f19d7c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGtk_1_1EntryBuffer.html">
+                 Gtk::EntryBuffer
+                </a>
+                &gt; wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkEntryBuffer *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGtk_1_1EntryBuffer.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

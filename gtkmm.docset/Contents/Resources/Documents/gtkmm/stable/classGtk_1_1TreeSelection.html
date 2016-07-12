@@ -1,0 +1,5394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gtk::TreeSelection Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGtk_1_1TreeSelection.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1TreeSelection.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1TreeSelection.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gtk::TreeSelection Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       Typedefed as
+       <a class="el" href="classGtk_1_1TreeView.html#ac8c004cc10cc48e6e4ce8ccfe0e49279" title="A selection object for Gtk::TreeView. ">
+        Gtk::TreeView::Selection
+       </a>
+       .
+       <a href="classGtk_1_1TreeSelection.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;gtkmm/treeselection.h&gt;
+       </code>
+      </p>
+      <div class="dynheader">
+       Inheritance diagram for Gtk::TreeSelection:
+      </div>
+      <div class="dyncontent">
+       <div class="center">
+        <img alt="Inheritance graph" border="0" src="classGtk_1_1TreeSelection__inherit__graph.png" usemap="#Gtk_1_1TreeSelection_inherit__map"/>
+       </div>
+       <map id="Gtk_1_1TreeSelection_inherit__map" name="Gtk_1_1TreeSelection_inherit__map">
+        <area alt="" coords="27,155,121,181" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html" id="node2" shape="rect" title="Glib::Object">
+        </area>
+        <area alt="" coords="11,80,137,107" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html" id="node3" shape="rect" title="Glib::ObjectBase">
+        </area>
+        <area alt="" coords="17,5,131,32" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html" id="node4" shape="rect" title="sigc::trackable">
+        </area>
+       </map>
+       <center>
+        <span class="legend">
+         [
+         <a href="graph_legend.html">
+          legend
+         </a>
+         ]
+        </span>
+       </center>
+      </div>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a2262e022dc13c1918af1127f42a158b1">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; bool, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1TreeModel.html">
+           TreeModel
+          </a>
+          &gt;&amp;, const
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &amp;, bool &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a2262e022dc13c1918af1127f42a158b1">
+           SlotSelect
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:a2262e022dc13c1918af1127f42a158b1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          For instance, bool on_select_function(const Glib::RefPtr&lt;TreeModel&gt;&amp; model, const TreeModel::Path&amp; path, bool path_currently_selected) The select function should return true if the state of the node may be toggled, and false if the state of the node should be left unchanged.
+          <a href="classGtk_1_1TreeSelection.html#a2262e022dc13c1918af1127f42a158b1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2262e022dc13c1918af1127f42a158b1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0157e2ca1c2fa319a93913c782a7b640">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void, const
+          <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+           TreeModel::iterator
+          </a>
+          &amp; &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a0157e2ca1c2fa319a93913c782a7b640">
+           SlotForeachIter
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:a0157e2ca1c2fa319a93913c782a7b640">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          For example, void on_foreach(const Gtk::TreeModel::iterator&amp; iter);.
+          <a href="classGtk_1_1TreeSelection.html#a0157e2ca1c2fa319a93913c782a7b640">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0157e2ca1c2fa319a93913c782a7b640">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aab1d3454d5216f1574cb53bf54205f74">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void, const
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &amp; &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#aab1d3454d5216f1574cb53bf54205f74">
+           SlotForeachPath
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:aab1d3454d5216f1574cb53bf54205f74">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          For example, void on_foreach(const Gtk::TreeModel::Path&amp; path);.
+          <a href="classGtk_1_1TreeSelection.html#aab1d3454d5216f1574cb53bf54205f74">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aab1d3454d5216f1574cb53bf54205f74">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a31c44b43f5acd501a0a411c04bdf4706">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void, const
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &amp;, const
+          <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+           TreeModel::iterator
+          </a>
+          &amp; &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a31c44b43f5acd501a0a411c04bdf4706">
+           SlotForeachPathAndIter
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:a31c44b43f5acd501a0a411c04bdf4706">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          For example, void on_foreach(const Gtk::TreeModel::Path&amp; path, const Gtk::TreeModel::iterator&amp; iter);.
+          <a href="classGtk_1_1TreeSelection.html#a31c44b43f5acd501a0a411c04bdf4706">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a31c44b43f5acd501a0a411c04bdf4706">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a969836f7bf4fec78eb50a1d790304d82 inherit pub_types_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef void(*)(gpointer data
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a969836f7bf4fec78eb50a1d790304d82">
+           DestroyNotify
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="separator:a969836f7bf4fec78eb50a1d790304d82 inherit pub_types_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_types_structsigc_1_1trackable">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_types_structsigc_1_1trackable')">
+          <img alt="-" src="closed.png"/>
+          Public Types inherited from
+          <a class="el" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           sigc::trackable
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a3338954d7565534bd945290b798e13ed inherit pub_types_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef internal::func_destroy_notify
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a3338954d7565534bd945290b798e13ed">
+           func_destroy_notify
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a3338954d7565534bd945290b798e13ed inherit pub_types_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a77d721c278e2c42ad21f224053a4c101">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a77d721c278e2c42ad21f224053a4c101">
+           TreeSelection
+          </a>
+          (
+          <a class="el" href="classGtk_1_1TreeSelection.html">
+           TreeSelection
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a77d721c278e2c42ad21f224053a4c101">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5162b56bfdbd88a165ffaacf93667cc8">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1TreeSelection.html">
+           TreeSelection
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a5162b56bfdbd88a165ffaacf93667cc8">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGtk_1_1TreeSelection.html">
+           TreeSelection
+          </a>
+          &amp;&amp; src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a5162b56bfdbd88a165ffaacf93667cc8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2f41dbc904ca91f46459663999aa4c7f">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a2f41dbc904ca91f46459663999aa4c7f">
+           ~TreeSelection
+          </a>
+          () noexceptoverride
+         </td>
+        </tr>
+        <tr class="separator:a2f41dbc904ca91f46459663999aa4c7f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa272d22e2a8cf68ef941bb898e6ae7a5">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkTreeSelection*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#aa272d22e2a8cf68ef941bb898e6ae7a5">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aa272d22e2a8cf68ef941bb898e6ae7a5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C GObject.
+          <a href="classGtk_1_1TreeSelection.html#aa272d22e2a8cf68ef941bb898e6ae7a5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa272d22e2a8cf68ef941bb898e6ae7a5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afbfe1d2a5920a31ad730124c0ed2ffbe">
+         <td align="right" class="memItemLeft" valign="top">
+          const GtkTreeSelection*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#afbfe1d2a5920a31ad730124c0ed2ffbe">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:afbfe1d2a5920a31ad730124c0ed2ffbe">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C GObject.
+          <a href="classGtk_1_1TreeSelection.html#afbfe1d2a5920a31ad730124c0ed2ffbe">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:afbfe1d2a5920a31ad730124c0ed2ffbe">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa691fc7df426d2f19612cc82c512596d">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkTreeSelection*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#aa691fc7df426d2f19612cc82c512596d">
+           gobj_copy
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aa691fc7df426d2f19612cc82c512596d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+          <a href="classGtk_1_1TreeSelection.html#aa691fc7df426d2f19612cc82c512596d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa691fc7df426d2f19612cc82c512596d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8c77e2bc04394554fe272c90aec1b064">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a8c77e2bc04394554fe272c90aec1b064">
+           set_mode
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#ga3e58167cfed0be4c87474c3bdca80d78">
+           SelectionMode
+          </a>
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib_1_1Unicode.html#a042d1c3fdb1a22daf647211210af80c3">
+           type
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:a8c77e2bc04394554fe272c90aec1b064">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the selection mode of the
+          <em>
+           selection
+          </em>
+          .
+          <a href="classGtk_1_1TreeSelection.html#a8c77e2bc04394554fe272c90aec1b064">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8c77e2bc04394554fe272c90aec1b064">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab83925a34c53e387e2813f2dc6a08587">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="group__gtkmmEnums.html#ga3e58167cfed0be4c87474c3bdca80d78">
+           SelectionMode
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#ab83925a34c53e387e2813f2dc6a08587">
+           get_mode
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ab83925a34c53e387e2813f2dc6a08587">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the selection mode for
+          <em>
+           selection
+          </em>
+          .
+          <a href="classGtk_1_1TreeSelection.html#ab83925a34c53e387e2813f2dc6a08587">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab83925a34c53e387e2813f2dc6a08587">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7c408b8e2b45b4a65a2a9ad66d9602cf">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a7c408b8e2b45b4a65a2a9ad66d9602cf">
+           set_select_function
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeSelection.html#a2262e022dc13c1918af1127f42a158b1">
+           SlotSelect
+          </a>
+          &amp; slot)
+         </td>
+        </tr>
+        <tr class="memdesc:a7c408b8e2b45b4a65a2a9ad66d9602cf">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the selection callback slot.
+          <a href="classGtk_1_1TreeSelection.html#a7c408b8e2b45b4a65a2a9ad66d9602cf">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7c408b8e2b45b4a65a2a9ad66d9602cf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5564087ad3cb1979d546d905e9364294">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1TreeView.html">
+           TreeView
+          </a>
+          *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a5564087ad3cb1979d546d905e9364294">
+           get_tree_view
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a5564087ad3cb1979d546d905e9364294">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the tree view associated with
+          <em>
+           selection
+          </em>
+          .
+          <a href="classGtk_1_1TreeSelection.html#a5564087ad3cb1979d546d905e9364294">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5564087ad3cb1979d546d905e9364294">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0eb46be8a024f92607b1f12b581e16c2">
+         <td align="right" class="memItemLeft" valign="top">
+          const
+          <a class="el" href="classGtk_1_1TreeView.html">
+           TreeView
+          </a>
+          *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a0eb46be8a024f92607b1f12b581e16c2">
+           get_tree_view
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a0eb46be8a024f92607b1f12b581e16c2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the tree view associated with
+          <em>
+           selection
+          </em>
+          .
+          <a href="classGtk_1_1TreeSelection.html#a0eb46be8a024f92607b1f12b581e16c2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0eb46be8a024f92607b1f12b581e16c2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae6e6474b69278a024ce2f50cc81f3bac">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1TreeModel.html">
+           TreeModel
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#ae6e6474b69278a024ce2f50cc81f3bac">
+           get_model
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:ae6e6474b69278a024ce2f50cc81f3bac">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Shortcut for
+          <a class="el" href="classGtk_1_1TreeSelection.html#a5564087ad3cb1979d546d905e9364294" title="Returns the tree view associated with selection. ">
+           get_tree_view()
+          </a>
+          -&gt;
+          <a class="el" href="classGtk_1_1TreeSelection.html#ae6e6474b69278a024ce2f50cc81f3bac" title="Shortcut for get_tree_view()-&gt;get_model(). ">
+           get_model()
+          </a>
+          .
+          <a href="classGtk_1_1TreeSelection.html#ae6e6474b69278a024ce2f50cc81f3bac">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae6e6474b69278a024ce2f50cc81f3bac">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a32d988aaf33b721a41f264255f8f2ee3">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGtk_1_1TreeModel.html">
+           TreeModel
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a32d988aaf33b721a41f264255f8f2ee3">
+           get_model
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a32d988aaf33b721a41f264255f8f2ee3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af949a1a078bc5c2272e25e0c2987a81f">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+           TreeModel::iterator
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#af949a1a078bc5c2272e25e0c2987a81f">
+           get_selected
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:af949a1a078bc5c2272e25e0c2987a81f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the currently selected row.
+          <a href="classGtk_1_1TreeSelection.html#af949a1a078bc5c2272e25e0c2987a81f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af949a1a078bc5c2272e25e0c2987a81f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6c38032e5eb2a7b4a089fb74552c7910">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+           TreeModel::iterator
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a6c38032e5eb2a7b4a089fb74552c7910">
+           get_selected
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1TreeModel.html">
+           TreeModel
+          </a>
+          &gt;&amp; model)
+         </td>
+        </tr>
+        <tr class="memdesc:a6c38032e5eb2a7b4a089fb74552c7910">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the currently selected row.
+          <a href="classGtk_1_1TreeSelection.html#a6c38032e5eb2a7b4a089fb74552c7910">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a6c38032e5eb2a7b4a089fb74552c7910">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a601c30abb10d1a8f21b1688b594b5682">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a601c30abb10d1a8f21b1688b594b5682">
+           get_selected_rows
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a601c30abb10d1a8f21b1688b594b5682">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Creates a list of paths of all selected rows.
+          <a href="classGtk_1_1TreeSelection.html#a601c30abb10d1a8f21b1688b594b5682">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a601c30abb10d1a8f21b1688b594b5682">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a45adf98479215cd6965996b4986fce85">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a45adf98479215cd6965996b4986fce85">
+           get_selected_rows
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1TreeModel.html">
+           TreeModel
+          </a>
+          &gt;&amp; model)
+         </td>
+        </tr>
+        <tr class="memdesc:a45adf98479215cd6965996b4986fce85">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Creates a list of paths of all selected rows.
+          <a href="classGtk_1_1TreeSelection.html#a45adf98479215cd6965996b4986fce85">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a45adf98479215cd6965996b4986fce85">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abd81154bc8b483b8110bf67bf25a0022">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#abd81154bc8b483b8110bf67bf25a0022">
+           count_selected_rows
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:abd81154bc8b483b8110bf67bf25a0022">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the number of rows that have been selected in
+          <em>
+           tree
+          </em>
+          .
+          <a href="classGtk_1_1TreeSelection.html#abd81154bc8b483b8110bf67bf25a0022">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abd81154bc8b483b8110bf67bf25a0022">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a632c93a952e9597059647af3f7fd7f26">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a632c93a952e9597059647af3f7fd7f26">
+           selected_foreach_iter
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeSelection.html#a0157e2ca1c2fa319a93913c782a7b640">
+           SlotForeachIter
+          </a>
+          &amp; slot) const
+         </td>
+        </tr>
+        <tr class="memdesc:a632c93a952e9597059647af3f7fd7f26">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Calls a callback slot for each selected node.
+          <a href="classGtk_1_1TreeSelection.html#a632c93a952e9597059647af3f7fd7f26">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a632c93a952e9597059647af3f7fd7f26">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad2b0b0926ada175f4d363ecba50810f0">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#ad2b0b0926ada175f4d363ecba50810f0">
+           selected_foreach_path
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeSelection.html#aab1d3454d5216f1574cb53bf54205f74">
+           SlotForeachPath
+          </a>
+          &amp; slot) const
+         </td>
+        </tr>
+        <tr class="memdesc:ad2b0b0926ada175f4d363ecba50810f0">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Calls a callback slot for each selected node.
+          <a href="classGtk_1_1TreeSelection.html#ad2b0b0926ada175f4d363ecba50810f0">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad2b0b0926ada175f4d363ecba50810f0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae954b4f6786bbc3c06daaf4ac348bfc8">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#ae954b4f6786bbc3c06daaf4ac348bfc8">
+           selected_foreach
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeSelection.html#a31c44b43f5acd501a0a411c04bdf4706">
+           SlotForeachPathAndIter
+          </a>
+          &amp; slot) const
+         </td>
+        </tr>
+        <tr class="memdesc:ae954b4f6786bbc3c06daaf4ac348bfc8">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Calls a callback slot for each selected node.
+          <a href="classGtk_1_1TreeSelection.html#ae954b4f6786bbc3c06daaf4ac348bfc8">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae954b4f6786bbc3c06daaf4ac348bfc8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abe2e36ac9f950b47e6290ce84af939ae">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#abe2e36ac9f950b47e6290ce84af939ae">
+           select
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &amp; path)
+         </td>
+        </tr>
+        <tr class="memdesc:abe2e36ac9f950b47e6290ce84af939ae">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Select the row at
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1TreeSelection.html#abe2e36ac9f950b47e6290ce84af939ae">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abe2e36ac9f950b47e6290ce84af939ae">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a70c91065737a3ff94fee94e1ed7b83ae">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a70c91065737a3ff94fee94e1ed7b83ae">
+           select
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+           TreeModel::iterator
+          </a>
+          &amp; iter)
+         </td>
+        </tr>
+        <tr class="memdesc:a70c91065737a3ff94fee94e1ed7b83ae">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Selects the specified iterator.
+          <a href="classGtk_1_1TreeSelection.html#a70c91065737a3ff94fee94e1ed7b83ae">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a70c91065737a3ff94fee94e1ed7b83ae">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0e5b782c5a0af7ae4f257d5af932038f">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a0e5b782c5a0af7ae4f257d5af932038f">
+           select
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeModel.html#a297c9db68905e82fe7c3fac57f6c4de8">
+           TreeModel::Row
+          </a>
+          &amp; row)
+         </td>
+        </tr>
+        <tr class="memdesc:a0e5b782c5a0af7ae4f257d5af932038f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Selects the specified iterator.
+          <a href="classGtk_1_1TreeSelection.html#a0e5b782c5a0af7ae4f257d5af932038f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0e5b782c5a0af7ae4f257d5af932038f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a22b9264d8c0b06d3678dd022a6994a61">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a22b9264d8c0b06d3678dd022a6994a61">
+           select
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &amp; start_path, const
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &amp; end_path)
+         </td>
+        </tr>
+        <tr class="memdesc:a22b9264d8c0b06d3678dd022a6994a61">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Selects a range of nodes, determined by
+          <em>
+           start_path
+          </em>
+          and
+          <em>
+           end_path
+          </em>
+          inclusive.
+          <a href="classGtk_1_1TreeSelection.html#a22b9264d8c0b06d3678dd022a6994a61">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a22b9264d8c0b06d3678dd022a6994a61">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a77e91cb1efd4cfcc05832aa97bc92a4c">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a77e91cb1efd4cfcc05832aa97bc92a4c">
+           unselect
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &amp; path)
+         </td>
+        </tr>
+        <tr class="memdesc:a77e91cb1efd4cfcc05832aa97bc92a4c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Unselects the row at
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1TreeSelection.html#a77e91cb1efd4cfcc05832aa97bc92a4c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a77e91cb1efd4cfcc05832aa97bc92a4c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5ef57ea9bc6f15126ba43f8da4199b46">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a5ef57ea9bc6f15126ba43f8da4199b46">
+           unselect
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &amp; start_path, const
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &amp; end_path)
+         </td>
+        </tr>
+        <tr class="memdesc:a5ef57ea9bc6f15126ba43f8da4199b46">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Unselects a range of nodes, determined by
+          <em>
+           start_path
+          </em>
+          and
+          <em>
+           end_path
+          </em>
+          inclusive.
+          <a href="classGtk_1_1TreeSelection.html#a5ef57ea9bc6f15126ba43f8da4199b46">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5ef57ea9bc6f15126ba43f8da4199b46">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5aa28ea9eea8f0b8a02a28a4d4472a08">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a5aa28ea9eea8f0b8a02a28a4d4472a08">
+           unselect
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+           TreeModel::iterator
+          </a>
+          &amp; iter)
+         </td>
+        </tr>
+        <tr class="memdesc:a5aa28ea9eea8f0b8a02a28a4d4472a08">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Unselects the specified iterator.
+          <a href="classGtk_1_1TreeSelection.html#a5aa28ea9eea8f0b8a02a28a4d4472a08">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5aa28ea9eea8f0b8a02a28a4d4472a08">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab5241ae9e120dcd3c680cec28d0f34f6">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#ab5241ae9e120dcd3c680cec28d0f34f6">
+           is_selected
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+           TreeModel::Path
+          </a>
+          &amp; path) const
+         </td>
+        </tr>
+        <tr class="memdesc:ab5241ae9e120dcd3c680cec28d0f34f6">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns
+          <code>
+           true
+          </code>
+          if the row pointed to by
+          <em>
+           path
+          </em>
+          is currently selected.
+          <a href="classGtk_1_1TreeSelection.html#ab5241ae9e120dcd3c680cec28d0f34f6">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab5241ae9e120dcd3c680cec28d0f34f6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a48d8c7d8dfab291eefc72dbc207ddbc3">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a48d8c7d8dfab291eefc72dbc207ddbc3">
+           is_selected
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+           TreeModel::iterator
+          </a>
+          &amp; iter) const
+         </td>
+        </tr>
+        <tr class="memdesc:a48d8c7d8dfab291eefc72dbc207ddbc3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns
+          <code>
+           true
+          </code>
+          if the row at
+          <em>
+           iter
+          </em>
+          is currently selected.
+          <a href="classGtk_1_1TreeSelection.html#a48d8c7d8dfab291eefc72dbc207ddbc3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a48d8c7d8dfab291eefc72dbc207ddbc3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2cb8620473e74aec20511c3f655e3e1a">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a2cb8620473e74aec20511c3f655e3e1a">
+           select_all
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a2cb8620473e74aec20511c3f655e3e1a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Selects all the nodes.
+          <a href="classGtk_1_1TreeSelection.html#a2cb8620473e74aec20511c3f655e3e1a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2cb8620473e74aec20511c3f655e3e1a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aeac5766a4626733996641ed2583a09e5">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#aeac5766a4626733996641ed2583a09e5">
+           unselect_all
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aeac5766a4626733996641ed2583a09e5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Unselects all the nodes.
+          <a href="classGtk_1_1TreeSelection.html#aeac5766a4626733996641ed2583a09e5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aeac5766a4626733996641ed2583a09e5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afb0431905473fbf7252e422108877270">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy.html">
+           Glib::PropertyProxy
+          </a>
+          &lt;
+          <a class="el" href="group__gtkmmEnums.html#ga3e58167cfed0be4c87474c3bdca80d78">
+           SelectionMode
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#afb0431905473fbf7252e422108877270">
+           property_mode
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:afb0431905473fbf7252e422108877270">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Selection mode.
+          <a href="classGtk_1_1TreeSelection.html#afb0431905473fbf7252e422108877270">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:afb0431905473fbf7252e422108877270">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af47dfd7a917c3ccde7e951e7a2155f7b">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+           Glib::PropertyProxy_ReadOnly
+          </a>
+          &lt;
+          <a class="el" href="group__gtkmmEnums.html#ga3e58167cfed0be4c87474c3bdca80d78">
+           SelectionMode
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#af47dfd7a917c3ccde7e951e7a2155f7b">
+           property_mode
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:af47dfd7a917c3ccde7e951e7a2155f7b">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Selection mode.
+          <a href="classGtk_1_1TreeSelection.html#af47dfd7a917c3ccde7e951e7a2155f7b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af47dfd7a917c3ccde7e951e7a2155f7b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a55b5e2644f006dd3b37cf737e65150c0">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1SignalProxy.html">
+           Glib::SignalProxy
+          </a>
+          &lt; void &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a55b5e2644f006dd3b37cf737e65150c0">
+           signal_changed
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a55b5e2644f006dd3b37cf737e65150c0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a0127f43140e01d6a6731d42f9419be27 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a0127f43140e01d6a6731d42f9419be27">
+           Object
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a0127f43140e01d6a6731d42f9419be27 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7081561a5684709718fdf8c1875c56c0 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a7081561a5684709718fdf8c1875c56c0">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a7081561a5684709718fdf8c1875c56c0 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a473ee068b40d5c949cee2c721d720c9a inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a473ee068b40d5c949cee2c721d720c9a">
+           Object
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a473ee068b40d5c949cee2c721d720c9a inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2855131d475e54294dc34573f12ca9a0 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a2855131d475e54294dc34573f12ca9a0">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Object
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2855131d475e54294dc34573f12ca9a0 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0e6581bcbcc6197cca07df24bb91c492 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a0e6581bcbcc6197cca07df24bb91c492">
+           get_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;key)
+         </td>
+        </tr>
+        <tr class="separator:a0e6581bcbcc6197cca07df24bb91c492 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afff7a375a862f3f899daaa99710122fa inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#afff7a375a862f3f899daaa99710122fa">
+           set_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Quark.html">
+           Quark
+          </a>
+          &amp;key, void *data)
+         </td>
+        </tr>
+        <tr class="separator:afff7a375a862f3f899daaa99710122fa inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1febe3bae2dd71756e98e523cd33c1b4 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a1febe3bae2dd71756e98e523cd33c1b4">
+           set_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Quark.html">
+           Quark
+          </a>
+          &amp;key, void *data,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a969836f7bf4fec78eb50a1d790304d82">
+           DestroyNotify
+          </a>
+          notify)
+         </td>
+        </tr>
+        <tr class="separator:a1febe3bae2dd71756e98e523cd33c1b4 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aada5b50844bda7ee02bed0ae2a715c00 inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#aada5b50844bda7ee02bed0ae2a715c00">
+           remove_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;quark)
+         </td>
+        </tr>
+        <tr class="separator:aada5b50844bda7ee02bed0ae2a715c00 inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab454f71bd74403b0cc46d3cbbedd6b0e inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          void *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ab454f71bd74403b0cc46d3cbbedd6b0e">
+           steal_data
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1QueryQuark.html">
+           QueryQuark
+          </a>
+          &amp;quark)
+         </td>
+        </tr>
+        <tr class="separator:ab454f71bd74403b0cc46d3cbbedd6b0e inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae4dea9a8dc611d6e4400a5b6a3cb4e7f inherit pub_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ae4dea9a8dc611d6e4400a5b6a3cb4e7f">
+           wrap
+          </a>
+          (GObject *object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="separator:ae4dea9a8dc611d6e4400a5b6a3cb4e7f inherit pub_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGlib_1_1ObjectBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGlib_1_1ObjectBase')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:aaf0e140e7192dcecddd9f57c46825434 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#aaf0e140e7192dcecddd9f57c46825434">
+           ObjectBase
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:aaf0e140e7192dcecddd9f57c46825434 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a15f8834a320eac98dc1c1b8a9a2fd4c1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a15f8834a320eac98dc1c1b8a9a2fd4c1">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;)=delete
+         </td>
+        </tr>
+        <tr class="separator:a15f8834a320eac98dc1c1b8a9a2fd4c1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aab599d3eec4b4a9ddc95ccdc6100053d inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#aab599d3eec4b4a9ddc95ccdc6100053d">
+           set_property_value
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp;value)
+         </td>
+        </tr>
+        <tr class="separator:aab599d3eec4b4a9ddc95ccdc6100053d inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5e30750441b92f0246c9d4ece95fc8a0 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a5e30750441b92f0246c9d4ece95fc8a0">
+           get_property_value
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ValueBase.html">
+           Glib::ValueBase
+          </a>
+          &amp;value) const
+         </td>
+        </tr>
+        <tr class="separator:a5e30750441b92f0246c9d4ece95fc8a0 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad37844f7ea2c0091a22d011e04c48820 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ad37844f7ea2c0091a22d011e04c48820">
+           set_property
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const PropertyType &amp;value)
+         </td>
+        </tr>
+        <tr class="separator:ad37844f7ea2c0091a22d011e04c48820 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5f894c9c36ad391fdc85552af67a8530 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a5f894c9c36ad391fdc85552af67a8530">
+           get_property
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, PropertyType &amp;value) const
+         </td>
+        </tr>
+        <tr class="separator:a5f894c9c36ad391fdc85552af67a8530 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adc6c1e8f094275114d6e2c3ef3a33f98 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#adc6c1e8f094275114d6e2c3ef3a33f98">
+           connect_property_changed
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:adc6c1e8f094275114d6e2c3ef3a33f98 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9fff4abb6ecc939866a6ff5d32808221 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a9fff4abb6ecc939866a6ff5d32808221">
+           connect_property_changed
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;&amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a9fff4abb6ecc939866a6ff5d32808221 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a896d7773c00bd2dcd310c861282ee8d1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a896d7773c00bd2dcd310c861282ee8d1">
+           connect_property_changed_with_return
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name, const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a896d7773c00bd2dcd310c861282ee8d1 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a00f0e2119fbb42efe42d66b8188a0daf inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1connection.html">
+           sigc::connection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a00f0e2119fbb42efe42d66b8188a0daf">
+           connect_property_changed_with_return
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp;property_name,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+           sigc::slot
+          </a>
+          &lt; void &gt; &amp;&amp;slot)
+         </td>
+        </tr>
+        <tr class="separator:a00f0e2119fbb42efe42d66b8188a0daf inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6e9e13b75f116c20212d318204ce8ea3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a6e9e13b75f116c20212d318204ce8ea3">
+           freeze_notify
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a6e9e13b75f116c20212d318204ce8ea3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1bd8ea7bd8c4084ade6b3c27dddf06a4 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a1bd8ea7bd8c4084ade6b3c27dddf06a4">
+           thaw_notify
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a1bd8ea7bd8c4084ade6b3c27dddf06a4 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a896a8a5db20043ea82956e3ef4b9c4ae inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a896a8a5db20043ea82956e3ef4b9c4ae">
+           reference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a896a8a5db20043ea82956e3ef4b9c4ae inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3234b8ffb2a35b927e2978c8f3bfbfe3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3234b8ffb2a35b927e2978c8f3bfbfe3">
+           unreference
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a3234b8ffb2a35b927e2978c8f3bfbfe3 inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4c6efc18be8cb9c56e58fc0bd20fafbe inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a4c6efc18be8cb9c56e58fc0bd20fafbe">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a4c6efc18be8cb9c56e58fc0bd20fafbe inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a778a94181132976bbfb0519793f3b32e inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          const GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a778a94181132976bbfb0519793f3b32e">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a778a94181132976bbfb0519793f3b32e inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9b2a5eb93102f1849e5419016e22a15f inherit pub_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GObject *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a9b2a5eb93102f1849e5419016e22a15f">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a9b2a5eb93102f1849e5419016e22a15f inherit pub_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_structsigc_1_1trackable">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_structsigc_1_1trackable')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           sigc::trackable
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a7e1348841e762fb41b41c6f2ce9fa073 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a7e1348841e762fb41b41c6f2ce9fa073">
+           trackable
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e1348841e762fb41b41c6f2ce9fa073 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac8431d9452c9698a012597e6560c72fa inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ac8431d9452c9698a012597e6560c72fa">
+           trackable
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ac8431d9452c9698a012597e6560c72fa inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aba42ed8afb6598106cf68c18a7387f18 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#aba42ed8afb6598106cf68c18a7387f18">
+           trackable
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;&amp;src)
+         </td>
+        </tr>
+        <tr class="separator:aba42ed8afb6598106cf68c18a7387f18 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a75587da09e30031db7a2519843f1f4fb inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a75587da09e30031db7a2519843f1f4fb">
+           ~trackable
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a75587da09e30031db7a2519843f1f4fb inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab14931670837728e49bb5ca88fb16db5 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ab14931670837728e49bb5ca88fb16db5">
+           add_destroy_notify_callback
+          </a>
+          (void *data,
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a3338954d7565534bd945290b798e13ed">
+           func_destroy_notify
+          </a>
+          func) const
+         </td>
+        </tr>
+        <tr class="separator:ab14931670837728e49bb5ca88fb16db5 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af2e23cfe7adc1ca844a3350bbac557cb inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#af2e23cfe7adc1ca844a3350bbac557cb">
+           notify_callbacks
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:af2e23cfe7adc1ca844a3350bbac557cb inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7494fbad23a65932ff1457d00d4edaf5 inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a7494fbad23a65932ff1457d00d4edaf5">
+           operator=
+          </a>
+          (const
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;src)
+         </td>
+        </tr>
+        <tr class="separator:a7494fbad23a65932ff1457d00d4edaf5 inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac3d61cdb452dc46fcdc8a8d42d9c079d inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#ac3d61cdb452dc46fcdc8a8d42d9c079d">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html">
+           trackable
+          </a>
+          &amp;&amp;src)
+         </td>
+        </tr>
+        <tr class="separator:ac3d61cdb452dc46fcdc8a8d42d9c079d inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8b9dffa8a50ff13ba33e6c7f10468e2b inherit pub_methods_structsigc_1_1trackable">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/structsigc_1_1trackable.html#a8b9dffa8a50ff13ba33e6c7f10468e2b">
+           remove_destroy_notify_callback
+          </a>
+          (void *data) const
+         </td>
+        </tr>
+        <tr class="separator:a8b9dffa8a50ff13ba33e6c7f10468e2b inherit pub_methods_structsigc_1_1trackable">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a373c44490f8dda233fd36bea5d573eb5">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a373c44490f8dda233fd36bea5d573eb5">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a373c44490f8dda233fd36bea5d573eb5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGtk_1_1TreeSelection.html#a373c44490f8dda233fd36bea5d573eb5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a373c44490f8dda233fd36bea5d573eb5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-methods">
+           </a>
+           Protected Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a1c0c20b2c05f751112e8fa0a8da93844">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a1c0c20b2c05f751112e8fa0a8da93844">
+           on_changed
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a1c0c20b2c05f751112e8fa0a8da93844">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This is a default handler for the signal
+          <a class="el" href="classGtk_1_1TreeSelection.html#a55b5e2644f006dd3b37cf737e65150c0">
+           signal_changed()
+          </a>
+          .
+          <a href="classGtk_1_1TreeSelection.html#a1c0c20b2c05f751112e8fa0a8da93844">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1c0c20b2c05f751112e8fa0a8da93844">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1Object">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1Object')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html">
+           Glib::Object
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:ad43f7c5ad0336e1eb3af622392a112eb inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#ad43f7c5ad0336e1eb3af622392a112eb">
+           Object
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ad43f7c5ad0336e1eb3af622392a112eb inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6d72588496bd7ac03f72420021fb94a5 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a6d72588496bd7ac03f72420021fb94a5">
+           Object
+          </a>
+          (const Glib::ConstructParams &amp;construct_params)
+         </td>
+        </tr>
+        <tr class="separator:a6d72588496bd7ac03f72420021fb94a5 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6f490eeaeb71db673c36799a0f729be5 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a6f490eeaeb71db673c36799a0f729be5">
+           Object
+          </a>
+          (GObject *castitem)
+         </td>
+        </tr>
+        <tr class="separator:a6f490eeaeb71db673c36799a0f729be5 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1a156a738ca71cff3789fd6bafaf8903 inherit pro_methods_classGlib_1_1Object">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1Object.html#a1a156a738ca71cff3789fd6bafaf8903">
+           ~Object
+          </a>
+          () noexceptoverride
+         </td>
+        </tr>
+        <tr class="separator:a1a156a738ca71cff3789fd6bafaf8903 inherit pro_methods_classGlib_1_1Object">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_methods_classGlib_1_1ObjectBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGlib_1_1ObjectBase')">
+          <img alt="-" src="closed.png"/>
+          Protected Member Functions inherited from
+          <a class="el" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a27d3451d9ca28d6a2f00838d7c56d545 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a27d3451d9ca28d6a2f00838d7c56d545">
+           ObjectBase
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a27d3451d9ca28d6a2f00838d7c56d545 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad4ef18214894c6874579313ab21d1018 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ad4ef18214894c6874579313ab21d1018">
+           ObjectBase
+          </a>
+          (const char *custom_type_name)
+         </td>
+        </tr>
+        <tr class="separator:ad4ef18214894c6874579313ab21d1018 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3d59b4d85b0ee72a727e6b2e1b31a2ff inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3d59b4d85b0ee72a727e6b2e1b31a2ff">
+           ObjectBase
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00947.html">
+           std::type_info
+          </a>
+          &amp;custom_type_info)
+         </td>
+        </tr>
+        <tr class="separator:a3d59b4d85b0ee72a727e6b2e1b31a2ff inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7e2e177061f6a6e09c4cf3da49c6dfd3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a7e2e177061f6a6e09c4cf3da49c6dfd3">
+           ObjectBase
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e2e177061f6a6e09c4cf3da49c6dfd3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2e968f118314ba4d5debfd2850d18003 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a2e968f118314ba4d5debfd2850d18003">
+           operator=
+          </a>
+          (
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           ObjectBase
+          </a>
+          &amp;&amp;src) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2e968f118314ba4d5debfd2850d18003 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae56ec45e9ebeaacf24be4fb54ed2eea3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          virtual
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#ae56ec45e9ebeaacf24be4fb54ed2eea3">
+           ~ObjectBase
+          </a>
+          () noexcept=0
+         </td>
+        </tr>
+        <tr class="separator:ae56ec45e9ebeaacf24be4fb54ed2eea3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3faafb14c4f0ca60fbf0f5f5c4d549d0 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a3faafb14c4f0ca60fbf0f5f5c4d549d0">
+           initialize
+          </a>
+          (GObject *castitem)
+         </td>
+        </tr>
+        <tr class="separator:a3faafb14c4f0ca60fbf0f5f5c4d549d0 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a44ddc123cd98ed0083aa06364365c8d3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html#a44ddc123cd98ed0083aa06364365c8d3">
+           initialize_move
+          </a>
+          (GObject *castitem,
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ObjectBase.html">
+           Glib::ObjectBase
+          </a>
+          *previous_wrapper)
+         </td>
+        </tr>
+        <tr class="separator:a44ddc123cd98ed0083aa06364365c8d3 inherit pro_methods_classGlib_1_1ObjectBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a3005841d69e579cf3a75e7a4699d4fa6">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1TreeSelection.html">
+           Gtk::TreeSelection
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html#a3005841d69e579cf3a75e7a4699d4fa6">
+           wrap
+          </a>
+          (GtkTreeSelection* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a3005841d69e579cf3a75e7a4699d4fa6">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGtk_1_1TreeSelection.html#a3005841d69e579cf3a75e7a4699d4fa6">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3005841d69e579cf3a75e7a4699d4fa6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        Typedefed as
+        <a class="el" href="classGtk_1_1TreeView.html#ac8c004cc10cc48e6e4ce8ccfe0e49279" title="A selection object for Gtk::TreeView. ">
+         Gtk::TreeView::Selection
+        </a>
+        .
+       </p>
+       <p>
+        This is a helper object to manage the selection for a
+        <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+         Gtk::TreeView
+        </a>
+        widget.
+       </p>
+       <p>
+        It is automatically created when a new
+        <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+         Gtk::TreeView
+        </a>
+        widget is created, and cannot exist independently of this widget. The primary reason this class exists is for cleanliness of code and API. That is, there is no conceptual reason all these methods could not be methods on the
+        <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+         Gtk::TreeView
+        </a>
+        widget instead of a separate class.
+       </p>
+       <p>
+        The
+        <a class="el" href="classGtk_1_1TreeSelection.html" title="Typedefed as Gtk::TreeView::Selection. ">
+         Gtk::TreeSelection
+        </a>
+        object can be obtained from a
+        <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+         Gtk::TreeView
+        </a>
+        by calling
+        <a class="el" href="classGtk_1_1TreeView.html#ae953e086ee80dbcd34e49dc55a600dcb" title="Gets the Gtk::TreeSelection associated with tree_view. ">
+         Gtk::TreeView::get_selection()
+        </a>
+        . It can be manipulated to check the selection status of the tree, as well as to select and deselect individual rows. Selection is done completely view-side. As a result, multiple views of the same model can have completely different selections. Additionally, you cannot change the selection of a row on the model that is not currently displayed by the view without expanding its parents first.
+       </p>
+       <p>
+        When monitoring the selection of a view, it's important to remember that the "changed" signal is mostly a hint. That is, it may only emit one signal when a range of rows is selected. Additionally, it may on occasion emit a "changed" signal when nothing has happened.
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Member Typedef Documentation
+      </h2>
+      <a class="anchor" id="a0157e2ca1c2fa319a93913c782a7b640">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt;void, const
+            <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+             TreeModel::iterator
+            </a>
+            &amp;&gt;
+            <a class="el" href="classGtk_1_1TreeSelection.html#a0157e2ca1c2fa319a93913c782a7b640">
+             Gtk::TreeSelection::SlotForeachIter
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         For example, void on_foreach(const Gtk::TreeModel::iterator&amp; iter);.
+        </p>
+        <p>
+         Note that you cannot modify the tree or selection from within the callback function. As a result,
+         <a class="el" href="classGtk_1_1TreeSelection.html#a601c30abb10d1a8f21b1688b594b5682" title="Creates a list of paths of all selected rows. ">
+          get_selected_rows()
+         </a>
+         might be more useful.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aab1d3454d5216f1574cb53bf54205f74">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt;void, const
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &amp;&gt;
+            <a class="el" href="classGtk_1_1TreeSelection.html#aab1d3454d5216f1574cb53bf54205f74">
+             Gtk::TreeSelection::SlotForeachPath
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         For example, void on_foreach(const Gtk::TreeModel::Path&amp; path);.
+        </p>
+        <p>
+         Note that you cannot modify the tree or selection from within the callback function. As a result,
+         <a class="el" href="classGtk_1_1TreeSelection.html#a601c30abb10d1a8f21b1688b594b5682" title="Creates a list of paths of all selected rows. ">
+          get_selected_rows()
+         </a>
+         might be more useful.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a31c44b43f5acd501a0a411c04bdf4706">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt;void, const
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &amp;, const
+            <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+             TreeModel::iterator
+            </a>
+            &amp;&gt;
+            <a class="el" href="classGtk_1_1TreeSelection.html#a31c44b43f5acd501a0a411c04bdf4706">
+             Gtk::TreeSelection::SlotForeachPathAndIter
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         For example, void on_foreach(const Gtk::TreeModel::Path&amp; path, const Gtk::TreeModel::iterator&amp; iter);.
+        </p>
+        <p>
+         Note that you cannot modify the tree or selection from within the callback function. As a result,
+         <a class="el" href="classGtk_1_1TreeSelection.html#a601c30abb10d1a8f21b1688b594b5682" title="Creates a list of paths of all selected rows. ">
+          get_selected_rows()
+         </a>
+         might be more useful.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a2262e022dc13c1918af1127f42a158b1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef
+            <a class="elRef" doxygen="libsigc++-2.0.tag:http://library.gnome.org/devel/libsigc++/unstable/" href="http://library.gnome.org/devel/libsigc++/unstable/classsigc_1_1slot.html">
+             sigc::slot
+            </a>
+            &lt;bool, const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1TreeModel.html">
+             TreeModel
+            </a>
+            &gt;&amp;, const
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &amp;, bool&gt;
+            <a class="el" href="classGtk_1_1TreeSelection.html#a2262e022dc13c1918af1127f42a158b1">
+             Gtk::TreeSelection::SlotSelect
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         For instance, bool on_select_function(const Glib::RefPtr&lt;TreeModel&gt;&amp; model, const TreeModel::Path&amp; path, bool path_currently_selected) The select function should return true if the state of the node may be toggled, and false if the state of the node should be left unchanged.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a77d721c278e2c42ad21f224053a4c101">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::TreeSelection::TreeSelection
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1TreeSelection.html">
+                 TreeSelection
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a2f41dbc904ca91f46459663999aa4c7f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::TreeSelection::~TreeSelection
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              override
+             </span>
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="abd81154bc8b483b8110bf67bf25a0022">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gtk::TreeSelection::count_selected_rows
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the number of rows that have been selected in
+         <em>
+          tree
+         </em>
+         .
+        </p>
+        <dl class="since_2_2">
+         <dt>
+          <b>
+           <a class="el" href="since_2_2.html#_since_2_2000081">
+            Since gtkmm 2.2:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of rows selected.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ab83925a34c53e387e2813f2dc6a08587">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="group__gtkmmEnums.html#ga3e58167cfed0be4c87474c3bdca80d78">
+             SelectionMode
+            </a>
+            Gtk::TreeSelection::get_mode
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the selection mode for
+         <em>
+          selection
+         </em>
+         .
+        </p>
+        <p>
+         See
+         <a class="el" href="classGtk_1_1TreeSelection.html#a8c77e2bc04394554fe272c90aec1b064" title="Sets the selection mode of the selection. ">
+          set_mode()
+         </a>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The current selection mode.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae6e6474b69278a024ce2f50cc81f3bac">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1TreeModel.html">
+             TreeModel
+            </a>
+            &gt; Gtk::TreeSelection::get_model
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Shortcut for
+         <a class="el" href="classGtk_1_1TreeSelection.html#a5564087ad3cb1979d546d905e9364294" title="Returns the tree view associated with selection. ">
+          get_tree_view()
+         </a>
+         -&gt;
+         <a class="el" href="classGtk_1_1TreeSelection.html#ae6e6474b69278a024ce2f50cc81f3bac" title="Shortcut for get_tree_view()-&gt;get_model(). ">
+          get_model()
+         </a>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The
+          <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+           TreeModel
+          </a>
+          associated with this
+          <a class="el" href="classGtk_1_1TreeSelection.html" title="Typedefed as Gtk::TreeView::Selection. ">
+           TreeSelection
+          </a>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a32d988aaf33b721a41f264255f8f2ee3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGtk_1_1TreeModel.html">
+             TreeModel
+            </a>
+            &gt; Gtk::TreeSelection::get_model
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="af949a1a078bc5c2272e25e0c2987a81f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+             TreeModel::iterator
+            </a>
+            Gtk::TreeSelection::get_selected
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the currently selected row.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The currently selected row.
+         </dd>
+        </dl>
+        <dl class="section note">
+         <dt>
+          Note
+         </dt>
+         <dd>
+          This method won't work if the selection mode is
+          <code>
+           <a class="el" href="namespaceGtk.html#ga3e58167cfed0be4c87474c3bdca80d78a0001344812be65bc09b8acc4dcf8eec0" title="Any number of elements may be selected. ">
+            Gtk::SELECTION_MULTIPLE
+           </a>
+          </code>
+          . Use
+          <a class="el" href="classGtk_1_1TreeSelection.html#a601c30abb10d1a8f21b1688b594b5682" title="Creates a list of paths of all selected rows. ">
+           get_selected_rows()
+          </a>
+          for multiple selections.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6c38032e5eb2a7b4a089fb74552c7910">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+             TreeModel::iterator
+            </a>
+            Gtk::TreeSelection::get_selected
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1TreeModel.html">
+             TreeModel
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             model
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the currently selected row.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The currently selected row. Or
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#ga5124f3464f8607e7338ff7407faeaf15">
+           end()
+          </a>
+          if no rows were selected.
+         </dd>
+        </dl>
+        <dl class="retval">
+         <dt>
+          Return values
+         </dt>
+         <dd>
+          <table class="retval">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              model
+             </td>
+             <td>
+              The current
+              <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+               TreeModel
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section note">
+         <dt>
+          Note
+         </dt>
+         <dd>
+          This method won't work if the selection mode is
+          <code>
+           <a class="el" href="namespaceGtk.html#ga3e58167cfed0be4c87474c3bdca80d78a0001344812be65bc09b8acc4dcf8eec0" title="Any number of elements may be selected. ">
+            Gtk::SELECTION_MULTIPLE
+           </a>
+          </code>
+          . Use
+          <a class="el" href="classGtk_1_1TreeSelection.html#a601c30abb10d1a8f21b1688b594b5682" title="Creates a list of paths of all selected rows. ">
+           get_selected_rows()
+          </a>
+          for multiple selections.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a601c30abb10d1a8f21b1688b594b5682">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &gt; Gtk::TreeSelection::get_selected_rows
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Creates a list of paths of all selected rows.
+        </p>
+        <p>
+         Additionally, if you are planning on modifying the model after calling this function, you may want to convert the returned list into a list of GtkTreeRowReferences.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          a standard container containing a Gtk::Model::Path for each selected row.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a45adf98479215cd6965996b4986fce85">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &gt; Gtk::TreeSelection::get_selected_rows
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1TreeModel.html">
+             TreeModel
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             model
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Creates a list of paths of all selected rows.
+        </p>
+        <p>
+         Additionally, if you are planning on modifying the model after calling this function, you may want to convert the returned list into a list of GtkTreeRowReferences.
+        </p>
+        <dl class="retval">
+         <dt>
+          Return values
+         </dt>
+         <dd>
+          <table class="retval">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              model
+             </td>
+             <td>
+              The current
+              <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+               TreeModel
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          a standard container containing a Gtk::Model::Path for each selected row.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5564087ad3cb1979d546d905e9364294">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1TreeView.html">
+             TreeView
+            </a>
+            * Gtk::TreeSelection::get_tree_view
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the tree view associated with
+         <em>
+          selection
+         </em>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+           Gtk::TreeView
+          </a>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0eb46be8a024f92607b1f12b581e16c2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            const
+            <a class="el" href="classGtk_1_1TreeView.html">
+             TreeView
+            </a>
+            * Gtk::TreeSelection::get_tree_view
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the tree view associated with
+         <em>
+          selection
+         </em>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A
+          <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+           Gtk::TreeView
+          </a>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a373c44490f8dda233fd36bea5d573eb5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gtk::TreeSelection::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aa272d22e2a8cf68ef941bb898e6ae7a5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkTreeSelection* Gtk::TreeSelection::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C GObject.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="afbfe1d2a5920a31ad730124c0ed2ffbe">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GtkTreeSelection* Gtk::TreeSelection::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C GObject.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aa691fc7df426d2f19612cc82c512596d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GtkTreeSelection* Gtk::TreeSelection::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for unrefing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ab5241ae9e120dcd3c680cec28d0f34f6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::TreeSelection::is_selected
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             path
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns
+         <code>
+          true
+         </code>
+         if the row pointed to by
+         <em>
+          path
+         </em>
+         is currently selected.
+        </p>
+        <p>
+         If
+         <em>
+          path
+         </em>
+         does not point to a valid location,
+         <code>
+          false
+         </code>
+         is returned
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              path
+             </td>
+             <td>
+              A
+              <a class="el" href="classGtk_1_1TreePath.html" title="A path is essentially a potential node. ">
+               Gtk::TreePath
+              </a>
+              to check selection on.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if
+          <em>
+           path
+          </em>
+          is selected.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a48d8c7d8dfab291eefc72dbc207ddbc3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::TreeSelection::is_selected
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+             TreeModel::iterator
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             iter
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns
+         <code>
+          true
+         </code>
+         if the row at
+         <em>
+          iter
+         </em>
+         is currently selected.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              iter
+             </td>
+             <td>
+              A valid
+              <a class="el" href="classGtk_1_1TreeIter.html" title="A Gtk::TreeModel::iterator is a reference to a specific node on a specific model. ...">
+               Gtk::TreeIter
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          , if
+          <em>
+           iter
+          </em>
+          is selected.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1c0c20b2c05f751112e8fa0a8da93844">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                virtual void Gtk::TreeSelection::on_changed
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+             <span class="mlabel">
+              virtual
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This is a default handler for the signal
+         <a class="el" href="classGtk_1_1TreeSelection.html#a55b5e2644f006dd3b37cf737e65150c0">
+          signal_changed()
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a5162b56bfdbd88a165ffaacf93667cc8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1TreeSelection.html">
+                 TreeSelection
+                </a>
+                &amp; Gtk::TreeSelection::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1TreeSelection.html">
+                 TreeSelection
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="afb0431905473fbf7252e422108877270">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy.html">
+             Glib::PropertyProxy
+            </a>
+            &lt;
+            <a class="el" href="group__gtkmmEnums.html#ga3e58167cfed0be4c87474c3bdca80d78">
+             SelectionMode
+            </a>
+            &gt; Gtk::TreeSelection::property_mode
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Selection mode.
+        </p>
+        <p>
+         See
+         <a class="el" href="classGtk_1_1TreeSelection.html#a8c77e2bc04394554fe272c90aec1b064" title="Sets the selection mode of the selection. ">
+          Gtk::TreeSelection::set_mode()
+         </a>
+         for more information on this property.
+        </p>
+        <dl class="since_3_2">
+         <dt>
+          <b>
+           <a class="el" href="since_3_2.html#_since_3_2000072">
+            Since gtkmm 3.2:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A PropertyProxy that allows you to get or set the value of the property, or receive notification when the value of the property changes.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af47dfd7a917c3ccde7e951e7a2155f7b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1PropertyProxy__ReadOnly.html">
+             Glib::PropertyProxy_ReadOnly
+            </a>
+            &lt;
+            <a class="el" href="group__gtkmmEnums.html#ga3e58167cfed0be4c87474c3bdca80d78">
+             SelectionMode
+            </a>
+            &gt; Gtk::TreeSelection::property_mode
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Selection mode.
+        </p>
+        <p>
+         See
+         <a class="el" href="classGtk_1_1TreeSelection.html#a8c77e2bc04394554fe272c90aec1b064" title="Sets the selection mode of the selection. ">
+          Gtk::TreeSelection::set_mode()
+         </a>
+         for more information on this property.
+        </p>
+        <dl class="since_3_2">
+         <dt>
+          <b>
+           <a class="el" href="since_3_2.html#_since_3_2000073">
+            Since gtkmm 3.2:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A PropertyProxy_ReadOnly that allows you to get the value of the property, or receive notification when the value of the property changes.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="abe2e36ac9f950b47e6290ce84af939ae">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::select
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             path
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Select the row at
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              path
+             </td>
+             <td>
+              The
+              <a class="el" href="classGtk_1_1TreePath.html" title="A path is essentially a potential node. ">
+               Gtk::TreePath
+              </a>
+              to be selected.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a70c91065737a3ff94fee94e1ed7b83ae">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::select
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+             TreeModel::iterator
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             iter
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Selects the specified iterator.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              iter
+             </td>
+             <td>
+              The
+              <a class="el" href="classGtk_1_1TreeIter.html" title="A Gtk::TreeModel::iterator is a reference to a specific node on a specific model. ...">
+               Gtk::TreeIter
+              </a>
+              to be selected.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0e5b782c5a0af7ae4f257d5af932038f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::select
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a297c9db68905e82fe7c3fac57f6c4de8">
+             TreeModel::Row
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             row
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Selects the specified iterator.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              row
+             </td>
+             <td>
+              The
+              <a class="el" href="classGtk_1_1TreeIter.html" title="A Gtk::TreeModel::iterator is a reference to a specific node on a specific model. ...">
+               Gtk::TreeIter
+              </a>
+              to be selected.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a22b9264d8c0b06d3678dd022a6994a61">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::select
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             start_path
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             end_path
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Selects a range of nodes, determined by
+         <em>
+          start_path
+         </em>
+         and
+         <em>
+          end_path
+         </em>
+         inclusive.
+        </p>
+        <p>
+         <em>
+          selection
+         </em>
+         must be set to
+         <a class="el" href="namespaceGtk.html#ga3e58167cfed0be4c87474c3bdca80d78a0001344812be65bc09b8acc4dcf8eec0" title="Any number of elements may be selected. ">
+          Gtk::SELECTION_MULTIPLE
+         </a>
+         mode.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              start_path
+             </td>
+             <td>
+              The initial node of the range.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              end_path
+             </td>
+             <td>
+              The final node of the range.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a2cb8620473e74aec20511c3f655e3e1a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::select_all
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Selects all the nodes.
+        </p>
+        <p>
+         <em>
+          selection
+         </em>
+         must be set to
+         <a class="el" href="namespaceGtk.html#ga3e58167cfed0be4c87474c3bdca80d78a0001344812be65bc09b8acc4dcf8eec0" title="Any number of elements may be selected. ">
+          Gtk::SELECTION_MULTIPLE
+         </a>
+         mode.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ae954b4f6786bbc3c06daaf4ac348bfc8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::selected_foreach
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeSelection.html#a31c44b43f5acd501a0a411c04bdf4706">
+             SlotForeachPathAndIter
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Calls a callback slot for each selected node.
+        </p>
+        <p>
+         Note that you cannot modify the tree or selection from within the callback function. As a result,
+         <a class="el" href="classGtk_1_1TreeSelection.html#a601c30abb10d1a8f21b1688b594b5682" title="Creates a list of paths of all selected rows. ">
+          get_selected_rows()
+         </a>
+         might be more useful.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              The function to call for each selected node.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a632c93a952e9597059647af3f7fd7f26">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::selected_foreach_iter
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeSelection.html#a0157e2ca1c2fa319a93913c782a7b640">
+             SlotForeachIter
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Calls a callback slot for each selected node.
+        </p>
+        <p>
+         Note that you cannot modify the tree or selection from within the callback function. As a result,
+         <a class="el" href="classGtk_1_1TreeSelection.html#a601c30abb10d1a8f21b1688b594b5682" title="Creates a list of paths of all selected rows. ">
+          get_selected_rows()
+         </a>
+         might be more useful.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              The function to call for each selected node.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad2b0b0926ada175f4d363ecba50810f0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::selected_foreach_path
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeSelection.html#aab1d3454d5216f1574cb53bf54205f74">
+             SlotForeachPath
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Calls a callback slot for each selected node.
+        </p>
+        <p>
+         Note that you cannot modify the tree or selection from within the callback function. As a result,
+         <a class="el" href="classGtk_1_1TreeSelection.html#a601c30abb10d1a8f21b1688b594b5682" title="Creates a list of paths of all selected rows. ">
+          get_selected_rows()
+         </a>
+         might be more useful.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              The function to call for each selected node.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a8c77e2bc04394554fe272c90aec1b064">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::set_mode
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#ga3e58167cfed0be4c87474c3bdca80d78">
+             SelectionMode
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             type
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the selection mode of the
+         <em>
+          selection
+         </em>
+         .
+        </p>
+        <p>
+         If the previous type was
+         <a class="el" href="namespaceGtk.html#ga3e58167cfed0be4c87474c3bdca80d78a0001344812be65bc09b8acc4dcf8eec0" title="Any number of elements may be selected. ">
+          Gtk::SELECTION_MULTIPLE
+         </a>
+         , then the anchor is kept selected, if it was previously selected.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              type
+             </td>
+             <td>
+              The selection mode.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a7c408b8e2b45b4a65a2a9ad66d9602cf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::set_select_function
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeSelection.html#a2262e022dc13c1918af1127f42a158b1">
+             SlotSelect
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the selection callback slot.
+        </p>
+        <p>
+         If set, this function is called before any node is selected or unselected, giving some control over which nodes are selected.
+        </p>
+        <p>
+         The select function should return true if the state of the node may be toggled, and FALSE if the state of the node should be left unchanged.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              The selection function.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a55b5e2644f006dd3b37cf737e65150c0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1SignalProxy.html">
+             Glib::SignalProxy
+            </a>
+            &lt; void &gt; Gtk::TreeSelection::signal_changed
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="section user">
+         <dt>
+          Slot Prototype:
+         </dt>
+         <dd>
+          <code>
+           void on_my_changed()
+          </code>
+         </dd>
+        </dl>
+        <p>
+         Emitted whenever the selection has (possibly) changed. Please note that this signal is mostly a hint. It may only be emitted once when a range of rows are selected, and it may occasionally be emitted when nothing has happened.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a77e91cb1efd4cfcc05832aa97bc92a4c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::unselect
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             path
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Unselects the row at
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              path
+             </td>
+             <td>
+              The
+              <a class="el" href="classGtk_1_1TreePath.html" title="A path is essentially a potential node. ">
+               Gtk::TreePath
+              </a>
+              to be unselected.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5ef57ea9bc6f15126ba43f8da4199b46">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::unselect
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             start_path
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+             TreeModel::Path
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             end_path
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Unselects a range of nodes, determined by
+         <em>
+          start_path
+         </em>
+         and
+         <em>
+          end_path
+         </em>
+         inclusive.
+        </p>
+        <dl class="since_2_2">
+         <dt>
+          <b>
+           <a class="el" href="since_2_2.html#_since_2_2000082">
+            Since gtkmm 2.2:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              start_path
+             </td>
+             <td>
+              The initial node of the range.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              end_path
+             </td>
+             <td>
+              The initial node of the range.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5aa28ea9eea8f0b8a02a28a4d4472a08">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::unselect
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+             TreeModel::iterator
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             iter
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Unselects the specified iterator.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              iter
+             </td>
+             <td>
+              The
+              <a class="el" href="classGtk_1_1TreeIter.html" title="A Gtk::TreeModel::iterator is a reference to a specific node on a specific model. ...">
+               Gtk::TreeIter
+              </a>
+              to be unselected.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aeac5766a4626733996641ed2583a09e5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeSelection::unselect_all
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Unselects all the nodes.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a3005841d69e579cf3a75e7a4699d4fa6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+                 Glib::RefPtr
+                </a>
+                &lt;
+                <a class="el" href="classGtk_1_1TreeSelection.html">
+                 Gtk::TreeSelection
+                </a>
+                &gt; wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkTreeSelection *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGtk_1_1TreeSelection.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

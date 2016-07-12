@@ -1,0 +1,1614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   New API in gtkmm 2.2
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="since_2_2.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="since_2_2.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="since_2_2.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: New API in gtkmm 2.2
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <div class="textblock">
+       <dl class="reflist">
+        <dt>
+         <a class="anchor" id="_since_2_2000001">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Cursor.html#a73311ad0d1f0b409090decce724023e3">
+          Gdk::Cursor::create
+         </a>
+         (const Glib::RefPtr&lt; Display &gt;&amp; display, CursorType cursor_type)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000002">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Cursor.html#af90467259384482626008b8b92980967">
+          Gdk::Cursor::get_display
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000003">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Cursor.html#a416be18843c1252ab962feef7c0bcd43">
+          Gdk::Cursor::get_display
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000011">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a63ff8a09aa81f2bf1f7581ddba39fe69">
+          Gdk::Display::beep
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000013">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a00b18a2be2cd6216c30b64330e8817b6">
+          Gdk::Display::close
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000020">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a0cbfb8aa89b6d2a7047b93909894b763">
+          Gdk::Display::get_default
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000009">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#ac58b63c93376019814c62e2bd1271a94">
+          Gdk::Display::get_default_screen
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000010">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a9e6f355e1b0563454a2fc649622ac300">
+          Gdk::Display::get_default_screen
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000014">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a71ef8186ac0ebce17ab869eb77f5e9e7">
+          Gdk::Display::get_event
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000015">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#af2619b3d9214ac40b38e571ed41be2a7">
+          Gdk::Display::get_event
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000021">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#ad28f5bf65bb574fabfb145cae58af844">
+          Gdk::Display::get_keymap
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000022">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#aa4dce935b386c1782116cda227e464fd">
+          Gdk::Display::get_keymap
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000006">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#aa84e594f6dac8e7f77b031d57f13d504">
+          Gdk::Display::get_n_screens
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000005">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a81036bff74e1bb09cdd230743d433ec7">
+          Gdk::Display::get_name
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000008">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a756fa9493d0d08c372f0e65cc293605c">
+          Gdk::Display::get_screen
+         </a>
+         (int screen_num=0) const
+        </dt>
+        <dd>
+         Deprecated: 3.20: There is only one screen; use
+         <a class="el" href="classGdk_1_1Display.html#ac58b63c93376019814c62e2bd1271a94" title="Get the default Gdk::Screen for display. ">
+          get_default_screen()
+         </a>
+         to get it.
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000007">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a9bfae690b0a5c356ebd7dd7e2259c491">
+          Gdk::Display::get_screen
+         </a>
+         (int screen_num=0)
+        </dt>
+        <dd>
+         Deprecated: 3.20: There is only one screen; use
+         <a class="el" href="classGdk_1_1Display.html#ac58b63c93376019814c62e2bd1271a94" title="Get the default Gdk::Screen for display. ">
+          get_default_screen()
+         </a>
+         to get it.
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000004">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a59cf8e3302a66aa24ba43b0c47dae946">
+          Gdk::Display::open
+         </a>
+         (const
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; display_name)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000016">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a3b7ad20b7a23a50c3b5b48482deac281">
+          Gdk::Display::peek_event
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000017">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a7da16e716abf57a3dd27b1fc93b1b0da">
+          Gdk::Display::peek_event
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000018">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#afaca03c9f4b869fdd127c298869f948b">
+          Gdk::Display::put_event
+         </a>
+         (GdkEvent* event)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000023">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a423672d86fe26b4dcc7fd208871e0492">
+          Gdk::Display::selection_send_notify
+         </a>
+         (const Glib::RefPtr&lt; Window &gt;&amp; requestor,
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; selection,
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; target,
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; property, guint32 time_)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000019">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#afd39ade2117b4fd825989dc25f9673bb">
+          Gdk::Display::set_double_click_time
+         </a>
+         (guint msec)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000024">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#a76c3ce6d1ac117a97b9a39868aea6216">
+          Gdk::Display::signal_closed
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000012">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Display.html#ad772046a33c0a1c6d071b1cf339faf63">
+          Gdk::Display::sync
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000025">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1DisplayManager.html#ac17b40997902dce84e1e9ed435e5e7bd">
+          Gdk::DisplayManager::get
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000026">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1DisplayManager.html#abd8af5922c9387e779d7a5c4849a0290">
+          Gdk::DisplayManager::get_default_display
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000027">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1DisplayManager.html#acd62583e9a9ec3244a39ce349649a8fd">
+          Gdk::DisplayManager::get_default_display
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000029">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1DisplayManager.html#aa46adeef6542b879a280c55fdd706540">
+          Gdk::DisplayManager::list_displays
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000028">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1DisplayManager.html#aa35a8aae484348b5dc204c9eaadfdbca">
+          Gdk::DisplayManager::set_default_display
+         </a>
+         (const Glib::RefPtr&lt; Display &gt;&amp; display)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000030">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1DisplayManager.html#af1a13dc3a5f591f5e8bd08ef14f1290f">
+          Gdk::DisplayManager::signal_display_opened
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000031">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1DragContext.html#a75ae4160dd171e181b33c81ffff562fd">
+          Gdk::DragContext::find_window_for_screen
+         </a>
+         (const Glib::RefPtr&lt; Window &gt;&amp; drag_window, const Glib::RefPtr&lt; Screen &gt;&amp; screen, int x_root, int y_root, Glib::RefPtr&lt; Window &gt;&amp; dest_window, DragProtocol&amp; protocol) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000032">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Event.html#a1a0386cc3586fc098ddb5feabc37226e">
+          Gdk::Event::get_screen
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000033">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Event.html#aea9ca52d43535409b3ee18ac6c18830e">
+          Gdk::Event::get_screen
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000035">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1PixbufFormat.html#a443e131ad70a5df24d4745c23f1ffcbd">
+          Gdk::PixbufFormat::get_description
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000037">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1PixbufFormat.html#a6619d7dddd4fa7ebb123ce9f839cf64a">
+          Gdk::PixbufFormat::get_extensions
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000036">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1PixbufFormat.html#a22f533118816010c731ae0921a7e4248">
+          Gdk::PixbufFormat::get_mime_types
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000034">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1PixbufFormat.html#a9dcb4ec5ad2b4ad663aadbde1aa42e4e">
+          Gdk::PixbufFormat::get_name
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000038">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1PixbufFormat.html#a8edfd0d77c074d7aa87a2b07b3ff1b3e">
+          Gdk::PixbufFormat::is_writable
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000040">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1PixbufLoader.html#ab1785b9798362416ffb03ce02dd267d5">
+          Gdk::PixbufLoader::get_format
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000039">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1PixbufLoader.html#a295cd5abb9e14975a6836f1bb568db58">
+          Gdk::PixbufLoader::set_size
+         </a>
+         (int width, int height)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000059">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#a9f9cb21db16c3c12c0c19210e788098c">
+          Gdk::Screen::get_default
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000045">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#a09a937007c4c386f2e32bd09e6017072">
+          Gdk::Screen::get_display
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000046">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#a7f4c4078d1576c6903b82df52bdd6c6a">
+          Gdk::Screen::get_display
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000049">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#a4d0b1a971c87761d79e64c9e04ffe355">
+          Gdk::Screen::get_height
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000051">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#af49c58dd81e12e9106b3e25fcb0af6e7">
+          Gdk::Screen::get_height_mm
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000057">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#aa79c0e9c13fcf293c471b6498d3689e5">
+          Gdk::Screen::get_monitor_at_point
+         </a>
+         (int x, int y) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000058">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#a49e39d52b90bef267647b0c801e53a5b">
+          Gdk::Screen::get_monitor_at_window
+         </a>
+         (const Glib::RefPtr&lt; Window &gt;&amp; window) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000056">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#adf65c0053fa073c8c44fa1bbeb21c02a">
+          Gdk::Screen::get_monitor_geometry
+         </a>
+         (int monitor_num,
+         <a class="el" href="classGdk_1_1Rectangle.html" title="Gdk::Rectangle is a structure holding the position and size of a rectangle. ">
+          Rectangle
+         </a>
+         &amp; dest) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000055">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#afa47b24f2c133204be5816106a2d87a0">
+          Gdk::Screen::get_n_monitors
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000047">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#a5b7ad1652ea1b6df39b943d25198a904">
+          Gdk::Screen::get_number
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000043">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#a04843c5046eb14a175bbbdcc490e481f">
+          Gdk::Screen::get_root_window
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000044">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#a0ad4282fd382723bda580e7db4cc2c64">
+          Gdk::Screen::get_root_window
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000041">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#afbc7f0ced954e5d7cc4b3b823f09955e">
+          Gdk::Screen::get_system_visual
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000042">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#ae3e8b28ce7fe261c2f389683f3c98bef">
+          Gdk::Screen::get_system_visual
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000053">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#aefb475d138272e603436046048aaa210">
+          Gdk::Screen::get_toplevel_windows
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000048">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#a0ea643f504cd7aba79ce0c987e0dee3e">
+          Gdk::Screen::get_width
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000050">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#ad6a037463ce810b4d19f2fa0d6d38644">
+          Gdk::Screen::get_width_mm
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000052">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#a4ed44c5d958b82ee07fd35d02c2e0798">
+          Gdk::Screen::list_visuals
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000054">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#ab2317142ac88cf9f3975734092b049dc">
+          Gdk::Screen::make_display_name
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000060">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Screen.html#ab97c939dd17addd66a55571a719af92f">
+          Gdk::Screen::signal_size_changed
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000061">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Visual.html#a7e10f47bbec94749bf683969e52927a5">
+          Gdk::Visual::get_screen
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000062">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Visual.html#a194d4df865f1a72171bae1de27571ca4">
+          Gdk::Visual::get_screen
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000065">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Window.html#a09a8cf95b58f8cdcc819d6064f6dc984">
+          Gdk::Window::fullscreen
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000064">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Window.html#aa4900976eda16fc8a6280eb0bd325f8c">
+          Gdk::Window::set_skip_pager_hint
+         </a>
+         (bool skips_pager=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000063">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Window.html#a34b9d99e30afd4e4106d66408d007fdd">
+          Gdk::Window::set_skip_taskbar_hint
+         </a>
+         (bool skips_taskbar=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000066">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Window.html#a46d71da2107832855f8d047b3effbb67">
+          Gdk::Window::unfullscreen
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000068">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Clipboard.html#a696d084d1ef3c7cbe298b4e78e8ea167">
+          Gtk::Clipboard::get_display
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000069">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Clipboard.html#ac9a759c0daf584d22c8af18c24031f0b">
+          Gtk::Clipboard::get_display
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000067">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Clipboard.html#a880ad980703636e3aed1f25c066ebbc9">
+          Gtk::Clipboard::get_for_display
+         </a>
+         (const Glib::RefPtr&lt; Gdk::Display &gt;&amp; display, GdkAtom selection=GDK_SELECTION_CLIPBOARD)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000070">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Invisible.html#a0ed8f9b9dd48b61bb82e3a4059a28b09">
+          Gtk::Invisible::get_screen
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000071">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Invisible.html#ae7737c67168ca0797cd52625c169aae0">
+          Gtk::Invisible::get_screen
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000072">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Invisible.html#a628c3cd3efc2ff60bdba1ca6493aaf32">
+          Gtk::Invisible::set_screen
+         </a>
+         (const Glib::RefPtr&lt; Gdk::Screen &gt;&amp; screen)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000074">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ListStore.html#ae307acf882557f319dc309963c07705a">
+          Gtk::ListStore::iter_is_valid
+         </a>
+         (const iterator&amp; iter) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000073">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ListStore.html#a2f3617442cd5b52db485f4dc31f91da9">
+          Gtk::ListStore::iter_swap
+         </a>
+         (const iterator&amp; a, const iterator&amp; b)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000075">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Menu.html#a7ee89975364a523c4662a188c02eaf28">
+          Gtk::Menu::set_screen
+         </a>
+         (const Glib::RefPtr&lt; Gdk::Screen &gt;&amp; screen)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000076">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1MenuShell.html#a882dab72c89e462a879a6b6179464cc2">
+          Gtk::MenuShell::select_first
+         </a>
+         (bool search_sensitive=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000077">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Notebook.html#a17edd5bef5671a5a884fc2545f7c0462">
+          Gtk::Notebook::get_n_pages
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000078">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Settings.html#a46b8befe2aac84d56d2aeb0cd8aa058e">
+          Gtk::Settings::get_for_screen
+         </a>
+         (const Glib::RefPtr&lt; Gdk::Screen &gt;&amp; screen)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000079">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TreeModel.html#aafe5344f4012d8bf13194bd63c01cef1">
+          Gtk::TreeModel::get_string
+         </a>
+         (const iterator&amp; iter) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000080">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TreeModelSort.html#a39cd337bbff15cec06a4f115bddc2355">
+          Gtk::TreeModelSort::iter_is_valid
+         </a>
+         (const iterator&amp; iter) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000081">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TreeSelection.html#abd81154bc8b483b8110bf67bf25a0022">
+          Gtk::TreeSelection::count_selected_rows
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000082">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TreeSelection.html#a5ef57ea9bc6f15126ba43f8da4199b46">
+          Gtk::TreeSelection::unselect
+         </a>
+         (const
+         <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+          TreeModel::Path
+         </a>
+         &amp; start_path, const
+         <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+          TreeModel::Path
+         </a>
+         &amp; end_path)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000084">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TreeStore.html#a1daf0f3011c00246dc3ca0d32c824d31">
+          Gtk::TreeStore::iter_is_valid
+         </a>
+         (const iterator&amp; iter) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000083">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TreeStore.html#ac43cf2594d06cfe44eb8d84fbc250c1e">
+          Gtk::TreeStore::iter_swap
+         </a>
+         (const iterator&amp; a, const iterator&amp; b)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000085">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TreeView.html#a4f47352dc7ba22537fda1dd045bac2f2">
+          Gtk::TreeView::expand_to_path
+         </a>
+         (const
+         <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+          TreeModel::Path
+         </a>
+         &amp; path)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000086">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TreeView.html#a03b12d46cbb8f88ad77cd3f7d1acfe43">
+          Gtk::TreeView::set_cursor
+         </a>
+         (const
+         <a class="el" href="classGtk_1_1TreeModel.html#a06a713fecde31f2f1a7baeb0e3e2fea5">
+          TreeModel::Path
+         </a>
+         &amp; path,
+         <a class="el" href="classGtk_1_1TreeViewColumn.html" title="Typedefed as Gtk::TreeView::Column. ">
+          TreeViewColumn
+         </a>
+         &amp; focus_column,
+         <a class="el" href="classGtk_1_1CellRenderer.html" title="CellRenderers are used by Gtk::TreeView columns to render the Gtk::TreeModel column data appropriatel...">
+          CellRenderer
+         </a>
+         &amp; focus_cell, bool start_editing=false)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000087">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TreeViewColumn.html#a028300531a4aa3e9ac40941f75e94c71">
+          Gtk::TreeViewColumn::focus_cell
+         </a>
+         (
+         <a class="el" href="classGtk_1_1CellRenderer.html" title="CellRenderers are used by Gtk::TreeView columns to render the Gtk::TreeModel column data appropriatel...">
+          CellRenderer
+         </a>
+         &amp; cell)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000095">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#abd2136ea04f43c92a5714ae31855b3da">
+          Gtk::Widget::get_clipboard
+         </a>
+         (const
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; selection)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000096">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#a0aed0f0898e00f872c71f7e5bcd5b93f">
+          Gtk::Widget::get_clipboard
+         </a>
+         (const
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; selection) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000092">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#a53ecb2d278c16481bce8ff7eac4569ac">
+          Gtk::Widget::get_display
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000091">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#a2f5880e2f1df5ff12295cf97c83de097">
+          Gtk::Widget::get_display
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000094">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#ae4d24fd21120a63447982b4d064be9e9">
+          Gtk::Widget::get_root_window
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000093">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#a01f8d1943ef5f80c2aab914bcad1ce82">
+          Gtk::Widget::get_root_window
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000089">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#a05ec9ee6b8d359cf572ad2d788e3ad87">
+          Gtk::Widget::get_screen
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000088">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#a4bf25ceaa259bbe86fac0c9f54202c68">
+          Gtk::Widget::get_screen
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000090">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#a90ccf19a00df33ff1e8360a0567a2f3c">
+          Gtk::Widget::has_screen
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000106">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#a2343d2ece18fc8cf4db9e9de4764f386">
+          Gtk::Window::fullscreen
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000103">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#ad538e5c73635b06327ef18d3225f6e80">
+          Gtk::Window::get_screen
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000102">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#a46de90efae27ecd474f3c7855ace3d3f">
+          Gtk::Window::get_screen
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000100">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#ae6cfb5d9e6cbefd5de869c4b777e314e">
+          Gtk::Window::get_skip_pager_hint
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000098">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#ad291d4cf458b10577015f8a0efae2811">
+          Gtk::Window::get_skip_taskbar_hint
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000105">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#a17d7fbb99c147938b2f8af87cd1187f8">
+          Gtk::Window::set_auto_startup_notification
+         </a>
+         (bool setting=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000104">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#ada7d63162e412693d80a397096f46b0f">
+          Gtk::Window::set_default_icon_from_file
+         </a>
+         (const
+         <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+          std::string
+         </a>
+         &amp; filename)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000101">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#a8019e1426461d32385bfea734b5e63a8">
+          Gtk::Window::set_screen
+         </a>
+         (const Glib::RefPtr&lt; Gdk::Screen &gt;&amp; screen)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000099">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#a4cdea59994940ba8edc41f17e31f31a9">
+          Gtk::Window::set_skip_pager_hint
+         </a>
+         (bool setting=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000097">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#a0b88348a3d7c69b8930a0e2e11a63a88">
+          Gtk::Window::set_skip_taskbar_hint
+         </a>
+         (bool setting=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_2_2000107">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#aa426c8fca5b776d5266da732293f6dab">
+          Gtk::Window::unfullscreen
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="since_2_2.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

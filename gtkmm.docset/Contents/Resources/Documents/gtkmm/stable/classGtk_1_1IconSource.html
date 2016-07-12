@@ -1,0 +1,3453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gtk::IconSource Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGtk_1_1IconSource.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1IconSource.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1IconSource.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gtk::IconSource Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       <code>
+        #include &lt;gtkmm/iconsource.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ad116d11a5d857ce6221a70262a84a3a4">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#ad116d11a5d857ce6221a70262a84a3a4">
+           IconSource
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ad116d11a5d857ce6221a70262a84a3a4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a44c4b41ece9f9bda5d196f757e7c5c8f">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a44c4b41ece9f9bda5d196f757e7c5c8f">
+           IconSource
+          </a>
+          (GtkIconSource* gobject, bool make_a_copy=true)
+         </td>
+        </tr>
+        <tr class="separator:a44c4b41ece9f9bda5d196f757e7c5c8f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa34725e2b0a2e09f7ae6d5130eaaf4df">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#aa34725e2b0a2e09f7ae6d5130eaaf4df">
+           IconSource
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1IconSource.html">
+           IconSource
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:aa34725e2b0a2e09f7ae6d5130eaaf4df">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a803ad30e1544d4983fa5039a92f987f7">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1IconSource.html">
+           IconSource
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a803ad30e1544d4983fa5039a92f987f7">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1IconSource.html">
+           IconSource
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:a803ad30e1544d4983fa5039a92f987f7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad627f203fcc6acaf83fb2693251152d4">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#ad627f203fcc6acaf83fb2693251152d4">
+           IconSource
+          </a>
+          (
+          <a class="el" href="classGtk_1_1IconSource.html">
+           IconSource
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ad627f203fcc6acaf83fb2693251152d4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5f0f37778a1db51f303136fd8b6ebb10">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1IconSource.html">
+           IconSource
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a5f0f37778a1db51f303136fd8b6ebb10">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGtk_1_1IconSource.html">
+           IconSource
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a5f0f37778a1db51f303136fd8b6ebb10">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9da057ed14fe6f13a932063a500b186f">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a9da057ed14fe6f13a932063a500b186f">
+           ~IconSource
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:a9da057ed14fe6f13a932063a500b186f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1d36bab2e2ccd68fcd0e0a5fb204ccdc">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a1d36bab2e2ccd68fcd0e0a5fb204ccdc">
+           swap
+          </a>
+          (
+          <a class="el" href="classGtk_1_1IconSource.html">
+           IconSource
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a1d36bab2e2ccd68fcd0e0a5fb204ccdc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7c14ee01bb90968b2c930b873524e6e4">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkIconSource*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a7c14ee01bb90968b2c930b873524e6e4">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a7c14ee01bb90968b2c930b873524e6e4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1IconSource.html#a7c14ee01bb90968b2c930b873524e6e4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7c14ee01bb90968b2c930b873524e6e4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a58cf0bd123403dbee4ec19725a596ebd">
+         <td align="right" class="memItemLeft" valign="top">
+          const GtkIconSource*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a58cf0bd123403dbee4ec19725a596ebd">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a58cf0bd123403dbee4ec19725a596ebd">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1IconSource.html#a58cf0bd123403dbee4ec19725a596ebd">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a58cf0bd123403dbee4ec19725a596ebd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abe204445677aaafac76225abe5a42db1">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkIconSource*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#abe204445677aaafac76225abe5a42db1">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:abe204445677aaafac76225abe5a42db1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+          <a href="classGtk_1_1IconSource.html#abe204445677aaafac76225abe5a42db1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abe204445677aaafac76225abe5a42db1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a41801a184775c47e6c2e65fee0e4cec2">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a41801a184775c47e6c2e65fee0e4cec2">
+           set_filename
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; filename)
+         </td>
+        </tr>
+        <tr class="memdesc:a41801a184775c47e6c2e65fee0e4cec2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the name of an image file to use as a base image when creating icon variants for
+          <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+           Gtk::IconSet
+          </a>
+          .
+          <a href="classGtk_1_1IconSource.html#a41801a184775c47e6c2e65fee0e4cec2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a41801a184775c47e6c2e65fee0e4cec2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8e569cec71141a8ecebacf225d22729a">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a8e569cec71141a8ecebacf225d22729a">
+           set_pixbuf
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;&amp; pixbuf)
+         </td>
+        </tr>
+        <tr class="memdesc:a8e569cec71141a8ecebacf225d22729a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets a pixbuf to use as a base image when creating icon variants for
+          <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+           Gtk::IconSet
+          </a>
+          .
+          <a href="classGtk_1_1IconSource.html#a8e569cec71141a8ecebacf225d22729a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8e569cec71141a8ecebacf225d22729a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abe7763cb46297ef0930d433357a66a09">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#abe7763cb46297ef0930d433357a66a09">
+           get_filename
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:abe7763cb46297ef0930d433357a66a09">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the source filename, or
+          <code>
+           nullptr
+          </code>
+          if none is set.
+          <a href="classGtk_1_1IconSource.html#abe7763cb46297ef0930d433357a66a09">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abe7763cb46297ef0930d433357a66a09">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a95f73a9793d6af134dcbf41e57e51cff">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a95f73a9793d6af134dcbf41e57e51cff">
+           get_pixbuf
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a95f73a9793d6af134dcbf41e57e51cff">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the source pixbuf, or
+          <code>
+           nullptr
+          </code>
+          if none is set.
+          <a href="classGtk_1_1IconSource.html#a95f73a9793d6af134dcbf41e57e51cff">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a95f73a9793d6af134dcbf41e57e51cff">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa8f0e245c3cc1a099d958b3beed28f43">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#aa8f0e245c3cc1a099d958b3beed28f43">
+           get_pixbuf
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aa8f0e245c3cc1a099d958b3beed28f43">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the source pixbuf, or
+          <code>
+           nullptr
+          </code>
+          if none is set.
+          <a href="classGtk_1_1IconSource.html#aa8f0e245c3cc1a099d958b3beed28f43">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa8f0e245c3cc1a099d958b3beed28f43">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1c306fcf2ac4d3e3f491c43921a3265f">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a1c306fcf2ac4d3e3f491c43921a3265f">
+           set_direction_wildcarded
+          </a>
+          (bool setting=true)
+         </td>
+        </tr>
+        <tr class="memdesc:a1c306fcf2ac4d3e3f491c43921a3265f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          If the text direction is wildcarded, this source can be used as the base image for an icon in any
+          <a class="el" href="group__gtkmmEnums.html#gaabfcae0b9b0cf2aab01ee96352668d3d" title="Reading directions for text. ">
+           Gtk::TextDirection
+          </a>
+          .
+          <a href="classGtk_1_1IconSource.html#a1c306fcf2ac4d3e3f491c43921a3265f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1c306fcf2ac4d3e3f491c43921a3265f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a799e9c455e5f78bb54c6214062535241">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a799e9c455e5f78bb54c6214062535241">
+           set_state_wildcarded
+          </a>
+          (bool setting=true)
+         </td>
+        </tr>
+        <tr class="memdesc:a799e9c455e5f78bb54c6214062535241">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          If the widget state is wildcarded, this source can be used as the base image for an icon in any
+          <a class="el" href="namespaceGtk.html#ae389c7fef8176df3e8b7992c521d9661">
+           Gtk::StateType
+          </a>
+          .
+          <a href="classGtk_1_1IconSource.html#a799e9c455e5f78bb54c6214062535241">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a799e9c455e5f78bb54c6214062535241">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a91a2063bfae7b6ad614dc15147b6d3b1">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a91a2063bfae7b6ad614dc15147b6d3b1">
+           set_size_wildcarded
+          </a>
+          (bool setting=true)
+         </td>
+        </tr>
+        <tr class="memdesc:a91a2063bfae7b6ad614dc15147b6d3b1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          If the icon size is wildcarded, this source can be used as the base image for an icon of any size.
+          <a href="classGtk_1_1IconSource.html#a91a2063bfae7b6ad614dc15147b6d3b1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a91a2063bfae7b6ad614dc15147b6d3b1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4c799234fee629dcf1821ff75499eff4">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a4c799234fee629dcf1821ff75499eff4">
+           get_size_wildcarded
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a4c799234fee629dcf1821ff75499eff4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the value set by
+          <a class="el" href="classGtk_1_1IconSource.html#a91a2063bfae7b6ad614dc15147b6d3b1" title="If the icon size is wildcarded, this source can be used as the base image for an icon of any size...">
+           set_size_wildcarded()
+          </a>
+          .
+          <a href="classGtk_1_1IconSource.html#a4c799234fee629dcf1821ff75499eff4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4c799234fee629dcf1821ff75499eff4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3374f27ba60030fc82d2798c643ffbd5">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a3374f27ba60030fc82d2798c643ffbd5">
+           get_state_wildcarded
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a3374f27ba60030fc82d2798c643ffbd5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the value set by
+          <a class="el" href="classGtk_1_1IconSource.html#a799e9c455e5f78bb54c6214062535241" title="If the widget state is wildcarded, this source can be used as the base image for an icon in any Gtk::...">
+           set_state_wildcarded()
+          </a>
+          .
+          <a href="classGtk_1_1IconSource.html#a3374f27ba60030fc82d2798c643ffbd5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3374f27ba60030fc82d2798c643ffbd5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa65e7296aadff66f2dccc5aa19fc1519">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#aa65e7296aadff66f2dccc5aa19fc1519">
+           get_direction_wildcarded
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aa65e7296aadff66f2dccc5aa19fc1519">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the value set by
+          <a class="el" href="classGtk_1_1IconSource.html#a1c306fcf2ac4d3e3f491c43921a3265f" title="If the text direction is wildcarded, this source can be used as the base image for an icon in any Gtk...">
+           set_direction_wildcarded()
+          </a>
+          .
+          <a href="classGtk_1_1IconSource.html#aa65e7296aadff66f2dccc5aa19fc1519">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa65e7296aadff66f2dccc5aa19fc1519">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3153f215a855ac1dbc93782692a3a9db">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a3153f215a855ac1dbc93782692a3a9db">
+           set_direction
+          </a>
+          (
+          <a class="el" href="group__gtkmmEnums.html#gaabfcae0b9b0cf2aab01ee96352668d3d">
+           TextDirection
+          </a>
+          direction)
+         </td>
+        </tr>
+        <tr class="memdesc:a3153f215a855ac1dbc93782692a3a9db">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the text direction this icon source is intended to be used with.
+          <a href="classGtk_1_1IconSource.html#a3153f215a855ac1dbc93782692a3a9db">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3153f215a855ac1dbc93782692a3a9db">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9cc65cff2d2574fb90b62fee4284af99">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a9cc65cff2d2574fb90b62fee4284af99">
+           set_state
+          </a>
+          (
+          <a class="el" href="namespaceGtk.html#ae389c7fef8176df3e8b7992c521d9661">
+           Gtk::StateType
+          </a>
+          state)
+         </td>
+        </tr>
+        <tr class="memdesc:a9cc65cff2d2574fb90b62fee4284af99">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the widget state this icon source is intended to be used with.
+          <a href="classGtk_1_1IconSource.html#a9cc65cff2d2574fb90b62fee4284af99">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9cc65cff2d2574fb90b62fee4284af99">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae0b88adc6bbb4ff3b0b6a0279555efcf">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#ae0b88adc6bbb4ff3b0b6a0279555efcf">
+           set_size
+          </a>
+          (
+          <a class="el" href="classGtk_1_1IconSize.html">
+           IconSize
+          </a>
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#ga445a43f417432dd1b9aed90ef239c700">
+           size
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:ae0b88adc6bbb4ff3b0b6a0279555efcf">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the icon size this icon source is intended to be used with.
+          <a href="classGtk_1_1IconSource.html#ae0b88adc6bbb4ff3b0b6a0279555efcf">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae0b88adc6bbb4ff3b0b6a0279555efcf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac1c4a2fa081bf50df1f0938b35353837">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="group__gtkmmEnums.html#gaabfcae0b9b0cf2aab01ee96352668d3d">
+           TextDirection
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#ac1c4a2fa081bf50df1f0938b35353837">
+           get_direction
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac1c4a2fa081bf50df1f0938b35353837">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Obtains the text direction this icon source applies to.
+          <a href="classGtk_1_1IconSource.html#ac1c4a2fa081bf50df1f0938b35353837">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac1c4a2fa081bf50df1f0938b35353837">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad8d7c3932eb7d56d56598b223ce44c0d">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="namespaceGtk.html#ae389c7fef8176df3e8b7992c521d9661">
+           Gtk::StateType
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#ad8d7c3932eb7d56d56598b223ce44c0d">
+           get_state
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ad8d7c3932eb7d56d56598b223ce44c0d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Obtains the widget state this icon source applies to.
+          <a href="classGtk_1_1IconSource.html#ad8d7c3932eb7d56d56598b223ce44c0d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad8d7c3932eb7d56d56598b223ce44c0d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a690b0f0e7c34a49093869068674c7ff7">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1IconSize.html">
+           IconSize
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a690b0f0e7c34a49093869068674c7ff7">
+           get_size
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a690b0f0e7c34a49093869068674c7ff7">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Obtains the icon size this source applies to.
+          <a href="classGtk_1_1IconSource.html#a690b0f0e7c34a49093869068674c7ff7">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a690b0f0e7c34a49093869068674c7ff7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae0ea072ab57ae724e5957218a2f195b7">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#ae0ea072ab57ae724e5957218a2f195b7">
+           set_icon_name
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; icon_name)
+         </td>
+        </tr>
+        <tr class="memdesc:ae0ea072ab57ae724e5957218a2f195b7">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the name of an icon to look up in the current icon theme to use as a base image when creating icon variants for
+          <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+           Gtk::IconSet
+          </a>
+          .
+          <a href="classGtk_1_1IconSource.html#ae0ea072ab57ae724e5957218a2f195b7">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae0ea072ab57ae724e5957218a2f195b7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9c99baebe10e598d977fe08dcb6c93e8">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a9c99baebe10e598d977fe08dcb6c93e8">
+           get_icon_name
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a9c99baebe10e598d977fe08dcb6c93e8">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the source icon name, or
+          <code>
+           nullptr
+          </code>
+          if none is set.
+          <a href="classGtk_1_1IconSource.html#a9c99baebe10e598d977fe08dcb6c93e8">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9c99baebe10e598d977fe08dcb6c93e8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:aa66ee121c596b42efde937056226963d">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#aa66ee121c596b42efde937056226963d">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aa66ee121c596b42efde937056226963d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGtk_1_1IconSource.html#aa66ee121c596b42efde937056226963d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa66ee121c596b42efde937056226963d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a76826db186409af0f30676002a5734ae">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkIconSource*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a76826db186409af0f30676002a5734ae">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a76826db186409af0f30676002a5734ae">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a1a3dd7b9da92750a47b7093c3ff6239a">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a1a3dd7b9da92750a47b7093c3ff6239a">
+           swap
+          </a>
+          (
+          <a class="el" href="classGtk_1_1IconSource.html">
+           IconSource
+          </a>
+          &amp; lhs,
+          <a class="el" href="classGtk_1_1IconSource.html">
+           IconSource
+          </a>
+          &amp; rhs) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a1a3dd7b9da92750a47b7093c3ff6239a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7d7a29bf9665ec2ca3eb03c6ff4ff841">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1IconSource.html">
+           Gtk::IconSource
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconSource.html#a7d7a29bf9665ec2ca3eb03c6ff4ff841">
+           wrap
+          </a>
+          (GtkIconSource* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a7d7a29bf9665ec2ca3eb03c6ff4ff841">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGtk_1_1IconSource.html#a7d7a29bf9665ec2ca3eb03c6ff4ff841">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7d7a29bf9665ec2ca3eb03c6ff4ff841">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <dl class="deprecated">
+        <dt>
+         <b>
+          <a class="el" href="deprecated.html#_deprecated000441">
+           Deprecated:
+          </a>
+         </b>
+        </dt>
+        <dd>
+         Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="ad116d11a5d857ce6221a70262a84a3a4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::IconSource::IconSource
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a44c4b41ece9f9bda5d196f757e7c5c8f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::IconSource::IconSource
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkIconSource *
+               </td>
+               <td class="paramname">
+                <em>
+                 gobject
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 make_a_copy
+                </em>
+                =
+                <code>
+                 true
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aa34725e2b0a2e09f7ae6d5130eaaf4df">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::IconSource::IconSource
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1IconSource.html">
+             IconSource
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ad627f203fcc6acaf83fb2693251152d4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::IconSource::IconSource
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1IconSource.html">
+                 IconSource
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a9da057ed14fe6f13a932063a500b186f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::IconSource::~IconSource
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="ac1c4a2fa081bf50df1f0938b35353837">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="group__gtkmmEnums.html#gaabfcae0b9b0cf2aab01ee96352668d3d">
+             TextDirection
+            </a>
+            Gtk::IconSource::get_direction
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Obtains the text direction this icon source applies to.
+        </p>
+        <p>
+         The return value is only useful/meaningful if the text direction is not wildcarded.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Text direction this source matches.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa65e7296aadff66f2dccc5aa19fc1519">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::IconSource::get_direction_wildcarded
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the value set by
+         <a class="el" href="classGtk_1_1IconSource.html#a1c306fcf2ac4d3e3f491c43921a3265f" title="If the text direction is wildcarded, this source can be used as the base image for an icon in any Gtk...">
+          set_direction_wildcarded()
+         </a>
+         .
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if this icon source is a base for any text direction variant.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="abe7763cb46297ef0930d433357a66a09">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::IconSource::get_filename
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the source filename, or
+         <code>
+          nullptr
+         </code>
+         if none is set.
+        </p>
+        <p>
+         The filename is not a copy, and should not be modified or expected to persist beyond the lifetime of the icon source.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <a class="el" href="classGtk_1_1Image.html" title="A widget displaying an image. ">
+           Image
+          </a>
+          filename. This string must not be modified or freed.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9c99baebe10e598d977fe08dcb6c93e8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::IconSource::get_icon_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the source icon name, or
+         <code>
+          nullptr
+         </code>
+         if none is set.
+        </p>
+        <p>
+         The icon_name is not a copy, and should not be modified or expected to persist beyond the lifetime of the icon source.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Icon name. This string must not be modified or freed.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a95f73a9793d6af134dcbf41e57e51cff">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::IconSource::get_pixbuf
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the source pixbuf, or
+         <code>
+          nullptr
+         </code>
+         if none is set.
+        </p>
+        <p>
+         In addition, if a filename source is in use, this function in some cases will return the pixbuf from loaded from the filename. This is, for example, true for the GtkIconSource passed to the Gtk::Style render_icon() virtual function. The reference count on the pixbuf is not incremented.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Source pixbuf.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa8f0e245c3cc1a099d958b3beed28f43">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::IconSource::get_pixbuf
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the source pixbuf, or
+         <code>
+          nullptr
+         </code>
+         if none is set.
+        </p>
+        <p>
+         In addition, if a filename source is in use, this function in some cases will return the pixbuf from loaded from the filename. This is, for example, true for the GtkIconSource passed to the Gtk::Style render_icon() virtual function. The reference count on the pixbuf is not incremented.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Source pixbuf.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a690b0f0e7c34a49093869068674c7ff7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1IconSize.html">
+             IconSize
+            </a>
+            Gtk::IconSource::get_size
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Obtains the icon size this source applies to.
+        </p>
+        <p>
+         The return value is only useful/meaningful if the icon size is not wildcarded.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Icon size (
+          <a class="el" href="classGtk_1_1IconSize.html" title="Represents registered icon sizes. ">
+           Gtk::IconSize
+          </a>
+          ) this source matches.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a4c799234fee629dcf1821ff75499eff4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::IconSource::get_size_wildcarded
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the value set by
+         <a class="el" href="classGtk_1_1IconSource.html#a91a2063bfae7b6ad614dc15147b6d3b1" title="If the icon size is wildcarded, this source can be used as the base image for an icon of any size...">
+          set_size_wildcarded()
+         </a>
+         .
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if this icon source is a base for any icon size variant.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad8d7c3932eb7d56d56598b223ce44c0d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="namespaceGtk.html#ae389c7fef8176df3e8b7992c521d9661">
+             Gtk::StateType
+            </a>
+            Gtk::IconSource::get_state
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Obtains the widget state this icon source applies to.
+        </p>
+        <p>
+         The return value is only useful/meaningful if the widget state is not wildcarded.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+           Widget
+          </a>
+          state this source matches.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a3374f27ba60030fc82d2798c643ffbd5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::IconSource::get_state_wildcarded
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the value set by
+         <a class="el" href="classGtk_1_1IconSource.html#a799e9c455e5f78bb54c6214062535241" title="If the widget state is wildcarded, this source can be used as the base image for an icon in any Gtk::...">
+          set_state_wildcarded()
+         </a>
+         .
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if this icon source is a base for any widget state variant.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa66ee121c596b42efde937056226963d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gtk::IconSource::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a7c14ee01bb90968b2c930b873524e6e4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkIconSource* Gtk::IconSource::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a58cf0bd123403dbee4ec19725a596ebd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GtkIconSource* Gtk::IconSource::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="abe204445677aaafac76225abe5a42db1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GtkIconSource* Gtk::IconSource::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a803ad30e1544d4983fa5039a92f987f7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1IconSource.html">
+             IconSource
+            </a>
+            &amp; Gtk::IconSource::operator=
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1IconSource.html">
+             IconSource
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a5f0f37778a1db51f303136fd8b6ebb10">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1IconSource.html">
+                 IconSource
+                </a>
+                &amp; Gtk::IconSource::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1IconSource.html">
+                 IconSource
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a3153f215a855ac1dbc93782692a3a9db">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconSource::set_direction
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#gaabfcae0b9b0cf2aab01ee96352668d3d">
+             TextDirection
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             direction
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the text direction this icon source is intended to be used with.
+        </p>
+        <p>
+         Setting the text direction on an icon source makes no difference if the text direction is wildcarded. Therefore, you should usually call
+         <a class="el" href="classGtk_1_1IconSource.html#a1c306fcf2ac4d3e3f491c43921a3265f" title="If the text direction is wildcarded, this source can be used as the base image for an icon in any Gtk...">
+          set_direction_wildcarded()
+         </a>
+         to un-wildcard it in addition to calling this function.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              direction
+             </td>
+             <td>
+              Text direction this source applies to.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1c306fcf2ac4d3e3f491c43921a3265f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconSource::set_direction_wildcarded
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             setting
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         If the text direction is wildcarded, this source can be used as the base image for an icon in any
+         <a class="el" href="group__gtkmmEnums.html#gaabfcae0b9b0cf2aab01ee96352668d3d" title="Reading directions for text. ">
+          Gtk::TextDirection
+         </a>
+         .
+        </p>
+        <p>
+         If the text direction is not wildcarded, then the text direction the icon source applies to should be set with
+         <a class="el" href="classGtk_1_1IconSource.html#a3153f215a855ac1dbc93782692a3a9db" title="Sets the text direction this icon source is intended to be used with. ">
+          set_direction()
+         </a>
+         , and the icon source will only be used with that text direction.
+        </p>
+        <p>
+         <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+          Gtk::IconSet
+         </a>
+         prefers non-wildcarded sources (exact matches) over wildcarded sources, and will use an exact match when possible.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              setting
+             </td>
+             <td>
+              <code>
+               true
+              </code>
+              to wildcard the text direction.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a41801a184775c47e6c2e65fee0e4cec2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconSource::set_filename
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             filename
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the name of an image file to use as a base image when creating icon variants for
+         <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+          Gtk::IconSet
+         </a>
+         .
+        </p>
+        <p>
+         The filename must be absolute.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              filename
+             </td>
+             <td>
+              <a class="el" href="classGtk_1_1Image.html" title="A widget displaying an image. ">
+               Image
+              </a>
+              file to use.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae0ea072ab57ae724e5957218a2f195b7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconSource::set_icon_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             icon_name
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the name of an icon to look up in the current icon theme to use as a base image when creating icon variants for
+         <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+          Gtk::IconSet
+         </a>
+         .
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              icon_name
+             </td>
+             <td>
+              Name of icon to use.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a8e569cec71141a8ecebacf225d22729a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconSource::set_pixbuf
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             pixbuf
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets a pixbuf to use as a base image when creating icon variants for
+         <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+          Gtk::IconSet
+         </a>
+         .
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pixbuf
+             </td>
+             <td>
+              Pixbuf to use as a source.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae0b88adc6bbb4ff3b0b6a0279555efcf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconSource::set_size
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGtk_1_1IconSize.html">
+             IconSize
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             size
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the icon size this icon source is intended to be used with.
+        </p>
+        <p>
+         Setting the icon size on an icon source makes no difference if the size is wildcarded. Therefore, you should usually call
+         <a class="el" href="classGtk_1_1IconSource.html#a91a2063bfae7b6ad614dc15147b6d3b1" title="If the icon size is wildcarded, this source can be used as the base image for an icon of any size...">
+          set_size_wildcarded()
+         </a>
+         to un-wildcard it in addition to calling this function.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              size
+             </td>
+             <td>
+              Icon size (
+              <a class="el" href="classGtk_1_1IconSize.html" title="Represents registered icon sizes. ">
+               Gtk::IconSize
+              </a>
+              ) this source applies to.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a91a2063bfae7b6ad614dc15147b6d3b1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconSource::set_size_wildcarded
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             setting
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         If the icon size is wildcarded, this source can be used as the base image for an icon of any size.
+        </p>
+        <p>
+         If the size is not wildcarded, then the size the source applies to should be set with
+         <a class="el" href="classGtk_1_1IconSource.html#ae0b88adc6bbb4ff3b0b6a0279555efcf" title="Sets the icon size this icon source is intended to be used with. ">
+          set_size()
+         </a>
+         and the icon source will only be used with that specific size.
+        </p>
+        <p>
+         <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+          Gtk::IconSet
+         </a>
+         prefers non-wildcarded sources (exact matches) over wildcarded sources, and will use an exact match when possible.
+        </p>
+        <p>
+         <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+          Gtk::IconSet
+         </a>
+         will normally scale wildcarded source images to produce an appropriate icon at a given size, but will not change the size of source images that match exactly.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              setting
+             </td>
+             <td>
+              <code>
+               true
+              </code>
+              to wildcard the widget state.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9cc65cff2d2574fb90b62fee4284af99">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconSource::set_state
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="namespaceGtk.html#ae389c7fef8176df3e8b7992c521d9661">
+             Gtk::StateType
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             state
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the widget state this icon source is intended to be used with.
+        </p>
+        <p>
+         Setting the widget state on an icon source makes no difference if the state is wildcarded. Therefore, you should usually call
+         <a class="el" href="classGtk_1_1IconSource.html#a799e9c455e5f78bb54c6214062535241" title="If the widget state is wildcarded, this source can be used as the base image for an icon in any Gtk::...">
+          set_state_wildcarded()
+         </a>
+         to un-wildcard it in addition to calling this function.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              state
+             </td>
+             <td>
+              <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+               Widget
+              </a>
+              state this source applies to.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a799e9c455e5f78bb54c6214062535241">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconSource::set_state_wildcarded
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             setting
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         If the widget state is wildcarded, this source can be used as the base image for an icon in any
+         <a class="el" href="namespaceGtk.html#ae389c7fef8176df3e8b7992c521d9661">
+          Gtk::StateType
+         </a>
+         .
+        </p>
+        <p>
+         If the widget state is not wildcarded, then the state the source applies to should be set with
+         <a class="el" href="classGtk_1_1IconSource.html#a9cc65cff2d2574fb90b62fee4284af99" title="Sets the widget state this icon source is intended to be used with. ">
+          set_state()
+         </a>
+         and the icon source will only be used with that specific state.
+        </p>
+        <p>
+         <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+          Gtk::IconSet
+         </a>
+         prefers non-wildcarded sources (exact matches) over wildcarded sources, and will use an exact match when possible.
+        </p>
+        <p>
+         <a class="el" href="classGtk_1_1IconSet.html" title="This manages a set of variants of a particular icon An IconSet contains variants for different sizes ...">
+          Gtk::IconSet
+         </a>
+         will normally transform wildcarded source images to produce an appropriate icon for a given state, for example lightening an image on prelight, but will not modify source images that match exactly.
+        </p>
+        <p>
+         Deprecated: 3.10: Use
+         <a class="el" href="classGtk_1_1IconTheme.html">
+          Gtk::IconTheme
+         </a>
+         instead.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              setting
+             </td>
+             <td>
+              <code>
+               true
+              </code>
+              to wildcard the widget state.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1d36bab2e2ccd68fcd0e0a5fb204ccdc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void Gtk::IconSource::swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1IconSource.html">
+                 IconSource
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a1a3dd7b9da92750a47b7093c3ff6239a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1IconSource.html">
+                 IconSource
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1IconSource.html">
+                 IconSource
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              lhs
+             </td>
+             <td>
+              The left-hand side
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              rhs
+             </td>
+             <td>
+              The right-hand side
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a7d7a29bf9665ec2ca3eb03c6ff4ff841">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1IconSource.html">
+                 Gtk::IconSource
+                </a>
+                wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkIconSource *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="a76826db186409af0f30676002a5734ae">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkIconSource* Gtk::IconSource::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGtk_1_1IconSource.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

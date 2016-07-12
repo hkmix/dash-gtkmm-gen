@@ -1,0 +1,3014 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gdk::Rectangle Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGdk_1_1Rectangle.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGdk_1_1Rectangle.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGdk_1_1Rectangle.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gdk::Rectangle Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       <a class="el" href="classGdk_1_1Rectangle.html" title="Gdk::Rectangle is a structure holding the position and size of a rectangle. ">
+        Gdk::Rectangle
+       </a>
+       is a structure holding the position and size of a rectangle.
+       <a href="classGdk_1_1Rectangle.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;gdkmm/rectangle.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a7e9e1877d21525d7ad19b1ac1222ee18">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a7e9e1877d21525d7ad19b1ac1222ee18">
+           Rectangle
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7e9e1877d21525d7ad19b1ac1222ee18">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af3c88badd0508cb920783b0372c692d5">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#af3c88badd0508cb920783b0372c692d5">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:af3c88badd0508cb920783b0372c692d5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab4b9b3749802792dd7e4e6787cfdc40d">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#ab4b9b3749802792dd7e4e6787cfdc40d">
+           Rectangle
+          </a>
+          (
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ab4b9b3749802792dd7e4e6787cfdc40d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aeda6b8a264f8d06f2abb508d551a7078">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#aeda6b8a264f8d06f2abb508d551a7078">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:aeda6b8a264f8d06f2abb508d551a7078">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4355c251991e793a3d1223a570636a73">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a4355c251991e793a3d1223a570636a73">
+           Rectangle
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a4355c251991e793a3d1223a570636a73">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6a5cee08222e450ce0634133f0b2dcdc">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a6a5cee08222e450ce0634133f0b2dcdc">
+           Rectangle
+          </a>
+          (const GdkRectangle* gobject)
+         </td>
+        </tr>
+        <tr class="separator:a6a5cee08222e450ce0634133f0b2dcdc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a523818baad192ae7116554867446a8cf">
+         <td align="right" class="memItemLeft" valign="top">
+          GdkRectangle*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a523818baad192ae7116554867446a8cf">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a523818baad192ae7116554867446a8cf">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGdk_1_1Rectangle.html#a523818baad192ae7116554867446a8cf">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a523818baad192ae7116554867446a8cf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af758f3fa5443c2f0dad975bdfed112df">
+         <td align="right" class="memItemLeft" valign="top">
+          const GdkRectangle*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#af758f3fa5443c2f0dad975bdfed112df">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:af758f3fa5443c2f0dad975bdfed112df">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGdk_1_1Rectangle.html#af758f3fa5443c2f0dad975bdfed112df">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af758f3fa5443c2f0dad975bdfed112df">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4fc9fdc9c79bfb6e290630c91ed36796">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a4fc9fdc9c79bfb6e290630c91ed36796">
+           Rectangle
+          </a>
+          (int x, int y, int width, int height)
+         </td>
+        </tr>
+        <tr class="memdesc:a4fc9fdc9c79bfb6e290630c91ed36796">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Creates a new rectangle instance with these dimensions.
+          <a href="classGdk_1_1Rectangle.html#a4fc9fdc9c79bfb6e290630c91ed36796">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4fc9fdc9c79bfb6e290630c91ed36796">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abf571dc0a6009071d1ecc0f7958e6d0b">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#abf571dc0a6009071d1ecc0f7958e6d0b">
+           operator==
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src) const
+         </td>
+        </tr>
+        <tr class="separator:abf571dc0a6009071d1ecc0f7958e6d0b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa3482aa592511793902d1eedcb854ba7">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#aa3482aa592511793902d1eedcb854ba7">
+           join
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src2)
+         </td>
+        </tr>
+        <tr class="memdesc:aa3482aa592511793902d1eedcb854ba7">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Calculates the union of two rectangles, changing this rectangle.
+          <a href="classGdk_1_1Rectangle.html#aa3482aa592511793902d1eedcb854ba7">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa3482aa592511793902d1eedcb854ba7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af7188c817c550890323012e543a96594">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#af7188c817c550890323012e543a96594">
+           intersect
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src2)
+         </td>
+        </tr>
+        <tr class="memdesc:af7188c817c550890323012e543a96594">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Calculates the intersection of two rectangles, changing this rectangle.
+          <a href="classGdk_1_1Rectangle.html#af7188c817c550890323012e543a96594">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af7188c817c550890323012e543a96594">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0de9fe1fd7955800242844a35eb3cf5f">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a0de9fe1fd7955800242844a35eb3cf5f">
+           intersect
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src2, bool&amp; rectangles_intersect)
+         </td>
+        </tr>
+        <tr class="memdesc:a0de9fe1fd7955800242844a35eb3cf5f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Calculates the intersection of two rectangles, changing this rectangle.
+          <a href="classGdk_1_1Rectangle.html#a0de9fe1fd7955800242844a35eb3cf5f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0de9fe1fd7955800242844a35eb3cf5f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a05aa85d4ebaafa7f6e265642fdd53ba1">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a05aa85d4ebaafa7f6e265642fdd53ba1">
+           intersects
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src2) const
+         </td>
+        </tr>
+        <tr class="memdesc:a05aa85d4ebaafa7f6e265642fdd53ba1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks whether two rectangles intersect.
+          <a href="classGdk_1_1Rectangle.html#a05aa85d4ebaafa7f6e265642fdd53ba1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a05aa85d4ebaafa7f6e265642fdd53ba1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab1936e7e0a1fc241ca889ffeefe03e93">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#ab1936e7e0a1fc241ca889ffeefe03e93">
+           has_zero_area
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ab1936e7e0a1fc241ca889ffeefe03e93">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks whether either the width or height is 0.
+          <a href="classGdk_1_1Rectangle.html#ab1936e7e0a1fc241ca889ffeefe03e93">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab1936e7e0a1fc241ca889ffeefe03e93">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9617a6b06556cf678a349d943dc90662">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a9617a6b06556cf678a349d943dc90662">
+           get_x
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a9617a6b06556cf678a349d943dc90662">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab4cdda52ab2748841ee867406a80e3bb">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#ab4cdda52ab2748841ee867406a80e3bb">
+           set_x
+          </a>
+          (const int&amp; value)
+         </td>
+        </tr>
+        <tr class="separator:ab4cdda52ab2748841ee867406a80e3bb">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa733ca00ef7dc830e42c7687daf1fc7c">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#aa733ca00ef7dc830e42c7687daf1fc7c">
+           get_y
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:aa733ca00ef7dc830e42c7687daf1fc7c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac001c280afb816507db7ee1448b51ff4">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#ac001c280afb816507db7ee1448b51ff4">
+           set_y
+          </a>
+          (const int&amp; value)
+         </td>
+        </tr>
+        <tr class="separator:ac001c280afb816507db7ee1448b51ff4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6768444395a35be136dcbcb96c092eeb">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a6768444395a35be136dcbcb96c092eeb">
+           get_width
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a6768444395a35be136dcbcb96c092eeb">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4ee72346a08bf546dc0763f19f6f713b">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a4ee72346a08bf546dc0763f19f6f713b">
+           set_width
+          </a>
+          (const int&amp; value)
+         </td>
+        </tr>
+        <tr class="separator:a4ee72346a08bf546dc0763f19f6f713b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a712def0281db83c9a5db54efdf08716a">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a712def0281db83c9a5db54efdf08716a">
+           get_height
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a712def0281db83c9a5db54efdf08716a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0fe5422ce2c1cdef0e54802390bb6d63">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a0fe5422ce2c1cdef0e54802390bb6d63">
+           set_height
+          </a>
+          (const int&amp; value)
+         </td>
+        </tr>
+        <tr class="separator:a0fe5422ce2c1cdef0e54802390bb6d63">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:aff96bb222b0aa56f34006dbc61e35068">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#aff96bb222b0aa56f34006dbc61e35068">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aff96bb222b0aa56f34006dbc61e35068">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGdk_1_1Rectangle.html#aff96bb222b0aa56f34006dbc61e35068">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aff96bb222b0aa56f34006dbc61e35068">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:afdbfa8f303faffbb217db17de152eda7">
+         <td align="right" class="memItemLeft" valign="top">
+          GdkRectangle
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#afdbfa8f303faffbb217db17de152eda7">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:afdbfa8f303faffbb217db17de152eda7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:aadf7d3c02a3817ab4d656dd4055190ca">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#aadf7d3c02a3817ab4d656dd4055190ca">
+           join
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src1, const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src2)
+         </td>
+        </tr>
+        <tr class="memdesc:aadf7d3c02a3817ab4d656dd4055190ca">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Calculates the union of two rectangles.
+          <a href="classGdk_1_1Rectangle.html#aadf7d3c02a3817ab4d656dd4055190ca">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aadf7d3c02a3817ab4d656dd4055190ca">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a291ca74c1aa0f0e32845c53fd945b232">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#a291ca74c1aa0f0e32845c53fd945b232">
+           intersect
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src1, const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src2)
+         </td>
+        </tr>
+        <tr class="memdesc:a291ca74c1aa0f0e32845c53fd945b232">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Calculates the intersection of two rectangles.
+          <a href="classGdk_1_1Rectangle.html#a291ca74c1aa0f0e32845c53fd945b232">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a291ca74c1aa0f0e32845c53fd945b232">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae99fb9c8d4e5c4bbe48ab96f6062e816">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#ae99fb9c8d4e5c4bbe48ab96f6062e816">
+           intersect
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src1, const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Rectangle
+          </a>
+          &amp; src2, bool&amp; rectangles_intersect)
+         </td>
+        </tr>
+        <tr class="memdesc:ae99fb9c8d4e5c4bbe48ab96f6062e816">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Calculates the intersection of two rectangles.
+          <a href="classGdk_1_1Rectangle.html#ae99fb9c8d4e5c4bbe48ab96f6062e816">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae99fb9c8d4e5c4bbe48ab96f6062e816">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ade8b8c02001ee3d868068c10743a13dc">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Gdk::Rectangle
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#ade8b8c02001ee3d868068c10743a13dc">
+           wrap
+          </a>
+          (GdkRectangle* object)
+         </td>
+        </tr>
+        <tr class="separator:ade8b8c02001ee3d868068c10743a13dc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abdb81cb65b494d2e4a50888a1e29f64b">
+         <td align="right" class="memItemLeft" valign="top">
+          const
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Gdk::Rectangle
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Rectangle.html#abdb81cb65b494d2e4a50888a1e29f64b">
+           wrap
+          </a>
+          (const GdkRectangle* object)
+         </td>
+        </tr>
+        <tr class="separator:abdb81cb65b494d2e4a50888a1e29f64b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        <a class="el" href="classGdk_1_1Rectangle.html" title="Gdk::Rectangle is a structure holding the position and size of a rectangle. ">
+         Gdk::Rectangle
+        </a>
+        is a structure holding the position and size of a rectangle.
+       </p>
+       <p>
+        The intersection of two rectangles can be computed with
+        <a class="el" href="classGdk_1_1Rectangle.html#af7188c817c550890323012e543a96594" title="Calculates the intersection of two rectangles, changing this rectangle. ">
+         intersect()
+        </a>
+        . To find the union of two rectangles use
+        <a class="el" href="classGdk_1_1Rectangle.html#aa3482aa592511793902d1eedcb854ba7" title="Calculates the union of two rectangles, changing this rectangle. ">
+         join()
+        </a>
+        .
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a7e9e1877d21525d7ad19b1ac1222ee18">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::Rectangle::Rectangle
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab4b9b3749802792dd7e4e6787cfdc40d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::Rectangle::Rectangle
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a4355c251991e793a3d1223a570636a73">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gdk::Rectangle::Rectangle
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a6a5cee08222e450ce0634133f0b2dcdc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::Rectangle::Rectangle
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const GdkRectangle *
+               </td>
+               <td class="paramname">
+                <em>
+                 gobject
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a4fc9fdc9c79bfb6e290630c91ed36796">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gdk::Rectangle::Rectangle
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             x
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             y
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             width
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             height
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Creates a new rectangle instance with these dimensions.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a712def0281db83c9a5db54efdf08716a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gdk::Rectangle::get_height
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aff96bb222b0aa56f34006dbc61e35068">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gdk::Rectangle::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a6768444395a35be136dcbcb96c092eeb">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gdk::Rectangle::get_width
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a9617a6b06556cf678a349d943dc90662">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gdk::Rectangle::get_x
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aa733ca00ef7dc830e42c7687daf1fc7c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gdk::Rectangle::get_y
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a523818baad192ae7116554867446a8cf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GdkRectangle* Gdk::Rectangle::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="af758f3fa5443c2f0dad975bdfed112df">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GdkRectangle* Gdk::Rectangle::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ab1936e7e0a1fc241ca889ffeefe03e93">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gdk::Rectangle::has_zero_area
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks whether either the width or height is 0.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Whether this rectangle has 0 area.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af7188c817c550890323012e543a96594">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGdk_1_1Rectangle.html">
+             Rectangle
+            </a>
+            &amp; Gdk::Rectangle::intersect
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1Rectangle.html">
+             Rectangle
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             src2
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Calculates the intersection of two rectangles, changing this rectangle.
+        </p>
+        <p>
+         If the rectangles do not intersect, this rectangle's width and height are set to 0 and its x and y values are undefined.
+        </p>
+        <p>
+         This method returns a reference to this instance, allowing you to then call another method easily. For instance: rect.intersect(src2).join(src3);
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              src2
+             </td>
+             <td>
+              The rectangle with which to calculate the intersection with this rectangle.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A reference to this rectangle.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0de9fe1fd7955800242844a35eb3cf5f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGdk_1_1Rectangle.html">
+             Rectangle
+            </a>
+            &amp; Gdk::Rectangle::intersect
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1Rectangle.html">
+             Rectangle
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             src2
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            bool &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             rectangles_intersect
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Calculates the intersection of two rectangles, changing this rectangle.
+        </p>
+        <p>
+         If the rectangles do not intersect, this rectangle's width and height are set to 0 and its x and y values are undefined.
+        </p>
+        <p>
+         This method returns a reference to this instance, allowing you to then call another method easily. For instance: rect.intersect(src2, rectangles_intersect).join(src3);
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramdir">
+             </td>
+             <td class="paramname">
+              src2
+             </td>
+             <td>
+              The rectangle with which to calculate the intersection with this rectangle.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramdir">
+              [out]
+             </td>
+             <td class="paramname">
+              rectangles_intersect
+             </td>
+             <td>
+              This will be set to
+              <code>
+               true
+              </code>
+              if the rectangles intersect, else
+              <code>
+               false
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A reference to this rectangle.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a05aa85d4ebaafa7f6e265642fdd53ba1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gdk::Rectangle::intersects
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1Rectangle.html">
+             Rectangle
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             src2
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks whether two rectangles intersect.
+        </p>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000004">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              src2
+             </td>
+             <td>
+              The rectangle with which to check intersection with this rectangle.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          Whether this rectangle intersects
+          <em>
+           src2
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa3482aa592511793902d1eedcb854ba7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGdk_1_1Rectangle.html">
+             Rectangle
+            </a>
+            &amp; Gdk::Rectangle::join
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1Rectangle.html">
+             Rectangle
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             src2
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Calculates the union of two rectangles, changing this rectangle.
+        </p>
+        <p>
+         The union of this rectangle and
+         <em>
+          src2
+         </em>
+         is the smallest rectangle which includes both this rectangle and
+         <em>
+          src2
+         </em>
+         within it.
+        </p>
+        <p>
+         This method returns a reference to this instance, allowing you to then call another method easily. For instance: rect.join(src2).intersect(src3);
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              src2
+             </td>
+             <td>
+              The rectangle with which to calculate the union with this rectangle.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A reference to this rectangle.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af3c88badd0508cb920783b0372c692d5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp; Gdk::Rectangle::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aeda6b8a264f8d06f2abb508d551a7078">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp; Gdk::Rectangle::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="abf571dc0a6009071d1ecc0f7958e6d0b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gdk::Rectangle::operator==
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1Rectangle.html">
+             Rectangle
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             src
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="since_3_20">
+         <dt>
+          <b>
+           <a class="el" href="since_3_20.html#_since_3_20000010">
+            Since gtkmm 3.20:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0fe5422ce2c1cdef0e54802390bb6d63">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Rectangle::set_height
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a4ee72346a08bf546dc0763f19f6f713b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Rectangle::set_width
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab4cdda52ab2748841ee867406a80e3bb">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Rectangle::set_x
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac001c280afb816507db7ee1448b51ff4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Rectangle::set_y
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a291ca74c1aa0f0e32845c53fd945b232">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                intersect
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src1
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src2
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Calculates the intersection of two rectangles.
+        </p>
+        <p>
+         If the rectangles do not intersect, the returned rectangle's width and height are set to 0 and its x and y values are undefined.
+        </p>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000002">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              src1
+             </td>
+             <td>
+              One of the rectangles.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              src2
+             </td>
+             <td>
+              The other rectangle.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The intersection of
+          <em>
+           src1
+          </em>
+          and
+          <em>
+           src2
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae99fb9c8d4e5c4bbe48ab96f6062e816">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                intersect
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src1
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src2
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rectangles_intersect
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Calculates the intersection of two rectangles.
+        </p>
+        <p>
+         If the rectangles do not intersect, the returned rectangle's width and height are set to 0 and its x and y values are undefined.
+        </p>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000003">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramdir">
+             </td>
+             <td class="paramname">
+              src1
+             </td>
+             <td>
+              One of the rectangles.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramdir">
+             </td>
+             <td class="paramname">
+              src2
+             </td>
+             <td>
+              The other rectangle.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramdir">
+              [out]
+             </td>
+             <td class="paramname">
+              rectangles_intersect
+             </td>
+             <td>
+              This will be set to
+              <code>
+               true
+              </code>
+              if the rectangles intersect, else
+              <code>
+               false
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The intersection of
+          <em>
+           src1
+          </em>
+          and
+          <em>
+           src2
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aadf7d3c02a3817ab4d656dd4055190ca">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                join
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src1
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Rectangle
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 src2
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Calculates the union of two rectangles.
+        </p>
+        <p>
+         The union of
+         <em>
+          src1
+         </em>
+         and
+         <em>
+          src2
+         </em>
+         is the smallest rectangle which includes both
+         <em>
+          src1
+         </em>
+         and
+         <em>
+          src2
+         </em>
+         within it.
+        </p>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000001">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              src1
+             </td>
+             <td>
+              One of the rectangles.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              src2
+             </td>
+             <td>
+              The other rectangle.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The union of
+          <em>
+           src1
+          </em>
+          and
+          <em>
+           src2
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ade8b8c02001ee3d868068c10743a13dc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Gdk::Rectangle
+                </a>
+                &amp; wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GdkRectangle *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="abdb81cb65b494d2e4a50888a1e29f64b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const
+                <a class="el" href="classGdk_1_1Rectangle.html">
+                 Gdk::Rectangle
+                </a>
+                &amp; wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const GdkRectangle *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="afdbfa8f303faffbb217db17de152eda7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GdkRectangle Gdk::Rectangle::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGdk_1_1Rectangle.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

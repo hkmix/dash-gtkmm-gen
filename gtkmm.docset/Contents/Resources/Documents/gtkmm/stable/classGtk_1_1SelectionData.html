@@ -1,0 +1,4182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gtk::SelectionData Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGtk_1_1SelectionData.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1SelectionData.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1SelectionData.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gtk::SelectionData Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       <code>
+        #include &lt;gtkmm/selectiondata.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a960d5979b57c7a2a9d025b4c3bdce3d4">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a960d5979b57c7a2a9d025b4c3bdce3d4">
+           SelectionData
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a960d5979b57c7a2a9d025b4c3bdce3d4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a737d81c0ec50c493a362851153fb37d0">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a737d81c0ec50c493a362851153fb37d0">
+           SelectionData
+          </a>
+          (GtkSelectionData* gobject, bool make_a_copy=true)
+         </td>
+        </tr>
+        <tr class="separator:a737d81c0ec50c493a362851153fb37d0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a38e56cf805c11aa747c010f4f3aaf3df">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a38e56cf805c11aa747c010f4f3aaf3df">
+           SelectionData
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           SelectionData
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:a38e56cf805c11aa747c010f4f3aaf3df">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3f4a823c42ea8380d0b70c209b62e979">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           SelectionData
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a3f4a823c42ea8380d0b70c209b62e979">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           SelectionData
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:a3f4a823c42ea8380d0b70c209b62e979">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af373da78f2d3a286bd92df38bd9984b1">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#af373da78f2d3a286bd92df38bd9984b1">
+           SelectionData
+          </a>
+          (
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           SelectionData
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:af373da78f2d3a286bd92df38bd9984b1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adeb535aa89906008b02f8749466622ee">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           SelectionData
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#adeb535aa89906008b02f8749466622ee">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           SelectionData
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:adeb535aa89906008b02f8749466622ee">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad9c65ed8c98a4b8edcfb1d8fac189d13">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#ad9c65ed8c98a4b8edcfb1d8fac189d13">
+           ~SelectionData
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:ad9c65ed8c98a4b8edcfb1d8fac189d13">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a027d31220e644e2ebb048a6cdd75a43f">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a027d31220e644e2ebb048a6cdd75a43f">
+           swap
+          </a>
+          (
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           SelectionData
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a027d31220e644e2ebb048a6cdd75a43f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a64da01e677cb9937a08d5eee606374f1">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkSelectionData*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a64da01e677cb9937a08d5eee606374f1">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a64da01e677cb9937a08d5eee606374f1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1SelectionData.html#a64da01e677cb9937a08d5eee606374f1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a64da01e677cb9937a08d5eee606374f1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a61975208c3a824d985a876d76b82791d">
+         <td align="right" class="memItemLeft" valign="top">
+          const GtkSelectionData*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a61975208c3a824d985a876d76b82791d">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a61975208c3a824d985a876d76b82791d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1SelectionData.html#a61975208c3a824d985a876d76b82791d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a61975208c3a824d985a876d76b82791d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a553aea8a0ef83b67096e7ed26ea5d785">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkSelectionData*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a553aea8a0ef83b67096e7ed26ea5d785">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a553aea8a0ef83b67096e7ed26ea5d785">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+          <a href="classGtk_1_1SelectionData.html#a553aea8a0ef83b67096e7ed26ea5d785">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a553aea8a0ef83b67096e7ed26ea5d785">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa5d6c006f1e575808bb64c3a1724eb87">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#aa5d6c006f1e575808bb64c3a1724eb87">
+           set
+          </a>
+          (int format, const guint8* data, int length)
+         </td>
+        </tr>
+        <tr class="memdesc:aa5d6c006f1e575808bb64c3a1724eb87">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Assign a memory block of raw data.
+          <a href="classGtk_1_1SelectionData.html#aa5d6c006f1e575808bb64c3a1724eb87">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa5d6c006f1e575808bb64c3a1724eb87">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3f34e9f6ec1986cd4c299c89585d7926">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a3f34e9f6ec1986cd4c299c89585d7926">
+           set
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib_1_1Unicode.html#a042d1c3fdb1a22daf647211210af80c3">
+           type
+          </a>
+          , int format, const guint8* data, int length)
+         </td>
+        </tr>
+        <tr class="memdesc:a3f34e9f6ec1986cd4c299c89585d7926">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Assign a memory block of raw data.
+          <a href="classGtk_1_1SelectionData.html#a3f34e9f6ec1986cd4c299c89585d7926">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3f34e9f6ec1986cd4c299c89585d7926">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1464571fb61f96ac66f15731e8214091">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a1464571fb61f96ac66f15731e8214091">
+           set
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib_1_1Unicode.html#a042d1c3fdb1a22daf647211210af80c3">
+           type
+          </a>
+          , const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &amp; data)
+         </td>
+        </tr>
+        <tr class="memdesc:a1464571fb61f96ac66f15731e8214091">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Assign a string of raw data.
+          <a href="classGtk_1_1SelectionData.html#a1464571fb61f96ac66f15731e8214091">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1464571fb61f96ac66f15731e8214091">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a85a4ed9fd2da8ff6174842d3c53167e3">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a85a4ed9fd2da8ff6174842d3c53167e3">
+           set_text
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; data)
+         </td>
+        </tr>
+        <tr class="memdesc:a85a4ed9fd2da8ff6174842d3c53167e3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Assign UTF-8 encoded text.
+          <a href="classGtk_1_1SelectionData.html#a85a4ed9fd2da8ff6174842d3c53167e3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a85a4ed9fd2da8ff6174842d3c53167e3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad6fe5dc64610a8ef8b76582e09facaea">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#ad6fe5dc64610a8ef8b76582e09facaea">
+           get_text
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ad6fe5dc64610a8ef8b76582e09facaea">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the contents of the selection data as a UTF-8 string.
+          <a href="classGtk_1_1SelectionData.html#ad6fe5dc64610a8ef8b76582e09facaea">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad6fe5dc64610a8ef8b76582e09facaea">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abbcfbbbbd1bbc7d581711f32b97b938a">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#abbcfbbbbd1bbc7d581711f32b97b938a">
+           set_pixbuf
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;&amp; pixbuf)
+         </td>
+        </tr>
+        <tr class="memdesc:abbcfbbbbd1bbc7d581711f32b97b938a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the contents of the selection from a
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          The pixbuf is converted to the form determined by
+          <em>
+           selection_data-&gt;target
+          </em>
+          .
+          <a href="classGtk_1_1SelectionData.html#abbcfbbbbd1bbc7d581711f32b97b938a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abbcfbbbbd1bbc7d581711f32b97b938a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9c39b784e5977aac600b369c0062bb2f">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a9c39b784e5977aac600b369c0062bb2f">
+           get_pixbuf
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a9c39b784e5977aac600b369c0062bb2f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the contents of the selection data as a
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          .
+          <a href="classGtk_1_1SelectionData.html#a9c39b784e5977aac600b369c0062bb2f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9c39b784e5977aac600b369c0062bb2f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a32adbe8fe464cc6572c2337951fae84e">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a32adbe8fe464cc6572c2337951fae84e">
+           get_pixbuf
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a32adbe8fe464cc6572c2337951fae84e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the contents of the selection data as a
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          .
+          <a href="classGtk_1_1SelectionData.html#a32adbe8fe464cc6572c2337951fae84e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a32adbe8fe464cc6572c2337951fae84e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa73e3d0b7d8eec201e4e2242133b47f9">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#aa73e3d0b7d8eec201e4e2242133b47f9">
+           set_uris
+          </a>
+          (const
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;&amp; uris)
+         </td>
+        </tr>
+        <tr class="memdesc:aa73e3d0b7d8eec201e4e2242133b47f9">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the contents of the selection from a list of URIs.
+          <a href="classGtk_1_1SelectionData.html#aa73e3d0b7d8eec201e4e2242133b47f9">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa73e3d0b7d8eec201e4e2242133b47f9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aabaf632a2b0454c53199a16be4cabfa6">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#aabaf632a2b0454c53199a16be4cabfa6">
+           get_uris
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aabaf632a2b0454c53199a16be4cabfa6">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the contents of the selection data as a container of URIs.
+          <a href="classGtk_1_1SelectionData.html#aabaf632a2b0454c53199a16be4cabfa6">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aabaf632a2b0454c53199a16be4cabfa6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0dd1ae04cb843a1c9648ea62c81a8841">
+         <td align="right" class="memItemLeft" valign="top">
+          const guchar*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a0dd1ae04cb843a1c9648ea62c81a8841">
+           get_data
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a0dd1ae04cb843a1c9648ea62c81a8841">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the raw data of the selection.
+          <a href="classGtk_1_1SelectionData.html#a0dd1ae04cb843a1c9648ea62c81a8841">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0dd1ae04cb843a1c9648ea62c81a8841">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5c8913e1086614c80f4e84325c649d42">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a5c8913e1086614c80f4e84325c649d42">
+           get_length
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a5c8913e1086614c80f4e84325c649d42">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the length of the raw data of the selection.
+          <a href="classGtk_1_1SelectionData.html#a5c8913e1086614c80f4e84325c649d42">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5c8913e1086614c80f4e84325c649d42">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8aa6dbb3ae7a59c408f3556b6decfbf1">
+         <td align="right" class="memItemLeft" valign="top">
+          const guchar*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a8aa6dbb3ae7a59c408f3556b6decfbf1">
+           get_data
+          </a>
+          (int&amp; length) const
+         </td>
+        </tr>
+        <tr class="memdesc:a8aa6dbb3ae7a59c408f3556b6decfbf1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the raw data of the selection along with its length.
+          <a href="classGtk_1_1SelectionData.html#a8aa6dbb3ae7a59c408f3556b6decfbf1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8aa6dbb3ae7a59c408f3556b6decfbf1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a652b34830f8c54515f3a70f458e6c152">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a652b34830f8c54515f3a70f458e6c152">
+           get_data_as_string
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a652b34830f8c54515f3a70f458e6c152">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the raw data of the selection as a
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          .
+          <a href="classGtk_1_1SelectionData.html#a652b34830f8c54515f3a70f458e6c152">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a652b34830f8c54515f3a70f458e6c152">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aedf2fd11ed9e0709efe6e24498b9385e">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#aedf2fd11ed9e0709efe6e24498b9385e">
+           get_selection
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aedf2fd11ed9e0709efe6e24498b9385e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the selection Gdk::Atom of the selection data.
+          <a href="classGtk_1_1SelectionData.html#aedf2fd11ed9e0709efe6e24498b9385e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aedf2fd11ed9e0709efe6e24498b9385e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a34ee1b33006bf4f2be11c8fdb65df33e">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a34ee1b33006bf4f2be11c8fdb65df33e">
+           get_target
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a34ee1b33006bf4f2be11c8fdb65df33e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the target of the selection.
+          <a href="classGtk_1_1SelectionData.html#a34ee1b33006bf4f2be11c8fdb65df33e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a34ee1b33006bf4f2be11c8fdb65df33e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af879ef592339304dae13d7be339321e7">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#af879ef592339304dae13d7be339321e7">
+           get_targets
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:af879ef592339304dae13d7be339321e7">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          See also
+          <a class="el" href="classGtk_1_1Clipboard.html#ae3be3a0d85849117a284f8a1cbfdb98e" title="Requests the contents of the clipboard as list of supported targets. ">
+           Gtk::Clipboard::request_targets()
+          </a>
+          <a href="classGtk_1_1SelectionData.html#af879ef592339304dae13d7be339321e7">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af879ef592339304dae13d7be339321e7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a20257cb7db350176a9b66d6ce2dedcd4">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+           std::string
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a20257cb7db350176a9b66d6ce2dedcd4">
+           get_data_type
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a20257cb7db350176a9b66d6ce2dedcd4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the type of the data as set by
+          <a class="el" href="classGtk_1_1SelectionData.html#aa5d6c006f1e575808bb64c3a1724eb87" title="Assign a memory block of raw data. ">
+           SelectionData::set()
+          </a>
+          .
+          <a href="classGtk_1_1SelectionData.html#a20257cb7db350176a9b66d6ce2dedcd4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a20257cb7db350176a9b66d6ce2dedcd4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0dd95ca2a722651db2ad3e7d1e30f260">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a0dd95ca2a722651db2ad3e7d1e30f260">
+           get_format
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a0dd95ca2a722651db2ad3e7d1e30f260">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the format of the selection.
+          <a href="classGtk_1_1SelectionData.html#a0dd95ca2a722651db2ad3e7d1e30f260">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0dd95ca2a722651db2ad3e7d1e30f260">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abe771f4375acf6e152fbe4666534534b">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Display.html">
+           Gdk::Display
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#abe771f4375acf6e152fbe4666534534b">
+           get_display
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:abe771f4375acf6e152fbe4666534534b">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the display of the selection.
+          <a href="classGtk_1_1SelectionData.html#abe771f4375acf6e152fbe4666534534b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abe771f4375acf6e152fbe4666534534b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aca4a73f550bd8172b42e76031bc8b985">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGdk_1_1Display.html">
+           Gdk::Display
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#aca4a73f550bd8172b42e76031bc8b985">
+           get_display
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aca4a73f550bd8172b42e76031bc8b985">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Retrieves the display of the selection.
+          <a href="classGtk_1_1SelectionData.html#aca4a73f550bd8172b42e76031bc8b985">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aca4a73f550bd8172b42e76031bc8b985">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9fbf51e548ecb51d983531ecccf49fb9">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a9fbf51e548ecb51d983531ecccf49fb9">
+           targets_include_uri
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a9fbf51e548ecb51d983531ecccf49fb9">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Given a
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           Gtk::SelectionData
+          </a>
+          object holding a list of targets, determines if any of the targets in
+          <em>
+           targets
+          </em>
+          can be used to provide a list or URIs.
+          <a href="classGtk_1_1SelectionData.html#a9fbf51e548ecb51d983531ecccf49fb9">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9fbf51e548ecb51d983531ecccf49fb9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a589b34bbc75182de5195dd5a22708892">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a589b34bbc75182de5195dd5a22708892">
+           targets_include_text
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a589b34bbc75182de5195dd5a22708892">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Given a
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           Gtk::SelectionData
+          </a>
+          object holding a list of targets, determines if any of the targets in
+          <em>
+           targets
+          </em>
+          can be used to provide text.
+          <a href="classGtk_1_1SelectionData.html#a589b34bbc75182de5195dd5a22708892">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a589b34bbc75182de5195dd5a22708892">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a23502b282ec4546943b6fb4c2d0d8e3d">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a23502b282ec4546943b6fb4c2d0d8e3d">
+           targets_include_rich_text
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1TextBuffer.html">
+           TextBuffer
+          </a>
+          &gt;&amp; buffer) const
+         </td>
+        </tr>
+        <tr class="memdesc:a23502b282ec4546943b6fb4c2d0d8e3d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Given a
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           Gtk::SelectionData
+          </a>
+          object holding a list of targets, determines if any of the targets in
+          <em>
+           targets
+          </em>
+          can be used to provide rich text.
+          <a href="classGtk_1_1SelectionData.html#a23502b282ec4546943b6fb4c2d0d8e3d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a23502b282ec4546943b6fb4c2d0d8e3d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a97521408bbef83c56ed4b8c3faa53bd8">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a97521408bbef83c56ed4b8c3faa53bd8">
+           targets_include_image
+          </a>
+          (bool writable=true) const
+         </td>
+        </tr>
+        <tr class="memdesc:a97521408bbef83c56ed4b8c3faa53bd8">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Given a
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           Gtk::SelectionData
+          </a>
+          object holding a list of targets, determines if any of the targets in
+          <em>
+           targets
+          </em>
+          can be used to provide a
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          .
+          <a href="classGtk_1_1SelectionData.html#a97521408bbef83c56ed4b8c3faa53bd8">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a97521408bbef83c56ed4b8c3faa53bd8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a145eef69ee940d37fdab6285d4b33d91">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a145eef69ee940d37fdab6285d4b33d91">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a145eef69ee940d37fdab6285d4b33d91">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGtk_1_1SelectionData.html#a145eef69ee940d37fdab6285d4b33d91">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a145eef69ee940d37fdab6285d4b33d91">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:aeccc1384f7e8decb49a0188c76c99658">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkSelectionData*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#aeccc1384f7e8decb49a0188c76c99658">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:aeccc1384f7e8decb49a0188c76c99658">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a4ecb0408a4349572c98c2969d4c3ca9a">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a4ecb0408a4349572c98c2969d4c3ca9a">
+           swap
+          </a>
+          (
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           SelectionData
+          </a>
+          &amp; lhs,
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           SelectionData
+          </a>
+          &amp; rhs) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a4ecb0408a4349572c98c2969d4c3ca9a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6e49ccb1719123dd777a6b9b35004dfe">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1SelectionData.html">
+           Gtk::SelectionData
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1SelectionData.html#a6e49ccb1719123dd777a6b9b35004dfe">
+           wrap
+          </a>
+          (GtkSelectionData* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a6e49ccb1719123dd777a6b9b35004dfe">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGtk_1_1SelectionData.html#a6e49ccb1719123dd777a6b9b35004dfe">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a6e49ccb1719123dd777a6b9b35004dfe">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a960d5979b57c7a2a9d025b4c3bdce3d4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::SelectionData::SelectionData
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a737d81c0ec50c493a362851153fb37d0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::SelectionData::SelectionData
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkSelectionData *
+               </td>
+               <td class="paramname">
+                <em>
+                 gobject
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 make_a_copy
+                </em>
+                =
+                <code>
+                 true
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a38e56cf805c11aa747c010f4f3aaf3df">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::SelectionData::SelectionData
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1SelectionData.html">
+             SelectionData
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="af373da78f2d3a286bd92df38bd9984b1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::SelectionData::SelectionData
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1SelectionData.html">
+                 SelectionData
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ad9c65ed8c98a4b8edcfb1d8fac189d13">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::SelectionData::~SelectionData
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a0dd1ae04cb843a1c9648ea62c81a8841">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            const guchar* Gtk::SelectionData::get_data
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the raw data of the selection.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000140">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The raw data of the selection.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a8aa6dbb3ae7a59c408f3556b6decfbf1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            const guchar* Gtk::SelectionData::get_data
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             length
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the raw data of the selection along with its length.
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000254">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              length
+             </td>
+             <td>
+              Return location for length of the data segment.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The raw data of the selection.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a652b34830f8c54515f3a70f458e6c152">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            Gtk::SelectionData::get_data_as_string
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the raw data of the selection as a
+         <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+          std::string
+         </a>
+         .
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The raw data of the selection. Contains 0-bytes, if the selection data does.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a20257cb7db350176a9b66d6ce2dedcd4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            Gtk::SelectionData::get_data_type
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the type of the data as set by
+         <a class="el" href="classGtk_1_1SelectionData.html#aa5d6c006f1e575808bb64c3a1724eb87" title="Assign a memory block of raw data. ">
+          SelectionData::set()
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="abe771f4375acf6e152fbe4666534534b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Display.html">
+             Gdk::Display
+            </a>
+            &gt; Gtk::SelectionData::get_display
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the display of the selection.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000144">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The display of the selection.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aca4a73f550bd8172b42e76031bc8b985">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGdk_1_1Display.html">
+             Gdk::Display
+            </a>
+            &gt; Gtk::SelectionData::get_display
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the display of the selection.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000145">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The display of the selection.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0dd95ca2a722651db2ad3e7d1e30f260">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gtk::SelectionData::get_format
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the format of the selection.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000143">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The format of the selection.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5c8913e1086614c80f4e84325c649d42">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gtk::SelectionData::get_length
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the length of the raw data of the selection.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000141">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The length of the data of the selection.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9c39b784e5977aac600b369c0062bb2f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::SelectionData::get_pixbuf
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the contents of the selection data as a
+         <a class="el" href="classGdk_1_1Pixbuf.html">
+          Gdk::Pixbuf
+         </a>
+         .
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000240">
+            Since gtkmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          If the selection data contained a recognized image type and it could be converted to a
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          , a newly allocated pixbuf is returned, otherwise
+          <code>
+           nullptr
+          </code>
+          . If the result is non-
+          <code>
+           nullptr
+          </code>
+          it must be freed with Glib::object_unref().
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a32adbe8fe464cc6572c2337951fae84e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::SelectionData::get_pixbuf
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the contents of the selection data as a
+         <a class="el" href="classGdk_1_1Pixbuf.html">
+          Gdk::Pixbuf
+         </a>
+         .
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000241">
+            Since gtkmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          If the selection data contained a recognized image type and it could be converted to a
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          , a newly allocated pixbuf is returned, otherwise
+          <code>
+           nullptr
+          </code>
+          . If the result is non-
+          <code>
+           nullptr
+          </code>
+          it must be freed with Glib::object_unref().
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aedf2fd11ed9e0709efe6e24498b9385e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            Gtk::SelectionData::get_selection
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the selection Gdk::Atom of the selection data.
+        </p>
+        <dl class="since_2_16">
+         <dt>
+          <b>
+           <a class="el" href="since_2_16.html#_since_2_16000144">
+            Since gtkmm 2.16:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The selection Gdk::Atom of the selection data.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a34ee1b33006bf4f2be11c8fdb65df33e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            Gtk::SelectionData::get_target
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Retrieves the target of the selection.
+        </p>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000142">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af879ef592339304dae13d7be339321e7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &gt; Gtk::SelectionData::get_targets
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         See also
+         <a class="el" href="classGtk_1_1Clipboard.html#ae3be3a0d85849117a284f8a1cbfdb98e" title="Requests the contents of the clipboard as list of supported targets. ">
+          Gtk::Clipboard::request_targets()
+         </a>
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ad6fe5dc64610a8ef8b76582e09facaea">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::SelectionData::get_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the contents of the selection data as a UTF-8 string.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          If the selection data contained a recognized text type and it could be converted to UTF-8, a string containing the converted text, otherwise an empty string.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a145eef69ee940d37fdab6285d4b33d91">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gtk::SelectionData::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aabaf632a2b0454c53199a16be4cabfa6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt; Gtk::SelectionData::get_uris
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the contents of the selection data as a container of URIs.
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000243">
+            Since gtkmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          If the selection data contains a list of URIs, a container containing the URIs, otherwise an empty container.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a64da01e677cb9937a08d5eee606374f1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkSelectionData* Gtk::SelectionData::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a61975208c3a824d985a876d76b82791d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GtkSelectionData* Gtk::SelectionData::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a553aea8a0ef83b67096e7ed26ea5d785">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GtkSelectionData* Gtk::SelectionData::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a3f4a823c42ea8380d0b70c209b62e979">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1SelectionData.html">
+             SelectionData
+            </a>
+            &amp; Gtk::SelectionData::operator=
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1SelectionData.html">
+             SelectionData
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="adeb535aa89906008b02f8749466622ee">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1SelectionData.html">
+                 SelectionData
+                </a>
+                &amp; Gtk::SelectionData::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1SelectionData.html">
+                 SelectionData
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aa5d6c006f1e575808bb64c3a1724eb87">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::SelectionData::set
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             format
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const guint8 *
+           </td>
+           <td class="paramname">
+            <em>
+             data
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             length
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Assign a memory block of raw data.
+        </p>
+        <p>
+         Store new data into the
+         <a class="el" href="classGtk_1_1SelectionData.html">
+          Gtk::SelectionData
+         </a>
+         object. Should
+         <em>
+          only
+         </em>
+         be called from a selection handler callback. A 0-byte terminates the stored data. The type of data is determined by
+         <a class="el" href="classGtk_1_1SelectionData.html#a34ee1b33006bf4f2be11c8fdb65df33e" title="Retrieves the target of the selection. ">
+          get_target()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              format
+             </td>
+             <td>
+              The data format, i.e. the number of bits in a unit.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              data
+             </td>
+             <td>
+              Pointer to the data (will be copied).
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              length
+             </td>
+             <td>
+              The length of the data block in bytes.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a3f34e9f6ec1986cd4c299c89585d7926">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::SelectionData::set
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             type
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             format
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const guint8 *
+           </td>
+           <td class="paramname">
+            <em>
+             data
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             length
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Assign a memory block of raw data.
+        </p>
+        <p>
+         Store new data into the
+         <a class="el" href="classGtk_1_1SelectionData.html">
+          Gtk::SelectionData
+         </a>
+         object. Should
+         <em>
+          only
+         </em>
+         be called from a selection handler callback. A 0-byte terminates the stored data.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              type
+             </td>
+             <td>
+              The type of the selection data.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              format
+             </td>
+             <td>
+              The data format, i.e. the number of bits in a unit.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              data
+             </td>
+             <td>
+              Pointer to the data (will be copied).
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              length
+             </td>
+             <td>
+              The length of the data block in bytes.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a1464571fb61f96ac66f15731e8214091">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::SelectionData::set
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             type
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+             std::string
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             data
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Assign a string of raw data.
+        </p>
+        <p>
+         Store new data into the
+         <a class="el" href="classGtk_1_1SelectionData.html">
+          Gtk::SelectionData
+         </a>
+         object. Should
+         <em>
+          only
+         </em>
+         be called from a selection handler callback.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              type
+             </td>
+             <td>
+              The type of the selection data.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              data
+             </td>
+             <td>
+              A string that contains the data (does not have to be text).
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="abbcfbbbbd1bbc7d581711f32b97b938a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::SelectionData::set_pixbuf
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             pixbuf
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the contents of the selection from a
+         <a class="el" href="classGdk_1_1Pixbuf.html">
+          Gdk::Pixbuf
+         </a>
+         The pixbuf is converted to the form determined by
+         <em>
+          selection_data-&gt;target
+         </em>
+         .
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000239">
+            Since gtkmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pixbuf
+             </td>
+             <td>
+              A
+              <a class="el" href="classGdk_1_1Pixbuf.html">
+               Gdk::Pixbuf
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the selection was successfully set, otherwise
+          <code>
+           false
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a85a4ed9fd2da8ff6174842d3c53167e3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::SelectionData::set_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             data
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Assign UTF-8 encoded text.
+        </p>
+        <p>
+         Sets the contents of the selection from a UTF-8 encoded string. The string is converted to the form determined by
+         <a class="el" href="classGtk_1_1SelectionData.html#a34ee1b33006bf4f2be11c8fdb65df33e" title="Retrieves the target of the selection. ">
+          get_target()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              data
+             </td>
+             <td>
+              A UTF-8 encoded string.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the selection was successfully set, otherwise
+          <code>
+           false
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa73e3d0b7d8eec201e4e2242133b47f9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::SelectionData::set_uris
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             uris
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the contents of the selection from a list of URIs.
+        </p>
+        <p>
+         The string is converted to the form determined by
+         <em>
+          selection_data-&gt;target
+         </em>
+         .
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000242">
+            Since gtkmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              uris
+             </td>
+             <td>
+              A
+              <code>
+               nullptr
+              </code>
+              -terminated array of strings holding URIs.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the selection was successfully set, otherwise
+          <code>
+           false
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a027d31220e644e2ebb048a6cdd75a43f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void Gtk::SelectionData::swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1SelectionData.html">
+                 SelectionData
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a97521408bbef83c56ed4b8c3faa53bd8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::SelectionData::targets_include_image
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             writable
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Given a
+         <a class="el" href="classGtk_1_1SelectionData.html">
+          Gtk::SelectionData
+         </a>
+         object holding a list of targets, determines if any of the targets in
+         <em>
+          targets
+         </em>
+         can be used to provide a
+         <a class="el" href="classGdk_1_1Pixbuf.html">
+          Gdk::Pixbuf
+         </a>
+         .
+        </p>
+        <dl class="since_2_6">
+         <dt>
+          <b>
+           <a class="el" href="since_2_6.html#_since_2_6000244">
+            Since gtkmm 2.6:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              writable
+             </td>
+             <td>
+              Whether to accept only targets for which GTK+ knows how to convert a pixbuf into the format.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if
+          <em>
+           selection_data
+          </em>
+          holds a list of targets, and a suitable target for images is included, otherwise
+          <code>
+           false
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a23502b282ec4546943b6fb4c2d0d8e3d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::SelectionData::targets_include_rich_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1TextBuffer.html">
+             TextBuffer
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             buffer
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Given a
+         <a class="el" href="classGtk_1_1SelectionData.html">
+          Gtk::SelectionData
+         </a>
+         object holding a list of targets, determines if any of the targets in
+         <em>
+          targets
+         </em>
+         can be used to provide rich text.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000411">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              buffer
+             </td>
+             <td>
+              A
+              <a class="el" href="classGtk_1_1TextBuffer.html" title="Multi-line attributed text that can be displayed by one or more Gtk::TextView widgets. ">
+               Gtk::TextBuffer
+              </a>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if
+          <em>
+           selection_data
+          </em>
+          holds a list of targets, and a suitable target for rich text is included, otherwise
+          <code>
+           false
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a589b34bbc75182de5195dd5a22708892">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::SelectionData::targets_include_text
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Given a
+         <a class="el" href="classGtk_1_1SelectionData.html">
+          Gtk::SelectionData
+         </a>
+         object holding a list of targets, determines if any of the targets in
+         <em>
+          targets
+         </em>
+         can be used to provide text.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if
+          <em>
+           selection_data
+          </em>
+          holds a list of targets, and a suitable target for text is included, otherwise
+          <code>
+           false
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9fbf51e548ecb51d983531ecccf49fb9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::SelectionData::targets_include_uri
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Given a
+         <a class="el" href="classGtk_1_1SelectionData.html">
+          Gtk::SelectionData
+         </a>
+         object holding a list of targets, determines if any of the targets in
+         <em>
+          targets
+         </em>
+         can be used to provide a list or URIs.
+        </p>
+        <dl class="since_2_10">
+         <dt>
+          <b>
+           <a class="el" href="since_2_10.html#_since_2_10000410">
+            Since gtkmm 2.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if
+          <em>
+           selection_data
+          </em>
+          holds a list of targets, and a suitable target for URI lists is included, otherwise
+          <code>
+           false
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a4ecb0408a4349572c98c2969d4c3ca9a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1SelectionData.html">
+                 SelectionData
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1SelectionData.html">
+                 SelectionData
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              lhs
+             </td>
+             <td>
+              The left-hand side
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              rhs
+             </td>
+             <td>
+              The right-hand side
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6e49ccb1719123dd777a6b9b35004dfe">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1SelectionData.html">
+                 Gtk::SelectionData
+                </a>
+                wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkSelectionData *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="aeccc1384f7e8decb49a0188c76c99658">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkSelectionData* Gtk::SelectionData::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGtk_1_1SelectionData.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

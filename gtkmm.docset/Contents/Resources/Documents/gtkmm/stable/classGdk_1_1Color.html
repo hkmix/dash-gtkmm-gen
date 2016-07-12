@@ -1,0 +1,3613 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gdk::Color Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGdk_1_1Color.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGdk_1_1Color.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGdk_1_1Color.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gdk::Color Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       <a class="el" href="classGdk_1_1Color.html" title="Gdk::Color is used to describe an allocated or unallocated color. ">
+        Gdk::Color
+       </a>
+       is used to describe an allocated or unallocated color.
+       <a href="classGdk_1_1Color.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;gdkmm/color.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a38b626b2a1229e3dd18d3be70b5d95b3">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a38b626b2a1229e3dd18d3be70b5d95b3">
+           Color
+          </a>
+          (GdkColor* gobject, bool make_a_copy=true)
+         </td>
+        </tr>
+        <tr class="separator:a38b626b2a1229e3dd18d3be70b5d95b3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aaf4c7297d0a75cbb9f2a9d4af79d685a">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#aaf4c7297d0a75cbb9f2a9d4af79d685a">
+           Color
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:aaf4c7297d0a75cbb9f2a9d4af79d685a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae1b20e1c0b3cdc9a598375efabef2555">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#ae1b20e1c0b3cdc9a598375efabef2555">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:ae1b20e1c0b3cdc9a598375efabef2555">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a213cfc94dd23a47df07061b7c326741e">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a213cfc94dd23a47df07061b7c326741e">
+           Color
+          </a>
+          (
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a213cfc94dd23a47df07061b7c326741e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a82e0aa7081770205ee20443bb883cda7">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a82e0aa7081770205ee20443bb883cda7">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a82e0aa7081770205ee20443bb883cda7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac6a94eaf5a66753d0257c4118a3ff1af">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#ac6a94eaf5a66753d0257c4118a3ff1af">
+           ~Color
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:ac6a94eaf5a66753d0257c4118a3ff1af">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2f8dcf566d0b501b7106dcf0afa07986">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a2f8dcf566d0b501b7106dcf0afa07986">
+           swap
+          </a>
+          (
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2f8dcf566d0b501b7106dcf0afa07986">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:adaf51356a25a8080fd117b3c0401f8d3">
+         <td align="right" class="memItemLeft" valign="top">
+          GdkColor*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#adaf51356a25a8080fd117b3c0401f8d3">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:adaf51356a25a8080fd117b3c0401f8d3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGdk_1_1Color.html#adaf51356a25a8080fd117b3c0401f8d3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:adaf51356a25a8080fd117b3c0401f8d3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac9a63d39cf10b78c42553231c5a41664">
+         <td align="right" class="memItemLeft" valign="top">
+          const GdkColor*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#ac9a63d39cf10b78c42553231c5a41664">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac9a63d39cf10b78c42553231c5a41664">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGdk_1_1Color.html#ac9a63d39cf10b78c42553231c5a41664">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac9a63d39cf10b78c42553231c5a41664">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aec15d74b85ff96e0c35a0cafe8041646">
+         <td align="right" class="memItemLeft" valign="top">
+          GdkColor*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#aec15d74b85ff96e0c35a0cafe8041646">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aec15d74b85ff96e0c35a0cafe8041646">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+          <a href="classGdk_1_1Color.html#aec15d74b85ff96e0c35a0cafe8041646">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aec15d74b85ff96e0c35a0cafe8041646">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0336b76ae18bf528bf6d126dc56a04a7">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a0336b76ae18bf528bf6d126dc56a04a7">
+           Color
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a0336b76ae18bf528bf6d126dc56a04a7">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Instantiate a new
+          <a class="el" href="classGdk_1_1Color.html" title="Gdk::Color is used to describe an allocated or unallocated color. ">
+           Gdk::Color
+          </a>
+          .
+          <a href="classGdk_1_1Color.html#a0336b76ae18bf528bf6d126dc56a04a7">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0336b76ae18bf528bf6d126dc56a04a7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8d88d6826d957b23c63469f9a9301f10">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a8d88d6826d957b23c63469f9a9301f10">
+           Color
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; value)
+         </td>
+        </tr>
+        <tr class="memdesc:a8d88d6826d957b23c63469f9a9301f10">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Instantiate a new
+          <a class="el" href="classGdk_1_1Color.html" title="Gdk::Color is used to describe an allocated or unallocated color. ">
+           Gdk::Color
+          </a>
+          .
+          <a href="classGdk_1_1Color.html#a8d88d6826d957b23c63469f9a9301f10">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8d88d6826d957b23c63469f9a9301f10">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac99818ec1f5763bae69f8e51f679119a">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#ac99818ec1f5763bae69f8e51f679119a">
+           set_grey
+          </a>
+          (gushort value)
+         </td>
+        </tr>
+        <tr class="memdesc:ac99818ec1f5763bae69f8e51f679119a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set a grey color, by using the same value for all color components.
+          <a href="classGdk_1_1Color.html#ac99818ec1f5763bae69f8e51f679119a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac99818ec1f5763bae69f8e51f679119a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa9c9b79aee1330d15607496aa58416c2">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#aa9c9b79aee1330d15607496aa58416c2">
+           set_grey_p
+          </a>
+          (double g)
+         </td>
+        </tr>
+        <tr class="memdesc:aa9c9b79aee1330d15607496aa58416c2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set a grey color, by using the same value for all color components.
+          <a href="classGdk_1_1Color.html#aa9c9b79aee1330d15607496aa58416c2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa9c9b79aee1330d15607496aa58416c2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3b9039c60b8bbdf828563328f30ad9c1">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a3b9039c60b8bbdf828563328f30ad9c1">
+           set_rgb
+          </a>
+          (gushort red_, gushort green_, gushort blue_)
+         </td>
+        </tr>
+        <tr class="memdesc:a3b9039c60b8bbdf828563328f30ad9c1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set the color, by specifying red, green, and blue color component values.
+          <a href="classGdk_1_1Color.html#a3b9039c60b8bbdf828563328f30ad9c1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3b9039c60b8bbdf828563328f30ad9c1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a145aa4df12014032c4f3d8a4e7584221">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a145aa4df12014032c4f3d8a4e7584221">
+           set_rgb_p
+          </a>
+          (double red_, double green_, double blue_)
+         </td>
+        </tr>
+        <tr class="memdesc:a145aa4df12014032c4f3d8a4e7584221">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set the color, by specifying red, green, and blue color component values, as fractions.
+          <a href="classGdk_1_1Color.html#a145aa4df12014032c4f3d8a4e7584221">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a145aa4df12014032c4f3d8a4e7584221">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab204460cdc315e5114ae9be2e99cd80d">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#ab204460cdc315e5114ae9be2e99cd80d">
+           set_hsv
+          </a>
+          (double h, double s, double v)
+         </td>
+        </tr>
+        <tr class="memdesc:ab204460cdc315e5114ae9be2e99cd80d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set the color, by specifying hue, saturation, and value (brightness).
+          <a href="classGdk_1_1Color.html#ab204460cdc315e5114ae9be2e99cd80d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab204460cdc315e5114ae9be2e99cd80d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab48ca94b934b1574597decc3c25c510a">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#ab48ca94b934b1574597decc3c25c510a">
+           set_hsl
+          </a>
+          (double h, double s, double l)
+         </td>
+        </tr>
+        <tr class="memdesc:ab48ca94b934b1574597decc3c25c510a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set the color, by specifying hue, saturation, and lightness.
+          <a href="classGdk_1_1Color.html#ab48ca94b934b1574597decc3c25c510a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab48ca94b934b1574597decc3c25c510a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7ada60cada9db85ff439edd5444adaf3">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a7ada60cada9db85ff439edd5444adaf3">
+           set
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; value)
+         </td>
+        </tr>
+        <tr class="memdesc:a7ada60cada9db85ff439edd5444adaf3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Parses a textual specification of a color and fills in the red, green, and blue values.
+          <a href="classGdk_1_1Color.html#a7ada60cada9db85ff439edd5444adaf3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7ada60cada9db85ff439edd5444adaf3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0aa7063c10eecbdd1e8e622184682b83">
+         <td align="right" class="memItemLeft" valign="top">
+          gushort
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a0aa7063c10eecbdd1e8e622184682b83">
+           get_red
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a0aa7063c10eecbdd1e8e622184682b83">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the red component of the color.
+          <a href="classGdk_1_1Color.html#a0aa7063c10eecbdd1e8e622184682b83">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0aa7063c10eecbdd1e8e622184682b83">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0a6775026d0016d27f449f3a48c5a62c">
+         <td align="right" class="memItemLeft" valign="top">
+          gushort
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a0a6775026d0016d27f449f3a48c5a62c">
+           get_green
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a0a6775026d0016d27f449f3a48c5a62c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the green component of the color.
+          <a href="classGdk_1_1Color.html#a0a6775026d0016d27f449f3a48c5a62c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0a6775026d0016d27f449f3a48c5a62c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a85ef9981171d27bb31a900f5a87370d8">
+         <td align="right" class="memItemLeft" valign="top">
+          gushort
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a85ef9981171d27bb31a900f5a87370d8">
+           get_blue
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a85ef9981171d27bb31a900f5a87370d8">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the blue component of the color.
+          <a href="classGdk_1_1Color.html#a85ef9981171d27bb31a900f5a87370d8">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a85ef9981171d27bb31a900f5a87370d8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa49b85517031bb6c5064693fe8e97ebc">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#aa49b85517031bb6c5064693fe8e97ebc">
+           set_red
+          </a>
+          (gushort value)
+         </td>
+        </tr>
+        <tr class="memdesc:aa49b85517031bb6c5064693fe8e97ebc">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set the red component of the color.
+          <a href="classGdk_1_1Color.html#aa49b85517031bb6c5064693fe8e97ebc">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa49b85517031bb6c5064693fe8e97ebc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae18d21bf970a2afa2b5a78526397b813">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#ae18d21bf970a2afa2b5a78526397b813">
+           set_green
+          </a>
+          (gushort value)
+         </td>
+        </tr>
+        <tr class="memdesc:ae18d21bf970a2afa2b5a78526397b813">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set the green component of the color.
+          <a href="classGdk_1_1Color.html#ae18d21bf970a2afa2b5a78526397b813">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae18d21bf970a2afa2b5a78526397b813">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac50fbf99168661a3170a2117e22688d4">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#ac50fbf99168661a3170a2117e22688d4">
+           set_blue
+          </a>
+          (gushort value)
+         </td>
+        </tr>
+        <tr class="memdesc:ac50fbf99168661a3170a2117e22688d4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Set the blue component of the color.
+          <a href="classGdk_1_1Color.html#ac50fbf99168661a3170a2117e22688d4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac50fbf99168661a3170a2117e22688d4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8646ca5885afa06af19b9273a01ac829">
+         <td align="right" class="memItemLeft" valign="top">
+          guint
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a8646ca5885afa06af19b9273a01ac829">
+           get_pixel
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a8646ca5885afa06af19b9273a01ac829">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the pixel value, for allocated colors.
+          <a href="classGdk_1_1Color.html#a8646ca5885afa06af19b9273a01ac829">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a8646ca5885afa06af19b9273a01ac829">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab26f3b996a5a4fb65a25fa3c31e36dce">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#ab26f3b996a5a4fb65a25fa3c31e36dce">
+           get_red_p
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ab26f3b996a5a4fb65a25fa3c31e36dce">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the red component of the color, as a fraction.
+          <a href="classGdk_1_1Color.html#ab26f3b996a5a4fb65a25fa3c31e36dce">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab26f3b996a5a4fb65a25fa3c31e36dce">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa123654f82e0f7b64f0cdc3a899dfbc3">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#aa123654f82e0f7b64f0cdc3a899dfbc3">
+           get_green_p
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:aa123654f82e0f7b64f0cdc3a899dfbc3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the green component of the color, as a fraction.
+          <a href="classGdk_1_1Color.html#aa123654f82e0f7b64f0cdc3a899dfbc3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa123654f82e0f7b64f0cdc3a899dfbc3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a66e2303219d61e97f956a14fdaaf3bcd">
+         <td align="right" class="memItemLeft" valign="top">
+          double
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a66e2303219d61e97f956a14fdaaf3bcd">
+           get_blue_p
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a66e2303219d61e97f956a14fdaaf3bcd">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the blue component of the color, as a fraction.
+          <a href="classGdk_1_1Color.html#a66e2303219d61e97f956a14fdaaf3bcd">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a66e2303219d61e97f956a14fdaaf3bcd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac340ff044564bcf9531daee9ce994918">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#ac340ff044564bcf9531daee9ce994918">
+           to_string
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac340ff044564bcf9531daee9ce994918">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get a textual specification of color in the hexadecimal form #rrrrggggbbbb, where r, g and b are hex digits representing the red, green and blue components respectively.
+          <a href="classGdk_1_1Color.html#ac340ff044564bcf9531daee9ce994918">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac340ff044564bcf9531daee9ce994918">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:aae9c57ec4b2465cd7d35489537604753">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#aae9c57ec4b2465cd7d35489537604753">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:aae9c57ec4b2465cd7d35489537604753">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGdk_1_1Color.html#aae9c57ec4b2465cd7d35489537604753">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aae9c57ec4b2465cd7d35489537604753">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a1dae95e856d042d4cb3387e37a26ef79">
+         <td align="right" class="memItemLeft" valign="top">
+          GdkColor*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a1dae95e856d042d4cb3387e37a26ef79">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a1dae95e856d042d4cb3387e37a26ef79">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a8cbf40ce97eb2127b5bcd681c6fcdc4d">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a8cbf40ce97eb2127b5bcd681c6fcdc4d">
+           operator==
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a8cbf40ce97eb2127b5bcd681c6fcdc4d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a42634d2d9874c6d75cb9340d801862a2">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a42634d2d9874c6d75cb9340d801862a2">
+           operator!=
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a42634d2d9874c6d75cb9340d801862a2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa042c6bb29d57828bfcaa40cee7329b5">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#aa042c6bb29d57828bfcaa40cee7329b5">
+           swap
+          </a>
+          (
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp; lhs,
+          <a class="el" href="classGdk_1_1Color.html">
+           Color
+          </a>
+          &amp; rhs) noexcept
+         </td>
+        </tr>
+        <tr class="separator:aa042c6bb29d57828bfcaa40cee7329b5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5bbf27dde61754494f9a2ed31fbb2b79">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGdk_1_1Color.html">
+           Gdk::Color
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGdk_1_1Color.html#a5bbf27dde61754494f9a2ed31fbb2b79">
+           wrap
+          </a>
+          (GdkColor* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a5bbf27dde61754494f9a2ed31fbb2b79">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGdk_1_1Color.html#a5bbf27dde61754494f9a2ed31fbb2b79">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5bbf27dde61754494f9a2ed31fbb2b79">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        <a class="el" href="classGdk_1_1Color.html" title="Gdk::Color is used to describe an allocated or unallocated color. ">
+         Gdk::Color
+        </a>
+        is used to describe an allocated or unallocated color.
+       </p>
+       <p>
+        It contains the following data:
+       </p>
+       <ul>
+        <li>
+         pixel: For allocated colors, the value used to draw this color on the screen.
+        </li>
+        <li>
+         red: The red component of the color. This is a value between 0 and 65535, with 65535 indicating full intensitiy.
+        </li>
+        <li>
+         green: The green component of the color.
+        </li>
+        <li>
+         blue: The blue component of the color.
+        </li>
+       </ul>
+       <dl class="deprecated">
+        <dt>
+         <b>
+          <a class="el" href="deprecated.html#_deprecated000030">
+           Deprecated:
+          </a>
+         </b>
+        </dt>
+        <dd>
+         Use
+         <a class="el" href="classGdk_1_1RGBA.html" title="An RGBA Color. ">
+          Gdk::RGBA
+         </a>
+         instead.
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a38b626b2a1229e3dd18d3be70b5d95b3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::Color::Color
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GdkColor *
+               </td>
+               <td class="paramname">
+                <em>
+                 gobject
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 make_a_copy
+                </em>
+                =
+                <code>
+                 true
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aaf4c7297d0a75cbb9f2a9d4af79d685a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gdk::Color::Color
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1Color.html">
+             Color
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a213cfc94dd23a47df07061b7c326741e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::Color::Color
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1Color.html">
+                 Color
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac6a94eaf5a66753d0257c4118a3ff1af">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::Color::~Color
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a0336b76ae18bf528bf6d126dc56a04a7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gdk::Color::Color
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Instantiate a new
+         <a class="el" href="classGdk_1_1Color.html" title="Gdk::Color is used to describe an allocated or unallocated color. ">
+          Gdk::Color
+         </a>
+         .
+        </p>
+        <p>
+         You should then use the set methods.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a8d88d6826d957b23c63469f9a9301f10">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gdk::Color::Color
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+                 Glib::ustring
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 value
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Instantiate a new
+         <a class="el" href="classGdk_1_1Color.html" title="Gdk::Color is used to describe an allocated or unallocated color. ">
+          Gdk::Color
+         </a>
+         .
+        </p>
+        <p>
+         The text string can be in any of the forms accepted by XParseColor; these include names for a color from rgb.txt, such as DarkSlateGray, or a hex specification such as 305050.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              value
+             </td>
+             <td>
+              the string specifying the color.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a85ef9981171d27bb31a900f5a87370d8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            gushort Gdk::Color::get_blue
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the blue component of the color.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The blue component of the color.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a66e2303219d61e97f956a14fdaaf3bcd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gdk::Color::get_blue_p
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the blue component of the color, as a fraction.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The blue component of the color, as a fraction.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0a6775026d0016d27f449f3a48c5a62c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            gushort Gdk::Color::get_green
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the green component of the color.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The green component of the color.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa123654f82e0f7b64f0cdc3a899dfbc3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gdk::Color::get_green_p
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the green component of the color, as a fraction.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The green component of the color, as a fraction.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a8646ca5885afa06af19b9273a01ac829">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            guint Gdk::Color::get_pixel
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the pixel value, for allocated colors.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          For allocated colors, the value used to draw this color on the screen.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0aa7063c10eecbdd1e8e622184682b83">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            gushort Gdk::Color::get_red
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the red component of the color.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The red component of the color.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ab26f3b996a5a4fb65a25fa3c31e36dce">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            double Gdk::Color::get_red_p
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the red component of the color, as a fraction.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The red component of the color, as a fraction.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aae9c57ec4b2465cd7d35489537604753">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gdk::Color::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="adaf51356a25a8080fd117b3c0401f8d3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GdkColor* Gdk::Color::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ac9a63d39cf10b78c42553231c5a41664">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GdkColor* Gdk::Color::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="aec15d74b85ff96e0c35a0cafe8041646">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GdkColor* Gdk::Color::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ae1b20e1c0b3cdc9a598375efabef2555">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGdk_1_1Color.html">
+             Color
+            </a>
+            &amp; Gdk::Color::operator=
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1Color.html">
+             Color
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a82e0aa7081770205ee20443bb883cda7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGdk_1_1Color.html">
+                 Color
+                </a>
+                &amp; Gdk::Color::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1Color.html">
+                 Color
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a7ada60cada9db85ff439edd5444adaf3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gdk::Color::set
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Parses a textual specification of a color and fills in the red, green, and blue values.
+        </p>
+        <p>
+         The text string can be in any of the forms accepted by XParseColor; these include names for a color from rgb.txt, such as DarkSlateGray, or a hex specification such as 305050.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              value
+             </td>
+             <td>
+              the string specifying the color.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          true if the parsing succeeded.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac50fbf99168661a3170a2117e22688d4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Color::set_blue
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            gushort
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set the blue component of the color.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              value
+             </td>
+             <td>
+              The blue component of the color.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ae18d21bf970a2afa2b5a78526397b813">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Color::set_green
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            gushort
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set the green component of the color.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              value
+             </td>
+             <td>
+              The green component of the color.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ac99818ec1f5763bae69f8e51f679119a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Color::set_grey
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            gushort
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set a grey color, by using the same value for all color components.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              value
+             </td>
+             <td>
+              The value to be used for the red, green, and blue components.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa9c9b79aee1330d15607496aa58416c2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Color::set_grey_p
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             g
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set a grey color, by using the same value for all color components.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              g
+             </td>
+             <td>
+              The value to be used for the red, green, and blue components, as a fraction.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ab48ca94b934b1574597decc3c25c510a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Color::set_hsl
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             h
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             s
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             l
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set the color, by specifying hue, saturation, and lightness.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              h
+             </td>
+             <td>
+              Hue, in the range 0..360 degrees.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              s
+             </td>
+             <td>
+              Saturation, in the range 0..1.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              l
+             </td>
+             <td>
+              Lightness, in the range 0..1.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ab204460cdc315e5114ae9be2e99cd80d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Color::set_hsv
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             h
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             s
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             v
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set the color, by specifying hue, saturation, and value (brightness).
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              h
+             </td>
+             <td>
+              Hue, in the range 0..360 degrees.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              s
+             </td>
+             <td>
+              Saturation, in the range 0..1.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              v
+             </td>
+             <td>
+              Value (a.k.a. brightness), in the range 0..1.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa49b85517031bb6c5064693fe8e97ebc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Color::set_red
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            gushort
+           </td>
+           <td class="paramname">
+            <em>
+             value
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set the red component of the color.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              value
+             </td>
+             <td>
+              The red component of the color.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a3b9039c60b8bbdf828563328f30ad9c1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Color::set_rgb
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            gushort
+           </td>
+           <td class="paramname">
+            <em>
+             red_
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            gushort
+           </td>
+           <td class="paramname">
+            <em>
+             green_
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            gushort
+           </td>
+           <td class="paramname">
+            <em>
+             blue_
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set the color, by specifying red, green, and blue color component values.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              red_
+             </td>
+             <td>
+              The red component of the color.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              green_
+             </td>
+             <td>
+              The green component of the color.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              blue_
+             </td>
+             <td>
+              The blue component of the color.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a145aa4df12014032c4f3d8a4e7584221">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gdk::Color::set_rgb_p
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             red_
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             green_
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            double
+           </td>
+           <td class="paramname">
+            <em>
+             blue_
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Set the color, by specifying red, green, and blue color component values, as fractions.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              red_
+             </td>
+             <td>
+              The red component of the color, as a fraction.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              green_
+             </td>
+             <td>
+              The green component of the color, as a fraction.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              blue_
+             </td>
+             <td>
+              The blue component of the color, as a fraction.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a2f8dcf566d0b501b7106dcf0afa07986">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void Gdk::Color::swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1Color.html">
+                 Color
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac340ff044564bcf9531daee9ce994918">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gdk::Color::to_string
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get a textual specification of color in the hexadecimal form #rrrrggggbbbb, where r, g and b are hex digits representing the red, green and blue components respectively.
+        </p>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The string representation.
+         </dd>
+        </dl>
+        <dl class="since_2_14">
+         <dt>
+          <b>
+           <a class="el" href="since_2_14.html#_since_2_14000018">
+            Since gtkmm 2.14:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a42634d2d9874c6d75cb9340d801862a2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#gac4373547895ec9df9035719b38a2621a">
+                 operator!
+                </a>
+                =
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Color.html">
+                 Color
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Color.html">
+                 Color
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              lhs
+             </td>
+             <td>
+              The left-hand side
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              rhs
+             </td>
+             <td>
+              The right-hand side
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The result
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a8cbf40ce97eb2127b5bcd681c6fcdc4d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator==
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Color.html">
+                 Color
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGdk_1_1Color.html">
+                 Color
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              lhs
+             </td>
+             <td>
+              The left-hand side
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              rhs
+             </td>
+             <td>
+              The right-hand side
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The result
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa042c6bb29d57828bfcaa40cee7329b5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1Color.html">
+                 Color
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGdk_1_1Color.html">
+                 Color
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              lhs
+             </td>
+             <td>
+              The left-hand side
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              rhs
+             </td>
+             <td>
+              The right-hand side
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5bbf27dde61754494f9a2ed31fbb2b79">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGdk_1_1Color.html">
+                 Gdk::Color
+                </a>
+                wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GdkColor *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="a1dae95e856d042d4cb3387e37a26ef79">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GdkColor* Gdk::Color::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGdk_1_1Color.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

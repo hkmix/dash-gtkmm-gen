@@ -1,0 +1,4944 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gtk::IconInfo Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGtk_1_1IconInfo.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1IconInfo.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1IconInfo.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gtk::IconInfo Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       <code>
+        #include &lt;gtkmm/iconinfo.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:af42ea038541bb079ce20f97cdfcdc690">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef const void*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#af42ea038541bb079ce20f97cdfcdc690">
+           BoolExpr
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:af42ea038541bb079ce20f97cdfcdc690">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This typedef is just to make it more obvious that our operator const void* should be used like operator bool().
+          <a href="classGtk_1_1IconInfo.html#af42ea038541bb079ce20f97cdfcdc690">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af42ea038541bb079ce20f97cdfcdc690">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ad000ee1d628f675910d434921a4bb4b4">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#ad000ee1d628f675910d434921a4bb4b4">
+           IconInfo
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:ad000ee1d628f675910d434921a4bb4b4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac5df0aa15650ffbbf7bf8560fb13df9c">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#ac5df0aa15650ffbbf7bf8560fb13df9c">
+           IconInfo
+          </a>
+          (GtkIconInfo* gobject, bool make_a_copy=true)
+         </td>
+        </tr>
+        <tr class="separator:ac5df0aa15650ffbbf7bf8560fb13df9c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab9bcacc37486ff2ded56ca4a6a9e2cac">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#ab9bcacc37486ff2ded56ca4a6a9e2cac">
+           IconInfo
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           IconInfo
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:ab9bcacc37486ff2ded56ca4a6a9e2cac">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a97b873870f84ffc61d4539aa291be36e">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           IconInfo
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a97b873870f84ffc61d4539aa291be36e">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           IconInfo
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:a97b873870f84ffc61d4539aa291be36e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a30c61be7e347165767d695d4e99123cd">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a30c61be7e347165767d695d4e99123cd">
+           IconInfo
+          </a>
+          (
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           IconInfo
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a30c61be7e347165767d695d4e99123cd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad97e13b7a761626300f861356badfac2">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           IconInfo
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#ad97e13b7a761626300f861356badfac2">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           IconInfo
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ad97e13b7a761626300f861356badfac2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abbe32485e7e96a25aa9de7f45c9dcb10">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#abbe32485e7e96a25aa9de7f45c9dcb10">
+           ~IconInfo
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:abbe32485e7e96a25aa9de7f45c9dcb10">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aebda77e764e3b339ef6cd8e7fc1e0b58">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#aebda77e764e3b339ef6cd8e7fc1e0b58">
+           swap
+          </a>
+          (
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           IconInfo
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:aebda77e764e3b339ef6cd8e7fc1e0b58">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1159ab56328b1a410f06d86ef77d4ce1">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkIconInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a1159ab56328b1a410f06d86ef77d4ce1">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a1159ab56328b1a410f06d86ef77d4ce1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1IconInfo.html#a1159ab56328b1a410f06d86ef77d4ce1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1159ab56328b1a410f06d86ef77d4ce1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3a935a8c376e729490ba66c0631685d8">
+         <td align="right" class="memItemLeft" valign="top">
+          const GtkIconInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a3a935a8c376e729490ba66c0631685d8">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a3a935a8c376e729490ba66c0631685d8">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1IconInfo.html#a3a935a8c376e729490ba66c0631685d8">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3a935a8c376e729490ba66c0631685d8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0bb1db80eedf7c85bd87a6f41ae59c5c">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkIconInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a0bb1db80eedf7c85bd87a6f41ae59c5c">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a0bb1db80eedf7c85bd87a6f41ae59c5c">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+          <a href="classGtk_1_1IconInfo.html#a0bb1db80eedf7c85bd87a6f41ae59c5c">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0bb1db80eedf7c85bd87a6f41ae59c5c">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae0aa7f9a3058745cb147c511c97d9a99">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#ae0aa7f9a3058745cb147c511c97d9a99">
+           IconInfo
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1IconTheme.html">
+           IconTheme
+          </a>
+          &gt;&amp; icon_theme, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;&amp; pixbuf)
+         </td>
+        </tr>
+        <tr class="separator:ae0aa7f9a3058745cb147c511c97d9a99">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:addd7fe20fee4e9e17cd48f891d4f2fe7">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#addd7fe20fee4e9e17cd48f891d4f2fe7">
+           operator BoolExpr
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:addd7fe20fee4e9e17cd48f891d4f2fe7">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Tests whether the
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           IconInfo
+          </a>
+          is valid.
+          <a href="classGtk_1_1IconInfo.html#addd7fe20fee4e9e17cd48f891d4f2fe7">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:addd7fe20fee4e9e17cd48f891d4f2fe7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a360b401f202d85266d14c357884bc9ca">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a360b401f202d85266d14c357884bc9ca">
+           get_base_size
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a360b401f202d85266d14c357884bc9ca">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the base size for the icon.
+          <a href="classGtk_1_1IconInfo.html#a360b401f202d85266d14c357884bc9ca">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a360b401f202d85266d14c357884bc9ca">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a323b2bcd35a22e17ec05bc20d1f0f978">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a323b2bcd35a22e17ec05bc20d1f0f978">
+           get_base_scale
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a323b2bcd35a22e17ec05bc20d1f0f978">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the base scale for the icon.
+          <a href="classGtk_1_1IconInfo.html#a323b2bcd35a22e17ec05bc20d1f0f978">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a323b2bcd35a22e17ec05bc20d1f0f978">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a991fed1842e82757a693f6a607ce2150">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a991fed1842e82757a693f6a607ce2150">
+           get_filename
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a991fed1842e82757a693f6a607ce2150">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the filename for the icon.
+          <a href="classGtk_1_1IconInfo.html#a991fed1842e82757a693f6a607ce2150">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a991fed1842e82757a693f6a607ce2150">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acbdf9a42ea5ae1a89bccd83719ecc3ed">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#acbdf9a42ea5ae1a89bccd83719ecc3ed">
+           get_builtin_pixbuf
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:acbdf9a42ea5ae1a89bccd83719ecc3ed">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the built-in image for this icon, if any.
+          <a href="classGtk_1_1IconInfo.html#acbdf9a42ea5ae1a89bccd83719ecc3ed">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acbdf9a42ea5ae1a89bccd83719ecc3ed">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a237c51033cff74382f35103b4e6579b8">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt; const
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a237c51033cff74382f35103b4e6579b8">
+           get_builtin_pixbuf
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a237c51033cff74382f35103b4e6579b8">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Gets the built-in image for this icon, if any.
+          <a href="classGtk_1_1IconInfo.html#a237c51033cff74382f35103b4e6579b8">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a237c51033cff74382f35103b4e6579b8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5eec966046321610dba070b3c8d7e8e6">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a5eec966046321610dba070b3c8d7e8e6">
+           load_icon
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a5eec966046321610dba070b3c8d7e8e6">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Renders an icon previously looked up in an icon theme using
+          <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+           Gtk::IconTheme::lookup_icon()
+          </a>
+          ; the size will be based on the size passed to
+          <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+           Gtk::IconTheme::lookup_icon()
+          </a>
+          .
+          <a href="classGtk_1_1IconInfo.html#a5eec966046321610dba070b3c8d7e8e6">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5eec966046321610dba070b3c8d7e8e6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a01dfc11aaf94faa9edb3bb834257b880">
+         <td align="right" class="memItemLeft" valign="top">
+          ::
+          <a class="elRef" doxygen="cairomm-1.0.tag:http://www.cairographics.org/documentation/cairomm/reference/" href="http://www.cairographics.org/documentation/cairomm/reference/classCairo_1_1RefPtr.html">
+           Cairo::RefPtr
+          </a>
+          &lt; ::
+          <a class="elRef" doxygen="cairomm-1.0.tag:http://www.cairographics.org/documentation/cairomm/reference/" href="http://www.cairographics.org/documentation/cairomm/reference/classCairo_1_1Surface.html">
+           Cairo::Surface
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a01dfc11aaf94faa9edb3bb834257b880">
+           load_surface
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Window.html">
+           Gdk::Window
+          </a>
+          &gt;&amp; for_window)
+         </td>
+        </tr>
+        <tr class="memdesc:a01dfc11aaf94faa9edb3bb834257b880">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Renders an icon previously looked up in an icon theme using
+          <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+           Gtk::IconTheme::lookup_icon()
+          </a>
+          ; the size will be based on the size passed to
+          <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+           Gtk::IconTheme::lookup_icon()
+          </a>
+          .
+          <a href="classGtk_1_1IconInfo.html#a01dfc11aaf94faa9edb3bb834257b880">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a01dfc11aaf94faa9edb3bb834257b880">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6978e6b274e4b4509428f7727fa7575e">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a6978e6b274e4b4509428f7727fa7575e">
+           load_symbolic
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; fg, const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; success_color, const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; warning_color, const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; error_color, bool&amp; was_symbolic) const
+         </td>
+        </tr>
+        <tr class="separator:a6978e6b274e4b4509428f7727fa7575e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7ac4105f63dccb47acb639809d26e3d9">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a7ac4105f63dccb47acb639809d26e3d9">
+           load_icon_async
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+           Gio::SlotAsyncReady
+          </a>
+          &amp; slot, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1Cancellable.html">
+           Gio::Cancellable
+          </a>
+          &gt;&amp; cancellable)
+         </td>
+        </tr>
+        <tr class="memdesc:a7ac4105f63dccb47acb639809d26e3d9">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Asynchronously load, render and scale an icon previously looked up from the icon theme using
+          <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+           Gtk::IconTheme::lookup_icon()
+          </a>
+          .
+          <a href="classGtk_1_1IconInfo.html#a7ac4105f63dccb47acb639809d26e3d9">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7ac4105f63dccb47acb639809d26e3d9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad5ea9bd3c06fe4eac3af64684bfec4d4">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#ad5ea9bd3c06fe4eac3af64684bfec4d4">
+           load_icon_async
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+           Gio::SlotAsyncReady
+          </a>
+          &amp; slot)
+         </td>
+        </tr>
+        <tr class="memdesc:ad5ea9bd3c06fe4eac3af64684bfec4d4">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Asynchronously load, render and scale an icon previously looked up from the icon theme using
+          <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+           Gtk::IconTheme::lookup_icon()
+          </a>
+          .
+          <a href="classGtk_1_1IconInfo.html#ad5ea9bd3c06fe4eac3af64684bfec4d4">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad5ea9bd3c06fe4eac3af64684bfec4d4">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a47b093ab51ccc7c0134041d0ba0b8eaf">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a47b093ab51ccc7c0134041d0ba0b8eaf">
+           load_icon_finish
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1AsyncResult.html">
+           Gio::AsyncResult
+          </a>
+          &gt;&amp; result)
+         </td>
+        </tr>
+        <tr class="memdesc:a47b093ab51ccc7c0134041d0ba0b8eaf">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Finishes an async icon load, see
+          <a class="el" href="classGtk_1_1IconInfo.html#a7ac4105f63dccb47acb639809d26e3d9" title="Asynchronously load, render and scale an icon previously looked up from the icon theme using Gtk::Ico...">
+           load_icon_async()
+          </a>
+          .
+          <a href="classGtk_1_1IconInfo.html#a47b093ab51ccc7c0134041d0ba0b8eaf">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a47b093ab51ccc7c0134041d0ba0b8eaf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a3def79240881f2ae2ef8b6fac22e8529">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a3def79240881f2ae2ef8b6fac22e8529">
+           load_symbolic
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1StyleContext.html">
+           StyleContext
+          </a>
+          &gt;&amp; style, bool&amp; was_symbolic)
+         </td>
+        </tr>
+        <tr class="memdesc:a3def79240881f2ae2ef8b6fac22e8529">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Loads an icon, modifying it to match the system colors for the foreground, success, warning and error colors provided.
+          <a href="classGtk_1_1IconInfo.html#a3def79240881f2ae2ef8b6fac22e8529">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a3def79240881f2ae2ef8b6fac22e8529">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4ab26861bb2f4220c95b233d897ba252">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a4ab26861bb2f4220c95b233d897ba252">
+           load_symbolic_for_context_async
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1StyleContext.html">
+           StyleContext
+          </a>
+          &gt;&amp; context, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+           Gio::SlotAsyncReady
+          </a>
+          &amp; slot, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1Cancellable.html">
+           Gio::Cancellable
+          </a>
+          &gt;&amp; cancellable)
+         </td>
+        </tr>
+        <tr class="memdesc:a4ab26861bb2f4220c95b233d897ba252">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Asynchronously load, render and scale a symbolic icon previously looked up from the icon theme using
+          <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+           Gtk::IconTheme::lookup_icon()
+          </a>
+          .
+          <a href="classGtk_1_1IconInfo.html#a4ab26861bb2f4220c95b233d897ba252">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a4ab26861bb2f4220c95b233d897ba252">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aad5fc1ea0539002f03eb772f7014c715">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#aad5fc1ea0539002f03eb772f7014c715">
+           load_symbolic_for_context_async
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGtk_1_1StyleContext.html">
+           StyleContext
+          </a>
+          &gt;&amp; context, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+           Gio::SlotAsyncReady
+          </a>
+          &amp; slot)
+         </td>
+        </tr>
+        <tr class="memdesc:aad5fc1ea0539002f03eb772f7014c715">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Asynchronously load, render and scale a symbolic icon previously looked up from the icon theme using
+          <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+           Gtk::IconTheme::lookup_icon()
+          </a>
+          .
+          <a href="classGtk_1_1IconInfo.html#aad5fc1ea0539002f03eb772f7014c715">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aad5fc1ea0539002f03eb772f7014c715">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa3c7db0855682ef99335a36a2986319b">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#aa3c7db0855682ef99335a36a2986319b">
+           load_symbolic_for_context_finish
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1AsyncResult.html">
+           Gio::AsyncResult
+          </a>
+          &gt;&amp; result, bool&amp; was_symbolic)
+         </td>
+        </tr>
+        <tr class="memdesc:aa3c7db0855682ef99335a36a2986319b">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Finishes an async icon load, see
+          <a class="el" href="classGtk_1_1IconInfo.html#a4ab26861bb2f4220c95b233d897ba252" title="Asynchronously load, render and scale a symbolic icon previously looked up from the icon theme using ...">
+           load_symbolic_for_context_async()
+          </a>
+          .
+          <a href="classGtk_1_1IconInfo.html#aa3c7db0855682ef99335a36a2986319b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa3c7db0855682ef99335a36a2986319b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a17db843b32de9f9208325ec98cd1e0dc">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a17db843b32de9f9208325ec98cd1e0dc">
+           load_symbolic_async
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; fg, const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; success_color, const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; warning_color, const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; error_color, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+           Gio::SlotAsyncReady
+          </a>
+          &amp; slot, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1Cancellable.html">
+           Gio::Cancellable
+          </a>
+          &gt;&amp; cancellable)
+         </td>
+        </tr>
+        <tr class="separator:a17db843b32de9f9208325ec98cd1e0dc">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a88fcde752d2ab0ecab187aa34baf5360">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a88fcde752d2ab0ecab187aa34baf5360">
+           load_symbolic_async
+          </a>
+          (const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; fg, const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; success_color, const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; warning_color, const
+          <a class="el" href="classGdk_1_1RGBA.html">
+           Gdk::RGBA
+          </a>
+          &amp; error_color, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+           Gio::SlotAsyncReady
+          </a>
+          &amp; slot)
+         </td>
+        </tr>
+        <tr class="separator:a88fcde752d2ab0ecab187aa34baf5360">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa88386a551af3571df318c63c796d522">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Pixbuf.html">
+           Gdk::Pixbuf
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#aa88386a551af3571df318c63c796d522">
+           load_symbolic_finish
+          </a>
+          (const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+           Glib::RefPtr
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1AsyncResult.html">
+           Gio::AsyncResult
+          </a>
+          &gt;&amp; result, bool&amp; was_symbolic)
+         </td>
+        </tr>
+        <tr class="memdesc:aa88386a551af3571df318c63c796d522">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Finishes an async icon load, see
+          <a class="el" href="classGtk_1_1IconInfo.html#a17db843b32de9f9208325ec98cd1e0dc">
+           load_symbolic_async()
+          </a>
+          .
+          <a href="classGtk_1_1IconInfo.html#aa88386a551af3571df318c63c796d522">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa88386a551af3571df318c63c796d522">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a529c4c1e8729c18e7c7b43feaaf63d67">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a529c4c1e8729c18e7c7b43feaaf63d67">
+           set_raw_coordinates
+          </a>
+          (bool raw_coordinates=true)
+         </td>
+        </tr>
+        <tr class="memdesc:a529c4c1e8729c18e7c7b43feaaf63d67">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets whether the coordinates returned by
+          <a class="el" href="classGtk_1_1IconInfo.html#a6737ad0cb2c087788393c6435570bfff" title="This function is deprecated and always returns false. ">
+           get_embedded_rect()
+          </a>
+          and
+          <a class="el" href="classGtk_1_1IconInfo.html#a1836ff512cd66553b049190487b64144">
+           get_attach_points()
+          </a>
+          should be returned in their original form as specified in the icon theme, instead of scaled appropriately for the pixbuf returned by
+          <a class="el" href="classGtk_1_1IconInfo.html#a5eec966046321610dba070b3c8d7e8e6" title="Renders an icon previously looked up in an icon theme using Gtk::IconTheme::lookup_icon(); the size w...">
+           load_icon()
+          </a>
+          .
+          <a href="classGtk_1_1IconInfo.html#a529c4c1e8729c18e7c7b43feaaf63d67">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a529c4c1e8729c18e7c7b43feaaf63d67">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6737ad0cb2c087788393c6435570bfff">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a6737ad0cb2c087788393c6435570bfff">
+           get_embedded_rect
+          </a>
+          (
+          <a class="el" href="classGdk_1_1Rectangle.html">
+           Gdk::Rectangle
+          </a>
+          &amp; rectangle) const
+         </td>
+        </tr>
+        <tr class="memdesc:a6737ad0cb2c087788393c6435570bfff">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This function is deprecated and always returns
+          <code>
+           false
+          </code>
+          .
+          <a href="classGtk_1_1IconInfo.html#a6737ad0cb2c087788393c6435570bfff">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a6737ad0cb2c087788393c6435570bfff">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1836ff512cd66553b049190487b64144">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="el" href="classGdk_1_1Point.html">
+           Gdk::Point
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a1836ff512cd66553b049190487b64144">
+           get_attach_points
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a1836ff512cd66553b049190487b64144">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af340104bf0354439311f197ce88065c1">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#af340104bf0354439311f197ce88065c1">
+           get_display_name
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:af340104bf0354439311f197ce88065c1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This function is deprecated and always returns
+          <code>
+           nullptr
+          </code>
+          .
+          <a href="classGtk_1_1IconInfo.html#af340104bf0354439311f197ce88065c1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af340104bf0354439311f197ce88065c1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a95d575bd06c161906e97e5b566a8f15d">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a95d575bd06c161906e97e5b566a8f15d">
+           is_symbolic
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a95d575bd06c161906e97e5b566a8f15d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Checks if the icon is symbolic or not.
+          <a href="classGtk_1_1IconInfo.html#a95d575bd06c161906e97e5b566a8f15d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a95d575bd06c161906e97e5b566a8f15d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a7ba1067efa3ae4671291c349e978dac6">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#a7ba1067efa3ae4671291c349e978dac6">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a7ba1067efa3ae4671291c349e978dac6">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGtk_1_1IconInfo.html#a7ba1067efa3ae4671291c349e978dac6">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7ba1067efa3ae4671291c349e978dac6">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:adb0929f2020199570662394b264e5086">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkIconInfo*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#adb0929f2020199570662394b264e5086">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:adb0929f2020199570662394b264e5086">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:ad96b86bfee2a7527e0c46e50c9d48d15">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#ad96b86bfee2a7527e0c46e50c9d48d15">
+           swap
+          </a>
+          (
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           IconInfo
+          </a>
+          &amp; lhs,
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           IconInfo
+          </a>
+          &amp; rhs) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ad96b86bfee2a7527e0c46e50c9d48d15">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acdc54b26a982305d52967d4c99c0a0d1">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1IconInfo.html">
+           Gtk::IconInfo
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconInfo.html#acdc54b26a982305d52967d4c99c0a0d1">
+           wrap
+          </a>
+          (GtkIconInfo* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:acdc54b26a982305d52967d4c99c0a0d1">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGtk_1_1IconInfo.html#acdc54b26a982305d52967d4c99c0a0d1">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acdc54b26a982305d52967d4c99c0a0d1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <h2 class="groupheader">
+       Member Typedef Documentation
+      </h2>
+      <a class="anchor" id="af42ea038541bb079ce20f97cdfcdc690">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef const void*
+            <a class="el" href="classGtk_1_1IconInfo.html#af42ea038541bb079ce20f97cdfcdc690">
+             Gtk::IconInfo::BoolExpr
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This typedef is just to make it more obvious that our operator const void* should be used like operator bool().
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="ad000ee1d628f675910d434921a4bb4b4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::IconInfo::IconInfo
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac5df0aa15650ffbbf7bf8560fb13df9c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::IconInfo::IconInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkIconInfo *
+               </td>
+               <td class="paramname">
+                <em>
+                 gobject
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 make_a_copy
+                </em>
+                =
+                <code>
+                 true
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab9bcacc37486ff2ded56ca4a6a9e2cac">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::IconInfo::IconInfo
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1IconInfo.html">
+             IconInfo
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a30c61be7e347165767d695d4e99123cd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::IconInfo::IconInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1IconInfo.html">
+                 IconInfo
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="abbe32485e7e96a25aa9de7f45c9dcb10">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::IconInfo::~IconInfo
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ae0aa7f9a3058745cb147c511c97d9a99">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::IconInfo::IconInfo
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1IconTheme.html">
+             IconTheme
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             icon_theme
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             pixbuf
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a1836ff512cd66553b049190487b64144">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Point.html">
+             Gdk::Point
+            </a>
+            &gt; Gtk::IconInfo::get_attach_points
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000148">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Attachment points are deprecated.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a323b2bcd35a22e17ec05bc20d1f0f978">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gtk::IconInfo::get_base_scale
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the base scale for the icon.
+        </p>
+        <p>
+         The base scale is a scale for the icon that was specified by the icon theme creator. For instance an icon drawn for a high-dpi screen with window scale 2 for a base size of 32 will be 64 pixels tall and have a base scale of 2.
+        </p>
+        <dl class="since_3_10">
+         <dt>
+          <b>
+           <a class="el" href="since_3_10.html#_since_3_10000043">
+            Since gtkmm 3.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The base scale.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a360b401f202d85266d14c357884bc9ca">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gtk::IconInfo::get_base_size
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the base size for the icon.
+        </p>
+        <p>
+         The base size is a size for the icon that was specified by the icon theme creator. This may be different than the actual size of image; an example of this is small emblem icons that can be attached to a larger icon. These icons will be given the same base size as the larger icons to which they are attached.
+        </p>
+        <p>
+         Note that for scaled icons the base size does not include the base scale.
+        </p>
+        <dl class="since_2_4">
+         <dt>
+          <b>
+           <a class="el" href="since_2_4.html#_since_2_4000245">
+            Since gtkmm 2.4:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The base size, or 0, if no base size is known for the icon.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="acbdf9a42ea5ae1a89bccd83719ecc3ed">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::IconInfo::get_builtin_pixbuf
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the built-in image for this icon, if any.
+        </p>
+        <p>
+         To allow GTK+ to use built in icon images, you must pass the
+         <a class="el" href="namespaceGtk.html#ga6d0c2193613cfb97ab313746a5bacaa2a0c6c44f5873f9475641055bdf38545d0" title="When passed to Gtk::IconTheme::lookup_icon() includes builtin icons as well as files. ">
+          Gtk::ICON_LOOKUP_USE_BUILTIN
+         </a>
+         to
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         .
+        </p>
+        <dl class="since_2_4">
+         <dt>
+          <b>
+           <a class="el" href="since_2_4.html#_since_2_4000247">
+            Since gtkmm 2.4:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.14: This function is deprecated, use
+         <a class="el" href="classGtk_1_1IconTheme.html#a95edbfce09488f385b7cc4617bbeb254" title="Adds a resource path that will be looked at when looking for icons, similar to search paths...">
+          Gtk::IconTheme::add_resource_path()
+         </a>
+         instead of builtin icons.
+        </p>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000144">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Use
+          <a class="el" href="classGtk_1_1IconTheme.html#a95edbfce09488f385b7cc4617bbeb254" title="Adds a resource path that will be looked at when looking for icons, similar to search paths...">
+           Gtk::IconTheme::add_resource_path()
+          </a>
+          instead of builtin icons.
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The built-in image pixbuf, or
+          <code>
+           nullptr
+          </code>
+          . The returned image must not be modified.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a237c51033cff74382f35103b4e6579b8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;const
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::IconInfo::get_builtin_pixbuf
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the built-in image for this icon, if any.
+        </p>
+        <p>
+         To allow GTK+ to use built in icon images, you must pass the
+         <a class="el" href="namespaceGtk.html#ga6d0c2193613cfb97ab313746a5bacaa2a0c6c44f5873f9475641055bdf38545d0" title="When passed to Gtk::IconTheme::lookup_icon() includes builtin icons as well as files. ">
+          Gtk::ICON_LOOKUP_USE_BUILTIN
+         </a>
+         to
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         .
+        </p>
+        <dl class="since_2_4">
+         <dt>
+          <b>
+           <a class="el" href="since_2_4.html#_since_2_4000248">
+            Since gtkmm 2.4:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.14: This function is deprecated, use
+         <a class="el" href="classGtk_1_1IconTheme.html#a95edbfce09488f385b7cc4617bbeb254" title="Adds a resource path that will be looked at when looking for icons, similar to search paths...">
+          Gtk::IconTheme::add_resource_path()
+         </a>
+         instead of builtin icons.
+        </p>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000145">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Use
+          <a class="el" href="classGtk_1_1IconTheme.html#a95edbfce09488f385b7cc4617bbeb254" title="Adds a resource path that will be looked at when looking for icons, similar to search paths...">
+           Gtk::IconTheme::add_resource_path()
+          </a>
+          instead of builtin icons.
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The built-in image pixbuf, or
+          <code>
+           nullptr
+          </code>
+          . The returned image must not be modified.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="af340104bf0354439311f197ce88065c1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::IconInfo::get_display_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This function is deprecated and always returns
+         <code>
+          nullptr
+         </code>
+         .
+        </p>
+        <dl class="since_2_4">
+         <dt>
+          <b>
+           <a class="el" href="since_2_4.html#_since_2_4000252">
+            Since gtkmm 2.4:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.14: Display names are deprecated
+        </p>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000149">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Display names are deprecated.
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           nullptr
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6737ad0cb2c087788393c6435570bfff">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::IconInfo::get_embedded_rect
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            <a class="el" href="classGdk_1_1Rectangle.html">
+             Gdk::Rectangle
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             rectangle
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This function is deprecated and always returns
+         <code>
+          false
+         </code>
+         .
+        </p>
+        <dl class="since_2_4">
+         <dt>
+          <b>
+           <a class="el" href="since_2_4.html#_since_2_4000251">
+            Since gtkmm 2.4:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.14: Embedded rectangles are deprecated
+        </p>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000147">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Embedded rectangles are deprecated.
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              rectangle
+             </td>
+             <td>
+              <a class="el" href="classGdk_1_1Rectangle.html" title="Gdk::Rectangle is a structure holding the position and size of a rectangle. ">
+               Gdk::Rectangle
+              </a>
+              in which to store embedded rectangle coordinates; coordinates are only stored when this function returns
+              <code>
+               true
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           false
+          </code>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a991fed1842e82757a693f6a607ce2150">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::IconInfo::get_filename
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Gets the filename for the icon.
+        </p>
+        <p>
+         If the
+         <a class="el" href="namespaceGtk.html#ga6d0c2193613cfb97ab313746a5bacaa2a0c6c44f5873f9475641055bdf38545d0" title="When passed to Gtk::IconTheme::lookup_icon() includes builtin icons as well as files. ">
+          Gtk::ICON_LOOKUP_USE_BUILTIN
+         </a>
+         flag was passed to
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         , there may be no filename if a builtin icon is returned; in this case, you should use
+         <a class="el" href="classGtk_1_1IconInfo.html#acbdf9a42ea5ae1a89bccd83719ecc3ed" title="Gets the built-in image for this icon, if any. ">
+          get_builtin_pixbuf()
+         </a>
+         .
+        </p>
+        <dl class="since_2_4">
+         <dt>
+          <b>
+           <a class="el" href="since_2_4.html#_since_2_4000246">
+            Since gtkmm 2.4:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The filename for the icon, or
+          <code>
+           nullptr
+          </code>
+          if
+          <a class="el" href="classGtk_1_1IconInfo.html#acbdf9a42ea5ae1a89bccd83719ecc3ed" title="Gets the built-in image for this icon, if any. ">
+           get_builtin_pixbuf()
+          </a>
+          should be used instead.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a7ba1067efa3ae4671291c349e978dac6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gtk::IconInfo::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a1159ab56328b1a410f06d86ef77d4ce1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkIconInfo* Gtk::IconInfo::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a3a935a8c376e729490ba66c0631685d8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GtkIconInfo* Gtk::IconInfo::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a0bb1db80eedf7c85bd87a6f41ae59c5c">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GtkIconInfo* Gtk::IconInfo::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a95d575bd06c161906e97e5b566a8f15d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::IconInfo::is_symbolic
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Checks if the icon is symbolic or not.
+        </p>
+        <p>
+         This currently uses only the file name and not the file contents for determining this. This behaviour may change in the future.
+        </p>
+        <dl class="since_3_12">
+         <dt>
+          <b>
+           <a class="el" href="since_3_12.html#_since_3_12000100">
+            Since gtkmm 3.12:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the icon is symbolic,
+          <code>
+           false
+          </code>
+          otherwise.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5eec966046321610dba070b3c8d7e8e6">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::IconInfo::load_icon
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Renders an icon previously looked up in an icon theme using
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         ; the size will be based on the size passed to
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         .
+        </p>
+        <p>
+         Note that the resulting pixbuf may not be exactly this size; an icon theme may have icons that differ slightly from their nominal sizes, and in addition GTK+ will avoid scaling icons that it considers sufficiently close to the requested size or for which the source image would have to be scaled up too far. (This maintains sharpness.). This behaviour can be changed by passing the
+         <a class="el" href="namespaceGtk.html#ga6d0c2193613cfb97ab313746a5bacaa2a1f1cb7da5c2ee5c65e9b1ece1ce8b85d" title="Always get the icon scaled to the requested size. ">
+          Gtk::ICON_LOOKUP_FORCE_SIZE
+         </a>
+         flag when obtaining the
+         <a class="el" href="classGtk_1_1IconInfo.html">
+          Gtk::IconInfo
+         </a>
+         . If this flag has been specified, the pixbuf returned by this function will be scaled to the exact size.
+        </p>
+        <dl class="since_2_4">
+         <dt>
+          <b>
+           <a class="el" href="since_2_4.html#_since_2_4000249">
+            Since gtkmm 2.4:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The rendered icon; this may be a newly created icon or a new reference to an internal icon, so you must not modify the icon. Use Glib::object_unref() to release your reference to the icon.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a7ac4105f63dccb47acb639809d26e3d9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconInfo::load_icon_async
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+             Gio::SlotAsyncReady
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1Cancellable.html">
+             Gio::Cancellable
+            </a>
+            &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             cancellable
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Asynchronously load, render and scale an icon previously looked up from the icon theme using
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A callback slot to call when the request is satisfied.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              cancellable
+             </td>
+             <td>
+              A Cancellable object which can be used to cancel the operation.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000018">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad5ea9bd3c06fe4eac3af64684bfec4d4">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconInfo::load_icon_async
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+             Gio::SlotAsyncReady
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Asynchronously load, render and scale an icon previously looked up from the icon theme using
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A callback slot to call when the request is satisfied.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000019">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a47b093ab51ccc7c0134041d0ba0b8eaf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::IconInfo::load_icon_finish
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1AsyncResult.html">
+             Gio::AsyncResult
+            </a>
+            &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             result
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Finishes an async icon load, see
+         <a class="el" href="classGtk_1_1IconInfo.html#a7ac4105f63dccb47acb639809d26e3d9" title="Asynchronously load, render and scale an icon previously looked up from the icon theme using Gtk::Ico...">
+          load_icon_async()
+         </a>
+         .
+        </p>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000020">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              result
+             </td>
+             <td>
+              A AsyncResult.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The rendered icon; this may be a newly created icon or a new reference to an internal icon, so you must not modify the icon. Use Glib::object_unref() to release your reference to the icon.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a01dfc11aaf94faa9edb3bb834257b880">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            ::
+            <a class="elRef" doxygen="cairomm-1.0.tag:http://www.cairographics.org/documentation/cairomm/reference/" href="http://www.cairographics.org/documentation/cairomm/reference/classCairo_1_1RefPtr.html">
+             Cairo::RefPtr
+            </a>
+            &lt; ::
+            <a class="elRef" doxygen="cairomm-1.0.tag:http://www.cairographics.org/documentation/cairomm/reference/" href="http://www.cairographics.org/documentation/cairomm/reference/classCairo_1_1Surface.html">
+             Cairo::Surface
+            </a>
+            &gt; Gtk::IconInfo::load_surface
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Window.html">
+             Gdk::Window
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             for_window
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Renders an icon previously looked up in an icon theme using
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         ; the size will be based on the size passed to
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         .
+        </p>
+        <p>
+         Note that the resulting surface may not be exactly this size; an icon theme may have icons that differ slightly from their nominal sizes, and in addition GTK+ will avoid scaling icons that it considers sufficiently close to the requested size or for which the source image would have to be scaled up too far. (This maintains sharpness.). This behaviour can be changed by passing the
+         <a class="el" href="namespaceGtk.html#ga6d0c2193613cfb97ab313746a5bacaa2a1f1cb7da5c2ee5c65e9b1ece1ce8b85d" title="Always get the icon scaled to the requested size. ">
+          Gtk::ICON_LOOKUP_FORCE_SIZE
+         </a>
+         flag when obtaining the
+         <a class="el" href="classGtk_1_1IconInfo.html">
+          Gtk::IconInfo
+         </a>
+         . If this flag has been specified, the pixbuf returned by this function will be scaled to the exact size.
+        </p>
+        <dl class="since_3_10">
+         <dt>
+          <b>
+           <a class="el" href="since_3_10.html#_since_3_10000044">
+            Since gtkmm 3.10:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              for_window
+             </td>
+             <td>
+              <a class="el" href="classGdk_1_1Window.html" title="A Gdk::Window is a rectangular region on the screen. ">
+               Gdk::Window
+              </a>
+              to optimize drawing for, or
+              <code>
+               nullptr
+              </code>
+              .
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The rendered icon; this may be a newly created icon or a new reference to an internal icon, so you must not modify the icon. Use cairo_surface_destroy() to release your reference to the icon.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6978e6b274e4b4509428f7727fa7575e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::IconInfo::load_symbolic
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             fg
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             success_color
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             warning_color
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             error_color
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            bool &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             was_symbolic
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a3def79240881f2ae2ef8b6fac22e8529">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::IconInfo::load_symbolic
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1StyleContext.html">
+             StyleContext
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             style
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            bool &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             was_symbolic
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Loads an icon, modifying it to match the system colors for the foreground, success, warning and error colors provided.
+        </p>
+        <p>
+         If the icon is not a symbolic one, this method will return the result from
+         <a class="el" href="classGtk_1_1IconInfo.html#a5eec966046321610dba070b3c8d7e8e6" title="Renders an icon previously looked up in an icon theme using Gtk::IconTheme::lookup_icon(); the size w...">
+          load_icon()
+         </a>
+         . This method uses the regular foreground color and the symbolic colors with the names "success_color", "warning_color" and "error_color" from the context.
+        </p>
+        <p>
+         This allows loading symbolic icons that will match the system theme.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              style
+             </td>
+             <td>
+              A
+              <a class="el" href="classGtk_1_1StyleContext.html" title="This object stores styling information affecting a widget defined by WidgetPath. ">
+               StyleContext
+              </a>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              was_symbolic
+             </td>
+             <td>
+              Whether the loaded icon was a symbolic one and whether the fg color was applied to it.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a17db843b32de9f9208325ec98cd1e0dc">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconInfo::load_symbolic_async
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             fg
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             success_color
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             warning_color
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             error_color
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+             Gio::SlotAsyncReady
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1Cancellable.html">
+             Gio::Cancellable
+            </a>
+            &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             cancellable
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a88fcde752d2ab0ecab187aa34baf5360">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconInfo::load_symbolic_async
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             fg
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             success_color
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             warning_color
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGdk_1_1RGBA.html">
+             Gdk::RGBA
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             error_color
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+             Gio::SlotAsyncReady
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aa88386a551af3571df318c63c796d522">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::IconInfo::load_symbolic_finish
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1AsyncResult.html">
+             Gio::AsyncResult
+            </a>
+            &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             result
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            bool &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             was_symbolic
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Finishes an async icon load, see
+         <a class="el" href="classGtk_1_1IconInfo.html#a17db843b32de9f9208325ec98cd1e0dc">
+          load_symbolic_async()
+         </a>
+         .
+        </p>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000024">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              result
+             </td>
+             <td>
+              A AsyncResult.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              was_symbolic
+             </td>
+             <td>
+              A
+              <code>
+               bool
+              </code>
+              , returns whether the loaded icon was a symbolic one and whether the
+              <em>
+               fg
+              </em>
+              color was applied to it.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The rendered icon; this may be a newly created icon or a new reference to an internal icon, so you must not modify the icon. Use Glib::object_unref() to release your reference to the icon.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a4ab26861bb2f4220c95b233d897ba252">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconInfo::load_symbolic_for_context_async
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1StyleContext.html">
+             StyleContext
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             context
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+             Gio::SlotAsyncReady
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1Cancellable.html">
+             Gio::Cancellable
+            </a>
+            &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             cancellable
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Asynchronously load, render and scale a symbolic icon previously looked up from the icon theme using
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         .
+        </p>
+        <p>
+         For more details, see
+         <a class="el" href="classGtk_1_1IconInfo.html#a6978e6b274e4b4509428f7727fa7575e">
+          load_symbolic()
+         </a>
+         which is the synchronous version of this call.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              context
+             </td>
+             <td>
+              A
+              <a class="el" href="classGtk_1_1StyleContext.html" title="This object stores styling information affecting a widget defined by WidgetPath. ">
+               StyleContext
+              </a>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A callback slot to call when the request is satisfied.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              cancellable
+             </td>
+             <td>
+              A Cancellable object which can be used to cancel the operation.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000021">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aad5fc1ea0539002f03eb772f7014c715">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconInfo::load_symbolic_for_context_async
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGtk_1_1StyleContext.html">
+             StyleContext
+            </a>
+            &gt;&amp;
+           </td>
+           <td class="paramname">
+            <em>
+             context
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGio.html#a62eda8192493461b01b1df06ca229bb7">
+             Gio::SlotAsyncReady
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             slot
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Asynchronously load, render and scale a symbolic icon previously looked up from the icon theme using
+         <a class="el" href="classGtk_1_1IconTheme.html#a65eb6be589a121ece1bc5b267a033ab5" title="Looks up a named icon and returns a structure containing information such as the filename of the icon...">
+          Gtk::IconTheme::lookup_icon()
+         </a>
+         .
+        </p>
+        <p>
+         For more details, see
+         <a class="el" href="classGtk_1_1IconInfo.html#a6978e6b274e4b4509428f7727fa7575e">
+          load_symbolic()
+         </a>
+         which is the synchronous version of this call.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              context
+             </td>
+             <td>
+              A
+              <a class="el" href="classGtk_1_1StyleContext.html" title="This object stores styling information affecting a widget defined by WidgetPath. ">
+               StyleContext
+              </a>
+              .
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              slot
+             </td>
+             <td>
+              A callback slot to call when the request is satisfied.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000022">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa3c7db0855682ef99335a36a2986319b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="el" href="classGdk_1_1Pixbuf.html">
+             Gdk::Pixbuf
+            </a>
+            &gt; Gtk::IconInfo::load_symbolic_for_context_finish
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1RefPtr.html">
+             Glib::RefPtr
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGio_1_1AsyncResult.html">
+             Gio::AsyncResult
+            </a>
+            &gt; &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             result
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            bool &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             was_symbolic
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Finishes an async icon load, see
+         <a class="el" href="classGtk_1_1IconInfo.html#a4ab26861bb2f4220c95b233d897ba252" title="Asynchronously load, render and scale a symbolic icon previously looked up from the icon theme using ...">
+          load_symbolic_for_context_async()
+         </a>
+         .
+        </p>
+        <dl class="since_3_8">
+         <dt>
+          <b>
+           <a class="el" href="since_3_8.html#_since_3_8000023">
+            Since gtkmm 3.8:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              result
+             </td>
+             <td>
+              A AsyncResult.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              was_symbolic
+             </td>
+             <td>
+              A
+              <code>
+               bool
+              </code>
+              , returns whether the loaded icon was a symbolic one and whether the
+              <em>
+               fg
+              </em>
+              color was applied to it.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The rendered icon; this may be a newly created icon or a new reference to an internal icon, so you must not modify the icon. Use Glib::object_unref() to release your reference to the icon.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="addd7fe20fee4e9e17cd48f891d4f2fe7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::IconInfo::operator
+            <a class="el" href="classGtk_1_1IconInfo.html#af42ea038541bb079ce20f97cdfcdc690">
+             BoolExpr
+            </a>
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Tests whether the
+         <a class="el" href="classGtk_1_1IconInfo.html">
+          IconInfo
+         </a>
+         is valid.
+        </p>
+        <p>
+         For instance,
+        </p>
+        <div class="fragment">
+         <div class="line">
+          <span class="keywordflow">
+           if
+          </span>
+          (iconinfo)
+         </div>
+         <div class="line">
+          do_something()
+         </div>
+        </div>
+        <!-- fragment -->
+       </div>
+      </div>
+      <a class="anchor" id="a97b873870f84ffc61d4539aa291be36e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1IconInfo.html">
+             IconInfo
+            </a>
+            &amp; Gtk::IconInfo::operator=
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1IconInfo.html">
+             IconInfo
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ad97e13b7a761626300f861356badfac2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1IconInfo.html">
+                 IconInfo
+                </a>
+                &amp; Gtk::IconInfo::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1IconInfo.html">
+                 IconInfo
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a529c4c1e8729c18e7c7b43feaaf63d67">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::IconInfo::set_raw_coordinates
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            bool
+           </td>
+           <td class="paramname">
+            <em>
+             raw_coordinates
+            </em>
+            =
+            <code>
+             true
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets whether the coordinates returned by
+         <a class="el" href="classGtk_1_1IconInfo.html#a6737ad0cb2c087788393c6435570bfff" title="This function is deprecated and always returns false. ">
+          get_embedded_rect()
+         </a>
+         and
+         <a class="el" href="classGtk_1_1IconInfo.html#a1836ff512cd66553b049190487b64144">
+          get_attach_points()
+         </a>
+         should be returned in their original form as specified in the icon theme, instead of scaled appropriately for the pixbuf returned by
+         <a class="el" href="classGtk_1_1IconInfo.html#a5eec966046321610dba070b3c8d7e8e6" title="Renders an icon previously looked up in an icon theme using Gtk::IconTheme::lookup_icon(); the size w...">
+          load_icon()
+         </a>
+         .
+        </p>
+        <p>
+         Raw coordinates are somewhat strange; they are specified to be with respect to the unscaled pixmap for PNG and XPM icons, but for SVG icons, they are in a 1000x1000 coordinate space that is scaled to the final size of the icon. You can determine if the icon is an SVG icon by using
+         <a class="el" href="classGtk_1_1IconInfo.html#a991fed1842e82757a693f6a607ce2150" title="Gets the filename for the icon. ">
+          get_filename()
+         </a>
+         , and seeing if it is non-
+         <code>
+          nullptr
+         </code>
+         and ends in “.svg”.
+        </p>
+        <p>
+         This function is provided primarily to allow compatibility wrappers for older API's, and is not expected to be useful for applications.
+        </p>
+        <dl class="since_2_4">
+         <dt>
+          <b>
+           <a class="el" href="since_2_4.html#_since_2_4000250">
+            Since gtkmm 2.4:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.14: Embedded rectangles and attachment points are deprecated
+        </p>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000146">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          Embedded rectangles and attachment points are deprecated.
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              raw_coordinates
+             </td>
+             <td>
+              Whether the coordinates of embedded rectangles and attached points should be returned in their original (unscaled) form.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aebda77e764e3b339ef6cd8e7fc1e0b58">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void Gtk::IconInfo::swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1IconInfo.html">
+                 IconInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="ad96b86bfee2a7527e0c46e50c9d48d15">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1IconInfo.html">
+                 IconInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1IconInfo.html">
+                 IconInfo
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              lhs
+             </td>
+             <td>
+              The left-hand side
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              rhs
+             </td>
+             <td>
+              The right-hand side
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="acdc54b26a982305d52967d4c99c0a0d1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1IconInfo.html">
+                 Gtk::IconInfo
+                </a>
+                wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkIconInfo *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="adb0929f2020199570662394b264e5086">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkIconInfo* Gtk::IconInfo::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGtk_1_1IconInfo.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

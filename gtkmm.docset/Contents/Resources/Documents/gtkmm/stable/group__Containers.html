@@ -1,0 +1,1384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Container Widgets
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="group__Containers.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="group__Containers.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="group__Containers.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Container Widgets
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       These widgets can be used to group other widgets together.
+       <a href="group__Containers.html#details">
+        More...
+       </a>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="nested-classes">
+           </a>
+           Classes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1AspectFrame.html">
+           Gtk::AspectFrame
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A frame that constrains its child to a particular aspect ratio.
+          <a href="classGtk_1_1AspectFrame.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Expander.html">
+           Gtk::Expander
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A container which can hide its child.
+          <a href="classGtk_1_1Expander.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Fixed.html">
+           Gtk::Fixed
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A container which allows you to position widgets at fixed coordinates.
+          <a href="classGtk_1_1Fixed.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1FlowBox.html">
+           Gtk::FlowBox
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A container that allows reflowing its children.
+          <a href="classGtk_1_1FlowBox.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1FlowBoxChild.html">
+           Gtk::FlowBoxChild
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          See the description of
+          <a class="el" href="classGtk_1_1FlowBox.html" title="A container that allows reflowing its children. ">
+           FlowBox
+          </a>
+          .
+          <a href="classGtk_1_1FlowBoxChild.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Frame.html">
+           Gtk::Frame
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="el" href="classGtk_1_1Bin.html" title="A container with just one child. ">
+           Gtk::Bin
+          </a>
+          with a decorative frame and optional label.
+          <a href="classGtk_1_1Frame.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Grid.html">
+           Gtk::Grid
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A container which arranges its child widgets in rows and columns.
+          <a href="classGtk_1_1Grid.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1HeaderBar.html">
+           Gtk::HeaderBar
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A box with a centered child.
+          <a href="classGtk_1_1HeaderBar.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1VBox.html">
+           Gtk::VBox
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Vertical
+          <a class="el" href="classGtk_1_1Box.html" title="The Box widget organizes child widgets into a rectangular area. ">
+           Box
+          </a>
+          for laying widgets in a vertical row.
+          <a href="classGtk_1_1VBox.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1HBox.html">
+           Gtk::HBox
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Horizontal
+          <a class="el" href="classGtk_1_1Box.html" title="The Box widget organizes child widgets into a rectangular area. ">
+           Box
+          </a>
+          for laying widgets in a horizontal row.
+          <a href="classGtk_1_1HBox.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1IconView.html">
+           Gtk::IconView
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The
+          <a class="el" href="classGtk_1_1IconView.html" title="The IconView provides an alternative view of a list model. ">
+           IconView
+          </a>
+          provides an alternative view of a list model.
+          <a href="classGtk_1_1IconView.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Layout.html">
+           Gtk::Layout
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Infinite scrollable area containing child widgets and/or custom drawing.
+          <a href="classGtk_1_1Layout.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1ListBox.html">
+           Gtk::ListBox
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="el" href="classGtk_1_1ListBox.html" title="A ListBox is a vertical container that contains ListBoxRow children. ">
+           ListBox
+          </a>
+          is a vertical container that contains
+          <a class="el" href="classGtk_1_1ListBoxRow.html" title="See the description of ListBox. ">
+           ListBoxRow
+          </a>
+          children.
+          <a href="classGtk_1_1ListBox.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1ListBoxRow.html">
+           Gtk::ListBoxRow
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          See the description of
+          <a class="el" href="classGtk_1_1ListBox.html" title="A ListBox is a vertical container that contains ListBoxRow children. ">
+           ListBox
+          </a>
+          .
+          <a href="classGtk_1_1ListBoxRow.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1MenuShell.html">
+           Gtk::MenuShell
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The abstract base class for
+          <a class="el" href="classGtk_1_1Menu.html" title="A drop-down menu consisting of Gtk::MenuItem objects which can be navigated and activated by the user...">
+           Gtk::Menu
+          </a>
+          and
+          <a class="el" href="classGtk_1_1MenuBar.html" title="A standard menu bar which usually holds Gtk::Menu submenu items. ">
+           Gtk::MenuBar
+          </a>
+          .
+          <a href="classGtk_1_1MenuShell.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Notebook.html">
+           Gtk::Notebook
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          <a class="el" href="classGtk_1_1Container.html" title="Abstract container class. ">
+           Container
+          </a>
+          which shows one of its children at a time, in tabbed windows.
+          <a href="classGtk_1_1Notebook.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1OffscreenWindow.html">
+           Gtk::OffscreenWindow
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A top-level container widget used to manage offscreen rendering of child widgets.
+          <a href="classGtk_1_1OffscreenWindow.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Overlay.html">
+           Gtk::Overlay
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A container which overlays widgets on top of each other.
+          <a href="classGtk_1_1Overlay.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Paned.html">
+           Gtk::Paned
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A widget with two adjustable panes.
+          <a href="classGtk_1_1Paned.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1PopoverMenu.html">
+           Gtk::PopoverMenu
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="el" href="classGtk_1_1Popover.html" title="Context dependent bubbles. ">
+           Popover
+          </a>
+          to use as a menu.
+          <a href="classGtk_1_1PopoverMenu.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1ScrolledWindow.html">
+           Gtk::ScrolledWindow
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Adds scrollbars to its child widget.
+          <a href="classGtk_1_1ScrolledWindow.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Stack.html">
+           Gtk::Stack
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A container that shows only one child at a time.
+          <a href="classGtk_1_1Stack.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TextView.html">
+           Gtk::TextView
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Multi-line text editing widget.
+          <a href="classGtk_1_1TextView.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Toolbar.html">
+           Gtk::Toolbar
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Bars of buttons and other widgets.
+          <a href="classGtk_1_1Toolbar.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1ToolItemGroup.html">
+           Gtk::ToolItemGroup
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="el" href="classGtk_1_1ToolItemGroup.html" title="A ToolItemGroup is used together with ToolPalette to add ToolItems to a palette-like container with d...">
+           ToolItemGroup
+          </a>
+          is used together with
+          <a class="el" href="classGtk_1_1ToolPalette.html" title="A ToolPalette allows you to add ToolItems to a palette-like container with various categories and dra...">
+           ToolPalette
+          </a>
+          to add ToolItems to a palette-like container with different categories and drag and drop support.
+          <a href="classGtk_1_1ToolItemGroup.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1ToolPalette.html">
+           Gtk::ToolPalette
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="el" href="classGtk_1_1ToolPalette.html" title="A ToolPalette allows you to add ToolItems to a palette-like container with various categories and dra...">
+           ToolPalette
+          </a>
+          allows you to add ToolItems to a palette-like container with various categories and drag and drop support.
+          <a href="classGtk_1_1ToolPalette.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeView.html">
+           Gtk::TreeView
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The
+          <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+           TreeView
+          </a>
+          widget displays the model (
+          <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+           Gtk::TreeModel
+          </a>
+          ) data and allows the user to interact with it.
+          <a href="classGtk_1_1TreeView.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Viewport.html">
+           Gtk::Viewport
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          An adapter which makes widgets scrollable.
+          <a href="classGtk_1_1Viewport.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Socket.html">
+           Gtk::Socket
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          <a class="el" href="classGtk_1_1Container.html" title="Abstract container class. ">
+           Container
+          </a>
+          for widgets from other processes.
+          <a href="classGtk_1_1Socket.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Alignment.html">
+           Gtk::Alignment
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A widget which controls the alignment and size of its child.
+          <a href="classGtk_1_1Alignment.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1HandleBox.html">
+           Gtk::HandleBox
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A widget for detachable window portions.
+          <a href="classGtk_1_1HandleBox.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1VButtonBox.html">
+           Gtk::VButtonBox
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A container for arranging buttons vertically.
+          <a href="classGtk_1_1VButtonBox.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1HButtonBox.html">
+           Gtk::HButtonBox
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A container for arranging buttons horizontally.
+          <a href="classGtk_1_1HButtonBox.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1Table.html">
+           Gtk::Table
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Pack widgets in regular patterns.
+          <a href="classGtk_1_1Table.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1ListViewText_1_1TextModelColumns.html">
+           Gtk::ListViewText::TextModelColumns
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1ListViewText.html">
+           Gtk::ListViewText
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A simple listbox which presents some lines of information in columns and lets the user select some of them.
+          <a href="classGtk_1_1ListViewText.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <p>
+       These widgets can be used to group other widgets together.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="group__Containers.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

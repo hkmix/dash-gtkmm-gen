@@ -1,0 +1,1282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   TreeView Classes
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="group__TreeView.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="group__TreeView.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="group__TreeView.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: TreeView Classes
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       These classes are used with the
+       <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+        Gtk::TreeView
+       </a>
+       widget.
+       <a href="group__TreeView.html#details">
+        More...
+       </a>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="nested-classes">
+           </a>
+           Classes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1CellRenderer.html">
+           Gtk::CellRenderer
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          CellRenderers are used by
+          <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+           Gtk::TreeView
+          </a>
+          columns to render the
+          <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+           Gtk::TreeModel
+          </a>
+          column data appropriately.
+          <a href="classGtk_1_1CellRenderer.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1CellRendererAccel.html">
+           Gtk::CellRendererAccel
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Renders a keyboard accelerator in a cell.
+          <a href="classGtk_1_1CellRendererAccel.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1CellRendererCombo.html">
+           Gtk::CellRendererCombo
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Renders a combobox in a cell.
+          <a href="classGtk_1_1CellRendererCombo.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1CellRendererPixbuf.html">
+           Gtk::CellRendererPixbuf
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Renders a pixbuf in a cell.
+          <a href="classGtk_1_1CellRendererPixbuf.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1CellRendererProgress.html">
+           Gtk::CellRendererProgress
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Renders numbers as progress bars.
+          <a href="classGtk_1_1CellRendererProgress.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1CellRendererSpin.html">
+           Gtk::CellRendererSpin
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Renders a spin button in a cell.
+          <a href="classGtk_1_1CellRendererSpin.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1CellRendererSpinner.html">
+           Gtk::CellRendererSpinner
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Renders a spinning animation in a cell.
+          <a href="classGtk_1_1CellRendererSpinner.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1CellRendererText.html">
+           Gtk::CellRendererText
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Renders text in a cell.
+          <a href="classGtk_1_1CellRendererText.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1CellRendererToggle.html">
+           Gtk::CellRendererToggle
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Renders a toggle button in a cell.
+          <a href="classGtk_1_1CellRendererToggle.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1ListStore.html">
+           Gtk::ListStore
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Thist is a list model for use with a
+          <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+           Gtk::TreeView
+          </a>
+          widget.
+          <a href="classGtk_1_1ListStore.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeDragDest.html">
+           Gtk::TreeDragDest
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeDragSource.html">
+           Gtk::TreeDragSource
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html">
+           Gtk::TreeIterBase
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html">
+           Gtk::TreeIter
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+           Gtk::TreeModel::iterator
+          </a>
+          is a reference to a specific node on a specific model.
+          <a href="classGtk_1_1TreeIter.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeRow.html">
+           Gtk::TreeRow
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Typedefed as
+          <a class="el" href="classGtk_1_1TreeModel.html#a297c9db68905e82fe7c3fac57f6c4de8">
+           TreeModel::Row
+          </a>
+          .
+          <a href="classGtk_1_1TreeRow.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeNodeChildren.html">
+           Gtk::TreeNodeChildren
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          typedefed as
+          <a class="el" href="classGtk_1_1TreeModel.html#ad04e0f7d1bb271fceeef487a19b97703">
+           TreeModel::Children
+          </a>
+          .
+          <a href="classGtk_1_1TreeNodeChildren.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeModel.html">
+           Gtk::TreeModel
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This class defines a generic tree interface for use by the
+          <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+           Gtk::TreeView
+          </a>
+          widget.
+          <a href="classGtk_1_1TreeModel.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeModelFilter.html">
+           Gtk::TreeModelFilter
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeModelSort.html">
+           Gtk::TreeModelSort
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A wrapper which makes an underlying
+          <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+           Gtk::TreeModel
+          </a>
+          sortable.
+          <a href="classGtk_1_1TreeModelSort.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreePath.html">
+           Gtk::TreePath
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A path is essentially a potential node.
+          <a href="classGtk_1_1TreePath.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeRowReference.html">
+           Gtk::TreeRowReference
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Typedefed as
+          <a class="el" href="classGtk_1_1TreeModel.html#a518281b14bcc32f9d0ef4ca0584a1a30">
+           Gtk::TreeModel::RowReference
+          </a>
+          .
+          <a href="classGtk_1_1TreeRowReference.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSelection.html">
+           Gtk::TreeSelection
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Typedefed as
+          <a class="el" href="classGtk_1_1TreeView.html#ac8c004cc10cc48e6e4ce8ccfe0e49279" title="A selection object for Gtk::TreeView. ">
+           Gtk::TreeView::Selection
+          </a>
+          .
+          <a href="classGtk_1_1TreeSelection.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeSortable.html">
+           Gtk::TreeSortable
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeStore.html">
+           Gtk::TreeStore
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeView.html">
+           Gtk::TreeView
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          The
+          <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+           TreeView
+          </a>
+          widget displays the model (
+          <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+           Gtk::TreeModel
+          </a>
+          ) data and allows the user to interact with it.
+          <a href="classGtk_1_1TreeView.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeViewColumn.html">
+           Gtk::TreeViewColumn
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Typedefed as
+          <a class="el" href="classGtk_1_1TreeView.html#ac1ae0dc1852b7204ea27bc504cd5c21b" title="A visible column in a Gtk::TreeView widget. ">
+           Gtk::TreeView::Column
+          </a>
+          .
+          <a href="classGtk_1_1TreeViewColumn.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1ListViewText_1_1TextModelColumns.html">
+           Gtk::ListViewText::TextModelColumns
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1ListViewText.html">
+           Gtk::ListViewText
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A simple listbox which presents some lines of information in columns and lets the user select some of them.
+          <a href="classGtk_1_1ListViewText.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeModelColumnRecord.html">
+           Gtk::TreeModelColumnRecord
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Typedefed as
+          <a class="el" href="classGtk_1_1TreeModel.html#a58f10daabaa507b4c2473c9d1b6fa584">
+           TreeModel::ColumnRecord
+          </a>
+          .
+          <a href="classGtk_1_1TreeModelColumnRecord.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeModelColumnBase.html">
+           Gtk::TreeModelColumnBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Base class of
+          <a class="el" href="classGtk_1_1TreeModelColumn.html" title="A Gtk::TreeModelColumn describes the C++ type of the data in a model column, and identifies that colu...">
+           TreeModelColumn
+          </a>
+          templates.
+          <a href="classGtk_1_1TreeModelColumnBase.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:">
+         <td align="right" class="memItemLeft" valign="top">
+          class
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeModelColumn.html">
+           Gtk::TreeModelColumn&lt; T &gt;
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="el" href="classGtk_1_1TreeModelColumn.html" title="A Gtk::TreeModelColumn describes the C++ type of the data in a model column, and identifies that colu...">
+           Gtk::TreeModelColumn
+          </a>
+          describes the C++ type of the data in a model column, and identifies that column in the model.
+          <a href="classGtk_1_1TreeModelColumn.html#details">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="enum-members">
+           </a>
+           Enumerations
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ga4a8438774fb78456b1f3cddb8115d939">
+         <td align="right" class="memItemLeft" valign="top">
+          enum
+         </td>
+         <td class="memItemRight" valign="bottom">
+          {
+          <br/>
+          <br/>
+          <a class="el" href="group__TreeView.html#gga4a8438774fb78456b1f3cddb8115d939a1f2659275b72f896314ec041cd75f1eb">
+           Gtk::TreeSortable::DEFAULT_SORT_COLUMN_ID
+          </a>
+          = -1,
+          <br/>
+          <br/>
+          <a class="el" href="group__TreeView.html#gga4a8438774fb78456b1f3cddb8115d939a829bad43a1d6ce9e9bb97ab9523b03ad">
+           Gtk::TreeSortable::DEFAULT_UNSORTED_COLUMN_ID
+          </a>
+          = -2
+          <br/>
+          <br/>
+          }
+         </td>
+        </tr>
+        <tr class="separator:ga4a8438774fb78456b1f3cddb8115d939">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <p>
+       These classes are used with the
+       <a class="el" href="classGtk_1_1TreeView.html" title="The TreeView widget displays the model (Gtk::TreeModel) data and allows the user to interact with it...">
+        Gtk::TreeView
+       </a>
+       widget.
+      </p>
+      <h2 class="groupheader">
+       Enumeration Type Documentation
+      </h2>
+      <a class="anchor" id="ga4a8438774fb78456b1f3cddb8115d939">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            anonymous enum
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <table class="fieldtable">
+         <tbody>
+          <tr>
+           <th colspan="2">
+            Enumerator
+           </th>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="gga4a8438774fb78456b1f3cddb8115d939a1f2659275b72f896314ec041cd75f1eb">
+            </a>
+            DEFAULT_SORT_COLUMN_ID
+           </td>
+           <td class="fielddoc">
+            <p>
+             See
+             <a class="el" href="classGtk_1_1TreeSortable.html#aa831da01a9e3b7c0dbf3b84be934bf4b" title="Sets the default comparison function used when sorting. ">
+              set_default_sort_func()
+             </a>
+             and
+             <a class="el" href="classGtk_1_1TreeSortable.html#ad4a0c6be13062c64599be8ed73c1e64e" title="Sets the current sort column to be sort_column_id. ">
+              set_sort_column()
+             </a>
+             .
+            </p>
+           </td>
+          </tr>
+          <tr>
+           <td class="fieldname">
+            <a class="anchor" id="gga4a8438774fb78456b1f3cddb8115d939a829bad43a1d6ce9e9bb97ab9523b03ad">
+            </a>
+            DEFAULT_UNSORTED_COLUMN_ID
+           </td>
+           <td class="fielddoc">
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="group__TreeView.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

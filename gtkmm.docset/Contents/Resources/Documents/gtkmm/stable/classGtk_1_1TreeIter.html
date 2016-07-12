@@ -1,0 +1,1934 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gtk::TreeIter Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGtk_1_1TreeIter.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1TreeIter.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1TreeIter.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gtk::TreeIter Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       A
+       <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+        Gtk::TreeModel::iterator
+       </a>
+       is a reference to a specific node on a specific model.
+       <a href="classGtk_1_1TreeIter.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;gtkmm/treeiter.h&gt;
+       </code>
+      </p>
+      <div class="dynheader">
+       Inheritance diagram for Gtk::TreeIter:
+      </div>
+      <div class="dyncontent">
+       <div class="center">
+        <img alt="Inheritance graph" border="0" src="classGtk_1_1TreeIter__inherit__graph.png" usemap="#Gtk_1_1TreeIter_inherit__map"/>
+       </div>
+       <map id="Gtk_1_1TreeIter_inherit__map" name="Gtk_1_1TreeIter_inherit__map">
+        <area alt="" coords="5,155,169,181" href="classGtk_1_1TreeNodeChildren.html" id="node3" shape="rect" title="typedefed as TreeModel::Children. ">
+        </area>
+        <area alt="" coords="193,155,296,181" href="classGtk_1_1TreeRow.html" id="node4" shape="rect" title="Typedefed as TreeModel::Row. ">
+        </area>
+        <area alt="" coords="101,5,231,32" href="classGtk_1_1TreeIterBase.html" id="node2" shape="rect" title="Gtk::TreeIterBase">
+        </area>
+       </map>
+       <center>
+        <span class="legend">
+         [
+         <a href="graph_legend.html">
+          legend
+         </a>
+         ]
+        </span>
+       </center>
+      </div>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-types">
+           </a>
+           Public Types
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:ad48e11234a1ef30a56fbf64d944232e1">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00636.html">
+           std::bidirectional_iterator_tag
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#ad48e11234a1ef30a56fbf64d944232e1">
+           iterator_category
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:ad48e11234a1ef30a56fbf64d944232e1">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad6d804b4744a31a96083edd31639b82b">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef
+          <a class="el" href="classGtk_1_1TreeRow.html">
+           Gtk::TreeRow
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#ad6d804b4744a31a96083edd31639b82b">
+           value_type
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:ad6d804b4744a31a96083edd31639b82b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab55da0493213816959f624a0d3747771">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#ab55da0493213816959f624a0d3747771">
+           difference_type
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:ab55da0493213816959f624a0d3747771">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5011b05221c38181c734b44fa8c0d83f">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef const
+          <a class="el" href="classGtk_1_1TreeRow.html">
+           Gtk::TreeRow
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a5011b05221c38181c734b44fa8c0d83f">
+           reference
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a5011b05221c38181c734b44fa8c0d83f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5ca69865eaeb38e6c56539964411307b">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef const
+          <a class="el" href="classGtk_1_1TreeRow.html">
+           Gtk::TreeRow
+          </a>
+          *
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a5ca69865eaeb38e6c56539964411307b">
+           pointer
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a5ca69865eaeb38e6c56539964411307b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a18bdf86cfc172d21a7584f18835a55bb">
+         <td align="right" class="memItemLeft" valign="top">
+          typedef const void*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a18bdf86cfc172d21a7584f18835a55bb">
+           BoolExpr
+          </a>
+         </td>
+        </tr>
+        <tr class="memdesc:a18bdf86cfc172d21a7584f18835a55bb">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This typedef is just to make it more obvious that our operator const void* should be used like operator bool().
+          <a href="classGtk_1_1TreeIter.html#a18bdf86cfc172d21a7584f18835a55bb">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a18bdf86cfc172d21a7584f18835a55bb">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a5f419a854ffb2ddefa224b5afd70657d">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a5f419a854ffb2ddefa224b5afd70657d">
+           TreeIter
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a5f419a854ffb2ddefa224b5afd70657d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a41602c61e46dd41587f4b56db46d325e">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1TreeIter.html">
+           TreeIter
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a41602c61e46dd41587f4b56db46d325e">
+           operator++
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a41602c61e46dd41587f4b56db46d325e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a46e9bcc4291a436b8b70992c45762372">
+         <td align="right" class="memItemLeft" valign="top">
+          const
+          <a class="el" href="classGtk_1_1TreeIter.html">
+           TreeIter
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a46e9bcc4291a436b8b70992c45762372">
+           operator++
+          </a>
+          (int)
+         </td>
+        </tr>
+        <tr class="separator:a46e9bcc4291a436b8b70992c45762372">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:afed3b959fa29d90b57e417b88392e335">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1TreeIter.html">
+           TreeIter
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#afed3b959fa29d90b57e417b88392e335">
+           operator--
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:afed3b959fa29d90b57e417b88392e335">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Please note that this is very slow compared to
+          <a class="el" href="classGtk_1_1TreeIter.html#a41602c61e46dd41587f4b56db46d325e">
+           operator++()
+          </a>
+          .
+          <a href="classGtk_1_1TreeIter.html#afed3b959fa29d90b57e417b88392e335">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:afed3b959fa29d90b57e417b88392e335">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab1070ff322a770f443ddf625d0ee0391">
+         <td align="right" class="memItemLeft" valign="top">
+          const
+          <a class="el" href="classGtk_1_1TreeIter.html">
+           TreeIter
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#ab1070ff322a770f443ddf625d0ee0391">
+           operator--
+          </a>
+          (int)
+         </td>
+        </tr>
+        <tr class="memdesc:ab1070ff322a770f443ddf625d0ee0391">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Please note that this is very slow compared to
+          <a class="el" href="classGtk_1_1TreeIter.html#a41602c61e46dd41587f4b56db46d325e">
+           operator++()
+          </a>
+          .
+          <a href="classGtk_1_1TreeIter.html#ab1070ff322a770f443ddf625d0ee0391">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab1070ff322a770f443ddf625d0ee0391">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8719cade1c5047b221f6cefa738547c0">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1TreeIter.html#a5011b05221c38181c734b44fa8c0d83f">
+           reference
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a8719cade1c5047b221f6cefa738547c0">
+           operator*
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a8719cade1c5047b221f6cefa738547c0">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1daa2dd6654698e001ef8ff8b784b885">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1TreeIter.html#a5ca69865eaeb38e6c56539964411307b">
+           pointer
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a1daa2dd6654698e001ef8ff8b784b885">
+           operator-&gt;
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="separator:a1daa2dd6654698e001ef8ff8b784b885">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a644adfe72d43e87d451e3be9b9c36648">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a644adfe72d43e87d451e3be9b9c36648">
+           equal
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeIter.html">
+           TreeIter
+          </a>
+          &amp; other) const
+         </td>
+        </tr>
+        <tr class="separator:a644adfe72d43e87d451e3be9b9c36648">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2fef381e0bef5f000e6120c627259b1f">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a2fef381e0bef5f000e6120c627259b1f">
+           operator BoolExpr
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a2fef381e0bef5f000e6120c627259b1f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Discover whether the iterator is valid, and not equal to
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#ga5124f3464f8607e7338ff7407faeaf15">
+           end()
+          </a>
+          .
+          <a href="classGtk_1_1TreeIter.html#a2fef381e0bef5f000e6120c627259b1f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2fef381e0bef5f000e6120c627259b1f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ab0c7c66a642182e48c087fd02562b73f">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#ab0c7c66a642182e48c087fd02562b73f">
+           get_stamp
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ab0c7c66a642182e48c087fd02562b73f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This is only useful when implementing a custom
+          <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+           Gtk::TreeModel
+          </a>
+          class.
+          <a href="classGtk_1_1TreeIter.html#ab0c7c66a642182e48c087fd02562b73f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ab0c7c66a642182e48c087fd02562b73f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af30ad8f5e3754851f52ade6aa0714476">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#af30ad8f5e3754851f52ade6aa0714476">
+           set_stamp
+          </a>
+          (int stamp)
+         </td>
+        </tr>
+        <tr class="memdesc:af30ad8f5e3754851f52ade6aa0714476">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          This is only useful when implementing a custom
+          <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+           Gtk::TreeModel
+          </a>
+          class.
+          <a href="classGtk_1_1TreeIter.html#af30ad8f5e3754851f52ade6aa0714476">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:af30ad8f5e3754851f52ade6aa0714476">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pub_methods_classGtk_1_1TreeIterBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGtk_1_1TreeIterBase')">
+          <img alt="-" src="closed.png"/>
+          Public Member Functions inherited from
+          <a class="el" href="classGtk_1_1TreeIterBase.html">
+           Gtk::TreeIterBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a0a94a983836379121747823df61d622a inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html#a0a94a983836379121747823df61d622a">
+           TreeIterBase
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeIterBase.html">
+           TreeIterBase
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a0a94a983836379121747823df61d622a inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7059a6680529da8a430aa835b32e3a07 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1TreeIterBase.html">
+           TreeIterBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html#a7059a6680529da8a430aa835b32e3a07">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeIterBase.html">
+           TreeIterBase
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a7059a6680529da8a430aa835b32e3a07 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6eb65bfb8cc5a95bab1fa7ca635c0068 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html#a6eb65bfb8cc5a95bab1fa7ca635c0068">
+           TreeIterBase
+          </a>
+          (
+          <a class="el" href="classGtk_1_1TreeIterBase.html">
+           TreeIterBase
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a6eb65bfb8cc5a95bab1fa7ca635c0068 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2bd07600f35ab51994050a8c8a912413 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1TreeIterBase.html">
+           TreeIterBase
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html#a2bd07600f35ab51994050a8c8a912413">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGtk_1_1TreeIterBase.html">
+           TreeIterBase
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a2bd07600f35ab51994050a8c8a912413 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0904577c8f2602dc7a5508068f0acfbd inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html#a0904577c8f2602dc7a5508068f0acfbd">
+           TreeIterBase
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a0904577c8f2602dc7a5508068f0acfbd inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a10a9ab4a23c43d1252a4383ac1096c53 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html#a10a9ab4a23c43d1252a4383ac1096c53">
+           TreeIterBase
+          </a>
+          (const GtkTreeIter* gobject)
+         </td>
+        </tr>
+        <tr class="separator:a10a9ab4a23c43d1252a4383ac1096c53 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a1479600863c422429b606e26885fc5ef inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkTreeIter*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html#a1479600863c422429b606e26885fc5ef">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a1479600863c422429b606e26885fc5ef inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1TreeIter.html#a1479600863c422429b606e26885fc5ef">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a1479600863c422429b606e26885fc5ef inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0a9ac6f632e297568fa81c67966fb737 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td align="right" class="memItemLeft" valign="top">
+          const GtkTreeIter*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html#a0a9ac6f632e297568fa81c67966fb737">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a0a9ac6f632e297568fa81c67966fb737 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1TreeIter.html#a0a9ac6f632e297568fa81c67966fb737">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0a9ac6f632e297568fa81c67966fb737 inherit pub_methods_classGtk_1_1TreeIterBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a27ec6dbc88cf8ed080ebf397226f25ad">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a27ec6dbc88cf8ed080ebf397226f25ad">
+           operator==
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeIter.html">
+           TreeIter
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGtk_1_1TreeIter.html">
+           TreeIter
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a27ec6dbc88cf8ed080ebf397226f25ad">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a8b0a2d89e01de99226fce73c9034d2c7">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIter.html#a8b0a2d89e01de99226fce73c9034d2c7">
+           operator!=
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1TreeIter.html">
+           TreeIter
+          </a>
+          &amp; lhs, const
+          <a class="el" href="classGtk_1_1TreeIter.html">
+           TreeIter
+          </a>
+          &amp; rhs)
+         </td>
+        </tr>
+        <tr class="separator:a8b0a2d89e01de99226fce73c9034d2c7">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="inherited">
+           </a>
+           Additional Inherited Members
+          </h2>
+         </td>
+        </tr>
+        <tr class="inherit_header pub_static_methods_classGtk_1_1TreeIterBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classGtk_1_1TreeIterBase')">
+          <img alt="-" src="closed.png"/>
+          Static Public Member Functions inherited from
+          <a class="el" href="classGtk_1_1TreeIterBase.html">
+           Gtk::TreeIterBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a0d7ca80b3cc79576e0b43ef373f6064a inherit pub_static_methods_classGtk_1_1TreeIterBase">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html#a0d7ca80b3cc79576e0b43ef373f6064a">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a0d7ca80b3cc79576e0b43ef373f6064a inherit pub_static_methods_classGtk_1_1TreeIterBase">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGtk_1_1TreeIter.html#a0d7ca80b3cc79576e0b43ef373f6064a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0d7ca80b3cc79576e0b43ef373f6064a inherit pub_static_methods_classGtk_1_1TreeIterBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="inherit_header pro_attribs_classGtk_1_1TreeIterBase">
+         <td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classGtk_1_1TreeIterBase')">
+          <img alt="-" src="closed.png"/>
+          Protected Attributes inherited from
+          <a class="el" href="classGtk_1_1TreeIterBase.html">
+           Gtk::TreeIterBase
+          </a>
+         </td>
+        </tr>
+        <tr class="memitem:a825f19ad20572560796c87c58a2d1cf0 inherit pro_attribs_classGtk_1_1TreeIterBase">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkTreeIter
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1TreeIterBase.html#a825f19ad20572560796c87c58a2d1cf0">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a825f19ad20572560796c87c58a2d1cf0 inherit pro_attribs_classGtk_1_1TreeIterBase">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        A
+        <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+         Gtk::TreeModel::iterator
+        </a>
+        is a reference to a specific node on a specific model.
+       </p>
+       <p>
+        It is a generic structure with an integer and three generic pointers. These are filled in by the model in a model-specific way.
+       </p>
+       <p>
+        One can convert a path to an iterator by calling
+        <a class="el" href="classGtk_1_1TreeModel.html#aebaa795e4920ddc0ec5e39c9f4fbc660" title="Returns a valid iterator pointing to path. ">
+         Gtk::TreeModel::get_iter()
+        </a>
+        .
+       </p>
+       <p>
+        These iterators are the primary way of accessing a model and are similar to the iterators used by
+        <a class="el" href="classGtk_1_1TextBuffer.html" title="Multi-line attributed text that can be displayed by one or more Gtk::TextView widgets. ">
+         Gtk::TextBuffer
+        </a>
+        . The model interface defines a set of operations using them for navigating the model.
+       </p>
+       <p>
+        The lifecycle of an iterator can be a little confusing at first. Iterators are expected to always be valid for as long as the model is unchanged (and doesn't emit a signal). Additionally, some models guarantee that an iterator is valid for as long as the node it refers to is valid (most notably the
+        <a class="el" href="classGtk_1_1TreeStore.html">
+         Gtk::TreeStore
+        </a>
+        and
+        <a class="el" href="classGtk_1_1ListStore.html" title="Thist is a list model for use with a Gtk::TreeView widget. ">
+         Gtk::ListStore
+        </a>
+        ).
+       </p>
+       <p>
+        Although generally uninteresting, as one always has to allow for the case where iterators do not persist beyond a signal, some very important performance enhancements were made in the sort model. As a result, the
+        <a class="el" href="namespaceGtk.html#ga8db2110062643eb26461ec23b63e2cb2a751b4e7f738f5d11ec139e93b8842e02" title="Iterators survive all signals emitted by the tree. ">
+         Gtk::TREE_MODEL_ITERS_PERSIST
+        </a>
+        flag was added to indicate this behaviour - see
+        <a class="el" href="classGtk_1_1TreeModel.html#af4b5de9c0bd5a79ef06fcda4fc415ef8" title="Returns a set of flags supported by this interface. ">
+         Gtk::TreeModel::get_flags()
+        </a>
+        .
+       </p>
+       <p>
+        Typedefed as
+        <a class="el" href="classGtk_1_1TreeModel.html#a754e74cd833ff30e729f9b8d7daf4d8c">
+         Gtk::TreeModel::iterator
+        </a>
+        . The
+        <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+         Gtk::TreeModel
+        </a>
+        iterator.
+       </p>
+      </div>
+      <h2 class="groupheader">
+       Member Typedef Documentation
+      </h2>
+      <a class="anchor" id="a18bdf86cfc172d21a7584f18835a55bb">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef const void*
+            <a class="el" href="classGtk_1_1TreeIter.html#a18bdf86cfc172d21a7584f18835a55bb">
+             Gtk::TreeIter::BoolExpr
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This typedef is just to make it more obvious that our operator const void* should be used like operator bool().
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ab55da0493213816959f624a0d3747771">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef int
+            <a class="el" href="classGtk_1_1TreeIter.html#ab55da0493213816959f624a0d3747771">
+             Gtk::TreeIter::difference_type
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ad48e11234a1ef30a56fbf64d944232e1">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00636.html">
+             std::bidirectional_iterator_tag
+            </a>
+            <a class="el" href="classGtk_1_1TreeIter.html#ad48e11234a1ef30a56fbf64d944232e1">
+             Gtk::TreeIter::iterator_category
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a5ca69865eaeb38e6c56539964411307b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef const
+            <a class="el" href="classGtk_1_1TreeRow.html">
+             Gtk::TreeRow
+            </a>
+            *
+            <a class="el" href="classGtk_1_1TreeIter.html#a5ca69865eaeb38e6c56539964411307b">
+             Gtk::TreeIter::pointer
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a5011b05221c38181c734b44fa8c0d83f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef const
+            <a class="el" href="classGtk_1_1TreeRow.html">
+             Gtk::TreeRow
+            </a>
+            &amp;
+            <a class="el" href="classGtk_1_1TreeIter.html#a5011b05221c38181c734b44fa8c0d83f">
+             Gtk::TreeIter::reference
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ad6d804b4744a31a96083edd31639b82b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            typedef
+            <a class="el" href="classGtk_1_1TreeRow.html">
+             Gtk::TreeRow
+            </a>
+            <a class="el" href="classGtk_1_1TreeIter.html#ad6d804b4744a31a96083edd31639b82b">
+             Gtk::TreeIter::value_type
+            </a>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a5f419a854ffb2ddefa224b5afd70657d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::TreeIter::TreeIter
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="a644adfe72d43e87d451e3be9b9c36648">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::TreeIter::equal
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1TreeIter.html">
+             TreeIter
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ab0c7c66a642182e48c087fd02562b73f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gtk::TreeIter::get_stamp
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This is only useful when implementing a custom
+         <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+          Gtk::TreeModel
+         </a>
+         class.
+        </p>
+        <p>
+         Compare the iterator's stamp with your model's stamp to discover whether it is valid.
+        </p>
+        <dl class="section see">
+         <dt>
+          See also
+         </dt>
+         <dd>
+          <a class="el" href="classGtk_1_1TreeIter.html#af30ad8f5e3754851f52ade6aa0714476" title="This is only useful when implementing a custom Gtk::TreeModel class. ">
+           set_stamp()
+          </a>
+          .
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The iterator's stamp.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a2fef381e0bef5f000e6120c627259b1f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::TreeIter::operator
+            <a class="el" href="classGtk_1_1TreeIter.html#a18bdf86cfc172d21a7584f18835a55bb">
+             BoolExpr
+            </a>
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Discover whether the iterator is valid, and not equal to
+         <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#ga5124f3464f8607e7338ff7407faeaf15">
+          end()
+         </a>
+         .
+        </p>
+        <p>
+         For instance,
+        </p>
+        <div class="fragment">
+         <div class="line">
+          <span class="keywordflow">
+           if
+          </span>
+          (treeiter)
+         </div>
+         <div class="line">
+          do_something()
+         </div>
+        </div>
+        <!-- fragment -->
+       </div>
+      </div>
+      <a class="anchor" id="a8719cade1c5047b221f6cefa738547c0">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1TreeIter.html#a5011b05221c38181c734b44fa8c0d83f">
+                 reference
+                </a>
+                Gtk::TreeIter::operator*
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a41602c61e46dd41587f4b56db46d325e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1TreeIter.html">
+             TreeIter
+            </a>
+            &amp; Gtk::TreeIter::operator++
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a46e9bcc4291a436b8b70992c45762372">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            const
+            <a class="el" href="classGtk_1_1TreeIter.html">
+             TreeIter
+            </a>
+            Gtk::TreeIter::operator++
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="afed3b959fa29d90b57e417b88392e335">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1TreeIter.html">
+             TreeIter
+            </a>
+            &amp; Gtk::TreeIter::operator--
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Please note that this is very slow compared to
+         <a class="el" href="classGtk_1_1TreeIter.html#a41602c61e46dd41587f4b56db46d325e">
+          operator++()
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="ab1070ff322a770f443ddf625d0ee0391">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            const
+            <a class="el" href="classGtk_1_1TreeIter.html">
+             TreeIter
+            </a>
+            Gtk::TreeIter::operator--
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Please note that this is very slow compared to
+         <a class="el" href="classGtk_1_1TreeIter.html#a41602c61e46dd41587f4b56db46d325e">
+          operator++()
+         </a>
+         .
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a1daa2dd6654698e001ef8ff8b784b885">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1TreeIter.html#a5ca69865eaeb38e6c56539964411307b">
+                 pointer
+                </a>
+                Gtk::TreeIter::operator-&gt;
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="af30ad8f5e3754851f52ade6aa0714476">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::TreeIter::set_stamp
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             stamp
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         This is only useful when implementing a custom
+         <a class="el" href="classGtk_1_1TreeModel.html" title="This class defines a generic tree interface for use by the Gtk::TreeView widget. ">
+          Gtk::TreeModel
+         </a>
+         class.
+        </p>
+        <p>
+         Set the stamp to be equal to your model's stamp, to mark the iterator as valid. When your model's structure changes, you should increment your model's stamp to mark all older iterators as invalid. They will be recognised as invalid because they will then have an incorrect stamp.
+        </p>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a8b0a2d89e01de99226fce73c9034d2c7">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool
+                <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01656.html#gac4373547895ec9df9035719b38a2621a">
+                 operator!
+                </a>
+                =
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGtk_1_1TreeIter.html">
+                 TreeIter
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGtk_1_1TreeIter.html">
+                 TreeIter
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a27ec6dbc88cf8ed080ebf397226f25ad">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                bool operator==
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGtk_1_1TreeIter.html">
+                 TreeIter
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                const
+                <a class="el" href="classGtk_1_1TreeIter.html">
+                 TreeIter
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGtk_1_1TreeIter.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

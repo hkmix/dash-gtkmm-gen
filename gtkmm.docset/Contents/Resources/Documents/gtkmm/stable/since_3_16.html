@@ -1,0 +1,1357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   New API in gtkmm 3.16
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="since_3_16.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="since_3_16.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="since_3_16.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: New API in gtkmm 3.16
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <div class="textblock">
+       <dl class="reflist">
+        <dt>
+         <a class="anchor" id="_since_3_16000002">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Device.html#a50ed006ce61829a9e76b2794c82d2a1b">
+          Gdk::Device::get_product_id
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000001">
+         </a>
+         Member
+         <a class="el" href="classGdk_1_1Device.html#aa4603259eb0b8d4b46da4694a028a4b5">
+          Gdk::Device::get_vendor_id
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000003">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1CssProvider.html#a49fef0d9e7676e8d34876a378c5a78ec">
+          Gtk::CssProvider::load_from_resource
+         </a>
+         (const
+         <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a01681.html#ga32db3d9898c44d3b3a578b560f7758cc">
+          std::string
+         </a>
+         &amp; resource_path)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000004">
+         </a>
+         Class
+         <a class="el" href="classGtk_1_1CssSection.html">
+          Gtk::CssSection
+         </a>
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000005">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Dialog.html#aa46fbb20c8bc271bdac770d27e4daff3">
+          Gtk::Dialog::Dialog
+         </a>
+         (const
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; title, DialogFlags flags)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000006">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Dialog.html#a75a6c2825833b56d4eb7c8c404655afc">
+          Gtk::Dialog::Dialog
+         </a>
+         (const
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; title,
+         <a class="el" href="classGtk_1_1Window.html" title="Toplevel Window. ">
+          Gtk::Window
+         </a>
+         &amp; parent, DialogFlags flags)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000007">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Entry.html#adbe2dc2fa3bfbb80e88eb27bf8810676">
+          Gtk::Entry::grab_focus_without_selecting
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000010">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Label.html#ae2e99336f36ac25aaf216a55027319eb">
+          Gtk::Label::get_xalign
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000012">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Label.html#af0dce94bf613de896ebb49d4064146d7">
+          Gtk::Label::get_yalign
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000013">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Label.html#af1905ab0963bbf7d4bd68cf74a793df1">
+          Gtk::Label::property_xalign
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000014">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Label.html#a8eda4024fedec92fc46da07313f36cf4">
+          Gtk::Label::property_xalign
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000015">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Label.html#a0492f61023dbfe32c1806b20f777cf21">
+          Gtk::Label::property_yalign
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000016">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Label.html#acf10e38b86ae9c18bfea020119ffecfa">
+          Gtk::Label::property_yalign
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000009">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Label.html#acee7d4e87d7cc14080a7b8ded5f84e5e">
+          Gtk::Label::set_xalign
+         </a>
+         (float xalign)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000011">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Label.html#a269e4347606c5c77bf6ea438f0b955ca">
+          Gtk::Label::set_yalign
+         </a>
+         (float yalign)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000023">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a7ab499c6eff8ffabd7e6f458efb90010">
+          Gtk::ModelButton::property_active
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000024">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a19d9d4b08de38943c85c40114b6c1e81">
+          Gtk::ModelButton::property_active
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000029">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a3933c16478b23e5eff1351f8dedf543a">
+          Gtk::ModelButton::property_centered
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000030">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a85fb9375b8cc8e8f2c320a3f2a81a050">
+          Gtk::ModelButton::property_centered
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000019">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a0792ec59408bda2f2dd8c4a9fdf1f22d">
+          Gtk::ModelButton::property_icon
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000020">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a6ebd3a4c35f533c4021d20397a4d0a7d">
+          Gtk::ModelButton::property_icon
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000031">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a8e910ad6aafb071343a838e2cd194dc9">
+          Gtk::ModelButton::property_iconic
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000032">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a13b3b1f66b81da5f83df04674e7e2c0c">
+          Gtk::ModelButton::property_iconic
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000027">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#ac555d1f90f2390ec0529f047d543a7b3">
+          Gtk::ModelButton::property_inverted
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000028">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a51261976b8e0e203a0453fc915a99915">
+          Gtk::ModelButton::property_inverted
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000025">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#adbd152de492b97c46ae31303dfb2e942">
+          Gtk::ModelButton::property_menu_name
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000026">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a2060db4682f0f03f3be2fb5681ff9c8b">
+          Gtk::ModelButton::property_menu_name
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000017">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#aa34a0c8b1175aeb827e19291d4b25507">
+          Gtk::ModelButton::property_role
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000018">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#ac925402a570ffe9d2bdcf6cca9ecae64">
+          Gtk::ModelButton::property_role
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000021">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a7e63f959bf45b169bc0fc91c98350eda">
+          Gtk::ModelButton::property_text
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000022">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ModelButton.html#a1a5a77d0f0b4ff8d98f67c951b253276">
+          Gtk::ModelButton::property_text
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000033">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Notebook.html#afc3693a955efa80d300f6b07c12080b7">
+          Gtk::Notebook::detach_tab
+         </a>
+         (
+         <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+          Widget
+         </a>
+         &amp; child)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000035">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Paned.html#a1d1e2f27e9eaa4f6a1426ce1ce4af9d2">
+          Gtk::Paned::get_wide_handle
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000036">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Paned.html#ae2afc0bfb6aa693daa31e788a485006b">
+          Gtk::Paned::property_wide_handle
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000037">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Paned.html#ae83e411a26c6adedc7fb7651a30e1ac0">
+          Gtk::Paned::property_wide_handle
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000034">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Paned.html#ae910c0cafd04f347d2f371994607182f">
+          Gtk::Paned::set_wide_handle
+         </a>
+         (bool wide=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000008">
+         </a>
+         Member
+         <a class="el" href="namespaceGtk.html#gacb7ebcc442f2bdbeca2bf7436c18ffd9acc5e00e96081e54a15f1d4012faf2002">
+          Gtk::POLICY_EXTERNAL
+         </a>
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000039">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Popover.html#a328b13a759f1ee19740c58d59ad56b4a">
+          Gtk::Popover::get_transitions_enabled
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000040">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Popover.html#af7adcb3564c404732d784d73e27fcabe">
+          Gtk::Popover::property_transitions_enabled
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000041">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Popover.html#a6d2a6a5ace08bf080965ca4e59fa1d76">
+          Gtk::Popover::property_transitions_enabled
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000038">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Popover.html#aeabfb2534815db7b787439cdf7e968fa">
+          Gtk::Popover::set_transitions_enabled
+         </a>
+         (bool transitions_enabled=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000043">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1PopoverMenu.html#adf7d0bd58242b2b66741a7d48ad138c6">
+          Gtk::PopoverMenu::child_property_submenu
+         </a>
+         (
+         <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+          Gtk::Widget
+         </a>
+         &amp; child)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000044">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1PopoverMenu.html#aa8b3c93bf02315583ea5d84c6acae77a">
+          Gtk::PopoverMenu::child_property_submenu
+         </a>
+         (const
+         <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+          Gtk::Widget
+         </a>
+         &amp; child) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000042">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1PopoverMenu.html#a7355fde8660d721bdade1b313bb55a64">
+          Gtk::PopoverMenu::open_submenu
+         </a>
+         (const
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; name)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000045">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ScaleButton.html#a1354fa78081191605759fc71e213a094">
+          Gtk::ScaleButton::ScaleButton
+         </a>
+         (
+         <a class="el" href="classGtk_1_1IconSize.html" title="Represents registered icon sizes. ">
+          IconSize
+         </a>
+         size, double min, double max, double step)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000046">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Scrollable.html#a8407c4f94a347d70f079d5e7cc89be49">
+          Gtk::Scrollable::get_border
+         </a>
+         (
+         <a class="el" href="classGtk_1_1Border.html" title="This specifies a border around a rectangular area that can be of a different width on each side...">
+          Border
+         </a>
+         &amp; border) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000048">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ScrolledWindow.html#ae5e1637893049f0536e64925e21d0382">
+          Gtk::ScrolledWindow::get_overlay_scrolling
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000051">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ScrolledWindow.html#a490d5b396e82257ab505f4d9e6167ee0">
+          Gtk::ScrolledWindow::property_overlay_scrolling
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000052">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ScrolledWindow.html#a44fa15fe22b7df5754495ef6c833208f">
+          Gtk::ScrolledWindow::property_overlay_scrolling
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000047">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ScrolledWindow.html#ae0110ffe76610bd9e50e71e1e7b4729d">
+          Gtk::ScrolledWindow::set_overlay_scrolling
+         </a>
+         (bool overlay_scrolling=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000049">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ScrolledWindow.html#a087b6c00d5ef8d9109cdc45d2452906f">
+          Gtk::ScrolledWindow::signal_edge_overshot
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000050">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1ScrolledWindow.html#a53c3d67db3fd60c8ba1099878d18a61d">
+          Gtk::ScrolledWindow::signal_edge_reached
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000053">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1SearchEntry.html#a25dd28e0b598e04577c96238b67c7e48">
+          Gtk::SearchEntry::handle_event
+         </a>
+         (GdkEventKey* gdk_event)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000054">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1SearchEntry.html#a3d4e49e3b3b593d9e09ab154cda06a1b">
+          Gtk::SearchEntry::signal_next_match
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000055">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1SearchEntry.html#a69c3a5753915fd7adf256464d9dba5d1">
+          Gtk::SearchEntry::signal_previous_match
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000056">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1SearchEntry.html#a8f85eaafbaa6a034e94bcfe55f729eb0">
+          Gtk::SearchEntry::signal_stop_search
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000058">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Stack.html#a6a2cb122bb40c33e1efd0b265e06f055">
+          Gtk::Stack::get_hhomogeneous
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000060">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Stack.html#ad42993f86f990e32d902f79548234e7e">
+          Gtk::Stack::get_vhomogeneous
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000062">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Stack.html#ab7d3a0920f69d72359b8c80fb216197b">
+          Gtk::Stack::property_hhomogeneous
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000061">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Stack.html#a60913744ac5d9fc40407a6f3d4e28ee3">
+          Gtk::Stack::property_hhomogeneous
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000063">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Stack.html#a2e56e8491d5fe9e431e37d3dd554d581">
+          Gtk::Stack::property_vhomogeneous
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000064">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Stack.html#af5a44e2fac84c95723a50f2dd8c4fe5b">
+          Gtk::Stack::property_vhomogeneous
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000057">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Stack.html#a9c06dee94e0b2f7626b73299d5306dce">
+          Gtk::Stack::set_hhomogeneous
+         </a>
+         (bool hhomogeneous=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000059">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Stack.html#ab3574764f2dfdd03920d381f7355cfc5">
+          Gtk::Stack::set_vhomogeneous
+         </a>
+         (bool vhomogeneous=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000065">
+         </a>
+         Class
+         <a class="el" href="classGtk_1_1StackSidebar.html">
+          Gtk::StackSidebar
+         </a>
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000068">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1StackSidebar.html#ab6a9d1df18812756589948b1eb285dce">
+          Gtk::StackSidebar::get_stack
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000069">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1StackSidebar.html#a3d5e17bdc95b6b0f04cd55a018385dc0">
+          Gtk::StackSidebar::get_stack
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000066">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1StackSidebar.html#a9a9304d229e3c4b08e3064ce27bf7775">
+          Gtk::StackSidebar::set_stack
+         </a>
+         (
+         <a class="el" href="classGtk_1_1Stack.html" title="A container that shows only one child at a time. ">
+          Stack
+         </a>
+         &amp; stack)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000067">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1StackSidebar.html#af3166538165da960ebfc0a3d6b4968f2">
+          Gtk::StackSidebar::unset_stack
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000070">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1StackSwitcher.html#a430648476a666869a4dbe2f242ce407d">
+          Gtk::StackSwitcher::unset_stack
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000085">
+         </a>
+         Class
+         <a class="el" href="classGtk_1_1StyleProperty.html">
+          Gtk::StyleProperty&lt; T &gt;
+         </a>
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000084">
+         </a>
+         Class
+         <a class="el" href="classGtk_1_1StylePropertyBase.html">
+          Gtk::StylePropertyBase
+         </a>
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000072">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TextBuffer.html#adf471c994253164ce8be64eac16fc83d">
+          Gtk::TextBuffer::register_deserialize_format
+         </a>
+         (const
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; mime_type, const SlotDeserialize&amp; slot)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000071">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TextBuffer.html#a07ca9c8f8d47fa5b0a4b267c6818b51a">
+          Gtk::TextBuffer::register_serialize_format
+         </a>
+         (const
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; mime_type, const SlotSerialize&amp; slot)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000073">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TextTag.html#a7ad900ac524503c44d498edbc75cbfc6">
+          Gtk::TextTag::property_fallback
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000074">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TextTag.html#a11ac345d51fc8b1b1997966bb8295353">
+          Gtk::TextTag::property_fallback
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000075">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TextTag.html#a66a6759b23e7399ce2d503088e1d6f3c">
+          Gtk::TextTag::property_letter_spacing
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000076">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TextTag.html#ac991a45c7b542a33b22741b493e7b6e0">
+          Gtk::TextTag::property_letter_spacing
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000078">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TextView.html#a10f3bcfde1483c8fa6817207bf24d154">
+          Gtk::TextView::get_monospace
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000077">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1TextView.html#a9abd9cc4c4d8d5c6b36229f4c46c4506">
+          Gtk::TextView::set_monospace
+         </a>
+         (bool monospace=true)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000080">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#a72834ceec139e7bcf71a740f6b883c4d">
+          Gtk::Widget::get_action_group
+         </a>
+         (const
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; prefix) const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000079">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#a2a9c8e8d0d8dc6b3e6e453f5ce98c7a1">
+          Gtk::Widget::get_action_group
+         </a>
+         (const
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+          Glib::ustring
+         </a>
+         &amp; prefix)
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000081">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Widget.html#a3f990969e7e68c9170e4ba6a0e4d74d2">
+          Gtk::Widget::list_action_prefixes
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000083">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#aa7190fc694181257a049ed22706267d9">
+          Gtk::Window::get_titlebar
+         </a>
+         () const
+        </dt>
+        <dd>
+        </dd>
+        <dt>
+         <a class="anchor" id="_since_3_16000082">
+         </a>
+         Member
+         <a class="el" href="classGtk_1_1Window.html#a1654994963f8226f5f4ccb4b979a0765">
+          Gtk::Window::get_titlebar
+         </a>
+         ()
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="since_3_16.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>

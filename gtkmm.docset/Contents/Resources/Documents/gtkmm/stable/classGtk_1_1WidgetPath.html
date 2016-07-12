@@ -1,0 +1,4925 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="text/html; charset=utf-8"/>
+  <link href="../../skin/doxygen.css" rel="stylesheet" type="text/css"/>
+  <link href="https://static.gnome.org/css/grass-theme-style.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/lgo2010.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/gnome-16.png" rel="icon" type="image/png"/>
+  <link href="../../skin/gnome-16.png" rel="SHORTCUT ICON" type="image/png"/>
+  <link href="https://developer.gnome.org/gnome-library-search.xml" rel="search" title="GNOME Library Search" type="application/opensearchdescription+xml"/>
+  <link href="../../skin/jquery.autocomplete.css" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+  <title>
+   Gtk::WidgetPath Class Reference
+  </title>
+  <link href="../../skin/jquery.autocomplete.css" media="all" rel="stylesheet" type="text/css"/>
+  <link href="../../skin/960_24_col.css" media="all" rel="stylesheet" type="text/css"/>
+  <script src="../../js/jquery.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.jcarousel.min.js" type="text/javascript">
+  </script>
+  <script src="../../js/jquery.autocomplete.js" type="text/javascript">
+  </script>
+ </head>
+ <body>
+  <div id="accessibility_access">
+   <ul>
+    <li>
+     <a href="classGtk_1_1WidgetPath.html#container">
+      Go to page content
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1WidgetPath.html#top_bar">
+      Go to main menu
+     </a>
+    </li>
+    <li>
+     <a href="classGtk_1_1WidgetPath.html#s" onclick="$('#s').focus(); return false;">
+      Go to the search field
+     </a>
+    </li>
+   </ul>
+  </div>
+  <div id="global_domain_bar">
+   <div class="maxwidth">
+    <div class="tab">
+     <a class="root" href="https://www.gnome.org/">
+      GNOME.org
+     </a>
+    </div>
+   </div>
+  </div>
+  <div class="container_12" id="header">
+   <div class="grid_3" id="logo">
+    <a href="https://developer.gnome.org/" title="Go to home page">
+     <img alt="GNOME: The Free Software Desktop Project" src="../../skin/gnome-logo-devcenter.png"/>
+    </a>
+   </div>
+   <div class="grid_9" id="top_bar">
+    <div class="left">
+     <div class="menu-globalnav-container">
+      <ul class="menu" id="menu-globalnav">
+       <li class="menu-item menu-item-type-post_type menu-item-6">
+        <a href="https://developer.gnome.org/about/">
+         About
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-23">
+        <a href="https://help.gnome.org/users/">
+         Users
+        </a>
+       </li>
+       <li class="menu-item menu-item-type-post_type menu-item-40">
+        <a href="https://help.gnome.org/admin/">
+         Administrators
+        </a>
+       </li>
+       <li class="current-menu-item">
+        <a href="https://developer.gnome.org/">
+         Developers
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="right">
+     <form action="https://developer.gnome.org/symbols/" id="searchform" method="get" role="search">
+      <div>
+       <label class="hidden" for="q">
+        Search:
+       </label>
+       <input id="s" name="q" placeholder="Search" type="text" value=""/>
+      </div>
+     </form>
+     <script type="text/javascript">
+      $('#s').autocomplete('/symbols/lookup/',
+        { minChars:3, matchSubset:1, matchContains:1, cacheLength:10,
+          selectOnly:1, rowsLimit:25 });
+     </script>
+    </div>
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div class="gtkmm" id="container">
+   <div class="content">
+    <h1 class="lgotitle">
+     gtkmm: Gtk::WidgetPath Class Reference
+    </h1>
+    <div id="content">
+     <div class="tabs" id="navrow1">
+      <ul class="tablist">
+       <li>
+        <a href="index.html">
+         <span>
+          Main Page
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="pages.html">
+         <span>
+          Related Pages
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="modules.html">
+         <span>
+          Modules
+         </span>
+        </a>
+       </li>
+       <li>
+        <a href="namespaces.html">
+         <span>
+          Namespaces
+         </span>
+        </a>
+       </li>
+       <li class="current">
+        <a href="annotated.html">
+         <span>
+          Classes
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="contents">
+      <p>
+       This represents a widget hierarchy from the topmost widget, typically a toplevel, to any child.
+       <a href="classGtk_1_1WidgetPath.html#details">
+        More...
+       </a>
+      </p>
+      <p>
+       <code>
+        #include &lt;gtkmm/widgetpath.h&gt;
+       </code>
+      </p>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-methods">
+           </a>
+           Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a531f2c45d75acb958a684c6545fadf82">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a531f2c45d75acb958a684c6545fadf82">
+           WidgetPath
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="separator:a531f2c45d75acb958a684c6545fadf82">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac2e1cc254e5a7a14caed974ded988d98">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#ac2e1cc254e5a7a14caed974ded988d98">
+           WidgetPath
+          </a>
+          (GtkWidgetPath* gobject, bool make_a_copy=true)
+         </td>
+        </tr>
+        <tr class="separator:ac2e1cc254e5a7a14caed974ded988d98">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aefd0b39d26a47b35fe8dbe764ab2df55">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#aefd0b39d26a47b35fe8dbe764ab2df55">
+           WidgetPath
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           WidgetPath
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:aefd0b39d26a47b35fe8dbe764ab2df55">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a4ebd133f453a015d667990b7a680d88d">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           WidgetPath
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a4ebd133f453a015d667990b7a680d88d">
+           operator=
+          </a>
+          (const
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           WidgetPath
+          </a>
+          &amp; other)
+         </td>
+        </tr>
+        <tr class="separator:a4ebd133f453a015d667990b7a680d88d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae5ee8211dbb6f0cfe4dbac5218b14eff">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#ae5ee8211dbb6f0cfe4dbac5218b14eff">
+           WidgetPath
+          </a>
+          (
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           WidgetPath
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:ae5ee8211dbb6f0cfe4dbac5218b14eff">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:af6f15d47abd7b81dbf959490ea1e70f8">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           WidgetPath
+          </a>
+          &amp;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#af6f15d47abd7b81dbf959490ea1e70f8">
+           operator=
+          </a>
+          (
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           WidgetPath
+          </a>
+          &amp;&amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:af6f15d47abd7b81dbf959490ea1e70f8">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac8bd55028982d36f4535c0e7c5cfe33f">
+         <td align="right" class="memItemLeft" valign="top">
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#ac8bd55028982d36f4535c0e7c5cfe33f">
+           ~WidgetPath
+          </a>
+          () noexcept
+         </td>
+        </tr>
+        <tr class="separator:ac8bd55028982d36f4535c0e7c5cfe33f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a132f09fa21b6e4c87eb5d201c619afda">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a132f09fa21b6e4c87eb5d201c619afda">
+           swap
+          </a>
+          (
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           WidgetPath
+          </a>
+          &amp; other) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a132f09fa21b6e4c87eb5d201c619afda">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2229a68580c6326398e3ab95b093bddf">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkWidgetPath*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a2229a68580c6326398e3ab95b093bddf">
+           gobj
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a2229a68580c6326398e3ab95b093bddf">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1WidgetPath.html#a2229a68580c6326398e3ab95b093bddf">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2229a68580c6326398e3ab95b093bddf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a703da25dd33396ca2aee8f67a20aed73">
+         <td align="right" class="memItemLeft" valign="top">
+          const GtkWidgetPath*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a703da25dd33396ca2aee8f67a20aed73">
+           gobj
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a703da25dd33396ca2aee8f67a20aed73">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance.
+          <a href="classGtk_1_1WidgetPath.html#a703da25dd33396ca2aee8f67a20aed73">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a703da25dd33396ca2aee8f67a20aed73">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a64d66720041b90967cd05b8305b425e5">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkWidgetPath*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a64d66720041b90967cd05b8305b425e5">
+           gobj_copy
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a64d66720041b90967cd05b8305b425e5">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+          <a href="classGtk_1_1WidgetPath.html#a64d66720041b90967cd05b8305b425e5">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a64d66720041b90967cd05b8305b425e5">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ac0c4120f25e66f734b6602a4fed740b2">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#ac0c4120f25e66f734b6602a4fed740b2">
+           to_string
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ac0c4120f25e66f734b6602a4fed740b2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Dumps the widget path into a string representation.
+          <a href="classGtk_1_1WidgetPath.html#ac0c4120f25e66f734b6602a4fed740b2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ac0c4120f25e66f734b6602a4fed740b2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a59ae4b34491dde08a087306c015e18d3">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a59ae4b34491dde08a087306c015e18d3">
+           path_length
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:a59ae4b34491dde08a087306c015e18d3">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the number of
+          <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+           Gtk::Widget
+          </a>
+          Types between the represented widget and its topmost container.
+          <a href="classGtk_1_1WidgetPath.html#a59ae4b34491dde08a087306c015e18d3">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a59ae4b34491dde08a087306c015e18d3">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5e3927b1d791acec78951c318ace9b17">
+         <td align="right" class="memItemLeft" valign="top">
+          int
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a5e3927b1d791acec78951c318ace9b17">
+           path_append_type
+          </a>
+          (GType
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib_1_1Unicode.html#a042d1c3fdb1a22daf647211210af80c3">
+           type
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:a5e3927b1d791acec78951c318ace9b17">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Appends a widget type to the widget hierarchy represented by
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a5e3927b1d791acec78951c318ace9b17">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5e3927b1d791acec78951c318ace9b17">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:aa849751e1bd9555e207f4d17fb3b7741">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#aa849751e1bd9555e207f4d17fb3b7741">
+           prepend_type
+          </a>
+          (GType
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib_1_1Unicode.html#a042d1c3fdb1a22daf647211210af80c3">
+           type
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:aa849751e1bd9555e207f4d17fb3b7741">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Prepends a widget type to the widget hierachy represented by
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#aa849751e1bd9555e207f4d17fb3b7741">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:aa849751e1bd9555e207f4d17fb3b7741">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:acfaa71e4f7204c5559cacb39f12d7b62">
+         <td align="right" class="memItemLeft" valign="top">
+          GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#acfaa71e4f7204c5559cacb39f12d7b62">
+           iter_get_object_type
+          </a>
+          (int pos) const
+         </td>
+        </tr>
+        <tr class="memdesc:acfaa71e4f7204c5559cacb39f12d7b62">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the object Type that is at position
+          <em>
+           pos
+          </em>
+          in the widget hierarchy defined in
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#acfaa71e4f7204c5559cacb39f12d7b62">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:acfaa71e4f7204c5559cacb39f12d7b62">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a2a4ff74d8a178615ed64b23e2174cd3d">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a2a4ff74d8a178615ed64b23e2174cd3d">
+           iter_set_object_type
+          </a>
+          (int pos, GType
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib_1_1Unicode.html#a042d1c3fdb1a22daf647211210af80c3">
+           type
+          </a>
+          )
+         </td>
+        </tr>
+        <tr class="memdesc:a2a4ff74d8a178615ed64b23e2174cd3d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the object type for a given position in the widget hierarchy defined by
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a2a4ff74d8a178615ed64b23e2174cd3d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a2a4ff74d8a178615ed64b23e2174cd3d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a7af3311d8daa0671a2b02eae6fff2287">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a7af3311d8daa0671a2b02eae6fff2287">
+           iter_get_name
+          </a>
+          (int pos) const
+         </td>
+        </tr>
+        <tr class="memdesc:a7af3311d8daa0671a2b02eae6fff2287">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the name corresponding to the widget found at the position
+          <em>
+           pos
+          </em>
+          in the widget hierarchy defined by
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a7af3311d8daa0671a2b02eae6fff2287">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a7af3311d8daa0671a2b02eae6fff2287">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a14b761d20bd0fc58f9eb70b3775808dd">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a14b761d20bd0fc58f9eb70b3775808dd">
+           iter_set_name
+          </a>
+          (int pos, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name)
+         </td>
+        </tr>
+        <tr class="memdesc:a14b761d20bd0fc58f9eb70b3775808dd">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Sets the widget name for the widget found at position
+          <em>
+           pos
+          </em>
+          in the widget hierarchy defined by
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a14b761d20bd0fc58f9eb70b3775808dd">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a14b761d20bd0fc58f9eb70b3775808dd">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a72106a244d9b6ee2785ea09c61f51086">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a72106a244d9b6ee2785ea09c61f51086">
+           iter_has_name
+          </a>
+          (int pos, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name) const
+         </td>
+        </tr>
+        <tr class="memdesc:a72106a244d9b6ee2785ea09c61f51086">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns
+          <code>
+           true
+          </code>
+          if the widget at position
+          <em>
+           pos
+          </em>
+          has the name
+          <em>
+           name
+          </em>
+          ,
+          <code>
+           false
+          </code>
+          otherwise.
+          <a href="classGtk_1_1WidgetPath.html#a72106a244d9b6ee2785ea09c61f51086">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a72106a244d9b6ee2785ea09c61f51086">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a740f73a2b820691d990b9aa83f003688">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           WidgetPath
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a740f73a2b820691d990b9aa83f003688">
+           iter_get_siblings
+          </a>
+          (int pos=-1) const
+         </td>
+        </tr>
+        <tr class="memdesc:a740f73a2b820691d990b9aa83f003688">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the list of siblings for the element at
+          <em>
+           pos
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a740f73a2b820691d990b9aa83f003688">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a740f73a2b820691d990b9aa83f003688">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a05bcea2c966b109c108eece3596f488a">
+         <td align="right" class="memItemLeft" valign="top">
+          guint
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a05bcea2c966b109c108eece3596f488a">
+           get_sibling_index
+          </a>
+          (int pos=-1)
+         </td>
+        </tr>
+        <tr class="memdesc:a05bcea2c966b109c108eece3596f488a">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the index into the list of siblings for the element at
+          <em>
+           pos
+          </em>
+          as returned by
+          <a class="el" href="classGtk_1_1WidgetPath.html#a740f73a2b820691d990b9aa83f003688" title="Returns the list of siblings for the element at pos. ">
+           iter_get_siblings()
+          </a>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a05bcea2c966b109c108eece3596f488a">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a05bcea2c966b109c108eece3596f488a">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a0f7b0d0fa753acc248d2b6a2ab3bf5ad">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a0f7b0d0fa753acc248d2b6a2ab3bf5ad">
+           iter_add_class
+          </a>
+          (int pos, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name)
+         </td>
+        </tr>
+        <tr class="memdesc:a0f7b0d0fa753acc248d2b6a2ab3bf5ad">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Adds the class
+          <em>
+           name
+          </em>
+          to the widget at position
+          <em>
+           pos
+          </em>
+          in the hierarchy defined in
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a0f7b0d0fa753acc248d2b6a2ab3bf5ad">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a0f7b0d0fa753acc248d2b6a2ab3bf5ad">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5618dd94676d540077eee442f517221b">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a5618dd94676d540077eee442f517221b">
+           iter_remove_class
+          </a>
+          (int pos, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name)
+         </td>
+        </tr>
+        <tr class="memdesc:a5618dd94676d540077eee442f517221b">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Removes the class
+          <em>
+           name
+          </em>
+          from the widget at position
+          <em>
+           pos
+          </em>
+          in the hierarchy defined in
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a5618dd94676d540077eee442f517221b">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5618dd94676d540077eee442f517221b">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a6a594aabcb566f2ea78dec9ff7cad015">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a6a594aabcb566f2ea78dec9ff7cad015">
+           iter_clear_classes
+          </a>
+          (int pos=-1)
+         </td>
+        </tr>
+        <tr class="memdesc:a6a594aabcb566f2ea78dec9ff7cad015">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Removes all classes from the widget at position
+          <em>
+           pos
+          </em>
+          in the hierarchy defined in
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a6a594aabcb566f2ea78dec9ff7cad015">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a6a594aabcb566f2ea78dec9ff7cad015">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a9f4a0f89313bb49e01f75c3f3180c059">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a9f4a0f89313bb49e01f75c3f3180c059">
+           iter_list_classes
+          </a>
+          (int pos=-1) const
+         </td>
+        </tr>
+        <tr class="memdesc:a9f4a0f89313bb49e01f75c3f3180c059">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns a list with all the class names defined for the widget at position
+          <em>
+           pos
+          </em>
+          in the hierarchy defined in
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a9f4a0f89313bb49e01f75c3f3180c059">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a9f4a0f89313bb49e01f75c3f3180c059">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ad6e27e36e3274dcb60395d5cbb74cdd9">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#ad6e27e36e3274dcb60395d5cbb74cdd9">
+           iter_has_class
+          </a>
+          (int pos, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name) const
+         </td>
+        </tr>
+        <tr class="memdesc:ad6e27e36e3274dcb60395d5cbb74cdd9">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns
+          <code>
+           true
+          </code>
+          if the widget at position
+          <em>
+           pos
+          </em>
+          has the class
+          <em>
+           name
+          </em>
+          defined,
+          <code>
+           false
+          </code>
+          otherwise.
+          <a href="classGtk_1_1WidgetPath.html#ad6e27e36e3274dcb60395d5cbb74cdd9">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ad6e27e36e3274dcb60395d5cbb74cdd9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a82b91ebdc804f5476a40b1845c950a11">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a82b91ebdc804f5476a40b1845c950a11">
+           iter_add_region
+          </a>
+          (int pos, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name,
+          <a class="el" href="group__gtkmmEnums.html#gadc4fb4d2dff732ed7c11f2620e3be645">
+           RegionFlags
+          </a>
+          flags)
+         </td>
+        </tr>
+        <tr class="memdesc:a82b91ebdc804f5476a40b1845c950a11">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Adds the region
+          <em>
+           name
+          </em>
+          to the widget at position
+          <em>
+           pos
+          </em>
+          in the hierarchy defined in
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a82b91ebdc804f5476a40b1845c950a11">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a82b91ebdc804f5476a40b1845c950a11">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a10bafdf4bd2661c6695e7a037c46d59e">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a10bafdf4bd2661c6695e7a037c46d59e">
+           iter_remove_region
+          </a>
+          (int pos, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name)
+         </td>
+        </tr>
+        <tr class="memdesc:a10bafdf4bd2661c6695e7a037c46d59e">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Removes the region
+          <em>
+           name
+          </em>
+          from the widget at position
+          <em>
+           pos
+          </em>
+          in the hierarchy defined in
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a10bafdf4bd2661c6695e7a037c46d59e">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a10bafdf4bd2661c6695e7a037c46d59e">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a217073af2f3649a0d69c879495fa80ce">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a217073af2f3649a0d69c879495fa80ce">
+           iter_clear_regions
+          </a>
+          (int pos=-1)
+         </td>
+        </tr>
+        <tr class="memdesc:a217073af2f3649a0d69c879495fa80ce">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Removes all regions from the widget at position
+          <em>
+           pos
+          </em>
+          in the hierarchy defined in
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a217073af2f3649a0d69c879495fa80ce">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a217073af2f3649a0d69c879495fa80ce">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a77c3dc812152aa429ae36b5dd2b8a4e2">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+           std::vector
+          </a>
+          &lt;
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &gt;
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a77c3dc812152aa429ae36b5dd2b8a4e2">
+           iter_list_regions
+          </a>
+          (int pos=-1) const
+         </td>
+        </tr>
+        <tr class="memdesc:a77c3dc812152aa429ae36b5dd2b8a4e2">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns a list with all the region names defined for the widget at position
+          <em>
+           pos
+          </em>
+          in the hierarchy defined in
+          <em>
+           path
+          </em>
+          .
+          <a href="classGtk_1_1WidgetPath.html#a77c3dc812152aa429ae36b5dd2b8a4e2">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a77c3dc812152aa429ae36b5dd2b8a4e2">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a46d10efe5f0ba68feb9acfb64cf696de">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a46d10efe5f0ba68feb9acfb64cf696de">
+           iter_has_region
+          </a>
+          (int pos, const
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+           Glib::ustring
+          </a>
+          &amp; name,
+          <a class="el" href="group__gtkmmEnums.html#gadc4fb4d2dff732ed7c11f2620e3be645">
+           RegionFlags
+          </a>
+          &amp; flags) const
+         </td>
+        </tr>
+        <tr class="memdesc:a46d10efe5f0ba68feb9acfb64cf696de">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns
+          <code>
+           true
+          </code>
+          if the widget at position
+          <em>
+           pos
+          </em>
+          has the class
+          <em>
+           name
+          </em>
+          defined,
+          <code>
+           false
+          </code>
+          otherwise.
+          <a href="classGtk_1_1WidgetPath.html#a46d10efe5f0ba68feb9acfb64cf696de">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a46d10efe5f0ba68feb9acfb64cf696de">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:ae90c4ccd8e7013e1ca8b0c5cd2cec358">
+         <td align="right" class="memItemLeft" valign="top">
+          GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#ae90c4ccd8e7013e1ca8b0c5cd2cec358">
+           get_object_type
+          </a>
+          () const
+         </td>
+        </tr>
+        <tr class="memdesc:ae90c4ccd8e7013e1ca8b0c5cd2cec358">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns the topmost object type, that is, the object type this path is representing.
+          <a href="classGtk_1_1WidgetPath.html#ae90c4ccd8e7013e1ca8b0c5cd2cec358">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:ae90c4ccd8e7013e1ca8b0c5cd2cec358">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a920dc85e2697d8964fa6b638ede4150d">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a920dc85e2697d8964fa6b638ede4150d">
+           is_type
+          </a>
+          (GType
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib_1_1Unicode.html#a042d1c3fdb1a22daf647211210af80c3">
+           type
+          </a>
+          ) const
+         </td>
+        </tr>
+        <tr class="memdesc:a920dc85e2697d8964fa6b638ede4150d">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns
+          <code>
+           true
+          </code>
+          if the widget type represented by this path is
+          <em>
+           type
+          </em>
+          , or a subtype of it.
+          <a href="classGtk_1_1WidgetPath.html#a920dc85e2697d8964fa6b638ede4150d">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a920dc85e2697d8964fa6b638ede4150d">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:abcce6201c869597479a8b4b74841528f">
+         <td align="right" class="memItemLeft" valign="top">
+          bool
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#abcce6201c869597479a8b4b74841528f">
+           has_parent
+          </a>
+          (GType
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib_1_1Unicode.html#a042d1c3fdb1a22daf647211210af80c3">
+           type
+          </a>
+          ) const
+         </td>
+        </tr>
+        <tr class="memdesc:abcce6201c869597479a8b4b74841528f">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Returns
+          <code>
+           true
+          </code>
+          if any of the parents of the widget represented in
+          <em>
+           path
+          </em>
+          is of type
+          <em>
+           type
+          </em>
+          , or any subtype of it.
+          <a href="classGtk_1_1WidgetPath.html#abcce6201c869597479a8b4b74841528f">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:abcce6201c869597479a8b4b74841528f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pub-static-methods">
+           </a>
+           Static Public Member Functions
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a282dd24a969fa0208299bef49d33a9bf">
+         <td align="right" class="memItemLeft" valign="top">
+          static GType
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a282dd24a969fa0208299bef49d33a9bf">
+           get_type
+          </a>
+          ()
+         </td>
+        </tr>
+        <tr class="memdesc:a282dd24a969fa0208299bef49d33a9bf">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          Get the GType for this class, for use with the underlying GObject type system.
+          <a href="classGtk_1_1WidgetPath.html#a282dd24a969fa0208299bef49d33a9bf">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a282dd24a969fa0208299bef49d33a9bf">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="pro-attribs">
+           </a>
+           Protected Attributes
+          </h2>
+         </td>
+        </tr>
+        <tr class="memitem:a2e628ea16a1bef345662c88cd4328825">
+         <td align="right" class="memItemLeft" valign="top">
+          GtkWidgetPath*
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a2e628ea16a1bef345662c88cd4328825">
+           gobject_
+          </a>
+         </td>
+        </tr>
+        <tr class="separator:a2e628ea16a1bef345662c88cd4328825">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <table class="memberdecls">
+       <tbody>
+        <tr class="heading">
+         <td colspan="2">
+          <h2 class="groupheader">
+           <a name="related">
+           </a>
+           Related Functions
+          </h2>
+         </td>
+        </tr>
+        <tr>
+         <td class="ititle" colspan="2">
+          <p>
+           (Note that these are not member functions.)
+          </p>
+         </td>
+        </tr>
+        <tr class="memitem:a99fa9d070537044f16d47bbe41e3735f">
+         <td align="right" class="memItemLeft" valign="top">
+          void
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a99fa9d070537044f16d47bbe41e3735f">
+           swap
+          </a>
+          (
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           WidgetPath
+          </a>
+          &amp; lhs,
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           WidgetPath
+          </a>
+          &amp; rhs) noexcept
+         </td>
+        </tr>
+        <tr class="separator:a99fa9d070537044f16d47bbe41e3735f">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+        <tr class="memitem:a5ccaea948ac808b644b99cdcfa5280e9">
+         <td align="right" class="memItemLeft" valign="top">
+          <a class="el" href="classGtk_1_1WidgetPath.html">
+           Gtk::WidgetPath
+          </a>
+         </td>
+         <td class="memItemRight" valign="bottom">
+          <a class="el" href="classGtk_1_1WidgetPath.html#a5ccaea948ac808b644b99cdcfa5280e9">
+           wrap
+          </a>
+          (GtkWidgetPath* object, bool take_copy=false)
+         </td>
+        </tr>
+        <tr class="memdesc:a5ccaea948ac808b644b99cdcfa5280e9">
+         <td class="mdescLeft">
+         </td>
+         <td class="mdescRight">
+          A
+          <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+           Glib::wrap()
+          </a>
+          method for this object.
+          <a href="classGtk_1_1WidgetPath.html#a5ccaea948ac808b644b99cdcfa5280e9">
+           More...
+          </a>
+          <br/>
+          <br/>
+         </td>
+        </tr>
+        <tr class="separator:a5ccaea948ac808b644b99cdcfa5280e9">
+         <td class="memSeparator" colspan="2">
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <a id="details" name="details">
+      </a>
+      <h2 class="groupheader">
+       Detailed Description
+      </h2>
+      <div class="textblock">
+       <p>
+        This represents a widget hierarchy from the topmost widget, typically a toplevel, to any child.
+       </p>
+       <p>
+        This widget path abstraction is used in
+        <a class="el" href="classGtk_1_1StyleContext.html" title="This object stores styling information affecting a widget defined by WidgetPath. ">
+         StyleContext
+        </a>
+        on behalf of the real widget in order to query style information.
+       </p>
+       <p>
+        If you are using gtkmm widgets, you probably will not need to use this API directly, as there is
+        <a class="el" href="classGtk_1_1Widget.html#ae6516cb8f433920314f7e3f853875535" title="Returns the Gtk::WidgetPath representing widget, if the widget is not connected to a toplevel widget...">
+         Widget::get_path()
+        </a>
+        , and the style context returned by
+        <a class="el" href="classGtk_1_1Widget.html#af76fdca337696a969d0c6080ac5995e2" title="Returns the style context associated to widget. ">
+         Widget::get_style_context()
+        </a>
+        will be automatically updated on widget hierarchy changes.
+       </p>
+       <dl class="since_3_0">
+        <dt>
+         <b>
+          <a class="el" href="since_3_0.html#_since_3_0000384">
+           Since gtkmm 3.0:
+          </a>
+         </b>
+        </dt>
+        <dd>
+        </dd>
+       </dl>
+      </div>
+      <h2 class="groupheader">
+       Constructor &amp; Destructor Documentation
+      </h2>
+      <a class="anchor" id="a531f2c45d75acb958a684c6545fadf82">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::WidgetPath::WidgetPath
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac2e1cc254e5a7a14caed974ded988d98">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::WidgetPath::WidgetPath
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkWidgetPath *
+               </td>
+               <td class="paramname">
+                <em>
+                 gobject
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 make_a_copy
+                </em>
+                =
+                <code>
+                 true
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              explicit
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="aefd0b39d26a47b35fe8dbe764ab2df55">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            Gtk::WidgetPath::WidgetPath
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1WidgetPath.html">
+             WidgetPath
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ae5ee8211dbb6f0cfe4dbac5218b14eff">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::WidgetPath::WidgetPath
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1WidgetPath.html">
+                 WidgetPath
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac8bd55028982d36f4535c0e7c5cfe33f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                Gtk::WidgetPath::~WidgetPath
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Function Documentation
+      </h2>
+      <a class="anchor" id="ae90c4ccd8e7013e1ca8b0c5cd2cec358">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GType Gtk::WidgetPath::get_object_type
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the topmost object type, that is, the object type this path is representing.
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000402">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The object type.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a05bcea2c966b109c108eece3596f488a">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            guint Gtk::WidgetPath::get_sibling_index
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            =
+            <code>
+             -1
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the index into the list of siblings for the element at
+         <em>
+          pos
+         </em>
+         as returned by
+         <a class="el" href="classGtk_1_1WidgetPath.html#a740f73a2b820691d990b9aa83f003688" title="Returns the list of siblings for the element at pos. ">
+          iter_get_siblings()
+         </a>
+         .
+        </p>
+        <p>
+         If that function would return
+         <code>
+          nullptr
+         </code>
+         because the element at
+         <em>
+          pos
+         </em>
+         has no siblings, this function will return 0.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to get the sibling index for, -1 for the path head.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          0 or the index into the list of siblings for the element at
+          <em>
+           pos
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a282dd24a969fa0208299bef49d33a9bf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                static GType Gtk::WidgetPath::get_type
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              static
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Get the GType for this class, for use with the underlying GObject type system.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a2229a68580c6326398e3ab95b093bddf">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkWidgetPath* Gtk::WidgetPath::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a703da25dd33396ca2aee8f67a20aed73">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                const GtkWidgetPath* Gtk::WidgetPath::gobj
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramname">
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+                const
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              inline
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="a64d66720041b90967cd05b8305b425e5">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GtkWidgetPath* Gtk::WidgetPath::gobj_copy
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Provides access to the underlying C instance. The caller is responsible for freeing it. Use when directly setting fields in structs.
+        </p>
+       </div>
+      </div>
+      <a class="anchor" id="abcce6201c869597479a8b4b74841528f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::WidgetPath::has_parent
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            GType
+           </td>
+           <td class="paramname">
+            <em>
+             type
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns
+         <code>
+          true
+         </code>
+         if any of the parents of the widget represented in
+         <em>
+          path
+         </em>
+         is of type
+         <em>
+          type
+         </em>
+         , or any subtype of it.
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000404">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              type
+             </td>
+             <td>
+              <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+               Widget
+              </a>
+              type to check in parents.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if any parent is of type
+          <em>
+           type
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a920dc85e2697d8964fa6b638ede4150d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::WidgetPath::is_type
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            GType
+           </td>
+           <td class="paramname">
+            <em>
+             type
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns
+         <code>
+          true
+         </code>
+         if the widget type represented by this path is
+         <em>
+          type
+         </em>
+         , or a subtype of it.
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000403">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              type
+             </td>
+             <td>
+              <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+               Widget
+              </a>
+              type to match.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the widget represented by
+          <em>
+           path
+          </em>
+          is of type
+          <em>
+           type
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a0f7b0d0fa753acc248d2b6a2ab3bf5ad">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::WidgetPath::iter_add_class
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Adds the class
+         <em>
+          name
+         </em>
+         to the widget at position
+         <em>
+          pos
+         </em>
+         in the hierarchy defined in
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <p>
+         See
+         <a class="el" href="classGtk_1_1StyleContext.html#a13f8b00a08ef17de1b95be09fb3d8963" title="Adds a style class to context, so posterior calls to get() or any of the gtk_render_*() functions wil...">
+          Gtk::StyleContext::add_class()
+         </a>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000392">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to modify, -1 for the path head.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              A class name.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a82b91ebdc804f5476a40b1845c950a11">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::WidgetPath::iter_add_region
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#gadc4fb4d2dff732ed7c11f2620e3be645">
+             RegionFlags
+            </a>
+           </td>
+           <td class="paramname">
+            <em>
+             flags
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Adds the region
+         <em>
+          name
+         </em>
+         to the widget at position
+         <em>
+          pos
+         </em>
+         in the hierarchy defined in
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <p>
+         See
+         <a class="el" href="classGtk_1_1StyleContext.html#a71047910de26a545dea448ac1a6deea4" title="Adds a region to context, so posterior calls to get() or any of the gtk_render_*() functions will mak...">
+          Gtk::StyleContext::add_region()
+         </a>
+         .
+        </p>
+        <p>
+         Region names must only contain lowercase letters and “-”, starting always with a lowercase letter.
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000397">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.14: The use of regions is deprecated.
+        </p>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000401">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          The use of regions is deprecated.
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to modify, -1 for the path head.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              Region name.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              flags
+             </td>
+             <td>
+              Flags affecting the region.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a6a594aabcb566f2ea78dec9ff7cad015">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::WidgetPath::iter_clear_classes
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            =
+            <code>
+             -1
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Removes all classes from the widget at position
+         <em>
+          pos
+         </em>
+         in the hierarchy defined in
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000394">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to modify, -1 for the path head.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a217073af2f3649a0d69c879495fa80ce">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::WidgetPath::iter_clear_regions
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            =
+            <code>
+             -1
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Removes all regions from the widget at position
+         <em>
+          pos
+         </em>
+         in the hierarchy defined in
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000399">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.14: The use of regions is deprecated.
+        </p>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000403">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          The use of regions is deprecated.
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to modify, -1 for the path head.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a7af3311d8daa0671a2b02eae6fff2287">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::WidgetPath::iter_get_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the name corresponding to the widget found at the position
+         <em>
+          pos
+         </em>
+         in the widget hierarchy defined by
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to get the widget name for, -1 for the path head.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The widget name, or
+          <code>
+           nullptr
+          </code>
+          if none was set.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="acfaa71e4f7204c5559cacb39f12d7b62">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            GType Gtk::WidgetPath::iter_get_object_type
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the object Type that is at position
+         <em>
+          pos
+         </em>
+         in the widget hierarchy defined in
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000388">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to get the object type for, -1 for the path head.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A widget type.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a740f73a2b820691d990b9aa83f003688">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1WidgetPath.html">
+             WidgetPath
+            </a>
+            Gtk::WidgetPath::iter_get_siblings
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            =
+            <code>
+             -1
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the list of siblings for the element at
+         <em>
+          pos
+         </em>
+         .
+        </p>
+        <p>
+         If the element was not added with siblings,
+         <code>
+          nullptr
+         </code>
+         is returned.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to get the siblings for, -1 for the path head.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           nullptr
+          </code>
+          or the list of siblings for the element at
+          <em>
+           pos
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="ad6e27e36e3274dcb60395d5cbb74cdd9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::WidgetPath::iter_has_class
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns
+         <code>
+          true
+         </code>
+         if the widget at position
+         <em>
+          pos
+         </em>
+         has the class
+         <em>
+          name
+         </em>
+         defined,
+         <code>
+          false
+         </code>
+         otherwise.
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000396">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to query, -1 for the path head.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              Class name.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the class
+          <em>
+           name
+          </em>
+          is defined for the widget at
+          <em>
+           pos
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a72106a244d9b6ee2785ea09c61f51086">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::WidgetPath::iter_has_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns
+         <code>
+          true
+         </code>
+         if the widget at position
+         <em>
+          pos
+         </em>
+         has the name
+         <em>
+          name
+         </em>
+         ,
+         <code>
+          false
+         </code>
+         otherwise.
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000391">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to query, -1 for the path head.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              A widget name.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the widget at
+          <em>
+           pos
+          </em>
+          has this name.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a46d10efe5f0ba68feb9acfb64cf696de">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            bool Gtk::WidgetPath::iter_has_region
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            <a class="el" href="group__gtkmmEnums.html#gadc4fb4d2dff732ed7c11f2620e3be645">
+             RegionFlags
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             flags
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns
+         <code>
+          true
+         </code>
+         if the widget at position
+         <em>
+          pos
+         </em>
+         has the class
+         <em>
+          name
+         </em>
+         defined,
+         <code>
+          false
+         </code>
+         otherwise.
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000401">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.14: The use of regions is deprecated.
+        </p>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000405">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          The use of regions is deprecated.
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to query, -1 for the path head.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              Region name.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              flags
+             </td>
+             <td>
+              Return location for the region flags.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          <code>
+           true
+          </code>
+          if the class
+          <em>
+           name
+          </em>
+          is defined for the widget at
+          <em>
+           pos
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a9f4a0f89313bb49e01f75c3f3180c059">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt; Gtk::WidgetPath::iter_list_classes
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            =
+            <code>
+             -1
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns a list with all the class names defined for the widget at position
+         <em>
+          pos
+         </em>
+         in the hierarchy defined in
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000395">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to query, -1 for the path head.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The list of classes, This is a list of strings, the SList contents are owned by GTK+, but you should use Glib::slist_free() to free the list itself.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a77c3dc812152aa429ae36b5dd2b8a4e2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="libstdc++.tag:http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/" href="http://gcc.gnu.org/onlinedocs/libstdc++/latest-doxygen/a00965.html">
+             std::vector
+            </a>
+            &lt;
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &gt; Gtk::WidgetPath::iter_list_regions
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            =
+            <code>
+             -1
+            </code>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns a list with all the region names defined for the widget at position
+         <em>
+          pos
+         </em>
+         in the hierarchy defined in
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000400">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.14: The use of regions is deprecated.
+        </p>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000404">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          The use of regions is deprecated.
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to query, -1 for the path head.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The list of regions, This is a list of strings, the SList contents are owned by GTK+, but you should use Glib::slist_free() to free the list itself.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5618dd94676d540077eee442f517221b">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::WidgetPath::iter_remove_class
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Removes the class
+         <em>
+          name
+         </em>
+         from the widget at position
+         <em>
+          pos
+         </em>
+         in the hierarchy defined in
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000393">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to modify, -1 for the path head.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              Class name.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a10bafdf4bd2661c6695e7a037c46d59e">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::WidgetPath::iter_remove_region
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Removes the region
+         <em>
+          name
+         </em>
+         from the widget at position
+         <em>
+          pos
+         </em>
+         in the hierarchy defined in
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000398">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <p>
+         Deprecated: 3.14: The use of regions is deprecated.
+        </p>
+        <dl class="deprecated">
+         <dt>
+          <b>
+           <a class="el" href="deprecated.html#_deprecated000402">
+            Deprecated:
+           </a>
+          </b>
+         </dt>
+         <dd>
+          The use of regions is deprecated.
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to modify, -1 for the path head.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              Region name.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a14b761d20bd0fc58f9eb70b3775808dd">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::WidgetPath::iter_set_name
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            const
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             name
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the widget name for the widget found at position
+         <em>
+          pos
+         </em>
+         in the widget hierarchy defined by
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000390">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to modify, -1 for the path head.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              name
+             </td>
+             <td>
+              <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+               Widget
+              </a>
+              name.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a2a4ff74d8a178615ed64b23e2174cd3d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::WidgetPath::iter_set_object_type
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            int
+           </td>
+           <td class="paramname">
+            <em>
+             pos
+            </em>
+            ,
+           </td>
+          </tr>
+          <tr>
+           <td class="paramkey">
+           </td>
+           <td>
+           </td>
+           <td class="paramtype">
+            GType
+           </td>
+           <td class="paramname">
+            <em>
+             type
+            </em>
+           </td>
+          </tr>
+          <tr>
+           <td>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Sets the object type for a given position in the widget hierarchy defined by
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000389">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              pos
+             </td>
+             <td>
+              Position to modify, -1 for the path head.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              type
+             </td>
+             <td>
+              <a class="el" href="classGtk_1_1Object.html" title="Gtk::Object is the base class for all widgets, and for a few non-widget objects such as Gtk::Adjustme...">
+               Object
+              </a>
+              type to set.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a4ebd133f453a015d667990b7a680d88d">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="el" href="classGtk_1_1WidgetPath.html">
+             WidgetPath
+            </a>
+            &amp; Gtk::WidgetPath::operator=
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            const
+            <a class="el" href="classGtk_1_1WidgetPath.html">
+             WidgetPath
+            </a>
+            &amp;
+           </td>
+           <td class="paramname">
+            <em>
+             other
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="af6f15d47abd7b81dbf959490ea1e70f8">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1WidgetPath.html">
+                 WidgetPath
+                </a>
+                &amp; Gtk::WidgetPath::operator=
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1WidgetPath.html">
+                 WidgetPath
+                </a>
+                &amp;&amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="a5e3927b1d791acec78951c318ace9b17">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gtk::WidgetPath::path_append_type
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            GType
+           </td>
+           <td class="paramname">
+            <em>
+             type
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Appends a widget type to the widget hierarchy represented by
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000386">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              type
+             </td>
+             <td>
+              <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+               Widget
+              </a>
+              type to append.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The position where the element was inserted.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a59ae4b34491dde08a087306c015e18d3">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            int Gtk::WidgetPath::path_length
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Returns the number of
+         <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+          Gtk::Widget
+         </a>
+         Types between the represented widget and its topmost container.
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000385">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          The number of elements in the path.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="aa849751e1bd9555e207f4d17fb3b7741">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            void Gtk::WidgetPath::prepend_type
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramtype">
+            GType
+           </td>
+           <td class="paramname">
+            <em>
+             type
+            </em>
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Prepends a widget type to the widget hierachy represented by
+         <em>
+          path
+         </em>
+         .
+        </p>
+        <dl class="since_3_0">
+         <dt>
+          <b>
+           <a class="el" href="since_3_0.html#_since_3_0000387">
+            Since gtkmm 3.0:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              type
+             </td>
+             <td>
+              <a class="el" href="classGtk_1_1Widget.html" title="Abstract Widget (Base class for all widgets) ">
+               Widget
+              </a>
+              type to prepend.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a132f09fa21b6e4c87eb5d201c619afda">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void Gtk::WidgetPath::swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1WidgetPath.html">
+                 WidgetPath
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 other
+                </em>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              noexcept
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+      <a class="anchor" id="ac0c4120f25e66f734b6602a4fed740b2">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="memname">
+         <tbody>
+          <tr>
+           <td class="memname">
+            <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/classGlib_1_1ustring.html">
+             Glib::ustring
+            </a>
+            Gtk::WidgetPath::to_string
+           </td>
+           <td>
+            (
+           </td>
+           <td class="paramname">
+           </td>
+           <td>
+            )
+           </td>
+           <td>
+            const
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         Dumps the widget path into a string representation.
+        </p>
+        <p>
+         It tries to match the CSS style as closely as possible (Note that there might be paths that cannot be represented in CSS).
+        </p>
+        <p>
+         The main use of this code is for debugging purposes, so that you can Glib::print() the path or dump it in a gdb session.
+        </p>
+        <dl class="since_3_2">
+         <dt>
+          <b>
+           <a class="el" href="since_3_2.html#_since_3_2000078">
+            Since gtkmm 3.2:
+           </a>
+          </b>
+         </dt>
+         <dd>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A new string describing
+          <em>
+           path
+          </em>
+          .
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Friends And Related Function Documentation
+      </h2>
+      <a class="anchor" id="a99fa9d070537044f16d47bbe41e3735f">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                void swap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1WidgetPath.html">
+                 WidgetPath
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 lhs
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                <a class="el" href="classGtk_1_1WidgetPath.html">
+                 WidgetPath
+                </a>
+                &amp;
+               </td>
+               <td class="paramname">
+                <em>
+                 rhs
+                </em>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              lhs
+             </td>
+             <td>
+              The left-hand side
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              rhs
+             </td>
+             <td>
+              The right-hand side
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <a class="anchor" id="a5ccaea948ac808b644b99cdcfa5280e9">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                <a class="el" href="classGtk_1_1WidgetPath.html">
+                 Gtk::WidgetPath
+                </a>
+                wrap
+               </td>
+               <td>
+                (
+               </td>
+               <td class="paramtype">
+                GtkWidgetPath *
+               </td>
+               <td class="paramname">
+                <em>
+                 object
+                </em>
+                ,
+               </td>
+              </tr>
+              <tr>
+               <td class="paramkey">
+               </td>
+               <td>
+               </td>
+               <td class="paramtype">
+                bool
+               </td>
+               <td class="paramname">
+                <em>
+                 take_copy
+                </em>
+                =
+                <code>
+                 false
+                </code>
+               </td>
+              </tr>
+              <tr>
+               <td>
+               </td>
+               <td>
+                )
+               </td>
+               <td>
+               </td>
+               <td>
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              related
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+        <p>
+         A
+         <a class="elRef" doxygen="glibmm-2.4.tag:http://library.gnome.org/devel/glibmm/unstable/" href="http://library.gnome.org/devel/glibmm/unstable/namespaceGlib.html#a671306f4a3a0cae5ab4d7a9d54886592">
+          Glib::wrap()
+         </a>
+         method for this object.
+        </p>
+        <dl class="params">
+         <dt>
+          Parameters
+         </dt>
+         <dd>
+          <table class="params">
+           <tbody>
+            <tr>
+             <td class="paramname">
+              object
+             </td>
+             <td>
+              The C instance.
+             </td>
+            </tr>
+            <tr>
+             <td class="paramname">
+              take_copy
+             </td>
+             <td>
+              False if the result should take ownership of the C instance. True if it should take a new copy or ref.
+             </td>
+            </tr>
+           </tbody>
+          </table>
+         </dd>
+        </dl>
+        <dl class="section return">
+         <dt>
+          Returns
+         </dt>
+         <dd>
+          A C++ instance that wraps this C instance.
+         </dd>
+        </dl>
+       </div>
+      </div>
+      <h2 class="groupheader">
+       Member Data Documentation
+      </h2>
+      <a class="anchor" id="a2e628ea16a1bef345662c88cd4328825">
+      </a>
+      <div class="memitem">
+       <div class="memproto">
+        <table class="mlabels">
+         <tbody>
+          <tr>
+           <td class="mlabels-left">
+            <table class="memname">
+             <tbody>
+              <tr>
+               <td class="memname">
+                GtkWidgetPath* Gtk::WidgetPath::gobject_
+               </td>
+              </tr>
+             </tbody>
+            </table>
+           </td>
+           <td class="mlabels-right">
+            <span class="mlabels">
+             <span class="mlabel">
+              protected
+             </span>
+            </span>
+           </td>
+          </tr>
+         </tbody>
+        </table>
+       </div>
+       <div class="memdoc">
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="default" id="footer_art">
+   </div>
+  </div>
+  <div class="clearfix">
+  </div>
+  <div id="footer_grass">
+  </div>
+  <div id="footer">
+   <div class="container_12">
+    <div class="links grid_9">
+     <div class="menu-footer-1-container">
+      <ul class="menu" id="menu-footer-1">
+       <li class="menu-item menu-item-type-custom menu-item-home menu-item-88" id="menu-item-88">
+        <a href="https://www.gnome.org/">
+         The GNOME Project
+        </a>
+        <ul class="sub-menu">
+         <li class="menu-item menu-item-type-post_type menu-item-89" id="menu-item-89">
+          <a href="https://www.gnome.org/about/">
+           About Us
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-90" id="menu-item-90">
+          <a href="https://www.gnome.org/get-involved/">
+           Get Involved
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-91" id="menu-item-91">
+          <a href="https://www.gnome.org/teams/">
+           Teams
+          </a>
+         </li>
+         <li class="menu-item menu-item-type-custom menu-item-92" id="menu-item-92">
+          <a href="https://foundation.gnome.org">
+           The GNOME Foundation
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/support-gnome/">
+           Support GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://www.gnome.org/contact/">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-2-container">
+      <ul class="menu" id="menu-footer-2">
+       <li class="menu-item menu-item-type-post_type current-menu-item page_item page-item-20 current_page_item menu-item-99" id="menu-item-99">
+        <a href="classGtk_1_1WidgetPath.html#">
+         Resources
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://help.gnome.org">
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org">
+           Wiki
+          </a>
+         </li>
+         <li>
+          <a href="https://mail.gnome.org/mailman/listinfo">
+           Mailing Lists
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/GnomeIrcChannels">
+           IRC Channels
+          </a>
+         </li>
+         <li>
+          <a href="https://bugzilla.gnome.org/">
+           Bug Tracker
+          </a>
+         </li>
+         <li>
+          <a href="https://git.gnome.org/browse/">
+           Development Code
+          </a>
+         </li>
+         <li>
+          <a href="https://wiki.gnome.org/Jhbuild">
+           Build Tool
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+     <div class="menu-footer-4-container">
+      <ul class="menu" id="menu-footer-4">
+       <li class="menu-item menu-item-type-custom menu-item-104" id="menu-item-104">
+        <a href="http://www.gnome.org/news/">
+         News
+        </a>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://www.gnome.org/start/stable">
+           Latest Release
+          </a>
+         </li>
+         <li>
+          <a href="https://planet.gnome.org">
+           Planet GNOME
+          </a>
+         </li>
+         <li>
+          <a href="https://news.gnome.org">
+           Development News
+          </a>
+         </li>
+         <li>
+          <a href="https://identi.ca/gnome/">
+           Identi.ca
+          </a>
+         </li>
+         <li>
+          <a href="https://twitter.com/gnome">
+           Twitter
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="links grid_3 right">
+     <div>
+      <ul class="menu available_languages">
+       <li>
+        <strong>
+         This website is available in many languages
+        </strong>
+        <ul class="sub-menu">
+         <li>
+          <a href="https://developer.gnome.org/languages" title="Switching Language">
+           Switch Language
+          </a>
+         </li>
+        </ul>
+       </li>
+      </ul>
+      <script src="../../js/language.js" type="text/javascript">
+      </script>
+     </div>
+    </div>
+    <div class="grid_9" id="footnotes">
+     Copyright © 2005‒2014
+     <strong class="gnome_logo">
+      The GNOME Project
+     </strong>
+     <br/>
+     <br/>
+     <small>
+      Optimised for standards. Hosted by
+      <a href="http://redhat.com">
+       Red Hat
+      </a>
+      .
+     </small>
+    </div>
+    <div class="clear">
+    </div>
+   </div>
+  </div>
+  <script type="text/javascript">
+   $(document).ready(function() {
+    // Get browser
+    $.each($.browser, function(i) {
+        $('body').addClass(i);
+        return false;
+    });
+
+    // Get OS and add it as class to body tag, this then allows forcing some
+    // customisation in the CSS rules.
+    var match = navigator.userAgent.toLowerCase().match(/(win|mac|linux)/);
+    if (match) {
+        $('body').addClass(match[0]);
+    }
+});
+  </script>
+  <script type="text/javascript">
+   var _paq = _paq || [];
+      _paq.push(['disableCookies']);
+      _paq.push(["trackPageView"]);
+      _paq.push(["enableLinkTracking"]);
+
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://webstats.gnome.org/";
+        _paq.push(["setTrackerUrl", u+"piwik.php"]);
+        _paq.push(["setSiteId", "6"]);
+        var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+        g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+ </body>
+</html>
