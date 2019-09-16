@@ -38,7 +38,7 @@ for docbase in docbases:
         namespace_remove = re.compile('(gtkmm:|glibmm:|Namespace Reference)')
 
         # Create BS object and strip <title> prefix if there is one
-        soup = bs(open(os.path.join(docpath, docbase, file)).read(), 'html5lib')
+        soup = bs(open(os.path.join(docpath, docbase, file), encoding="utf8").read(), 'html5lib')
         title = soup.find('title')
         if (title_re.match(title.text.strip())):
             title.string = title_re.sub('', title.text.strip()).strip()
